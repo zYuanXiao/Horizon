@@ -407,9 +407,20 @@ class FilteringConfig(BaseModel):
     ai_score_threshold: float = 7.0
     time_window_hours: int = 24
     max_items: Optional[int] = Field(default=None, gt=0)
+    min_source_items: Dict[str, int] = Field(default_factory=dict)
     category_groups: Dict[str, CategoryGroupConfig] = Field(default_factory=dict)
     default_group: str = "other"
     default_group_limit: Optional[int] = Field(default=None, gt=0)
+
+    @field_validator("min_source_items")
+    @classmethod
+    def validate_min_source_items(cls, v: Dict[str, int]) -> Dict[str, int]:
+        for source, limit in v.items():
+            if limit <= 0:
+                raise ValueError(
+                    f"filtering.min_source_items['{source}'] must be positive"
+                )
+        return v
 
 
 class Config(BaseModel):

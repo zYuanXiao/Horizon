@@ -18,11 +18,16 @@ from src.models import (
 from src.orchestrator import HorizonOrchestrator
 
 
-def make_item(item_id: str, score: float, category: str | None) -> ContentItem:
+def make_item(
+    item_id: str,
+    score: float,
+    category: str | None,
+    source_type: SourceType = SourceType.RSS,
+) -> ContentItem:
     metadata = {"category": category} if category is not None else {}
     return ContentItem(
         id=item_id,
-        source_type=SourceType.RSS,
+        source_type=source_type,
         title=item_id,
         url=f"https://example.com/{item_id}",
         published_at=datetime.now(timezone.utc),
@@ -102,6 +107,35 @@ def test_max_items_works_without_category_groups() -> None:
     result = make_orchestrator(filtering).apply_balanced_digest(items)
 
     assert [item.id for item in result.items] == ["higher"]
+
+
+def test_min_source_items_replaces_lowest_unprotected_items_within_max_items() -> None:
+    filtering = FilteringConfig(
+        max_items=4,
+        min_source_items={
+            SourceType.GITHUB_TRENDING.value: 2,
+            SourceType.HUGGINGFACE_PAPERS.value: 1,
+        },
+    )
+    items = [
+        make_item("rss-10", 10.0, None),
+        make_item("rss-9", 9.0, None),
+        make_item("rss-8", 8.0, None),
+        make_item("rss-7", 7.0, None),
+        make_item("trending-6", 6.0, None, SourceType.GITHUB_TRENDING),
+        make_item("papers-5", 5.0, None, SourceType.HUGGINGFACE_PAPERS),
+        make_item("trending-4", 4.0, None, SourceType.GITHUB_TRENDING),
+    ]
+
+    result = make_orchestrator(filtering).apply_balanced_digest(items)
+
+    assert len(result.items) == 4
+    assert [item.id for item in result.items] == [
+        "rss-10",
+        "trending-6",
+        "papers-5",
+        "trending-4",
+    ]
 
 
 def test_duplicate_category_warns_and_first_group_wins() -> None:

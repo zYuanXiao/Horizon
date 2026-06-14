@@ -454,6 +454,10 @@ Content is scored 0-10:
     "ai_score_threshold": 7.0,
     "time_window_hours": 24,
     "max_items": 15,
+    "min_source_items": {
+      "github_trending": 2,
+      "huggingface_papers": 2
+    },
     "category_groups": {
       "ai": {
         "name": "AI / Machine Learning",
@@ -475,6 +479,10 @@ Content is scored 0-10:
 - `ai_score_threshold`: Only include content scoring >= this value
 - `time_window_hours`: Fetch content from last N hours
 - `max_items`: Optional final cap after all group limits are applied
+- `min_source_items`: Optional per-source minimums applied within `max_items`.
+  For example, `{"github_trending": 2, "huggingface_papers": 2}` keeps
+  at least four items from those two sources when enough scored candidates
+  are available.
 - `category_groups`: Optional map of quota groups. Each group requires a positive
   `limit` and a non-empty `categories` list. Items within each group are kept by
   AI score, highest first.

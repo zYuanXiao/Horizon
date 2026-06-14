@@ -97,12 +97,6 @@
         "category": ""
       },
       {
-        "name": "Anthropic Research",
-        "url": "https://www.anthropic.com/research",
-        "enabled": false,
-        "category": ""
-      },
-      {
         "name": "量子位",
         "url": "https://wechat2rss.xlab.app/feed/7131b577c61365cb47e81000738c10d872685908.xml",
         "enabled": true,
@@ -145,12 +139,6 @@
         "category": ""
       },
       {
-        "name": "The Batch",
-        "url": "https://www.deeplearning.ai/the-batch",
-        "enabled": false,
-        "category": ""
-      },
-      {
         "name": "The Gradient",
         "url": "https://thegradient.pub/rss/",
         "enabled": true,
@@ -161,12 +149,6 @@
         "url": "https://aiweekly.co/issues.rss",
         "enabled": true,
         "category": ""
-      },
-      {
-        "name": "Stability AI Blog",
-        "url": "https://stability.ai/news-updates",
-        "enabled": false,
-        "category": "Research"
       },
       {
         "name": "Google DeepMind Blog",
@@ -410,6 +392,10 @@
     "ai_score_threshold": 7.0,
     "time_window_hours": 24,
     "max_items": 15,
+    "min_source_items": {
+      "github_trending": 2,
+      "huggingface_papers": 2
+    },
     "category_groups": {},
     "default_group": "other",
     "default_group_limit": null

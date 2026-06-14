@@ -530,8 +530,9 @@ class HorizonOrchestrator:
         filtering = self.config.filtering
         groups = filtering.category_groups
         max_items = filtering.max_items
+        min_source_items = filtering.min_source_items
 
-        if not groups and max_items is None:
+        if not groups and max_items is None and not min_source_items:
             return BalancedDigestResult(items=items)
 
         sorted_items = sorted(
@@ -581,8 +582,17 @@ class HorizonOrchestrator:
             selected.append((item, group_key))
             group_counts[group_key] += 1
 
+        eligible = selected
         if max_items is not None:
             selected = selected[:max_items]
+
+        if min_source_items:
+            selected = self._ensure_min_source_items(
+                selected,
+                eligible,
+                min_source_items,
+                max_items,
+            )
 
         final_counts: Dict[str, int] = defaultdict(int)
         for _, group_key in selected:
@@ -623,6 +633,71 @@ class HorizonOrchestrator:
             group_counts=dict(final_counts),
             group_limits=group_limits,
             duplicate_categories=sorted(set(duplicate_categories)),
+        )
+
+    @staticmethod
+    def _ensure_min_source_items(
+        selected: List[tuple[ContentItem, str]],
+        eligible: List[tuple[ContentItem, str]],
+        min_source_items: Dict[str, int],
+        max_items: Optional[int],
+    ) -> List[tuple[ContentItem, str]]:
+        """Keep at least N items for selected source types within final cap."""
+
+        result = list(selected)
+        selected_ids = {item.id for item, _ in result}
+
+        def source_key(item: ContentItem) -> str:
+            return item.source_type.value
+
+        def source_counts() -> Dict[str, int]:
+            counts: Dict[str, int] = defaultdict(int)
+            for item, _ in result:
+                counts[source_key(item)] += 1
+            return counts
+
+        for required_source, required_count in min_source_items.items():
+            counts = source_counts()
+            candidates = [
+                pair
+                for pair in eligible
+                if source_key(pair[0]) == required_source
+                and pair[0].id not in selected_ids
+            ]
+
+            while counts.get(required_source, 0) < required_count and candidates:
+                candidate = candidates.pop(0)
+
+                if max_items is None or len(result) < max_items:
+                    result.append(candidate)
+                    selected_ids.add(candidate[0].id)
+                    counts = source_counts()
+                    continue
+
+                replace_idx: Optional[int] = None
+                for idx, (item, _) in enumerate(result):
+                    item_source = source_key(item)
+                    protected_min = min_source_items.get(item_source, 0)
+                    if counts.get(item_source, 0) <= protected_min:
+                        continue
+                    if replace_idx is None or (
+                        (item.ai_score or 0)
+                        < (result[replace_idx][0].ai_score or 0)
+                    ):
+                        replace_idx = idx
+
+                if replace_idx is None:
+                    break
+
+                selected_ids.discard(result[replace_idx][0].id)
+                result[replace_idx] = candidate
+                selected_ids.add(candidate[0].id)
+                counts = source_counts()
+
+        return sorted(
+            result,
+            key=lambda pair: pair[0].ai_score or 0,
+            reverse=True,
         )
 
     async def _expand_twitter_discussion(self, items: List[ContentItem]) -> None:
