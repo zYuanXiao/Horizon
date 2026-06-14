@@ -257,7 +257,8 @@ def build_config(
         enabled=bool(reddit_subreddits or reddit_users),
         subreddits=reddit_subreddits,
         users=reddit_users,
-        fetch_comments=10,
+        fetch_comments=5,
+        max_comment_posts_per_source=3,
     )
 
     telegram_config = TelegramConfig(

@@ -14,7 +14,9 @@ from .storage.manager import StorageManager
 from .services.email import EmailManager
 from .services.webhook import WebhookNotifier
 from .scrapers.github import GitHubScraper
+from .scrapers.github_trending import GitHubTrendingScraper
 from .scrapers.hackernews import HackerNewsScraper
+from .scrapers.huggingface_papers import HuggingFacePapersScraper
 from .scrapers.rss import RSSScraper
 from .scrapers.reddit import RedditScraper
 from .scrapers.telegram import TelegramScraper
@@ -300,6 +302,32 @@ class HorizonOrchestrator:
                 oss_scraper = OSSInsightScraper(self.config.sources.ossinsight, client)
                 tasks.append(self._fetch_with_progress("OSS Insight", oss_scraper, since))
 
+            # GitHub Trending
+            if (
+                self.config.sources.github_trending
+                and self.config.sources.github_trending.enabled
+            ):
+                trending_scraper = GitHubTrendingScraper(
+                    self.config.sources.github_trending,
+                    client,
+                )
+                tasks.append(
+                    self._fetch_with_progress("GitHub Trending", trending_scraper, since)
+                )
+
+            # Hugging Face Daily Papers
+            if (
+                self.config.sources.huggingface_papers
+                and self.config.sources.huggingface_papers.enabled
+            ):
+                papers_scraper = HuggingFacePapersScraper(
+                    self.config.sources.huggingface_papers,
+                    client,
+                )
+                tasks.append(
+                    self._fetch_with_progress("Hugging Face Papers", papers_scraper, since)
+                )
+
             # Fetch all concurrently
             results = await asyncio.gather(*tasks, return_exceptions=True)
 
@@ -350,6 +378,8 @@ class HorizonOrchestrator:
             return f"@{meta['channel']}"
         if meta.get("period") and meta.get("repo"):
             return f"ossinsight:{meta.get('primary_language', 'all')}"
+        if meta.get("source_name"):
+            return meta["source_name"]
         if meta.get("repo"):
             return meta["repo"]
         if meta.get("watchlist"):

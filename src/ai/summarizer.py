@@ -194,6 +194,8 @@ class DailySummarizer:
             source_parts.append(f"r/{meta['subreddit']}")
         if meta.get("feed_name"):
             source_parts.append(meta["feed_name"])
+        elif meta.get("source_name"):
+            source_parts.append(meta["source_name"])
         else:
             source_parts.append(item.author or "unknown")
         if item.published_at:

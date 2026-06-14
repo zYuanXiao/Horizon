@@ -72,7 +72,7 @@ Two source types are supported:
 
 **File**: `src/scrapers/rss.py`
 
-Fetches any Atom/RSS feed using the `feedparser` library. Tries multiple date fields (`published`, `updated`, `created`) with fallback parsing.
+Fetches any Atom/RSS feed using the `feedparser` library. Tries multiple date fields (`published`, `updated`, `created`) with fallback parsing. Enabled feeds are fetched sequentially with a small configurable delay between feeds.
 
 **Config** (`sources.rss`, list of entries):
 
@@ -81,11 +81,13 @@ Fetches any Atom/RSS feed using the `feedparser` library. Tries multiple date fi
   "name": "Simon Willison",
   "url": "https://simonwillison.net/atom/everything/",
   "enabled": true,
-  "category": "ai-tools"
+  "category": "ai-tools",
+  "request_delay_sec": 0.25
 }
 ```
 
 - `category` — optional tag for grouping (e.g., `"programming"`, `"microblog"`)
+- `request_delay_sec` — delay before this feed when multiple RSS feeds are enabled
 
 **Extracted data**: title, URL, author, content (from `summary`/`description`/`content` fields), feed name, category, and entry tags.
 
@@ -99,7 +101,7 @@ Uses Reddit's public JSON API (`www.reddit.com`):
 - `GET /user/{username}/submitted.json` — user submissions
 - `GET /r/{subreddit}/comments/{post_id}.json` — post comments
 
-Subreddits and users are fetched concurrently. Comments are sorted by score, limited to the configured count, and exclude moderator-distinguished comments. Self-text is truncated at 1500 chars, comments at 500 chars.
+Subreddits and users are fetched with bounded concurrency. Comments are sorted by score, limited to the configured count, and fetched only for the top-scoring posts per source. Self-text is truncated at 1500 chars, comments at 500 chars.
 
 **Config** (`sources.reddit`):
 
@@ -107,9 +109,14 @@ Subreddits and users are fetched concurrently. Comments are sorted by score, lim
 {
   "enabled": true,
   "fetch_comments": 5,
+  "request_delay_sec": 1.0,
+  "source_concurrency": 1,
+  "comment_concurrency": 1,
+  "max_comment_posts_per_source": 3,
   "subreddits": [
     {
       "subreddit": "MachineLearning",
+      "prefer_rss": false,
       "sort": "hot",
       "fetch_limit": 25,
       "min_score": 10
@@ -126,10 +133,15 @@ Subreddits and users are fetched concurrently. Comments are sorted by score, lim
 ```
 
 - `sort` — `hot`, `new`, `top`, or `rising` (subreddits); `hot` or `new` (users)
+- `prefer_rss` — fetch subreddit RSS directly instead of trying Reddit JSON first
 - `time_filter` — for `top`/`rising` sorts: `hour`, `day`, `week`, `month`, `year`, `all`
 - `min_score` — minimum post score (subreddits only)
+- `request_delay_sec` — global delay between Reddit requests
+- `source_concurrency` — number of subreddit/user listings fetched at once
+- `comment_concurrency` — number of comment requests fetched at once
+- `max_comment_posts_per_source` — maximum posts per subreddit/user that receive comment fetches
 
-**Rate limiting**: Detects HTTP 429 responses, reads the `Retry-After` header, waits, and retries once. Uses a descriptive `User-Agent` as required by Reddit's API guidelines.
+**Rate limiting**: Detects HTTP 429 responses, reads the `Retry-After` header, applies a shared cooldown, and retries once. Uses browser-like headers and falls back to Reddit RSS for blocked subreddit listings.
 
 **Extracted data**: title, URL, author, score, upvote ratio, comment count, subreddit, flair, self-text, and top comments.
 
@@ -175,6 +187,56 @@ Behavior:
 **Credentials**: provider-specific secrets are resolved by the OpenBB SDK from its own environment variables or settings file. Horizon does not pass those values directly.
 
 **Extracted data**: title, URL, author, published time, article body/excerpt, watchlist name, provider, category, and symbol list.
+
+## GitHub Trending
+
+**File**: `src/scrapers/github_trending.py`
+
+Scrapes the public GitHub Trending HTML page for one or more language paths and filters repositories by keyword and stars gained in the selected period.
+
+**Config** (`sources.github_trending`):
+
+```json
+{
+  "enabled": true,
+  "since": "daily",
+  "languages": ["", "Python", "TypeScript"],
+  "keywords": ["multimodal", "diffusion", "agent", "inference"],
+  "min_stars_today": 10,
+  "max_items": 20
+}
+```
+
+- `since` — `daily`, `weekly`, or `monthly`
+- `languages` — language paths to query; `""` means all languages
+- `keywords` — case-insensitive substrings matched against repo name, description, and language
+- `min_stars_today` — minimum stars gained in the displayed period
+- `max_items` — maximum repositories emitted after sorting by stars gained
+
+**Extracted data**: repo name, URL, description, language, total stars, forks, stars gained, and trend period.
+
+## Hugging Face Papers
+
+**File**: `src/scrapers/huggingface_papers.py`
+
+Fetches Hugging Face Daily Papers from the public JSON endpoint and filters papers by title, summary, and Hugging Face AI keywords.
+
+**Config** (`sources.huggingface_papers`):
+
+```json
+{
+  "enabled": true,
+  "keywords": ["VLM", "multimodal", "diffusion", "visual reasoning"],
+  "min_upvotes": 0,
+  "max_items": 20
+}
+```
+
+- `keywords` — case-insensitive substrings matched against paper title, summary, and AI keywords
+- `min_upvotes` — minimum Hugging Face paper upvotes
+- `max_items` — maximum papers emitted after sorting by upvotes
+
+**Extracted data**: paper title, Hugging Face paper URL, AI summary, full abstract/summary, AI keywords, authors, upvotes, and daily submission date.
 
 ## Twitter
 

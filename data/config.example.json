@@ -60,6 +60,7 @@
         {
           "subreddit": "MachineLearning",
           "enabled": true,
+          "prefer_rss": false,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 15,
@@ -74,7 +75,11 @@
           "fetch_limit": 10
         }
       ],
-      "fetch_comments": 5
+      "fetch_comments": 5,
+      "request_delay_sec": 1.0,
+      "source_concurrency": 1,
+      "comment_concurrency": 1,
+      "max_comment_posts_per_source": 3
     },
     "twitter": {
       "enabled": false,
@@ -107,12 +112,26 @@
       "keywords": [],
       "min_stars": 10,
       "max_items": 30
+    },
+    "github_trending": {
+      "enabled": false,
+      "since": "daily",
+      "languages": ["", "Python", "TypeScript"],
+      "keywords": ["multimodal", "diffusion", "agent", "inference"],
+      "min_stars_today": 10,
+      "max_items": 30
+    },
+    "huggingface_papers": {
+      "enabled": false,
+      "keywords": ["VLM", "multimodal", "diffusion", "visual reasoning"],
+      "min_upvotes": 0,
+      "max_items": 30
     }
   },
   "filtering": {
     "ai_score_threshold": 6.0,
     "time_window_hours": 24,
-    "max_items": null,
+    "max_items": 15,
     "category_groups": {},
     "default_group": "other",
     "default_group_limit": null

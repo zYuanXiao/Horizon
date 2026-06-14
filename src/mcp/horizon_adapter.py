@@ -24,6 +24,9 @@ VALID_SOURCES = {
     "telegram",
     "twitter",
     "openbb",
+    "ossinsight",
+    "github_trending",
+    "huggingface_papers",
 }
 ENV_KEY_RE = re.compile(r"^[A-Z_][A-Z0-9_]*$")
 
@@ -215,6 +218,16 @@ def apply_source_filter(
     if "openbb" not in wanted and getattr(clone.sources, "openbb", None):
         clone.sources.openbb.enabled = False
         clone.sources.openbb.watchlists = []
+    if "ossinsight" not in wanted and getattr(clone.sources, "ossinsight", None):
+        clone.sources.ossinsight.enabled = False
+    if "github_trending" not in wanted and getattr(
+        clone.sources, "github_trending", None
+    ):
+        clone.sources.github_trending.enabled = False
+    if "huggingface_papers" not in wanted and getattr(
+        clone.sources, "huggingface_papers", None
+    ):
+        clone.sources.huggingface_papers.enabled = False
 
     return clone, chosen, unknown
 
@@ -237,6 +250,12 @@ def get_enabled_sources(config: Any) -> list[str]:
         enabled.append("twitter")
     if getattr(getattr(config.sources, "openbb", None), "enabled", False):
         enabled.append("openbb")
+    if getattr(getattr(config.sources, "ossinsight", None), "enabled", False):
+        enabled.append("ossinsight")
+    if getattr(getattr(config.sources, "github_trending", None), "enabled", False):
+        enabled.append("github_trending")
+    if getattr(getattr(config.sources, "huggingface_papers", None), "enabled", False):
+        enabled.append("huggingface_papers")
     return enabled
 
 

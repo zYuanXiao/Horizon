@@ -1,5 +1,6 @@
 """RSS feed scraper implementation."""
 
+import asyncio
 import calendar
 import hashlib
 import logging
@@ -15,6 +16,11 @@ from .base import BaseScraper
 from ..models import ContentItem, SourceType, RSSSourceConfig
 
 logger = logging.getLogger(__name__)
+
+RSS_HEADERS = {
+    "User-Agent": "Horizon/1.0 (+https://github.com/yuanx/Horizon)",
+    "Accept": "application/rss+xml,application/atom+xml,application/xml,text/xml,*/*",
+}
 
 
 class RSSScraper(BaseScraper):
@@ -41,12 +47,16 @@ class RSSScraper(BaseScraper):
         items = []
         sources = self.config["sources"]
 
+        enabled_index = 0
         for source in sources:
             if not source.enabled:
                 continue
+            if enabled_index > 0 and source.request_delay_sec > 0:
+                await asyncio.sleep(source.request_delay_sec)
 
             feed_items = await self._fetch_feed(source, since)
             items.extend(feed_items)
+            enabled_index += 1
 
         return items
 
@@ -73,7 +83,24 @@ class RSSScraper(BaseScraper):
             )
 
             # Fetch feed content
-            response = await self.client.get(feed_url, follow_redirects=True)
+            response = await self.client.get(
+                feed_url,
+                headers=RSS_HEADERS,
+                follow_redirects=True,
+            )
+            if response.status_code == 429:
+                retry_after = self._retry_after_seconds(response)
+                logger.warning(
+                    "RSS feed %s rate limited, retrying after %ds",
+                    source.name,
+                    retry_after,
+                )
+                await asyncio.sleep(retry_after)
+                response = await self.client.get(
+                    feed_url,
+                    headers=RSS_HEADERS,
+                    follow_redirects=True,
+                )
             response.raise_for_status()
 
             # Parse feed
@@ -117,6 +144,13 @@ class RSSScraper(BaseScraper):
             logger.warning("Error parsing RSS feed %s: %s", source.name, e)
 
         return items
+
+    @staticmethod
+    def _retry_after_seconds(response: httpx.Response) -> int:
+        try:
+            return max(1, int(float(response.headers.get("Retry-After", "5"))))
+        except ValueError:
+            return 5
 
     def _parse_date(self, entry: dict) -> datetime:
         """Parse publication date from feed entry.

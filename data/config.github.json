@@ -61,12 +61,33 @@
         "owner": null,
         "repo": null,
         "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "username": null,
+        "owner": "huggingface",
+        "repo": "transformers",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "username": null,
+        "owner": "ggml-org",
+        "repo": "llama.cpp",
+        "enabled": true
+      },
+      {
+        "type": "repo_releases",
+        "username": null,
+        "owner": "pytorch",
+        "repo": "pytorch",
+        "enabled": true
       }
     ],
     "hackernews": {
       "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 100
+      "fetch_top_stories": 50,
+      "min_score": 80
     },
     "rss": [
       {
@@ -77,8 +98,8 @@
       },
       {
         "name": "Anthropic Research",
-        "url": "https://www.anthropic.com/research/rss",
-        "enabled": true,
+        "url": "https://www.anthropic.com/research",
+        "enabled": false,
         "category": ""
       },
       {
@@ -125,8 +146,8 @@
       },
       {
         "name": "The Batch",
-        "url": "https://www.deeplearning.ai/the-batch/feed/",
-        "enabled": true,
+        "url": "https://www.deeplearning.ai/the-batch",
+        "enabled": false,
         "category": ""
       },
       {
@@ -143,13 +164,13 @@
       },
       {
         "name": "Stability AI Blog",
-        "url": "https://stability.ai/blog/feed",
-        "enabled": true,
+        "url": "https://stability.ai/news-updates",
+        "enabled": false,
         "category": "Research"
       },
       {
         "name": "Google DeepMind Blog",
-        "url": "https://blog.deepmind.com/feed",
+        "url": "https://deepmind.google/blog/rss.xml",
         "enabled": true,
         "category": "Research"
       },
@@ -185,7 +206,7 @@
       },
       {
         "name": "Ars Technica AI",
-        "url": "http://feeds.arstechnica.com/arstechnica/artificial-intelligence",
+        "url": "https://arstechnica.com/ai/feed/",
         "enabled": true,
         "category": ""
       },
@@ -202,6 +223,7 @@
         {
           "subreddit": "LocalLLaMA",
           "enabled": true,
+          "prefer_rss": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 15,
@@ -210,6 +232,7 @@
         {
           "subreddit": "StableDiffusion",
           "enabled": true,
+          "prefer_rss": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 15,
@@ -218,6 +241,7 @@
         {
           "subreddit": "MachineLearning",
           "enabled": true,
+          "prefer_rss": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 15,
@@ -226,6 +250,7 @@
         {
           "subreddit": "artificial",
           "enabled": true,
+          "prefer_rss": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 15,
@@ -234,6 +259,7 @@
         {
           "subreddit": "ProgrammingLanguages",
           "enabled": true,
+          "prefer_rss": true,
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 15,
@@ -241,7 +267,11 @@
         }
       ],
       "users": [],
-      "fetch_comments": 10
+      "fetch_comments": 0,
+      "request_delay_sec": 60.0,
+      "source_concurrency": 1,
+      "comment_concurrency": 1,
+      "max_comment_posts_per_source": 3
     },
     "telegram": {
       "enabled": true,
@@ -256,22 +286,130 @@
     "twitter": null,
     "openbb": null,
     "ossinsight": {
-      "enabled": false,
+      "enabled": true,
       "period": "past_24_hours",
       "languages": [
         "All",
         "Python",
-        "TypeScript"
+        "TypeScript",
+        "Rust",
+        "Go"
       ],
-      "keywords": [],
-      "min_stars": 5,
-      "max_items": 30
+      "keywords": [
+        "llm",
+        "vlm",
+        "vision language",
+        "multimodal",
+        "image generation",
+        "video generation",
+        "image editing",
+        "video editing",
+        "diffusion",
+        "controllable generation",
+        "visual reasoning",
+        "gui agent",
+        "web agent",
+        "computer use",
+        "coding agent",
+        "world model",
+        "robot",
+        "robotics",
+        "inference",
+        "serving",
+        "deployment",
+        "kv cache",
+        "agent",
+        "rag",
+        "vector",
+        "transformer",
+        "cuda",
+        "rlvr",
+        "reinforcement learning"
+      ],
+      "min_stars": 10,
+      "max_items": 20
+    },
+    "github_trending": {
+      "enabled": true,
+      "since": "daily",
+      "languages": [
+        "",
+        "Python",
+        "TypeScript",
+        "Jupyter Notebook",
+        "Rust",
+        "Go"
+      ],
+      "keywords": [
+        "vlm",
+        "vision language",
+        "multimodal",
+        "image generation",
+        "video generation",
+        "image editing",
+        "video editing",
+        "diffusion",
+        "controllable generation",
+        "visual reasoning",
+        "gui agent",
+        "web agent",
+        "computer use",
+        "coding agent",
+        "world model",
+        "robot",
+        "robotics",
+        "inference",
+        "serving",
+        "deployment",
+        "kv cache",
+        "agent",
+        "transformer",
+        "cuda",
+        "rlvr",
+        "reinforcement learning"
+      ],
+      "min_stars_today": 10,
+      "max_items": 20
+    },
+    "huggingface_papers": {
+      "enabled": true,
+      "keywords": [
+        "vlm",
+        "vision-language",
+        "vision language",
+        "multimodal",
+        "image generation",
+        "video generation",
+        "image editing",
+        "video editing",
+        "diffusion",
+        "controllable generation",
+        "visual reasoning",
+        "gui agent",
+        "web agent",
+        "computer use",
+        "coding agent",
+        "world model",
+        "robot",
+        "robotics",
+        "embodied",
+        "inference",
+        "efficient inference",
+        "serving",
+        "deployment",
+        "reinforcement learning",
+        "rlvr",
+        "evaluation",
+        "benchmark"
+      ],
+      "min_upvotes": 0,
+      "max_items": 20
     }
   },
   "filtering": {
     "ai_score_threshold": 7.0,
     "time_window_hours": 24,
-    "max_items": null,
+    "max_items": 15,
     "category_groups": {},
     "default_group": "other",
     "default_group_limit": null

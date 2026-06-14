@@ -21,6 +21,7 @@ def _make_config(fetch_comments: int = 1) -> RedditConfig:
         ],
         users=[],
         fetch_comments=fetch_comments,
+        request_delay_sec=0,
     )
 
 
@@ -48,6 +49,31 @@ def _listing_payload() -> dict:
             ]
         }
     }
+
+
+def _multi_listing_payload() -> dict:
+    now = datetime.now(timezone.utc)
+    children = []
+    for idx, score in enumerate([10, 50, 30], start=1):
+        children.append(
+            {
+                "kind": "t3",
+                "data": {
+                    "id": f"post{idx}",
+                    "title": f"Post {idx}",
+                    "is_self": True,
+                    "subreddit": "LocalLLaMA",
+                    "permalink": f"/r/LocalLLaMA/comments/post{idx}/post_{idx}/",
+                    "author": "tester",
+                    "created_utc": now.timestamp(),
+                    "score": score,
+                    "upvote_ratio": 0.9,
+                    "num_comments": 1,
+                    "selftext": "",
+                },
+            }
+        )
+    return {"data": {"children": children}}
 
 
 def test_reddit_fetch_uses_browser_like_headers():
@@ -97,7 +123,7 @@ def test_reddit_listing_403_falls_back_to_subreddit_rss():
         requests.append(request)
         if request.url.path.endswith("/hot.json"):
             return httpx.Response(403, text="blocked")
-        if request.url.path.endswith("/hot/.rss"):
+        if request.url.path.endswith("/.rss"):
             return httpx.Response(
                 200,
                 text="""
@@ -125,7 +151,7 @@ def test_reddit_listing_403_falls_back_to_subreddit_rss():
 
     assert [request.url.path for request in requests] == [
         "/r/LocalLLaMA/hot.json",
-        "/r/LocalLLaMA/hot/.rss",
+        "/r/LocalLLaMA/.rss",
     ]
     assert len(items) == 1
     assert items[0].title == "RSS fallback post"
@@ -133,3 +159,95 @@ def test_reddit_listing_403_falls_back_to_subreddit_rss():
     assert items[0].author == "rss_author"
     assert items[0].metadata["subreddit"] == "LocalLLaMA"
     assert items[0].metadata["fallback"] == "rss"
+
+
+def test_reddit_prefer_rss_skips_json_listing():
+    requests = []
+    config = _make_config(fetch_comments=3)
+    config.subreddits[0].prefer_rss = True
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        requests.append(request)
+        if request.url.path.endswith("/.rss"):
+            return httpx.Response(
+                200,
+                text="""
+                <?xml version="1.0" encoding="UTF-8"?>
+                <feed xmlns="http://www.w3.org/2005/Atom">
+                  <entry>
+                    <id>t3_rss123</id>
+                    <title>RSS direct post</title>
+                    <author><name>rss_author</name></author>
+                    <link href="https://www.reddit.com/r/LocalLLaMA/comments/rss123/test/" />
+                    <updated>2030-01-01T00:00:00+00:00</updated>
+                    <summary type="html">&lt;p&gt;RSS body&lt;/p&gt;</summary>
+                  </entry>
+                </feed>
+                """,
+            )
+        raise AssertionError(f"unexpected url: {request.url}")
+
+    transport = httpx.MockTransport(handler)
+    client = httpx.AsyncClient(transport=transport)
+    scraper = RedditScraper(config, client)
+
+    items = asyncio.run(scraper.fetch(datetime(2029, 12, 31, tzinfo=timezone.utc)))
+    asyncio.run(client.aclose())
+
+    assert [request.url.path for request in requests] == ["/r/LocalLLaMA/.rss"]
+    assert len(items) == 1
+    assert items[0].title == "RSS direct post"
+
+
+def test_reddit_limits_comment_requests_to_top_scoring_posts():
+    comment_paths = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path.endswith("/hot.json"):
+            return httpx.Response(200, json=_multi_listing_payload())
+        if "/comments/" in request.url.path:
+            comment_paths.append(request.url.path)
+            return httpx.Response(200, json=[{}, {"data": {"children": []}}])
+        raise AssertionError(f"unexpected url: {request.url}")
+
+    config = _make_config(fetch_comments=2)
+    config.max_comment_posts_per_source = 1
+    transport = httpx.MockTransport(handler)
+    client = httpx.AsyncClient(transport=transport)
+    scraper = RedditScraper(config, client)
+
+    items = asyncio.run(scraper.fetch(datetime.now(timezone.utc) - timedelta(hours=1)))
+    asyncio.run(client.aclose())
+
+    assert len(items) == 3
+    assert comment_paths == ["/r/LocalLLaMA/comments/post2.json"]
+
+
+def test_reddit_429_retries_once_with_retry_after(monkeypatch):
+    sleeps = []
+    attempts = 0
+
+    async def fake_sleep(seconds: float) -> None:
+        sleeps.append(seconds)
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        nonlocal attempts
+        attempts += 1
+        if attempts == 1:
+            return httpx.Response(429, headers={"Retry-After": "2"})
+        return httpx.Response(200, json={"data": {"children": []}})
+
+    monkeypatch.setattr(asyncio, "sleep", fake_sleep)
+    config = _make_config(fetch_comments=0)
+    config.request_delay_sec = 0.1
+    transport = httpx.MockTransport(handler)
+    client = httpx.AsyncClient(transport=transport)
+    scraper = RedditScraper(config, client)
+
+    items = asyncio.run(scraper.fetch(datetime.now(timezone.utc) - timedelta(hours=1)))
+    asyncio.run(client.aclose())
+
+    assert items == []
+    assert attempts == 2
+    assert len(sleeps) == 1
+    assert 1.9 <= sleeps[0] <= 2.0

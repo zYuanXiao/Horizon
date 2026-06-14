@@ -34,7 +34,6 @@ REDDIT_HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
     "Referer": f"{REDDIT_BASE}/",
 }
-MAX_COMMENT_CONCURRENCY = 2
 
 
 class RedditBlockedError(Exception):
@@ -47,7 +46,11 @@ class RedditScraper(BaseScraper):
     def __init__(self, config: RedditConfig, http_client: httpx.AsyncClient):
         super().__init__(config.model_dump(), http_client)
         self.reddit_config = config
-        self._comment_semaphore = asyncio.Semaphore(MAX_COMMENT_CONCURRENCY)
+        self._source_semaphore = asyncio.Semaphore(config.source_concurrency)
+        self._comment_semaphore = asyncio.Semaphore(config.comment_concurrency)
+        self._request_delay_sec = config.request_delay_sec
+        self._request_lock = asyncio.Lock()
+        self._next_request_at = 0.0
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self.config.get("enabled", True):
@@ -56,10 +59,10 @@ class RedditScraper(BaseScraper):
         tasks = []
         for sub_cfg in self.reddit_config.subreddits:
             if sub_cfg.enabled:
-                tasks.append(self._fetch_subreddit(sub_cfg, since))
+                tasks.append(self._fetch_source(self._fetch_subreddit, sub_cfg, since))
         for user_cfg in self.reddit_config.users:
             if user_cfg.enabled:
-                tasks.append(self._fetch_user(user_cfg, since))
+                tasks.append(self._fetch_source(self._fetch_user, user_cfg, since))
 
         if not tasks:
             return []
@@ -73,9 +76,16 @@ class RedditScraper(BaseScraper):
                 items.extend(result)
         return items
 
+    async def _fetch_source(self, method, *args) -> List[ContentItem]:
+        async with self._source_semaphore:
+            return await method(*args)
+
     async def _fetch_subreddit(
         self, cfg: RedditSubredditConfig, since: datetime
     ) -> List[ContentItem]:
+        if cfg.prefer_rss:
+            return await self._fetch_subreddit_rss(cfg, since)
+
         params: dict[str, Any] = {"limit": min(cfg.fetch_limit, 100), "raw_json": 1}
         if cfg.sort in ("top", "controversial"):
             params["t"] = cfg.time_filter
@@ -104,10 +114,11 @@ class RedditScraper(BaseScraper):
     async def _fetch_subreddit_rss(
         self, cfg: RedditSubredditConfig, since: datetime
     ) -> List[ContentItem]:
-        rss_url = f"{REDDIT_BASE}/r/{cfg.subreddit}/{cfg.sort}/.rss"
+        rss_path = ".rss" if cfg.sort == "hot" else f"{cfg.sort}/.rss"
+        rss_url = f"{REDDIT_BASE}/r/{cfg.subreddit}/{rss_path}"
 
         try:
-            response = await self.client.get(
+            response = await self._request_reddit(
                 rss_url,
                 headers={
                     **REDDIT_HEADERS,
@@ -115,6 +126,22 @@ class RedditScraper(BaseScraper):
                 },
                 follow_redirects=True,
             )
+            if response.status_code == 429:
+                retry_after = self._retry_after_seconds(response)
+                logger.warning(
+                    "Reddit RSS fallback for r/%s rate limited, retrying after %ds",
+                    cfg.subreddit,
+                    retry_after,
+                )
+                await self._set_reddit_cooldown(retry_after)
+                response = await self._request_reddit(
+                    rss_url,
+                    headers={
+                        **REDDIT_HEADERS,
+                        "Accept": "application/atom+xml,application/xml,text/xml,*/*",
+                    },
+                    follow_redirects=True,
+                )
             response.raise_for_status()
         except httpx.HTTPError as e:
             logger.warning("Reddit RSS fallback failed for r/%s: %s", cfg.subreddit, e)
@@ -188,7 +215,6 @@ class RedditScraper(BaseScraper):
         min_score: int,
     ) -> List[ContentItem]:
         valid_posts = []
-        comment_tasks = []
         fetch_comments = self.reddit_config.fetch_comments
 
         for post in posts:
@@ -200,15 +226,27 @@ class RedditScraper(BaseScraper):
             if post.get("score", 0) < min_score:
                 continue
             valid_posts.append(post)
-            if fetch_comments > 0:
+
+        if not valid_posts:
+            return []
+
+        comment_post_ids: set[str] = set()
+        if fetch_comments > 0 and self.reddit_config.max_comment_posts_per_source > 0:
+            posts_for_comments = sorted(
+                valid_posts,
+                key=lambda p: p.get("score", 0),
+                reverse=True,
+            )[: self.reddit_config.max_comment_posts_per_source]
+            comment_post_ids = {str(post["id"]) for post in posts_for_comments}
+
+        comment_tasks = []
+        for post in valid_posts:
+            if post["id"] in comment_post_ids:
                 comment_tasks.append(
                     self._fetch_comments(post.get("subreddit", ""), post["id"])
                 )
             else:
                 comment_tasks.append(self._empty_comments())
-
-        if not valid_posts:
-            return []
 
         all_comments = await asyncio.gather(*comment_tasks, return_exceptions=True)
 
@@ -326,17 +364,17 @@ class RedditScraper(BaseScraper):
 
     async def _reddit_get(self, url: str, params: dict) -> Optional[Any]:
         try:
-            response = await self.client.get(
+            response = await self._request_reddit(
                 url,
                 params=params,
                 headers=REDDIT_HEADERS,
                 follow_redirects=True,
             )
             if response.status_code == 429:
-                retry_after = int(response.headers.get("Retry-After", 5))
+                retry_after = self._retry_after_seconds(response)
                 logger.warning("Reddit rate limited, retrying after %ds", retry_after)
-                await asyncio.sleep(retry_after)
-                response = await self.client.get(
+                await self._set_reddit_cooldown(retry_after)
+                response = await self._request_reddit(
                     url,
                     params=params,
                     headers=REDDIT_HEADERS,
@@ -357,3 +395,35 @@ class RedditScraper(BaseScraper):
         except httpx.HTTPError as e:
             logger.warning("Reddit request failed for %s: %s", url, e)
             return None
+
+    @staticmethod
+    def _retry_after_seconds(response: httpx.Response) -> int:
+        try:
+            return max(1, int(float(response.headers.get("Retry-After", "5"))))
+        except ValueError:
+            return 5
+
+    async def _request_reddit(self, *args, **kwargs) -> httpx.Response:
+        await self._wait_for_reddit_slot()
+        return await self.client.get(*args, **kwargs)
+
+    async def _wait_for_reddit_slot(self) -> None:
+        if self._request_delay_sec <= 0:
+            return
+        async with self._request_lock:
+            loop = asyncio.get_running_loop()
+            now = loop.time()
+            wait_for = self._next_request_at - now
+            if wait_for > 0:
+                await asyncio.sleep(wait_for)
+            self._next_request_at = loop.time() + self._request_delay_sec
+
+    async def _set_reddit_cooldown(self, seconds: int) -> None:
+        if seconds <= 0:
+            return
+        async with self._request_lock:
+            loop = asyncio.get_running_loop()
+            self._next_request_at = max(
+                self._next_request_at,
+                loop.time() + seconds,
+            )

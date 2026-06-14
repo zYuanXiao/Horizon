@@ -10,6 +10,7 @@ class SourceType(str, Enum):
     """Supported information source types."""
 
     GITHUB = "github"
+    GITHUB_TRENDING = "github_trending"
     HACKERNEWS = "hackernews"
     RSS = "rss"
     REDDIT = "reddit"
@@ -17,6 +18,7 @@ class SourceType(str, Enum):
     TWITTER = "twitter"
     OPENBB = "openbb"
     OSSINSIGHT = "ossinsight"
+    HUGGINGFACE_PAPERS = "huggingface_papers"
 
 
 class ContentItem(BaseModel):
@@ -138,6 +140,7 @@ class RSSSourceConfig(BaseModel):
     url: HttpUrl
     enabled: bool = True
     category: Optional[str] = None
+    request_delay_sec: float = Field(default=0.25, ge=0)
 
 
 class RedditSubredditConfig(BaseModel):
@@ -145,6 +148,7 @@ class RedditSubredditConfig(BaseModel):
 
     subreddit: str
     enabled: bool = True
+    prefer_rss: bool = False
     sort: str = "hot"  # hot, new, top, rising
     time_filter: str = (
         "day"  # hour, day, week, month, year, all (only for top/controversial)
@@ -168,7 +172,11 @@ class RedditConfig(BaseModel):
     enabled: bool = True
     subreddits: List[RedditSubredditConfig] = Field(default_factory=list)
     users: List[RedditUserConfig] = Field(default_factory=list)
-    fetch_comments: int = 5  # top comments per post, 0 to disable
+    fetch_comments: int = Field(default=5, ge=0)  # top comments per post, 0 to disable
+    request_delay_sec: float = Field(default=0.75, ge=0)
+    source_concurrency: int = Field(default=1, ge=1)
+    comment_concurrency: int = Field(default=1, ge=1)
+    max_comment_posts_per_source: int = Field(default=5, ge=0)
 
 
 class TelegramChannelConfig(BaseModel):
@@ -264,6 +272,26 @@ class OSSInsightConfig(BaseModel):
     max_items: int = 30
 
 
+class GitHubTrendingConfig(BaseModel):
+    """GitHub Trending page scraper configuration."""
+
+    enabled: bool = False
+    since: str = "daily"  # daily, weekly, monthly
+    languages: List[str] = Field(default_factory=lambda: ["", "Python", "TypeScript"])
+    keywords: List[str] = Field(default_factory=list)
+    min_stars_today: int = 5
+    max_items: int = 30
+
+
+class HuggingFacePapersConfig(BaseModel):
+    """Hugging Face daily papers source configuration."""
+
+    enabled: bool = False
+    keywords: List[str] = Field(default_factory=list)
+    min_upvotes: int = 0
+    max_items: int = 30
+
+
 class SourcesConfig(BaseModel):
     """All sources configuration."""
 
@@ -275,6 +303,10 @@ class SourcesConfig(BaseModel):
     twitter: Optional[TwitterConfig] = None
     openbb: Optional[OpenBBConfig] = None
     ossinsight: OSSInsightConfig = Field(default_factory=OSSInsightConfig)
+    github_trending: GitHubTrendingConfig = Field(default_factory=GitHubTrendingConfig)
+    huggingface_papers: HuggingFacePapersConfig = Field(
+        default_factory=HuggingFacePapersConfig
+    )
 
 
 class WebhookConfig(BaseModel):
