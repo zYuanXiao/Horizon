@@ -223,7 +223,8 @@ All sources are configured under the top-level `sources` key in `config.json`.
         "name": "Blog Name",
         "url": "https://example.com/feed.xml",
         "enabled": true,
-        "category": "ai-ml"
+        "category": "ai-ml",
+        "request_delay_sec": 0.25
       }
     ]
   }
@@ -238,9 +239,14 @@ All sources are configured under the top-level `sources` key in `config.json`.
     "reddit": {
       "enabled": true,
       "fetch_comments": 5,
+      "request_delay_sec": 1.0,
+      "source_concurrency": 1,
+      "comment_concurrency": 1,
+      "max_comment_posts_per_source": 3,
       "subreddits": [
         {
           "subreddit": "MachineLearning",
+          "prefer_rss": false,
           "sort": "hot",
           "fetch_limit": 25,
           "min_score": 10
@@ -386,6 +392,52 @@ Pulls top star-gain repositories from the [OSS Insight](https://ossinsight.io) p
 
 No API key is required.
 
+### GitHub Trending
+
+Scrapes the public [GitHub Trending](https://github.com/trending) page. This is useful for catching brand-new open-source tools before they show up in RSS feeds.
+
+```json
+{
+  "sources": {
+    "github_trending": {
+      "enabled": true,
+      "since": "daily",
+      "languages": ["", "Python", "TypeScript", "Jupyter Notebook"],
+      "keywords": ["multimodal", "diffusion", "agent", "inference"],
+      "min_stars_today": 10,
+      "max_items": 20
+    }
+  }
+}
+```
+
+- `since` — GitHub Trending period: `daily`, `weekly`, or `monthly`
+- `languages` — language paths to query. Use `""` for the all-language page.
+- `keywords` — optional case-insensitive substrings matched against repo name, description, and language
+- `min_stars_today` — drop repos below this daily star-gain count
+- `max_items` — cap emitted repos after sorting by stars today
+
+### Hugging Face Papers
+
+Fetches the public Hugging Face Daily Papers JSON endpoint and filters by title, summary, and AI-generated keywords.
+
+```json
+{
+  "sources": {
+    "huggingface_papers": {
+      "enabled": true,
+      "keywords": ["VLM", "multimodal", "diffusion", "visual reasoning"],
+      "min_upvotes": 0,
+      "max_items": 20
+    }
+  }
+}
+```
+
+- `keywords` — optional case-insensitive substrings matched against paper title, summary, and Hugging Face AI keywords
+- `min_upvotes` — drop daily papers below this upvote count
+- `max_items` — cap emitted papers after sorting by upvotes
+
 ## Filtering
 
 Content is scored 0-10:
@@ -401,7 +453,7 @@ Content is scored 0-10:
   "filtering": {
     "ai_score_threshold": 7.0,
     "time_window_hours": 24,
-    "max_items": 20,
+    "max_items": 15,
     "category_groups": {
       "ai": {
         "name": "AI / Machine Learning",
