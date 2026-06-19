@@ -11,365 +11,363 @@ lang: zh
 
 1. [发现 1 万个 GitHub 仓库分发木马恶意软件](#item-1) ⭐️ 9.0/10
 2. [Poolside 发布 Laguna M.1：面向智能体编程的 225B MoE 模型](#item-2) ⭐️ 9.0/10
-3. [cuTile Rust：利用 Rust 所有权实现安全的 GPU 并发](#item-3) ⭐️ 9.0/10
-4. [Superpowers：GitHub 上热门的智能体技能框架](#item-4) ⭐️ 8.0/10
-5. [MolmoMotion：基于语言指令的 3D 点轨迹预测](#item-5) ⭐️ 8.0/10
-6. [Kairos：面向物理 AI 的原生世界模型栈](#item-6) ⭐️ 8.0/10
-7. [Token 压缩幻觉：对 RTK 的质疑](#item-7) ⭐️ 8.0/10
-8. [参议院通过《拯救 OOI 法案》保护海洋研究](#item-8) ⭐️ 8.0/10
-9. [SK 电信深陷 Anthropic Mythos 争议中心](#item-9) ⭐️ 8.0/10
-10. [AI 推理模型助力诊断儿童罕见遗传病](#item-10) ⭐️ 8.0/10
-11. [行李箱机器人通过真实气体传感器改变 LLM 采样器而“嗨”起来](#item-11) ⭐️ 8.0/10
-12. [开源模型市场份额超越闭源模型](#item-12) ⭐️ 8.0/10
-13. [Flux.2-klein 被用作视频模型](#item-13) ⭐️ 8.0/10
-14. [RNN vs Transformer vs SSM：AI 记忆应该放在哪里？](#item-14) ⭐️ 8.0/10
-15. [棋盘 FEN 揭示 VLM 空间推理缺陷](#item-15) ⭐️ 8.0/10
+3. [用 cuTile 在 Rust 中实现安全的 GPU 内核编程](#item-3) ⭐️ 9.0/10
+4. [Superpowers：智能体技能框架在 GitHub 上走红](#item-4) ⭐️ 8.0/10
+5. [Lightricks 发布 LTX-2 音视频生成模型](#item-5) ⭐️ 8.0/10
+6. [MolmoMotion：语言引导的 3D 点轨迹预测](#item-6) ⭐️ 8.0/10
+7. [Kairos：面向物理 AI 的原生世界模型栈](#item-7) ⭐️ 8.0/10
+8. [新版 Outlook 比经典版慢 10 秒](#item-8) ⭐️ 8.0/10
+9. [参议院通过《拯救 OOI 法案》保护海洋观测站](#item-9) ⭐️ 8.0/10
+10. [SK 电信卷入 Anthropic Mythos 出口管制风波](#item-10) ⭐️ 8.0/10
+11. [AI 推理模型助力诊断罕见儿童疾病](#item-11) ⭐️ 8.0/10
+12. [行李箱机器人通过真实气体传感器变嗨](#item-12) ⭐️ 8.0/10
+13. [GLM-5.2 在 AA-Briefcase 智能体工作评估中超越 GPT-5.5](#item-13) ⭐️ 8.0/10
+14. [开源模型市场份额超越专有模型](#item-14) ⭐️ 8.0/10
+15. [Flux.2-klein 通过光流与修复实现视频效果](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [发现 1 万个 GitHub 仓库分发木马恶意软件](https://orchidfiles.com/github-repositories-distributing-malware/) ⭐️ 9.0/10
 
-一名安全研究人员发现超过 1 万个 GitHub 仓库正在分发木马恶意软件，这些仓库利用自动化技术逃避检测并针对依赖搜索代理。 这一广泛威胁凸显了重大的供应链攻击途径，自动化代理可能无意中将这些恶意仓库作为依赖项包含进来，从而可能感染数千个下游项目。 攻击者克隆新仓库而非流行仓库，并每隔几小时删除提交并推送新提交以保持隐蔽。这种行为旨在逃避安全工具的检测，并出现在依赖搜索代理的搜索结果中。
+一名安全研究人员发现超过 1 万个 GitHub 仓库正在分发木马恶意软件，利用自动化代理和搜索排名来感染用户。 这一大规模活动对软件供应链安全构成重大威胁，开发者和自动化代理可能在不知情的情况下克隆并将恶意代码集成到项目中。 攻击者创建新仓库并频繁更新提交以提高搜索排名，目标是自动化代理而非人类。恶意软件设计为在依赖解析或构建过程中触发。
 
 hackernews · theorchid · 6月18日 11:45 · [社区讨论](https://news.ycombinator.com/item?id=48583928)
 
-**背景**: 软件供应链攻击针对开源项目的依赖链，恶意代码可通过被攻破的依赖项引入。依赖搜索代理是帮助开发者查找和包含库的自动化工具，但它们可能被欺骗而推荐恶意仓库。
+**背景**: GitHub 是托管开源代码的流行平台，许多开发者使用自动化工具获取依赖。攻击者通过创建具有诱人名称的仓库并操纵搜索排名，诱骗人类和机器人下载恶意软件。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://socket.dev/blog/dependency-search">Introducing Dependency Search - Socket</a></li>
-<li><a href="https://openssf.org/blog/2025/01/23/predictions-for-open-source-security-in-2025-ai-state-actors-and-supply-chains/">AI, State Actors, and Supply Chains – Open Source Security Foundation</a></li>
+<li><a href="https://orchidfiles.com/github-repositories-distributing-malware/">I discovered a large-scale malware distribution on GitHub</a></li>
+<li><a href="https://securelist.com/webrat-distributed-via-github/118555/">Webrat, disguised as exploits, is spreading via GitHub repositories</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出，该攻击针对的是自动化代理而非人类，并且类似的冒充攻击也发生在合法的开源维护者身上。一些人分享了他们的名字被附加到未知恶意项目上的亲身经历。
+**社区讨论**: 评论者指出，攻击针对的是自动化代理而非人类，类似策略此前已有使用。一些人分享了他们的名字被附加到恶意项目上的亲身经历，凸显了检测的难度。
 
-**标签**: `#security`, `#malware`, `#github`, `#supply chain attack`, `#open source`
+**标签**: `#malware`, `#supply chain security`, `#GitHub`, `#cybersecurity`, `#open source`
 
 ---
 
 <a id="item-2"></a>
 ## [Poolside 发布 Laguna M.1：面向智能体编程的 225B MoE 模型](https://www.reddit.com/r/LocalLLaMA/comments/1u9b2i3/poolsidelagunam1_hugging_face_225ba23b/) ⭐️ 9.0/10
 
-Poolside 发布了 Laguna M.1，这是一个 225B 参数的混合专家模型，每个 token 激活 23B 参数，针对智能体编程和长周期任务进行了优化，采用 Apache 2.0 许可证。 该模型在 SWE-bench Verified（74.6%）和 Terminal-Bench 2.0（45.8%）等智能体编程基准测试中与前沿模型竞争，使先进的编程 AI 更易于开源社区使用。 Laguna M.1 使用 256 个专家和 top-k=16 路由，70 层全局注意力，支持 262,144 token 的上下文窗口，并支持推理与工具调用的交错执行。
+Poolside 发布了 Laguna M.1，这是一个总参数量 225B、每个 token 激活 23B 参数的混合专家（MoE）模型，专为智能体编程和长周期任务优化。它在 SWE-bench Verified（74.6%）和 Terminal-Bench 2.0（45.8%）等基准测试上取得了有竞争力的结果。 Laguna M.1 证明了开放权重的 MoE 模型在智能体编程方面能够与前沿模型竞争，可能加速 AI 辅助软件开发。其 Apache 2.0 许可证允许广泛的商业和研究使用，促进了开源 AI 生态系统的创新。 该模型使用 256 个专家，采用 top-k=16 路由、无辅助损失负载均衡，并支持 262,144 token 的上下文窗口。它包含 70 层：3 个密集 SwiGLU 层后接 67 个稀疏 MoE 层，采用全局注意力机制，使用 64 个 Q-head 和 8 个 KV-head。
 
 reddit · r/LocalLLaMA · /u/pmttyji · 6月18日 16:30
 
-**背景**: 混合专家（MoE）是一种神经网络架构，每个输入仅激活部分参数，从而在不成比例增加计算成本的情况下扩大模型容量。Laguna M.1 使用的无辅助损失负载均衡避免了可能干扰训练的额外损失项。SwiGLU 是一种门控激活函数，可提升现代 Transformer 的性能。
+**背景**: 混合专家（MoE）是一种神经网络架构，将模型划分为多个专门的子网络（专家），由路由器为每个输入选择子集。这允许扩展总参数量同时保持较低的推理成本。智能体编程指的是 AI 智能体以最少的人工干预自主规划、编写、测试和修改代码。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
-<li><a href="https://arxiv.org/abs/2408.15664">Auxiliary - Loss - Free Load Balancing Strategy for Mixture-of-Experts</a></li>
-<li><a href="https://developer.nvidia.com/blog/applying-mixture-of-experts-in-llm-architectures/">Applying Mixture of Experts in LLM Architectures | NVIDIA Technical Blog</a></li>
+<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained - Hugging Face</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Agentic_coding">Agentic coding</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 一位 Reddit 用户分享了在 4×3090 GPU 上部署类似大型 MoE 模型（GLM-5.2）的实践经验，指出卸载专家时解码速度受 CPU 限制，且从 IQ2 量化到 IQ1 并未提升吞吐量。
+**社区讨论**: 一位 Reddit 用户分享了在双路 Xeon 硬件上运行量化版本的本机推理体验，报告了使用 MTP 草稿生成时 4-5.5 tok/s 的速度，并指出尽管硬件有限，该模型仍具有前沿级别的编码能力。社区对能够在本地运行如此强大的模型感到兴奋。
 
-**标签**: `#LLM`, `#Mixture-of-Experts`, `#Agentic Coding`, `#Open Source`, `#AI`
+**标签**: `#LLM`, `#Mixture-of-Experts`, `#Agentic Coding`, `#Open Source`, `#AI Research`
 
 ---
 
 <a id="item-3"></a>
-## [cuTile Rust：利用 Rust 所有权实现安全的 GPU 并发](https://www.reddit.com/r/MachineLearning/comments/1u9j7md/fearless_concurrency_on_the_gpu_safe_gpu/) ⭐️ 9.0/10
+## [用 cuTile 在 Rust 中实现安全的 GPU 内核编程](https://www.reddit.com/r/MachineLearning/comments/1u9j7md/fearless_concurrency_on_the_gpu_safe_gpu/) ⭐️ 9.0/10
 
-研究人员推出了 cuTile Rust，一种基于 tile 的 GPU 编程模型，利用 Rust 的所有权和借用检查机制来保证 GPU 内核的内存安全和无数据竞争。他们还基于 cuTile Rust 构建了 Grout——一个 Qwen3 推理引擎，性能与 vLLM 和 SGLang 相当（例如，在 RTX 5090 上 Qwen3-4B 达到 171 tok/s）。 这项工作通过提供编译器验证的安全保证，解决了 AI 生成的 GPU 代码中日益增长的信任瓶颈。它有望实现更安全、更可靠的 GPU 编程，尤其是在 AI 生成内核日益普及的背景下，并证明了安全性可以在不牺牲性能的前提下实现。 cuTile Rust 编译到 CUDA Tile IR，将 Rust 的所有权模型跨越主机-设备边界。Grout 目前使用了一些不安全的内核，但提供了迁移到安全变体的路径；在 B200 上，安全 GEMM 性能与手写底层版本相差不到 0.3%，逐元素操作达到约 7 TB/s。
+cuTile Rust 利用 Rust 的所有权模型实现了内存安全、无数据竞争的 GPU 内核编程，其 Grout 推理引擎在 Qwen3 模型上达到了与 vLLM 和 SGLang 竞争的性能。 这项工作通过提供编译器验证的安全保证，解决了 AI 生成的 GPU 代码中日益增长的信任瓶颈，可能为机器学习及其他领域带来更安全、更可靠的 GPU 计算。 Grout 在 RTX 5090 上对 Qwen3-4B 达到 171 tok/s，在 B200 上对 Qwen3-32B 达到 82 tok/s（batch-1 解码），安全 GEMM 性能与手写低级版本相差 0.3%以内。但 Grout 目前仅支持 NVIDIA GPU 上的 batch-1 推理，且仍使用部分不安全内核。
 
 reddit · r/MachineLearning · /u/Exciting_Suspect9088 · 6月18日 21:36
 
-**背景**: 传统的 GPU 编程（如 CUDA）依赖于线程级 SIMT 模型，容易引入数据竞争和内存安全漏洞。Rust 的所有权系统在编译时强制执行严格规则，以防止 CPU 代码中的此类问题。cuTile Rust 通过使用基于 tile 的抽象将此扩展到 GPU，其中内核操作输出张量的不相交可变分区，从而从构造上保证安全性。
+**背景**: cuTile Rust 是一个基于 tile 的 GPU 编程库，将 Rust 代码编译为 CUDA Tile IR（CUDA 13.1 引入的新虚拟指令集）。它将 Rust 的所有权和借用规则扩展到 GPU 启动边界之外，从构造上保证内存安全和无数据竞争。Grout 推理引擎是基于 cuTile Rust 构建的研究案例，用于展示其能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/nvlabs/cutile-rs">GitHub - NVlabs/cutile-rs: cuTile Rust provides a safe, tile-based kernel...</a></li>
-<li><a href="https://arxiv.org/abs/2606.15991">[2606.15991] Fearless Concurrency on the GPU</a></li>
-<li><a href="https://arxiv.org/html/2606.15991">Fearless Concurrency on the GPU</a></li>
+<li><a href="https://nvlabs.github.io/cutile-rs/">cuTile Rust — cuTile Rust</a></li>
+<li><a href="https://github.com/nvlabs/cutile-rs">GitHub - NVlabs/ cutile -rs: cuTile Rust provides a safe, tile-based...</a></li>
+<li><a href="https://github.com/huggingface/grout">GitHub - huggingface/grout: Testbed for LLM inference with cutile-rs. · GitHub</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论（未完全显示）可能涉及实际采用、与现有安全 GPU 方法的比较以及对安全保证的热情。作者正在积极与社区互动回答问题。
-
-**标签**: `#Rust`, `#GPU`, `#concurrency`, `#machine learning`, `#inference`
+**标签**: `#Rust`, `#GPU programming`, `#machine learning`, `#memory safety`, `#inference engine`
 
 ---
 
 <a id="item-4"></a>
-## [Superpowers：GitHub 上热门的智能体技能框架](https://github.com/obra/superpowers) ⭐️ 8.0/10
+## [Superpowers：智能体技能框架在 GitHub 上走红](https://github.com/obra/superpowers) ⭐️ 8.0/10
 
-GitHub 仓库 obra/superpowers 单日获得 1429 颗星，总星数超过 23.2 万，推出了一款面向 AI 编码智能体的开源智能体技能框架与软件开发方法论。 这种快速增长表明社区对标准化智能体工作流程有强烈兴趣，可能影响整个行业构建和使用 AI 编码智能体的方式。 该框架使用 Shell 编写，面向 Claude Code、Cursor、Codex、OpenCode 和 Gemini CLI 等智能体，强调基于上下文触发的可组合技能。
+GitHub 仓库 obra/superpowers 单日获得 1429 颗星，总星数超过 23.2 万，这是一个面向 AI 编程智能体的开源智能体技能框架和软件开发方法论。 这种快速增长反映了社区对标准化 AI 编程智能体技能的强烈兴趣，可能影响开发者将 AI 集成到软件工作流的方式。 该框架针对 Claude Code、Cursor 和 Codex 等 AI 编程智能体，强调基于文件变化或用户提示触发的可组合技能。
 
-github_trending · GitHub Trending · 6月19日 04:25
+github_trending · GitHub Trending · 6月19日 04:38
 
-**背景**: 智能体技能框架提供可复用、可组合的模块来扩展 AI 智能体的能力。Superpowers 是智能体工程生态中众多新兴工具之一，该生态还包括 Kilo、OpenMontage 和 crewAI 等平台，都旨在让 AI 智能体更加自主和高效。
+**背景**: 智能体技能框架为 AI 智能体提供可复用的模块化能力，使其能够自主执行复杂任务。这一趋势是更广泛的智能体工程平台运动的一部分，旨在自动化软件开发流程。
 
 <details><summary>参考链接</summary>
 <ul>
+<li><a href="https://github.com/obra/superpowers">GitHub - obra/superpowers: An agentic skills framework & software...</a></li>
 <li><a href="https://grokipedia.com/page/Superpowers_agentic_skills_framework">Superpowers (agentic skills framework)</a></li>
-<li><a href="https://rywalker.com/research/agentic-skills-frameworks">Agentic Skills Frameworks Compared | Ry Walker Research</a></li>
 
 </ul>
 </details>
 
-**标签**: `#agentic-framework`, `#software-development`, `#AI`, `#methodology`, `#open-source`
+**标签**: `#agentic-framework`, `#software-development`, `#methodology`, `#github-trending`
 
 ---
 
 <a id="item-5"></a>
-## [MolmoMotion：基于语言指令的 3D 点轨迹预测](https://huggingface.co/papers/2606.18558) ⭐️ 8.0/10
+## [Lightricks 发布 LTX-2 音视频生成模型](https://github.com/Lightricks/LTX-2) ⭐️ 8.0/10
 
-研究人员推出了 MolmoMotion 模型，该模型根据视觉历史记录和语言指令预测 3D 点轨迹，同时发布了 MolmoMotion-1M 数据集和 PointMotionBench 基准。 这项工作使机器人能够根据语言指令更好地理解和预测物体运动，从而改进操作规划，同时还能指导视频生成模型产生更逼真的运动。 MolmoMotion 支持自回归坐标预测和基于流匹配的轨迹生成，在涵盖 111 个物体类别和 61 种运动类型的 PointMotionBench 上显著优于现有基线。
+Lightricks 发布了 LTX-2 的官方 Python 包，这是一个支持推理和 LoRA 训练的音视频生成模型。该模型能够以原生 4K 分辨率和高达 50 fps 生成同步音频和视频。 LTX-2 是首个基于 DiT 的音视频基础模型，结合了同步音视频生成、高保真度和生产级输出。其开源发布并支持 LoRA 训练，使研究人员和开发者能够针对自定义应用微调模型，加速生成式 AI 的创新。 该模型采用非对称双流 DiT 架构，具有双向交叉注意力和模态感知无分类器引导。在 H100 GPU 上，其步进吞吐量高于 WAN 2.2 14B，使得高分辨率长序列生成快速且可投入生产。
 
-huggingface_papers · Hugging Face Papers · 6月18日 00:00
+github_trending · GitHub Trending · 6月19日 04:38
 
-**背景**: 运动预测对于视觉智能至关重要，它使智能体能够预测物体运动以进行规划和推理。世界坐标系中的 3D 点轨迹提供了一种与类别无关、视角稳定的表示，这种表示紧凑且可直接用于机器人操作和视频合成等下游任务。
+**背景**: LTX-2 是 Lightricks 文本到视频模型的最新版本，于 2025 年 10 月发布。它是一个扩散变换器（DiT）模型，能够根据文本提示等多种条件联合生成音频和视频。LoRA（低秩适应）是一种参数高效的微调技术，能够以最小的计算成本适应大型模型。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/papers/2606.18558">Paper page - MolmoMotion: Forecasting Point Trajectories in 3 D with...</a></li>
-<li><a href="https://allenai.org/blog/molmo-motion">MolmoMotion: Language-guided 3D motion forecasting | Ai2</a></li>
-<li><a href="https://molmomotion.github.io/">MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LTX_(text-to-video_model)">LTX (text-to-video model) - Wikipedia</a></li>
+<li><a href="https://github.com/Lightricks/LTX-2">GitHub - Lightricks/LTX-2: Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.</a></li>
+<li><a href="https://ltx.io/model/ltx-2">LTX-2: Production-Grade AI Video Generation Model | LTX Model</a></li>
 
 </ul>
 </details>
 
-**标签**: `#3D motion forecasting`, `#language-conditioned`, `#robot manipulation`, `#video generation`, `#dataset`
+**标签**: `#generative-ai`, `#audio-video`, `#deep-learning`, `#python`, `#LoRA`
 
 ---
 
 <a id="item-6"></a>
-## [Kairos：面向物理 AI 的原生世界模型栈](https://huggingface.co/papers/2606.16533) ⭐️ 8.0/10
+## [MolmoMotion：语言引导的 3D 点轨迹预测](https://huggingface.co/papers/2606.18558) ⭐️ 8.0/10
 
-研究人员推出了 Kairos，这是一个原生世界模型框架，通过跨具身数据课程从多样化数据中学习，利用混合线性时间注意力维持持久状态，并支持在服务器和消费级硬件上高效部署。 Kairos 解决了物理 AI 中的关键挑战，使世界模型能够原生地从异构经验中获取知识、保持长时程状态持久性，并在实际部署中高效运行，有望加速机器人和自主系统领域的进展。 该框架引入了带有跨具身数据课程的原生预训练范式、具有混合线性时间注意力（滑动窗口、膨胀滑动窗口和门控线性注意力）的原生统一架构，以及面向低延迟部署的部署感知系统协同设计。理论界限表明，时间分解限制了长时程上的误差累积。
+研究人员推出了 MolmoMotion，这是一个从视觉历史和语言指令预测 3D 点轨迹的模型及大规模数据集，并附带一个人工验证的基准 PointMotionBench。 这项工作为机器人和视频生成提供了更准确、更通用的运动预测，将语言理解与 3D 空间推理连接起来。 该模型支持自回归坐标预测和基于流匹配的轨迹生成，数据集 MolmoMotion-1M 包含 116 万个带有动作描述的 3D 点轨迹视频。
 
 huggingface_papers · Hugging Face Papers · 6月18日 00:00
 
-**背景**: 世界模型是构建物理现实内部表征的 AI 系统，能够理解因果关系、预测未来状态并规划行动。它们正从被动的视觉生成器转变为物理 AI 的基础设施，物理 AI 包括自动驾驶和机器人等应用。跨具身学习聚合来自多种机器人类型的数据以提高泛化能力。
+**背景**: 运动预测对视觉智能至关重要，使智能体能够预测物体运动以进行规划和交互。传统方法通常依赖 2D 或类别特定的表示，而 3D 点轨迹提供了类别无关、视角稳定的替代方案。语言条件则允许目标导向的预测。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://govt.chinadaily.com.cn/s/202512/03/WS693019bd498e23165e06b500/world-models-new-driver-for-auto-autonomy.html">World models new driver for auto autonomy | govt.chinadaily.com.cn</a></li>
-<li><a href="https://www.humai.blog/world-models-the-quiet-ai-revolution-that-could-make-llms-look-like-a-warmup-act/">World Models : The Quiet AI Revolution That Could Make LLMs Look...</a></li>
+<li><a href="https://huggingface.co/papers/2606.18558">Paper page - MolmoMotion: Forecasting Point Trajectories in 3 D with...</a></li>
+<li><a href="https://molmomotion.github.io/">MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction</a></li>
+<li><a href="https://allenai.org/blog/molmo-motion">MolmoMotion: Language-guided 3 D motion forecasting | Ai2</a></li>
+
+</ul>
+</details>
+
+**标签**: `#3D motion forecasting`, `#language-conditioned`, `#robotics`, `#video generation`, `#dataset`
+
+---
+
+<a id="item-7"></a>
+## [Kairos：面向物理 AI 的原生世界模型栈](https://huggingface.co/papers/2606.16533) ⭐️ 8.0/10
+
+Kairos 提出了一个面向物理 AI 的原生世界模型框架，能够从异构经验中学习，通过混合时间注意力维持持久状态，并支持高效部署。 这项工作解决了为物理 AI 构建世界模型的关键挑战，例如从多样化数据中学习和维持长期状态持久性，有望实现更强大、更高效的机器人系统。 Kairos 采用了跨具身数据课程进行预训练，一种结合滑动窗口、膨胀滑动窗口和门控线性注意力的混合线性时间注意力机制，以及面向部署的系统协同设计以实现低延迟推理。
+
+huggingface_papers · Hugging Face Papers · 6月18日 00:00
+
+**背景**: 世界模型是 AI 系统用于模拟和预测环境的内部表示。在物理 AI（如机器人）中，世界模型帮助智能体规划行动并从经验中学习。传统世界模型往往难以处理异构数据源和长期记忆，而 Kairos 旨在解决这些问题。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)">World model (artificial intelligence) - Wikipedia</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/world-models/">What Is a World Model? | NVIDIA Glossary</a></li>
 <li><a href="https://medium.com/@jianming.wang07/robotic-foundation-models-corl-2024-sergey-levines-talk-notes-e42bb3eb618e">“How Real-World Cross-Embodiment Data Will Lead to Robotic Foundation Models”-CoRL 2024 Sergey Levine’s Talk Notes | by Wang Jianming | Medium</a></li>
 
 </ul>
 </details>
 
-**标签**: `#world models`, `#physical AI`, `#robotics`, `#deep learning`, `#AI infrastructure`
-
----
-
-<a id="item-7"></a>
-## [Token 压缩幻觉：对 RTK 的质疑](https://mroczek.dev/articles/the-token-compression-illusion-why-im-skeptical-of-rtk/) ⭐️ 8.0/10
-
-一篇由软件工程师撰写的批判性文章质疑 RTK（Rust Token Killer）的准确性和成本节省有效性，RTK 是一个声称可将常见开发命令的 LLM token 消耗减少 60-90%的 CLI 代理。 这种质疑凸显了 LLM 工具生态系统中对严格基准测试和透明度的日益增长的需求，在该生态系统中，炒作往往超过证据，影响依赖成本节省声明的开发者和公司。 文章指出，RTK 声称的节省可能被游戏化（例如，在 390 万输入 token 中节省 370 万 token），并且缺乏准确性基准，尽管一些用户报告没有关键信息丢失。
-
-hackernews · lackoftactics · 6月18日 17:37 · [社区讨论](https://news.ycombinator.com/item?id=48588755)
-
-**背景**: Token 压缩技术旨在减少 LLM 处理的 token 数量，从而降低成本和延迟。RTK 是一个开源的 Rust 二进制文件，在 CLI 输出到达 LLM 上下文之前对其进行过滤和压缩，声称平均压缩率高达 89%。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/rtk-ai/rtk">GitHub - rtk-ai/rtk: CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies · GitHub</a></li>
-<li><a href="https://www.rtk-ai.app/">RTK — Rust Token Killer</a></li>
-<li><a href="https://madplay.github.io/en/post/rtk-reduce-ai-coding-agent-token-usage">I Only Compressed CLI Output, Yet Tokens Dropped by 80%? | MadPlay🚀</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区讨论呈现两极分化：一些人同意质疑，呼吁更严格的评估，而另一些人则为 RTK 辩护，指出 token 节省是真实的，且未观察到准确性下降。作者承认撰写文章是因为对炒作和缺乏准确性指标的担忧。
-
-**标签**: `#LLM`, `#token compression`, `#RTK`, `#critical analysis`, `#AI engineering`
+**标签**: `#world models`, `#physical AI`, `#robotics`, `#deep learning`, `#computer vision`
 
 ---
 
 <a id="item-8"></a>
-## [参议院通过《拯救 OOI 法案》保护海洋研究](https://www.nsf.gov/news/update-ocean-observatories-initiative) ⭐️ 8.0/10
+## [新版 Outlook 比经典版慢 10 秒](https://www.windowslatest.com/2026/06/15/microsofts-new-outlook-takes-10-seconds-to-do-what-outlook-classic-does-instantly-on-windows/) ⭐️ 8.0/10
 
-6 月 17 日，美国参议院一致通过了《拯救 OOI 法案》，这项两党法案禁止国家科学基金会拆除或缩减海洋观测计划（OOI）。 这项立法保护了一个关键的气候研究网络，该网络提供实时海洋数据，对于理解气候变化、厄尔尼诺和海洋生态系统至关重要，避免了全球科学的重大损失。 该法案仍需在众议院通过才能成为法律。OOI 在大西洋和太平洋的五个阵列上运行着 900 多个仪器，收集物理、化学和生物数据。
+根据用户报告和社区讨论，基于 WebView2 构建的微软新版 Outlook for Windows 执行某些操作需要长达 10 秒，而经典版 Outlook 则是瞬间完成。 这一性能差距凸显了基于 Web 的桌面应用比原生应用更慢的行业趋势，影响了用户的生产力以及对微软软件方向的信任。 新版 Outlook 使用 Microsoft Edge WebView2 嵌入网页内容，与基于原生 MAPI 的经典版 Outlook 相比引入了额外开销。用户报告称，即使是打开邮件或切换文件夹等简单操作也会明显延迟。
 
-hackernews · andsoitis · 6月18日 23:41 · [社区讨论](https://news.ycombinator.com/item?id=48593093)
+hackernews · Adam-Hincu · 6月18日 12:19 · [社区讨论](https://news.ycombinator.com/item?id=48584207)
 
-**背景**: 海洋观测计划（OOI）是由美国国家科学基金会资助的海洋观测站网络，测量从海底到大气的各种变量。它为气候、海洋酸化和海洋生态系统研究提供长期实时数据。《拯救 OOI 法案》的提出是为了应对 OOI 可能因预算或政策决定而被拆除的担忧。
+**背景**: WebView2 是微软的一个控件，允许开发者使用基于 Chromium 的 Edge 渲染引擎将网页技术（HTML、CSS、JavaScript）嵌入到原生 Windows 应用程序中。虽然它支持混合应用和现代 UI，但与完全原生实现相比可能存在性能问题。经典版 Outlook 是一个成熟的原生 Windows 应用程序，针对邮件和日历操作进行了优化。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.merkley.senate.gov/merkley-murkowski-lead-the-charge-to-block-the-dismantling-of-one-of-a-kind-ocean-monitoring-network/">Merkley, Murkowski Lead the Charge to Block the Dismantling of One-Of ...</a></li>
-<li><a href="https://www.govtrack.us/congress/bills/119/s4822">Saving the OOI Act of 2026 (S. 4822) - GovTrack.us</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Ocean_Observatories_Initiative">Ocean Observatories Initiative</a></li>
+<li><a href="https://en.wikipedia.org/wiki/WebView2">WebView2</a></li>
+<li><a href="https://support.microsoft.com/en-us/office/feature-comparison-between-new-outlook-and-classic-outlook-de453583-1e76-48bf-975a-2e9cd2ee16dd">Feature comparison between new Outlook and classic Outlook | Microsoft Support</a></li>
+<li><a href="https://coregptapps.com/blog/new-outlook-vs-classic-outlook-what-changed">New Outlook vs Classic Outlook: What Changed and What to Do (2026) | CoreGPT Blog</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者表达了宽慰和乐观，一些人指出了国会与管理和预算办公室之间关于扣押资金的更广泛背景。一位用户质疑是否有陷阱，而其他人则强调了 NASA 和其他机构面临的持续挑战。
+**社区讨论**: 社区评论对性能下降表示不满，用户指出 Windows 11 上的记事本也需要几秒钟才能加载。一些人认为问题不在于 Web 应用本身，而是实现不佳，并以 Fastmail 的快速网页客户端作为反例。其他人则质疑微软的质量控制，考虑到该公司曾有内部测试（dogfooding）的传统。
 
-**标签**: `#science policy`, `#oceanography`, `#climate research`, `#US legislation`
+**标签**: `#Microsoft`, `#Outlook`, `#performance`, `#web apps`, `#desktop software`
 
 ---
 
 <a id="item-9"></a>
-## [SK 电信深陷 Anthropic Mythos 争议中心](https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/) ⭐️ 8.0/10
+## [参议院通过《拯救 OOI 法案》保护海洋观测站](https://www.nsf.gov/news/update-ocean-observatories-initiative) ⭐️ 8.0/10
 
-《连线》报道称，韩国电信巨头、Anthropic 投资者 SK 电信被白宫要求撤销对 Anthropic 的 Mythos AI 模型的访问权限，原因是出口管制担忧，从而引发了 Mythos 争议。 这一事件凸显了 AI 领域不断升级的地缘政治紧张局势，出口管制被用于限制外国对先进模型的访问，可能重塑国际 AI 合作与投资格局。 SK 电信在 2023 年向 Anthropic 投资 1 亿美元，并建立商业合作伙伴关系以开发电信专用 AI 模型。白宫干预专门针对 Mythos，Anthropic 立即遵从。
+6 月 17 日，美国参议院一致通过《拯救 OOI 法案》，禁止在完成全面审查前拆除海洋观测计划（OOI）。 这项立法行动阻止了价值 3.68 亿美元的海洋监测网络被拆除，确保气候研究、海啸预警和渔业管理的数据持续收集。 该法案仍需众议院通过才能成为法律。OOI 由五个阵列的 900 多个仪器组成，实时收集海洋物理、化学和生物变量数据。
 
-hackernews · dstala · 6月18日 12:44 · [社区讨论](https://news.ycombinator.com/item?id=48584484)
+hackernews · andsoitis · 6月18日 23:41 · [社区讨论](https://news.ycombinator.com/item?id=48593093)
 
-**背景**: Mythos 是 Anthropic 的强大 AI 模型，出口管制是政府对向外国实体分享敏感技术的限制。该争议涉及对中国关联团体访问 Mythos 的怀疑，导致对外国国民的更广泛限制。
+**背景**: 海洋观测计划（OOI）是美国国家科学基金会（NSF）的一个重大研究设施，提供从海底到大气层的长期实时海洋数据。由于预算纠纷和管理与预算办公室（OMB）的扣押行动，它面临被拆除的风险。《拯救 OOI 法案》由参议员 Merkley 和 Murkowski 提出，旨在阻止在 NSF 完成审查前拆除该网络。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/">The Korean Telecom Giant at the Center of... | WIRED</a></li>
-<li><a href="https://www.semafor.com/article/06/13/2026/white-house-move-to-limit-anthropic-linked-to-concerns-about-chinese-access-to-mythos">White House move to limit Anthropic linked to concerns about Chinese access to Mythos | Semafor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ocean_Observatories_Initiative">Ocean Observatories Initiative</a></li>
+<li><a href="https://www.merkley.senate.gov/merkley-murkowski-lead-the-charge-to-block-the-dismantling-of-one-of-a-kind-ocean-monitoring-network/">Merkley, Murkowski Lead the Charge to Block the... - Merkley</a></li>
+<li><a href="https://oceanobservatories.org/">The Ocean Observatories Initiative (OOI)</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者争论白宫行动是否出于政治动机，有人认为这是针对 Anthropic 因其被认为的自由派倾向，而其他人则关注对外国公司对美国 AI 供应商信任的实际影响。
+**社区讨论**: 评论者表达了宽慰和乐观，有人指出广泛的愤怒推动了变革。另一位评论者强调了扣押问题影响其他科学机构的更广泛背景，认为这是一个有希望的迹象，但并非完全胜利。
 
-**标签**: `#AI`, `#geopolitics`, `#export controls`, `#Anthropic`, `#SK Telecom`
+**标签**: `#oceanography`, `#science funding`, `#US politics`, `#research infrastructure`
 
 ---
 
 <a id="item-10"></a>
-## [AI 推理模型助力诊断儿童罕见遗传病](https://openai.com/index/diagnose-rare-childhood-diseases) ⭐️ 8.0/10
+## [SK 电信卷入 Anthropic Mythos 出口管制风波](https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/) ⭐️ 8.0/10
 
-研究人员使用 OpenAI 的推理模型分析儿童罕见遗传病的未解病例，成功做出 18 个此前医生未能诊断出的新诊断。 这展示了先进 AI 推理在医疗领域的实际影响力，有望减少罕见病的诊断延迟，改善患儿及其家庭的治疗结果。 该研究使用了 OpenAI 的 o1 推理模型，该模型在诊断推理任务中优于早期模型甚至人类医生，近期 HealthBench 等基准测试已证实这一点。
+《连线》报道称，白宫要求 Anthropic 撤销 SK 电信对其 Claude Mythos AI 模型的访问权限，从而引发了对 Anthropic 最强大 AI 技术的出口管制。 这一事件凸显了地缘政治紧张局势如何直接影响 AI 监管，可能为外国投资美国 AI 实验室及获取先进模型开创先例。 SK 电信于 2023 年向 Anthropic 投资 1 亿美元，并建立商业合作伙伴关系以开发电信专用 AI 模型。Anthropic 立即遵从了白宫的要求。
 
-rss · OpenAI Blog · 6月18日 08:00
+hackernews · dstala · 6月18日 12:44 · [社区讨论](https://news.ycombinator.com/item?id=48584484)
 
-**背景**: 罕见遗传病常因复杂性及缺乏专科知识而多年无法确诊。结合临床数据、遗传信息和医学文献的 AI 模型能够提出诊断建议并提供推理过程，帮助医生识别可能遗漏的疾病。
+**背景**: Anthropic 的 Mythos 模型是一款能力极强的 AI 系统，受到严格的出口管制。特朗普政府一直在审查外国对先进 AI 的访问，尤其是来自可能与中国有关联的公司。韩国电信巨头 SK 电信投资了 Anthropic 并获得了 Mythos 的访问权限，引发了国家安全担忧。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://openai.com/index/healthbench/">Introducing HealthBench - OpenAI</a></li>
+<li><a href="https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/">The Korean Telecom Giant at the Center of... | WIRED</a></li>
+<li><a href="https://digg.com/tech/okzqtvwb">White House orders Anthropic to revoke SK Telecom 's access to...</a></li>
+<li><a href="https://timesofindia.indiatimes.com/technology/tech-news/korean-telecom-giant-that-made-white-house-decide-that-it-could-not-trust-anthropic-to-safeguard-its-latest-ai-models/articleshow/131832878.cms">Korean Telecom giant that made White House... - The Times of India</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 评论者争论此举是针对“倾向自由派”公司的政治动机，还是真正的安全措施。一些人认为这损害了美国信誉，并阻碍外国投资美国 AI 初创公司。
+
+**标签**: `#AI regulation`, `#geopolitics`, `#export controls`, `#Anthropic`, `#SK Telecom`
+
+---
+
+<a id="item-11"></a>
+## [AI 推理模型助力诊断罕见儿童疾病](https://openai.com/index/diagnose-rare-childhood-diseases) ⭐️ 8.0/10
+
+研究人员使用 OpenAI 推理模型识别出 18 例儿童罕见遗传病的新诊断，推动了 AI 辅助医疗诊断的发展。 这展示了 AI 推理模型在医疗领域的实际应用，为通常难以诊断的罕见病实现了切实的诊断突破。 该模型还在一个神经发育病例中发现了白癜风可能的新的机制解释，突出了 S1PR1 中一个 11 个氨基酸的缺失。
+
+rss · OpenAI Blog · 6月18日 08:00
+
+**背景**: 罕见遗传病影响着全球数百万儿童，但由于其复杂性常常未被诊断。AI 推理模型可以分析临床数据、遗传信息和医学文献，提出诊断建议并提供背后的推理，从而可能减少诊断延误。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openai.com/index/diagnose-rare-childhood-diseases/">Using AI to help physicians diagnose rare genetic diseases... | OpenAI</a></li>
+<li><a href="https://www.npr.org/2026/04/30/nx-s1-5804474/ai-doctors-openai-patient-care-diagnosis">An AI model beat doctors at diagnosing patients, in a new study : NPR</a></li>
 <li><a href="https://www.nature.com/articles/d41586-026-00290-9">AI succeeds in diagnosing rare diseases</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI in Healthcare`, `#Rare Diseases`, `#OpenAI`, `#Reasoning Models`, `#Medical Diagnosis`
-
----
-
-<a id="item-11"></a>
-## [行李箱机器人通过真实气体传感器改变 LLM 采样器而“嗨”起来](https://www.reddit.com/r/LocalLLaMA/comments/1u9a17y/my_suitcase_robot_gets_high_now_off_a_real_gas/) ⭐️ 8.0/10
-
-一个名为 Sparky 的行李箱机器人使用 MQ-2 气体传感器检测烟雾，并实时动态调整 LLM 采样参数（temperature、top_p、top_k），使其响应逐渐变得“迷幻”且多样化，无需任何预设的“嗨模式”。 该项目展示了物理传感器输入与 LLM 采样的新颖集成，使具身 AI 能够产生真正涌现且不可预测的行为。它为交互式艺术和机器人技术开辟了创造性可能性，使环境刺激直接影响 AI 认知。 MQ-2 传感器每 0.5 秒读取一次，烟雾触发转化为 0-10 的相位，并在数分钟内衰减。随着相位增加，temperature 从 1.0 升至约 1.6，top_p 从 0.95 升至 0.99，top_k 从 64 升至 120，导致选择低概率 token。
-
-reddit · r/LocalLLaMA · /u/CreativelyBankrupt · 6月18日 15:52
-
-**背景**: LLM 采样参数如 temperature、top_p 和 top_k 控制生成文本的随机性和多样性。较高的 temperature 增加随机性，而 top_p（核采样）和 top_k 限制 token 池。MQ-2 是一种半导体气体传感器，可检测多种可燃气体和烟雾，但无法区分大麻烟雾与其他烟雾或 VOC。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://grokipedia.com/page/MQ-2_and_MQ-9_gas_sensors">MQ-2 and MQ-9 gas sensors</a></li>
-<li><a href="https://aviralrma.medium.com/understanding-llm-parameters-c2db4b07f0ee">Understanding temperature, top_p, top_k, logit_bias in LLM parameters</a></li>
-<li><a href="https://www.promptingguide.ai/introduction/settings">LLM Settings - Prompt Engineering Guide</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区称赞了这种创意集成和幽默感，许多人询问传感器的特异性。创作者指出 MQ-2 无法区分大麻烟雾与普通烟雾，并征求硬件改进建议，引发了关于气体传感器阵列和机器学习方法的讨论。
-
-**标签**: `#LLM`, `#embodied AI`, `#creative coding`, `#sensor integration`, `#local LLM`
+**标签**: `#AI`, `#healthcare`, `#rare diseases`, `#diagnostics`, `#OpenAI`
 
 ---
 
 <a id="item-12"></a>
-## [开源模型市场份额超越闭源模型](https://www.reddit.com/r/LocalLLaMA/comments/1u96545/oss_models_decisively_overtook_proprietary_models/) ⭐️ 8.0/10
+## [行李箱机器人通过真实气体传感器变嗨](https://www.reddit.com/r/LocalLLaMA/comments/1u9a17y/my_suitcase_robot_gets_high_now_off_a_real_gas/) ⭐️ 8.0/10
 
-根据 OpenRouter 最近三个月的数据，开源模型在市场份额上已决定性地超越闭源模型，标志着 AI 模型格局的历史性转变。 这一趋势表明开源 AI 的信任度和采用率正在上升，可能加速创新、降低成本，并使全球开发者和企业更容易获得先进的 AI 能力。 数据来自 OpenRouter（一个统一 API 网关，可在 60 多个提供商之间路由请求），分析显示开源模型目前消耗的总 token 份额已超过闭源模型。
+一个名为 Sparky 的行李箱机器人使用 MQ-2 气体传感器，根据烟雾暴露实时动态调整 LLM 采样参数（temperature、top_p、top_k），产生真正多变且“迷糊”的回应，没有任何脚本化的“嗨模式”。 这展示了物理传感器与 LLM 推理的新颖集成，实现了涌现的、非脚本化的行为，可能激发机器人和创意编码领域的新交互式 AI 应用。 MQ-2 传感器每 0.5 秒读取一次，与自适应清洁空气基线对比，将烟雾冲击转换为 0-10 的相位，该相位在几分钟内衰减；该相位每 token 重新配置采样器，temperature 范围从 1.0 到约 1.6，top_p 从 0.95 到 0.99，top_k 从 64 到 120。
 
-reddit · r/LocalLLaMA · /u/Comfortable-Rock-498 · 6月18日 13:21
+reddit · r/LocalLLaMA · /u/CreativelyBankrupt · 6月18日 15:52
 
-**背景**: OpenRouter 是一家以开发者为中心的 AI 基础设施初创公司，提供访问多个提供商的各种大语言模型（LLM）的市场。该平台跟踪使用统计数据，包括按模型划分的 token 消耗量，这可以作为市场份额的代理指标。来自 Meta、Mistral 等公司的开源模型因其透明性、可定制性和较低成本而日益受到欢迎。
+**背景**: LLM 采样参数如 temperature、top_p 和 top_k 控制生成文本的随机性和多样性。更高的 temperature 增加随机性，而 top_p 和 top_k 过滤候选 token 集。MQ-2 是一种金属氧化物半导体气体传感器，可检测多种可燃气体和烟雾，但无法区分大麻烟雾与其他烟雾或 VOC。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://openrouter.ai/state-of-ai">State of AI 2025: 100T Token LLM Usage Study | OpenRouter</a></li>
-<li><a href="https://openrouter.ai/data">Data - Authoritative AI Usage Data for Research | OpenRouter</a></li>
-<li><a href="https://openrouter.ai/models">Models | OpenRouter</a></li>
+<li><a href="https://grokipedia.com/page/MQ-2_and_MQ-9_gas_sensors">MQ-2 and MQ-9 gas sensors</a></li>
+<li><a href="https://www.mouser.com/datasheet/2/321/605-00008-MQ-2-Datasheet-370464.pdf">TECHNICAL DATA MQ-2 GAS SENSOR</a></li>
+<li><a href="https://letsdatascience.com/blog/llm-sampling-temperature-top-k-top-p-and-min-p-explained">LLM Sampling Parameters Explained: Intuition to Math | Let's Data Science</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论普遍认同该数据，用户指出开源模型在微调和隐私方面的实际优势。一些评论者对方法论提出质疑，认为 OpenRouter 数据可能不代表整个市场，但总体情绪对开源势头持积极态度。
+**社区讨论**: 创作者向硬件社区询问能否区分大麻烟雾与普通烟雾和 VOC 的传感器，指出 MQ-2 的局限性。该帖子受到好评，用户可能讨论传感器替代方案和创意集成。
 
-**标签**: `#open-source`, `#AI`, `#market share`, `#LLMs`, `#OpenRouter`
+**标签**: `#LLM`, `#robotics`, `#creative coding`, `#sensor integration`, `#emergent behavior`
 
 ---
 
 <a id="item-13"></a>
-## [Flux.2-klein 被用作视频模型](https://www.reddit.com/r/StableDiffusion/comments/1u9lmzq/flux2klein_is_secretly_a_video_model_showing_some/) ⭐️ 8.0/10
+## [GLM-5.2 在 AA-Briefcase 智能体工作评估中超越 GPT-5.5](https://www.reddit.com/r/LocalLLaMA/comments/1u9myi6/glm52_is_above_gpt55_in_aabriefcase_artificial/) ⭐️ 8.0/10
 
-一位 Reddit 用户展示了一种方法，通过结合光流和修补技术，将 Flux.2-klein 图像模型重新用于视频编辑，无需任何微调或 LoRA 即可生成编辑后的视频序列。 这项技术表明，图像模型可以被创造性地用于视频任务，可能降低视频生成和编辑的门槛，无需专门的视频模型或大量训练。 该流程使用光流将编辑后的第一帧扭曲到后续帧，应用前后一致性检查来遮蔽遮挡区域，然后使用 Flux.2-klein 的修补功能填充遮蔽区域，但结果仍然存在抖动。
+开源模型 GLM-5.2 在 Artificial Analysis 新推出的智能体知识工作评估基准 AA-Briefcase 上取得了比 GPT-5.5 更高的分数。这是开源模型首次在该特定基准上超越领先的专有模型。 这一结果表明，开源模型在复杂智能体任务上正在缩小与专有前沿模型的差距，可能减少对云端 AI 服务的依赖。同时，它也验证了 AA-Briefcase 基准作为衡量真实世界知识工作能力的有意义指标。 GLM-5.2 模型采用混合专家（MoE）架构，总参数量 744B，激活参数 40B，并使用 Unsloth 的 UD-IQ2_M 方法量化至 2 比特。用户在本地配置了 4 块 RTX 3090 GPU 和 192GB DDR5 内存，解码速度约 7.3 tok/s。
+
+reddit · r/LocalLLaMA · /u/analysis_scaled · 6月19日 00:17
+
+**背景**: AA-Briefcase 是 Artificial Analysis 新推出的基准测试，旨在评估模型在复杂项目中完成真实知识工作任务的能力。GLM-5.2 是由清华大学和智谱 AI 开发的开源模型，以在编程和推理基准上的强劲表现著称。Unsloth 量化技术使得在消费级硬件上运行大型模型成为可能，且精度损失极小。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://artificialanalysis.ai/evaluations/aa-briefcase">AA - Briefcase : Agentic Knowledge Work Benchmark | Artificial Analysis</a></li>
+<li><a href="https://artificialanalysis.ai/articles/aa-briefcase">Announcing AA - Briefcase : a frontier knowledge... | Artificial Analysis</a></li>
+<li><a href="https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs">Unsloth Dynamic 2.0 GGUFs | Unsloth Documentation</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 社区对详细的硬件配置和性能分析表示赞赏，许多人对开源模型的追赶感到兴奋。部分评论者讨论了 AA-Briefcase 基准的有效性，质疑它是否真正衡量了智能体知识工作，或是否偏向某些模型架构。
+
+**标签**: `#LLM`, `#benchmark`, `#agentic AI`, `#open-source`, `#evaluation`
+
+---
+
+<a id="item-14"></a>
+## [开源模型市场份额超越专有模型](https://www.reddit.com/r/LocalLLaMA/comments/1u96545/oss_models_decisively_overtook_proprietary_models/) ⭐️ 8.0/10
+
+根据 OpenRouter 最近三个月的数据，开源模型在市场份额上已决定性地超越专有模型。这标志着 AI 模型格局的重大转变。 这一趋势表明对开源 AI 的信任和采用正在增长，可能加速创新并减少对专有供应商的依赖。它也验证了社区对开源 LLM 的投入。 数据来自 OpenRouter，一个跨多个 AI 提供商路由 API 调用的平台，提供经验使用统计。超越发生在最近三个月，表明近期快速转变。
+
+reddit · r/LocalLLaMA · /u/Comfortable-Rock-498 · 6月18日 13:21
+
+**背景**: OpenRouter 汇总来自各种 LLM 提供商（包括开源和专有）的使用数据，提供模型采用的真实世界视图。历史上，像 GPT-4 这样的专有模型占据主导地位，但开源模型因成本、透明度和社区贡献而获得发展势头。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://openrouter.ai/data">Data - Authoritative AI Usage Data for Research | OpenRouter</a></li>
+<li><a href="https://www.hostinger.com/tutorials/llm-statistics">LLM statistics 2026: Adoption, trends , and market insights</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 社区普遍庆祝这一里程碑，许多用户指出开源模型现在提供了有竞争力的性能。一些人对数据偏差或使用的具体指标表示谨慎，但总体情绪是积极的。
+
+**标签**: `#open-source`, `#AI`, `#market share`, `#LLMs`
+
+---
+
+<a id="item-15"></a>
+## [Flux.2-klein 通过光流与修复实现视频效果](https://www.reddit.com/r/StableDiffusion/comments/1u9lmzq/flux2klein_is_secretly_a_video_model_showing_some/) ⭐️ 8.0/10
+
+一位 Reddit 用户展示，图像生成模型 Flux.2-klein 通过结合光流和修复技术，无需微调或 LoRA 即可产生类似视频的效果。 该技术展示了一种将图像模型扩展到视频任务的创意且高效的方法，可能减少对专用视频模型的需求，并为内容创作带来新的应用。 该流程计算第一帧与当前帧之间的光流，对处理后的帧进行扭曲，应用前后向一致性检查来遮挡被遮挡区域，并使用 Flux 结合修复提示来填充这些区域。
 
 reddit · r/StableDiffusion · /u/TensorForger · 6月18日 23:18
 
-**背景**: Flux.2-klein 是 Black Forest Labs 推出的 40 亿参数整流流变压器，用于文本到图像生成和多参考编辑。光流估计帧间运动，修补则填充缺失区域。该方法结合这些技术，从静态图像模型实现类似视频的效果。
+**背景**: Flux.2-klein 是 Black Forest Labs 推出的一系列高效图像生成模型，有 4B 和 9B 参数版本，支持文生图和多参考编辑。光流估计帧间像素运动，修复则填充缺失或遮罩区域。前后向一致性检查有助于检测遮挡以减少伪影。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://huggingface.co/black-forest-labs/FLUX.2-klein-4B">black-forest-labs/FLUX.2-klein-4B · Hugging Face</a></li>
 <li><a href="https://bfl.ai/models/flux-2-klein">FLUX.2 [klein] - Fast, Efficient Image Generation | Black Forest Labs</a></li>
+<li><a href="https://huggingface.co/black-forest-labs/FLUX.2-klein-9B">black-forest-labs/FLUX.2-klein-9B · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 上的讨论可能称赞其创造性使用和技术深度，一些人指出输出抖动且有改进空间。用户可能讨论替代的光流方法或修补策略以提高质量。
+**社区讨论**: 社区认为该方法巧妙且令人印象深刻，获得大量点赞和评论称赞其创意。一些用户讨论了潜在的改进和局限性，如抖动问题以及需要更好的时间一致性。
 
-**标签**: `#Flux`, `#video generation`, `#optical flow`, `#inpainting`, `#generative AI`
-
----
-
-<a id="item-14"></a>
-## [RNN vs Transformer vs SSM：AI 记忆应该放在哪里？](https://www.reddit.com/r/artificial/comments/1u9ba5s/rnns_vs_transformers_vs_ssms_where_should_ai/) ⭐️ 8.0/10
-
-一篇 Reddit 帖子从新颖的角度比较了 RNN、Transformer 和 SSM：记忆存在于何处——是微小的循环状态、不断增长的 KV 缓存，还是模型的网络结构——并指出记忆与计算的比例是关键区别。 这种框架将 AI 架构的争论从循环与注意力转向更根本的记忆设计问题，可能影响未来面向持续学习和高效长上下文处理的模型开发。 帖子指出 RNN 的记忆与计算比例不佳（O(N^2)参数对 O(N)状态），而 Transformer 将过去激活存储在随序列长度增长的 KV 缓存中。SSM 和 BDH 等架构旨在将记忆更接近模型的连接结构，使用更大的神经元空间和稀疏正状态。
-
-reddit · r/artificial · /u/dank_philosopher · 6月18日 16:39
-
-**背景**: RNN（循环神经网络）通过维护每一步更新的隐藏状态来处理序列，但该状态是瓶颈。Transformer 使用自注意力和 KV 缓存来关注所有之前的 token，支持并行训练但需要不断增长的内存。SSM（状态空间模型）使用随时间演化的压缩状态表示，提供了折中方案。记忆与计算的比例指的是模型相对于其计算能力拥有的记忆容量。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://huggingface.co/blog/lbourdois/get-on-the-ssm-train">Introduction to State Space Models (SSM)</a></li>
-<li><a href="https://medium.com/@joaolages/kv-caching-explained-276520203249">Transformers KV Caching Explained | by João Lages | Medium</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Neural_network_(machine_learning)">Neural network (machine learning) - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 讨论线程中包含了对这些观点的实质性评论，一些人同意记忆架构是一个被低估的比较维度，而另一些人质疑 SSM 是否真正解决了记忆瓶颈或只是转移了它。总体情绪是积极且富有学术探讨精神的。
-
-**标签**: `#RNNs`, `#Transformers`, `#SSMs`, `#memory architecture`, `#continual learning`
-
----
-
-<a id="item-15"></a>
-## [棋盘 FEN 揭示 VLM 空间推理缺陷](https://www.reddit.com/r/artificial/comments/1u9e5kn/a_chessboard_is_a_surprisingly_good_way_to_catch/) ⭐️ 8.0/10
-
-VideoDB Labs 的研究人员发现，视觉语言模型（VLM）能正确识别棋子，但在要求输出 FEN 字符串时经常将棋子放在错误的格子上，这暴露了其在精确空间推理和结构化输出准确性方面的缺陷。 这一发现凸显了 VLM 能力中的一个关键缺口，而宽松的描述性基准测试无法捕捉到这一点，对需要精确空间理解的生产系统（如机器人或文档分析）有直接影响。 该基准测试使用 Forsyth–Edwards Notation（FEN）——一种棋盘位置的标准化文本表示——来测试 VLM 将视觉布局映射为结构化字符串的能力；像 GPT-4V 这样的模型尽管能识别棋子类型，却经常混淆棋子位置。
-
-reddit · r/artificial · /u/Apart-Student-7298 · 6月18日 18:24
-
-**背景**: Forsyth–Edwards Notation（FEN）是一种单行字符串，编码了棋盘上所有棋子的位置、轮到哪一方走棋、王车易位权利以及其他游戏状态。它广泛应用于国际象棋软件和数据库中。VLM 是同时处理图像和文本的 AI 模型，但其空间推理能力仍是一个已知的弱点。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Forsyth–Edwards_Notation">Forsyth–Edwards Notation - Wikipedia</a></li>
-<li><a href="https://www.chess.com/terms/fen-chess">FEN (Forsyth-Edwards Notation) - Chess Terms - Chess .com</a></li>
-<li><a href="https://github.com/mll-lab-nu/Awesome-Spatial-Intelligence-in-VLM">GitHub - mll-lab-nu/Awesome-Spatial-Intelligence-in-VLM: A paper list for spatial reasoning · GitHub</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 上的讨论普遍认为这是一个巧妙的基准测试，用户指出在图表解析和地图阅读等任务中存在类似的失败。一些人建议，在 FEN 等结构化输出上进行训练可以提高空间推理能力，而另一些人则质疑这是否是 Transformer 架构固有的问题。
-
-**标签**: `#VLM`, `#spatial reasoning`, `#benchmarking`, `#AI evaluation`, `#chess`
+**标签**: `#Flux`, `#image-to-video`, `#optical flow`, `#inpainting`, `#generative AI`
 
 ---
