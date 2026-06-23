@@ -5,88 +5,150 @@ date: 2026-06-23
 lang: en
 ---
 
-> From 132 items, 15 important content pieces were selected
+> From 131 items, 15 important content pieces were selected
 
 ---
 
-1. [Valve Launches Steam Machine with Anti-Bot Reservation System](#item-1) ⭐️ 9.0/10
-2. [OpenMontage: First Open-Source Agentic Video Production System](#item-2) ⭐️ 8.0/10
-3. [Anthropic Cybersecurity Skills Repository Hits 956 Stars in a Day](#item-3) ⭐️ 8.0/10
-4. [Playful Agentic Robot Learning Boosts Skill Reuse](#item-4) ⭐️ 8.0/10
-5. [S-Agent: Spatial Tool-Use Boosts VLM 3D Reasoning](#item-5) ⭐️ 8.0/10
-6. [Chevron and Microsoft Sign 20-Year Gas Power Deal for Texas Data Center](#item-6) ⭐️ 8.0/10
-7. [Mitchell Hashimoto Pledges $400k to Zig Software Foundation](#item-7) ⭐️ 8.0/10
-8. [Claude Code's Extended Thinking Output Is a Lossy Summary](#item-8) ⭐️ 8.0/10
-9. [Linux Secure Boot Certificates Expiring in 2025](#item-9) ⭐️ 8.0/10
-10. [Codex logging bug may write TBs to local SSDs](#item-10) ⭐️ 8.0/10
-11. [AI Security Beyond Cybersecurity: Kolter & Fredrikson](#item-11) ⭐️ 8.0/10
-12. [GLM-5.2 Marks a Step Change for Open Agents](#item-12) ⭐️ 8.0/10
-13. [OpenAI Launches Daybreak Security Tools](#item-13) ⭐️ 8.0/10
-14. [DeepSeek Raises $7.4B at $60B Valuation](#item-14) ⭐️ 8.0/10
-15. [Chinese Hackers Reverse-Engineer Tesla V100, Create Custom GPU](#item-15) ⭐️ 8.0/10
+1. [Valve Launches Steam Machine with Open Hardware](#item-1) ⭐️ 9.0/10
+2. [Prompt Injection Exploits Role Confusion in LLMs](#item-2) ⭐️ 9.0/10
+3. [DeepSeek Raises $7.4B at $60B Valuation](#item-3) ⭐️ 9.0/10
+4. [Chinese Hackers Clone NVIDIA Tesla V100 GPU](#item-4) ⭐️ 9.0/10
+5. [OpenMontage: First Open-Source Agentic Video Production System](#item-5) ⭐️ 8.0/10
+6. [817 Cybersecurity Skills for AI Agents Mapped to 6 Frameworks](#item-6) ⭐️ 8.0/10
+7. [Playful Robot Learning Boosts Skill Acquisition](#item-7) ⭐️ 8.0/10
+8. [S-Agent: Spatial Tool-Use for Continuous 3D Reasoning](#item-8) ⭐️ 8.0/10
+9. [Mitchell Hashimoto pledges $400k to Zig Software Foundation](#item-9) ⭐️ 8.0/10
+10. [Die Analysis of 8087 Coprocessor's Fast Bit Shifter](#item-10) ⭐️ 8.0/10
+11. [Claude Code's Extended Thinking Output Is a Lossy Summary](#item-11) ⭐️ 8.0/10
+12. [Linux Secure Boot Certificates Expire in 2025](#item-12) ⭐️ 8.0/10
+13. [Codex logging bug may write TBs to local SSDs](#item-13) ⭐️ 8.0/10
+14. [AI Security Is Not Just Cybersecurity with AI](#item-14) ⭐️ 8.0/10
+15. [Microsoft Open-Sources FastContext for LLM Coding Agents](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Valve Launches Steam Machine with Anti-Bot Reservation System](https://store.steampowered.com/news/group/45479024/view/685257114654870245) ⭐️ 9.0/10
+## [Valve Launches Steam Machine with Open Hardware](https://store.steampowered.com/news/group/45479024/view/685257114654870245) ⭐️ 9.0/10
 
-Valve officially launched the Steam Machine gaming hardware platform on June 22, 2026, with a starting price of $1,049. The launch uses a randomized reservation system designed to combat scalpers and bots, with reservations open until June 25. The Steam Machine represents Valve's return to dedicated gaming hardware, emphasizing openness and user freedom. Its anti-scalper reservation system could set a new standard for hardware launches in the gaming industry. The reservation system requires a Steam account in good standing with at least one purchase before April 17, 2026, and limits one unit per household. Valve explicitly states the hardware is not locked down, allowing users to install other operating systems or apps.
+Valve launched the Steam Machine on June 22, 2026, a gaming PC with an open hardware philosophy and a randomized reservation system to combat bots and scalpers. This launch marks Valve's return to dedicated gaming hardware with a strong emphasis on openness, potentially influencing the industry's approach to console-like PCs and anti-scalper measures. The Steam Machine starts at $1,049, uses a randomized reservation queue open until June 25, and allows users to install other operating systems or apps, reflecting Valve's 'religious' refusal to build a closed system.
 
 hackernews · theschwa · Jun 22, 17:09 · [Discussion](https://news.ycombinator.com/item?id=48632884)
 
-**Background**: The Steam Machine is a small form-factor gaming PC developed by Valve, following the earlier Steam Machines initiative from 2015 that failed to gain traction. Unlike consoles, it runs on a PC architecture and is designed to be open, allowing users to modify software freely. The reservation system is a response to widespread scalping issues seen with other hardware launches like the Steam Deck.
+**Background**: The Steam Machine is a gaming PC running SteamOS, which is based on Arch Linux and uses Proton to run Windows games. Valve previously attempted a Steam Machine initiative in 2015 but it failed to gain traction. The new model emphasizes openness and user freedom, contrasting with traditional consoles.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://thephrasemaker.com/2026/06/22/steam-machine-price-revealed-starts-at-over-1000/">Steam Machine Price Revealed, Starts At Over $1,000 - Phrasemaker</a></li>
-<li><a href="https://www.tomshardware.com/video-games/console-gaming/valve-opens-steam-machine-reservations-details-usd1-049-starting-price-randomized-queue-to-stop-scalpers-and-limited-inventory">Valve opens Steam Machine reservations — details $1,049 starting price ...</a></li>
-<li><a href="https://wccftech.com/valve-steam-machine-no-price-subsidizing/">Valve Tells Players they Shouldn't want the Steam Machine ... - Wccftech</a></li>
+<li><a href="https://www.pcgamer.com/hardware/valve-says-it-isnt-subsidizing-the-steam-machines-usd1050-price-because-of-its-religious-refusal-to-build-a-more-closed-system/">Valve says it isn't subsidizing the Steam Machine's $1050 price because of its 'religious' refusal to 'build a more closed system' | PC Gamer</a></li>
+<li><a href="https://www.tomshardware.com/video-games/console-gaming/valve-opens-steam-machine-reservations-details-usd1-049-starting-price-randomized-queue-to-stop-scalpers-and-limited-inventory">Valve opens Steam Machine reservations — details $1,049 starting price, randomized queue to stop scalpers, and limited inventory | Tom's Hardware</a></li>
+<li><a href="https://www.pcgamer.com/hardware/gaming-pcs/steam-machine-reservations/">Sign up for a Steam Machine before June 25: Valve running one-time randomized queue due to limited availability and to 'limit resellers' | PC Gamer</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments are generally positive, with users praising the anti-scalper reservation system and the openness of the platform. Some express concerns about pricing and availability, while others appreciate the authentic marketing approach shown in the gameplay video.
+**Discussion**: Community comments are largely positive, praising the randomized reservation system for fairness and the open hardware philosophy. Users also appreciated the authentic gameplay footage shown in the announcement.
 
-**Tags**: `#gaming`, `#hardware`, `#Valve`, `#Steam Machine`, `#launch`
+**Tags**: `#gaming`, `#hardware`, `#valve`, `#steam`, `#pc-gaming`
 
 ---
 
 <a id="item-2"></a>
-## [OpenMontage: First Open-Source Agentic Video Production System](https://github.com/calesthio/OpenMontage) ⭐️ 8.0/10
+## [Prompt Injection Exploits Role Confusion in LLMs](https://role-confusion.github.io/) ⭐️ 9.0/10
 
-OpenMontage, the world's first open-source agentic video production system, has been released on GitHub, gaining over 2,938 stars in a single day. It features 12 production pipelines, 52 tools, and 500+ agent skills, enabling AI coding assistants to function as full video production studios. This project democratizes professional video production by providing a free, extensible platform that integrates multiple AI capabilities. It could significantly lower the barrier for content creators, educators, and developers to produce high-quality videos without expensive software or specialized skills. The 12 pipelines cover explainers, talking heads, screen demos, cinematic trailers, animations, podcasts, localization, and documentary montages, among others. The 52 tools span video generation, image creation, text-to-speech, and more, all orchestrated by an AI assistant.
+A new paper and blog post reveal that prompt injection attacks succeed by exploiting role confusion in large language models, with human red-teamers achieving near-100% attack success rates against frontier models despite perfect benchmark scores. This research exposes a fundamental flaw in how LLMs handle role separation, undermining current security architectures that rely on role tags. It highlights the inadequacy of static benchmarks and the need for more robust defenses against adaptive human attackers. The paper shows that role tags (e.g., system vs. user) are merely formatting tricks that do not survive into the model's internal representations, making them easily spoofed by adversarial inputs. Human red-teamers can adapt attacks in real-time, whereas static benchmarks only measure defenses against known attack patterns.
 
-github_trending · GitHub Trending · Jun 23, 03:40
+hackernews · x312 · Jun 22, 15:48 · [Discussion](https://news.ycombinator.com/item?id=48631888)
 
-**Background**: Agentic video production refers to AI systems that autonomously manage complex video creation workflows, breaking down tasks into sub-steps and coordinating multiple tools. OpenMontage builds on the trend of agentic AI, where large language models act as orchestrators to control specialized modules, similar to how AI coding assistants like GitHub Copilot automate software development.
+**Background**: Prompt injection is a type of attack where malicious inputs cause LLMs to ignore developer instructions and follow user commands. Role confusion occurs when the model cannot distinguish between system-defined roles and user-provided content, leading to unintended behavior. This research connects these two phenomena, showing that role confusion is the root cause of prompt injection.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/calesthio/OpenMontage">GitHub - calesthio/OpenMontage: World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio. · GitHub</a></li>
-<li><a href="https://openalt.pro/en/tools/openmontage-6d3bd03b">OpenMontage — Video AI Tool | OpenAlt</a></li>
-<li><a href="https://pyshine.com/OpenMontage-Agentic-Video-Production-System/">OpenMontage - Agentic Video Production System with 12 Pipelines and 500+ Skills | PyShine</a></li>
+<li><a href="https://role-confusion.github.io/">Prompt Injection as Role Confusion</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prompt_injection_attack">Prompt injection attack</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Red_teaming">Red teaming</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#open-source`, `#video production`, `#AI agents`, `#Python`, `#generative AI`
+**Discussion**: Community comments highlight the practical implications: one user notes that wrapping content in <think> tags is irrelevant, as style alone can bypass guardrails. Another praises the blog-style writeup for making the research accessible. A critical comment questions the framing of roles as a security architecture, arguing LLMs provide no real security guarantees.
+
+**Tags**: `#prompt injection`, `#LLM security`, `#role confusion`, `#AI safety`, `#red teaming`
 
 ---
 
 <a id="item-3"></a>
-## [Anthropic Cybersecurity Skills Repository Hits 956 Stars in a Day](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+## [DeepSeek Raises $7.4B at $60B Valuation](https://www.reddit.com/r/LocalLLaMA/comments/1ucwyes/deepseek_raises_74b_usd_at_60b_valuation/) ⭐️ 9.0/10
 
-A GitHub repository called 'Anthropic-Cybersecurity-Skills' has been released, offering 817 structured cybersecurity skills for AI agents mapped to six major frameworks including MITRE ATT&CK, NIST CSF 2.0, and MITRE ATLAS, and compatible with over 20 platforms such as Claude Code and GitHub Copilot. This repository provides a comprehensive, standardized skill set that enables AI agents to perform cybersecurity tasks across multiple frameworks and platforms, potentially accelerating the adoption of AI in security operations and reducing the effort needed to integrate AI with existing security tools. The skills are defined using the agentskills.io open standard, cover 29 security domains, and are licensed under Apache 2.0. The repository has gained over 18,800 total stars and 2,224 forks, indicating strong community interest.
+DeepSeek has raised $7.4 billion in a funding round at a $60 billion valuation, with founder Liang Wenfeng personally investing $3 billion. This massive funding round underscores the intense investor appetite for leading AI companies and signals DeepSeek's strong market position. Liang Wenfeng's personal investment demonstrates exceptional confidence in the company's future. The $7.4 billion raise is one of the largest AI funding rounds ever, and the $60 billion valuation places DeepSeek among the most valuable private AI companies. Liang Wenfeng's $3 billion personal stake is notably large for a founder.
 
-github_trending · GitHub Trending · Jun 23, 03:40
+reddit · r/LocalLLaMA · /u/FullOf_Bad_Ideas · Jun 22, 21:03
 
-**Background**: Cybersecurity frameworks like MITRE ATT&CK catalog adversary tactics and techniques, while D3FEND catalogs defensive countermeasures. The agentskills.io standard provides a portable way to define AI agent capabilities across different platforms. This repository bridges these concepts by mapping cybersecurity skills to both offensive and defensive frameworks, making it easier for AI agents to understand and execute security tasks.
+**Background**: DeepSeek is a Chinese AI startup known for developing large language models. The company has gained attention for its competitive models and rapid growth. This funding round will likely fuel further research and development.
+
+**Discussion**: Reddit users expressed excitement about the funding, with many noting the founder's personal investment as a strong vote of confidence. Some discussed the implications for the AI industry and competition with other major players.
+
+**Tags**: `#AI`, `#funding`, `#DeepSeek`, `#valuation`, `#startup`
+
+---
+
+<a id="item-4"></a>
+## [Chinese Hackers Clone NVIDIA Tesla V100 GPU](https://www.reddit.com/r/LocalLLaMA/comments/1ucokod/chinese_hackers_latest_masterpiece_with_nvidia/) ⭐️ 9.0/10
+
+Chinese hackers reverse-engineered NVIDIA's Tesla V100 GPU, creating a fully functional clone called Tesla V100 v4 with full NVLink support, and are selling it at low prices. This breakthrough dramatically lowers the cost of high-performance AI hardware, making Tesla V100-level compute accessible to individuals and small labs, potentially disrupting the GPU market. The clone supports up to 8-way NVLink, comes in 16GB and 32GB versions priced at $220 and $590 respectively, and includes a 3-year warranty.
+
+reddit · r/LocalLLaMA · /u/General_Vermicelli53 · Jun 22, 15:58
+
+**Background**: The Tesla V100 is a 2017-era server GPU designed for AI and HPC workloads, featuring 2,963 pinouts and NVLink for high-speed multi-GPU communication. Reverse-engineering such a complex chip is extremely difficult, requiring deep expertise in hardware and signal analysis.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1ucokod/chinese_hackers_latest_masterpiece_with_nvidia/">Chinese Hackers Latest Masterpiece with NVIDIA : r/LocalLLaMA - Reddit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NVLink">NVLink - Wikipedia</a></li>
+<li><a href="https://habr.com/ru/articles/1030918/">Обзор серверного ускорителя NVIDIA Tesla V 100 16 Gb... / Хабр</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit community is highly engaged, with many users expressing amazement at the technical achievement and debating the legality and reliability of the clone. Some question whether it's a genuine reverse-engineering or a rebranded existing card, but the detailed pinout analysis and NVLink support are widely praised.
+
+**Tags**: `#hardware`, `#reverse-engineering`, `#NVIDIA`, `#GPU`, `#AI`
+
+---
+
+<a id="item-5"></a>
+## [OpenMontage: First Open-Source Agentic Video Production System](https://github.com/calesthio/OpenMontage) ⭐️ 8.0/10
+
+OpenMontage, the world's first open-source agentic video production system, has been released on GitHub, featuring 12 pipelines, 52 tools, and over 500 agent skills. It transforms AI coding assistants into full video production studios. This project democratizes professional video production by making advanced AI-driven tools freely available, potentially disrupting the content creation industry. It enables developers and creators to produce high-quality videos without traditional editing expertise. The system includes 12 production pipelines for explainers, talking heads, screen demos, cinematic trailers, animations, podcasts, localization, and documentary montages. It integrates 52 tools covering video generation, image creation, text-to-speech, and more.
+
+github_trending · GitHub Trending · Jun 23, 03:51
+
+**Background**: Agentic video production refers to AI systems that autonomously plan, execute, and edit video projects using multiple specialized agents. This approach, similar to how Cursor revolutionized coding, aims to dramatically increase the supply of quality video content by reducing production time from days to minutes.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/calesthio/OpenMontage">GitHub - calesthio/OpenMontage: World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio. · GitHub</a></li>
+<li><a href="https://a16z.com/its-time-for-agentic-video-editing/">It's time for agentic video editing | Andreessen Horowitz</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#open-source`, `#video production`, `#AI agents`, `#Python`, `#content creation`
+
+---
+
+<a id="item-6"></a>
+## [817 Cybersecurity Skills for AI Agents Mapped to 6 Frameworks](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+
+A GitHub repository, mukul975/Anthropic-Cybersecurity-Skills, has been released, providing 817 structured cybersecurity skills for AI agents, mapped to six major frameworks including MITRE ATT&CK and NIST CSF 2.0, and compatible with 20+ platforms. This repository standardizes how AI agents understand and execute cybersecurity tasks, enabling interoperability across tools like Claude Code and GitHub Copilot, and accelerating the adoption of AI in security operations. The skills cover 29 security domains and follow the agentskills.io open standard, allowing portability across platforms. The repository has gained over 956 stars in one day and 18,853 total stars.
+
+github_trending · GitHub Trending · Jun 23, 03:51
+
+**Background**: MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques, while NIST CSF 2.0 provides a framework for managing cybersecurity risks. The agentskills.io standard defines a portable format for AI agent capabilities, enabling skills to be reused across different AI platforms.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://attack.mitre.org/">MITRE ATT&CK®</a></li>
+<li><a href="https://www.nist.gov/cyberframework">Cybersecurity Framework | NIST</a></li>
 <li><a href="https://github.com/agentskills/agentskills">GitHub - agentskills/agentskills: Specification and documentation for Agent Skills · GitHub</a></li>
-<li><a href="https://atlas.mitre.org/">Mitre Atlas™</a></li>
-<li><a href="https://d3fend.mitre.org/">D3FEND Matrix | MITRE D3FEND™</a></li>
 
 </ul>
 </details>
@@ -95,183 +157,182 @@ github_trending · GitHub Trending · Jun 23, 03:40
 
 ---
 
-<a id="item-4"></a>
-## [Playful Agentic Robot Learning Boosts Skill Reuse](https://huggingface.co/papers/2606.19419) ⭐️ 8.0/10
-
-Researchers introduce Playful Agentic Robot Learning, where robots autonomously explore and build a reusable skill library through self-directed play, improving downstream task performance by up to 20.6 percentage points without additional training. This approach addresses a key limitation in current Code-as-Policy systems by enabling robots to acquire reusable skills before tasks are specified, potentially accelerating robot learning and generalization in real-world applications. The system, called RATs (Robotics Agent Teams), proposes novel exploratory tasks, plans and executes robot-code policies, and distills successful executions into a persistent code skill library. Experiments on LIBERO-PRO and MolmoSpaces show 20.6 and 17.0 percentage-point gains over baselines, and the learned skills transfer to other agents without finetuning.
-
-huggingface_papers · Hugging Face Papers · Jun 19, 00:00
-
-**Background**: Current agentic robot systems can write executable Code-as-Policy programs and revise behavior based on feedback, but they are task-driven and only acquire skills after explicit instructions. Playful Agentic Robot Learning introduces a self-directed play stage before tasks arrive, allowing robots to explore and build a skill library proactively. RATs uses a team of agents to propose, execute, and verify exploratory tasks, distilling successful behaviors into reusable code.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://huggingface.co/papers/2606.19419">Paper page - Playful Agentic Robot Learning</a></li>
-<li><a href="https://arxiv.org/pdf/2606.19419">Playful Agentic Robot Learning</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#robotics`, `#reinforcement learning`, `#skill acquisition`, `#embodied AI`, `#code-as-policy`
-
----
-
-<a id="item-5"></a>
-## [S-Agent: Spatial Tool-Use Boosts VLM 3D Reasoning](https://huggingface.co/papers/2606.20515) ⭐️ 8.0/10
-
-Researchers introduced S-Agent, a spatial reasoning framework that augments visual language models (VLMs) with temporal memory and hierarchical spatial tools to enable continuous 3D world understanding from multi-view images and videos. S-Agent addresses a critical limitation of current VLMs—their inability to reason over continuous, evolving 3D environments—by formulating spatial reasoning as spatio-temporal evidence accumulation, which could significantly advance applications in robotics, autonomous driving, and augmented reality. The framework uses a VLM as a semantic planner that decides what evidence to gather, while a hierarchy of spatial tools grounds objects in 2D, lifts them to 3D geometric evidence, and aggregates this into high-level spatial knowledge; it also includes Scene Memory and Agent Memory for temporal integration. Fine-tuning on S-Agent-generated trajectories (S-300K) yields S-Agent-8B, which outperforms similar-scale baselines and matches advanced closed-source models like GPT-5.4 and Gemini 3.
-
-huggingface_papers · Hugging Face Papers · Jun 19, 00:00
-
-**Background**: Visual language models (VLMs) typically process single images or static frames, lacking the ability to reason over time or 3D space. Spatial intelligence requires understanding object positions, orientations, and relationships in a continuous 3D world, which is essential for tasks like navigation and manipulation. S-Agent introduces a tool-augmented agent paradigm that combines hierarchical spatial tools with temporal memory to bridge this gap.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/pdf/2606.20515">S - Agent : Spatial Tool - Use Elicits Reasoning for Spatial Intelligence</a></li>
-<li><a href="https://www.alphaxiv.org/overview/2606.20515">S - Agent : Spatial Tool - Use Elicits Reasoning for Spatial ... | alphaXiv</a></li>
-<li><a href="https://digg.com/tech/rncyuyth">S - Agent Outperforms GPT-5 And Gemini On Spatial Reasoning...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community on Hugging Face and alphaXiv praised S-Agent for its training-free improvement of both open-source and closed-source VLMs, and noted that the S-300K dataset could be a valuable resource for future spatial reasoning research. Some commenters expressed interest in seeing S-Agent applied to real-world robotics tasks.
-
-**Tags**: `#spatial intelligence`, `#visual language models`, `#3D understanding`, `#tool-augmented agents`, `#reasoning`
-
----
-
-<a id="item-6"></a>
-## [Chevron and Microsoft Sign 20-Year Gas Power Deal for Texas Data Center](https://www.chevron.com/newsroom/2026/q2/chevron-signs-20-year-power-agreement-with-microsoft-for-west-texas-data-center) ⭐️ 8.0/10
-
-Chevron has signed a 20-year power purchase agreement with Microsoft to supply natural gas-fired electricity for a new data center in West Texas, using turbines from GE Vernova and Solar Turbines. This deal highlights the tension between Big Tech's carbon neutrality goals and the immediate need for reliable power for AI and cloud computing, as natural gas remains a cheaper and more available option than renewables in some regions. The agreement is for Chevron's proposed $6.5 billion Kilby project, which will provide unabated natural gas power, meaning no carbon capture is included. Microsoft has committed to being carbon negative by 2030, raising questions about how this deal aligns with that pledge.
-
-hackernews · cdrnsf · Jun 22, 13:43 · [Discussion](https://news.ycombinator.com/item?id=48630029)
-
-**Background**: Data centers consume enormous amounts of electricity, and tech companies are under pressure to power them with clean energy. However, intermittent renewables like solar and wind may not always meet the 24/7 demand, leading some companies to turn to natural gas as a bridge fuel. Texas has a deregulated grid where independent investors make generation decisions, and natural gas prices in West Texas have recently been negative due to oversupply.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.reuters.com/legal/litigation/chevron-signs-power-supply-deal-with-microsoft-texas-data-center-2026-06-22/">Chevron signs power supply deal with Microsoft for Texas data center</a></li>
-<li><a href="https://www.energyintel.com/0000019e-f072-d40f-afbe-f1726e3f0000">Chevron, Microsoft Sink 20-Year Power Purchase Agreement</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters noted that natural gas prices in West Texas are currently negative, meaning producers pay to have gas taken away, making this deal economically attractive. Others questioned Microsoft's carbon negative pledge, arguing that deploying gigawatts of new fossil fuel capacity contradicts that goal. Some also pointed out that solar and batteries are cheaper in Texas and that nearly all new grid additions are renewables.
-
-**Tags**: `#energy`, `#data centers`, `#Microsoft`, `#Chevron`, `#sustainability`
-
----
-
 <a id="item-7"></a>
-## [Mitchell Hashimoto Pledges $400k to Zig Software Foundation](https://mitchellh.com/writing/zig-donation-2026) ⭐️ 8.0/10
+## [Playful Robot Learning Boosts Skill Acquisition](https://huggingface.co/papers/2606.19419) ⭐️ 8.0/10
 
-Mitchell Hashimoto, creator of the Ghostty terminal emulator, has pledged an additional $400,000 to the Zig Software Foundation (ZSF) to support the development of the Zig programming language. This substantial donation underscores the growing confidence in Zig as a systems programming language and provides critical funding for its continued development, benefiting the broader open-source ecosystem. The pledge follows a previous $400,000 donation from Hashimoto in 2024, bringing his total contribution to $800,000. Ghostty, a fast GPU-accelerated terminal emulator written in Zig, has also gained significant attention.
+Researchers propose Playful Agentic Robot Learning, where an embodied coding agent autonomously explores and learns reusable skills through self-directed play before receiving any downstream task instructions, introducing RATs (Robotics Agent Teams) for play-time skill acquisition. This approach enables robots to build a reusable skill library without explicit task supervision, significantly improving downstream task performance (up to 20.6 percentage points) and transferring to new agents without fine-tuning, advancing embodied AI and autonomous robot learning. The RATs system proposes novel exploratory tasks, plans and executes robot-code policies, verifies progress, diagnoses failures, and distills successful executions into a persistent code skill library. Experiments on LIBERO-PRO and MolmoSpaces show 20.6 and 17.0 percentage-point gains over CaP-Agent0, and learned skills improve RoboSuite and real-world transfer by 8.9 and 8.8 points without fine-tuning.
 
-hackernews · tosh · Jun 22, 13:43 · [Discussion](https://news.ycombinator.com/item?id=48630020)
+huggingface_papers · Hugging Face Papers · Jun 19, 00:00
 
-**Background**: Zig is a general-purpose systems programming language designed as a modern alternative to C, emphasizing robustness, optimality, and reusability. It is developed by the Zig Software Foundation, which relies on corporate sponsorships and donations. Ghostty, created by Mitchell Hashimoto, is a cross-platform terminal emulator that uses platform-native UI and GPU acceleration, and is written in Zig.
+**Background**: Current agentic robot systems can write executable Code-as-Policy programs and revise behavior, but they are task-driven and acquire reusable skills only after explicit instructions. Playful Agentic Robot Learning introduces a self-directed play stage before tasks arrive, allowing robots to explore and learn skills autonomously, similar to how animals learn through play.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
-<li><a href="https://ghostty.org/">Ghostty</a></li>
-<li><a href="https://github.com/ghostty-org/ghostty">GitHub - ghostty-org/ghostty: 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.</a></li>
+<li><a href="https://arxiv.org/abs/2606.19419">[2606.19419] Playful Agentic Robot Learning</a></li>
+<li><a href="https://huggingface.co/papers/2606.19419">Paper page - Playful Agentic Robot Learning</a></li>
+<li><a href="https://github.com/Playful-RATs/rats">Playful -RATs/RATs: Implementation of paper " Playful Agentic Robot ..."</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight appreciation for Hashimoto's wisdom and the value of Ghostty, with some suggesting Ghostty may be an even greater contribution than the donation. There is also discussion about Zig's stance against LLM contributions and the learning curve of Zig, with recommendations to watch an interview with Zig's creator.
-
-**Tags**: `#Zig`, `#open source funding`, `#systems programming`, `#Ghostty`
+**Tags**: `#robot learning`, `#embodied AI`, `#skill acquisition`, `#reinforcement learning`, `#agentic systems`
 
 ---
 
 <a id="item-8"></a>
-## [Claude Code's Extended Thinking Output Is a Lossy Summary](https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/) ⭐️ 8.0/10
+## [S-Agent: Spatial Tool-Use for Continuous 3D Reasoning](https://huggingface.co/papers/2606.20515) ⭐️ 8.0/10
 
-An analysis reveals that the text shown in Claude Code's 'Extended Thinking' mode is a lossy summary of the model's actual reasoning, not a faithful transcript of its internal thought process. This raises significant transparency concerns for AI reasoning models, as users cannot verify the authenticity of the reasoning chain, making it harder to evaluate claims of breakthroughs and increasing risks of hidden prompt injection. The lossy summary is analogous to saving a JPEG as a BMP and editing the BMP, then presenting it as the original JPEG—data is lost in the conversion. Major AI companies including OpenAI and Google similarly hide or summarize reasoning traces to protect competitive advantages.
+Researchers propose S-Agent, a spatial reasoning framework that augments vision-language models (VLMs) with temporal memory and hierarchical spatial tools for continuous 3D world understanding from multi-view imagery. This work addresses a key limitation of existing VLMs—static, stateless inference—by enabling spatio-temporal evidence accumulation, which is crucial for real-world spatial intelligence applications like robotics, autonomous driving, and augmented reality. S-Agent uses a VLM as a semantic planner, a hierarchy of spatial tools for 2D-to-3D grounding, and two memory modules (Scene Memory and Agent Memory) to integrate evidence across frames. The S-Agent-8B model, fine-tuned on S-300K trajectories, matches closed-source models like GPT-5.4 and Gemini 3.
 
-hackernews · 0o_MrPatrick_o0 · Jun 22, 14:22 · [Discussion](https://news.ycombinator.com/item?id=48630535)
+huggingface_papers · Hugging Face Papers · Jun 19, 00:00
 
-**Background**: Reasoning models like Claude 3.7 Sonnet use an extended thinking process to improve performance on complex tasks. Some models show users their reasoning traces, while others only summarize or hide these intermediate outputs. The practice of hiding reasoning is widespread across the industry due to competitive secrecy concerns.
+**Background**: Vision-language models (VLMs) typically process single images or frames independently, lacking the ability to reason over time and 3D space. Spatial reasoning in AI requires understanding object positions, orientations, and relationships in a continuous 3D environment. S-Agent introduces temporal memory and hierarchical tools to overcome these limitations.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://platform.claude.com/docs/en/build-with-claude/extended-thinking">Extended thinking - Claude API Docs</a></li>
-<li><a href="https://www.ibm.com/think/topics/reasoning-model">What Is a Reasoning Model? | IBM</a></li>
-<li><a href="https://developers.openai.com/api/docs/guides/reasoning">Reasoning models | OpenAI API</a></li>
+<li><a href="https://github.com/Ropedia/S-Agent">GitHub - Ropedia/S-Agent: S-Agent: Spatial Tool-Use Elicits Reasoning for Spatial Intelligence · GitHub</a></li>
+<li><a href="https://arxiv.org/abs/2603.25411">[2603.25411] HiSpatial: Taming Hierarchical 3D Spatial ... HiSpatial: Taming Hierarchical 3D Spatial Understanding in ... HiSpatial: Taming Hierarchical 3D Spatial Understanding in ... [2511.22961] HMR3D: Hierarchical Multimodal Representation ... HiSpatial: Taming Hierarchical 3D Spatial Understanding in ... HiSpatial: Taming Hierarchical 3D Spatial Understanding in ... CVPR Poster HiSpatial: Taming Hierarchical 3D Spatial ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters widely agree that hiding reasoning is an industry-wide practice, not unique to Anthropic. Some argue it's necessary to protect R&D investments, while others warn it makes prompt optimization harder and enables hidden prompt injection attacks. A few note that even with full reasoning traces, the output may not faithfully represent the model's internal process.
-
-**Tags**: `#AI transparency`, `#reasoning models`, `#Claude Code`, `#LLM interpretability`, `#AI ethics`
+**Tags**: `#spatial reasoning`, `#visual language models`, `#3D understanding`, `#tool-augmented agents`, `#multi-view imagery`
 
 ---
 
 <a id="item-9"></a>
-## [Linux Secure Boot Certificates Expiring in 2025](https://lwn.net/Articles/1029767/) ⭐️ 8.0/10
+## [Mitchell Hashimoto pledges $400k to Zig Software Foundation](https://mitchellh.com/writing/zig-donation-2026) ⭐️ 8.0/10
 
-Linux Secure Boot certificates used by the shim bootloader are set to expire in 2025, requiring updates to shim and firmware to prevent boot failures. This affects all Linux systems with Secure Boot enabled, potentially causing boot failures if not addressed, and highlights the need for better documentation and user guidance. The expiration involves the Microsoft KEK and db certificates used to sign shim and GRUB; updates are being distributed via fwupd with high success rates (98% for KEK, 99% for db).
+Mitchell Hashimoto, creator of the Ghostty terminal emulator, has pledged an additional $400,000 to the Zig Software Foundation (ZSF) to support the development of the Zig programming language. This substantial donation underscores the growing confidence in Zig as a promising systems programming language and provides crucial funding for its open-source development, potentially accelerating its adoption and ecosystem growth. The pledge brings Hashimoto's total contributions to ZSF to over $1 million, and he emphasizes Zig's unique philosophy, including its stance against accepting LLM-generated contributions, which aligns with the language's focus on careful design.
 
-hackernews · weaksauce · Jun 22, 18:24 · [Discussion](https://news.ycombinator.com/item?id=48633941)
+hackernews · tosh · Jun 22, 13:43 · [Discussion](https://news.ycombinator.com/item?id=48630020)
 
-**Background**: Secure Boot is a UEFI feature that ensures only trusted software runs during boot. The shim bootloader acts as an intermediary to allow Linux distributions to boot on systems with Secure Boot enabled, using Microsoft-signed certificates. These certificates have expiration dates, and when they expire, the boot chain may break unless updated.
+**Background**: Zig is a general-purpose systems programming language designed as an improvement to C, focusing on robustness, optimality, and reusability. The Zig Software Foundation, a non-profit founded in 2020, supports the language's development through donations and sponsorships.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://support.microsoft.com/en-us/topic/windows-secure-boot-certificate-expiration-and-ca-updates-7ff40d33-95dc-4c3c-8725-a9b95457578e">Windows Secure Boot certificate expiration and CA updates - Microsoft Support</a></li>
-<li><a href="https://deepwiki.com/rhboot/shim">rhboot/ shim | DeepWiki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language) - Wikipedia</a></li>
+<li><a href="https://ziglang.org/zsf/">Zig Software Foundation ⚡ Zig Programming Language</a></li>
+<li><a href="https://ziglang.org/">Home ⚡ Zig Programming Language</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express frustration over lack of clear guidance for checking and updating certificates, with users sharing unofficial documentation. Some users prefer enrolling their own keys instead of relying on third-party certificates.
+**Discussion**: The community praised Hashimoto's generosity and his reflections on Zig's philosophy, with some noting that Ghostty itself has become a significant contribution. Others recommended an interview with Zig's creator to understand the language's design principles, and there was discussion about Zig's policy on LLM contributions.
 
-**Tags**: `#Linux`, `#Secure Boot`, `#Security`, `#Firmware`, `#System Administration`
+**Tags**: `#Zig`, `#open-source`, `#donation`, `#programming-languages`, `#community`
 
 ---
 
 <a id="item-10"></a>
+## [Die Analysis of 8087 Coprocessor's Fast Bit Shifter](https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html) ⭐️ 8.0/10
+
+A detailed die analysis of the Intel 8087 math coprocessor reveals a unique two-stage barrel shifter design that shifts bits and then bytes, optimizing for speed and area in early floating-point hardware. This analysis provides deep insight into the engineering trade-offs of early FPU design, highlighting how constraints of the era led to clever circuit innovations that are still relevant for understanding modern hardware evolution. The barrel shifter uses a two-stage approach: first shifting by a variable number of bits within a byte, then shifting by whole bytes, which reduces complexity compared to a full barrel shifter. The design avoids a separate decoder by using a custom layout that directly maps shift amounts to control signals.
+
+hackernews · Jimmc414 · Jun 22, 13:40 · [Discussion](https://news.ycombinator.com/item?id=48629982)
+
+**Background**: The Intel 8087, released in 1980, was the first floating-point coprocessor for the 8086/8088 processors, providing hardware support for floating-point arithmetic. A barrel shifter is a combinational circuit that can shift a data word by a variable number of bit positions in a single clock cycle, essential for aligning mantissas in floating-point operations. The 8087's shifter was designed under tight area and power constraints, leading to innovative trade-offs.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Barrel_shifter">Barrel shifter</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Intel_8087">Intel 8087 - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Floating-point_unit">Floating - point unit - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters expressed amazement at the performance-to-cost contrast between the 8087 and modern hardware, noting a 10 million times improvement. Some questioned why the shifter wasn't built with a log2 arrangement, and the article's two-stage design was discussed as a clever compromise. Others shared related historical FPU designs, such as the Northstar S-100 card using BCD arithmetic.
+
+**Tags**: `#hardware`, `#reverse engineering`, `#retrocomputing`, `#FPU`, `#chip design`
+
+---
+
+<a id="item-11"></a>
+## [Claude Code's Extended Thinking Output Is a Lossy Summary](https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/) ⭐️ 8.0/10
+
+An analysis reveals that the text shown in Claude Code's 'Extended Thinking' mode is not the model's actual reasoning but a lossy summary, meaning it omits details and may not faithfully represent the internal thought process. This lack of transparency raises concerns about security and trust, as hidden reasoning could allow attackers to inject malicious instructions without detection, and it makes prompt optimization harder for users. The lossy summary is analogous to converting a lossless BMP image to a lossy JPEG and back, causing data loss. Additionally, interleaved reasoning and function calling during hidden phases could enable data exfiltration.
+
+hackernews · 0o_MrPatrick_o0 · Jun 22, 14:22 · [Discussion](https://news.ycombinator.com/item?id=48630535)
+
+**Background**: Extended thinking is a feature in Claude that allows the model to perform step-by-step reasoning before producing a final answer. However, the output shown to users is a compressed version of that reasoning, not the raw chain-of-thought. This practice is common among major AI companies like OpenAI and Google, who hide their models' actual reasoning to protect proprietary R&D.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://platform.claude.com/docs/en/build-with-claude/extended-thinking">Extended thinking - Claude API Docs</a></li>
+<li><a href="https://gist.github.com/intellectronica/58571dda3581eec3e17a77741e8c858a">Claude Extended Thinking: The Ultimate Guide · GitHub</a></li>
+<li><a href="https://medium.com/@cognidownunder/claude-code-and-extended-thinking-the-hybrid-reasoning-revolution-thats-changing-how-we-code-4c59cb714015">Claude Code and Extended Thinking : The Hybrid Reasoning Revolution That’s Changing How We Code | by Cogni Down Under | Medium</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters noted that this is not unique to Anthropic; OpenAI and Google also hide reasoning. Some users refuse to use models with hidden reasoning due to security risks and difficulty in prompt optimization. Others pointed out that even if the raw reasoning were available, it might not be faithful to the actual thinking.
+
+**Tags**: `#AI transparency`, `#reasoning models`, `#security`, `#Anthropic`, `#Claude`
+
+---
+
+<a id="item-12"></a>
+## [Linux Secure Boot Certificates Expire in 2025](https://lwn.net/Articles/1029767/) ⭐️ 8.0/10
+
+Linux Secure Boot certificates, which rely on a Microsoft key, are set to expire in 2025, requiring users to update their firmware via fwupd to prevent boot failures. This expiration affects all Linux users with Secure Boot enabled, potentially causing systems to fail to boot if not addressed, making it a critical security and system administration issue. The fwupd daemon can automatically update the certificates, but users may need to check their current certificate status and ensure sufficient EFI variable space for the update.
+
+hackernews · weaksauce · Jun 22, 18:24 · [Discussion](https://news.ycombinator.com/item?id=48633941)
+
+**Background**: Secure Boot is a UEFI feature that ensures only signed bootloaders and kernels are executed, preventing malware from hijacking the boot process. Linux distributions typically use a Microsoft-signed shim to boot, and the signing certificate for that shim is set to expire in 2025.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://lwn.net/Articles/1029767/">Linux and Secure Boot certificate expiration - LWN.net</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fwupd">Fwupd</a></li>
+<li><a href="https://www.reddit.com/r/linux/comments/1m69s94/linux_and_secure_boot_certificate_expiration/">Linux and Secure Boot certificate expiration - Reddit</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments highlight a lack of clear guidance for checking certificate status, with some users suggesting manual key enrollment as an alternative. Others note the high success rate of fwupd updates (98-99%) and the complexity of workarounds like shim modifications.
+
+**Tags**: `#Linux`, `#Secure Boot`, `#firmware`, `#security`, `#system administration`
+
+---
+
+<a id="item-13"></a>
 ## [Codex logging bug may write TBs to local SSDs](https://github.com/openai/codex/issues/28224) ⭐️ 8.0/10
 
-A logging bug in OpenAI's Codex CLI can write terabytes of diagnostic logs to a local SQLite database, causing excessive SSD wear and high GPU usage. OpenAI has published a fix in an update to the CLI and Codex App. This bug can significantly reduce SSD lifespan and degrade system performance for all Codex users, especially those on laptops. It highlights a critical oversight in logging practices for widely-used developer tools. The bug writes logs to ~/.codex/logs_2.sqlite at a rate that could reach 640 TB per year, far exceeding typical SSD endurance. A temporary workaround involves creating a SQLite trigger to block log inserts, and running VACUUM FULL can shrink the database from 27 GB to 73 MB.
+A logging bug in OpenAI's Codex CLI and App can write terabytes of diagnostic logs to a local SQLite database, potentially exhausting disk space and damaging SSDs. OpenAI has released a fix in an update to the CLI and Codex App. This bug can cause significant SSD wear, potentially reducing drive lifespan to under a year for heavy users, and may lead to data loss or system instability. It highlights quality issues in widely-used AI development tools. The bug writes logs to a SQLite database at ~/.codex/logs_2.sqlite, with one user reporting a 27GB file shrunk to 73MB after VACUUM FULL. A temporary workaround involves creating a trigger to block log inserts.
 
 hackernews · vantareed · Jun 22, 07:30 · [Discussion](https://news.ycombinator.com/item?id=48626930)
 
-**Background**: Codex is OpenAI's AI-powered coding assistant that runs locally via a CLI or desktop app. It uses a SQLite database to store diagnostic logs for debugging, but a misconfigured logging sink causes excessive writes. SSD endurance is typically measured in total bytes written (TBW), and consumer SSDs often have TBW ratings of 150-600 TB.
+**Background**: OpenAI Codex is an AI coding agent that automates software engineering tasks. The bug stems from a misconfigured logging sink that writes excessive diagnostic data, potentially reaching 640 TB/year of writes, far exceeding typical SSD endurance ratings.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.developersdigest.tech/blog/codex-sqlite-logging-bug-ssd-wear">Codex Logging Bug Can Write Terabytes to Your SSD - Developers Digest</a></li>
 <li><a href="https://www.reddit.com/r/OpenAI/comments/1ucf4px/openai_codex_has_a_bug_that_could_kill_your_ssd/">r/OpenAI on Reddit: OpenAI Codex has a bug that could kill your SSD in under a year</a></li>
-<li><a href="https://smartscope.blog/en/generative-ai/chatgpt/codex-cli-diagnostic-logs-deep-dive/">Codex CLI Logs: Location, Debug Flags & 401 Error Fix (2026) - SmartScope</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community sentiment is highly critical, with users calling Codex 'slopware' and reporting that even displaying a spinner causes 100% GPU usage on an MBP M5. Some users appreciate that Codex is open-source and can be patched, while others express frustration over OpenAI's initial silence before the fix.
+**Discussion**: Community comments express frustration over the bug's severity and OpenAI's initial silence, with some calling Codex 'slopware.' An OpenAI engineer confirmed the fix, and users shared workarounds like SQLite triggers and VACUUM FULL.
 
-**Tags**: `#openai`, `#codex`, `#bug`, `#logging`, `#performance`
+**Tags**: `#AI tools`, `#bug report`, `#OpenAI`, `#Codex`, `#data loss`
 
 ---
 
-<a id="item-11"></a>
-## [AI Security Beyond Cybersecurity: Kolter & Fredrikson](https://www.latent.space/p/gray-swan) ⭐️ 8.0/10
+<a id="item-14"></a>
+## [AI Security Is Not Just Cybersecurity with AI](https://www.latent.space/p/gray-swan) ⭐️ 8.0/10
 
-Zico Kolter, an OpenAI board member, and Matt Fredrikson, CEO of Gray Swan, discuss why AI security is fundamentally different from traditional cybersecurity, emphasizing the need for specialized red-teaming approaches for AI systems. This discussion highlights the unique vulnerabilities of AI systems, such as adversarial attacks and prompt injection, which require new security paradigms. It underscores the growing importance of AI safety as AI models become more integrated into critical applications. Kolter and Fredrikson argue that AI red-teaming must address model-specific risks like jailbreaking and data poisoning, which go beyond typical cybersecurity. Gray Swan offers enterprise-grade LLM security solutions, including automated vulnerability assessment.
+OpenAI boardmember Zico Kolter and Gray Swan CEO Matt Fredrikson discuss why AI security is fundamentally different from traditional cybersecurity, emphasizing the unique challenges of red-teaming AI systems. This conversation provides critical insights for AI governance and security practices, as AI systems introduce novel attack surfaces like prompt injection and jailbreaks that traditional cybersecurity methods cannot address. Gray Swan AI is an adversarial evaluation platform used by leading frontier labs to identify vulnerabilities in LLMs before public release, focusing on jailbreaks, prompt injections, and harmful outputs.
 
 rss · Latent Space · Jun 22, 21:06
 
-**Background**: Red-teaming is a structured adversarial testing practice used to uncover vulnerabilities. In AI, it involves probing models for harmful outputs or security flaws. Gray Swan AI, co-founded by Kolter and Fredrikson, specializes in AI safety and security, with Kolter also serving on OpenAI's board and safety committee.
+**Background**: Red teaming originated in the 1960s as a practice where a group simulates an adversary to test an organization's defenses. AI red teaming extends this to AI-specific vulnerabilities such as instruction hierarchy exploits and tool misuse, requiring creative exploration beyond traditional attack vectors.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://en.wikipedia.org/wiki/Red_teaming">Red teaming</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Gray_Swan_AI">Gray Swan AI</a></li>
-<li><a href="https://www.grayswan.ai/">Gray Swan</a></li>
-<li><a href="https://github.com/requie/AI-Red-Teaming-Guide">AI Red Teaming: The Complete Guide - GitHub</a></li>
+<li><a href="https://www.grayswan.ai/">Gray Swan - Enterprise Security for AI-Powered Applications</a></li>
 
 </ul>
 </details>
@@ -280,82 +341,26 @@ rss · Latent Space · Jun 22, 21:06
 
 ---
 
-<a id="item-12"></a>
-## [GLM-5.2 Marks a Step Change for Open Agents](https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open) ⭐️ 8.0/10
-
-GLM-5.2, a 744-billion-parameter open-weight model from Z.ai, has crossed a key capability threshold for autonomous AI agents, offering credible alternatives to proprietary models like GPT-5.5 on design and coding tasks. This advancement significantly lowers the barrier for building powerful, customizable AI agents, as open-weight models can be run locally and fine-tuned, potentially accelerating innovation in agent-based applications across industries. GLM-5.2 supports multimodal inputs including images, and its strength in coding and software development enables it to handle complex tasks like game creation, making it a versatile tool for agentic workflows.
-
-rss · Interconnects · Jun 22, 14:52
-
-**Background**: AI agents are systems that autonomously reason, plan, and execute tasks based on high-level goals. Open-weight models allow developers to inspect, modify, and deploy models on their own infrastructure, unlike closed-source APIs. GLM-5.2 represents a milestone where open models match or exceed proprietary ones in agent-specific benchmarks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open">GLM-5.2 is the step change for open agents - Interconnects AI</a></li>
-<li><a href="https://www.reddit.com/r/AI_Agents/comments/1ubcyrx/what_is_glm52_inside_zais_744bparameter_agentic/">What Is GLM-5.2? Inside Z.ai's 744B-Parameter Agentic AI Model</a></li>
-<li><a href="https://www.mindstudio.ai/blog/what-is-glm-5-2-open-weight-model">What Is GLM 5.2? The Open-Weight Model Beating GPT 5.5 on Design ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#GLM`, `#open agents`, `#AI`, `#machine learning`, `#open source`
-
----
-
-<a id="item-13"></a>
-## [OpenAI Launches Daybreak Security Tools](https://openai.com/index/daybreak-securing-the-world) ⭐️ 8.0/10
-
-OpenAI has launched the Daybreak initiative, introducing Codex Security and GPT-5.5-Cyber to automate vulnerability discovery, validation, and patching at scale. This marks a significant step in applying frontier AI to cybersecurity, potentially enabling organizations to respond to threats faster and more effectively than traditional methods. Codex Security scans GitHub repositories commit-by-commit, while GPT-5.5-Cyber is a specialized model for vulnerability detection and patch generation, with the UK's AISI evaluating it as one of the strongest models tested.
-
-rss · OpenAI Blog · Jun 22, 10:00
-
-**Background**: OpenAI's Daybreak initiative aims to embed AI security capabilities into software development workflows. Codex Security is an AI-powered application security agent released in research preview, and GPT-5.5-Cyber is a specialized version of GPT-5.5 tailored for cyber defense tasks.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/">Scaling Trusted Access for Cyber with GPT-5.5 and ... - OpenAI</a></li>
-<li><a href="https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities">Our evaluation of OpenAI's GPT-5.5 cyber capabilities</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#cybersecurity`, `#OpenAI`, `#vulnerability management`
-
----
-
-<a id="item-14"></a>
-## [DeepSeek Raises $7.4B at $60B Valuation](https://www.reddit.com/r/LocalLLaMA/comments/1ucwyes/deepseek_raises_74b_usd_at_60b_valuation/) ⭐️ 8.0/10
-
-DeepSeek has raised $7.4 billion in a funding round at a $60 billion valuation, with founder Liang Wenfeng personally investing $3 billion of that amount. This massive funding round underscores the intense competition and capital requirements in the AI industry, and the founder's personal investment signals strong confidence in the company's future. The $7.4 billion raise is one of the largest in AI history, and the $60 billion valuation places DeepSeek among the most valuable private AI companies globally.
-
-reddit · r/LocalLLaMA · /u/FullOf_Bad_Ideas · Jun 22, 21:03
-
-**Background**: DeepSeek is a Chinese AI startup known for developing large language models. The company has gained attention for its competitive models and significant funding rounds.
-
-**Tags**: `#AI`, `#funding`, `#DeepSeek`, `#valuation`, `#LLM`
-
----
-
 <a id="item-15"></a>
-## [Chinese Hackers Reverse-Engineer Tesla V100, Create Custom GPU](https://www.reddit.com/r/LocalLLaMA/comments/1ucokod/chinese_hackers_latest_masterpiece_with_nvidia/) ⭐️ 8.0/10
+## [Microsoft Open-Sources FastContext for LLM Coding Agents](https://www.reddit.com/r/LocalLLaMA/comments/1ud1lro/why_is_no_one_talking_about_microsofts_open/) ⭐️ 8.0/10
 
-A team of Chinese hackers reverse-engineered the 2,963 pinouts of the NVIDIA Tesla V100 GPU and created a custom PCB with full NVLink support, offering 16GB and 32GB versions at prices as low as $220 and $590 respectively. This achievement dramatically lowers the cost of high-performance GPU computing, making Tesla V100-class performance accessible to hobbyists and small labs, and demonstrates advanced hardware hacking capabilities that could inspire similar projects. The custom card, named Tesla V100 v4, supports up to 8-way NVLink and comes with a 3-year warranty; NVLink adapters are also sold separately for $29 (2-way) and $118 (8-way).
+Microsoft has open-sourced FastContext, a lightweight repository-exploration subagent that separates repository exploration from task solving in LLM coding agents, achieving up to 60% token savings and accuracy gains on SWE-bench benchmarks. This release addresses a key inefficiency in coding agents—wasting tokens on full repository scans—by introducing a specialized subagent that provides focused context, potentially reducing costs and improving performance for developers using LLM-based coding tools. FastContext comes in two versions: a 4B SFT model and a 4B RL model, with the RL version outperforming a larger 30B SFT explorer on some tasks while using fewer tokens. The largest token savings reached 60.3% (GPT-5.4 on SWE-QA), and accuracy gains on SWE-bench Pro were up to +5.5 points.
 
-reddit · r/LocalLLaMA · /u/General_Vermicelli53 · Jun 22, 15:58
+reddit · r/LocalLLaMA · /u/formatme · Jun 23, 00:11
 
-**Background**: The NVIDIA Tesla V100 is a high-end data center GPU based on the Volta architecture, originally costing thousands of dollars. NVLink is a high-speed interconnect technology that allows multiple GPUs to share memory and work together efficiently. Reverse-engineering a modern GPU's pinout is extremely difficult due to complex multi-layer PCBs and proprietary protocols.
+**Background**: LLM coding agents typically handle both repository exploration and task solving with a single model, which can be token-inefficient. FastContext introduces a subagent architecture where a lightweight model is invoked on demand to perform parallel read-only operations (READ, GLOB, GREP) and return compact file paths and line ranges, reducing the main agent's token usage.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://images.nvidia.com/content/tesla/pdf/Tesla-V100-PCIe-Product-Brief.pdf">PB-08744-001_v05 | March 2018 Product Brief TESLA V100 PCIe GPU ACCELERATOR</a></li>
-<li><a href="https://en.wikipedia.org/wiki/NVLink">NVLink - Wikipedia</a></li>
-<li><a href="https://www.nvidia.com/en-us/data-center/nvlink/">NVLink & NVLink Switch: Fastest HPC Data Center Platform | NVIDIA</a></li>
+<li><a href="https://huggingface.co/microsoft/FastContext-1.0-4B-SFT">microsoft/FastContext-1.0-4B-SFT · Hugging Face</a></li>
+<li><a href="https://arxiv.org/html/2606.14066v1">FastContext: Training Efficient Repository Explorer for Coding Agents</a></li>
+<li><a href="https://www.swebench.com/">SWE-bench Leaderboards</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community is impressed by the technical feat, with many praising the low price and warranty. Some express skepticism about reliability and performance compared to original V100s, while others discuss potential applications in AI inference and small-scale clusters.
+**Discussion**: The Reddit community expressed excitement about FastContext's potential, with some users noting its similarity to other approaches like Cognition's SWE-1.6. There was also discussion about integrating FastContext locally into tools like oh-my-pi, indicating strong interest in practical adoption.
 
-**Tags**: `#hardware hacking`, `#NVIDIA`, `#reverse engineering`, `#GPU`, `#NVLink`
+**Tags**: `#LLM`, `#coding agents`, `#open source`, `#Microsoft`, `#SWE-bench`
 
 ---
