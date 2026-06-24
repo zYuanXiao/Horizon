@@ -9,80 +9,60 @@ lang: en
 
 ---
 
-1. [GPT-5 Solves 3-Year Immunology Mystery](#item-1) ⭐️ 9.0/10
-2. [Russia's Project 2026 Aims to Poison AI Training Data](#item-2) ⭐️ 9.0/10
-3. [Anthropic Cybersecurity Skills Repository Hits 19K Stars](#item-3) ⭐️ 8.0/10
-4. [Hermes Agent: Self-Improving AI Agent Framework Gains 936 Stars in a Day](#item-4) ⭐️ 8.0/10
-5. [DataClaw0: Agentic Tailoring of Multimodal Data from Raw Streams](#item-5) ⭐️ 8.0/10
-6. [NatureBench: AI Coding Agents Fail at Scientific Discovery](#item-6) ⭐️ 8.0/10
+1. [Russia's Project 2026 Aims to Poison AI Training Data](#item-1) ⭐️ 9.0/10
+2. [817 Cybersecurity Skills for AI Agents Go Viral](#item-2) ⭐️ 8.0/10
+3. [NousResearch/hermes-agent Surges with 936 Stars in One Day](#item-3) ⭐️ 8.0/10
+4. [Qwen-AgentWorld: Language World Models for General Agents](#item-4) ⭐️ 8.0/10
+5. [NatureBench: Benchmarking AI Coding Agents for Scientific Discovery](#item-5) ⭐️ 8.0/10
+6. [Don't Verify Emails by Sending Spam](#item-6) ⭐️ 8.0/10
 7. [AI's Affordability Crisis](#item-7) ⭐️ 8.0/10
-8. [AI Hiring Tools Risk Algorithmic Monoculture Bias](#item-8) ⭐️ 8.0/10
-9. [7 Chinese Firms Ship H100-Class AI Chips, Most Recently IPO'd](#item-9) ⭐️ 8.0/10
-10. [Mimo 2.5 Fast at Large Context on Dual RTX Pro 6000](#item-10) ⭐️ 8.0/10
-11. [LLM Omissions Outnumber Hallucinations in Medical Scribing](#item-11) ⭐️ 8.0/10
-12. [KLD Mapping of KV Cache Quantization for Qwen3.6 and Gemma4](#item-12) ⭐️ 8.0/10
-13. [US Bill Mandating AI Chip Location Tracking Gains Industry Support](#item-13) ⭐️ 8.0/10
-14. [Krea 2 Open-Source Text-to-Image Model Released](#item-14) ⭐️ 8.0/10
-15. [DeepSWE: A New Benchmark for Frontier Coding Models](#item-15) ⭐️ 8.0/10
+8. [Stanford: AI Hiring Tools Risk Algorithmic Monoculture Bias](#item-8) ⭐️ 8.0/10
+9. [GPT-5 Pro Solves 3-Year Immunology Mystery](#item-9) ⭐️ 8.0/10
+10. [7 Chinese firms ship H100-class AI chips, most recently IPO'd](#item-10) ⭐️ 8.0/10
+11. [Mimo 2.5 Stays Fast at Large Context on Dual RTX Pro 6000](#item-11) ⭐️ 8.0/10
+12. [US Bill Mandates Location Tracking for AI Chips](#item-12) ⭐️ 8.0/10
+13. [LLM Medical Scribing: Omissions Outnumber Hallucinations 43:1](#item-13) ⭐️ 8.0/10
+14. [KLD mapping of KV cache quantization for Qwen and Gemma models](#item-14) ⭐️ 8.0/10
+15. [Krea 2 Open-Source Text-to-Image Model Released](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [GPT-5 Solves 3-Year Immunology Mystery](https://openai.com/index/gpt-5-immunology-mystery) ⭐️ 9.0/10
-
-Immunologist Derya Unutmaz used GPT-5 Pro to solve a three-year-old mystery about T cell behavior, providing new insights into immune regulation. 这一突破展示了 GPT-5 在加速生物医学研究方面的潜力，尤其是在癌症免疫疗法和自身免疫疾病治疗领域，通过揭示复杂的生物学机制。 GPT-5 Pro, a reasoning model with extended thinking capabilities, was used to analyze T cell behavior patterns that had eluded researchers for years. The model identified a previously unknown signaling pathway involved in T cell activation.
-
-rss · OpenAI Blog · Jun 23, 17:00
-
-**Background**: T cells are a type of white blood cell crucial for adaptive immunity, responsible for recognizing and killing infected or cancerous cells. Understanding their behavior is key to developing effective immunotherapies. GPT-5 is OpenAI's latest large language model, with enhanced reasoning and domain-specific capabilities.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openai.com/index/introducing-gpt-5/">Introducing GPT-5 | OpenAI</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#GPT-5`, `#immunology`, `#cancer research`, `#breakthrough`
-
----
-
-<a id="item-2"></a>
 ## [Russia's Project 2026 Aims to Poison AI Training Data](https://www.reddit.com/r/artificial/comments/1udvuhe/leaked_files_detail_russias_social_design_agency/) ⭐️ 9.0/10
 
-Leaked documents reveal Russia's Social Design Agency (SDA) is building fake reference platforms, including a Wikipedia clone and an AI-driven knowledge base, to inject propaganda into AI training data and search indices under 'Project 2026'. This marks a paradigm shift in information warfare, targeting the foundational data that AI models rely on, potentially causing chatbots and search engines to unwittingly spread Russian narratives at scale. The operation targets Germany first with a German-language Wikipedia clone and a self-filling knowledge base already containing over 200,000 pages, with plans to expand to English, French, and Spanish targeting Western think tanks.
+Leaked documents from Russia's Social Design Agency (SDA) reveal a state-linked operation called Project 2026 that builds fake reference platforms to inject propaganda into AI training data and search indices. This marks a paradigm shift in information warfare, as adversaries now target the foundational data that AI systems rely on, potentially causing widespread and persistent bias in AI outputs across search engines and chatbots. The operation includes a German-language Wikipedia clone, an AI-driven knowledge base with over 200,000 pages targeting Germany, and an English-language initiative aimed at Western think tanks with plans for German, French, and Spanish versions.
 
 reddit · r/artificial · /u/Justgototheeffinmoon · Jun 23, 22:37
 
-**Background**: Data contamination occurs when incorrect or biased data enters AI training sets, degrading model reliability. The Social Design Agency (SDA) is a Russian IT firm previously linked to the 'Doppelganger' disinformation campaign, and has been sanctioned by the UK for its activities.
+**Background**: The Social Design Agency (SDA) is a Russian IT firm known for running the Doppelgänger disinformation campaign since 2022. AI models are trained on vast amounts of public text from the internet, making them vulnerable to data contamination if adversaries can inject fabricated content into widely-scraped sources like Wikipedia.
 
 <details><summary>References</summary>
 <ul>
+<li><a href="https://www.bloomberg.com/news/features/2026-06-23/leaked-files-show-russia-s-plan-to-influence-ai-and-search-results">Leaked Files Show Russia ’s Plan to Influence AI and... - Bloomberg</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Doppelganger_(disinformation_campaign)">Doppelganger (disinformation campaign) - Wikipedia</a></li>
-<li><a href="https://www.gov.uk/government/news/uk-targets-hostile-and-heinous-russian-activity-with-latest-sanctions">UK targets hostile and heinous Russian activity with latest sanctions - GOV.UK</a></li>
-<li><a href="https://www.ibm.com/docs/en/watsonx/saas?topic=atlas-data-contamination">Data contamination risk for AI</a></li>
 
 </ul>
 </details>
+
+**Discussion**: Reddit commenters expressed alarm at the novel attack vector, noting that traditional bot detection methods are insufficient against data contamination. Some debated the difficulty of sanitizing training data at scale, while others called for stronger AI supply chain security.
 
 **Tags**: `#AI safety`, `#information warfare`, `#disinformation`, `#cybersecurity`, `#geopolitics`
 
 ---
 
-<a id="item-3"></a>
-## [Anthropic Cybersecurity Skills Repository Hits 19K Stars](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+<a id="item-2"></a>
+## [817 Cybersecurity Skills for AI Agents Go Viral](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
 
-The GitHub repository 'mukul975/Anthropic-Cybersecurity-Skills' has gained over 1,041 stars in a single day, reaching 19,867 total stars, and now offers 817 structured cybersecurity skills mapped to 6 frameworks including MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and MITRE F3. This repository provides a comprehensive, standardized mapping of cybersecurity skills to major frameworks, enabling AI agents to operate across 20+ platforms like Claude Code and GitHub Copilot, which could significantly accelerate AI-driven security automation and adoption. The skills follow the agentskills.io standard and cover 29 security domains, licensed under Apache 2.0. The repository is written in Python and has 2,317 forks.
+A GitHub repository named 'Anthropic-Cybersecurity-Skills' by mukul975 has gained over 1,000 stars in a day, offering 817 structured cybersecurity skills for AI agents mapped to six frameworks including MITRE ATT&CK and NIST CSF 2.0. This repository addresses the growing need for AI agents to perform cybersecurity tasks with standardized, framework-aligned skills, potentially accelerating AI adoption in security operations and enabling cross-platform portability. The skills follow the agentskills.io open standard and are compatible with over 20 platforms including Claude Code, GitHub Copilot, Codex CLI, Cursor, and Gemini CLI, covering 29 security domains under Apache 2.0 license.
 
-github_trending · GitHub Trending · Jun 24, 03:41
+github_trending · GitHub Trending · Jun 24, 03:54
 
-**Background**: MITRE ATT&CK is a globally recognized knowledge base of adversary tactics and techniques, while NIST CSF provides a framework for improving cybersecurity. MITRE ATLAS focuses on AI-specific threats, and D3FEND catalogs defensive countermeasures. The agentskills.io standard allows AI agents to share skills across platforms via the Model Context Protocol (MCP).
+**Background**: MITRE ATT&CK is a globally-accessible knowledge base of adversary tactics and techniques, while NIST CSF 2.0 is a cybersecurity framework that includes a new 'Govern' function. The agentskills.io standard provides a portable way to define AI agent capabilities across different platforms.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://atlas.mitre.org/">MITRE ATLAS™</a></li>
-<li><a href="https://d3fend.mitre.org/">MITRE D3FEND</a></li>
-<li><a href="https://agentskills.io/">A standardized way to give AI agents new capabilities and expertise.</a></li>
+<li><a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf">The NIST Cybersecurity Framework (CSF) 2.0</a></li>
+<li><a href="https://github.com/agentskills/agentskills">GitHub - agentskills/agentskills: Specification and documentation for Agent Skills · GitHub</a></li>
 
 </ul>
 </details>
@@ -91,20 +71,20 @@ github_trending · GitHub Trending · Jun 24, 03:41
 
 ---
 
-<a id="item-4"></a>
-## [Hermes Agent: Self-Improving AI Agent Framework Gains 936 Stars in a Day](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
+<a id="item-3"></a>
+## [NousResearch/hermes-agent Surges with 936 Stars in One Day](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
 
-NousResearch released Hermes Agent, an open-source Python-based AI agent framework that features persistent memory, automatic skill creation, and multi-platform messaging support. The project gained 936 stars on GitHub in a single day, reaching over 200,000 total stars. Hermes Agent represents a significant step toward practical, self-improving AI agents that can be self-hosted and integrated across multiple communication platforms. Its rapid adoption signals strong community demand for open-source, memory-capable agent frameworks that reduce dependency on proprietary models. The framework supports spawning isolated sub-agents for parallel tasks, RPC-based multi-step pipeline collapsing, and full browser automation including navigation, clicking, and screenshots. It also offers model flexibility with support for over 200 models via OpenRouter, plus integrations with Nous Portal, NVIDIA NIM, and others.
+NousResearch/hermes-agent, an open-source AI agent framework with persistent memory and automated skill creation, gained 936 GitHub stars in a single day, reaching over 200,000 total stars. This rapid growth signals strong community validation for self-improving AI agents, potentially accelerating adoption of agentic frameworks in both research and production environments. The framework supports macOS, Windows, and Linux, and is built by Nous Research under the MIT license. It features persistent memory and automated skill creation, distinguishing it from other agent frameworks.
 
-github_trending · GitHub Trending · Jun 24, 03:41
+github_trending · GitHub Trending · Jun 24, 03:54
 
-**Background**: AI agent frameworks are software platforms that enable the development of autonomous agents capable of performing tasks, remembering context, and using tools. Hermes Agent distinguishes itself with a built-in learning loop that creates skills from experience and improves them during use, along with persistent memory that works across sessions and platforms.
+**Background**: AI agent frameworks are software platforms that streamline the development and deployment of AI agents. Hermes Agent is a self-improving agent that grows with the user, combining persistent memory with automated skill creation to adapt over time.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent — The Agent That Grows With You</a></li>
+<li><a href="https://github.com/NousResearch/hermes-agent">GitHub - NousResearch / hermes - agent : The agent that grows with you</a></li>
+<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent | Nous Research</a></li>
 <li><a href="https://hermes-agent.org/">Hermes Agent — Open-Source AI Agent with Persistent Memory</a></li>
-<li><a href="https://github.com/nousresearch/hermes-agent">GitHub - NousResearch/hermes-agent: The agent that grows with you · GitHub</a></li>
 
 </ul>
 </details>
@@ -113,235 +93,260 @@ github_trending · GitHub Trending · Jun 24, 03:41
 
 ---
 
-<a id="item-5"></a>
-## [DataClaw0: Agentic Tailoring of Multimodal Data from Raw Streams](https://huggingface.co/papers/2606.21337) ⭐️ 8.0/10
+<a id="item-4"></a>
+## [Qwen-AgentWorld: Language World Models for General Agents](https://huggingface.co/papers/2606.24597) ⭐️ 8.0/10
 
-Researchers propose Agentic Data Tailoring, a learnable paradigm that actively structures high-entropy multimodal streams, and introduce DataClaw_0-9B, a model trained via SFT and GRPO on a novel benchmark DataClaw_0-val. This paradigm shift from passive annotation to active data refinement addresses a key bottleneck in AI post-training, enabling efficient model adaptation with limited data and potentially reducing the cost of high-quality multimodal data preparation. The two-stage pipeline uses deterministic Factual Anchors to ground generative semantic synthesis, producing a large-scale dataset across five physical and digital domains. DataClaw_0-9B synergizes SFT with GRPO, and the benchmark DataClaw_0-val is the first dedicated to data refinement.
+Alibaba releases Qwen-AgentWorld, the first language world models capable of simulating agentic environments across 7 domains using long chain-of-thought reasoning, along with a benchmark AgentWorldBench. This work advances AI agents by enabling scalable environment simulation and improving downstream task performance, potentially accelerating research in autonomous agents and world modeling. The models, Qwen-AgentWorld-35B-A3B and 397B-A17B, are trained via a three-stage pipeline (CPT, SFT, RL) on over 10 million trajectories, and outperform frontier models on AgentWorldBench.
 
-huggingface_papers · Hugging Face Papers · Jun 23, 00:00
+huggingface_papers · Hugging Face Papers · Jun 24, 00:00
 
-**Background**: Massive unstructured multimodal streams suffer from high 'data entropy,' making efficient knowledge acquisition and AI post-training difficult. Existing passive annotation paradigms rely on heuristic rules or general VLMs, which are costly and fail to capture deep procedural logic. Agentic Data Tailoring elevates data processing to a learnable capability, actively refining data to align with user intents.
+**Background**: A world model predicts environment dynamics based on observations and actions, serving as a core cognitive mechanism for reasoning and planning. Language-based world models extend this by using language models to simulate agentic environments, enabling more general and scalable AI agents.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-the-foundations-for-agentic-ai-at-scale">Scaling agentic AI with data transformations | McKinsey</a></li>
-<li><a href="https://medium.com/data-science-in-your-pocket/what-is-grpo-the-rl-algorithm-used-to-train-deepseek-12acc19798d3">What is GRPO ? The RL algorithm used to train DeepSeek | Medium</a></li>
+<li><a href="https://qwen.ai/home">Qwen Studio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)">World model (artificial intelligence)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chain-of-thought_reasoning">Chain-of-thought reasoning</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#multimodal learning`, `#data processing`, `#AI alignment`, `#agentic systems`, `#benchmark`
+**Tags**: `#world models`, `#language models`, `#agentic AI`, `#environment simulation`, `#foundation models`
+
+---
+
+<a id="item-5"></a>
+## [NatureBench: Benchmarking AI Coding Agents for Scientific Discovery](https://huggingface.co/papers/2606.24530) ⭐️ 8.0/10
+
+Researchers introduced NatureBench, a cross-disciplinary benchmark of 90 tasks from Nature publications, and NatureGym, an automated pipeline that creates standardized containerized environments for each task. They found that the best AI coding agent surpasses published SOTA on only 17.8% of tasks under strict evaluation. This benchmark addresses a critical gap in evaluating whether AI coding agents can achieve genuine scientific discovery rather than mere reproduction. It provides a rigorous, reproducible framework that could guide future development of AI for scientific research. The evaluation used a strict web-search-disabled protocol, and analysis showed that agents succeed primarily through methodological translation (converting tasks into supervised prediction problems) rather than genuine invention. Failures were dominated by wrong method choice and insufficient compute budget, not task misunderstanding.
+
+huggingface_papers · Hugging Face Papers · Jun 24, 00:00
+
+**Background**: AI coding agents are systems that use large language models to write and execute code for scientific tasks. Prior benchmarks often suffered from environment fragmentation, where differences in software dependencies made results hard to reproduce. NatureGym solves this by automatically building containerized environments from source papers, ensuring reproducibility.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://allenai.org/blog/evaluating-scientific-discovery-agents">Evaluating agents for scientific discovery | Ai2</a></li>
+<li><a href="https://kempnerinstitute.harvard.edu/research/deeper-learning/from-models-to-scientists-building-ai-agents-for-scientific-discovery/">From Models to Scientists: Building AI Agents for Scientific Discovery - Kempner Institute</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI coding agents`, `#scientific discovery`, `#benchmark`, `#Nature publications`, `#automated evaluation`
 
 ---
 
 <a id="item-6"></a>
-## [NatureBench: AI Coding Agents Fail at Scientific Discovery](https://huggingface.co/papers/2606.24530) ⭐️ 8.0/10
+## [Don't Verify Emails by Sending Spam](https://milek7.pl/mailverifyspam/) ⭐️ 8.0/10
 
-Researchers introduced NatureBench, a benchmark of 90 scientific tasks from Nature publications, and NatureGym, an automated pipeline for containerized environments. They found that the best AI coding agent surpassed published SOTA on only 17.8% of tasks, primarily relying on methodological translation rather than genuine discovery. This benchmark provides a rigorous, cross-disciplinary evaluation for AI coding agents in scientific research, revealing that current agents lack genuine innovation. It highlights the need for agents that can perform real scientific discovery rather than just translating problems into familiar machine learning tasks. The benchmark includes 90 tasks from Nature-family papers, and agents were evaluated under a strict web-search-disabled protocol. Failures were dominated by wrong method choice and insufficient compute budget, not task misunderstanding.
+A blog post reveals that some companies verify email addresses by sending unsolicited emails, which can be perceived as spam, citing a real incident involving a company called Pangram. This practice erodes user trust and privacy, and highlights the need for better email verification methods that do not generate unwanted messages. The author experienced receiving spam-like emails after signing up with a new email address, and the founder of Pangram acknowledged the issue, promising to investigate and fix the problem.
 
-huggingface_papers · Hugging Face Papers · Jun 24, 00:00
+hackernews · garaetjjte · Jun 23, 20:23 · [Discussion](https://news.ycombinator.com/item?id=48650837)
 
-**Background**: AI coding agents are systems that use large language models to write code for scientific tasks. Prior benchmarks often suffered from environment fragmentation, where inconsistent setups made results hard to reproduce. NatureGym addresses this by providing standardized containerized environments for each task.
+**Background**: Email verification is a common process to ensure that an email address is valid and belongs to the user. However, some services use third-party validation tools that may send test emails, which can be mistaken for spam or actually be spam.
 
-**Tags**: `#AI agents`, `#benchmark`, `#scientific discovery`, `#coding agents`, `#Nature`
+**Discussion**: Commenters expressed skepticism that the spam was intentional, with some suggesting it could be a coincidence or a leak from a compromised library. The founder of Pangram engaged, stating they were unaware and would investigate.
+
+**Tags**: `#email verification`, `#privacy`, `#spam`, `#best practices`, `#security`
 
 ---
 
 <a id="item-7"></a>
 ## [AI's Affordability Crisis](https://blog.dshr.org/2026/06/ais-affordability-crisis.html) ⭐️ 8.0/10
 
-A blog post argues that AI model costs are unsustainably high, with companies like OpenAI and Anthropic potentially subsidizing enterprise customers by up to 70 times, leading to an affordability crisis. This analysis highlights a fundamental economic challenge in the AI industry that could affect pricing strategies, investment decisions, and the long-term viability of AI companies. The article claims that based on inference costs, Anthropic may be subsidizing enterprise customers by up to 40 times and OpenAI by up to 70 times, though commenters dispute these figures and note that enterprise plans do not include the most expensive models.
+A blog post argues that despite rapid drops in AI model prices, high operational costs and unclear return on investment are causing a financial crisis in the AI industry. This matters because if AI fails to demonstrate clear ROI, enterprise adoption may stall, leading to a market correction that could reshape the entire AI ecosystem. The article suggests that platforms like Anthropic and OpenAI may be subsidizing token prices by up to 40-70 times for enterprise customers, masking true costs.
 
 hackernews · ilreb · Jun 23, 15:11 · [Discussion](https://news.ycombinator.com/item?id=48646276)
 
-**Background**: AI companies like OpenAI and Anthropic offer tiered pricing for their models, with enterprise customers often paying a flat fee per seat rather than per token. The actual cost of serving a model depends on hardware, energy, and operational expenses, which can vary widely. The debate centers on whether current pricing reflects true costs or is artificially low to capture market share.
+**Background**: AI models are typically priced per token (a unit of text). Rapid price drops have occurred due to competition, but operational costs for serving models remain high. The article questions whether current pricing is sustainable.
 
-**Discussion**: Commenters are divided: some argue it's not an affordability crisis but a financial crisis, as models get cheaper rapidly and many companies may not see ROI. Others dispute the subsidy claims, noting that enterprise plans exclude the most expensive models, and suggest that OpenAI and Anthropic are not competing on price.
+**Discussion**: Commenters debate whether the issue is affordability or ROI: some argue that cost is not the problem but lack of real value, while others note that pricing strategies may be unsustainable and that Chinese and open models are competing on price.
 
-**Tags**: `#AI`, `#economics`, `#cost analysis`, `#industry trends`
+**Tags**: `#AI`, `#economics`, `#cost`, `#ROI`, `#pricing`
 
 ---
 
 <a id="item-8"></a>
-## [AI Hiring Tools Risk Algorithmic Monoculture Bias](https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection) ⭐️ 8.0/10
+## [Stanford: AI Hiring Tools Risk Algorithmic Monoculture Bias](https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection) ⭐️ 8.0/10
 
-A new Stanford HAI study reveals that dominant AI hiring tools from a single vendor can create algorithmic monocultures, amplifying racial bias and systematically rejecting candidates across multiple employers. This matters because algorithmic monocultures in hiring can lock entire populations out of job opportunities, exacerbating systemic inequality and reducing diversity in the workforce. The study analyzed 83,000 applicants across 100 Fortune 500 companies using a single vendor's AI assessment tool, finding that the same candidates were repeatedly rejected due to uniform algorithmic criteria.
+Stanford researchers published a study warning that AI hiring tools can create algorithmic monocultures, amplifying racial bias and leading to systemic rejection of qualified candidates. This matters because algorithmic monoculture in hiring can lock out entire demographic groups from job opportunities, exacerbating inequality and reducing diversity in the workforce. The study analyzed 83,000 applicants across 100 Fortune 500 companies using the pymetrics assessment tool, finding that reliance on a single AI vendor can amplify biases and cause systemic rejection.
 
 hackernews · sizzle · Jun 23, 18:56 · [Discussion](https://news.ycombinator.com/item?id=48649673)
 
-**Background**: Algorithmic monoculture occurs when many organizations deploy the same algorithm, leading to uniform decisions and amplified biases. In hiring, this means a candidate rejected by one AI tool is likely rejected by all, creating systemic exclusion.
+**Background**: Algorithmic monoculture occurs when the same algorithm or similar algorithms dominate a sector, leading to uniform decision-making. In hiring, this means many companies may use the same AI screening tools, which can embed and amplify existing biases.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://hai.stanford.edu/news/ai-hiring-tools-can-yield-racial-bias-and-systemic-rejection">AI Hiring Tools Can Yield Racial Bias and Systemic Rejection</a></li>
-<li><a href="https://www.emergentmind.com/topics/algorithmic-monoculture">Algorithmic Monoculture Overview</a></li>
-<li><a href="https://sanfordheisler.com/blog/ai-bias-in-hiring-algorithmic-recruiting-and-your-rights/">AI Bias in Hiring: Algorithmic Recruiting and Your Rights | Sanford Heisler Sharp McKnight, LLP</a></li>
+<li><a href="https://digitaleconomy.stanford.edu/news/qa-algorithmic-monoculture/">Q&A | Algorithmic Monoculture in Hiring - Stanford Digital Economy Lab</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Monoculture_(computer_science)">Monoculture (computer science) - Wikipedia</a></li>
+<li><a href="https://www.pnas.org/doi/10.1073/pnas.2018340118">Algorithmic monoculture and social welfare | PNAS</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters highlighted that the study focuses on assessment tools, not CV screening, and some questioned the methodology for determining race. Others emphasized the risk of a small number of AI models locking out populations, urging caution in using AI for evaluating people.
+**Discussion**: Commenters noted that the study focuses on assessment tools, not CV screening, and some questioned the methodology for determining race. Others emphasized the risk of a small number of AI models locking out portions of the population.
 
-**Tags**: `#AI Ethics`, `#Algorithmic Bias`, `#Hiring`, `#Racial Bias`, `#Stanford HAI`
+**Tags**: `#AI ethics`, `#algorithmic bias`, `#hiring`, `#fairness`, `#machine learning`
 
 ---
 
 <a id="item-9"></a>
-## [7 Chinese Firms Ship H100-Class AI Chips, Most Recently IPO'd](https://www.reddit.com/r/LocalLLaMA/comments/1udkxde/7_chinese_companies_are_already_shipping/) ⭐️ 8.0/10
+## [GPT-5 Pro Solves 3-Year Immunology Mystery](https://openai.com/index/gpt-5-immunology-mystery) ⭐️ 8.0/10
 
-A Reddit post maps seven Chinese companies already shipping H100/H200-class AI accelerators, including Huawei, Alibaba T-Head, Baidu Kunlunxin, and four pure-play chip startups that recently IPO'd. Most of these companies went public in the last six months, with MetaX and Moore Threads debuting in December 2025. This development challenges NVIDIA's dominance in the Chinese AI chip market, especially amid US export controls that restrict sales of H100 and H20 chips. It signals that China is building a self-sufficient AI hardware ecosystem, which could reshape global AI supply chains and competition. Huawei's Ascend 910D (5nm, 4-die, FP8) targets H100-class performance, while the Ascend 950PR reportedly beats the H200 outright. Alibaba's PG1 server packs 1,536 GB of VRAM using 16 T-Head PPU cards, enough to run frontier models like GLM 5.x in BF16 on-premises.
+OpenAI's GPT-5 Pro model helped immunologist Derya Unutmaz solve a long-standing mystery about T cell behavior that had puzzled researchers for three years. 这一突破展示了 GPT-5 加速科学发现的潜力，尤其是在免疫学领域，对开发癌症和自身免疫性疾病的新疗法具有重要意义。 GPT-5 Pro, a reasoning model with extended capabilities, was used to analyze complex T cell data and identify patterns that led to the solution. The mystery involved understanding how T cells behave in chronic infections and tumor microenvironments.
 
-reddit · r/LocalLLaMA · /u/awfulalexey · Jun 23, 15:50
+rss · OpenAI Blog · Jun 23, 17:00
 
-**Background**: NVIDIA's H100 and H200 GPUs are the industry standard for training and inference of large AI models. US export controls have restricted sales of these chips to China, pushing Chinese companies to develop domestic alternatives. The Chinese market is now seeing a wave of AI chip startups going public, backed by strong demand from local cloud providers and AI firms.
+**Background**: T cells are a type of white blood cell crucial for immune response. T cell exhaustion is a phenomenon where T cells lose function over time, often in chronic infections and cancer, limiting the effectiveness of immunotherapies. GPT-5 is OpenAI's latest model, offering significant improvements in reasoning and analysis across multiple domains.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1udkxde/7_chinese_companies_are_already_shipping/">7 Chinese companies are already shipping H100/H200-class AI chips ...</a></li>
-<li><a href="https://www.cnbc.com/2025/12/17/metax-moore-threads-chinese-rivals-nvidia-ai-chips.html">MetaX and Moore Threads are latest Chinese rivals to Nvidia's AI chips</a></li>
-<li><a href="https://www.tomshardware.com/tech-industry/alibaba-plans-ipo-for-chip-arm-t-head-to-help-bankroll-ambitious-ai-infrastructure-investments-company-to-go-up-against-cambricon-and-huawei-to-capture-domestic-accelerator-market">Alibaba plans IPO for chip-arm T-Head to help bankroll ambitious ...</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-5/">Introducing GPT-5 | OpenAI</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12764927/">Revitalizing T cells: breakthroughs and challenges in overcoming T cell exhaustion - PMC</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion highlights skepticism about performance claims, with users noting the lack of independent benchmarks and the reliance on vendor data. Some commenters emphasize the significance of China's progress, while others caution that software ecosystem maturity remains a key challenge for these chips to truly compete with NVIDIA.
-
-**Tags**: `#AI hardware`, `#China`, `#semiconductors`, `#NVIDIA competition`, `#export controls`
+**Tags**: `#GPT-5`, `#immunology`, `#AI in science`, `#breakthrough`, `#OpenAI`
 
 ---
 
 <a id="item-10"></a>
-## [Mimo 2.5 Fast at Large Context on Dual RTX Pro 6000](https://www.reddit.com/r/LocalLLaMA/comments/1udwabh/mimo_25_is_fast_at_large_context_dual_rtx_pro_6000/) ⭐️ 8.0/10
+## [7 Chinese firms ship H100-class AI chips, most recently IPO'd](https://www.reddit.com/r/LocalLLaMA/comments/1udkxde/7_chinese_companies_are_already_shipping/) ⭐️ 8.0/10
 
-A Reddit user tested Mimo 2.5, MiniMax M3, and DeepSeek V4 on dual RTX Pro 6000 GPUs and found that Mimo 2.5 maintains fast inference at large context windows due to its sliding-window attention, while MiniMax M3 and DeepSeek V4 suffer severe slowdowns because their custom GPU kernels are not yet available for consumer Blackwell GPUs. This comparison highlights a critical software bottleneck for deploying the latest large language models locally on high-end consumer GPUs, and identifies Mimo 2.5 and Step 3.7 Flash as viable alternatives for agentic workloads requiring large context windows. Mimo 2.5 uses a 5-to-1 local/global sliding-window attention similar to Gemma 3, keeping inference fast at 178k context, while MiniMax M3 falls back to dense attention and DeepSeek V4's ops drop to CPU, grinding to 14 t/s. Step 3.7 Flash uses a 3-to-1 sliding-window hybrid and achieves ~40 t/s at 178k context.
+Seven Chinese companies are currently shipping AI accelerators that rival NVIDIA's H100 and H200, with most having gone public in the last six months. The companies include Huawei, Alibaba, Baidu, and four pure-play chip startups, collectively known as the "three dragons and four snakes." This development challenges NVIDIA's dominance in the AI hardware market and undermines the effectiveness of US export controls on advanced chips to China. It signals a rapid shift toward domestic AI chip self-sufficiency in China, with potential global implications for supply chains and AI competition. Huawei's Ascend 910C is in mass production, and the next-gen 950PR reportedly outperforms the H200. Alibaba's T-Head PPU offers 96GB HBM2e per card, and its PG1 server can hold 1.5TB of VRAM, enough to run a full frontier model locally.
 
-reddit · r/LocalLLaMA · /u/xquarx · Jun 23, 22:55
+reddit · r/LocalLLaMA · /u/awfulalexey · Jun 23, 15:50
 
-**Background**: Sliding-window attention is a technique where each token only attends to a fixed-size window of recent tokens, reducing computational cost for long sequences. Custom GPU kernels are optimized implementations of model operations that leverage specific GPU hardware features; without them, models may fall back to slower generic implementations. The RTX Pro 6000 is based on NVIDIA's Blackwell architecture, but the datacenter variant (SM100, B200 class) differs from the consumer variant (SM120), causing kernel incompatibility.
+**Background**: NVIDIA's H100 and H200 are high-end AI accelerators widely used for training large language models. US export restrictions have limited sales of these chips to China, prompting Chinese companies to develop domestic alternatives. The "three dragons" refer to Huawei, Alibaba, and Baidu, while the "four snakes" are specialized chip startups that recently IPO'd.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://medium.com/@manojkumal/sliding-window-attention-565f963a1ffd">Sliding Window Attention. Before we jump into sliding window… | by Manoj Kumal | Medium</a></li>
-<li><a href="https://rotascale.com/blog/triton-kernels-8x-inference-speedup/">From 11% to 88% GPU Utilization: How We Built 8x Faster LLM ...</a></li>
-<li><a href="https://www.tomshardware.com/pc-components/gpus/nvidia-blackwell-architecture-deep-dive-a-closer-look-at-the-upgrades-coming-with-rtx-50-series-gpus">Nvidia Blackwell architecture deep dive: A closer... | Tom's Hardware</a></li>
+<li><a href="https://www.nvidia.com/en-us/data-center/h100/">H100 GPU | NVIDIA</a></li>
+<li><a href="https://enkiai.com/ai-market-intelligence/top-10-china-ai-chip-companies-of-2025-whos-winning/">Top 10 China AI Chip Companies of 2025: Who's Winning?</a></li>
+<li><a href="https://fourweekmba.com/ai-chips-nvidia-huawei-china-trade-war-analysis/">Nvidia vs Huawei: China 's Strategic Chip Rejection - FourWeekMBA</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM inference`, `#attention mechanisms`, `#GPU performance`, `#local LLMs`, `#large context`
+**Discussion**: The Reddit discussion highlights that many Western observers underestimate China's progress in AI hardware. Commenters note the strategic importance of these chips for running Chinese open-weight models like Qwen and DeepSeek, and debate the effectiveness of export controls given these developments.
+
+**Tags**: `#AI hardware`, `#Chinese tech`, `#semiconductors`, `#export controls`, `#NVIDIA`
 
 ---
 
 <a id="item-11"></a>
-## [LLM Omissions Outnumber Hallucinations in Medical Scribing](https://www.reddit.com/r/LocalLLaMA/comments/1udlrmf/i_benchmarked_8_llms_for_medical_scribing/) ⭐️ 8.0/10
+## [Mimo 2.5 Stays Fast at Large Context on Dual RTX Pro 6000](https://www.reddit.com/r/LocalLLaMA/comments/1udwabh/mimo_25_is_fast_at_large_context_dual_rtx_pro_6000/) ⭐️ 8.0/10
 
-A benchmark of 8 LLMs on 300 synthetic doctor-patient dialogues found 520 left-out safety facts versus only 12 high-impact hallucinations across 2,400 SOAP notes. This highlights that omissions, not just hallucinations, are a critical safety risk in AI-assisted medical documentation, and addressing them could make cheaper models like DeepSeek viable with a safety layer. GPT-5.4-mini performed well for cost and speed; Claude Sonnet and DeepSeek had best prose quality; Claude Opus had fewest omissions but worse prose; Kimi had zero hallucinations but was slow and expensive.
+Mimo 2.5 maintains fast inference at large context sizes on dual RTX Pro 6000 GPUs by using a 5-to-1 local/global sliding-window attention mechanism, similar to Gemma 3. This is significant because many newer models like MiniMax M3 and DeepSeek V4 rely on custom GPU kernels not yet optimized for consumer Blackwell GPUs, causing severe slowdowns at large context. Mimo 2.5's approach enables practical local deployment for agentic workloads requiring long context. Mimo 2.5 uses a 5-to-1 pattern where most layers only attend to recent tokens (local) while some layers attend to the full context (global). In contrast, MiniMax M3 falls back to dense attention and slows to a crawl, and DeepSeek V4's custom ops drop to CPU, grinding to 14 t/s.
+
+reddit · r/LocalLLaMA · /u/xquarx · Jun 23, 22:55
+
+**Background**: Sliding-window attention (SWA) limits each token's attention to a fixed-size window of recent tokens, reducing computational cost. A 5-to-1 local/global pattern means for every 5 local layers, there is 1 global layer that sees the full context. This hybrid approach balances efficiency and long-range understanding. Consumer Blackwell GPUs (e.g., RTX 5090, RTX PRO 6000) lack optimized kernels for datacenter-focused models like MiniMax M3 and DeepSeek V4, which are written for datacenter Blackwell (SM100, B200 class).
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://sebastianraschka.com/llm-architecture-gallery/swa/">Sliding Window Attention (SWA) | Sebastian Raschka, PhD</a></li>
+<li><a href="https://github.com/pekkah/SharpInference/issues/87">Gemma 4 Phase 1: sliding-window (local) attention with 5:1 local:global pattern · Issue #87 · pekkah/SharpInference</a></li>
+<li><a href="https://acecloud.ai/blog/rtx-pro-6000-blackwell-vs-rtx-6000-ada/">NVIDIA RTX PRO 6000 Blackwell Vs RTX 6000 Ada: 2026 Guide</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit post highlights that software support is lagging behind hardware, making many latest models unusable on consumer Blackwell GPUs. Users note that Mimo 2.5 and Step 3.7 Flash, using older attention approaches, are currently the best options for large-context agentic work on such hardware.
+
+**Tags**: `#LLM inference`, `#attention mechanism`, `#local LLM`, `#GPU performance`, `#Mimo 2.5`
+
+---
+
+<a id="item-12"></a>
+## [US Bill Mandates Location Tracking for AI Chips](https://www.reddit.com/r/LocalLLaMA/comments/1ue2fd7/seems_this_community_might_have_missed_it_bill/) ⭐️ 8.0/10
+
+The Chip Security Act, a bipartisan US bill introduced in May 2025, would require location-tracking mechanisms for advanced AI chips to prevent diversion to adversaries like China. Several companies have publicly supported the bill, signaling growing industry backing. If enacted, this bill could restrict the availability of advanced AI chips for open-source AI development and global distribution, potentially slowing innovation outside sanctioned entities. It also raises concerns about privacy, compliance costs, and the effectiveness of tracking mechanisms. The bill, introduced as H.R. 3447 and S. 1705, requires the Secretary of Commerce to issue standards for chip security mechanisms, including location tracking. It was a direct response to concerns that Chinese companies like DeepSeek used restricted Nvidia chips.
+
+reddit · r/LocalLLaMA · /u/alex20_202020 · Jun 24, 03:35
+
+**Background**: The US has imposed export controls on advanced AI chips to China, but enforcement relies on supply chain monitoring. The Chip Security Act aims to embed tracking directly into chips, making diversion harder. Critics argue tracking can be bypassed via internet-connected datacenters and adds a 'tracking tax' to every chip.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.congress.gov/bill/119th-congress/house-bill/3447/text">Text - H.R.3447 - 119th Congress (2025-2026): Chip Security Act | Congress.gov | Library of Congress</a></li>
+<li><a href="https://chinaselectcommittee.house.gov/media/press-releases/house-committee-passes-chip-security-act">House Committee Passes Chip Security Act | Select Committee on the CCP</a></li>
+<li><a href="https://yro.slashdot.org/story/26/06/21/065246/us-bill-would-mandate-ai-chip-location-tracking-to-thwart-china-and-other-adversaries?ref=upstract.com">US Bill Would Mandate AI Chip Location Tracking to... - Slashdot</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit discussion on r/LocalLLaMA highlights concerns that the bill could hinder open-source AI by limiting chip access. Some users question the effectiveness of tracking, noting that chips can be accessed remotely. Others worry about increased costs and surveillance.
+
+**Tags**: `#AI regulation`, `#chip tracking`, `#hardware security`, `#open-source AI`, `#policy`
+
+---
+
+<a id="item-13"></a>
+## [LLM Medical Scribing: Omissions Outnumber Hallucinations 43:1](https://www.reddit.com/r/LocalLLaMA/comments/1udlrmf/i_benchmarked_8_llms_for_medical_scribing/) ⭐️ 8.0/10
+
+A benchmark of 8 LLMs on 300 synthetic doctor-patient dialogues found 520 left-out safety facts versus only 12 high-impact hallucinations across 2,400 SOAP notes. This reveals that omissions are a far more common and dangerous failure mode than hallucinations in medical scribing, challenging the prevailing focus on hallucination alone. GPT-5.4-mini performed well for cost and speed; Claude Sonnet and DeepSeek had best prose quality; DeepSeek missed many safety facts; Claude Opus had fewest omissions but worse prose; Kimi had zero hallucinations but was slow and expensive.
 
 reddit · r/LocalLLaMA · /u/MajesticAd2862 · Jun 23, 16:20
 
-**Background**: SOAP notes (Subjective, Objective, Assessment, Plan) are a structured format used by healthcare providers to document patient encounters. LLMs are increasingly used to generate these notes from conversations, but safety concerns focus on hallucinations (fabricated information). This benchmark reveals that omissions (missing clinically relevant details) are far more common and equally dangerous.
+**Background**: SOAP notes (Subjective, Objective, Assessment, Plan) are a structured format used by healthcare providers to document patient encounters. LLMs used for medical scribing must accurately transcribe and summarize conversations, but they can hallucinate (generate false information) or omit clinically relevant details. Omissions are harder to detect because the present information is correct, yet missing facts can lead to serious safety risks.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/SOAP_note">SOAP note - Wikipedia</a></li>
 <li><a href="https://www.nature.com/articles/s41746-025-01670-7">A framework to assess clinical safety and hallucination rates of LLMs for medical text summarisation | npj Digital Medicine</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK482263/">SOAP Notes - StatPearls - NCBI Bookshelf - NIH</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#medical AI`, `#benchmark`, `#hallucination`, `#safety`
+**Tags**: `#LLM`, `#medical AI`, `#benchmark`, `#safety`, `#hallucination`
 
 ---
 
-<a id="item-12"></a>
-## [KLD Mapping of KV Cache Quantization for Qwen3.6 and Gemma4](https://www.reddit.com/r/LocalLLaMA/comments/1udjvhd/i_mapped_the_kld_of_kv_cache_quantization_for/) ⭐️ 8.0/10
+<a id="item-14"></a>
+## [KLD mapping of KV cache quantization for Qwen and Gemma models](https://www.reddit.com/r/LocalLLaMA/comments/1udjvhd/i_mapped_the_kld_of_kv_cache_quantization_for/) ⭐️ 8.0/10
 
-A detailed analysis mapped the Kullback-Leibler divergence (KLD) of KV cache quantization for Qwen3.6-35B-A3B and Gemma4-E2B QAT models, revealing that q8/q8 quantization is nearly lossless, q4/q4 is usable on Qwen but catastrophic on Gemma, and turbo modes enable extreme compression at a quality cost. This work provides practical guidance for deploying large language models with reduced memory footprint, helping practitioners choose optimal KV cache quantization settings for different models and use cases. The analysis includes zoomable plots and reproducible code, and shows that K and V sensitivity varies asymmetrically across models and quantization levels.
+A detailed analysis mapped the Kullback-Leibler divergence (KLD) of KV cache quantization for Qwen3.6-35B-A3B and Gemma4-E2B QAT, revealing that q8/q8 quantization is nearly lossless, q4/q4 is usable on Qwen but catastrophic on Gemma, and turbo4/turbo3/turbo2 enable extreme compression at significant quality cost. This work provides crucial insights for deploying large language models with reduced memory footprint, helping practitioners choose optimal KV cache quantization levels for different models and use cases. The analysis includes zoomable plots and reproducible software, and shows that K (key) sensitivity varies relative to V (value) across models—sometimes K is more sensitive, sometimes less, sometimes symmetric.
 
 reddit · r/LocalLLaMA · /u/crusaderky · Jun 23, 15:12
 
-**Background**: KV cache quantization reduces the memory required to store key-value pairs during autoregressive decoding in LLMs, enabling longer context windows and lower hardware requirements. KLD measures the information loss between the original and quantized cache distributions.
+**Background**: KV cache quantization reduces memory usage during LLM inference by compressing the key-value cache, but aggressive quantization can degrade output quality. Kullback-Leibler divergence (KLD) measures the information loss between the original and quantized distributions, providing a more nuanced metric than perplexity alone.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/">Quantized KV Cache - vLLM Documentation</a></li>
 <li><a href="https://anbeeld.com/articles/kv-cache-quantization-benchmarks-for-long-context">KV Cache Quantization Benchmarks for Long Context - Anbeeld</a></li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1thu6os/here_are_my_kv_cache_quantization_benchmarks/">Here are my KV cache quantization benchmarks: TurboQuant is overrated but saved by TCQ, q5 deserves more attention, and symmetric q8 might be a waste of VRAM : r/LocalLLaMA</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion on Reddit praised the thorough methodology and reproducible code, with users noting the practical value of the asymmetric K/V sensitivity findings and the trade-off analysis for turbo modes.
-
-**Tags**: `#KV cache quantization`, `#LLM inference`, `#model compression`, `#Qwen`, `#Gemma`
-
----
-
-<a id="item-13"></a>
-## [US Bill Mandating AI Chip Location Tracking Gains Industry Support](https://www.reddit.com/r/LocalLLaMA/comments/1ue2fd7/seems_this_community_might_have_missed_it_bill/) ⭐️ 8.0/10
-
-The Chip Security Act, a bipartisan US bill requiring location-tracking mechanisms for advanced AI chips, has gained support from half a dozen companies including Nvidia. The bill aims to prevent smuggling and ensure chips remain in authorized locations. This bill could restrict access to advanced AI chips for unauthorized entities, potentially impacting open-source AI development and local LLM communities that rely on such hardware. It also sets a precedent for hardware-level export control enforcement. The bill requires the Secretary of Commerce to issue standards for chip security mechanisms, including location verification. Nvidia has developed a location-tracking technology using communication delays to estimate a chip's country of operation.
-
-reddit · r/LocalLLaMA · /u/alex20_202020 · Jun 24, 03:35
-
-**Background**: The Chip Security Act was introduced in May 2025 in response to concerns that advanced AI chips were being smuggled to restricted entities, such as those in China. Location verification technology leverages existing chip capabilities to provide regular compliance checks without requiring physical inspection.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.nbcnews.com/tech/tech-news/chips-security-act-gains-industry-support-letter-rcna350500">Bill that would mandate AI chip location tracking gains industry support</a></li>
-<li><a href="https://www.congress.gov/bill/119th-congress/house-bill/3447/text">Text - H.R.3447 - 119th Congress (2025-2026): Chip Security Act | Congress.gov | Library of Congress</a></li>
-<li><a href="https://moderndiplomacy.eu/2025/12/10/nvidia-develops-location-tracking-tech-to-combat-ai-chip-smuggling/">Nvidia Develops Location-Tracking Tech to Combat AI Chip Smuggling - Modern Diplomacy</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit community expressed mixed reactions, with some users concerned about the impact on open-source AI and local LLM development, while others saw it as necessary for national security. A few commenters questioned the effectiveness of location tracking and potential for false positives.
-
-**Tags**: `#AI chips`, `#regulation`, `#open-source AI`, `#hardware tracking`, `#US policy`
-
----
-
-<a id="item-14"></a>
-## [Krea 2 Open-Source Text-to-Image Model Released](https://www.reddit.com/r/StableDiffusion/comments/1udjzm6/krea_2_opensource_release/) ⭐️ 8.0/10
-
-Krea AI has open-sourced Krea 2, a text-to-image model available in two variants: Krea 2 Raw for fine-tuning and Krea 2 Turbo for fast inference. The release includes code, weights, a technical report, and support for natural language prompts and style LoRAs. Krea 2 claims to be the most aesthetic open-source image model and ranks #1 among independent labs on Artificial Analysis, making it a significant contribution to the open-source AI art community. Its release empowers developers and artists with a high-quality, customizable model for creative workflows. Krea 2 Raw uses CFG guidance and is designed for control and fidelity, while Krea 2 Turbo is distilled for 8-step inference and supports up to 2K resolution. The model uses a Qwen3-VL text encoder and a flow-matching architecture with single-stream MMDiT and grouped-query attention.
-
-reddit · r/StableDiffusion · /u/Angrypenguinpng · Jun 23, 15:16
-
-**Background**: Text-to-image models generate images from textual descriptions. Krea 2 is a flow-matching model, a type of generative model that learns to transform noise into images. LoRA (Low-Rank Adaptation) is a lightweight fine-tuning technique that allows users to apply specific styles or concepts without retraining the entire model. CFG (Classifier-Free Guidance) scale controls how closely the generated image follows the prompt.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.krea.ai/krea-2">Krea 2 : AI Image Foundation Model & Style Control</a></li>
-<li><a href="https://huggingface.co/docs/diffusers/main/api/pipelines/krea2">Krea 2 · Hugging Face</a></li>
-<li><a href="https://digg.com/tech/zsk4g1je">Krea AI open-sources Krea 2 text - to - image model weights in Raw...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit community reacted positively, with many praising the model's quality and the team's openness. Users shared quantized versions for various GPU tiers and discussed the differences between Raw and Turbo variants, as well as best practices for prompting and LoRA training.
-
-**Tags**: `#text-to-image`, `#open-source`, `#AI`, `#Stable Diffusion`, `#generative models`
+**Tags**: `#KV cache`, `#quantization`, `#LLM inference`, `#model compression`, `#perplexity analysis`
 
 ---
 
 <a id="item-15"></a>
-## [DeepSWE: A New Benchmark for Frontier Coding Models](https://www.reddit.com/r/MachineLearning/comments/1ue0hlp/deepswe_new_benchmark_looking_at_how_well_todays/) ⭐️ 8.0/10
+## [Krea 2 Open-Source Text-to-Image Model Released](https://www.reddit.com/r/StableDiffusion/comments/1udjzm6/krea_2_opensource_release/) ⭐️ 8.0/10
 
-DeepSWE is a new open-source benchmark that evaluates frontier coding models on 113 original software engineering tasks drawn from 91 repositories across 5 languages, with contamination-free tasks and hand-written verifiers. DeepSWE addresses key limitations of existing benchmarks like SWE-bench by providing contamination-free, diverse, and realistic tasks, leading to a wider performance spread among models and more reliable evaluation of real-world coding ability. DeepSWE tasks require 5.5x more code and ~2x more output tokens than SWE-bench Pro, yet prompts are about half the length. The benchmark is open-source and currently led by GPT-5.5 with 70% pass@1.
+Krea has open-sourced Krea 2, a text-to-image model available in two variants: Krea 2 Raw for control and training, and Krea 2 Turbo for fast inference up to 2K resolution. This release provides a high-quality, open-source alternative to proprietary models, with strong performance claims and community-driven development, potentially accelerating innovation in AI image generation. Krea 2 is tuned for natural language prompting, supports text rendering via quotes, and includes a growing set of style LoRAs that can be loaded via Hugging Face paths.
 
-reddit · r/MachineLearning · /u/we_are_mammals · Jun 24, 02:03
+reddit · r/StableDiffusion · /u/Angrypenguinpng · Jun 23, 15:16
 
-**Background**: Existing coding benchmarks like SWE-bench often suffer from data contamination, as tasks are adapted from public commits or pull requests that models may have seen during training. DeepSWE creates entirely original tasks to avoid this issue, and uses hand-written verifiers that test software behavior rather than implementation details, ensuring more reliable evaluation.
+**Background**: Text-to-image models generate images from textual descriptions. Krea 2 uses a diffusion-based architecture similar to Stable Diffusion, with CFG guidance for control and distillation for speed. LoRA (Low-Rank Adaptation) allows efficient fine-tuning without retraining the full model.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://deepswe.datacurve.ai/">DeepSWE</a></li>
-<li><a href="https://venturebeat.com/technology/deepswe-blows-up-the-ai-coding-leaderboard-crowns-gpt-5-5-and-finds-claude-opus-exploiting-a-benchmark-loophole">DeepSWE blows up the AI coding leaderboard, crowns GPT-5.5, and finds Claude Opus exploiting a benchmark loophole | VentureBeat</a></li>
-<li><a href="https://www.stork.ai/blog/ais-reality-check-the-benchmark-that-broke-llms">DeepSWE: The AI Coding Benchmark Exposing Real LLM... | Stork.AI</a></li>
+<li><a href="https://www.krea.ai/krea-2-open-source">Krea 2 Open-Source: RAW and Turbo Image Models</a></li>
+<li><a href="https://www.krea.ai/blog/krea-2-technical-report">Krea 2 Technical Report - Krea</a></li>
+<li><a href="https://github.com/krea-ai/krea-2">GitHub - krea-ai/krea-2: Official inference code for Krea 2 · GitHub</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#benchmark`, `#code generation`, `#AI`, `#software engineering`, `#open source`
+**Discussion**: The Reddit community reacted positively, with users sharing quantized versions for various GPU tiers and discussing workflows. The Krea team engaged in an AMA, answering questions about training and future plans.
+
+**Tags**: `#text-to-image`, `#open-source`, `#AI`, `#Stable Diffusion`, `#machine learning`
 
 ---
