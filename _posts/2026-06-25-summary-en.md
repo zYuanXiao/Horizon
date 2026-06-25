@@ -5,350 +5,341 @@ date: 2026-06-25
 lang: en
 ---
 
-> From 152 items, 15 important content pieces were selected
+> From 151 items, 15 important content pieces were selected
 
 ---
 
-1. [OpenAI unveils first custom AI inference chip Jalapeno](#item-1) ⭐️ 9.0/10
-2. [Gemini 3.5 Flash Gains Built-in Computer Use](#item-2) ⭐️ 9.0/10
-3. [Self-play RL agent achieves superhuman level in Generals.io](#item-3) ⭐️ 9.0/10
-4. [iLLaDA: 8B Masked Diffusion Model Outperforms Autoregressive LLMs](#item-4) ⭐️ 9.0/10
-5. [GitHub repo maps 817 cybersecurity skills for AI agents](#item-5) ⭐️ 8.0/10
-6. [NousResearch Hermes Agent Surges with 1178 Stars in a Day](#item-6) ⭐️ 8.0/10
-7. [Qwen-AgentWorld: Language World Models for General Agents](#item-7) ⭐️ 8.0/10
-8. [NVIDIA's 45°C Cooling Slashes Data Center Water Use](#item-8) ⭐️ 8.0/10
-9. [Nub: A Bun-like all-in-one toolkit for Node.js](#item-9) ⭐️ 8.0/10
-10. [Rust crates.io seeks to reduce GitHub dependency](#item-10) ⭐️ 8.0/10
-11. [Hobby OS Runs Windows Games via Wine](#item-11) ⭐️ 8.0/10
-12. [PostHog engineer uses AI to rewrite SQL parser, 70x faster](#item-12) ⭐️ 8.0/10
-13. [Databricks Leaders Argue for Open Agent Cloud Ecosystems](#item-13) ⭐️ 8.0/10
-14. [Claude Tag: Multiplayer AI Agents in Slack](#item-14) ⭐️ 8.0/10
-15. [Swiss Supreme Court Evaluates Abliterated Model Heretic](#item-15) ⭐️ 8.0/10
+1. [OpenAI unveils first custom AI inference chip Jalapeño](#item-1) ⭐️ 9.0/10
+2. [Superhuman Generals.io Agent via Self-Play RL](#item-2) ⭐️ 9.0/10
+3. [GitHub Repo Maps 817 Cybersecurity Skills for AI Agents](#item-3) ⭐️ 8.0/10
+4. [NousResearch/hermes-agent Surges with 1178 Stars in a Day](#item-4) ⭐️ 8.0/10
+5. [NatureBench Tests AI Agents on Real Scientific Discovery](#item-5) ⭐️ 8.0/10
+6. [MobileForge: Annotation-Free Adaptation for Mobile GUI Agents](#item-6) ⭐️ 8.0/10
+7. [Carmack Regrets Pushing id Software Team Too Hard](#item-7) ⭐️ 8.0/10
+8. [Rust Community Debates GitHub Dependency for crates.io](#item-8) ⭐️ 8.0/10
+9. [Hobby OS Runs Windows Games via Wine Port](#item-9) ⭐️ 8.0/10
+10. [PostHog SQL parser rewritten 70x faster using AI](#item-10) ⭐️ 8.0/10
+11. [LLM-Generated Job Apps Erode Authenticity](#item-11) ⭐️ 8.0/10
+12. [TRM Thinking Reward Model Quantifies LLM Reasoning Quality](#item-12) ⭐️ 8.0/10
+13. [Databricks Leaders Advocate for Open Frontier Ecosystem](#item-13) ⭐️ 8.0/10
+14. [Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack](#item-14) ⭐️ 8.0/10
+15. [Context Windows Are Not Memory: Key Insight for AI Agents](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI unveils first custom AI inference chip Jalapeno](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) ⭐️ 9.0/10
+## [OpenAI unveils first custom AI inference chip Jalapeño](https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/) ⭐️ 9.0/10
 
-OpenAI and Broadcom unveiled Jalapeno, a custom AI inference chip designed specifically for large language models, manufactured by TSMC and developed in nine months with assistance from OpenAI's own models. This marks OpenAI's first entry into custom silicon, potentially reducing reliance on Nvidia GPUs and lowering inference costs, which could reshape the AI hardware landscape and improve efficiency for large-scale AI deployments. Jalapeno is optimized specifically for LLM inference, not general-purpose AI workloads, and its architecture focuses on compute, memory, networking, and serving requirements of modern models. The chip was co-designed with Broadcom and fabricated by TSMC.
+OpenAI unveiled its first custom AI inference chip, named Jalapeño, developed in collaboration with Broadcom and manufactured by TSMC. The chip was designed from scratch and claims to have gone from design to production in just nine months, accelerated by OpenAI's own AI models. This marks a major strategic move for OpenAI to reduce reliance on NVIDIA GPUs and optimize inference cost and performance at scale. As inference becomes the dominant AI workload, custom chips like Jalapeño could reshape the AI hardware landscape and drive down costs for deploying large language models. Jalapeño is an inference-specific ASIC optimized for LLM workloads, built on Broadcom's XPU platform and manufactured by TSMC. OpenAI claims the chip's development was accelerated by its own AI models, though some community members question the significance of that claim.
 
 hackernews · jamdesk · Jun 24, 17:47 · [Discussion](https://news.ycombinator.com/item?id=48663324)
 
-**Background**: AI inference chips are specialized processors designed to run trained AI models efficiently, as opposed to training chips like Nvidia's H100. Many large AI companies, including Google with its TPUs and Amazon with Inferentia, have developed custom chips to reduce costs and improve performance. OpenAI's move follows this trend, aiming to optimize inference for its own models like GPT.
+**Background**: AI inference is the process of running a trained model to generate predictions, which is distinct from training that requires massive compute. Inference chips are specialized to optimize cost-per-token, latency, and power efficiency, and are increasingly important as AI models are deployed at scale. Broadcom has a history of designing custom AI chips for hyperscalers like Google (TPUs) and Meta.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI and Broadcom unveil LLM-optimized inference chip | OpenAI</a></li>
-<li><a href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html">OpenAI and Broadcom reveal Jalapeno, first AI chip in partnership</a></li>
-<li><a href="https://interestingengineering.com/ai-robotics/openai-jalapeno-ai-inference-chip-broadcom">OpenAI unveils Jalapeño chip for large-scale inference workloads</a></li>
+<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI and Broadcom unveil LLM-optimized inference chip</a></li>
+<li><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">OpenAI unveils its first custom chip, built by Broadcom</a></li>
+<li><a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor">OpenAI and Broadcom Unveil LLM-Optimized Intelligence ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed skepticism about OpenAI's claim that its models accelerated chip design, with some calling it vague marketing. Others speculated about architectural innovations like weight-in-ROM designs and compared the chip to competitors like Google's TPUs and Taalas's silicon-burned models.
+**Discussion**: Community comments expressed curiosity about the AI-accelerated design claim, with some skepticism that it might be marketing hype. Others noted the chip is manufactured by TSMC and discussed the potential of inference-specific chips, comparing them to Google's TPUs and startups like Taalas that burn models into silicon.
 
 **Tags**: `#AI hardware`, `#OpenAI`, `#custom chip`, `#inference`, `#Broadcom`
 
 ---
 
 <a id="item-2"></a>
-## [Gemini 3.5 Flash Gains Built-in Computer Use](https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/) ⭐️ 9.0/10
+## [Superhuman Generals.io Agent via Self-Play RL](https://www.reddit.com/r/MachineLearning/comments/1uei2yg/i_made_a_superhuman_generalsio_agent_with/) ⭐️ 9.0/10
 
-Google DeepMind has integrated computer use as a native tool in Gemini 3.5 Flash, allowing the AI to directly interact with computer interfaces such as screens, keyboards, and mice. This feature was previously only available as a standalone model in Gemini 2.5. This advancement enables AI agents to perform complex tasks like software testing, data entry, and workflow automation by directly controlling computer interfaces, significantly expanding the practical applications of AI in software engineering and enterprise automation. It represents a major step toward more autonomous and capable AI systems. Gemini 3.5 Flash supports a 1 million token context window, 65,000 max output tokens, and thinking capabilities, along with the same tool set as Gemini 3 Flash. Computer use is currently in preview and available via the Gemini API.
-
-rss · Google DeepMind Blog · Jun 24, 16:30
-
-**Background**: Computer use refers to an AI's ability to perceive and interact with graphical user interfaces (GUIs) just like a human, by interpreting screen content and performing actions such as clicking, typing, and scrolling. This capability is part of the broader field of AI agents, which aim to automate complex multi-step tasks in digital environments. Previous models required separate specialized systems for such interactions.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/">Introducing computer use in Gemini 3 . 5 Flash</a></li>
-<li><a href="https://deepmind.google/models/gemini/flash/">Gemini 3 . 5 Flash — Google DeepMind</a></li>
-<li><a href="https://ai.google.dev/gemini-api/docs/generate-content/whats-new-gemini-3.5">What's new in Gemini 3 . 5 Flash | Gemini Generate Content API...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Gemini`, `#computer use`, `#Google DeepMind`, `#machine learning`
-
----
-
-<a id="item-3"></a>
-## [Self-play RL agent achieves superhuman level in Generals.io](https://www.reddit.com/r/MachineLearning/comments/1uei2yg/i_made_a_superhuman_generalsio_agent_with/) ⭐️ 9.0/10
-
-A self-play reinforcement learning agent using JAX and Vision Transformers has reached superhuman performance in the imperfect-information real-time strategy game Generals.io, ranking #1 on the human 1v1 leaderboard. The entire pipeline, including a fast JAX simulator, has been open-sourced. This work demonstrates that scaling with modern architectures like Vision Transformers and JAX can surpass human priors in complex strategy games, offering a blueprint for building superhuman AI in other imperfect-information domains. The open-source release provides a valuable resource for researchers and developers working on game AI and self-play RL. The agent was trained using self-play reinforcement learning with a Vision Transformer instead of a CNN, and the entire pipeline was reimplemented in JAX from NumPy/Torch for faster simulation. The open-source release includes a fast JAX simulator that can serve as an imperfect-information RTS environment for other projects.
+A self-play reinforcement learning agent using JAX and Vision Transformers achieved the #1 rank on the Generals.io 1v1 human leaderboard, surpassing top human players. The project is fully open-source, including a fast JAX simulator and a detailed guide. This work demonstrates that scaling compute and model capacity (via JAX and ViT) can outperform hand-crafted features and human priors in complex real-time strategy games. It provides a reproducible blueprint for building superhuman game AI with modern tools. The agent was initially trained with behavior cloning and RL fine-tuning, but only reached superhuman level after reimplementing the pipeline in JAX and replacing CNNs with Vision Transformers. The open-source code includes a fast JAX-based game simulator that can serve as an imperfect-information RTS environment.
 
 reddit · r/MachineLearning · /u/shrekofspeed · Jun 24, 16:18
 
-**Background**: Generals.io is a fast-paced multiplayer strategy game where players protect their general, capture territory, and eliminate opponents. Self-play reinforcement learning is a technique where agents improve by playing against themselves, famously used in AlphaGo and AlphaZero. Vision Transformers (ViTs) apply transformer architectures to image-like inputs, offering an alternative to CNNs for processing game boards.
+**Background**: Generals.io is a fast-paced multiplayer real-time strategy game where players capture territory and eliminate opponents' generals. Self-play reinforcement learning has been used to achieve superhuman performance in games like Go and Chess, but applying it to imperfect-information RTS games remains challenging. JAX is a high-performance numerical computing library that enables efficient GPU/TPU acceleration, and Vision Transformers (ViTs) have recently been explored as alternatives to CNNs for game-playing AI.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://generals.io/">generals.io</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Self-play_(reinforcement_learning_technique)">Self-play (reinforcement learning technique)</a></li>
+<li><a href="http://www.generals.io/">generals.io</a></li>
 <li><a href="https://arxiv.org/abs/2408.13871">[2408.13871] AlphaViT: A flexible game-playing AI for multiple games and variable board sizes</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#reinforcement learning`, `#self-play`, `#JAX`, `#game AI`, `#open source`
+**Discussion**: The Reddit community praised the work for its technical depth and open-source contribution, with many asking about the specific training details and the role of ViT. Some users discussed the difficulty of applying self-play RL to imperfect-information games and the importance of the JAX reimplementation for performance gains.
+
+**Tags**: `#reinforcement learning`, `#self-play`, `#JAX`, `#game AI`, `#vision transformer`
 
 ---
 
-<a id="item-4"></a>
-## [iLLaDA: 8B Masked Diffusion Model Outperforms Autoregressive LLMs](https://huggingface.co/papers/2606.25331) ⭐️ 9.0/10
+<a id="item-3"></a>
+## [GitHub Repo Maps 817 Cybersecurity Skills for AI Agents](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
 
-Researchers introduced iLLaDA, an 8B masked diffusion language model with fully bidirectional attention, trained from scratch on 12T tokens and fine-tuned on a 25B-token instruction corpus. It outperforms autoregressive models on multiple benchmarks, including a 21.6-point improvement on BBH and 14.5-point improvement on MATH. This work challenges the dominant autoregressive paradigm in large language models by showing that masked diffusion models with bidirectional attention can scale and achieve superior performance. It opens a new competitive path for building strong language models without causal attention. iLLaDA uses grouped-query attention and tied input/output embeddings to reduce memory and parameters, and employs variable-length generation for efficiency and confidence-based scoring for multiple-choice evaluation. Despite non-autoregressive training, it remains competitive with Qwen2.5 7B on several benchmarks.
+A GitHub repository named mukul975/Anthropic-Cybersecurity-Skills has been released, offering 817 structured cybersecurity skills for AI agents, mapped to six frameworks including MITRE ATT&CK and NIST CSF 2.0, and compatible with over 20 platforms. This repository bridges the gap between cybersecurity frameworks and AI agent capabilities, enabling automated security operations across multiple platforms and frameworks, which could significantly accelerate threat detection and response in enterprise environments. The skills are formatted according to the agentskills.io standard, originally developed by Anthropic, and cover 29 security domains under the Apache 2.0 license. The repository has gained over 20,000 stars and 2,300 forks, indicating strong community validation.
 
-huggingface_papers · Hugging Face Papers · Jun 25, 00:00
+github_trending · GitHub Trending · Jun 25, 03:52
 
-**Background**: Most modern large language models, like GPT-4 and LLaMA, are trained with autoregressive factorization and causal attention, generating tokens left-to-right. Masked diffusion language models instead learn to reverse a noising process over token masks, allowing bidirectional context. iLLaDA builds on the LLaDA model and scales it up with improved training techniques.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2606.25331v1">Improved Large Language Diffusion Models - arXiv.org</a></li>
-<li><a href="https://ml-gsai.github.io/LLaDA-demo/">LLaDA - Large Language Diffusion Models</a></li>
-<li><a href="https://louiswang524.github.io/blog/diffusion-llm/">Diffusion Language Models : How They Work, How They Compare to...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#diffusion models`, `#language models`, `#bidirectional attention`, `#large-scale training`, `#NLP`
-
----
-
-<a id="item-5"></a>
-## [GitHub repo maps 817 cybersecurity skills for AI agents](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
-
-Mukul975/Anthropic-Cybersecurity-Skills, a GitHub repository mapping 817 structured cybersecurity skills to six frameworks (MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and MITRE F3), has gained over 1,000 stars in a day and now totals over 20,000 stars. This repository provides a comprehensive, standardized skill mapping that enables AI agents to operate across diverse security domains, potentially accelerating the adoption of AI in cybersecurity operations. The skills are formatted according to the agentskills.io standard, originally developed by Anthropic, and support over 20 platforms including Claude Code, GitHub Copilot, Codex CLI, Cursor, and Gemini CLI.
-
-github_trending · GitHub Trending · Jun 25, 03:41
-
-**Background**: MITRE ATT&CK is a widely used knowledge base of adversary tactics and techniques, while D3FEND catalogs defensive countermeasures. MITRE ATLAS focuses on threats to AI systems. The agentskills.io standard provides a common format for defining reusable AI agent skills, promoting interoperability across different agent platforms.
+**Background**: AI agents are software programs that can autonomously perform tasks, and cybersecurity frameworks like MITRE ATT&CK provide standardized taxonomies of adversarial tactics and techniques. The agentskills.io standard defines a specification for describing reusable agent skills, promoting interoperability across different AI agent platforms.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://github.com/agentskills/agentskills">GitHub - agentskills/agentskills: Specification and ...</a></li>
+<li><a href="https://agentskills.io/home">Agent Skills Overview - Agent Skills</a></li>
 <li><a href="https://atlas.mitre.org/">MITRE ATLAS™</a></li>
-<li><a href="https://d3fend.mitre.org/">D3FEND Matrix | MITRE D3FEND™</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST CSF`, `#GitHub trending`
+**Tags**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST CSF`, `#open source`
+
+---
+
+<a id="item-4"></a>
+## [NousResearch/hermes-agent Surges with 1178 Stars in a Day](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
+
+NousResearch/hermes-agent, a Python-based AI agent framework, gained 1178 GitHub stars in a single day, reaching over 202,000 total stars. The project is described as a self-improving agent with a built-in learning loop that creates skills from experience. This rapid growth signals strong community interest in autonomous AI agents with persistent memory and self-improvement capabilities. It reflects a broader trend toward open-source AI agents that can learn and adapt across sessions. Hermes Agent is available as a native app for macOS, Windows, and Linux, and also integrates with messaging platforms like Telegram, Discord, Slack, WhatsApp, and Signal. It features a built-in learning loop that allows it to create and improve skills from experience.
+
+github_trending · GitHub Trending · Jun 25, 03:52
+
+**Background**: AI agents are software programs that can autonomously perform tasks, often using large language models. Hermes Agent distinguishes itself by having a persistent memory and a learning loop, enabling it to build a model of the user over time. This is part of a growing ecosystem of open-source AI agents.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/nousresearch/hermes-agent">NousResearch/hermes-agent: The agent that grows with you - GitHub</a></li>
+<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent | Nous Research</a></li>
+<li><a href="https://hermes-agent.nousresearch.com/docs/">Hermes Agent Documentation | Hermes Agent</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#agent`, `#Python`, `#open-source`
+
+---
+
+<a id="item-5"></a>
+## [NatureBench Tests AI Agents on Real Scientific Discovery](https://huggingface.co/papers/2606.24530) ⭐️ 8.0/10
+
+Researchers introduced NatureBench, a benchmark of 90 tasks from Nature-family papers, and found that current AI coding agents surpass published SOTA on only 17.8% of tasks, primarily relying on methodological translation rather than genuine innovation. This benchmark provides a credible, cross-disciplinary evaluation for AI coding agents in scientific discovery, highlighting a critical gap between reproduction and genuine innovation that must be addressed for AI to advance science. NatureBench uses NatureGym, an automated pipeline that creates standardized containerized environments for each task, solving the environment-fragmentation problem. The evaluation was conducted under a strict web-search-disabled protocol with ten frontier agent configurations.
+
+huggingface_papers · Hugging Face Papers · Jun 24, 00:00
+
+**Background**: AI coding agents are systems that can write and execute code to solve tasks. Prior benchmarks often suffered from environment fragmentation, where tasks required different setups, making fair comparison difficult. NatureBench addresses this by containerizing each task. The benchmark spans six scientific domains and focuses on whether agents can achieve discovery beyond simple reproduction.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/html/2606.24530">NatureBench : Can Coding Agents Match the Published SOTA of...</a></li>
+<li><a href="https://huggingface.co/papers/2606.24530">Paper page - NatureBench : Can Coding Agents Match the Published...</a></li>
+<li><a href="https://github.com/FrontisAI/NatureBench">GitHub - FrontisAI/ NatureBench : NatureBench : Can Coding Agents...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI for Science`, `#Benchmark`, `#Coding Agents`, `#Scientific Discovery`, `#Nature`
 
 ---
 
 <a id="item-6"></a>
-## [NousResearch Hermes Agent Surges with 1178 Stars in a Day](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
+## [MobileForge: Annotation-Free Adaptation for Mobile GUI Agents](https://huggingface.co/papers/2606.19930) ⭐️ 8.0/10
 
-NousResearch's open-source AI agent framework, hermes-agent, gained 1178 stars on GitHub in a single day, reaching over 202,000 total stars and 36,000 forks. This rapid growth signals strong community validation and interest in a Python-based AI agent framework, potentially offering novel features that could influence the broader AI agent ecosystem. The repository is written in Python and its tagline is "The agent that grows with you," suggesting a focus on adaptability or personalization. However, no detailed technical documentation is available in the provided content.
+MobileForge introduces an annotation-free adaptation system for mobile GUI agents, combining MobileGym for real app interaction grounding and Hierarchical Feedback-Guided Policy Optimization (HiFPO) for step-level policy updates. The adapted Qwen3-VL-8B achieves 67.2% Pass@3 on AndroidWorld, and the ForgeOwl-8B reaches 77.6% Pass@3, setting a new state-of-the-art among open-data mobile GUI agents. This work significantly reduces the cost of adapting GUI agents to real mobile apps by eliminating the need for human annotations, which is crucial given the vast number and frequent updates of mobile apps. The strong performance on both in-domain and out-of-domain benchmarks demonstrates the practical viability of annotation-free adaptation for mobile automation. MobileForge uses MobileGym to automatically generate tasks and evaluate rollouts in real app environments, and HiFPO converts trajectory outcomes, step-level process feedback, and corrective hints into hint-contextualized step-level GRPO updates. The system achieves 77.6% Pass@3 on AndroidWorld and 41.0% success on the out-of-domain MobileWorld GUI-only split, using only automatically generated annotation-free data.
 
-github_trending · GitHub Trending · Jun 25, 03:41
+huggingface_papers · Hugging Face Papers · Jun 24, 00:00
 
-**Background**: AI agent frameworks are software libraries that help developers build autonomous AI agents capable of performing tasks, making decisions, and interacting with environments. Python is a popular language for AI development due to its extensive ecosystem. The high star count on GitHub often indicates community approval and project popularity.
+**Background**: Mobile GUI agents powered by Multimodal Large Language Models (MLLMs) can understand UI screens and execute actions, but adapting them to new apps typically requires expensive human-written tasks, demonstrations, or reward labels. Annotation-free learning aims to reduce this manual effort, but existing methods lack a unified framework for exploration, curriculum mining, rollout execution, and feedback, and often rely on coarse rewards. MobileForge addresses these gaps by grounding learning in real app interactions and using hierarchical feedback for fine-grained policy optimization.
 
-**Tags**: `#AI`, `#agent`, `#Python`, `#open-source`, `#framework`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/abs/2606.19930">[2606.19930] MobileForge: Annotation - Free Adaptation for Mobile...</a></li>
+<li><a href="https://huggingface.co/papers/2606.19930">Paper page - MobileForge: Annotation-Free Adaptation for ...</a></li>
+<li><a href="https://arxiv.org/abs/2602.22817">Hierarchy-of-Groups Policy Optimization for Long-Horizon ... MobileForge: Annotation-Free Adaptation for Mobile GUI Agents ... AI Native Daily Paper Digest – 20260624 - AI Native Foundation ICML 2026 Papers</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#mobile GUI agents`, `#annotation-free learning`, `#policy optimization`, `#MLLM`, `#UI automation`
 
 ---
 
 <a id="item-7"></a>
-## [Qwen-AgentWorld: Language World Models for General Agents](https://huggingface.co/papers/2606.24597) ⭐️ 8.0/10
+## [Carmack Regrets Pushing id Software Team Too Hard](https://twitter.com/ID_AA_Carmack/status/2069799283369345247) ⭐️ 8.0/10
 
-Alibaba's Qwen team released Qwen-AgentWorld-35B-A3B and Qwen-AgentWorld-397B-A17B, the first language world models capable of simulating agentic environments across 7 domains using long chain-of-thought reasoning. These models were trained on over 10 million interaction trajectories via a three-stage pipeline (CPT, SFT, RL) and significantly outperform existing frontier models on the new AgentWorldBench benchmark. This work introduces a new paradigm for training general AI agents by using language models as world simulators, enabling scalable and controllable environment simulation without real-world execution. It could accelerate agent training, evaluation, and synthetic data generation across diverse domains like software engineering, web navigation, and tool use. The models use a Mixture-of-Experts (MoE) architecture: the 35B model has only ~3B active parameters per token. The three-stage training includes continued pre-training (CPT) for general world modeling, supervised fine-tuning (SFT) for next-state prediction reasoning, and reinforcement learning (RL) with hybrid rubric-and-rule rewards to improve simulation fidelity.
+John Carmack publicly shared regrets about pushing his team too hard during id Software's early days, acknowledging that startup intensity is unsustainable for maturing companies. This reflection offers valuable leadership lessons for the tech and game development industries, highlighting the long-term costs of crunch culture and the importance of sustainable work practices. Carmack specifically mentioned that he didn't appreciate how maturing companies need more slack, and that running people at startup intensity constantly will wear them out. The tweet references the development of Quake, which he believes gutted id Software but was worth it for the game's impact.
 
-huggingface_papers · Hugging Face Papers · Jun 24, 00:00
+hackernews · shadowtree · Jun 24, 15:56 · [Discussion](https://news.ycombinator.com/item?id=48661825)
 
-**Background**: A world model predicts how an environment changes in response to an agent's actions, enabling reasoning and planning. Traditional world models operate on pixel-level sensor inputs, while language world models use text to represent states and actions. This work extends the concept to agentic environments, where the model simulates tool calls, GUI interactions, and other digital actions.
+**Background**: John Carmack is a legendary game programmer and co-founder of id Software, known for creating iconic games like Doom and Quake. The early days of id Software were marked by intense crunch culture, where teams worked long hours to push technological boundaries. This tweet is part of a broader discussion about the sustainability of such practices in the game industry.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)">World model (artificial intelligence) - Wikipedia</a></li>
-<li><a href="https://arxiv.org/abs/2201.11903">Chain-of-Thought Prompting Elicits Reasoning in Large ...</a></li>
-<li><a href="https://arxiv.org/abs/2602.10090">[2602.10090] Agent World Model: Infinity Synthetic ... Magentic Marketplace - microsoft.github.io GitHub - tsinghua-fib-lab/AgentSociety: AgentSociety 2 is a ... Magentic Marketplace: An Open-Source Environment for Studying ... SAGE: Scalable Agentic 3D Scene Generation for Embodied AI</a></li>
+**Discussion**: Commenters generally agreed with Carmack's regrets, with some noting that Quake's success came at a high cost to the team. Others debated whether the ends justified the means, with one commenter stating that games are more important than game companies. There was also discussion about Sandy Petersen's perspective on the crunch culture at id Software.
 
-</ul>
-</details>
-
-**Discussion**: The Reddit community highlighted the novelty of the model being a language world model rather than a standard chat or agent model, noting its potential for agent training, offline evaluation, and synthetic trajectory generation. The discussion focused on the practical applications of simulating environment responses without running real tools.
-
-**Tags**: `#world models`, `#language models`, `#agentic AI`, `#environment simulation`, `#foundation models`
+**Tags**: `#game development`, `#leadership`, `#startup culture`, `#John Carmack`, `#id Software`
 
 ---
 
 <a id="item-8"></a>
-## [NVIDIA's 45°C Cooling Slashes Data Center Water Use](https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/) ⭐️ 8.0/10
+## [Rust Community Debates GitHub Dependency for crates.io](https://infosec.exchange/@mttaggart/116806641273303255) ⭐️ 8.0/10
 
-NVIDIA has introduced a 45°C liquid cooling design for its Rubin-generation AI servers, which uses direct-to-chip cooling with coolant temperatures significantly higher than traditional systems, enabling near-zero water consumption. This innovation dramatically reduces data center water usage and allows waste heat to be reused for district heating, potentially saving millions of dollars annually and improving the sustainability of AI infrastructure. The design operates at 45°C (113°F), hotter than typical hot tub water, and is part of NVIDIA's reference architecture for AI factories. It eliminates the need for chillers and evaporative cooling, cutting water use to near zero.
+A recent discussion on Infosec Exchange criticizes that publishing Rust packages on crates.io currently requires a GitHub account, highlighting a long-standing dependency that the community is working to decouple. This dependency creates a single point of failure and vendor lock-in for the Rust package ecosystem, affecting all Rust developers who publish or consume crates. Decoupling would improve resilience and align with open-source principles. An RFC (pull/3963) was recently merged to unblock the decoupling effort, and implementation has started. However, progress is slow because Rust development is largely volunteer-driven, and this task is considered uninteresting and underfunded.
 
-hackernews · nitin_flanker · Jun 24, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48660178)
+hackernews · speckx · Jun 24, 19:40 · [Discussion](https://news.ycombinator.com/item?id=48664733)
 
-**Background**: Traditional data centers use air cooling or liquid cooling at lower temperatures (e.g., 20-30°C), which requires significant water for evaporative cooling or energy for chillers. Higher coolant temperatures enable more efficient heat rejection and waste heat reuse, but must stay within chip thermal limits. NVIDIA's 45°C approach balances cooling performance with energy and water savings.
+**Background**: crates.io is the official package registry for Rust, where developers publish and share libraries (crates). Currently, publishing a crate requires authentication via a GitHub account, which was integrated early on when GitHub was seen as an open-source utopia. This integration has become deeply baked into the system, making it difficult to remove.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.techbuzz.ai/articles/nvidia-s-45-c-liquid-cooling-redefines-ai-data-center-energy">NVIDIA's 45°C Liquid Cooling Redefines AI Data Center ...</a></li>
-<li><a href="https://www.guru3d.com/story/nvidia-unveils-liquid-cooling-design-for-ai-data-centers">NVIDIA Unveils 45°C Liquid Cooling Design for AI Data Centers</a></li>
-<li><a href="https://www.weforum.org/stories/2025/06/sustainable-data-centre-heating/">These companies are using data centres to heat cities | World Economic Forum</a></li>
+<li><a href="https://github.com/rust-lang/crates.io">GitHub - rust-lang/crates.io: The Rust package registry GitHub Dependency for Rust Crates.io Publishing Criticized The crates.io package index GitHub - BarbossHack/crates-io: crates-io is an extension ... Specifying Dependencies - The Cargo Book - Learn Rust Overriding Dependencies - The Cargo Book - Learn Rust</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters highlighted the potential for district heating synergy, noting that 45°C is workable for heating loops and could provide millions in annual value to communities. Some questioned what exactly is innovative, while others discussed favorable climates and referenced similar high-temperature cooling at NASA Ames.
+**Discussion**: Community members generally agree that the dependency should be removed, but acknowledge the difficulty due to volunteer-driven development and lack of funding. Some appreciate alternative approaches like Packagist's source-based packaging, while others point to existing roadmaps and welcome volunteer contributions.
 
-**Tags**: `#data centers`, `#cooling`, `#sustainability`, `#AI infrastructure`, `#energy efficiency`
+**Tags**: `#rust`, `#crates.io`, `#github`, `#open-source`, `#package management`
 
 ---
 
 <a id="item-9"></a>
-## [Nub: A Bun-like all-in-one toolkit for Node.js](https://github.com/nubjs/nub) ⭐️ 8.0/10
+## [Hobby OS Runs Windows Games via Wine Port](https://astral-os.org/posts/2026/04/03/wine-on-astral.html) ⭐️ 8.0/10
 
-Colin McDonnell, creator of Zod and former Bun engineer, released Nub, an all-in-one toolkit that enhances Node.js with Bun-like developer experience via additive preload hooks, including oxc-powered transpilation, module resolution, and polyfills for APIs like Worker and Temporal. Nub improves Node.js developer experience without replacing the runtime, offering fast transpilation and modern API support, which could reduce the appeal of switching to Bun for many projects. Nub uses a --require preload hook to inject an oxc-based transpiler (packaged as a Node-API add-on), registers a module resolution hook, and adds polyfills for missing APIs, all purely additive so code runs on stock Node.js.
-
-hackernews · colinmcd · Jun 24, 14:14 · [Discussion](https://news.ycombinator.com/item?id=48660267)
-
-**Background**: Bun is an all-in-one JavaScript runtime that includes a transpiler, bundler, and package manager, offering a streamlined developer experience. Node.js traditionally requires separate tools for TypeScript transpilation and module resolution. Nub bridges this gap by adding these capabilities to Node.js via hooks, without modifying the runtime itself.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/oxc-project/oxc">GitHub - oxc-project/oxc: ⚓ A collection of high-performance JavaScript tools.</a></li>
-<li><a href="https://nodejs.org/api/module.html">Modules: `node:module` API | Node.js v26.3.1 Documentation</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community reacted positively, with one user migrating their entire monorepo to Nub with zero issues. Some discussed ESM support nuances and whether Node's native TypeScript support makes the transpiler redundant, but overall sentiment was favorable.
-
-**Tags**: `#Node.js`, `#tooling`, `#TypeScript`, `#developer experience`, `#Bun`
-
----
-
-<a id="item-10"></a>
-## [Rust crates.io seeks to reduce GitHub dependency](https://infosec.exchange/@mttaggart/116806641273303255) ⭐️ 8.0/10
-
-A recent RFC (pull/3963) has been merged to start decoupling crates.io from GitHub, with implementation work underway. The Rust project acknowledges the dependency as a known problem that requires significant volunteer effort to resolve. Reducing reliance on GitHub is critical for the resilience and decentralization of Rust's package ecosystem, ensuring that publishing crates does not depend on a single commercial platform. This change will benefit all Rust developers by making the registry more robust and independent. The decoupling effort is complex and slow because crates.io is largely volunteer-driven, with boring or uninteresting tasks depending on funding and reviewer availability. The official issue (crates.io#326) outlines a roadmap with specific tasks that need volunteer contributions.
-
-hackernews · speckx · Jun 24, 19:40 · [Discussion](https://news.ycombinator.com/item?id=48664733)
-
-**Background**: crates.io is the official Rust package registry, and Cargo (Rust's build tool) historically tied itself to GitHub for publishing. This dependency was established when GitHub was seen as an open-source utopia, but now it is deeply baked in, making it hard to roll back. The Rust project is not a company; most development is done by volunteers working on what they find interesting.
-
-**Discussion**: Community comments express agreement that the dependency is a problem, but note that progress is slow due to volunteer-driven development and the complexity of the task. Some appreciate alternative approaches like Packagist, which forces packaging from a source repository to ensure consistency.
-
-**Tags**: `#Rust`, `#crates.io`, `#GitHub`, `#open source`, `#package management`
-
----
-
-<a id="item-11"></a>
-## [Hobby OS Runs Windows Games via Wine](https://astral-os.org/posts/2026/04/03/wine-on-astral.html) ⭐️ 8.0/10
-
-Astral OS, a hobby operating system, has successfully ported Wine to run Windows games, demonstrating a significant technical achievement in compatibility. This shows that a hobby OS can achieve daily-driver viability by leveraging Wine, potentially inspiring more hobby OS projects to aim for practical usability. The port runs natively without an X server or emulator, as confirmed by community discussion, and builds on earlier work that brought Minecraft to the OS.
+The developer of Astral OS, a hobby operating system, has successfully ported Wine to run Windows games directly on the OS, demonstrating a significant technical achievement. This shows that hobby OSes can potentially serve as daily drivers by leveraging compatibility layers like Wine, bridging the gap between experimental systems and practical usability. The port runs natively without an X server or emulator, relying on Wine's direct rendering and windowing support. The developer previously ported Minecraft, indicating a pattern of enabling popular applications.
 
 hackernews · avaliosdev · Jun 24, 14:38 · [Discussion](https://news.ycombinator.com/item?id=48660671)
 
-**Background**: Wine is a compatibility layer that allows Windows applications to run on Unix-like systems without emulation. Hobby operating systems are typically developed by individuals or small groups for learning or experimentation, often lacking broad application support.
+**Background**: Wine is a free and open-source compatibility layer that allows Windows applications to run on Unix-like operating systems by translating Windows API calls into POSIX calls. Hobby OSes are often developed by individuals or small teams for learning or experimentation, and typically lack the application ecosystem of mainstream systems.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Wine_compatibility_layer">Wine compatibility layer</a></li>
-<li><a href="https://www.winehq.org/">WineHQ - Run Windows applications on Linux, BSD, Solaris and macOS</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Hobbyist_operating_system">Hobbyist operating system - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed admiration for the technical feat, with some noting the challenge of implementing legacy interfaces. One commenter asked about the absence of an X server, and the author confirmed native rendering.
+**Discussion**: Commenters expressed admiration for the technical feat, with some noting the irony of a hobby OS needing to implement legacy interfaces to be useful. Others shared their own hobby OS experiences, highlighting the trade-offs between simplicity and compatibility.
 
 **Tags**: `#hobby OS`, `#Wine`, `#operating systems`, `#compatibility`, `#gaming`
 
 ---
 
-<a id="item-12"></a>
-## [PostHog engineer uses AI to rewrite SQL parser, 70x faster](https://posthog.com/blog/sql-parser) ⭐️ 8.0/10
+<a id="item-10"></a>
+## [PostHog SQL parser rewritten 70x faster using AI](https://posthog.com/blog/sql-parser) ⭐️ 8.0/10
 
-A PostHog engineer rewrote their SQL parser using multiple parallel Claude Code sessions, achieving a ~70x speedup without deep knowledge of the original codebase. This demonstrates a novel workflow where AI can be used to rewrite performance-critical components with minimal human effort, sparking debate on the future of hand-rolled vs. generated parsers and AI's role in software engineering. The new parser consists of 16K lines of hand-rolled parser code, 5K lines of tooling, and additional tests, all generated by AI. The original parser used ANTLR, a parser generator, which the team found difficult to maintain.
+PostHog rewrote its SQL parser using multiple parallel Claude Code sessions, achieving a ~70x speedup with 16K lines of hand-rolled parser code and 5K lines of tooling. This demonstrates a practical, high-impact use of LLMs for performance-critical code generation, showing that AI-assisted development can dramatically improve production systems while reducing manual effort. The new parser is a hand-rolled recursive descent parser generated by AI, replacing an ANTLR-based parser. The author used multiple long-running Claude Code sessions in parallel to produce the code, which includes extensive tests.
 
 hackernews · robbie-c · Jun 24, 18:05 · [Discussion](https://news.ycombinator.com/item?id=48663544)
 
-**Background**: Parsers are programs that analyze code structure. Many teams use parser generators like ANTLR to avoid writing parsers by hand, but hand-rolled parsers can be faster and produce better error messages. PostHog's original SQL parser was built with ANTLR and was a performance bottleneck.
+**Background**: Parsers convert source code (like SQL) into a structured format (AST) for analysis and execution. Hand-rolled parsers are often faster and produce better error messages than parser generators like ANTLR, but are traditionally more labor-intensive to write and maintain. This project leveraged LLMs to automate that labor while retaining the performance benefits.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://posthog.com/blog/sql-parser">I wrote a 70x faster SQL parser while barely looking at the code</a></li>
+<li><a href="https://www.linkedin.com/posts/robbiecoomber_i-rewrote-posthogs-sql-parser-and-made-it-activity-7475585969623269376-oGbq">I rewrote PostHog's SQL parser and made it 70x faster while ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters debated the merits of hand-rolled parsers vs. parser generators, with some arguing hand-rolled parsers are easier to maintain than commonly believed. Others praised the AI-assisted approach but expressed concern that over-reliance on AI could hinder deep technical learning.
+**Discussion**: Commenters debated the merits of hand-rolled vs. generated parsers, with some arguing hand-rolled parsers are easier to maintain than commonly believed. Others praised the use of AI for problems with a reliable oracle, but expressed concern that over-reliance on AI could hinder long-term knowledge growth.
 
 **Tags**: `#SQL`, `#parser`, `#AI-assisted development`, `#performance`, `#PostHog`
 
 ---
 
-<a id="item-13"></a>
-## [Databricks Leaders Argue for Open Agent Cloud Ecosystems](https://www.latent.space/p/databricks) ⭐️ 8.0/10
+<a id="item-11"></a>
+## [LLM-Generated Job Apps Erode Authenticity](https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything) ⭐️ 8.0/10
 
-In a rare double-interview, Databricks co-founders Matei Zaharia and Reynold Xin argue that the frontier ecosystem must be open to enable every company to build their own Agent Clouds. This stance reinforces the open-source vs. proprietary debate in AI, potentially shaping how enterprises adopt AI agents and data platforms. If widely adopted, open ecosystems could lower barriers for companies to build custom AI solutions. The interview focuses on the concept of 'Agent Clouds'—a vision where every company can deploy autonomous AI agents on its own infrastructure. Databricks' own platform is built on open-source foundations like Apache Spark and MLflow.
+Tom MacWright observes that job applications and portfolios are increasingly co-written by LLMs, making candidates indistinguishable and impersonal. This trend undermines authenticity in hiring, making it harder for employers to assess genuine candidate fit and potentially devaluing human effort in the job market. MacWright notes that LLM-generated applications often link to LLM-generated portfolios and GitHub projects with purely LLM-generated commit messages, revealing nothing about the candidate's true abilities.
 
-rss · Latent Space · Jun 24, 18:53
+rss · Simon Willison · Jun 24, 18:13
 
-**Background**: Agent Clouds refer to a conceptual framework where multiple AI agents collaborate within a cloud environment to perform complex tasks. Databricks is a leading data and AI platform that provides a unified environment for data engineering, analytics, and machine learning. The company has historically championed open-source technologies.
+**Background**: Large language models (LLMs) like GPT-4 can generate text that mimics human writing. Job seekers have begun using these tools to craft resumes, cover letters, and even code portfolios, which can save time but also produce generic, impersonal content that fails to convey individual personality or experience.
+
+**Tags**: `#AI`, `#careers`, `#hiring`, `#authenticity`, `#LLM`
+
+---
+
+<a id="item-12"></a>
+## [TRM Thinking Reward Model Quantifies LLM Reasoning Quality](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247899199&idx=3&sn=b0d6764e50d881295fd85b75f8f9434a) ⭐️ 8.0/10
+
+The Thinking Reward Model (TRM), accepted as an ICML 2026 Oral paper, has been released to quantify the quality of large language model reasoning processes. The open-source project has garnered 4.2k stars on GitHub. This provides a method to evaluate not just the correctness of answers but the quality of the reasoning process, which is crucial for improving model transparency and reliability. It could influence how reward models are designed for reinforcement learning in LLMs. TRM uses a gating mechanism where reward shaping is applied only when the answer is correct, preventing the model from learning from incorrect trajectories. Experiments show performance improvements across multiple models and tasks.
+
+rss · 量子位 · Jun 24, 04:00
+
+**Background**: Large language models often produce correct answers but with flawed reasoning. Traditional reward models focus on final answer correctness, ignoring the reasoning path. TRM addresses this by evaluating the thinking process itself, using a reward model trained on reasoning quality.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.databricks.com/">Databricks : Leading Data and AI Platform for Enterprises</a></li>
-<li><a href="https://medium.com/@philippeandrepage/ai-agent-clouds-c8cf588f7392">Autonomous Agent Clouds . A Conceptual Framework for... | Medium</a></li>
+<li><a href="https://www.aitntnews.com/newDetail.html?newId=26520">TRM思考奖励模型上线，大模型推理质量终于能量化了 | ICML‘26 Oral</a></li>
+<li><a href="https://36kr.com/p/3866659734279170">TRM思考奖励模型上线，大模型推理质量终于能量化了-36氪</a></li>
+<li><a href="https://blog.csdn.net/2501_94005722/article/details/162271719">ICML‘26 Oral | TRM思考奖励模型上线，大模型推理质量终于能量化了-CS...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#open source`, `#Databricks`, `#agent clouds`, `#ecosystem`
+**Tags**: `#大模型`, `#推理质量`, `#奖励模型`, `#ICML`, `#开源`
+
+---
+
+<a id="item-13"></a>
+## [Databricks Leaders Advocate for Open Frontier Ecosystem](https://www.latent.space/p/databricks) ⭐️ 8.0/10
+
+In a rare double-interview, Databricks technical leaders Matei Zaharia and Reynold Xin argue that the frontier ecosystem must be open to enable every company to build Agent Clouds. This vision could shape the future of AI agent infrastructure, promoting openness and interoperability over proprietary lock-in, which is crucial for widespread enterprise adoption of AI agents. The interview covers the technical and strategic rationale for an open ecosystem, including how Databricks' open-source roots (e.g., Apache Spark) inform their approach to AI agents.
+
+rss · Latent Space · Jun 24, 18:53
+
+**Background**: Databricks is a leading data and AI platform built on open-source technologies like Apache Spark and Delta Lake. The concept of an 'Agent Cloud' refers to a platform where companies can build, deploy, and manage AI agents that interact with data and perform tasks autonomously. An open ecosystem means using open standards and APIs to avoid vendor lock-in.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.databricks.com/">Databricks: Leading Data and AI Platform for Enterprises</a></li>
+<li><a href="https://streampoint-research.com/databricks-ecosystem/">Understanding the Databricks Ecosystem: A Complete Guide</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#open source`, `#data infrastructure`, `#agents`, `#Databricks`
 
 ---
 
 <a id="item-14"></a>
-## [Claude Tag: Multiplayer AI Agents in Slack](https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive) ⭐️ 8.0/10
+## [Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack](https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive) ⭐️ 8.0/10
 
-Anthropic launched Claude Tag on June 23, 2026, embedding a persistent, proactive AI agent into Slack that teams can tag and delegate tasks to, with channel memory and ambient monitoring. This transforms Claude from a reactive chatbot into a persistent team member that can work asynchronously, monitor channels, and proactively surface updates, significantly boosting team productivity and setting a new standard for enterprise AI assistants. Claude Tag is available in beta for Claude Enterprise and Team customers on Opus 4.8, and it can write up to 65% of its own code autonomously, with full audit trails for compliance.
+Anthropic has launched Claude Tag, a major upgrade to its Slack integration that introduces multiplayer, proactive, and persistent AI agents within Slack channels. This upgrade transforms Claude from a reactive chatbot into a persistent team member that can monitor channels, take initiative, and collaborate with multiple users simultaneously, significantly enhancing team productivity and AI-assisted workflows. Claude Tag is multiplayer, meaning a single Claude instance interacts with everyone in a channel rather than having separate instances per user. It is also proactive and persistent, allowing it to learn from conversations, monitor for tasks, and work autonomously over time.
 
 rss · Latent Space · Jun 24, 07:14
 
-**Background**: Traditional AI assistants in Slack are reactive—they only respond when directly invoked. Claude Tag introduces a proactive, persistent agent that stays in channels, learns from conversations over time, and can initiate actions without being prompted, making it a true teammate rather than a tool.
+**Background**: Traditional AI assistants in Slack are typically reactive, responding only when explicitly mentioned. Claude Tag represents a shift toward persistent, proactive agents that can act as background teammates, a trend also seen in other coding agents like Claude Code and Codex.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive">[AINews] Claude Tag: Multiplayer, Proactive, Persistent ...</a></li>
-<li><a href="https://www.techtimes.com/articles/318967/20260623/claude-tag-turns-slack-multiplayer-ai-anthropic-agent-writes-65-its-own-code.htm">Claude Tag Turns Slack Into Multiplayer AI: Anthropic Agent ...</a></li>
-<li><a href="https://mer.vin/2026/06/claude-tag-explained-anthropics-multiplayer-ai-teammate-for-slack-beta/">Claude Tag Explained: Anthropic's Multiplayer AI Teammate for ...</a></li>
+<li><a href="https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive">[AINews] Claude Tag: Multiplayer, Proactive, Persistent Agents in Slack</a></li>
+<li><a href="https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously">Anthropic launches Claude Tag, replacing its Slack app with a ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community reaction has been highly positive, with Kevin Weil calling it 'such a good idea' and users noting it's one of the few agent features they would actually use daily in Slack.
-
-**Tags**: `#AI`, `#Slack`, `#Claude`, `#agents`, `#productivity`
+**Tags**: `#Claude`, `#Slackbot`, `#AI agents`, `#multiplayer`, `#product update`
 
 ---
 
 <a id="item-15"></a>
-## [Swiss Supreme Court Evaluates Abliterated Model Heretic](https://www.reddit.com/r/LocalLLaMA/comments/1ueeund/the_swiss_federal_supreme_court_is_evaluating/) ⭐️ 8.0/10
+## [Context Windows Are Not Memory: Key Insight for AI Agents](https://machinelearningmastery.com/context-windows-are-not-memory-what-ai-agent-developers-need-to-understand/) ⭐️ 8.0/10
 
-The Swiss Federal Supreme Court is evaluating the abliterated model Heretic to address over-alignment in LLMs for legal applications, as detailed in a research paper that finds Heretic favorable for mitigating overly cautious refusals. This marks a real-world legal institution actively exploring abliteration to improve LLM utility, challenging the assumption that abliterated models are only for malicious use and highlighting the practical need to balance safety with legitimate functionality. The paper "Measuring & Mitigating Over-Alignment for LLMs in Multilingual Criminal Law Courts" evaluates Heretic in Section 5.2 with a favorable conclusion, and the court has been experiencing LLMs refusing legitimate requests, similar to common user complaints.
+This article clarifies that large context windows in LLMs are not equivalent to agent memory, and introduces techniques like retrieval-augmented generation (RAG) and context window compression for effective memory management. Understanding this distinction is crucial for AI agent developers because relying solely on context windows leads to poor long-term recall and scalability issues. Proper memory techniques enable agents to maintain coherent, context-aware interactions over extended sessions. The article highlights that context windows are limited in size and lose information after the session ends, while agent memory involves storing, retrieving, and compressing information across turns. Techniques such as RAG and sliding window compression are presented as practical solutions.
 
-reddit · r/LocalLLaMA · /u/-p-e-w- · Jun 24, 14:19
+rss · Machine Learning Mastery · Jun 24, 12:00
 
-**Background**: Abliteration is a technique that removes refusal directions from LLM weights using mechanistic interpretability, without retraining. Heretic is a specific abliterated model that allows users to decensor LLMs easily. Over-alignment occurs when LLMs become overly cautious and refuse legitimate requests, which can hinder practical applications like legal analysis.
+**Background**: Large language models (LLMs) process input within a fixed-size context window, which determines how much text they can consider at once. Agent memory refers to mechanisms that allow an AI agent to retain and use information from past interactions, similar to human memory. Retrieval-augmented generation (RAG) combines LLMs with external knowledge retrieval, while context window compression reduces the token footprint of historical data.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.bswen.com/blog/2026-03-10-heretic-vs-abliterated-models/">Heretic vs Abliterated LLM Models : Key Differences... | BSWEN</a></li>
-<li><a href="https://arxiv.org/pdf/2509.08833">Position: The Pitfalls of Over - Alignment : Overly Caution...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Federal_Supreme_Court_of_Switzerland">Federal Supreme Court of Switzerland - Wikipedia</a></li>
+<li><a href="https://github.com/NirDiamant/Agent_Memory_Techniques">NirDiamant/Agent_Memory_Techniques - GitHub</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">Retrieval-augmented generation</a></li>
+<li><a href="https://www.modular.com/ai-resources/context-window-compression-techniques-to-fit-more-information-into-less-space">Context Window Compression : Techniques to Fit More Information...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community reacted with initial concern that the court might ban abliterated models, but was relieved to learn the court is evaluating Heretic for its own use. Users noted the irony that abliterated models, often associated with malicious use, are being considered by a supreme court to improve LLM utility.
-
-**Tags**: `#AI alignment`, `#abliteration`, `#LLM`, `#legal tech`, `#over-alignment`
+**Tags**: `#AI Agents`, `#LLMs`, `#Memory`, `#Context Window`, `#Retrieval`
 
 ---
