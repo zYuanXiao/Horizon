@@ -9,84 +9,85 @@ lang: zh
 
 ---
 
-1. [首次用 AI 完整读取赫库兰尼姆卷轴](#item-1) ⭐️ 9.0/10
-2. [Wan-Streamer v0.1：实时音视频基础模型](#item-2) ⭐️ 9.0/10
-3. [817 项网络安全技能映射至 AI 代理](#item-3) ⭐️ 8.0/10
-4. [Google Labs 发布面向编码代理的 DESIGN.md 规范](#item-4) ⭐️ 8.0/10
-5. [LLM 智能体记忆系统的系统性研究](#item-5) ⭐️ 8.0/10
-6. [IBM 宣布 0.7 纳米芯片技术](#item-6) ⭐️ 8.0/10
-7. [银行 Python 口述史：投行中的定制系统](#item-7) ⭐️ 8.0/10
-8. [Zig 新 bitCast 语义与 LLVM 后端改进](#item-8) ⭐️ 8.0/10
-9. [德国法院裁定谷歌对 AI 概览错误负责](#item-9) ⭐️ 8.0/10
-10. [OpenAI 报告内部 Codex 令牌使用量在各部门激增](#item-10) ⭐️ 8.0/10
-11. [Anthropic 指控阿里巴巴大规模克隆 Claude AI](#item-11) ⭐️ 8.0/10
-12. [美国政府将逐案审批 GPT-5.6 访问权限](#item-12) ⭐️ 8.0/10
-13. [audio.cpp：12 个音频模型统一在 C++/ggml 运行时中，速度提升高达 5 倍](#item-13) ⭐️ 8.0/10
-14. [JetSpec：通过并行树草稿实现高达 9.64 倍 LLM 加速](#item-14) ⭐️ 8.0/10
-15. [NVIDIA 发布基于扩散的语言模型 Nemotron-TwoTower](#item-15) ⭐️ 8.0/10
+1. [AI 首次完整读取赫库兰尼姆卷轴](#item-1) ⭐️ 10.0/10
+2. [IBM 声称实现全球首款亚 1 纳米芯片技术](#item-2) ⭐️ 9.0/10
+3. [Anthropic 网络安全技能：为 AI 代理提供 817 项技能](#item-3) ⭐️ 8.0/10
+4. [Google Labs 发布 DESIGN.md 规范](#item-4) ⭐️ 8.0/10
+5. [LLM 智能体记忆需要系统级评估](#item-5) ⭐️ 8.0/10
+6. [Wan-Streamer v0.1：实时多模态基础模型](#item-6) ⭐️ 8.0/10
+7. [Zig 新 bitCast 语义与 LLVM 后端改进](#item-7) ⭐️ 8.0/10
+8. [Dataroom 被指控抄袭 Papermark 的 AGPL 代码](#item-8) ⭐️ 8.0/10
+9. [Hacker News 趋势：18 年评论的 Google Trends](#item-9) ⭐️ 8.0/10
+10. [AI 代理应被视为部署方的法律代理人](#item-10) ⭐️ 8.0/10
+11. [OpenAI 报告各部门 Codex token 使用量大幅增长](#item-11) ⭐️ 8.0/10
+12. [Anthropic 指控阿里巴巴大规模克隆 Claude AI](#item-12) ⭐️ 8.0/10
+13. [美国政府将逐个审批 GPT-5.6 访问权限](#item-13) ⭐️ 8.0/10
+14. [audio.cpp：一个 C++/ggml 运行时集成 12 个音频模型，速度提升高达 5 倍](#item-14) ⭐️ 8.0/10
+15. [Ornith-1.0 大模型系列在 Hugging Face 发布](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [首次用 AI 完整读取赫库兰尼姆卷轴](https://scrollprize.org/firstscroll) ⭐️ 9.0/10
+## [AI 首次完整读取赫库兰尼姆卷轴](https://scrollprize.org/firstscroll) ⭐️ 10.0/10
 
-首次利用人工智能和机器学习技术完整读取了一卷赫库兰尼姆卷轴，揭开了公元 79 年维苏威火山喷发所保存的古希腊文本。 这一突破表明，人工智能可以解锁大量此前被认为已失传的古代文献，可能彻底改变我们对古典哲学、历史和日常生活的理解。 该卷轴是维苏威挑战赛的一部分，通过高分辨率 CT 扫描和机器学习模型检测墨水并数字展开碳化的纸莎草纸。团队还从另一卷卷轴 PHerc.Paris.4 中展开了 140 列新文本。
+研究人员利用 AI 和机器学习技术，对赫库兰尼姆卷轴 PHerc. 1667 进行了数字化展开并完整读取了其幸存文本，这是自公元 79 年维苏威火山爆发以来，首次从头到尾阅读一张碳化卷轴。 这一突破解锁了被认为永远失传的古代哲学文本，并证明 AI 可以恢复大量此前无法阅读的古代文献，从而改变我们对古典时代的理解。 该卷轴编号为 PHerc. 1667，是赫库兰尼姆图书馆的一部分，因火山喷发而碳化。维苏威挑战赛团队利用超高分辨率 3D 扫描和机器学习模型检测墨水并重建文本，无需物理展开脆弱的卷轴。
 
 hackernews · verditelabs · 6月25日 15:48 · [社区讨论](https://news.ycombinator.com/item?id=48675179)
 
-**背景**: 赫库兰尼姆纸莎草卷轴是公元 79 年维苏威火山喷发掩埋的大约 1100 卷碳化卷轴。它们过于脆弱，无法物理展开，但现代 X 射线成像和人工智能现在可以在不损坏它们的情况下读取文本。维苏威挑战赛于 2023 年启动，为第一个使用这些技术读取卷轴的团队提供奖金。
+**背景**: 赫库兰尼姆纸莎草卷轴是数百份古代卷轴，在公元 79 年维苏威火山爆发中被掩埋并碳化。它们于 18 世纪被发现，但大多数因过于脆弱而无法展开阅读。维苏威挑战赛是一个机器学习竞赛，旨在开发 AI 方法以非侵入方式读取这些密封的卷轴。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://greekreporter.com/2026/06/26/herculaneum-scroll-complete-text-ai/">Herculaneum Scroll's Complete Text Deciphered Using AI After ...</a></li>
-<li><a href="https://www.theregister.com/offbeat/2026/06/25/they-read-the-scroll-thing-ai-helps-decipher-ancient-document-charred-by-vesuvius/5262525">They read the scroll thing! AI helps decipher ancient ...</a></li>
-<li><a href="https://www2.cs.uky.edu/dri/herculaneum-papyrus-scrolls/">Herculaneum Papyrus Scrolls - Digital Restoration Initiative</a></li>
+<li><a href="https://theaicronicle.com/en/news/research/ai-vesuvius-herculaneum-scrolls-deciphered">AI Deciphers Herculaneum Scrolls: A New Era for History</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区成员对这一成就表示惊叹，有人指出从古代作者到现代 AI 读者的深远时间跨度。一位团队成员愿意回答关于分割和墨水检测的问题，而另一位则强调赫库兰尼姆遗址仅挖掘了 20%，暗示还有更多卷轴等待发现。
+**社区讨论**: 社区成员对这一成就表示惊叹，有人指出古代作者永远无法想象未来人类会用机器读取卷轴。一名团队成员确认，另一卷轴中 140 列新文本也被展开，另一人指出赫库兰尼姆遗址仅发掘了 20%，暗示还有更多卷轴等待发现。
 
-**标签**: `#AI`, `#machine learning`, `#archaeology`, `#digital humanities`, `#computer vision`
+**标签**: `#AI`, `#machine learning`, `#archaeology`, `#ancient texts`, `#Herculaneum`
 
 ---
 
 <a id="item-2"></a>
-## [Wan-Streamer v0.1：实时音视频基础模型](https://huggingface.co/papers/2606.25041) ⭐️ 9.0/10
+## [IBM 声称实现全球首款亚 1 纳米芯片技术](https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/) ⭐️ 9.0/10
 
-Wan-Streamer v0.1 是一个原生流式、端到端的基础模型，通过单个 Transformer 和块因果注意力实现实时全双工音视频交互，模型侧延迟约 200 毫秒，总交互延迟约 550 毫秒。 该模型消除了对 VAD、ASR、TTS 和视频生成等级联模块的需求，减少了流水线延迟和错误累积，代表了向统一多模态交互式 AI 系统的范式转变。 Wan-Streamer 使用块因果注意力来协调交错的视觉、音频和文本令牌以实现增量流式处理，流式单元短至 160 毫秒（25 fps），并支持亚秒级延迟的全双工通信。
+IBM 宣布了全球首款亚 1 纳米芯片技术，采用 0.7 纳米（7 埃）工艺节点和纳米堆叠晶体管，集成了近 1000 亿个晶体管，密度约为其 2021 年 2 纳米芯片的两倍。 这一突破有望显著提升 AI 数据中心及其他计算应用的芯片性能和能效，将摩尔定律延续到埃米时代，并保持半导体微缩的步伐。 纳米堆叠晶体管架构采用纳米片通道的依次堆叠，实现了灵活的布局和更高的密度。但“0.7 纳米”节点名称不再对应实际物理尺寸，而是表示代际密度提升。
 
-huggingface_papers · Hugging Face Papers · 6月25日 00:00
+rss · Ars Technica AI · 6月25日 10:00
 
-**背景**: 传统的交互式 AI 系统依赖独立的模块进行语音活动检测（VAD）、自动语音识别（ASR）、语言理解、文本转语音（TTS）和视频生成，导致高延迟和错误累积。块因果注意力是因果注意力的一种变体，它按块处理输入，从而实现高效的流式推理。全双工交互意味着双方可以同时发送和接收数据，就像自然对话一样。
+**背景**: 几十年来，晶体管微缩遵循摩尔定律，但随着尺寸接近原子尺度，传统平面晶体管遇到了物理极限。业界转向 FinFET，然后是纳米片晶体管。IBM 的纳米堆叠是一种互补 FET（CFET），通过垂直堆叠晶体管，在不缩小单个特征尺寸的情况下进一步提高密度。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.emergentmind.com/topics/block-wise-causal-attention">Block-wise Causal Attention</a></li>
-<li><a href="https://arxiv.org/abs/2605.30256">[2605.30256] VideoFDB: Evaluating Full-Duplex Vision-Speech ...</a></li>
-<li><a href="https://github.com/QwenLM/Qwen3-Omni">GitHub - QwenLM/Qwen3-Omni: Qwen3-omni is a natively end-to ...</a></li>
+<li><a href="https://www.servethehome.com/ibm-outlines-sub-1nm-nanostack-transistor-technology/">IBM Outlines Sub-1nm Nanostack Transistor Technology</a></li>
+<li><a href="https://morethanmoore.substack.com/p/ibms-announces-07nm-process-node">IBM's Announces 0.7nm Process Node, Introduces NanoStack</a></li>
+<li><a href="https://www.networkworld.com/article/4189510/ibm-unveils-sub-1-nanometer-chip-with-nearly-100-billion-transistors.html">IBM unveils sub - 1 nanometer chip with nearly 100... | Network World</a></li>
 
 </ul>
 </details>
 
-**标签**: `#multimodal`, `#real-time interaction`, `#foundation model`, `#audio-visual`, `#transformer`
+**社区讨论**: 评论者对 IBM 的说法表示怀疑，指出节点名称早已与实际尺寸脱钩，且 IBM 有夸大营销的历史。有人指出 IBM 多年前已将晶圆厂出售给 GlobalFoundries，质疑其制造相关性。也有人分享了详细的技术分析。
+
+**标签**: `#semiconductors`, `#IBM`, `#nanotechnology`, `#hardware`, `#breakthrough`
 
 ---
 
 <a id="item-3"></a>
-## [817 项网络安全技能映射至 AI 代理](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+## [Anthropic 网络安全技能：为 AI 代理提供 817 项技能](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
 
-Mukul975 发布了一个 GitHub 仓库，将 817 项结构化网络安全技能映射到六个主要框架（MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF、MITRE F3），采用 agentskills.io 标准，兼容 20 多个 AI 平台。 该仓库提供了一套全面且标准化的技能集，使 AI 代理能够在多个平台上执行网络安全任务，显著减少集成工作，并促进 AI 安全生态系统的互操作性。 该仓库涵盖 29 个安全领域，使用 Python 编写，采用 Apache 2.0 许可。已获得超过 21,000 颗星和 2,400 个分支，表明社区的高度认可。
+名为 mukul975/Anthropic-Cybersecurity-Skills 的 GitHub 仓库已发布，为 AI 代理提供 817 项结构化网络安全技能，并映射到包括 MITRE ATT&CK 和 NIST CSF 2.0 在内的六个主要框架。 该仓库提供了一套全面、标准化的技能集，使 AI 代理能够在不同安全领域运行，可能加速网络安全运营的自动化，并促进 AI 平台之间的互操作性。 这些技能兼容超过 20 个 AI 平台，包括 Claude Code、GitHub Copilot 和 Cursor，并遵循由 Anthropic 最初开发的 agentskills.io 开放标准。
 
-github_trending · GitHub Trending · 6月26日 03:51
+github_trending · GitHub Trending · 6月26日 04:03
 
-**背景**: agentskills.io 标准是一个用于定义 AI 代理能力的开放规范，确保在 Claude Code、GitHub Copilot 和 Cursor 等平台上的可移植性。MITRE 框架如 ATT&CK 和 D3FEND 广泛用于分类攻击性和防御性网络安全技术，而 MITRE ATLAS 则专注于 AI 特定威胁。
+**背景**: 像 MITRE ATT&CK 和 NIST CSF 这样的网络安全框架提供了结构化的威胁和防御分类法。agentskills.io 标准定义了 AI 代理技能的可重用格式，促进了互操作性。该仓库将网络安全知识映射到该格式中，使其可直接被 AI 代理使用。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/agentskills/agentskills">GitHub - agentskills/agentskills: Specification and documentation for Agent Skills · GitHub</a></li>
-<li><a href="https://atlas.mitre.org/">MITRE ATLAS™</a></li>
-<li><a href="https://d3fend.mitre.org/">D3FEND Matrix | MITRE D3FEND™</a></li>
+<li><a href="https://github.com/agentskills/agentskills">GitHub - agentskills/agentskills: Specification and ...</a></li>
+<li><a href="https://agentskills.io/home">Agent Skills Overview - Agent Skills</a></li>
+<li><a href="https://www.crowdstrike.com/en-us/cybersecurity-101/artificial-intelligence/mitre-atlas/">What is MITRE ATLAS ? | CrowdStrike</a></li>
 
 </ul>
 </details>
@@ -96,133 +97,152 @@ github_trending · GitHub Trending · 6月26日 03:51
 ---
 
 <a id="item-4"></a>
-## [Google Labs 发布面向编码代理的 DESIGN.md 规范](https://github.com/google-labs-code/design.md) ⭐️ 8.0/10
+## [Google Labs 发布 DESIGN.md 规范](https://github.com/google-labs-code/design.md) ⭐️ 8.0/10
 
-Google Labs 发布了 DESIGN.md，这是一种格式规范，为编码代理提供对设计系统的持久、结构化理解。该仓库在 GitHub 上单日获得超过 1475 颗星。 该规范弥合了设计系统与 AI 辅助开发之间的鸿沟，使编码代理能够一致地应用视觉标识规则。它可能显著提升 AI 生成用户界面的质量和一致性。 DESIGN.md 是一个纯文本文件，结合了机器可读的设计令牌和人类可读的设计原理，作为活的事实来源。该仓库使用 TypeScript 编写，已累计近 20,000 颗星。
+Google Labs 发布了 DESIGN.md，这是一种用于向编码代理描述视觉身份的格式规范，使代理能够持久且结构化地理解设计系统。 该规范弥合了设计系统与 AI 辅助开发之间的鸿沟，使编码代理能够一致地应用品牌指南和视觉令牌，从而显著提升 AI 生成用户界面的质量和一致性。 DESIGN.md 使用机器可读的令牌以及人类可读的文本，是像 AGENTS.md 这样的面向代理文档更广泛趋势的一部分。该仓库使用 TypeScript 编写，已获得超过 19,000 颗星。
 
-github_trending · GitHub Trending · 6月26日 03:51
+github_trending · GitHub Trending · 6月26日 04:03
 
-**背景**: 编码代理是根据指令自主编写或修改代码的 AI 系统。设计系统是可重用组件和指南的集合，确保视觉一致性。DESIGN.md 充当桥梁，为代理提供项目视觉标识的结构化参考。
+**背景**: 编码代理（生成代码的 AI 助手）通常缺乏项目视觉设计系统的上下文，导致输出不一致。DESIGN.md 提供了一种标准化方式，以人类和 AI 都能理解的格式定义颜色、排版、间距和其他设计令牌。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://github.com/google-labs-code/design.md">GitHub - google-labs-code/design.md: A format specification ...</a></li>
-<li><a href="https://github.com/google-labs-code/design.md/blob/main/docs/spec.md">design.md/docs/spec.md at main · google-labs-code ... - GitHub</a></li>
-<li><a href="https://deepwiki.com/google-labs-code/design.md/2-the-design.md-format">The DESIGN.md Format | google-labs-code/design.md | DeepWiki</a></li>
+<li><a href="https://github.com/google-labs-code/design.md/blob/main/docs/spec.md">design.md/docs/spec.md at main · google-labs-code/design.md</a></li>
+<li><a href="https://pyshine.com/Design-MD-Visual-Identity-Specification-AI-Coding-Agents/">DESIGN.md: Google's Visual Identity Specification for AI ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#design systems`, `#AI-assisted development`, `#TypeScript`, `#specification`, `#Google Labs`
+**标签**: `#design systems`, `#AI agents`, `#TypeScript`, `#developer tools`, `#specification`
 
 ---
 
 <a id="item-5"></a>
-## [LLM 智能体记忆系统的系统性研究](https://huggingface.co/papers/2606.24775) ⭐️ 8.0/10
+## [LLM 智能体记忆需要系统级评估](https://huggingface.co/papers/2606.24775) ⭐️ 8.0/10
 
-本文从数据管理角度对 LLM 智能体记忆进行了系统性实验研究，将记忆分解为四个核心模块，并在五个工作负载上评估了 12 个代表性系统。 该研究揭示了没有单一的存储架构在所有场景中占主导地位，并强调了超越端到端任务指标进行系统级性能分析的必要性，为构建真正的智能体原生记忆系统提供了指导。 该框架包括记忆表示与存储、提取、检索与路由以及维护模块。细粒度消融研究量化了对表示保真度、检索精度、更新正确性和长期稳定性的影响。
+一篇新论文从数据管理视角系统评估了 LLM 智能体记忆系统，提出了四模块框架，并在 11 个数据集上测试了 12 个系统。 该工作指出当前端到端指标不足，揭示了成本、性能和鲁棒性之间的关键权衡，对构建可靠的智能体原生记忆系统至关重要。 该框架将记忆分解为表示/存储、提取、检索/路由和维护四个模块；没有单一架构占优，局部维护比全局重组更具成本效益。
 
 huggingface_papers · Hugging Face Papers · 6月25日 00:00
 
-**背景**: LLM 智能体记忆已从简单的检索增强生成（RAG）演变为支持持久存储、检索、更新、整合和生命周期治理的复杂数据管理系统。现有评估通常将记忆视为黑盒，仅关注端到端任务成功指标（如 F1 或 BLEU）。
+**背景**: LLM 智能体利用记忆在交互中持久化和回忆信息，从简单的检索增强生成（RAG）演变为复杂的数据管理系统。然而，现有评估将记忆视为黑盒，仅关注 F1 或 BLEU 等任务成功指标。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2502.12110">[2502.12110] A-MEM: Agentic Memory for LLM Agents</a></li>
-<li><a href="https://github.com/neo4j-labs/agent-memory">GitHub - neo4j-labs/agent-memory: A graph-native memory system for AI agents and context graphs. Store conversations, build knowledge graphs, and let your agents learn from their own reasoning — all backed by Neo4j.</a></li>
-<li><a href="https://github.com/MemoriLabs/Memori">GitHub - MemoriLabs/Memori: Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems. · GitHub</a></li>
+<li><a href="https://arxiv.org/html/2606.24775v1">Are We Ready For An Agent-Native Memory System? - arXiv.org</a></li>
+<li><a href="https://arxiv.org/html/2603.07670v1">Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM agents`, `#memory systems`, `#system evaluation`, `#AI/ML`, `#data management`
+**标签**: `#LLM agents`, `#memory systems`, `#evaluation`, `#data management`, `#AI systems`
 
 ---
 
 <a id="item-6"></a>
-## [IBM 宣布 0.7 纳米芯片技术](https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology) ⭐️ 8.0/10
+## [Wan-Streamer v0.1：实时多模态基础模型](https://huggingface.co/papers/2606.25041) ⭐️ 8.0/10
 
-IBM 宣布了全球首款亚 1 纳米芯片技术，采用 0.7 纳米（7 埃）节点，集成近 1000 亿个晶体管，密度约为其 2021 年 2 纳米芯片的两倍。 这一突破表明晶体管缩放可以继续进入埃米时代，有望提升 AI 数据中心和其他先进计算应用的性能与能效。 节点名称“0.7 纳米”不再对应芯片上的任何物理尺寸，而是表示密度和性能的代际提升。IBM 的技术采用纳米堆叠晶体管来实现密度增加。
+Wan-Streamer v0.1 是一个统一的端到端多模态基础模型，通过块因果注意力和对视觉、音频、文本模态的集成处理，实现了实时、低延迟、全双工的视听交互。 该模型实现了约 200 毫秒的模型端响应延迟和约 550 毫秒的总交互延迟，无需依赖独立的 VAD、ASR、TTS 或视频生成模块即可实现亚秒级双工视听通信，从而减少了流水线延迟和错误累积。 Wan-Streamer 使用块因果注意力来协调交错的视觉、音频和文本输入输出令牌，支持在 25 帧/秒下短至 160 毫秒的流式单元，并且整个堆栈围绕可流式性重新设计，包括因果编码器和解码器。
 
-hackernews · porridgeraisin · 6月25日 15:33 · [社区讨论](https://news.ycombinator.com/item?id=48674967)
+huggingface_papers · Hugging Face Papers · 6月25日 00:00
 
-**背景**: 在半导体制造中，节点名称最初指代最小特征尺寸，但自 5 纳米节点左右起，名称已成为表示技术代际的营销术语。业界继续缩小晶体管以提升性能和效率，尽管物理尺寸不再与节点标签匹配。
+**背景**: 传统的视听交互系统依赖于级联模块，如语音活动检测（VAD）、自动语音识别（ASR）、语言模型、文本转语音（TTS）和视频生成，这些模块会引入延迟和错误累积。因果注意力机制限制每个令牌只能关注之前的令牌，从而实现自回归生成。块因果注意力将其扩展到块级别，支持高效的流式处理。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/">IBM claims world’s first sub - 1 nanometer chip technology</a></li>
-<li><a href="https://www.networkworld.com/article/4189510/ibm-unveils-sub-1-nanometer-chip-with-nearly-100-billion-transistors.html">IBM unveils sub - 1 nanometer chip with nearly 100... | Network World</a></li>
-<li><a href="https://en.wikipedia.org/wiki/5_nm_process">5 nm process - Wikipedia</a></li>
+<li><a href="https://www.emergentmind.com/topics/block-wise-causal-attention">Block-wise Causal Attention - emergentmind.com</a></li>
+<li><a href="https://arxiv.org/abs/2605.30256">[2605.30256] VideoFDB: Evaluating Full-Duplex Vision-Speech ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对 IBM 的说法表示怀疑，指出节点名称已与物理尺寸脱钩，且 IBM 有夸大宣传的历史。一些用户指出，0.7 纳米标签指的是密度提升而非实际特征尺寸，一位评论者还提供了详细技术分析的链接。
-
-**标签**: `#semiconductors`, `#chip manufacturing`, `#nanometer scaling`, `#IBM`, `#hardware`
+**标签**: `#multimodal`, `#real-time`, `#foundation model`, `#audio-visual`, `#transformer`
 
 ---
 
 <a id="item-7"></a>
-## [银行 Python 口述史：投行中的定制系统](https://calpaterson.com/bank-python.html) ⭐️ 8.0/10
+## [Zig 新 bitCast 语义与 LLVM 后端改进](https://ziglang.org/devlog/2026/#2026-06-25) ⭐️ 8.0/10
 
-一篇 2021 年发表的口述史文章详细介绍了主要投资银行中使用的独特、定制的基于 Python 的系统，追溯了它们的起源和演变。 这篇文章揭示了金融领域软件考古的隐秘世界，展示了银行为满足高性能交易需求如何构建专有 Python 生态系统，这与现代开源趋势形成对比。 文中讨论了高盛的 SecDB/Slang、摩根大通的 Athena 和巴克莱的 Barbara 等系统，其中一些代码存储在定制对象存储中而非磁盘上。
+Zig 引入了新的与字节序无关的 bitCast 语义，使得位级操作在所有目标上保持一致，同时改进了 LLVM 后端以生成更优的代码。 这一变化简化了跨平台的位操作，特别是在处理二进制头部和打包数据时，减少了手动处理字节序的工作量和潜在错误。 新语义将 bitCast 视为对逻辑位表示而非内存布局进行操作，因此像将 [2]u8 转换为 u16 的操作现在在大端和小端目标上行为一致。
 
-hackernews · tosh · 6月25日 20:14 · [社区讨论](https://news.ycombinator.com/item?id=48678645)
+hackernews · kouosi · 6月25日 14:19 · [社区讨论](https://news.ycombinator.com/item?id=48673825)
 
-**背景**: 投资银行长期以来使用 Python 进行快速原型设计和交易系统开发，但许多银行开发了专有分支和定制运行时，以避免依赖外部操作系统更新并实现低延迟。这些系统通常早于现代开源解决方案，从而产生了独特的内部架构。
+**背景**: Zig 是一种系统编程语言，提供底层控制和安全特性。@bitCast 内建函数将值的位重新解释为另一种类型，以前其行为依赖于目标字节序，导致不一致。新语义符合 Zig 跨平台确定性的目标。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://calpaterson.com/bank-python.html">An oral history of Bank Python</a></li>
-<li><a href="https://www.reddit.com/r/programming/comments/rbvpmy/bank_python_the_strange_world_of_python_as_used/">r/programming on Reddit: Bank Python: The strange world of Python, as used by big investment banks</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48673825">Zig 's New BitCast Semantics and LLVM Back End... | Hacker News</a></li>
+<li><a href="https://github.com/ziglang/zig/issues/19755">Proposal: initial `@ bitCast ` semantics (packed + vector + array)...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者提供了第一手资料，指出许多银行 Python 系统源自高盛的 SecDB/Slang，并且在小规模对冲基金中重写此类系统的尝试可能令人沮丧。他们还强调，定制解决方案通常是因为当时不存在成熟的现成替代品而构建的。
+**社区讨论**: 社区成员称赞了这一变化，zamadatix 表示这对处理位打包的二进制头部非常有用。Grayhatter 欣赏深入的技术解释，而 simonask 则质疑任意宽度整数的价值，更倾向于手动打包以提高清晰度。
 
-**标签**: `#Python`, `#banking`, `#software archaeology`, `#finance`, `#history`
+**标签**: `#Zig`, `#programming languages`, `#compiler design`, `#bit manipulation`, `#LLVM`
 
 ---
 
 <a id="item-8"></a>
-## [Zig 新 bitCast 语义与 LLVM 后端改进](https://ziglang.org/devlog/2026/#2026-06-25) ⭐️ 8.0/10
+## [Dataroom 被指控抄袭 Papermark 的 AGPL 代码](https://twitter.com/mfts0/status/2070080422482977095) ⭐️ 8.0/10
 
-Zig 的最新开发日志引入了与字节序无关的 bitCast 语义，以及对 LLVM 后端的改进，包括更好的增量编译。新的 bitCast 语义确保在数组和整数等聚合类型之间转换时，在所有目标字节序上行为一致。 这一变化简化了 Zig 中位打包数据的处理，使处理二进制头部和协议时无需手动管理字节序。LLVM 后端的改进提升了编译性能和开发者体验。 新语义将 bitCast 视为对逻辑位表示进行操作，使得像 [2]u8 转换为 u16 这样的操作与字节序无关。LLVM 后端的改进侧重于增量编译，减少了重新编译时间。
+Papermark 的 Marc 公开指控 Nico Laqua 的 Dataroom 抄袭了 Papermark 采用 AGPL 许可证的开源项目代码，要求立即下架该侵权产品。 这一事件凸显了开源许可证合规方面的持续挑战，尤其是 AGPL 的网络使用要求，并可能为初创社区如何处理此类违规行为树立先例。 截图显示 Dataroom 逐字复制了完整页面，包括设计和文本，但 Dataroom 团队声称他们没有使用 Papermark 的代码，而是从头构建。AGPL 许可证要求衍生作品也必须采用 AGPL，即使通过网络访问也是如此。
 
-hackernews · kouosi · 6月25日 14:19 · [社区讨论](https://news.ycombinator.com/item?id=48673825)
+hackernews · mmunj · 6月25日 12:23 · [社区讨论](https://news.ycombinator.com/item?id=48672328)
 
-**背景**: 字节序指的是多字节值中字节的顺序；大端序将最高有效字节放在前面，小端序将最低有效字节放在前面。Zig 的 packed struct 允许位级字段打包，bitCast 用于在类型之间重新解释数据。LLVM 后端负责从 Zig 的中间表示生成机器码。
+**背景**: AGPL（GNU Affero 通用公共许可证）是一种 copyleft 许可证，要求任何修改或使用该代码的人必须分发源代码，即使软件仅通过网络访问。Papermark 是一个开源虚拟数据室平台，用于安全文档共享。开源许可证违规可能导致法律诉讼和社区信任丧失。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Endianness">Endianness - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/LLVM">LLVM - Wikipedia</a></li>
+<li><a href="https://github.com/papermark/papermark">GitHub - papermark/papermark: Papermark is the open-source ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OnlyOffice">OnlyOffice - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区成员称赞了详细的开发日志，zamadatix 指出这一变化对处理位打包的二进制头部非常有用。一些评论者讨论了任意宽度整数的权衡，其他人则对 Zig 的技术方向表示热情。
+**社区讨论**: 评论者指出，鉴于页面被逐字复制，Dataroom 否认复制代码的回应是不诚实的。一些人讨论了 AGPL 合规的细微差别，例如将 AGPL 组件与业务逻辑分离以避免许可证传播。
 
-**标签**: `#Zig`, `#compiler`, `#LLVM`, `#systems programming`, `#bit manipulation`
+**标签**: `#open source`, `#license violation`, `#AGPL`, `#copyright`, `#community drama`
 
 ---
 
 <a id="item-9"></a>
-## [德国法院裁定谷歌对 AI 概览错误负责](https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything) ⭐️ 8.0/10
+## [Hacker News 趋势：18 年评论的 Google Trends](https://hackernewstrends.com/) ⭐️ 8.0/10
 
-德国一家法院裁定，谷歌对其 AI 概览中的虚假陈述直接负责，将其视为谷歌自己的言论而非第三方内容。布鲁斯·施奈尔认为，AI 代理在法律上应被视为其部署者的代理。 这一里程碑式的裁决为 AI 责任树立了先例，可能迫使公司确保 AI 生成内容的准确性，否则将面临法律后果。它挑战了 AI 错误可被视为不可避免的观点，促进了 AI 部署中的问责制。 德国法院将 AI 概览与传统搜索摘要区分开来，指出 AI 可以从多个来源编造声明，因此搜索引擎的安全港规则不适用。谷歌已宣布将对该裁决提出上诉。
+一款名为 Hacker News Trends 的新工具索引了 18 年的 Hacker News 评论，以显示随时间变化的趋势话题，类似于 Google Trends。它允许用户比较多个搜索词并可视化其热度。 该工具提供了一种独特的方式来探索 Hacker News 社区近二十年来的讨论内容，揭示了技术趋势和社区兴趣的演变。对于追踪技术生态系统话题演变的研究人员、记者和开发者来说，它可能很有价值。 该工具使用了过去 18 年的 Hacker News 评论数据，但社区报告指出它可能存在 bug，例如某些比较的结果截止到 2018 年。由于发布后流量激增，网站出现了速率限制和超时错误。
 
-rss · Simon Willison · 6月25日 22:28
+hackernews · ytkimirti · 6月25日 14:08 · [社区讨论](https://news.ycombinator.com/item?id=48673671)
 
-**背景**: AI 概览是由大型语言模型生成的摘要，出现在搜索结果顶部。与传统搜索摘要引用现有网页不同，AI 概览可以产生全新的陈述，有时不准确或产生幻觉。以往的法律保护搜索引擎免于对第三方内容承担责任，但这一裁决挑战了对 AI 生成内容的这种保护。
+**背景**: Google Trends 可视化搜索查询随时间的热度变化，而 Hacker News 是一个专注于计算机科学和创业的社会新闻网站。该工具将类似的概念应用于 Hacker News 评论，追踪术语在讨论中出现的频率而非搜索查询。Hacker News API 提供对所有故事和评论的公共访问，使得此类分析成为可能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/">Landmark German ruling declares Google's AI Overviews are Google's own words and makes it liable for false answers</a></li>
-<li><a href="https://www.wired.com/story/a-court-has-ruled-that-google-is-liable-for-false-statements-generated-by-ai-overviews/">A Court Has Ruled That Google Is Liable for False Statements Generated by AI Overviews | WIRED</a></li>
-<li><a href="https://www.reuters.com/world/google-appeal-german-court-ruling-assigning-liability-ai-overviews-false-claims-2026-06-12/">Google to challenge German ruling saying it is liable for AI-generated false claims | Reuters</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Trends">Google Trends</a></li>
+<li><a href="https://github.com/HackerNews/API">Hacker News API - GitHub Hacker News Official API | Hacker News HackerNews API — Free Public API | Public APIs Directory HN Search API | HN Search powered by Algolia Hacker News API | Jentic HackerNews/API | DeepWiki Hacker News API</a></li>
+<li><a href="https://news.ycombinator.com/item?id=32540883">Hacker News Official API | Hacker News</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区反应不一：一些人称赞该工具的实用性，而另一些人则指出其局限性，例如搜索意图与已发布文本之间的差异。用户还报告了技术问题，如速率限制以及某些比较的结果截止到 2018 年的 bug。一位用户指出，已经存在一个公开的 ClickHouse 数据库可用于查询 HN 数据。
+
+**标签**: `#hackernews`, `#data analysis`, `#trends`, `#tool`
+
+---
+
+<a id="item-10"></a>
+## [AI 代理应被视为部署方的法律代理人](https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything) ⭐️ 8.0/10
+
+Bruce Schneier 引用一项具有里程碑意义的德国裁决，主张 AI 代理在法律上应被视为部署方的代理人；该裁决判定谷歌需为其 AI 概览中的错误承担责任。 该裁决开创了先例，企业不能以 AI 错误为由逃避责任，这可能重塑 AI 系统的部署方式，并激励更安全的 AI 实践。 慕尼黑地区法院于 2026 年 5 月 28 日发布临时禁令，禁止谷歌在其 AI 概览中重复关于两家出版商的虚假陈述，并驳回了用户可自行核实摘要内容的辩护。
+
+rss · Simon Willison · 6月25日 22:28
+
+**背景**: AI 概览是谷歌在搜索结果顶部显示的 AI 生成摘要。此前，根据欧盟法律，搜索引擎对第三方内容享有有限责任豁免，但法院裁定 AI 生成内容被视为谷歌自身的表述，而非第三方内容。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/">Landmark German ruling declares Google's AI Overviews are ...</a></li>
+<li><a href="https://letsdatascience.com/news/munich-court-rules-google-liable-for-ai-overviews-cd03d30c">Munich Court Rules Google Liable for AI Overviews</a></li>
 
 </ul>
 </details>
@@ -231,144 +251,115 @@ rss · Simon Willison · 6月25日 22:28
 
 ---
 
-<a id="item-10"></a>
-## [OpenAI 报告内部 Codex 令牌使用量在各部门激增](https://www.latent.space/p/ainews-openai-reports-median-internal) ⭐️ 8.0/10
+<a id="item-11"></a>
+## [OpenAI 报告各部门 Codex token 使用量大幅增长](https://www.latent.space/p/ainews-openai-reports-median-internal) ⭐️ 8.0/10
 
-OpenAI 报告称，自 2025 年 11 月以来，内部 Codex 输出令牌的中位数在 Research 部门增长了 56 倍，Customer Support 部门增长了 32 倍，Engineering 部门增长了 27 倍，Legal 部门增长了 13 倍。 这些数据表明，AI 编码代理在不同企业职能中的实际应用正在加速，标志着组织利用 AI 提升生产力的方式正在超越传统软件开发领域。 增长涵盖了 Legal 和 Customer Support 等非工程部门，表明 Codex 正被用于代码生成之外的任务，如文档分析和工作流自动化。
+OpenAI 报告称，自 2025 年 11 月以来，内部 Codex 输出 token 的中位数在 Research 部门增长了 56 倍，Customer Support 部门增长了 32 倍，Engineering 部门增长了 27 倍，Legal 部门增长了 13 倍。 这表明 AI 编码工具在多个部门（不仅仅是工程部门）带来了显著的实际生产力提升，预示着企业级广泛采用和深远影响。 该数据涵盖每位用户每天的中位输出 token 数，其中 Research 部门以 56 倍的增长领先，凸显了 Codex 在传统编码任务之外的通用性。
 
 rss · Latent Space · 6月26日 01:12
 
-**背景**: OpenAI Codex 是一套 AI 驱动的编码代理，能够读取、编辑和运行代码，帮助开发者更快地构建和修复漏洞。截至 2026 年中，其周活跃用户超过 500 万，自 2025 年 8 月以来非开发者用户增长了 189 倍。其基于令牌的定价模型通过输入令牌、缓存输入令牌和输出令牌来衡量使用量。
+**背景**: OpenAI Codex 是一个 AI 驱动的编码代理，可自动化从规划到部署的软件工程任务。输出 token 指模型生成的代码或文本量，作为生产力的代理指标。自 2025 年 11 月以来的增长反映了工作流程中的快速采用和集成。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developers.openai.com/codex/pricing">Pricing – Codex | OpenAI Developers</a></li>
-<li><a href="https://icharles.com/articles/openai-codex-agentic-work-study">OpenAI Codex: 99.8% of Worker Tokens in 2026 - icharles.com</a></li>
-<li><a href="https://github.com/openai/codex">GitHub - openai / codex : Lightweight coding agent that runs in your...</a></li>
+<li><a href="https://openai.com/codex/">Codex | AI Coding Partner from OpenAI</a></li>
+<li><a href="https://openai.com/index/openai-codex/">OpenAI Codex</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#OpenAI`, `#Codex`, `#productivity`, `#enterprise`
+**标签**: `#AI`, `#productivity`, `#Codex`, `#OpenAI`, `#software engineering`
 
 ---
 
-<a id="item-11"></a>
+<a id="item-12"></a>
 ## [Anthropic 指控阿里巴巴大规模克隆 Claude AI](https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/) ⭐️ 8.0/10
 
-Anthropic 指控阿里巴巴策划了已知最大规模的 AI 模型提取攻击，动用 25000 个账户和 2880 万次查询来克隆其 Claude AI 模型。 这一事件凸显了 AI 模型盗窃日益严重的威胁，对知识产权保护以及中美科技公司之间的地缘政治紧张局势具有重大影响。 该攻击据称涉及 25000 个账户和 2880 万次交互，是已知最大规模的模型提取攻击。Anthropic 声称阿里巴巴在执行该操作时违抗了特朗普政府的政策。
+Anthropic 指控阿里巴巴策划了已知最大规模的 AI 模型克隆攻击，通过 25,000 个账户进行 2880 万次 API 交互，窃取了 Claude 的能力。 此事件凸显了 AI 行业中模型提取攻击日益严重的威胁，可能削弱知识产权保护和 AI 服务的信任。同时加剧了中美科技公司之间的地缘政治紧张局势。 该攻击涉及 25,000 个账户和 2880 万次交互，是已知最大规模的模型蒸馏攻击。Anthropic 声称阿里巴巴无视美国制裁实施了此次行动。
 
 rss · Ars Technica AI · 6月25日 18:01
 
-**背景**: 模型提取攻击通过查询专有 AI 模型的公开 API 来收集输入-输出对，然后用这些数据训练一个模仿原始模型的替代模型。此类攻击威胁到像 Anthropic 这样投入巨资开发 Claude 等先进模型的 AI 公司的知识产权和竞争优势。
+**背景**: 模型提取攻击（又称模型窃取）通过查询目标 AI 模型的 API 收集输入-输出对，然后用这些数据训练一个模仿原始模型的替代模型。这种技术使攻击者能够复制专有 AI 能力，而无需承担从头训练的高昂成本。此类攻击对 AI 行业的知识产权和竞争优势构成重大风险。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/">Anthropic says Alibaba must be punished for largest Claude ...</a></li>
 <li><a href="https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/">Anthropic says Alibaba illicitly extracted Claude AI model ...</a></li>
-<li><a href="https://cybersecuritytimes.com/anthropic-accuses-alibaba-of-illicitly-accessing/">Anthropic Accuses Alibaba of “Illicitly” Accessing Its Claude ...</a></li>
+<li><a href="https://www.bbc.com/news/articles/cwyklykn5dwo">Anthropic accuses Chinese rival Alibaba of illicitly ... - BBC</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论不可用，但该新闻引发了关于攻击规模及其地缘政治影响的辩论，一些人质疑证据，另一些人则强调需要加强 AI 安全措施。
-
-**标签**: `#AI`, `#security`, `#corporate espionage`, `#Anthropic`, `#Alibaba`
-
----
-
-<a id="item-12"></a>
-## [美国政府将逐案审批 GPT-5.6 访问权限](https://www.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56/) ⭐️ 8.0/10
-
-据 Reddit 帖子称，美国政府计划逐案审批谁可以访问 GPT-5.6（OpenAI 模型的未来版本）。这标志着对先进 AI 分发转向集中控制。 这可能为政府对尖端 AI 的监管开创先例，可能限制研究人员、开发者和竞争对手的访问。这引发了对创新、开源 AI 和全球竞争力的担忧。 该消息提及尚未发布的 GPT-5.6；已知最新版本是 2026 年 4 月推出的 GPT-5.5。审批流程细节尚未明确，但暗示了按用户许可或授权系统。
-
-reddit · r/LocalLLaMA · /u/AtlanticHM · 6月25日 22:02
-
-**背景**: GPT-5 是 OpenAI 于 2025 年 8 月发布的多模态大语言模型，后续有 GPT-5.5 等更新。美国政府一直通过行政命令和机构框架制定 AI 法规，但直接逐案审批模型访问权限将是新的控制级别。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/GPT-5">GPT-5</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT‑5.5 - OpenAI</a></li>
-<li><a href="https://legalclarity.org/government-regulations-on-artificial-intelligence-u-s-laws/">Government Regulations on Artificial Intelligence: U.S. Laws</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 社区对集中控制表达了强烈担忧，许多人认为这可能扼杀开源开发并赋予政府过多权力。一些人质疑此类系统的可行性和执行方式。
-
-**标签**: `#AI regulation`, `#GPT`, `#government policy`, `#AI access`
+**标签**: `#AI security`, `#model cloning`, `#Anthropic`, `#Alibaba`, `#intellectual property`
 
 ---
 
 <a id="item-13"></a>
-## [audio.cpp：12 个音频模型统一在 C++/ggml 运行时中，速度提升高达 5 倍](https://www.reddit.com/r/LocalLLaMA/comments/1ufpnm6/audiocpp_12_audio_models_qwen3tts_pockettts_vevo2/) ⭐️ 8.0/10
+## [美国政府将逐个审批 GPT-5.6 访问权限](https://www.reddit.com/r/LocalLLaMA/comments/1ufo0un/us_govt_to_individually_approve_who_gets_gpt_56/) ⭐️ 8.0/10
 
-audio.cpp 是一个基于 ggml 构建的原生 C++推理框架，将包括 TTS、ASR、语音克隆和语音转换在内的 12 个音频模型统一在单个运行时中，在 CUDA 上相比 Python 实现了高达 5 倍的加速。 该项目通过提供共享运行时解决了音频 ML 模型的碎片化问题，简化了部署并减少了依赖开销，可能加速音频 AI 在生产环境中的采用。 基准测试显示，PocketTTS 在单次运行中实现 3.68 倍加速，Qwen3-TTS 在长文本上最高 3.06 倍，Vevo2 在单次运行中最高 5.03 倍，均使用原始权重且未量化。该框架支持 CPU、CUDA、Vulkan 和 Metal 后端。
+据 Reddit 帖子和 Digg 文章报道，特朗普政府要求 OpenAI 分阶段发布 GPT-5.6，并由政府逐个审批每个用户的访问权限。OpenAI 据称已同意这一安排。 这标志着 AI 监管的重大转变，可能为政府对前沿 AI 模型的管控开创先例。这将影响依赖尖端 AI 的开发者、研究者和企业，引发关于审查、公平性和创新的担忧。 该说法尚未得到 OpenAI 或美国政府的官方确认。GPT-5.6 尚未正式发布；目前已知的最新模型是 2026 年 4 月推出的 GPT-5.5。
 
-reddit · r/LocalLLaMA · /u/Acceptable-Cycle4645 · 6月25日 23:10
+reddit · r/LocalLLaMA · /u/AtlanticHM · 6月25日 22:02
 
-**背景**: ggml 是一个用于机器学习的张量库，能够在消费级硬件上实现高效推理，是 llama.cpp 等流行项目的基础。传统上，音频模型需要独立的 Python 环境和依赖，部署繁琐。audio.cpp 利用 ggml 在单个 C++可执行文件中运行多个音频模型，消除了推理路径中的 Python 依赖。
+**背景**: GPT-5 是 OpenAI 开发的多模态大语言模型，于 2025 年 8 月 7 日发布，是 OpenAI GPT 系列的第五代产品，可通过 ChatGPT 和 Microsoft Copilot 公开访问。美国政府此前曾表达对 AI 安全的担忧，并一直在探索针对前沿模型的监管框架。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GGML">GGML</a></li>
-<li><a href="https://github.com/QwenLM/Qwen3-TTS">GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series ...</a></li>
-<li><a href="https://silentinfotech.com/blog/ai-9/pockettts-lightweight-text-to-speech-ai-model-for-fast-voice-generation-324">PocketTTS AI: Lightweight Text-to-Speech Model for Fast Voice...</a></li>
+<li><a href="https://digg.com/tech/p15oldm4">Trump administration requests OpenAI stagger GPT-5.6 release...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-5">GPT-5</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-5-5/">Introducing GPT‑5.5 - OpenAI</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 社区对该项目的性能和统一方法表示赞赏，用户表示有兴趣在不同硬件上测试并贡献代码。一些人指出了早期阶段和缺乏流式支持的问题，但总体情绪积极。
+**社区讨论**: Reddit 讨论中反应不一：一些用户对政府过度干预和潜在审查表示担忧，而另一些人则认为这种监管对安全是必要的。少数评论者质疑消息来源的可信度，指出缺乏官方确认。
+
+**标签**: `#AI regulation`, `#GPT-5`, `#government policy`, `#access control`
+
+---
+
+<a id="item-14"></a>
+## [audio.cpp：一个 C++/ggml 运行时集成 12 个音频模型，速度提升高达 5 倍](https://www.reddit.com/r/LocalLLaMA/comments/1ufpnm6/audiocpp_12_audio_models_qwen3tts_pockettts_vevo2/) ⭐️ 8.0/10
+
+audio.cpp 是一个基于 ggml 构建的原生 C++推理框架，将 12 个音频模型（包括 TTS、ASR、语音转换等）统一到单个运行时中，在 CUDA 上相比 Python 实现了高达 5.03 倍的加速。 该项目通过提供共享的高性能 C++运行时，解决了音频模型部署碎片化的问题，显著降低了开发者和研究人员的依赖开销和推理延迟。 该框架目前支持 12 个已发布的模型系列，包括 Qwen3-TTS、PocketTTS、Vevo2 和 Silero VAD，长文本 TTS 实现了高达 48.40 倍实时速度。它支持 CPU、CUDA、Vulkan 和 Metal 后端，但流式处理尚未普遍支持。
+
+reddit · r/LocalLLaMA · /u/Acceptable-Cycle4645 · 6月25日 23:10
+
+**背景**: ggml 是一个通用张量库，为 llama.cpp 提供支持，后者是本地 LLM 推理的事实标准。audio.cpp 将此方法扩展到音频模型，旨在消除为每个模型维护独立 Python 环境和依赖树的需求。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GGML">GGML</a></li>
+<li><a href="https://github.com/ggml-org/llama.cpp">GitHub - ggml -org/llama.cpp: LLM inference in C/C++ · GitHub</a></li>
+<li><a href="https://github.com/snakers4/silero-vad">GitHub - snakers4/silero-vad: Silero VAD: pre-trained ...</a></li>
+
+</ul>
+</details>
 
 **标签**: `#audio`, `#C++`, `#ggml`, `#TTS`, `#inference`
 
 ---
 
-<a id="item-14"></a>
-## [JetSpec：通过并行树草稿实现高达 9.64 倍 LLM 加速](https://www.reddit.com/r/LocalLLaMA/comments/1ufntl5/research_jetspec_speculative_decoding_with/) ⭐️ 8.0/10
-
-JetSpec 引入了因果并行树草稿技术用于推测解码，在 MATH-500 上实现了高达 9.64 倍的端到端加速，在开放式对话上实现 4.58 倍加速，同时保持无损精度。在单个 B200 GPU 上，它还能达到约每秒 1000 个 token 的吞吐量。 这一突破显著降低了 LLM 推理延迟，使实时应用更加可行，并降低了部署成本。它通过联合优化草稿成本和质量，解决了推测解码中的一个关键瓶颈。 JetSpec 利用 CUDA 图和内核优化进一步提升性能。该方法通过单次前向传播生成一个保持因果关系的树，克服了自回归草稿成本与块扩散不一致性之间的困境。
-
-reddit · r/LocalLLaMA · /u/No_Yogurtcloset_7050 · 6月25日 21:55
-
-**背景**: 推测解码通过使用小型草稿模型生成候选 token，再由目标模型验证，从而加速 LLM 推理。传统方法要么使用自回归草稿（深层树成本高），要么使用块扩散（分支间不一致）。JetSpec 的因果并行树草稿结合了两者的优点。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://medium.com/ai-science/speculative-decoding-make-llm-inference-faster-c004501af120">Speculative Decoding — Make LLM Inference ... | Medium | AI Science</a></li>
-<li><a href="https://github.com/JetSpec-project/vllm-jetspec/blob/causal-parallel-drafting/project_plans/causal_tree_draft_exec_plan.md">vllm-jetspec/project_plans/causal_tree_draft_exec_plan.md at ...</a></li>
-<li><a href="https://deepwiki.com/harleyszhang/llm_note/4.2-cuda-graph-optimization">CUDA Graph Optimization | harleyszhang/llm_note | DeepWiki</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 上的讨论很活跃，涉及实现细节以及与其他方法（如 DFlash）比较的技术问题。总体情绪积极，用户对加速数据印象深刻，并渴望测试开源代码。
-
-**标签**: `#speculative decoding`, `#LLM inference`, `#speedup`, `#parallel tree drafting`, `#CUDA optimization`
-
----
-
 <a id="item-15"></a>
-## [NVIDIA 发布基于扩散的语言模型 Nemotron-TwoTower](https://www.reddit.com/r/LocalLLaMA/comments/1uf4azy/nvidia_has_released/) ⭐️ 8.0/10
+## [Ornith-1.0 大模型系列在 Hugging Face 发布](https://www.reddit.com/r/LocalLLaMA/comments/1ufc9vp/ornith10_released_on_hugging_face/) ⭐️ 8.0/10
 
-NVIDIA 发布了 Nemotron-TwoTower-30B-A3B-Base-BF16，这是一个基于扩散的语言模型，构建在 Nemotron 3 Nano 30B-A3B 骨干之上。它使用一个冻结的自回归上下文塔和一个扩散去噪塔，并行生成令牌块。 该模型实现了比自回归基线高 2.42 倍的生成吞吐量，同时保留了 98.7% 的基准质量，可能实现更快、更高效的 LLM 推理。它代表了一种新颖的语言建模方法，可能影响未来的模型架构。 该模型使用掩码扩散设置，其中扩散塔迭代地填充掩码令牌块。它基于 Nemotron 3 Nano 30B-A3B，这是一个混合专家（MoE）模型，总参数为 30B，激活参数为 3B。
+DeepReinforce 发布了 Ornith-1.0，这是一个面向智能体编程的开源大模型系列，包含四个版本：9B Dense、31B Dense、35B MoE 和 397B MoE，声称在多个基准测试上达到最先进水平。 此次发布为 AI 社区提供了一个有竞争力的开源编程模型系列，从高效的单 GPU 模型到庞大的 397B MoE 旗舰模型，有望使高性能编程助手的获取更加民主化。 397B MoE 模型采用混合专家架构，以较低的计算成本实现高性能，而 9B 和 31B 密集模型则针对高效部署设计。据报道，这些模型在编程基准测试上可与 Claude Opus 4.7 媲美。
 
-reddit · r/LocalLLaMA · /u/nikhilprasanth · 6月25日 08:34
+reddit · r/LocalLLaMA · /u/paf1138 · 6月25日 14:52
 
-**背景**: 传统的大型语言模型（LLM）以自回归方式逐个生成令牌，这限制了吞吐量。扩散语言模型则通过并行迭代去噪一系列掩码令牌来生成文本，提供了潜在的加速。NVIDIA 的 Nemotron-TwoTower 结合了一个冻结的自回归塔用于上下文，以及一个扩散塔用于并行生成。
+**背景**: 混合专家（MoE）是一种使用多个子模型（专家）和门控机制的技术，每次输入只激活部分专家，从而在不按比例增加计算量的情况下扩大模型容量。Ornith-1.0 专为智能体编程设计，能够自主编写和执行代码，包括生成自己的强化学习框架。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2502.09992">[2502.09992] Large Language Diffusion Models - arXiv.org</a></li>
-<li><a href="https://huggingface.co/unsloth/Nemotron-3-Nano-30B-A3B">unsloth/ Nemotron - 3 - Nano - 30 B - A 3 B · Hugging Face</a></li>
-<li><a href="https://medium.com/data-science-in-your-pocket/nemotron-3-nano-30b-implementing-nvidias-1m-context-hybrid-mamba-moe-built-for-agentic-speed-5af245ddd9c4">Nemotron ‑ 3 Nano 30 B : Implementing NVIDIA’s 1M‑Context... | Medium</a></li>
+<li><a href="https://www.marktechpost.com/2026/06/25/deepreinforce-releases-ornith-1-0-an-open-source-coding-model-family-that-learns-its-own-rl-scaffolds/">DeepReinforce Releases Ornith - 1 . 0 : An Open-Source Coding Model ...</a></li>
+<li><a href="https://www.testingcatalog.com/deepreinforce-releases-ornith-1-0-open-source-coding-models/">DeepReinforce releases Ornith - 1 . 0 open-source coding models</a></li>
+<li><a href="https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B">deepreinforce-ai/ Ornith - 1 . 0 -35B · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 上的讨论活跃，包含技术见解，包括与其他基于扩散的模型的比较，以及关于质量和速度之间权衡的讨论。一些用户对本地推理和微调的实际影响表示好奇。
+**社区讨论**: Reddit 社区表达了谨慎乐观的态度，许多用户渴望亲自测试基准。一些人质疑声称的最先进性能，并指出需要独立验证，而另一些人则赞赏开源发布和多种模型尺寸的选择。
 
-**标签**: `#NVIDIA`, `#diffusion language model`, `#LLM inference`, `#Nemotron`, `#machine learning`
+**标签**: `#LLM`, `#Hugging Face`, `#model release`, `#benchmarks`, `#MoE`
 
 ---
