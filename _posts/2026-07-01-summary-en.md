@@ -9,356 +9,351 @@ lang: en
 
 ---
 
-1. [Agency-Agents: A Framework for Building AI Agency](#item-1) ⭐️ 8.0/10
-2. [Superpowers: Agentic Skills Framework Trending on GitHub](#item-2) ⭐️ 8.0/10
-3. [Orca: A Unified World Foundation Model via Next-State Prediction](#item-3) ⭐️ 8.0/10
-4. [LiveEdit: Real-Time Diffusion-Based Streaming Video Editing](#item-4) ⭐️ 8.0/10
-5. [mmWave Radar Prototype for Material Classification](#item-5) ⭐️ 8.0/10
-6. [ZLUDA 6 Released: Run Unmodified CUDA on Non-Nvidia GPUs](#item-6) ⭐️ 8.0/10
-7. [shot-scraper video lets agents record web demos](#item-7) ⭐️ 8.0/10
-8. [New attack shows AI browsers can be tricked by false facts](#item-8) ⭐️ 8.0/10
-9. [audio.cpp Adds VibeVoice 1.5B, 4x Real-Time TTS](#item-9) ⭐️ 8.0/10
-10. [NVIDIA Releases FP4 Quantized 27B Model for Local Inference](#item-10) ⭐️ 8.0/10
-11. [Huawei open-sources OpenPangu-2.0-Flash MoE LLM](#item-11) ⭐️ 8.0/10
-12. [PageStorm: First Single-Turn Full-Book Writing Model Released](#item-12) ⭐️ 8.0/10
-13. [Meta reuses old DDR4 memory in DDR5 servers via custom CXL chip](#item-13) ⭐️ 8.0/10
-14. [Qwen 3.6 27B Hits ~100 TPS on RTX 3090 with Speculative Decoding](#item-14) ⭐️ 8.0/10
-15. [Microsoft Removes FastContext Model from Hugging Face and GitHub](#item-15) ⭐️ 8.0/10
+1. [US Lifts Export Controls on Anthropic's Claude Fable 5 and Mythos 5](#item-1) ⭐️ 9.0/10
+2. [Google's agents-cli: CLI for AI Agent Development on Google Cloud](#item-2) ⭐️ 8.0/10
+3. [OmniRoute: Free AI Gateway with 231+ Providers Gains 387 Stars in a Day](#item-3) ⭐️ 8.0/10
+4. [Orca: A Unified World Foundation Model via Next-State Prediction](#item-4) ⭐️ 8.0/10
+5. [LiveEdit: Real-Time Diffusion-Based Streaming Video Editing](#item-5) ⭐️ 8.0/10
+6. [DIY mmWave Radar Classifies Materials, Aims for Asbestos Detection](#item-6) ⭐️ 8.0/10
+7. [ZLUDA 6: Run Unmodified CUDA Apps on Non-Nvidia GPUs](#item-7) ⭐️ 8.0/10
+8. [Shot-scraper video records agent demos via Playwright](#item-8) ⭐️ 8.0/10
+9. [Sonnet 5 and Fable 5 AI Models Announced](#item-9) ⭐️ 8.0/10
+10. [New attack bypasses AI browser guardrails with false arithmetic](#item-10) ⭐️ 8.0/10
+11. [audio.cpp Adds VibeVoice 1.5B, Achieves 4x Real-Time TTS](#item-11) ⭐️ 8.0/10
+12. [NVIDIA Releases Qwen3.6-27B-NVFP4 for Efficient Local Inference](#item-12) ⭐️ 8.0/10
+13. [Huawei Open-Sources OpenPangu-2.0-Flash MoE Model](#item-13) ⭐️ 8.0/10
+14. [PageStorm: A Model for Full-Book Creative Writing](#item-14) ⭐️ 8.0/10
+15. [Meta reuses old DDR4 memory in new DDR5 servers via custom CXL 2.0 chip](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Agency-Agents: A Framework for Building AI Agency](https://github.com/msitarzewski/agency-agents) ⭐️ 8.0/10
+## [US Lifts Export Controls on Anthropic's Claude Fable 5 and Mythos 5](https://twitter.com/AnthropicAI/status/2072106151890809341) ⭐️ 9.0/10
 
-The GitHub repository msitarzewski/agency-agents, which provides a framework for building a complete AI agency with specialized agents, gained 1,791 stars in a single day, reaching over 121,000 total stars. This rapid growth signals strong community interest in multi-agent AI systems that automate complex workflows, potentially democratizing access to AI-driven task orchestration. The framework is written in Shell and includes agents such as frontend wizards, Reddit community ninjas, and reality checkers, each with specialized expertise and deliverables.
+The Department of Commerce has lifted export controls on Anthropic's Claude Fable 5 and Mythos 5 models, allowing their broader deployment after Anthropic implemented new safety classifiers to block cybersecurity tasks. This policy reversal highlights the unpredictability of AI export controls, affecting businesses that rely on frontier models and sparking debate on whether AI regulation should be governed by clear laws rather than executive actions. Claude Fable 5 is Anthropic's most capable widely released model, while Mythos 5 shares the same capabilities but remains in limited release through Project Glasswing. The lifted controls come after a series of letters from Commerce to Anthropic addressing risks.
 
-github_trending · GitHub Trending · Jul 1, 04:01
+hackernews · Pragmata · Jun 30, 23:55 · [Discussion](https://news.ycombinator.com/item?id=48740771)
 
-**Background**: Multi-agent systems involve multiple AI agents that collaborate to solve complex tasks. Frameworks like LangGraph and OpenAI Agents SDK enable orchestration of such agents. This repository offers a ready-to-use setup for creating an AI agency with predefined roles.
+**Background**: Export controls on AI models are used to prevent advanced technology from falling into the hands of adversaries. Anthropic's Claude models are frontier large language models, with Mythos 5 designed for cybersecurity vulnerability discovery. The UK AI Security Institute previously tested Claude Mythos and ranked it highest in cyber range tests.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.langchain.com/langgraph">LangGraph: Agent Orchestration Framework for Reliable AI Agents</a></li>
-<li><a href="https://github.com/openai/openai-agents-python">openai/openai- agents -python: A lightweight, powerful framework for...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claude_Fable_5">Claude Fable 5</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mythos_5">Mythos 5</a></li>
+<li><a href="https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5">Introducing Claude Fable 5 and Claude Mythos 5 - Claude Platform Docs</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#multi-agent`, `#automation`, `#open-source`, `#Shell`
+**Discussion**: Community comments express frustration over regulatory unpredictability, with users noting that businesses cannot rely on US frontier models for critical functions. Some highlight that Fable 5 now blocks coding tasks, falling back to Opus 4.8, while others argue that Chinese models have already reduced the impact of export controls.
+
+**Tags**: `#AI regulation`, `#export controls`, `#Anthropic`, `#policy`, `#frontier models`
 
 ---
 
 <a id="item-2"></a>
-## [Superpowers: Agentic Skills Framework Trending on GitHub](https://github.com/obra/superpowers) ⭐️ 8.0/10
+## [Google's agents-cli: CLI for AI Agent Development on Google Cloud](https://github.com/google/agents-cli) ⭐️ 8.0/10
 
-The GitHub repository obra/superpowers has gained 890 stars in a single day, reaching a total of over 242,000 stars, as it proposes a novel agentic skills framework and software development methodology for coding agents. This rapid growth indicates strong community interest in structured methodologies for AI coding agents, which could influence how developers integrate AI into software development workflows. Superpowers is built on composable skills and initial instructions to guide coding agents, combining brainstorming, planning, test-driven development, code review, worktrees, and subagents into a cohesive methodology.
+Google released agents-cli, a CLI tool and set of skills that enables any coding assistant to create, evaluate, and deploy AI agents on Google Cloud. It gained 445 stars on GitHub in a single day, reaching 4303 total stars. This tool simplifies the full lifecycle of AI agent development on Google Cloud, making it accessible to developers using popular coding assistants like Gemini CLI, Claude Code, and Cursor. It could accelerate adoption of Google's Agent Platform and reduce friction in deploying production-ready agents. agents-cli is not a coding agent itself but provides CLI commands and skills that enhance coding assistants to build, evaluate, and deploy ADK agents on Google Cloud. It integrates with Google's Agent Platform, Model Garden, and RAG Engine.
 
-github_trending · GitHub Trending · Jul 1, 04:01
+github_trending · GitHub Trending · Jul 1, 04:16
 
-**Background**: Agentic skills frameworks are lightweight, open formats for extending AI agent capabilities with specialized knowledge and workflows. Superpowers is one of many such frameworks, but it distinguishes itself by providing a complete software development methodology rather than just a skill catalog.
+**Background**: AI agents are software systems that use AI to pursue goals and complete tasks on behalf of users. Google Cloud's Agent Platform provides tools for building, deploying, and managing these agents, including access to models like Gemini and Claude, a RAG engine, and vector search. agents-cli bridges the gap between coding assistants and this platform, enabling a streamlined workflow from development to production.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/obra/superpowers">GitHub - obra/superpowers: An agentic skills framework & software development methodology that works. · GitHub</a></li>
-<li><a href="https://github.com/obra/superpowers/blob/main/README.md">superpowers/README.md at main · obra/superpowers</a></li>
-<li><a href="https://knightli.com/en/2026/05/15/obra-superpowers-agentic-skills-framework/">Superpowers: a skills framework that pulls coding agents back into engineering process</a></li>
+<li><a href="https://github.com/google/agents-cli">GitHub - google/agents-cli: The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud. · GitHub</a></li>
+<li><a href="https://google.github.io/agents-cli/">Unified CLI for the full ADK agent development lifecycle</a></li>
+<li><a href="https://developers.googleblog.com/agents-cli-in-agent-platform-create-to-production-in-one-cli/">Agents CLI in Agent Platform: create to production in one CLI - Google Developers Blog</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#agentic-framework`, `#software-development`, `#methodology`, `#shell`
+**Discussion**: The community response has been highly positive, with many developers praising the tool's integration with existing coding assistants and its potential to simplify agent deployment. Some users expressed interest in support for other cloud providers, but overall sentiment is enthusiastic.
+
+**Tags**: `#AI Agents`, `#Google Cloud`, `#CLI`, `#Python`, `#DevOps`
 
 ---
 
 <a id="item-3"></a>
-## [Orca: A Unified World Foundation Model via Next-State Prediction](https://huggingface.co/papers/2606.30534) ⭐️ 8.0/10
+## [OmniRoute: Free AI Gateway with 231+ Providers Gains 387 Stars in a Day](https://github.com/diegosouzapw/OmniRoute) ⭐️ 8.0/10
 
-Researchers introduced Orca, a world foundation model that learns a unified latent space from multimodal data using next-state-prediction, outperforming specialized baselines on text generation, image prediction, and embodied action generation tasks. Orca proposes a novel unified approach to world modeling that combines unconscious and conscious learning paradigms, potentially advancing AI's ability to understand, predict, and act upon the world in a generalizable manner. Orca was pretrained on 125K hours of video and 160M event annotations, and its backbone remains frozen during downstream evaluation with only lightweight modality-specific decoders being trainable.
+OmniRoute, a free AI gateway that provides a single endpoint for over 231 AI providers (including 50+ free ones), has rapidly gained 387 stars in one day on GitHub, reaching 8,712 total stars. It features RTK+Caveman stacked token compression saving 15-95% and smart auto-fallback, and integrates with tools like Claude Code, Cursor, and Copilot. OmniRoute simplifies access to a vast array of AI models through a single API, reducing costs via token compression and improving reliability with fallback mechanisms. This could significantly lower barriers for developers integrating AI into their workflows, especially those using multiple providers. The project is written in TypeScript and supports protocols like MCP (Model Context Protocol) and A2A (Agent-to-Agent). It also offers a desktop app and PWA, and claims compatibility with Claude Code, Codex, Cursor, Cline, and Copilot.
 
-huggingface_papers · Hugging Face Papers · Jul 1, 00:00
+github_trending · GitHub Trending · Jul 1, 04:16
 
-**Background**: World foundation models aim to learn a unified representation of the world from diverse data modalities, enabling general-purpose reasoning and action. Next-state-prediction is a core objective where the model predicts the next observation given current state and action, similar to how world models are used in reinforcement learning. Orca distinguishes itself by integrating two learning paradigms: unconscious learning from continuous video streams and conscious learning from language-described events.
+**Background**: AI gateways act as intermediaries that route requests to various AI model providers, offering a unified interface. Token compression techniques like RTK (Rust Token Killer) and Caveman reduce the number of tokens sent to or received from LLMs, cutting costs. MCP and A2A are emerging protocols for AI agent interoperability.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/papers/2606.30534">Paper page - Orca : The World is in Your Mind</a></li>
-<li><a href="https://medium.com/@gptproto.official/next-state-prediction-the-future-of-agi-world-models-96d4a67d04a9">Next - State Prediction : The Future of AGI & World Models | Medium</a></li>
-<li><a href="https://www.emergentmind.com/topics/multimodal-foundation-model">Multimodal Foundation Model</a></li>
+<li><a href="https://github.com/diegosouzapw/OmniRoute">GitHub - diegosouzapw/OmniRoute: Never stop coding. Free AI gateway: one endpoint, 160+ providers (50+ free), connect Claude Code, Codex, Cursor, Cline & Copilot to FREE Claude/GPT/Gemini. RTK+Caveman stacked compression saves 15-95% tokens, smart auto-fallback, MCP/A2A, multimodal APIs, Desktop/PWA. · GitHub</a></li>
+<li><a href="https://dev.to/sonim1/token-saving-and-caveman-e1f">Token Saving, and Caveman - DEV Community</a></li>
+<li><a href="https://auth0.com/blog/mcp-vs-a2a/">MCP vs A2A: A Guide to AI Agent Communication Protocols</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#world model`, `#multimodal learning`, `#next-state-prediction`, `#foundation model`, `#AI research`
+**Tags**: `#AI`, `#API Gateway`, `#TypeScript`, `#Open Source`, `#Developer Tools`
 
 ---
 
 <a id="item-4"></a>
-## [LiveEdit: Real-Time Diffusion-Based Streaming Video Editing](https://huggingface.co/papers/2606.26740) ⭐️ 8.0/10
+## [Orca: A Unified World Foundation Model via Next-State Prediction](https://huggingface.co/papers/2606.30534) ⭐️ 8.0/10
 
-LiveEdit introduces a streaming video editing framework that achieves real-time, frame-by-frame editing at 12.66 FPS with stable long-horizon content preservation, using a three-stage distillation pipeline and an AR-oriented mask cache. This work addresses the critical latency-stability trade-off in streaming video editing, enabling practical deployment in interactive and augmented reality applications where real-time responsiveness and consistent background preservation are essential. The three-stage distillation pipeline progressively transfers editing capability from a bidirectional foundation model to an efficient unidirectional streaming editor, while the AR-oriented mask cache reuses region-related computation across frames to reduce redundant processing.
+Researchers introduced Orca, a world foundation model that learns a unified latent space from multimodal data using next-state-prediction, outperforming specialized baselines on downstream tasks like text generation, image prediction, and embodied action generation. Orca's unified approach to modeling world states could accelerate progress toward general AI systems that understand and interact with the physical world, reducing the need for task-specific models. Orca was pretrained on 125K hours of video and 160M event annotations, using both unconscious learning from continuous videos and conscious learning from language-described events. Its backbone is frozen during downstream tasks, with only lightweight modality-specific decoders being trainable.
 
-huggingface_papers · Hugging Face Papers · Jun 30, 00:00
+huggingface_papers · Hugging Face Papers · Jul 1, 00:00
 
-**Background**: Streaming video editing requires processing video frames causally with low latency, but existing methods struggle with maintaining stable backgrounds over long sequences and achieving real-time speeds. Diffusion models have shown promise in image and video generation, but their bidirectional attention mechanisms are computationally expensive for streaming. LiveEdit's distillation pipeline and mask cache are designed to overcome these limitations.
+**Background**: World foundation models aim to create a digital twin of the physical world that AI systems can safely interact with. Unlike traditional next-token or next-frame prediction, next-state-prediction models the underlying state transitions of the world, enabling counterfactual simulation and reasoning about consequences.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2606.26740v1">LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing</a></li>
-<li><a href="https://live-edit.github.io/">LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/world-models/">What Are World Models and How Are They Built?</a></li>
+<li><a href="https://arxiv.org/html/2501.03575v1">Cosmos World Foundation Model Platform for Physical AI</a></li>
+<li><a href="https://beykeworkflows.com/ai-world-models-next-state-strategy/">AI World Models: The Strategic Shift from Next Token to Next State</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#video editing`, `#diffusion models`, `#streaming`, `#real-time`, `#AI`
+**Tags**: `#world model`, `#multimodal learning`, `#foundation model`, `#next-state-prediction`, `#AI`
 
 ---
 
 <a id="item-5"></a>
-## [mmWave Radar Prototype for Material Classification](https://gauthier-lechevalier.com/radar) ⭐️ 8.0/10
+## [LiveEdit: Real-Time Diffusion-Based Streaming Video Editing](https://huggingface.co/papers/2606.26740) ⭐️ 8.0/10
 
-A detailed technical write-up describes building a mmWave radar prototype for material classification, including lessons learned and potential applications like asbestos detection. This project demonstrates a novel use of mmWave radar for non-destructive material identification, which could have significant safety and industrial inspection implications, especially for detecting hazardous materials like asbestos. The prototype uses a 60 GHz mmWave radar module and machine learning to classify materials based on their radar signature. The project ended due to lack of funding, and the author notes that detecting asbestos fibers directly is challenging because they are too small for radar.
+Researchers propose LiveEdit, a streaming video editing framework that achieves real-time frame-by-frame editing at 12.66 FPS using a three-stage distillation pipeline and an AR-oriented mask cache. This work addresses two critical bottlenecks in streaming video editing—long-horizon content preservation and low-latency inference—making it suitable for interactive and augmented reality applications. The three-stage distillation pipeline progressively transfers editing capability from a bidirectional foundation model to an efficient unidirectional streaming editor, while the AR-oriented mask cache reuses region-related computation across frames to reduce redundant processing.
 
-hackernews · GL26 · Jun 30, 17:29 · [Discussion](https://news.ycombinator.com/item?id=48736137)
+huggingface_papers · Hugging Face Papers · Jun 30, 00:00
 
-**Background**: mmWave radar operates at millimeter wavelengths (30-300 GHz) and can penetrate non-metallic materials, making it useful for imaging and sensing behind surfaces. Material classification using radar relies on differences in dielectric properties, which affect the reflected signal. Asbestos detection typically requires specialized lab analysis or handheld NIR analyzers, not radar.
+**Background**: Streaming video editing requires causal, frame-by-frame processing with strict preservation of unedited regions, which existing streaming generation methods cannot directly handle due to their focus on synthesis. Diffusion models have shown promise in image editing but face latency and consistency challenges when applied to video. LiveEdit introduces a dedicated benchmark for streaming video editing to standardize evaluation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://sesamedisk.com/mmwave-radar-material-classification-industrial/">Millimeter-Wave Radar for Material - Sesame Disk</a></li>
-<li><a href="https://vuink.com/post/tnhguvre-yrpurinyvre-d-dpbz/radar">How I built a mmWave material classification radar</a></li>
-<li><a href="https://www.linkedin.com/pulse/how-gpr-can-help-detect-asbestos-containing-buried-9xqgc">How GPR Can Help Detect Asbestos -Containing Buried Construction...</a></li>
+<li><a href="https://arxiv.org/html/2606.26740">LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing</a></li>
+<li><a href="https://huggingface.co/papers/2606.26740">Paper page - LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing</a></li>
+<li><a href="https://arxiv.org/abs/2606.26740">[2606.26740] LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters praised the detailed failure analysis and lessons learned, but some questioned the feasibility of asbestos detection, noting that undisturbed asbestos is not dangerous and that radar cannot detect individual fibers. Others suggested alternative applications like detecting discontinuities in materials or skin cancer screening.
-
-**Tags**: `#mmWave radar`, `#material classification`, `#asbestos detection`, `#hardware`, `#prototype`
+**Tags**: `#video editing`, `#diffusion models`, `#real-time`, `#streaming`, `#AI/ML`
 
 ---
 
 <a id="item-6"></a>
-## [ZLUDA 6 Released: Run Unmodified CUDA on Non-Nvidia GPUs](https://vosen.github.io/ZLUDA/blog/zluda-update-q1q2-2026/) ⭐️ 8.0/10
+## [DIY mmWave Radar Classifies Materials, Aims for Asbestos Detection](https://gauthier-lechevalier.com/radar) ⭐️ 8.0/10
 
-ZLUDA 6 has been released, allowing unmodified CUDA applications to run on non-Nvidia GPUs with new features including 32-bit PhysX support. The project is now developed as a weekend project by its original author after losing commercial funding. This release is significant because it expands hardware options for CUDA-dependent workloads, potentially reducing vendor lock-in for AI, HPC, and gaming applications. The addition of 32-bit PhysX support is particularly notable as Nvidia had considered removing it from their own drivers. ZLUDA 6 now supports 32-bit PhysX, a feature previously outside the project's roadmap. The shift to a weekend project means development priorities are driven by personal interest rather than commercial viability, focusing on features like LLM performance and PhysX.
+A DIY project using a 60 GHz mmWave radar sensor successfully classifies common building materials (e.g., wood, drywall, concrete) and explores the feasibility of detecting asbestos in walls. The project is documented with detailed lessons learned, though it did not achieve funding for further development. This project highlights the potential of low-cost mmWave radar for non-destructive material identification, which could revolutionize building inspection and safety. If successful, it could enable affordable, portable asbestos detection, addressing a major health hazard in older buildings. The radar operates at 60 GHz and uses signal processing to generate spectrograms for material classification. The project did not specifically test asbestos detection, focusing instead on classifying common materials, which led to community skepticism about its practical feasibility for asbestos.
 
-hackernews · Tiberium · Jun 30, 10:34 · [Discussion](https://news.ycombinator.com/item?id=48730713)
+hackernews · GL26 · Jun 30, 17:29 · [Discussion](https://news.ycombinator.com/item?id=48736137)
 
-**Background**: ZLUDA is a compatibility layer that translates CUDA API calls to AMD ROCm/HIP, enabling unmodified CUDA programs to run on AMD GPUs with near-native performance. Originally developed with commercial backing, it was later abandoned by AMD and Intel, leading to its current open-source, hobbyist status.
+**Background**: mmWave radar uses millimeter-wave frequencies (30-300 GHz) to detect objects and measure properties like dielectric constant, which vary by material. Asbestos detection typically requires lab analysis or specialized handheld devices; a radar-based approach could offer faster, non-invasive screening. The project is part of a broader trend of DIY radar systems for presence detection and imaging.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.tomshardware.com/software/a-project-to-bring-cuda-to-non-nvidia-gpus-is-making-major-progress-zluda-update-now-has-two-full-time-developers-working-on-32-bit-physx-support-and-llms-amongst-other-things">A project to bring CUDA to non-Nvidia GPUs is making major progress — ZLUDA update now has two full-time developers, working on 32-bit PhysX support and LLMs, amongst other things | Tom's Hardware</a></li>
-<li><a href="https://github.com/vosen/ZLUDA">GitHub - vosen/ZLUDA: CUDA on non-NVIDIA GPUs · GitHub</a></li>
-<li><a href="https://www.theregister.com/software/2024/08/09/amd-lawyers-claw-back-cuda-compatibility-layer-zluda/1009658">AMD lawyers claw back CUDA compatibility layer ZLUDA</a></li>
+<li><a href="https://sesamedisk.com/mmwave-radar-material-classification-industrial/">Millimeter-Wave Radar for Material - Sesame Disk</a></li>
+<li><a href="https://wpnews.pro/news/i-built-a-mmwave-material-classification-radar">I built a mmWave material classification radar — Web Pulse</a></li>
+<li><a href="https://calvin.me/diy-mmwave-presence-detectors/">DIY mmWave Presence Detectors – Calvin Bui</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight the irony of needing a third-party translation layer for PhysX on Nvidia's own GPUs, and express curiosity about ZLUDA's performance for LLMs compared to Vulkan. The project's name, meaning 'mirage' in Polish, is also noted as a clever pun.
+**Discussion**: Comments are mixed: some praise the technical documentation and lessons learned, while others question the feasibility of asbestos detection, noting that the prototype only classified common materials. One commenter suggests using the radar to find discontinuities rather than classify materials, which could be useful for general inspection.
 
-**Tags**: `#CUDA`, `#GPU`, `#Open Source`, `#Compatibility Layer`, `#HPC`
+**Tags**: `#mmWave radar`, `#material classification`, `#asbestos detection`, `#hardware hacking`, `#signal processing`
 
 ---
 
 <a id="item-7"></a>
-## [shot-scraper video lets agents record web demos](https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything) ⭐️ 8.0/10
+## [ZLUDA 6: Run Unmodified CUDA Apps on Non-Nvidia GPUs](https://vosen.github.io/ZLUDA/blog/zluda-update-q1q2-2026/) ⭐️ 8.0/10
 
-Simon Willison released shot-scraper 1.10 with a new 'video' command that uses Playwright to record a video of a web application routine defined in a storyboard.yml file. This tool enables coding agents to produce visual proof of their work, addressing a key gap in verifying agent output and making demos easier to share and review. The storyboard.yml file specifies server startup, URL, viewport, cursor visibility, wait conditions, JavaScript overrides, and a sequence of scenes with actions like click, type, and pause.
+ZLUDA 6 has been released, allowing unmodified CUDA applications to run on non-Nvidia GPUs, now as an open-source weekend project with new features including 32-bit PhysX support. This release expands GPU computing options by enabling CUDA software on AMD and other GPUs, potentially reducing vendor lock-in and benefiting users with non-Nvidia hardware, especially for legacy PhysX games and LLM inference. ZLUDA 6 adds 32-bit PhysX support, which is notable because Nvidia initially planned to remove it from RTX 50 series but later reinstated it after backlash. The project is now a weekend hobby, prioritizing entertaining features over commercial viability.
 
-rss · Simon Willison · Jun 30, 16:54
+hackernews · Tiberium · Jun 30, 10:34 · [Discussion](https://news.ycombinator.com/item?id=48730713)
 
-**Background**: shot-scraper is a command-line tool for taking screenshots of web pages using Playwright, a browser automation library. This new video feature extends its capabilities to recording full demos, which is especially useful for AI coding agents that need to demonstrate their results.
+**Background**: ZLUDA is a translation layer that converts CUDA API calls into AMD's ROCm/HIP platform, enabling CUDA applications to run on AMD GPUs without code changes. Nvidia has previously banned the use of translation layers in its CUDA EULA, targeting projects like ZLUDA. PhysX is a physics engine used in games; 32-bit PhysX support is important for older titles.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://simonwillison.net/2026/Jun/30/shot-scraper-video/">Have your agent record video demos of its work with shot-scraper video</a></li>
-<li><a href="https://shot-scraper.datasette.io/">shot-scraper</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Playwright_(software)">Playwright (software) - Wikipedia</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/gpus/nvidias-physx-and-flow-go-open-source-running-legacy-physx-on-rtx-50-may-be-possible-using-wrappers">Nvidia's PhysX and Flow go open source — Running legacy PhysX on RTX 50 may be possible using wrappers | Tom's Hardware</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#developer-tools`, `#AI-agents`, `#testing`, `#video-recording`, `#playwright`
+**Discussion**: Commenters noted the shift to a weekend project and the amusing prioritization of entertainment. The 32-bit PhysX support was highlighted as particularly interesting given Nvidia's earlier plan to remove it. Users also inquired about LLM performance compared to Vulkan.
+
+**Tags**: `#CUDA`, `#GPU computing`, `#open source`, `#translation layer`, `#PhysX`
 
 ---
 
 <a id="item-8"></a>
-## [New attack shows AI browsers can be tricked by false facts](https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/) ⭐️ 8.0/10
+## [Shot-scraper video records agent demos via Playwright](https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything) ⭐️ 8.0/10
 
-Researchers have discovered a new attack called 'Dream World' that exploits AI browsers by feeding them false basic facts, such as claiming '2+2=5', which causes the browser to ignore its safety guardrails and follow forbidden instructions. This attack undermines the trustworthiness of AI browsers that act as autonomous agents, potentially exposing sensitive user data like passwords and private code repositories, and highlights a fundamental vulnerability in how LLMs handle factual consistency. The attack works by first establishing a false reality through simple arithmetic lies, after which the AI browser's guardrails are disabled, allowing attackers to extract credentials from password managers or access private repositories. The technique was demonstrated by security firm LayerX.
+Simon Willison released shot-scraper 1.10 with a new 'shot-scraper video' command that accepts a storyboard.yml file and uses Playwright to record a video of a web application routine. The tool is designed to let coding agents produce visual proof of their work. This tool addresses a practical need in AI agent development by enabling agents to automatically produce demo videos, which helps developers verify that agents actually performed the intended tasks. It bridges the gap between agent execution and human review, potentially improving trust and debugging efficiency. The storyboard.yml file defines server startup, URL, viewport, cursor visibility, wait conditions, JavaScript overrides (e.g., clipboard mocking), and a sequence of scenes with actions like pause and click. The command supports --auth for authenticated sessions and --mp4 for output format.
 
-rss · Ars Technica AI · Jun 30, 20:03
+rss · Simon Willison · Jun 30, 16:54
 
-**Background**: AI browsers are tools that use large language models (LLMs) to browse the web autonomously, performing actions like clicking links and filling forms. They are built with safety guardrails to prevent harmful actions, but this attack shows that manipulating the model's factual beliefs can bypass those protections. Adversarial attacks on LLMs are an active area of research, with techniques ranging from token manipulation to gradient-based attacks.
+**Background**: Shot-scraper is a command-line tool for taking automated screenshots of websites, built on Playwright, a browser automation library. Playwright allows controlling Chromium, Firefox, and WebKit with a single API, commonly used for testing and scraping. The new video feature extends shot-scraper's capabilities from static screenshots to dynamic recordings.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/">New attack provides one more reason why AI browsers are a bad idea - Ars Technica</a></li>
-<li><a href="https://aiproductivity.ai/news/ai-browser-dream-world-attack-guardrails/">AI Browser Dream World Attack : 2+2=5 Bypasses Safety</a></li>
-<li><a href="https://netzender.com/ai-browsers-like-perplexity-comet-can-be-tricked-into-spilling-your-password-through-bioshocking-exploit">AI browsers like Perplexity Comet can be tricked into spilling your...</a></li>
+<li><a href="https://simonwillison.net/2026/Jun/30/shot-scraper-video/">Have your agent record video demos of its work with shot-scraper video</a></li>
+<li><a href="https://github.com/simonw/shot-scraper">GitHub - simonw/ shot - scraper : A command -line utility for taking...</a></li>
+<li><a href="https://playwright.dev/">Fast and reliable end-to-end testing for modern web apps | Playwright</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI security`, `#LLM vulnerabilities`, `#browser security`, `#adversarial attacks`
+**Tags**: `#developer-tools`, `#AI-agents`, `#testing`, `#playwright`, `#video-recording`
 
 ---
 
 <a id="item-9"></a>
-## [audio.cpp Adds VibeVoice 1.5B, 4x Real-Time TTS](https://www.reddit.com/r/LocalLLaMA/comments/1uk7khq/audiocpp_vibevoice_15b_released_90min_podcast_in/) ⭐️ 8.0/10
+## [Sonnet 5 and Fable 5 AI Models Announced](https://www.latent.space/p/ainews-sonnet-5-today-and-fable-5) ⭐️ 8.0/10
 
-The audio.cpp project has added support for Microsoft's VibeVoice 1.5B model, achieving 4.08x real-time speed for generating a 90-minute podcast in 22.95 minutes on an RTX 5090, which is 2.86x faster than the Python baseline without quantization. This demonstrates that native C++/ggml runtimes can make long-form, multi-speaker TTS practical for local inference, significantly reducing generation time and enabling server-like usage without Python dependencies. The benchmark used an RTX 5090 with 10 diffusion steps and no quantization; the model is designed for long-form multi-speaker dialogue like podcasts and narration. audio.cpp currently supports 16 of 28 planned model families.
+Latent Space reports that Sonnet 5 will be released today and Fable 5 tomorrow, indicating new versions of AI models are imminent. These releases suggest significant advancements in AI model capabilities, potentially impacting developers and researchers who rely on these models. The news does not specify the exact improvements or changes in Sonnet 5 and Fable 5, but the rapid succession of releases hints at competitive pressure in the AI model space.
 
-reddit · r/LocalLLaMA · /u/Acceptable-Cycle4645 · Jul 1, 01:15
+rss · Latent Space · Jul 1, 03:01
 
-**Background**: VibeVoice is a Microsoft framework for generating expressive, long-form, multi-speaker conversational audio from text. ggml is a tensor library for machine learning that enables running large models on commodity hardware, used by projects like llama.cpp and whisper.cpp. audio.cpp is a C++/ggml runtime for local audio model inference.
+**Background**: Sonnet and Fable are likely code names for AI models from a specific organization, possibly Anthropic or another AI lab. The '5' denotes a major version update, typically bringing performance improvements or new features.
+
+**Tags**: `#AI`, `#machine learning`, `#model release`, `#news`
+
+---
+
+<a id="item-10"></a>
+## [New attack bypasses AI browser guardrails with false arithmetic](https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/) ⭐️ 8.0/10
+
+A new attack demonstrates that telling an LLM a false arithmetic fact, such as 2+2=5, can cause it to ignore safety guardrails and follow forbidden instructions, posing a serious security risk to AI browsers. This attack highlights a fundamental vulnerability in LLM-based browsers, where simple input manipulation can bypass safety measures, potentially leading to harmful outputs or data breaches. It underscores the need for more robust guardrail designs before AI browsers become widely adopted. The attack works by presenting the LLM with a false arithmetic statement (e.g., 2+2=5) that contradicts its training data, creating a 'dream world' where guardrails no longer apply. This technique is distinct from traditional jailbreak methods and exploits the model's reliance on factual consistency.
+
+rss · Ars Technica AI · Jun 30, 20:03
+
+**Background**: LLM guardrails are safety mechanisms designed to prevent harmful, biased, or inappropriate outputs. However, they rely on pattern recognition and can be bypassed by carefully crafted inputs, as shown in recent research on evasion attacks. AI browsers integrate LLMs to assist with web tasks, making them a prime target for such exploits.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/microsoft/VibeVoice-1.5B">microsoft/ VibeVoice - 1 . 5 B · Hugging Face</a></li>
-<li><a href="https://en.wikipedia.org/wiki/GGML">GGML</a></li>
-<li><a href="https://github.com/ggml-org/ggml">ggml-org/ggml: Tensor library for machine learning</a></li>
+<li><a href="https://mindgard.ai/resources/bypassing-llm-guardrails-character-and-aml-attacks-in-practice">Bypassing LLM guardrails: character and AML attacks in practice - Mindgard</a></li>
+<li><a href="https://arxiv.org/abs/2504.11168">[2504.11168] Bypassing LLM Guardrails: An Empirical Analysis of Evasion Attacks against Prompt Injection and Jailbreak Detection Systems</a></li>
+<li><a href="https://milvus.io/ai-quick-reference/can-llm-guardrails-be-bypassed-by-users">Can LLM guardrails be bypassed by users?</a></li>
 
 </ul>
 </details>
+
+**Tags**: `#AI security`, `#LLM`, `#guardrail bypass`, `#adversarial attack`, `#browser security`
+
+---
+
+<a id="item-11"></a>
+## [audio.cpp Adds VibeVoice 1.5B, Achieves 4x Real-Time TTS](https://www.reddit.com/r/LocalLLaMA/comments/1uk7khq/audiocpp_vibevoice_15b_released_90min_podcast_in/) ⭐️ 8.0/10
+
+The author of audio.cpp released support for Microsoft's VibeVoice 1.5B model, enabling 90-minute podcast generation in 22.95 minutes on an RTX 5090, which is 4.08x faster than real time and 2.86x faster than a Python baseline without quantization. This makes long-form multi-speaker TTS practical for local inference, reducing the need for cloud APIs and Python dependencies, and enabling applications like podcast generation, character chats, and narration on consumer hardware. The benchmark used 10 diffusion steps with no quantization, and the framework currently supports 16 out of 28 planned model families, with the rest running internally and being released gradually after testing.
+
+reddit · r/LocalLLaMA · /u/Acceptable-Cycle4645 · Jul 1, 01:15
+
+**Background**: audio.cpp is a pure C++ inference engine built on ggml, a tensor library for machine learning that enables large models on commodity hardware. VibeVoice is a Microsoft model combining a Qwen2.5-1.5B LLM with acoustic/semantic tokenizers and a diffusion decoder for long-form multi-speaker audio generation.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/0xShug0/audio.cpp">GitHub - 0xShug0/ audio . cpp : An all-in-one, pure C++ inference engine...</a></li>
+<li><a href="https://huggingface.co/microsoft/VibeVoice-1.5B">microsoft/VibeVoice-1.5B · Hugging Face</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GGML">GGML</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit thread shows active engagement with the author answering technical questions about GPU compatibility, VRAM usage, and future plans for CPU and Metal support. Users express interest in testing on other hardware and appreciate the focus on native local runtime.
 
 **Tags**: `#TTS`, `#C++`, `#ggml`, `#local inference`, `#audio generation`
 
 ---
 
-<a id="item-10"></a>
-## [NVIDIA Releases FP4 Quantized 27B Model for Local Inference](https://www.reddit.com/r/LocalLLaMA/comments/1ujlltn/nvidiaqwen3627bnvfp4_just_dropped/) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [NVIDIA Releases Qwen3.6-27B-NVFP4 for Efficient Local Inference](https://www.reddit.com/r/LocalLLaMA/comments/1ujlltn/nvidiaqwen3627bnvfp4_just_dropped/) ⭐️ 8.0/10
 
-NVIDIA has released Qwen3.6-27B-NVFP4, a 4-bit FP4 quantized version of a 27 billion parameter model, enabling efficient local inference on consumer hardware. This release significantly lowers the barrier for running high-quality large language models locally, making advanced AI accessible to a broader audience without relying on cloud services. The model uses NVFP4 quantization, which is a 4-bit floating-point format that preserves more information than INT4 at the same bit width, leading to better output quality. It is not the same as NF4 used in QLoRA fine-tuning.
+NVIDIA has released Qwen3.6-27B-NVFP4, a 4-bit FP4 quantized version of the Qwen3.6-27B model, optimized for efficient local inference on consumer hardware. This release enables high-quality 27B parameter models to run locally on consumer GPUs with reduced memory and compute requirements, making advanced AI more accessible for personal and edge deployments. NVFP4 is a 4-bit floating-point quantization format that retains floating-point semantics with a shared exponent and compact mantissa, offering higher dynamic range than traditional INT4 quantization.
 
 reddit · r/LocalLLaMA · /u/vanbukin · Jun 30, 10:39
 
-**Background**: Quantization reduces the precision of model weights to lower bit widths (e.g., 4-bit) to decrease memory usage and speed up inference. FP4 is a floating-point format that offers a balanced trade-off between range and precision, making it suitable for transformer models where weight distributions vary widely.
+**Background**: Quantization reduces model size and inference cost by representing weights and activations with fewer bits. FP4 is an ultra-low precision format that balances efficiency and accuracy, using blockwise microscaling and stochastic rounding to maintain model quality. NVIDIA's NVFP4 specifically leverages the E4M3 FP8 format variant to enable non-power-of-two scaling factors for more accurate tensor encoding.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2501.17116">[2501.17116] Optimizing Large Language Model Training Using FP4 Quantization</a></li>
-<li><a href="https://lambda.ai/blog/lambda-1cc-fp4-nvidia-hgx-b200">Accelerate Your AI Workflow with FP4 Quantization on Lambda</a></li>
-<li><a href="https://www.spheron.network/blog/fp4-quantization-blackwell-gpu-cost/">FP4 Quantization on Blackwell GPUs: Throughput, Cost, and When It's Worth It | Spheron Blog</a></li>
+<li><a href="https://build.nvidia.com/spark/nvfp4-quantization">NVFP4 Quantization | DGX Spark</a></li>
+<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog</a></li>
+<li><a href="https://www.exxactcorp.com/blog/hpc/what-is-fp8-fp6-fp4">What is FP8, FP6, FP4? | Exxact Blog</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#quantization`, `#NVIDIA`, `#efficient inference`, `#open-source`
-
----
-
-<a id="item-11"></a>
-## [Huawei open-sources OpenPangu-2.0-Flash MoE LLM](https://www.reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_openpangu20flash_92b_total6b/) ⭐️ 8.0/10
-
-Huawei has open-sourced OpenPangu-2.0-Flash, a Mixture-of-Experts (MoE) large language model with 92 billion total parameters and 6 billion active parameters, supporting a 512K context window. The release includes model weights, inference code, and training operations. This is a significant contribution to the open-source LLM ecosystem, especially given geopolitical tensions, as it provides a high-performance, large-context model from a major Chinese tech company. The inclusion of training ops and inference code lowers the barrier for researchers and developers to experiment with MoE architectures. The Flash model has 92B total parameters but only 6B are active per token, making it efficient for inference. A larger Pro model with 505B total and 18B active parameters is planned for release in July 2026.
-
-reddit · r/LocalLLaMA · /u/soteko · Jun 30, 11:58
-
-**Background**: Mixture-of-Experts (MoE) is a neural network architecture that uses multiple specialized sub-models (experts) and a router to activate only a subset per input, enabling larger total parameter counts without proportional compute increase. Huawei's PanGu series is a family of large language models developed by Huawei, and this open-source release aligns with their roadmap to fully open-source their AI software stack by end of 2025.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Huawei_PanGu">Huawei PanGu - Wikipedia</a></li>
-<li><a href="https://www.aimadetools.com/blog/openpangu-2-complete-guide/">openPangu 2.0 Complete Guide: Huawei's 505B Model Trained Without NVIDIA (2026)</a></li>
-<li><a href="https://www.aimadetools.com/blog/how-to-run-openpangu-2-locally/">How to Run openPangu 2.0 Locally: Ascend and GPU Setup Guide (2026)</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit community reacted positively, with many praising the 512K context window and MoE efficiency. Some users noted the geopolitical significance and expressed interest in running the model on local hardware, while others questioned benchmark performance and compatibility with non-Ascend hardware.
-
-**Tags**: `#open-source`, `#LLM`, `#MoE`, `#Huawei`, `#large context`
-
----
-
-<a id="item-12"></a>
-## [PageStorm: First Single-Turn Full-Book Writing Model Released](https://www.reddit.com/r/LocalLLaMA/comments/1ujr69g/pagestorm_a_model_built_for_creative_book_writing/) ⭐️ 8.0/10
-
-Pageshift Entertainment released PageStorm Research Preview, a model capable of single-turn full-book creative writing, along with a paper and the LongPage dataset. This marks a significant step toward human-level book-writing AI, potentially transforming creative writing workflows and enabling authors to generate complete novels from a single prompt. The model is single-turn only and cannot accept additional user prompts after the initial one; the LongPage dataset is derived from public-domain books and synthetic planning traces.
-
-reddit · r/LocalLLaMA · /u/XMasterDE · Jun 30, 14:43
-
-**Background**: Most language models generate short text; creating coherent book-length narratives requires long-range planning and consistency. The LongPage dataset provides training data for such reasoning, and PageStorm is the first model trained on it for full-book generation.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://huggingface.co/datasets/Pageshift-Entertainment/LongPage">Pageshift-Entertainment/LongPage · Datasets at Hugging Face</a></li>
-<li><a href="https://huggingface.co/Pageshift-Entertainment/pagestorm-research-preview-14b-full-book">Pageshift-Entertainment/pagestorm-research-preview-14b- full - book ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#NLP`, `#creative writing`, `#language model`, `#research`
+**Tags**: `#LLM`, `#Quantization`, `#NVIDIA`, `#Local Inference`, `#Model Release`
 
 ---
 
 <a id="item-13"></a>
-## [Meta reuses old DDR4 memory in DDR5 servers via custom CXL chip](https://www.reddit.com/r/LocalLLaMA/comments/1ujzf35/meta_fights_soaring_hardware_costs_by_reusing_old/) ⭐️ 8.0/10
+## [Huawei Open-Sources OpenPangu-2.0-Flash MoE Model](https://www.reddit.com/r/LocalLLaMA/comments/1ujn5u3/huawei_opensources_openpangu20flash_92b_total6b/) ⭐️ 8.0/10
 
-Meta has developed a custom CXL 2.0 Type-3 memory expander ASIC that allows legacy DDR4-2400 RDIMMs to be used alongside new DDR5-6400 memory in the same server, reducing hardware costs. This innovation addresses the soaring cost of AI infrastructure by extending the lifespan of existing DDR4 memory, potentially saving millions of dollars for large-scale deployments. It also demonstrates a practical application of the CXL protocol to bridge incompatible memory generations. The custom ASIC uses a PCIe 5.0 x16 interface and supports two independent 72-bit DDR4 channels, providing up to 256 GB capacity with 64 GB DIMMs. The CXL 2.0 protocol enables cache-coherent memory sharing between the host processor and the DDR4 memory pool.
+Huawei has open-sourced OpenPangu-2.0-Flash, a Mixture-of-Experts (MoE) model with 92 billion total parameters and 6 billion active parameters, supporting a 512K token context window. The company also announced a larger 505B total / 18B active flagship model, OpenPangu-2.0-Pro, to be released in July. This release marks a significant contribution to the open-source LLM ecosystem, especially from a major Chinese tech company amid geopolitical tensions. The MoE architecture and long 512K context window make it competitive with other leading open models, potentially accelerating adoption and innovation in long-context applications. The Flash version includes released weights, inference code, and training ops. The upcoming Pro model (505B total, 18B active) is expected to be the flagship. More open-source components are planned later this year.
 
-reddit · r/LocalLLaMA · /u/pulse77 · Jun 30, 19:43
+reddit · r/LocalLLaMA · /u/soteko · Jun 30, 11:58
 
-**Background**: DDR4 and DDR5 memory are physically and electrically incompatible, so they cannot be mixed on the same motherboard. CXL (Compute Express Link) is an open industry standard that provides high-bandwidth, low-latency memory pooling and expansion over PCIe, allowing different memory types to be attached to a system. Meta's approach uses a CXL 2.0 Type-3 memory expander to present the DDR4 memory as a coherent memory device to the host.
+**Background**: Mixture of Experts (MoE) is an AI model architecture that uses multiple specialized submodels (experts) activated by a gating mechanism, enabling efficient scaling with fewer active parameters per inference. OpenPangu is Huawei's series of large language models, and this open-source release follows a trend of major players like DeepSeek and Alibaba releasing open-weight models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.tomshardware.com/pc-components/dram/meta-fights-soaring-hardware-costs-by-reusing-old-ddr4-server-memory-in-new-ddr5-only-servers-custom-cxl-2-0-chip-marries-legacy-ddr4-2400-with-cutting-edge-ddr5-6400">CXL memory expanders give new life to DDR4 memory.</a></li>
-<li><a href="https://www.design-reuse.com/article/61362-what-s-the-difference-between-cxl-1-1-and-cxl-2-0-/">What's the Difference Between CXL 1.1 and CXL 2 . 0 ?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/mixture-of-experts/">What Is Mixture of Experts (MoE) and How It Works? | NVIDIA Glossary</a></li>
+<li><a href="https://www.aimadetools.com/blog/openpangu-2-vs-qwen-3-7/">openPangu 2 . 0 vs Qwen 3.7: Huawei vs Alibaba in the Open -Source...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community praised the approach as clever and cost-effective, with some users noting that CXL is finally delivering on its promise of memory disaggregation. A few commenters raised concerns about potential latency penalties and the complexity of managing mixed memory pools in production.
+**Discussion**: Community comments on Reddit are generally positive, with users praising the long context and MoE efficiency, though some question the model's quality compared to established open models like Qwen or DeepSeek. There is also discussion about the geopolitical implications and the potential for Huawei to become a major open-source AI contributor.
 
-**Tags**: `#CXL`, `#memory`, `#Meta`, `#hardware`, `#AI infrastructure`
+**Tags**: `#LLM`, `#open-source`, `#MoE`, `#Huawei`, `#long-context`
 
 ---
 
 <a id="item-14"></a>
-## [Qwen 3.6 27B Hits ~100 TPS on RTX 3090 with Speculative Decoding](https://www.reddit.com/r/LocalLLaMA/comments/1ujo46r/qwen_36_27b_speculative_decoding_bench_pushing/) ⭐️ 8.0/10
+## [PageStorm: A Model for Full-Book Creative Writing](https://www.reddit.com/r/LocalLLaMA/comments/1ujr69g/pagestorm_a_model_built_for_creative_book_writing/) ⭐️ 8.0/10
 
-A benchmark shows Qwen 3.6 27B achieving up to 96.8 decode tokens per second on a single RTX 3090 using speculative decoding with the ik_llama fork and DFlash draft model, and up to 89.2 TPS with MTP+ngram hybrid speculation. This demonstrates that near-100 TPS inference for a 27B model is feasible on consumer hardware, significantly lowering the barrier for running large language models locally with high throughput. The benchmark compared five inference engines (three llama.cpp forks, mainline llama.cpp, and Lucebox) across two quantizations (IQ4_KS and Q4_K_M), measuring decode TPS, TTFT, VRAM usage, and context degradation from 72k to 128k context length.
+Pageshift Entertainment released PageStorm Research Preview, a model and dataset for single-turn full-book creative writing, along with a paper on arXiv. This is a significant step toward AI-assisted novel writing, enabling models to generate complete books with coherent plots and character development in a single pass. The model is single-turn only and cannot accept additional prompts after the initial one. The accompanying LongPage dataset provides hierarchical reasoning traces for training models on full-book writing.
 
-reddit · r/LocalLLaMA · /u/old-mike · Jun 30, 12:40
+reddit · r/LocalLLaMA · /u/XMasterDE · Jun 30, 14:43
 
-**Background**: Speculative decoding accelerates LLM inference by using a smaller draft model to generate candidate tokens that the main model verifies in parallel. Multi-Token Prediction (MTP) is a variant where the model itself predicts multiple future tokens per forward pass, eliminating the need for a separate draft model. The ik_llama fork of llama.cpp adds native MTP support, merge-qkv, and multi-backend speculative decoding.
+**Background**: Traditional LLMs struggle with long-form creative writing due to context length limits and coherence issues. The LongPage dataset addresses this by providing structured reasoning traces from scene-level pacing to multi-arc character development, enabling models to plan and write entire novels.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/ikawrakow/ik_llama.cpp">GitHub - ikawrakow/ik_ llama . cpp : llama . cpp fork with additional...</a></li>
-<li><a href="https://medium.com/ai-science/speculative-decoding-make-llm-inference-faster-c004501af120">Speculative Decoding — Make LLM Inference Faster | Medium | AI Science</a></li>
-<li><a href="https://www.datacamp.com/tutorial/speculative-decoding">Speculative Decoding: A Guide With Implementation Examples | DataCamp</a></li>
+<li><a href="https://pageshift.ai/research/longpage">LongPage</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM inference`, `#speculative decoding`, `#benchmark`, `#RTX 3090`, `#Qwen`
+**Tags**: `#LLM`, `#creative writing`, `#dataset`, `#research`, `#AI`
 
 ---
 
 <a id="item-15"></a>
-## [Microsoft Removes FastContext Model from Hugging Face and GitHub](https://www.reddit.com/r/LocalLLaMA/comments/1ujjk9s/microsoft_has_taken_down_fastcontext_model_from/) ⭐️ 8.0/10
+## [Meta reuses old DDR4 memory in new DDR5 servers via custom CXL 2.0 chip](https://www.reddit.com/r/LocalLLaMA/comments/1ujzf35/meta_fights_soaring_hardware_costs_by_reusing_old/) ⭐️ 8.0/10
 
-Microsoft has unexpectedly removed the FastContext model from Hugging Face and GitHub without any official explanation, as reported by a Reddit user on March 26, 2025. This sudden removal raises concerns about the model's licensing, safety, or technical issues, and highlights the fragility of open-source AI model availability when hosted by large corporations. The FastContext model, a 4B-parameter subagent for coding agents that reduces token consumption, was released about three weeks ago and had both SFT and RL versions. The Hugging Face page and GitHub repository are now empty or removed.
+Meta has developed a custom CXL 2.0 ASIC called Vistara that allows legacy DDR4-2400 memory to be used alongside new DDR5-6400 in modern servers, reducing hardware costs for AI workloads. This innovation enables Meta to repurpose existing DDR4 memory inventory, significantly cutting capital expenditure on new memory for large-scale AI infrastructure. It also demonstrates a practical application of CXL technology to extend server memory capacity without requiring a full hardware refresh. The Vistara chip uses the CXL 2.0 protocol to attach DDR4 memory to DDR5-only servers, with Panmnesia providing an off-the-shelf CXL controller and switch that enables large memory pools without added latency. Meta's approach differs from typical CXL solutions that bundle DRAM with the controller and often lack DDR4 support.
 
-reddit · r/LocalLLaMA · /u/robert896r1 · Jun 30, 08:39
+reddit · r/LocalLLaMA · /u/pulse77 · Jun 30, 19:43
 
-**Background**: FastContext is a specialized AI model designed to act as a subagent for coding agents, issuing parallel read-only tool calls to gather focused context efficiently. It was developed by Microsoft and released under an open-source license on Hugging Face and GitHub. The model family spans 4B to 30B parameters and uses supervised fine-tuning and reinforcement learning.
+**Background**: CXL (Compute Express Link) is a high-bandwidth, low-latency interconnect protocol based on PCIe, designed for communication between CPUs, memory, and accelerators. DDR4 and DDR5 are different generations of DRAM with incompatible interfaces; DDR5 offers higher bandwidth and lower power but is more expensive. Meta's custom ASIC bridges this gap, allowing older, cheaper DDR4 memory to supplement newer DDR5 systems.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/microsoft/FastContext-1.0-4B-SFT">microsoft/FastContext-1.0-4B-SFT · Hugging Face</a></li>
-<li><a href="https://huggingface.co/microsoft/FastContext-1.0-4B-RL">microsoft/FastContext-1.0-4B-RL · Hugging Face</a></li>
-<li><a href="https://featherless.ai/models/microsoft/FastContext-1.0-4B-RL">microsoft/FastContext-1.0-4B-RL</a></li>
+<li><a href="https://www.tomshardware.com/pc-components/dram/meta-fights-soaring-hardware-costs-by-reusing-old-ddr4-server-memory-in-new-ddr5-only-servers-custom-cxl-2-0-chip-marries-legacy-ddr4-2400-with-cutting-edge-ddr5-6400">Meta fights soaring hardware costs by reusing old DDR4 server memory in new DDR5-only servers — custom CXL 2.0 chip marries legacy DDR4-2400 with cutting-edge DDR5-6400 | Tom's Hardware</a></li>
+<li><a href="https://www.theregister.com/systems/2026/06/29/zuck-saves-meta-bucks-by-reusing-memory-from-old-servers-with-a-custom-cxl-asic/5263483">Zuck saves Meta bucks by reusing memory from old servers with a custom CXL ASIC</a></li>
+<li><a href="https://computeexpresslink.org/blog/animated-videos-illustrate-cxl-technology-and-cxl-2-0-key-features-2387/">Animated Videos Illustrate CXL ® Technology... - Compute Express Link</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community is actively speculating about the reasons for removal, with theories ranging from licensing violations, safety concerns, to internal policy changes. Some users express frustration over the lack of transparency, while others suggest it may be due to a technical flaw or legal issue.
+**Discussion**: Reddit commenters discussed the memory bandwidth trade-offs of mixing DDR4 with DDR5, noting that while capacity increases, the slower DDR4 may bottleneck performance. Some praised Meta's cost-saving ingenuity, while others questioned the long-term viability given DDR4's lower speed.
 
-**Tags**: `#Microsoft`, `#FastContext`, `#model removal`, `#AI`, `#open source`
+**Tags**: `#CXL`, `#memory`, `#AI infrastructure`, `#hardware`, `#Meta`
 
 ---
