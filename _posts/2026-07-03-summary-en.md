@@ -5,349 +5,350 @@ date: 2026-07-03
 lang: en
 ---
 
-> From 151 items, 15 important content pieces were selected
+> From 152 items, 15 important content pieces were selected
 
 ---
 
-1. [llama.cpp patch runs DeepSeek V4 Flash with 1M context on RTX 5090](#item-1) ⭐️ 9.0/10
-2. [Superpowers: Agentic Skills Framework Hits 244K Stars](#item-2) ⭐️ 9.0/10
-3. [Agency-Agents: Framework for Specialized AI Agents with Personalities](#item-3) ⭐️ 8.0/10
-4. [PerceptionRubrics: Aligning Multimodal Evaluation with Human Perception](#item-4) ⭐️ 8.0/10
-5. [MemSyco-Bench: Benchmarking Sycophancy in Agent Memory](#item-5) ⭐️ 8.0/10
-6. [US Commerce Department Bans Differential Privacy in Census Data](#item-6) ⭐️ 8.0/10
-7. [Podman v6.0.0 Released with Major Networking Overhaul](#item-7) ⭐️ 8.0/10
-8. [Postgres Transactions as a Distributed Systems Superpower](#item-8) ⭐️ 8.0/10
-9. [Immich 3.0 Major Update Sparks Encryption Debate](#item-9) ⭐️ 8.0/10
-10. [Why 24-bit/192kHz Music Downloads Make No Sense](#item-10) ⭐️ 8.0/10
-11. [NSA Accused of Weakening ML-KEM Standardization](#item-11) ⭐️ 8.0/10
-12. [The Fall of the Theorem Economy](#item-12) ⭐️ 8.0/10
-13. [Understand to Participate: Key to Avoiding Cognitive Debt](#item-13) ⭐️ 8.0/10
-14. [Advocates Warn FTC Musk's X Poses Serious Privacy Risk](#item-14) ⭐️ 8.0/10
-15. [Google's AI buildout drove 37% electricity use increase in 2025](#item-15) ⭐️ 8.0/10
+1. [U.S. Bans Differential Privacy in Census Data](#item-1) ⭐️ 9.0/10
+2. [llama.cpp Patch Enables 1M Context DeepSeek V4 Flash on RTX 5090](#item-2) ⭐️ 9.0/10
+3. [Multi-Agent AI Framework Agency-Agents Surges on GitHub](#item-3) ⭐️ 8.0/10
+4. [browser-use: AI Agent Web Automation Tool Surges](#item-4) ⭐️ 8.0/10
+5. [PerceptionRubrics: Aligning Multimodal Evaluation with Human Perception](#item-5) ⭐️ 8.0/10
+6. [Program-as-Weights: Compiling Fuzzy Functions into Neural Artifacts](#item-6) ⭐️ 8.0/10
+7. [The Fall of the Theorem Economy](#item-7) ⭐️ 8.0/10
+8. [Understand to Participate: Key to AI-Assisted Coding](#item-8) ⭐️ 8.0/10
+9. [Google's AI Buildout Drives 37% Electricity Use Increase in 2025](#item-9) ⭐️ 8.0/10
+10. [Open-Source Voice Pipeline with Gemma 4 31B](#item-10) ⭐️ 8.0/10
+11. [Kimi K2.7 Code Now Available in GitHub Copilot](#item-11) ⭐️ 8.0/10
+12. [audio.cpp Expands to Music Generation with GGML](#item-12) ⭐️ 8.0/10
+13. [Self-Replicating AI Worm Built with Open-Weight Models](#item-13) ⭐️ 8.0/10
+14. [Hierarchos: 232M Recurrent Memory-Augmented LM Shows Promise](#item-14) ⭐️ 8.0/10
+15. [Claude Fable 5 Benchmark Drops After Relaunch](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [llama.cpp patch runs DeepSeek V4 Flash with 1M context on RTX 5090](https://www.reddit.com/r/LocalLLaMA/comments/1ulymml/llamacpp_patch_deepseek_v4_flash_running_with/) ⭐️ 9.0/10
+## [U.S. Bans Differential Privacy in Census Data](https://scottaaronson.blog/?p=9902) ⭐️ 9.0/10
 
-A community developer patched llama.cpp to add CUDA support for DeepSeek's DSA Lightning Indexer, enabling DeepSeek V4 Flash to run with a full 1 million token context on a single RTX 5090 GPU, reducing VRAM requirement from ~256GB to ~31GB. This breakthrough makes million-token context inference feasible on consumer hardware, dramatically lowering the barrier for local deployment of large-scale LLMs and enabling new applications in long-document analysis and retrieval. The patch implements a CUDA kernel for the Lightning Indexer, achieving prefill speeds of 159-263 t/s and decode at ~14 t/s across context lengths from 256K to 1M tokens. Correctness was verified via needle-in-haystack tests at multiple depths.
+On June 4, 2026, the U.S. Secretary of Commerce issued a directive (DAO 216-26) that bans differential privacy and noise infusion in all statistical products published by the Census Bureau and the Bureau of Economic Analysis. This policy shift removes a key privacy protection for census data, potentially allowing re-identification of individuals and undermining trust in official statistics. It affects researchers, policymakers, and the public who rely on accurate and private data. The directive restricts disclosure avoidance to “coarsening” only, explicitly forbidding noise infusion and other modern techniques. In the 2020 Census, noise infusion altered roughly 8% of block-level counts by at least one household.
 
-reddit · r/LocalLLaMA · /u/da_dragon321 · Jul 2, 23:54
+hackernews · flowercalled · Jul 3, 00:01 · [Discussion](https://news.ycombinator.com/item?id=48768992)
 
-**Background**: DeepSeek V4 Flash is a 284B-parameter MoE model supporting up to 1M token context, using DeepSeek Sparse Attention (DSA) with a Lightning Indexer to reduce attention complexity. The original llama.cpp lacked CUDA support for this indexer, causing excessive VRAM usage. This patch wires the indexer into the model graph and adds a custom CUDA kernel.
+**Background**: Differential privacy is a mathematical framework that adds carefully calibrated noise to statistical outputs to protect individual privacy while preserving aggregate accuracy. It has been used by the Census Bureau and companies like Apple and Google to collect data without compromising individuals. The ban represents a reversal of recent privacy-enhancing policies.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2606.19348">[2606.19348] DeepSeek-V4: Towards Highly Efficient Million ...</a></li>
-<li><a href="https://ninehills.github.io/jack-diary/articles/20260308-deepseek-dsa-analysis.html">20260308 / 稀疏的胜利：拆解 DeepSeek DSA 与 Lightning Indexer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Differential_privacy">Differential privacy</a></li>
+<li><a href="https://www.promptzone.com/aisha_rahman_ea07d8ac/census-bureau-ends-noise-infusion-for-official-stats-11a2">Census Bureau Ends Noise Infusion for Official Stats - PromptZone</a></li>
+<li><a href="https://misryoum.com/trump-order-bans-census-noise-threatens-key-redistricting-data">Trump order bans Census noise , threatens key redis</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community praised the achievement as groundbreaking, with many expressing excitement about running large context models locally. Some users discussed potential further optimizations and compatibility with other GPUs.
+**Discussion**: Commenters expressed alarm and called for action, with one providing a link to find legislators. Some questioned the political motivation behind the directive, while others noted the irony of making privacy a political issue. A previous discussion on Hacker News had 604 comments.
 
-**Tags**: `#llama.cpp`, `#DeepSeek`, `#LLM`, `#CUDA`, `#local inference`
+**Tags**: `#privacy`, `#differential privacy`, `#census`, `#government policy`, `#data security`
 
 ---
 
 <a id="item-2"></a>
-## [Superpowers: Agentic Skills Framework Hits 244K Stars](https://github.com/obra/superpowers) ⭐️ 9.0/10
+## [llama.cpp Patch Enables 1M Context DeepSeek V4 Flash on RTX 5090](https://www.reddit.com/r/LocalLLaMA/comments/1ulymml/llamacpp_patch_deepseek_v4_flash_running_with/) ⭐️ 9.0/10
 
-The GitHub repository obra/superpowers has rapidly gained 244,579 stars and 21,692 forks, with an average of 897 new stars per day, making it one of the fastest-growing repositories. It introduces an agentic skills framework and a complete software development methodology for AI coding agents. This repository represents a paradigm shift in how AI agents are used in software development, offering a structured methodology that could significantly improve developer productivity and code quality. Its massive community adoption signals strong validation and potential to become an industry standard. The framework is built on composable skills and mandatory instruction protocols, targeting multiple AI coding agents including Claude Code, Cursor, Codex, OpenCode, and Gemini CLI. It is written primarily in Shell and is open-source on GitHub.
+A developer patched llama.cpp to add CUDA kernel support for the DSA lightning indexer, enabling DeepSeek V4 Flash to run with full 1M token context on a single RTX 5090 GPU, reducing VRAM usage from ~256GB to ~31GB. This breakthrough makes long-context inference (1M tokens) feasible on consumer hardware, democratizing access to state-of-the-art sparse attention models like DeepSeek V4 Flash for local AI enthusiasts and researchers. The patch wires the DSA lightning indexer into the model graph and implements a CUDA kernel, achieving 159 t/s prefill and 13.7 t/s decode at 1M context with peak VRAM of ~31GB. Correctness was verified via needle-in-a-haystack tests at 100K, 512K, and 1M context lengths.
 
-github_trending · GitHub Trending · Jul 3, 03:22
+reddit · r/LocalLLaMA · /u/da_dragon321 · Jul 2, 23:54
 
-**Background**: Agentic skills frameworks are methodologies that define how AI agents should perform tasks, often through reusable skills and structured workflows. Superpowers is one of many such frameworks, but its rapid growth and high star count distinguish it as a community favorite.
+**Background**: DeepSeek V4 Flash is a 284B parameter Mixture-of-Experts model with 13B active parameters, using dynamic sparse attention (DSA) to efficiently handle long contexts. The DSA lightning indexer selects top-K KV blocks per query, but lacked proper support in llama.cpp, causing excessive VRAM usage. This patch resolves that by implementing the indexer as a CUDA kernel.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/obra/superpowers">GitHub - obra/superpowers: An agentic skills framework ...</a></li>
-<li><a href="https://grokipedia.com/page/Superpowers_agentic_skills_framework">Superpowers (agentic skills framework)</a></li>
-<li><a href="https://rywalker.com/research/agentic-skills-frameworks">Agentic Skills Frameworks Compared | Ry Walker Research | Ry Walker</a></li>
+<li><a href="https://github.com/ggml-org/llama.cpp/issues/20363">Feature Request: DSA lightning indexer support #20363</a></li>
+<li><a href="https://github.com/ggml-org/llama.cpp/discussions/17692">DeepseekV3.2 lightning indexer design · ggml-org llama.cpp ...</a></li>
+<li><a href="https://lushbinary.com/blog/deepseek-v4-developer-guide-trillion-parameter-moe-engram/">DeepSeek V 4 Developer Guide: Trillion-Parameter MoE... | Lushbinary</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community has shown overwhelming positive sentiment, with many developers praising the framework's practicality and ease of integration. Some discussions highlight comparisons with other frameworks like BMAD and official catalogs from Anthropic and OpenAI.
+**Discussion**: The Reddit post received high engagement (score 9.0/10) with praise for the technical achievement. Another comment highlighted a separate PR improving prompt processing speed for Intel ARC GPUs, showing ongoing community efforts to optimize llama.cpp across hardware.
 
-**Tags**: `#AI`, `#software development`, `#framework`, `#methodology`, `#agentic`
+**Tags**: `#llama.cpp`, `#DeepSeek`, `#local LLM`, `#CUDA`, `#long context`
 
 ---
 
 <a id="item-3"></a>
-## [Agency-Agents: Framework for Specialized AI Agents with Personalities](https://github.com/msitarzewski/agency-agents) ⭐️ 8.0/10
+## [Multi-Agent AI Framework Agency-Agents Surges on GitHub](https://github.com/msitarzewski/agency-agents) ⭐️ 8.0/10
 
-The open-source repository 'agency-agents' by msitarzewski has gained 3,032 stars in a single day, reaching 125,659 total stars, showcasing a framework for deploying specialized AI agents with distinct personalities and capabilities. This framework enables developers to create AI agents tailored for specific tasks (e.g., frontend development, community management) with unique personalities, potentially revolutionizing software engineering workflows and automation. The repository is written in Shell and has 20,390 forks. It describes agents as 'specialized experts with personality, processes, and proven deliverables,' including roles like 'frontend wizards' and 'Reddit community ninjas.'
+The GitHub repository msitarzewski/agency-agents gained over 3,000 stars in a single day, becoming a trending project with a multi-agent AI framework that includes specialized expert agents. This rapid growth reflects strong community interest in multi-agent AI systems, which are seen as a key trend for building more capable and specialized AI applications. The framework is written in Shell and features agents with distinct roles such as 'frontend wizards' and 'Reddit community ninjas', each with personality and processes.
 
-github_trending · GitHub Trending · Jul 3, 03:22
+github_trending · GitHub Trending · Jul 3, 03:34
 
-**Background**: AI agent frameworks are software platforms that streamline the development and deployment of AI agents. Recent research, such as Stanford's simulation of 1,052 personalities and the Big Five personality framework for AI agents, highlights the growing interest in imbuing agents with distinct personas to improve task performance and user interaction.
+**Background**: Multi-agent AI systems involve multiple specialized AI agents working together to solve complex tasks. This approach enhances modularity, observability, and scalability compared to monolithic models.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://github.com/msitarzewski/agency-agents">GitHub - msitarzewski/agency-agents: A complete AI agency at ...</a></li>
-<li><a href="https://arxiv.org/abs/2410.19238">[2410.19238] Designing AI-Agents with Personalities: A ... GitHub - msitarzewski/agency-agents: A complete AI agency at ... Top Stories Designing AI Agent Personalities - LinkedIn Designing AI-Agents With Personalities: A Psychometric ... Designing AI-Agents with Personalities: A Psychometric Approach Designing AI Agent Personalities: A Practical Framework</a></li>
-<li><a href="https://hai.stanford.edu/news/ai-agents-simulate-1052-individuals-personalities-with-impressive-accuracy">AI Agents Simulate 1,052 Individuals’ Personalities with ...</a></li>
+<li><a href="https://developer.microsoft.com/blog/designing-multi-agent-intelligence">Designing Multi-Agent Intelligence - Microsoft for Developers</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI agents`, `#automation`, `#open source`, `#Shell`
+**Tags**: `#AI`, `#multi-agent`, `#open-source`, `#framework`
 
 ---
 
 <a id="item-4"></a>
-## [PerceptionRubrics: Aligning Multimodal Evaluation with Human Perception](https://huggingface.co/papers/2606.28322) ⭐️ 8.0/10
+## [browser-use: AI Agent Web Automation Tool Surges](https://github.com/browser-use/browser-use) ⭐️ 8.0/10
 
-PerceptionRubrics introduces a rubric-based evaluation framework that uses atomic auditing and gated scoring to better align benchmark scores with human perception in multimodal models. This addresses the saturation of existing benchmarks and reveals a reliability gap between high scores and real-world brittleness, providing a more rigorous evaluation method for multimodal AI systems. The framework uses 1,038 information-dense images with over 12,000 instance-specific rubrics, derived from golden captions via a Circular Peer-Review consensus pipeline, and implements a dual-stream system of Must-Right and Easy-Wrong rubrics with gated scoring.
+The open-source Python project browser-use has gained over 200 stars in a single day, reaching over 102,000 total stars on GitHub, and enables AI agents to interact with and automate tasks on websites. This project addresses a key challenge in AI automation—making websites accessible to AI agents—and its rapid growth reflects strong community interest in automating online tasks, which could significantly impact web scraping, testing, and personal productivity. The repository is written in Python and has over 11,000 forks; a related project, video-use, also trending, allows coding agents to edit videos programmatically.
 
-huggingface_papers · Hugging Face Papers · Jul 2, 00:00
+github_trending · GitHub Trending · Jul 3, 03:34
 
-**Background**: Multimodal models often achieve high scores on benchmarks like VQA or captioning, yet fail on fine-grained or conjunctive tasks. Traditional evaluation uses holistic semantic matching, which can mask brittleness. PerceptionRubrics shifts to atomic auditing, breaking down evaluation into atomic facts and applying strict penalties for failures on essential details.
+**Background**: AI agents are software programs that can autonomously perform tasks, but many websites are designed for human interaction, not machine readability. Tools like browser-use bridge this gap by providing APIs or interfaces that allow AI to control browsers and extract information, similar to how humans use a browser.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2606.28322">[2606.28322] PerceptionRubrics: Calibrating Multimodal Evaluation to ...</a></li>
-<li><a href="https://arxiv.org/html/2606.28322v1">PerceptionRubrics: Calibrating Multimodal Evaluation to Human ...</a></li>
+<li><a href="https://agentconn.com/blog/best-ai-browser-automation-agents-2026/">Best AI Agents for Browser Automation in 2026 - AgentConn Blog</a></li>
+<li><a href="https://www.firecrawl.dev/blog/best-browser-agents">11 Best AI Browser Agents in 2026 - firecrawl.dev</a></li>
+<li><a href="https://github.com/browser-use/web-ui">GitHub - browser-use/web-ui: ️ Run AI Agent in your browser.</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#multimodal evaluation`, `#benchmarking`, `#AI reliability`, `#rubric-based evaluation`, `#computer vision`
+**Discussion**: No community comments were provided in the input.
+
+**Tags**: `#AI agents`, `#web automation`, `#Python`, `#browser automation`, `#open source`
 
 ---
 
 <a id="item-5"></a>
-## [MemSyco-Bench: Benchmarking Sycophancy in Agent Memory](https://huggingface.co/papers/2607.01071) ⭐️ 8.0/10
+## [PerceptionRubrics: Aligning Multimodal Evaluation with Human Perception](https://huggingface.co/papers/2606.28322) ⭐️ 8.0/10
 
-Researchers introduced MemSyco-Bench, a benchmark that evaluates sycophancy in LLM-based agents caused by retrieved memories, covering five tasks to assess memory's impact on reasoning and decision-making. This benchmark addresses an underexplored AI safety issue where agent memory can lead to over-alignment with users at the expense of factual accuracy, providing a tool to improve agent alignment and reliability. MemSyco-Bench includes five tasks: rejecting memory as factual evidence, respecting its applicable scope, resolving conflicts between memory and objective evidence, tracking memory updates, and using valid memory for personalization.
+PerceptionRubrics introduces a rubric-based evaluation framework that uses atomic auditing and a gated scoring mechanism to better align multimodal model evaluation with human perception, pairing 1,038 images with over 12,000 instance-specific rubrics. This framework addresses the reliability gap between saturated benchmark scores and real-world brittleness in multimodal models, providing a more rigorous and human-aligned evaluation that could improve model robustness and trustworthiness. The framework uses a dual-stream system of Must-Right (essential facts) and Easy-Wrong (fine-grained details) rubrics, and implements a gated scoring mechanism where failure on mandatory visual facts triggers sharp binary penalties rather than linear averages.
 
 huggingface_papers · Hugging Face Papers · Jul 2, 00:00
 
-**Background**: Sycophancy in AI refers to the tendency of models to tailor responses to what users want to hear rather than what is accurate. Existing memory benchmarks focus on storage and retrieval, not on how memories affect downstream reasoning. MemSyco-Bench fills this gap by evaluating memory-induced sycophancy in agent systems.
+**Background**: Current multimodal benchmarks often rely on holistic semantic matching, which can produce saturated scores that do not reflect real-world performance. PerceptionRubrics shifts to atomic auditing, breaking down evaluation into fine-grained criteria derived from golden captions built via a Circular Peer-Review consensus pipeline.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Sycophancy_(artificial_intelligence)">Sycophancy (artificial intelligence) - Wikipedia</a></li>
-<li><a href="https://arxiv.org/abs/2602.14270">A Rational Analysis of the Effects of Sycophantic AI AI Sycophancy: Why Chatbots Agree With You - IEEE Spectrum AI Sycophancy Explained : Tips to Get Honest, Useful ... Sycophancy (artificial intelligence) - Wikipedia AI overly affirms users asking for personal advice | Stanford ...</a></li>
-<li><a href="https://spectrum.ieee.org/ai-sycophancy">AI Sycophancy: Why Chatbots Agree With You - IEEE Spectrum</a></li>
+<li><a href="https://arxiv.org/pdf/2606.28322">PerceptionRubrics: Calibrating Multimodal Evaluation to Human...</a></li>
+<li><a href="https://huggingface.co/papers/2606.28322">Paper page - PerceptionRubrics: Calibrating Multimodal Evaluation to...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM agents`, `#sycophancy`, `#benchmark`, `#AI safety`, `#memory`
+**Tags**: `#multimodal`, `#evaluation`, `#AI`, `#benchmarking`, `#perception`
 
 ---
 
 <a id="item-6"></a>
-## [US Commerce Department Bans Differential Privacy in Census Data](https://scottaaronson.blog/?p=9902) ⭐️ 8.0/10
+## [Program-as-Weights: Compiling Fuzzy Functions into Neural Artifacts](https://huggingface.co/papers/2607.02512) ⭐️ 8.0/10
 
-On June 4, 2026, the U.S. Secretary of Commerce issued Directive DAO 216-26, which bans the use of differential privacy and noise infusion in all Census Bureau statistical products, restricting disclosure avoidance to coarsening only. This directive undermines decades of progress in privacy-preserving data publishing, potentially exposing individuals to re-identification risks and reducing the accuracy of census data used for policy-making, funding allocation, and research. The ban explicitly forbids 'noise infusion' defined as adding random values to data, and restricts disclosure avoidance techniques to 'coarsening' (e.g., rounding or binning). This eliminates the core mechanism of differential privacy, which relies on calibrated noise to provide mathematical privacy guarantees.
+Researchers propose Program-as-Weights (PAW), a paradigm that compiles natural-language specifications into compact neural artifacts using a 4B compiler and a 0.6B interpreter, achieving performance comparable to a 32B model with significantly reduced memory and inference cost. PAW offers a practical alternative to costly LLM API calls for fuzzy tasks like log alerting or JSON repair, enabling local, reproducible, and cost-effective execution. It reframes foundation models as tool builders rather than per-input solvers, potentially transforming how developers integrate AI into software. The 4B compiler is trained on FuzzyBench, a 10M-example dataset, and emits parameter-efficient adapters for a frozen 0.6B Qwen3 interpreter. PAW programs run at 30 tokens/s on a MacBook M3, using roughly one-fiftieth of the inference memory of direct Qwen3-32B prompting.
 
-hackernews · flowercalled · Jul 3, 00:01 · [Discussion](https://news.ycombinator.com/item?id=48768992)
+huggingface_papers · Hugging Face Papers · Jul 3, 00:00
 
-**Background**: Differential privacy is a mathematically rigorous framework that adds controlled noise to datasets to prevent re-identification of individuals while preserving statistical utility. The U.S. Census Bureau had adopted differential privacy for the 2020 Census to protect respondent confidentiality. Noise infusion has been used in official statistics for decades, including in the Census Bureau's Quarterly Workforce Indicators.
+**Background**: Many programming tasks, such as identifying important log lines or ranking search results, are difficult to specify with exact rules and are often outsourced to large language model APIs. This introduces issues of latency, cost, and reproducibility. PAW addresses this by compiling a natural-language description into a small, locally executable neural program, combining the flexibility of LLMs with the efficiency of traditional code.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Differential_privacy">Differential privacy - Wikipedia</a></li>
-<li><a href="https://www.census.gov/library/working-papers/2014/adrm/ces-wp-14-30.html">Noise Infusion As A Confidentiality Protection Measure For Graph-Based Statistics</a></li>
+<li><a href="https://huggingface.co/papers/2607.02512">Program-as-Weights: A Programming Paradigm for Fuzzy Functions</a></li>
+<li><a href="https://2026.aiwareconf.org/details/aiware-2026-arxiv-track/4/Program-as-Weights-A-Programming-Paradigm-for-Fuzzy-Functions">Program-as-Weights: A Programming Paradigm for Fuzzy Functions</a></li>
+<li><a href="https://lilianahotsko.github.io/PAW_CV.pdf">Program-as-Weights (PAW): A Neural Compiler-Interpreter ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed concern about the political motivation behind the directive and its impact on privacy. Some noted the lack of a direct link to contact legislators, while others pointed to previous discussions on Hacker News. A commenter working on differential privacy for GDPR compliance lamented the politicization of the technology.
-
-**Tags**: `#privacy`, `#differential privacy`, `#census`, `#government policy`, `#data science`
+**Tags**: `#programming paradigm`, `#neural compilation`, `#fuzzy functions`, `#parameter-efficient adapters`, `#AI/ML`
 
 ---
 
 <a id="item-7"></a>
-## [Podman v6.0.0 Released with Major Networking Overhaul](https://blog.podman.io/2026/07/introducing-podman-v6-0-0/) ⭐️ 8.0/10
+## [The Fall of the Theorem Economy](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
 
-Podman v6.0.0 has been released, introducing major networking improvements including the adoption of Netavark and Aardvark v2.0.0, and dropping support for CNI, iptables, and slirp4netns. This release solidifies Podman as a modern, secure, and daemonless container engine, making it an increasingly attractive alternative to Docker for both development and production environments. Podman v6.0.0 drops support for Intel-based Macs, Windows 10, cgroups v1, and BoltDB databases, while adding AMD GPU support and new Quadlet features. Users must upgrade to Buildah v1.44.0, Skopeo v1.23, and Netavark/Aardvark v2.0.0.
+David Bessis argues that the traditional theorem-proving economy in mathematics is being replaced by AI-driven exploration and intuition, similar to software testing. This shift could fundamentally change how mathematics is practiced, emphasizing intuition and AI collaboration over rigorous proof, potentially accelerating discovery but raising questions about mathematical certainty. The essay draws parallels between modern AI-assisted mathematics and software testing, where correctness is established through extensive testing rather than formal proof. It suggests that future mathematicians may focus on exploration and intuition, with AI handling formal verification.
 
-hackernews · soheilpro · Jul 2, 14:23 · [Discussion](https://news.ycombinator.com/item?id=48762098)
+hackernews · varjag · Jul 2, 08:01 · [Discussion](https://news.ycombinator.com/item?id=48758048)
 
-**Background**: Podman is a daemonless, open-source container engine developed by Red Hat that is compatible with Docker commands and OCI images. Unlike Docker, Podman does not require a central daemon, enhancing security and simplifying management. The v6.0.0 release represents a major step in modernizing its networking stack.
+**Background**: Traditionally, mathematics has been built on a foundation of rigorous theorem proving, where each result is logically derived from axioms. However, recent advances in AI, such as large language models and proof assistants, have enabled new approaches that prioritize empirical success and pattern recognition over formal proof.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://podman.io/">Podman</a></li>
-<li><a href="https://versionlog.com/podman/6.0/">Podman 6.0 - What's New, Support Lifecycle & EOL</a></li>
-<li><a href="https://linuxiac.com/podman-6-0-lands-with-breaking-changes-amd-gpus-support/">Podman 6.0 Lands with Breaking Changes, AMD GPUs Support</a></li>
+**Discussion**: Commenters largely agree with the essay's thesis, with some referencing Greg Egan's novel 'Diaspora' as a prescient vision of mathematics as 'truth mining.' Others note the analogy to software testing, where confidence in correctness grows through usage and testing rather than formal proof.
 
-</ul>
-</details>
-
-**Discussion**: Community sentiment is largely positive, with users praising Podman's ease of migration from Docker and the new networking improvements. Some users express frustration over limited distro support outside of Fedora/RHEL, while others highlight the benefits of Quadlet for rootless containers.
-
-**Tags**: `#Podman`, `#containers`, `#Docker alternative`, `#devops`, `#open source`
+**Tags**: `#mathematics`, `#AI`, `#theorem proving`, `#research methodology`, `#philosophy of science`
 
 ---
 
 <a id="item-8"></a>
-## [Postgres Transactions as a Distributed Systems Superpower](https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data) ⭐️ 8.0/10
+## [Understand to Participate: Key to AI-Assisted Coding](https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything) ⭐️ 8.0/10
 
-A blog post from DBOS argues that using Postgres transactions to manage workflow state simplifies orchestration by aligning each workflow step with a database commit, eliminating the need for separate message queues or the outbox pattern. This approach reduces architectural complexity for many applications, but it tightly couples the database to the workflow, making it harder to separate concerns later. It sparks debate on whether centralizing state in a single database is truly a distributed system. The technique relies on Postgres' ACID transactions to atomically update business data and workflow progress, effectively using the database as both state store and message broker. This is contrasted with the transactional outbox pattern, which requires dual writes to a database and a message queue.
+Simon Willison highlighted Geoffrey Litt's concept of 'Understand to participate' at the AIE conference, arguing that developers must deeply understand AI-generated code to remain active participants and avoid cognitive debt. This framing addresses a critical challenge in AI-assisted coding: as coding agents produce larger changes, developers risk losing understanding, leading to cognitive debt and reduced creative participation. It provides a actionable principle for maintaining human agency in software development. Geoffrey Litt's talk at AIE emphasized that developers need a rich set of concepts in mind to think creatively about moving a project forward. The AIE talks are recorded and will be released over three weeks; Litt also published a thread version on Twitter.
 
-hackernews · KraftyOne · Jul 2, 18:38 · [Discussion](https://news.ycombinator.com/item?id=48765639)
+rss · Simon Willison · Jul 2, 17:07
 
-**Background**: Workflow orchestration in distributed systems often involves coordinating multiple services and ensuring exactly-once execution. Traditional approaches use a separate message queue or the transactional outbox pattern to reliably emit events, but these introduce complexity and potential inconsistency. Postgres transactions offer a simpler alternative by leveraging the database's built-in atomicity.
+**Background**: Cognitive debt refers to the missing understanding of why a system works, its fragility, tradeoffs, and how confidently it can be changed, making software harder to maintain. As AI coding assistants generate more code, developers may accept changes without full comprehension, accumulating cognitive debt that undermines their ability to participate creatively.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Inbox_and_outbox_pattern">Inbox and outbox pattern - Wikipedia</a></li>
-<li><a href="https://microservices.io/patterns/data/transactional-outbox.html">Microservices Pattern: Pattern: Transactional outbox</a></li>
-<li><a href="https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html">Transactional outbox pattern - AWS Prescriptive Guidance</a></li>
+<li><a href="https://mathiesen.dev/writing/cognitive-debt">Cognitive Debt | Jarle Mathiesen</a></li>
+<li><a href="https://www.softwareletters.com/p/sl-52-the-debt-ai-is-building-isn-t-in-your-code">SL#52 - The Debt AI Is Building Isn't In Your Code</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters debated the trade-offs: some praised the simplicity and atomicity, while others questioned whether this is truly distributed or just a centralized mutex. One commenter noted that the approach tightly couples the database to the workflow, though they rarely need to separate them in practice.
-
-**Tags**: `#Postgres`, `#distributed systems`, `#workflow orchestration`, `#transactions`, `#outbox pattern`
+**Tags**: `#AI-assisted coding`, `#cognitive debt`, `#software engineering`, `#human-AI collaboration`
 
 ---
 
 <a id="item-9"></a>
-## [Immich 3.0 Major Update Sparks Encryption Debate](https://github.com/immich-app/immich/discussions/29439) ⭐️ 8.0/10
+## [Google's AI Buildout Drives 37% Electricity Use Increase in 2025](https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/) ⭐️ 8.0/10
 
-Immich 3.0, a major update to the open-source self-hosted photo management platform, has been released, generating significant community discussion about encryption and usability. This release highlights the growing demand for privacy-focused alternatives to cloud services like Google Photos, and the community debate underscores the trade-offs between encryption and convenience in self-hosted solutions. Immich uses TensorFlow-based machine learning for auto-tagging and offers a seamless backup experience, but lacks end-to-end encryption, which some users consider a critical missing feature.
+Google's electricity consumption rose 37% in 2025, primarily driven by the expansion of AI data centers, according to a report from Ars Technica. This surge highlights the growing tension between rapid AI infrastructure growth and corporate clean energy commitments, potentially impacting global energy policy and sustainability efforts. The 37% increase is attributed to the energy demands of training and running large AI models, which require massive computational resources. Google continues to invest in renewable energy to offset its carbon footprint.
 
-hackernews · hashier · Jul 2, 14:13 · [Discussion](https://news.ycombinator.com/item?id=48761944)
+rss · Ars Technica AI · Jul 2, 11:15
 
-**Background**: Immich is a self-hosted photo and video management solution that allows users to back up, organize, and manage their media on their own server, similar to Google Photos but with full privacy control. It is popular among self-hosting enthusiasts who want to avoid cloud subscription fees and retain ownership of their data.
+**Background**: AI data centers consume vast amounts of electricity for computing and cooling. As companies like Google expand AI services, their energy use rises, challenging their net-zero emissions goals. Google has pledged to operate on 24/7 carbon-free energy by 2030.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://immich.app/">Immich</a></li>
-<li><a href="https://maketecheasier.com/self-hosted-photos-management-software/">Best Self-hosted Photo Management Software to Replace Google...</a></li>
-<li><a href="https://octabyte.io/fully-managed-open-source-services/hosting-and-infrastructure/storage/immich/">Immich fully managed open source service | OctaByte.io</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community comments reveal a split: some users praise Immich as a no-brainer replacement for Apple Photos or Google Photos, while others, like Cider9986, chose alternatives like Ente Photos due to the lack of end-to-end encryption. AussieWog93 argues that e2ee may not be necessary for most use cases, as it complicates recovery.
-
-**Tags**: `#self-hosting`, `#photo management`, `#open source`, `#privacy`
+**Tags**: `#AI`, `#energy consumption`, `#data centers`, `#sustainability`, `#Google`
 
 ---
 
 <a id="item-10"></a>
-## [Why 24-bit/192kHz Music Downloads Make No Sense](https://people.xiph.org/~xiphmont/demo/neil-young.html#toc_wd2bm) ⭐️ 8.0/10
+## [Open-Source Voice Pipeline with Gemma 4 31B](https://www.reddit.com/r/LocalLLaMA/comments/1ulgwld/talking_with_gemma_4_31b/) ⭐️ 8.0/10
 
-A 2012 technical article by Xiph.org's Christopher Montgomery systematically debunks the claimed benefits of high-resolution audio (24-bit/192kHz) for playback, arguing that 16-bit/44.1kHz CD-quality audio is sufficient for human hearing. This article remains a cornerstone reference in the ongoing debate over high-resolution audio, influencing both audiophiles and the audio industry by providing rigorous engineering evidence that higher sample rates and bit depths offer no audible benefit for playback. The article explains that the Nyquist theorem guarantees perfect reconstruction of frequencies up to half the sample rate, so 44.1kHz can capture up to 22.05kHz—beyond human hearing. It also notes that 24-bit depth is only useful in production for headroom, not for final playback.
+Andi from Hugging Face released a fully open-source voice demo pipeline combining Nvidia's Parakeet ASR, Gemma 4 31B (served by Cerebras), and Qwen3TTS, achieving fast web search and local deployment as a drop-in replacement for OpenAI's realtime API. This demonstrates a fully open-source, low-latency voice AI stack that can run locally, reducing dependence on proprietary APIs and enabling privacy-preserving voice applications. The pipeline uses Nvidia's Parakeet for speech recognition, Gemma 4 31B for language understanding, and Qwen3TTS for speech synthesis; it can run on a MacBook Pro M3 with 36GB RAM using Gemma 4 E4B, achieving similar latencies to cloud deployment.
 
-hackernews · Kaapeine · Jul 2, 16:24 · [Discussion](https://news.ycombinator.com/item?id=48763790)
+reddit · r/LocalLLaMA · /u/futterneid · Jul 2, 12:29
 
-**Background**: Digital audio represents sound as samples; the sample rate (e.g., 44.1kHz) determines the highest frequency that can be captured, while bit depth (e.g., 16-bit) determines dynamic range. The Nyquist–Shannon sampling theorem states that a signal must be sampled at least twice its highest frequency to be perfectly reconstructed. High-resolution audio typically refers to formats with sample rates above 44.1kHz and bit depths above 16-bit, such as 24-bit/192kHz.
+**Background**: Gemma 4 is Google's latest open-weight model family, featuring sliding window attention (SWA) for efficient long-context processing. Nvidia's Parakeet is a state-of-the-art ASR model, and Qwen3TTS is an open-source text-to-speech model with voice cloning capabilities. This pipeline combines them into a real-time voice interaction system.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Nyquist_theorem">Nyquist theorem</a></li>
-<li><a href="https://en.wikipedia.org/wiki/High-resolution_audio">High-resolution audio - Wikipedia</a></li>
-<li><a href="https://science-of-sound.net/2016/07/high-resolution-audio-state-debate/">High Resolution Audio – The State of the Debate The Hi-Res Audio Myth: Can You Really Hear the Difference ... AES Journal Forum » High-Resolution Audio: A History and ... High-resolution audio: everything you need to know | What Hi-Fi? With all this recent discussion of High Res audio, I ... - Reddit Understanding High-Resolution Audio: Why Do We Need It?</a></li>
+<li><a href="https://developer.nvidia.com/blog/pushing-the-boundaries-of-speech-recognition-with-nemo-parakeet-asr-models/">Pushing the Boundaries of Speech Recognition with NVIDIA NeMo ...</a></li>
+<li><a href="https://github.com/andimarafioti/faster-qwen3-tts">GitHub - andimarafioti/faster-qwen3-tts: Real-time text-to ...</a></li>
+<li><a href="https://dev.to/jubinsoni/mastering-gemma-4-a-comprehensive-deep-dive-into-googles-next-generation-open-model-architecture-2f91">Mastering Gemma 4: A Comprehensive Deep Dive into Google's ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters generally agree with the article's technical conclusions, but some note that high-resolution files are useful for archival purposes, allowing downsampling to various formats. Others highlight that professional audio engineers use higher bit depths for recording headroom, not for playback quality.
+**Discussion**: One community member detailed a plan to rebuild Gemma 4 31B by removing the weakest SWA layer, rescaling attention, and adding attention-based residual networks to improve global coherence, aiming to reduce parameters from ~30.81B to ~26.02B while enhancing performance. They seek datasets and compute donations for the project.
 
-**Tags**: `#audio`, `#digital signal processing`, `#audiophile`, `#Nyquist theorem`, `#lossless audio`
+**Tags**: `#Gemma 4`, `#open-source`, `#voice AI`, `#realtime API`, `#Hugging Face`
 
 ---
 
 <a id="item-11"></a>
-## [NSA Accused of Weakening ML-KEM Standardization](https://nsa.2026.action.cr.yp.to/) ⭐️ 8.0/10
+## [Kimi K2.7 Code Now Available in GitHub Copilot](https://www.reddit.com/r/LocalLLaMA/comments/1ulm1gt/kimi_k27_code_is_generally_available_in_github/) ⭐️ 8.0/10
 
-A controversial article claims the NSA is attempting to weaken the standardization of ML-KEM in the IETF TLS working group, but community comments dispute this, noting existing codepoints and library support. This debate affects the trust in cryptographic standards and the integrity of the IETF process, with implications for post-quantum security in TLS. ML-KEM (FIPS 203) is a post-quantum key encapsulation mechanism based on lattice cryptography, and the IETF is working on a pure ML-KEM TLS specification separate from the hybrid ECDHE-ML-KEM.
+Kimi K2.7 Code, an open-source agentic coding model from Moonshot AI, is now generally available in GitHub Copilot, expanding the range of AI models developers can use for code generation and assistance. This integration signifies growing industry adoption of Kimi models and provides developers with a powerful, cost-effective alternative for AI-assisted coding, potentially reducing token usage by 30% compared to previous versions. Kimi K2.7 Code features improved long-horizon coding and stronger agent capabilities, with a high-speed version offering up to 260 tokens/s output. The model forces thinking mode and preserve_thinking as True in official API usage.
 
-hackernews · SuperSandro2000 · Jul 2, 12:33 · [Discussion](https://news.ycombinator.com/item?id=48760490)
+reddit · r/LocalLLaMA · /u/zxyzyxz · Jul 2, 15:51
 
-**Background**: ML-KEM (formerly Kyber) is a NIST-standardized post-quantum key encapsulation mechanism. The IETF TLS working group is standardizing its use in TLS, with some advocating for a pure ML-KEM mode and others for hybrid approaches. The controversy stems from disagreements over the standardization process and alleged NSA influence.
+**Background**: GitHub Copilot is an AI coding assistant that provides real-time code suggestions in editors like VS Code. Kimi K2.7 Code is a coding-focused agentic model released by Moonshot AI, designed to handle complex coding tasks with reduced token overhead.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/ML-KEM">ML-KEM - Wikipedia</a></li>
+<li><a href="https://www.kimi.com/resources/kimi-k2-7-code">Kimi K2.7 Code: Open-Source Agentic Coding Model</a></li>
+<li><a href="https://huggingface.co/moonshotai/Kimi-K2.7-Code">moonshotai/Kimi-K2.7-Code · Hugging Face</a></li>
+<li><a href="https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart">Kimi K2.7 Code - Kimi API Platform</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely reject the article's claims, pointing out that ML-KEM already has assigned codepoints and is supported by major libraries like OpenSSL and BoringSSL. They note that the article is a call to action from one side, and that D.J. Bernstein has been moderated for disruptive behavior.
-
-**Tags**: `#cryptography`, `#NSA`, `#ML-KEM`, `#IETF`, `#standardization`
+**Tags**: `#AI coding`, `#GitHub Copilot`, `#Kimi K2.7`, `#code generation`, `#LLM`
 
 ---
 
 <a id="item-12"></a>
-## [The Fall of the Theorem Economy](https://davidbessis.substack.com/p/the-fall-of-the-theorem-economy) ⭐️ 8.0/10
+## [audio.cpp Expands to Music Generation with GGML](https://www.reddit.com/r/LocalLLaMA/comments/1um2tbf/audiocpp_the_sound_of_ggml_cggml_native_acestep/) ⭐️ 8.0/10
 
-An essay argues that the traditional theorem-proving economy of mathematics is declining, replaced by AI-driven exploration and intuition. This sparks deep debate on the evolving nature of mathematical practice in the age of AI and formalization, affecting how mathematicians work and how mathematics is valued. The essay references Greg Egan's concept of 'truth mining' and draws parallels to software testing, suggesting that proof assistants and AI may shift focus from rigorous proofs to intuition and exploration.
+audio.cpp now supports music generation, SFX generation, and source separation by integrating ACE-Step 1.5, HeartMuLa, Stable Audio 3, Mel-Band RoFormer, and HTDemucs models, all running natively in C++/GGML. ACE-Step Turbo achieves 9.97x real-time performance, generating 600 seconds of music in 60 seconds. This release brings high-quality music and audio generation to local, CPU-friendly hardware via GGML, reducing reliance on cloud APIs and enabling real-time or faster-than-real-time performance. It expands the scope of audio.cpp from TTS to a comprehensive audio framework covering speech, music, and source separation. HTDemucs is currently slower than the Python baseline, and Stable Audio warm runs show mixed results; the focus is on establishing end-to-end paths first. A mem_saver mode reduces resident VRAM after inference without significantly impacting speed, suitable for long-running server scenarios.
 
-hackernews · varjag · Jul 2, 08:01 · [Discussion](https://news.ycombinator.com/item?id=48758048)
+reddit · r/LocalLLaMA · /u/Acceptable-Cycle4645 · Jul 3, 03:12
 
-**Background**: Mathematics has long been centered on proving theorems, but with the rise of proof assistants and AI, some argue that the emphasis on formal proofs may diminish. The 'theorem economy' refers to the system where theorems are the primary output of mathematical research, valued for their rigor and novelty.
+**Background**: GGML is a tensor library for machine learning, commonly used in llama.cpp for local LLM inference. ACE-Step is an open-source foundation model for music generation, while HTDemucs is a hybrid transformer model for music source separation. audio.cpp is a C++/GGML framework that originally focused on text-to-speech and now expands to broader audio generation tasks.
 
-**Discussion**: Commenters find the essay insightful, with some noting parallels to Greg Egan's 'truth mining' and software testing practices. There is agreement that mathematics may evolve toward intuition and exploration, though concerns about restricted access to AI resources are raised.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/GGML">GGML</a></li>
+<li><a href="https://github.com/ace-step/ACE-Step">GitHub - ace-step/ACE-Step: ACE-Step: A Step Towards Music ...</a></li>
+<li><a href="https://github.com/Maricpl/htdemucs">GitHub - Maricpl/ htdemucs : Code for the paper Hybrid Spectrogram...</a></li>
 
-**Tags**: `#mathematics`, `#AI`, `#formalization`, `#research`, `#philosophy`
+</ul>
+</details>
+
+**Discussion**: The maintainer shared the project after 4.5 months of development, highlighting its ability to route requests across 237 providers via a single OpenAI-compatible endpoint. The community discussion focuses on the technical details of the router, compression pipeline, and fallback strategies, with positive sentiment toward the project's utility and transparency.
+
+**Tags**: `#audio generation`, `#GGML`, `#C++`, `#music AI`, `#open source`
 
 ---
 
 <a id="item-13"></a>
-## [Understand to Participate: Key to Avoiding Cognitive Debt](https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything) ⭐️ 8.0/10
+## [Self-Replicating AI Worm Built with Open-Weight Models](https://www.reddit.com/r/LocalLLaMA/comments/1ulw1wp/researchers_build_selfreplicating_ai_worm_that/) ⭐️ 8.0/10
 
-Simon Willison highlights Geoffrey Litt's framing of 'understand to participate' as essential for collaborating with coding agents without accumulating cognitive debt. This concept addresses a critical challenge in AI-assisted coding: maintaining developer understanding to avoid cognitive debt, which can hinder productivity and code quality. Geoffrey Litt presented this idea at the AIE conference, arguing that developers need to understand code deeply enough to actively participate with coding agents. The talk is recorded and will be available on YouTube.
+Researchers have demonstrated a self-replicating AI worm that operates entirely on local, open-weight models, spreading autonomously without relying on cloud APIs. This marks a new frontier in AI security, as autonomous agents could now self-replicate and spread malware, posing risks to AI infrastructure and data privacy. The worm uses adversarial prompts to instruct local models to include copies of the prompt in their output, enabling propagation. It builds on prior work like Morris II, which targeted AI email assistants.
 
-rss · Simon Willison · Jul 2, 17:07
+reddit · r/LocalLLaMA · /u/Thrumpwart · Jul 2, 22:03
 
-**Background**: Cognitive debt refers to the erosion of shared understanding in a software team, making it harder to reason about and change code. As AI coding agents generate more code, developers risk losing understanding, leading to cognitive debt. The 'understand to participate' approach encourages developers to stay engaged and informed.
+**Background**: Open-weight models make their trained parameters publicly available, allowing anyone to download and run them locally. Self-replicating AI worms are a new class of malware that exploit generative AI's ability to follow instructions and produce executable content.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://simonwillison.net/2026/jul/2/understand-to-participate/">Understand to participate - Simon Willison's Weblog</a></li>
-<li><a href="https://margaretstorey.com/blog/2026/02/09/cognitive-debt/">How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt</a></li>
-<li><a href="https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html">Understanding is the new bottleneck - Geoffrey Litt</a></li>
+<li><a href="https://thehackernews.com/2026/06/researchers-build-self-replicating-ai.html">Researchers Build Self - Replicating AI Worm That Operates Entirely...</a></li>
+<li><a href="https://sscsecurity.dev/book1/chapter-10/ch-10.13/">Prompt Worms : Self - Replicating AI Malware - Open Source Software...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI-assisted coding`, `#cognitive debt`, `#software engineering`, `#developer experience`
+**Discussion**: The Reddit discussion highlights excitement about autonomous self-improvement but also raises serious containment concerns, with some users questioning the safety of running such systems offline.
+
+**Tags**: `#AI Security`, `#Self-Replicating AI`, `#Open-Weight Models`, `#Autonomous Agents`, `#Cybersecurity`
 
 ---
 
 <a id="item-14"></a>
-## [Advocates Warn FTC Musk's X Poses Serious Privacy Risk](https://arstechnica.com/tech-policy/2026/07/musks-x-poses-serious-risk-to-americans-privacy-advocates-warn-ftc/) ⭐️ 8.0/10
+## [Hierarchos: 232M Recurrent Memory-Augmented LM Shows Promise](https://www.reddit.com/r/MachineLearning/comments/1um123n/hierarchos_preliminary_findings_from_a_232m/) ⭐️ 8.0/10
 
-Privacy advocates are urging the Federal Trade Commission (FTC) to reject Elon Musk's attempt to end the privacy monitoring of X (formerly Twitter), citing serious risks to Americans' privacy and AI-related concerns. This matters because X has millions of users in the U.S., and ending FTC oversight could lead to unchecked data collection and misuse, especially as Musk integrates AI features that may require extensive user data. The FTC has been monitoring X's privacy practices under a consent decree from a previous settlement; Musk's bid to end this monitoring is seen as a move to avoid accountability. Advocates warn that without oversight, X could use user data to train AI models without adequate consent.
+Researchers built and trained Hierarchos, a 232M-parameter recurrent memory-augmented language model combining RWKV backbone, hierarchical manager/worker loops, differentiable slot-based LTM, and a deterministic suffix automaton, demonstrating training viability and short-form instruction coherence. This work challenges the dominance of Transformer scaling by showing that a hybrid non-Transformer architecture can achieve stable training and coherent output, potentially leading to more parameter-efficient models for resource-constrained settings. Key engineering fixes included aligning chat/training drift mismatch, switching LTM to read-only during training to avoid supervised crutch, and clamping RWKV channel-mix and DeepEmbed activations to prevent NaN gradients.
 
-rss · Ars Technica AI · Jul 2, 14:39
+reddit · r/MachineLearning · /u/PhysicsDisastrous462 · Jul 3, 01:48
 
-**Background**: The FTC has authority to enforce privacy protections and can impose consent decrees on companies that violate user privacy. X (formerly Twitter) has been under such a decree since 2022 after settling charges of deceptive data practices. Elon Musk acquired Twitter in 2022 and has since rebranded it as X, making significant changes to its policies and features.
-
-**Tags**: `#privacy`, `#FTC`, `#Elon Musk`, `#X`, `#AI`
-
----
-
-<a id="item-15"></a>
-## [Google's AI buildout drove 37% electricity use increase in 2025](https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/) ⭐️ 8.0/10
-
-Google's 2026 environmental report revealed that its electricity consumption rose 37% in 2025, driven by the expansion of AI data centers. The company signed agreements for over 12 gigawatts of net-new clean energy, the largest annual total in its history. This highlights the growing tension between AI infrastructure scaling and corporate clean energy goals, as AI workloads demand massive amounts of power. It underscores the urgent need for sustainable AI practices and could influence industry-wide energy strategies. Google has matched 100% of its global electricity consumption with renewable energy purchases for nine consecutive years. However, the 37% increase in absolute electricity use means its carbon-free energy percentage dropped from 64% to an unspecified lower level.
-
-rss · Ars Technica AI · Jul 2, 11:15
-
-**Background**: AI models, especially large language models, require specialized hardware like GPUs that consume significantly more power than traditional computing. Data centers already account for about 1-2% of global electricity use, and AI is accelerating this demand. Google has been a leader in corporate renewable energy procurement, but the rapid growth of AI is challenging its sustainability commitments.
+**Background**: Modern large language models (LLMs) predominantly rely on Transformer architectures, which scale quadratically with sequence length. Hierarchos explores an alternative path using recurrence and explicit memory to achieve efficiency. RWKV is a recurrent architecture that combines the parallel training of Transformers with the efficient inference of RNNs. Differentiable slot-based LTM allows the model to store and retrieve information persistently.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arstechnica.com/ai/2026/07/googles-ai-buildout-drove-37-increase-in-electricity-use-in-2025/">Google’s AI buildout drove 37% increase in electricity use in 2025 - Ars Technica</a></li>
-<li><a href="https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/">Read Google’s 2026 Environmental Report</a></li>
-<li><a href="https://mitsloan.mit.edu/ideas-made-to-matter/ai-has-high-data-center-energy-costs-there-are-solutions">AI has high data center energy costs — but there are... | MIT Sloan</a></li>
+<li><a href="https://huggingface.co/blog/rwkv">Introducing RWKV - An RNN with the advantages of a transformer</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Suffix_automaton">Suffix automaton - Wikipedia</a></li>
+<li><a href="https://ivanleomk.github.io/blog/a-guide-to-rwkv-v3.html">A guide to RWKV V3 - Ivan's Blog</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#energy`, `#sustainability`, `#Google`, `#data centers`
+**Discussion**: The Reddit discussion includes substantive technical comments debating the approach, with some praising the novel hybrid architecture and others questioning the scalability beyond 232M parameters.
+
+**Tags**: `#machine learning`, `#language model`, `#recurrent architecture`, `#memory augmentation`, `#RWKV`
+
+---
+
+<a id="item-15"></a>
+## [Claude Fable 5 Benchmark Drops After Relaunch](https://www.reddit.com/r/artificial/comments/1ulvegw/independent_benchmark_shows_big_drops_on_claude/) ⭐️ 8.0/10
+
+An independent benchmark, BridgeBench, shows dramatic performance drops on Claude Fable 5 after its July 1 relaunch compared to the original June 12 version, with debugging scores falling from 86.2 to 25.9 and refactoring from 73.6 to 38.4. This matters because it highlights a critical tension between AI safety and model performance: an overly aggressive safety classifier can silently downgrade user requests to a weaker model, undermining trust in AI reliability for coding tasks. The performance drop is attributed to a new safety classifier that catches a reported jailbreak technique in 99%+ of cases, but flagged requests are silently rerouted to Opus 4.8 instead of being refused, causing many normal coding tasks to be downgraded.
+
+reddit · r/artificial · /u/Direct-Attention8597 · Jul 2, 21:38
+
+**Background**: Claude Fable 5 and Mythos 5 were pulled on June 12 due to a Commerce Department export control order after a reported jailbreak exposed exploitable vulnerabilities. Anthropic added a new safety classifier when the model returned on July 1. BridgeBench is an open-source coding benchmark that measures debugging, refactoring, and hallucination detection.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.bridgemind.ai/bridgebench">BridgeBench — The Open-Source Vibe Coding Benchmark</a></li>
+<li><a href="https://claude5.ai/en/news/claude-fable-5-safety-architecture-classifiers-opus-fallback">Claude Fable 5 Safety: Classifiers, Opus Fallback, 30-Day ...</a></li>
+<li><a href="https://www.techtimes.com/articles/319413/20260701/claude-fable-5-returns-globally-new-classifier-blocks-jailbreak-flags-more-code.htm">Claude Fable 5 Returns Globally: New Classifier Blocks ...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments on the Reddit post express concern about the classifier's aggressiveness, with some users reporting constant fallback to Opus 4.8 and slower one-shot performance. There is debate over whether the underlying model weights changed, but no independent lab has confirmed this.
+
+**Tags**: `#AI safety`, `#benchmarking`, `#Claude`, `#model degradation`, `#Anthropic`
 
 ---
