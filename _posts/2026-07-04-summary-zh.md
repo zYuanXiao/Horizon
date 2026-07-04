@@ -9,362 +9,357 @@ lang: zh
 
 ---
 
-1. [欧盟议会间谍软件调查员遭飞马间谍软件攻击](#item-1) ⭐️ 9.0/10
-2. [Mistral 发布 Leanstral-1.5 用于形式验证](#item-2) ⭐️ 9.0/10
-3. [Superpowers GitHub 仓库因智能体技能框架走红](#item-3) ⭐️ 8.0/10
-4. [Agency-Agents：专业化 AI 智能体框架](#item-4) ⭐️ 8.0/10
-5. [程序即权重：将自然语言编译为紧凑神经工件](#item-5) ⭐️ 8.0/10
-6. [AgenticSTS：面向长周期 LLM 智能体的有界内存测试平台](#item-6) ⭐️ 8.0/10
-7. [Wordgard：ProseMirror 创建者推出的新富文本编辑器](#item-7) ⭐️ 8.0/10
-8. [PostgreSQL 与 OOM 杀手：为何严格内存过量使用至关重要](#item-8) ⭐️ 8.0/10
-9. [开源 AI 差距图发布](#item-9) ⭐️ 8.0/10
-10. [HAT-4D：单目视频生成 4D 交互场景](#item-10) ⭐️ 8.0/10
-11. [DeepSeek V4 Flash MoE 在 RTX 5090 上运行，使用自定义 llama.cpp 分支](#item-11) ⭐️ 8.0/10
-12. [CDD 无需权重访问即可从 LLM 对数中恢复微调数据](#item-12) ⭐️ 8.0/10
-13. [系统提示提取攻击对 60-70%的 AI 智能体有效](#item-13) ⭐️ 8.0/10
-14. [Elixir 1.2 引入渐进集合论类型系统](#item-14) ⭐️ 8.0/10
-15. [OmniRoute：免费 AI 网关，支持 230 多家提供商](#item-15) ⭐️ 8.0/10
+1. [欧盟议会间谍调查成员遭飞马间谍软件攻击](#item-1) ⭐️ 9.0/10
+2. [Mistral 发布 Leanstral-1.5，一款 6B 活跃参数的形式化验证模型](#item-2) ⭐️ 9.0/10
+3. [Superpowers：热门智能体技能框架](#item-3) ⭐️ 8.0/10
+4. [Anthropic 的 Claude Code 在 GitHub 上星数激增](#item-4) ⭐️ 8.0/10
+5. [程序即权重：将自然语言规范编译为紧凑神经制品](#item-5) ⭐️ 8.0/10
+6. [面向长周期 LLM 智能体的有界记忆测试平台](#item-6) ⭐️ 8.0/10
+7. [Current AI 发布开源 AI 差距地图](#item-7) ⭐️ 8.0/10
+8. [课程创作者报告销售额因 AI 下降超过 50%](#item-8) ⭐️ 8.0/10
+9. [HAT-4D：单目视频生成 4D 交互场景](#item-9) ⭐️ 8.0/10
+10. [LongCat 2 模型权重发布在 Hugging Face 上](#item-10) ⭐️ 8.0/10
+11. [ComfyUI 工作流无需 LoRA 即可根据故事生成漫画](#item-11) ⭐️ 8.0/10
+12. [CDD 仅从 logits 恢复微调逐字数据](#item-12) ⭐️ 8.0/10
+13. [简单提示注入可提取 60-70% AI 助手的系统提示](#item-13) ⭐️ 8.0/10
+14. [Elixir 1.2 发布渐进式集合论类型系统](#item-14) ⭐️ 8.0/10
+15. [阿里巴巴 Page-Agent：用自然语言控制网页](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [欧盟议会间谍软件调查员遭飞马间谍软件攻击](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/) ⭐️ 9.0/10
+## [欧盟议会间谍调查成员遭飞马间谍软件攻击](https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/) ⭐️ 9.0/10
 
-公民实验室发现，一名参与调查间谍软件的欧洲议会委员会成员在 2022 年 10 月和 2023 年 3 月两次被飞马间谍软件感染。 这表明一个拥有跨欧洲授权的国家行为者正在针对欧盟机构，破坏民主监督并引发严重的安全担忧。 这些感染与针对欧洲俄语和白俄罗斯语流亡记者的飞马间谍活动重叠，表明存在一个拥有多国间谍授权的单一客户。
+公民实验室披露，欧洲议会议员斯特利奥斯·库洛格卢（Stelios Kouloglou）曾参与调查间谍软件滥用问题的委员会，其设备在 2022 年和 2023 年至少三次被成功感染飞马间谍软件。 这一事件表明，国家支持的间谍软件正被用于对付负责调查其滥用行为的官员，这破坏了民主监督，并对欧盟机构构成直接威胁。 2022 年 10 月的首次感染与已知的针对俄罗斯和白俄罗斯流亡记者的飞马间谍软件活动重叠，表明一个拥有跨欧洲授权的飞马客户应对此负责。
 
 hackernews · ledoge · 7月3日 20:38 · [社区讨论](https://news.ycombinator.com/item?id=48779683)
 
-**背景**: 飞马间谍软件由以色列 NSO 集团开发，仅出售给政府，能够零点击远程感染并完全控制设备。公民实验室是多伦多大学的一个研究小组，专门调查对人权的数字威胁。
+**背景**: 飞马间谍软件是由以色列 NSO 集团开发的一款强大间谍软件，能够远程入侵移动设备并提取数据、信息和录音。公民实验室是多伦多大学的一个研究小组，专门调查数字威胁，并已揭露全球多起飞马间谍软件滥用事件。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Pegasus_(spyware)">Pegasus (spyware)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Citizen_Lab">Citizen Lab</a></li>
-<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lzX2FQQ0VSR2FLSUx4NTNxVDB5Z0FQAQ?hl=en-GB&gl=GB&ceid=GB:en">Google News - News about spyware • EU • surveillance - Overview</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出调查员被监视的讽刺性，并提到希腊、波兰和意大利过去的飞马间谍软件滥用事件。有人质疑为什么欧盟议会不强制执行工作与个人设备分离的政策。
+**社区讨论**: 评论者指出，包括希腊、波兰和意大利在内的多个欧盟成员国与飞马间谍软件滥用有关，有人认为此次攻击可能是由希腊政府而非外部行为者策划的。其他人质疑为何欧盟议员使用个人设备处理敏感工作，从而面临机密信息泄露的风险。
 
 **标签**: `#cybersecurity`, `#spyware`, `#Pegasus`, `#European Parliament`, `#surveillance`
 
 ---
 
 <a id="item-2"></a>
-## [Mistral 发布 Leanstral-1.5 用于形式验证](https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b/) ⭐️ 9.0/10
+## [Mistral 发布 Leanstral-1.5，一款 6B 活跃参数的形式化验证模型](https://www.reddit.com/r/LocalLLaMA/comments/1umgdhx/mistral_released_leanstral15119ba6b/) ⭐️ 9.0/10
 
-Mistral 发布了 Leanstral-1.5，这是一个拥有 6B 活跃参数的模型，采用 Apache-2.0 许可证，在 miniF2F、PutnamBench、FATE-H 和 FATE-X 等形式验证基准上取得了最先进的结果，并在 57 个代码仓库中发现了 5 个真实漏洞。 此次发布标志着自动定理证明和形式验证领域的重大进步，使开发者更容易验证软件正确性并捕捉传统测试可能遗漏的细微漏洞，开源许可证鼓励广泛采用。 该模型通过中期训练、监督微调和基于 CISPO（裁剪重要性采样策略优化）的强化学习进行训练，在 miniF2F 基准上达到饱和，解决了 672 个 PutnamBench 问题中的 587 个，并在 FATE-H 上达到 87%，在 FATE-X 上达到 34%。
+Mistral AI 发布了 Leanstral-1.5-119B-A6B，这是一款混合专家模型，拥有 60 亿活跃参数，在形式化验证中取得了最先进的结果，包括在 miniF2F 基准测试上达到饱和，并在开源仓库中发现了 5 个真实漏洞。 此次发布标志着自动定理证明和代码验证领域的重大进步，使开发者能够正式验证软件正确性，并捕获传统测试和模糊测试可能遗漏的边界情况漏洞。 该模型通过中期训练、监督微调和基于 CISPO（裁剪重要性采样策略优化）的强化学习进行训练。它在 FATE-H 上达到 87%，在 FATE-X 上达到 34%，并解决了 672 个 PutnamBench 问题中的 587 个。
 
 reddit · r/LocalLLaMA · /u/Tall-Ad-7742 · 7月3日 14:44
 
-**背景**: 形式验证使用数学证明来确保软件正确性，而自动定理证明旨在自动生成这些证明。miniF2F 和 PutnamBench 等基准测试评估模型在 Lean 4 等系统中形式化的竞赛级数学问题上的表现。CISPO 是一种强化学习算法，通过裁剪重要性采样权重来提高稳定性和样本效率。
+**背景**: Leanstral-1.5 是一款混合专家（MoE）模型，针对使用 Lean 4 定理证明器的形式化验证进行了优化。形式化验证利用数学证明来确保软件正确性，补充了传统的测试方法。miniF2F 基准测试包含形式化的奥林匹克级别数学问题，用于评估定理证明能力。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/openai/miniF2F">GitHub - openai/miniF2F: Formal to Formal Mathematics Benchmark</a></li>
-<li><a href="https://github.com/trishullab/PutnamBench">GitHub - trishullab/PutnamBench: An evaluation benchmark for undergraduate competition math in Lean4, Isabelle, Coq, and natural language. · GitHub</a></li>
-<li><a href="https://www.emergentmind.com/topics/cispo-algorithm">CISPO: Clipped Importance Sampling RL - emergentmind.com</a></li>
+<li><a href="https://emelia.io/hub/leanstral-mistral-ai-formal-verification">Leanstral by Mistral AI: The AI That Proves Your Code Is Correct</a></li>
+<li><a href="https://arxiv.org/abs/2109.00110">[2109.00110] MiniF2F: a cross-system benchmark for formal ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 一些评论者对声称该漏洞会被测试遗漏表示质疑，指出那只是一个简单的溢出边界情况。其他人指出该模型与半年前的旧模型进行比较，觉得这很有趣。还有人对为什么选择 Lean 4 而非 Isabelle/HOL 等其他形式验证工具表示好奇。
+**社区讨论**: 一些评论者对“该漏洞会被测试遗漏”的说法提出质疑，指出这是一个经典的边界条件。其他人则指出，该模型仅与半年前的旧模型进行了比较，并对选择 Lean 4 而非 Isabelle/HOL 或 TLA+ 等其他形式化验证工具表示好奇。
 
 **标签**: `#AI`, `#formal verification`, `#Mistral`, `#theorem proving`, `#open-source`
 
 ---
 
 <a id="item-3"></a>
-## [Superpowers GitHub 仓库因智能体技能框架走红](https://github.com/obra/superpowers) ⭐️ 8.0/10
+## [Superpowers：热门智能体技能框架](https://github.com/obra/superpowers) ⭐️ 8.0/10
 
-GitHub 仓库 obra/superpowers 单日获得超过 1200 颗星，总星数接近 246,000，该仓库为编码智能体引入了一个智能体技能框架和软件开发方法论。 该方法论将 AI 编码助手从简单的代码编写工具转变为纪律严明的工程伙伴，有望提升整个行业的软件开发效率和质量。 Superpowers 是一个零依赖插件，提供可组合的技能和初始指令来指导编码智能体，由 Prime Radiant 的 Jesse Vincent（@obra）构建。
+GitHub 仓库 obra/superpowers 单日获得超过 1209 颗星，总星数达 245,604，成为热门项目，为 AI 编码智能体提供开源智能体技能框架和软件开发方法论。 该框架提供了一种可组合、零依赖的方法论，能将 AI 编码助手转变为更高效的智能体，满足了快速发展的 AI 辅助软件开发领域的关键需求。 Superpowers 支持多种 AI 编码工具，包括 Claude Code、Cursor、Codex、OpenCode 和 Gemini CLI，基于可组合技能构建，并附带初始指令以确保正确使用。
 
-github_trending · GitHub Trending · 7月4日 03:16
+github_trending · GitHub Trending · 7月4日 03:27
 
-**背景**: 智能体技能框架允许 AI 智能体按需发现和加载可移植的指令、脚本和资源包。该仓库将此概念应用于软件开发，为编码智能体提供了一套完整的方法论。
+**背景**: 智能体技能框架旨在通过提供结构化、可复用的指令和脚本来扩展 AI 编码智能体的能力。该项目由 Prime Radiant 的 Jesse Vincent 创建，提供了一套完整的软件开发方法论，帮助智能体按需发现和加载技能，类似于 Microsoft 的 Agent Skills。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/obra/superpowers">GitHub - obra / superpowers : An agentic skills framework & software ...</a></li>
-<li><a href="https://zread.ai/obra/superpowers">Overview | obra / superpowers | Zread</a></li>
+<li><a href="https://github.com/obra/superpowers">GitHub - obra / superpowers : An agentic skills framework & software...</a></li>
+<li><a href="https://grokipedia.com/page/Superpowers_agentic_skills_framework">Superpowers (agentic skills framework)</a></li>
 <li><a href="https://ai-trove.com/en/superpowers">Superpowers — agentic skills framework & software</a></li>
 
 </ul>
 </details>
 
-**标签**: `#software-development`, `#methodology`, `#github-trending`, `#shell`
+**标签**: `#agentic-framework`, `#software-development`, `#methodology`, `#github-trending`
 
 ---
 
 <a id="item-4"></a>
-## [Agency-Agents：专业化 AI 智能体框架](https://github.com/msitarzewski/agency-agents) ⭐️ 8.0/10
+## [Anthropic 的 Claude Code 在 GitHub 上星数激增](https://github.com/anthropics/claude-code) ⭐️ 8.0/10
 
-GitHub 仓库 msitarzewski/agency-agents 单日获得超过 1208 颗星，总星数达 126,558，该框架用于创建具有不同角色和交付成果的专业化 AI 智能体。 该框架使开发者能够构建模块化的 AI 智能体系统，每个智能体拥有独特的个性和流程，可能简化复杂的多智能体工作流，并吸引了社区的强烈关注。 该仓库使用 Shell 编写，拥有 20,539 个分支；它将智能体描述为“前端巫师”、“Reddit 社区忍者”和“奇思妙想注入者”，强调专业化能力。
+Anthropic 的 Claude Code 是一款基于终端的智能编码工具，今日在 GitHub 上获得 221 颗星，总星数超过 135,000 颗。 这一激增反映了开发者对能够理解整个代码库并自动化复杂工作流的 AI 编码助手的浓厚兴趣，可能提升软件工程生产力。 Claude Code 直接在终端中运行，使用自然语言执行任务、解释代码和管理 git 工作流，由 Anthropic 用 Python 构建。
 
-github_trending · GitHub Trending · 7月4日 03:16
+github_trending · GitHub Trending · 7月4日 03:27
 
-**背景**: AI 智能体框架为开发和自主管理 AI 智能体提供了基础组件。多智能体系统为智能体分配不同角色，模拟人类团队结构以协作处理复杂任务。
+**背景**: 智能编码工具是能够以最少人工干预执行多步开发任务的 AI 系统。Claude Code 就是这样一个驻留在终端中的工具，可以读取和编辑代码、运行命令，帮助开发者更快地交付产品。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/agent-framework/overview/">Microsoft Agent Framework Overview | Microsoft Learn</a></li>
-<li><a href="https://www.ibm.com/think/insights/top-ai-agent-frameworks">AI Agent Frameworks: Choosing the Right Foundation for Your Business | IBM</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal , IDE</a></li>
+<li><a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code overview - Anthropic</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI agents`, `#framework`, `#Shell`, `#open source`, `#tooling`
+**标签**: `#AI coding assistant`, `#developer tools`, `#Anthropic`, `#terminal`, `#agentic`
 
 ---
 
 <a id="item-5"></a>
-## [程序即权重：将自然语言编译为紧凑神经工件](https://huggingface.co/papers/2607.02512) ⭐️ 8.0/10
+## [程序即权重：将自然语言规范编译为紧凑神经制品](https://huggingface.co/papers/2607.02512) ⭐️ 8.0/10
 
-研究人员提出“程序即权重”（PAW）范式，使用 4B 编译器将自然语言规范编译为紧凑神经工件，并由 0.6B 解释器执行，性能媲美 32B 模型，但推理内存仅为其 1/50，在 MacBook M3 上可达 30 tokens/s。 该工作将大型基础模型从每次输入的问题求解器重新定位为工具构建者，使得模糊函数（如日志告警、JSON 修复）能够高效本地执行，无需昂贵的 API 调用。它大幅降低了资源需求，使先进 NLP 能力可在边缘设备上使用。 PAW 编译器在作者发布的包含 1000 万样本的新数据集 FuzzyBench 上训练。解释器是冻结的 0.6B Qwen3 模型，执行编译器生成的参数高效适配器，性能与直接提示 Qwen3-32B 相当。
+研究人员提出了模糊函数编程，并通过程序即权重（PAW）实现：一个在 FuzzyBench（1000 万示例）上训练的 4B 编译器，为冻结的 0.6B 解释器生成参数高效适配器，其性能与 32B 模型相当，但推理内存仅需 1/50。 该范式将基础模型从逐个输入的问题解决者转变为工具构建者，使得日志告警或 JSON 修复等模糊函数能够廉价、本地执行，无需依赖大型 API 调用。这可能使日常编程任务中的高质量 AI 更加普及。 PAW 编译器是一个 4B 模型，在 FuzzyBench（一个包含 1000 万自然语言到适配器示例的新数据集）上训练。解释器是冻结的 0.6B Qwen3 模型，在 MacBook M3 上以 30 tokens/s 运行，通过直接提示达到与 Qwen3-32B 相当的性能。
 
 huggingface_papers · Hugging Face Papers · 7月3日 00:00
 
-**背景**: 许多编程任务（如日志行告警或搜索结果排序）难以用显式规则实现，常被外包给大型语言模型 API，这会引入延迟、成本和可重复性问题。参数高效适配器（如 LoRA）允许在不修改基础模型的情况下，针对特定任务微调少量模型参数。PAW 结合了这些思想，使用编译器从自然语言生成适配器，从而实现高效的本地执行。
+**背景**: 许多编程任务（如日志行告警、修复格式错误的 JSON）难以用规则指定，通常外包给大型语言模型 API，这带来了成本、延迟和可重复性问题。模糊函数编程旨在将自然语言规范编译为紧凑、可本地执行的神经制品，结合了 LLM 的灵活性和传统程序的效率。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://weightagnostic.github.io/">Weight Agnostic Neural Networks</a></li>
-<li><a href="https://arxiv.org/abs/1902.00751">[1902.00751] Parameter-Efficient Transfer Learning for NLP GitHub - adapter-hub/adapters: A Unified Library for ... Awesome Adapter Resources - Clifton Poth LoRA & PEFT Fine-Tuning: Production Guide for 2026 - TheCodeForge ELP-Adapters: Parameter Efficient Adapter Tuning for Various ...</a></li>
+<li><a href="https://arxiv.org/abs/2607.02512">Program -as-Weights: A Programming Paradigm for Fuzzy Functions</a></li>
+<li><a href="https://huggingface.co/papers/2607.02512">Paper page - Program -as-Weights: A Programming Paradigm for...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#programming paradigms`, `#neural networks`, `#natural language processing`, `#efficient inference`, `#fuzzy functions`
+**标签**: `#programming paradigms`, `#neural compilation`, `#fuzzy functions`, `#parameter-efficient adapters`, `#natural language specification`
 
 ---
 
 <a id="item-6"></a>
-## [AgenticSTS：面向长周期 LLM 智能体的有界内存测试平台](https://huggingface.co/papers/2607.02255) ⭐️ 8.0/10
+## [面向长周期 LLM 智能体的有界记忆测试平台](https://huggingface.co/papers/2607.02255) ⭐️ 8.0/10
 
-研究人员提出了 AgenticSTS，这是一个面向长周期 LLM 智能体的有界内存测试平台，通过类型化检索组装全新提示，实现对内存组件的独立消融。在《杀戮尖塔 2》中，该设计取得了胜利，而基于公开转录的智能体得分为零。 这项工作解决了长周期智能体系统中的关键挑战：隔离单个内存组件的影响。有界契约方法有望为复杂决策任务带来更可解释、更高效的 LLM 智能体。 有界契约确保每个决策都使用通过类型化检索组装的新提示，不附加原始跨决策记录。在《杀戮尖塔 2》中，添加战略技能层将胜率从 3/10 提升至 6/10，但该比较仅为方向性（Fisher 精确检验 p≈0.37）。
+研究人员提出了 AgenticSTS，这是一个面向长周期 LLM 智能体的有界记忆测试平台，通过类型化检索组装全新提示，从而实现对记忆组件的隔离分析。在《Slay the Spire 2》中，固定 A0 消融实验显示，添加战略技能后胜率从 3/10 提升至 6/10。 这项工作通过引入有界记忆契约，使提示大小与运行长度无关，从而实现了可重复的消融研究，解决了长周期智能体设计中的关键挑战。它为研究显式记忆层如何影响智能体决策提供了经过验证的方法论，对复杂决策任务具有重要意义。 有界契约确保每个决策都通过类型化检索组装的全新提示做出，不附加任何跨决策原始记录。该测试平台包含 298 条带有条件标签的完整轨迹、冻结的记忆/技能快照以及分析脚本，均已公开发布。
 
 huggingface_papers · Hugging Face Papers · 7月3日 00:00
 
-**背景**: 长周期 LLM 智能体需要内存来跨多个决策持久化信息。最简单的方法是将所有历史附加到每个提示中，但这会创建混乱的上下文，使得难以研究单个内存组件。AgenticSTS 引入了一种有界契约，每个决策仅看到通过类型化检索组装的新提示，保持提示大小恒定，并支持干净的消融研究。
+**背景**: 长周期 LLM 智能体需要记忆来在多次交互中持久化和回忆信息，但传统方法将所有历史上下文附加到每个提示中，导致提示无限增长且难以隔离单个记忆组件的影响。有界契约将记忆视为关于每个未来决策允许看到什么的契约，通过 top-k 检索限制提示大小。《Slay the Spire 2》是一款复杂的卡牌构筑游戏，需要数百个战术和战略决策，为测试提供了具有挑战性的环境。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2607.02255">[2607.02255] AgenticSTS: A Bounded-Memory Testbed for Long ...</a></li>
-<li><a href="https://github.com/AlayaLab/AgenticSTS">GitHub - AlayaLab/AgenticSTS: Bounded, typed, ablatable ...</a></li>
-<li><a href="https://huggingface.co/papers/2607.02255">Paper page - AgenticSTS: A Bounded-Memory Testbed for Long ...</a></li>
+<li><a href="https://huggingface.co/papers/2607.02255">Paper page - AgenticSTS: A Bounded - Memory Testbed for...</a></li>
+<li><a href="https://arxiv.org/pdf/2607.02255">AgenticSTS: A Bounded - Memory Testbed for Long-Horizon LLM ...</a></li>
+<li><a href="https://github.com/AlayaLab/AgenticSTS">AlayaLab/AgenticSTS: Bounded , typed, ablatable memory contract ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM agents`, `#memory`, `#long-horizon`, `#testbed`, `#decision-making`
+**标签**: `#LLM agents`, `#memory`, `#decision-making`, `#testbed`, `#Slay the Spire`
 
 ---
 
 <a id="item-7"></a>
-## [Wordgard：ProseMirror 创建者推出的新富文本编辑器](https://wordgard.net/) ⭐️ 8.0/10
+## [Current AI 发布开源 AI 差距地图](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
 
-ProseMirror 的创建者发布了 Wordgard 0.1.0，这是一款新的浏览器内富文本编辑器。它与 ProseMirror 共享许多概念，但并非直接升级路径。 此次发布意义重大，因为它来自富文本编辑领域备受尊敬的创建者，社区反响热烈，获得了 273 个点赞和 90 条评论。它可能会影响基于 Web 的所见即所得编辑器的未来。 Wordgard 并非 ProseMirror 的直接升级版本；迁移需要大量工作。该编辑器设计轻量且易于使用，注重简洁性。
+Current AI 是一家在 2025 年 2 月巴黎人工智能行动峰会上成立的非营利组织，已获得 4 亿美元承诺资金。它发布了开源 AI 差距地图 v0.1，索引了开源 AI 栈中的 421 个产品，包括来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目。 该地图提供了开源 AI 生态系统的结构化、数据驱动概览，帮助开发者、研究人员和政策制定者识别差距和机遇。底层数据以 MIT 许可证发布，支持进一步分析和社区贡献。 该地图将产品组织到栈的 3 个层（模型组件、产品/用户体验和基础设施）的 14 个类别中，并跟踪了长尾中的 24,400 个额外工件。数据以 1,184 个 YAML 文件和包含 16,185 个 GitHub 仓库的 CSV 文件形式在 GitHub 上提供，并可通过 Datasette Lite 进行探索。
 
-hackernews · indy · 7月3日 08:50 · [社区讨论](https://news.ycombinator.com/item?id=48772573)
+rss · Simon Willison · 7月3日 22:04
 
-**背景**: ProseMirror 是一个流行的开源工具包，用于在浏览器中构建富文本编辑器，广泛应用于 TipTap 等应用中。Wordgard 是同一领域的新系统，旨在以全新方法简化内容编辑。
+**背景**: Current AI 是一个全球性的非营利合作伙伴关系，旨在构建 AI 的公共选项，获得了多方大量资金支持。2025 年 2 月在巴黎举行的人工智能行动峰会是一个重要的国际活动，聚焦于 AI 治理和公共利益 AI。差距地图旨在系统性地编录开源 AI 领域，该领域虽发展迅速但缺乏全面的地图。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://discuss.prosemirror.net/t/wordgard-0-1-0/9035">Wordgard 0.1.0 - Announce - discuss.ProseMirror</a></li>
-<li><a href="https://digitechbytes.com/digital-lifestyle-productivity/wordgard-in-browser-rich-text-editor-from-the-creator-of-prosemirror/">Wordgard: In-browser Rich-text Editor From The Creator Of ...</a></li>
+<li><a href="https://www.currentai.org/">Current AI | Building Public Interest AI Technology Together</a></li>
+<li><a href="https://www.currentai.org/blogs/introducing-the-gap-map-v0-1">Introducing the Gap Map v0.1</a></li>
+<li><a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/">Open Source AI Gap Map - simonwillison.net</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区对 Wordgard 背后的“原因”感到好奇，并指出从 ProseMirror 没有升级路径。一些用户看到与自己工作的相似之处感到被认可，而另一些用户则强调 ProseMirror 缺乏静态类型模式是一个痛点。
-
-**标签**: `#rich-text editor`, `#ProseMirror`, `#web development`, `#open source`, `#WYSIWYG`
+**标签**: `#open source`, `#AI`, `#ecosystem`, `#mapping`
 
 ---
 
 <a id="item-8"></a>
-## [PostgreSQL 与 OOM 杀手：为何严格内存过量使用至关重要](https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit) ⭐️ 8.0/10
+## [课程创作者报告销售额因 AI 下降超过 50%](https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything) ⭐️ 8.0/10
 
-Ubicloud 发布了一篇博客文章，解释了他们为何对 PostgreSQL 使用严格内存过量使用（vm.overcommit_memory=2）以防止 Linux OOM 杀手终止数据库进程，并分享了他们因内核 bug 而暂时禁用该设置的经验。 这很重要，因为 PostgreSQL 对内存压力敏感，而 Linux 默认的过量使用行为可能导致灾难性的 OOM 杀死，使数据库崩溃。该文章为寻求更可预测和稳定生产部署的数据库管理员提供了实用指导。 严格过量使用（模式 2）完全禁用内存过量使用，因此如果内存不可用，malloc() 返回 NULL，从而阻止 OOM 杀手激活。然而，如果过量使用比例配置不当，模式 2 可能导致 fork() 失败，文章还提到一个三个字符的内核 bug 迫使他们暂时恢复默认设置。
+知名课程创作者 Josh W. Comeau 报告称，其最新课程销量预计仅为通常水平的三分之一，现有课程销售额同比下滑超过 50%，他将此归因于 AI 引发的开发者就业不确定性以及 LLM 取代付费教育内容。 来自多位课程创作者的第一手数据表明，开发者教育市场正在发生结构性转变：AI 一方面因就业担忧降低了学习需求，另一方面用免费的 LLM 辅导替代付费内容，威胁独立教育工作者的生计。 Comeau 的第三门课程“Whimsical Animations”销量约为通常水平的三分之一，他与其他创作者交流后发现，所有人收入均下降 50%以上，参与度降低，许多人转向 LLM，而 LLM 未经同意或补偿即复制其作品。
 
-hackernews · furkansahin · 7月3日 13:00 · [社区讨论](https://news.ycombinator.com/item?id=48774509)
+rss · Simon Willison · 7月3日 21:25
 
-**背景**: Linux 默认使用内存过量使用（模式 0 - 启发式），允许进程分配比物理 RAM + 交换空间更多的虚拟内存，假设并非所有内存会同时使用。当系统内存耗尽时，OOM 杀手会选择并终止一个进程以释放内存，这可能会杀死关键的 PostgreSQL 进程。严格过量使用（模式 2）确保仅在内存实际可用时分配成功，避免 OOM 杀死，但存在分配失败的风险。
+**背景**: 长期以来，在线课程创作者依靠向寻求技能提升的开发者销售优质教育内容为生。然而，GPT-4 等大型语言模型（LLM）的快速发展使得个性化辅导成本降低，削弱了付费课程的感知价值。与此同时，AI 驱动的自动化担忧广泛蔓延，开发者因不确定未来就业前景而犹豫是否投入时间和金钱学习新技能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit">PostgreSQL and the OOM Killer: Why We Use Strict Memory ...</a></li>
-<li><a href="https://www.kernel.org/doc/Documentation/vm/overcommit-accounting">The Linux kernel supports the following overcommit handling modes</a></li>
-<li><a href="https://www.cybertec-postgresql.com/en/what-you-should-know-about-linux-memory-overcommit-in-postgresql/">Memory overcommit and PostgreSQL - CYBERTEC</a></li>
+<li><a href="https://economy.ac/review/2026/01/202601287061">When the Children Replace the Parent: How LLMs Replace ...</a></li>
+<li><a href="https://arxiv.org/html/2409.11917">LLMs in Education: Novel Perspectives, Challenges, and ...</a></li>
+<li><a href="https://files.eric.ed.gov/fulltext/EJ1487508.pdf">Assessing the Potential Challenges of Paid LLMs and ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者讨论了权衡：一些人指出 Linux 默认设置在内存压力下存在问题，而另一些人则警告模式 2 可能破坏依赖 fork() 或分配大量虚拟内存（例如 Go 程序）的应用程序。来自 Ubicloud 的一位评论者承认文章语气强烈，并强调严格过量使用在许多场景下可能产生未预料的副作用。
-
-**标签**: `#PostgreSQL`, `#Linux`, `#memory management`, `#OOM killer`, `#database administration`
+**标签**: `#AI impact`, `#developer education`, `#online courses`, `#job market`, `#LLMs`
 
 ---
 
 <a id="item-9"></a>
-## [开源 AI 差距图发布](https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything) ⭐️ 8.0/10
+## [HAT-4D：单目视频生成 4D 交互场景](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247901356&idx=3&sn=54ee94026f76691a380cd3ea214e0def) ⭐️ 8.0/10
 
-Current AI（一家于 2025 年 2 月成立的非营利组织）发布了开源 AI 差距图 v0.1，索引了 AI 堆栈中的 421 个产品，以识别差距和机会。 该图提供了开源 AI 生态系统的结构化概览，帮助开发者、投资者和政策制定者了解应聚焦于何处以及如何投入资金。 该图涵盖了来自 228 个组织的 266 个软件工具、85 个模型、50 个数据集和 20 个硬件项目，底层数据以 MIT 许可证发布在 GitHub 上。
+上海交通大学等机构提出 HAT-4D，这是首个从单目视频中重建多物体 3D 几何、时间动态和物理交互的智能体框架。 这一突破消除了对昂贵多摄像头动作捕捉棚的需求，使任何拥有单摄像头的人都能进行 4D 交互场景重建，可能彻底改变电影制作、游戏和机器人等领域。 HAT-4D 在 arXiv 论文（2606.28215）中详细描述，旨在从单段视频输入中处理多个物体及其物理交互，例如用刀切香蕉。
 
-rss · Simon Willison · 7月3日 22:04
+rss · 量子位 · 7月3日 03:43
 
-**背景**: Current AI 是一个致力于构建 AI 公共选项的全球合作伙伴关系，已获得 4 亿美元承诺资金。差距图基于哥伦比亚会议、MOF、Hugging Face 等机构的工作，绘制开源 AI 堆栈。
+**背景**: 传统的 4D 重建（3D+时间）通常需要多视角设置或昂贵的动作捕捉系统。近期如 CAT4D 和 Vivid4D 等工作也致力于将单目视频提升到 4D，但 HAT-4D 特别关注多物体物理交互，这是一个更具挑战性的任务。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/">Open Source AI Gap Map - simonwillison.net</a></li>
-<li><a href="https://map.currentai.org/">Current AI – Open Source AI Gap Map</a></li>
-<li><a href="https://www.currentai.org/blogs/introducing-the-gap-map-v0-1">Introducing the Gap Map v0.1 - currentai.org</a></li>
+<li><a href="https://arxiv.org/abs/2606.28215">[2606.28215] HAT-4D: Lifting Monocular Video for 4D Multi ...</a></li>
+<li><a href="https://arxiv.org/html/2606.28215v1">HAT-4D: Lifting Monocular Video for 4D Multi-Object ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#open source`, `#AI`, `#ecosystem`, `#mapping`, `#non-profit`
+**标签**: `#computer vision`, `#4D reconstruction`, `#AI`, `#motion capture`, `#monocular video`
 
 ---
 
 <a id="item-10"></a>
-## [HAT-4D：单目视频生成 4D 交互场景](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247901356&idx=3&sn=54ee94026f76691a380cd3ea214e0def) ⭐️ 8.0/10
+## [LongCat 2 模型权重发布在 Hugging Face 上](https://www.reddit.com/r/LocalLLaMA/comments/1umo8zu/longcat_2_model_weights_have_been_published/) ⭐️ 8.0/10
 
-上海交通大学等机构提出 HAT-4D 方法，能够直接从单目视频生成 4D 交互场景，无需昂贵的多摄像头动捕系统。 这一突破可能通过用单台消费级摄像头取代百万级动捕棚，为 VR/AR、游戏和电影制作中的 4D 内容创作带来民主化，大幅降低成本和准入门槛。 HAT-4D 从单目视频重建具有时间一致性的动态 3D 场景，支持交互式视角控制和场景编辑。该方法可能基于高斯泼溅或神经辐射场等 4D 重建领域的最新进展。
+美团在 Hugging Face 上发布了 LongCat 2.0 模型的 INT8 和 FP8 量化权重，使得长上下文 LLM 推理能够在降低内存占用的情况下进行。 此次发布使得长上下文 LLM 更易于本地部署，因为量化权重在保持性能的同时大幅降低了内存需求，惠及开源 AI 社区。 INT8 量化使用 8 位整数表示权重，而 FP8 使用 8 位浮点格式；两者均受现代硬件支持，可在消费级 GPU 上实现高效推理。
 
-rss · 量子位 · 7月3日 03:43
+reddit · r/LocalLLaMA · /u/RhubarbSimilar1683 · 7月3日 19:49
 
-**背景**: 传统的 4D（动态 3D）场景捕捉需要多摄像头阵列或昂贵的动捕服，成本高达数百万。近期如 CAT4D 和 Vivid4D 等研究已探索了从单目视频到 4D 重建，但 HAT-4D 专门针对交互式场景理解和操控。
+**背景**: 量化将模型权重从 32 位浮点数降低到 8 位精度，内存使用减少约 75%，而精度损失极小。长上下文 LLM 可以一次性处理数千个 token，适用于文档分析、长文推理等任务。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2504.11092">Vivid4D: Improving 4D Reconstruction from Monocular Video by ...</a></li>
-<li><a href="https://arxiv.org/abs/2601.18993">[2601.18993] FreeOrbit4D: Training-Free Arbitrary Camera ... 4D-Fly: Fast 4D Reconstruction from a Single Monocular Video CAT4D: Create Anything in 4D with Multi-View Video Diffusion ... Vivid4D: Improving 4D Reconstruction from Monocular Video by ... GitHub - VVeiCao/FreeOrbit4D: [SIGGRAPH 2026 Conference ...</a></li>
+<li><a href="https://www.mathworks.com/company/technical-articles/what-is-int8-quantization-and-why-is-it-popular-for-deep-neural-networks.html">What Is int8 Quantization and Why Is It Popular for Deep ...</a></li>
+<li><a href="https://rcrtech.com/semiconductor-news/llms-quantization-fp8-fp4-int8/">LLMs and quantization: FP8, FP4, and INT8 explained</a></li>
+<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#4D reconstruction`, `#computer vision`, `#AI`, `#motion capture`, `#scene understanding`
+**标签**: `#LLM`, `#open-source`, `#quantization`, `#long-context`, `#Hugging Face`
 
 ---
 
 <a id="item-11"></a>
-## [DeepSeek V4 Flash MoE 在 RTX 5090 上运行，使用自定义 llama.cpp 分支](https://www.reddit.com/r/LocalLLaMA/comments/1umsik8/deepseek_v4_flash_running_on_rtx_5090_moe/) ⭐️ 8.0/10
+## [ComfyUI 工作流无需 LoRA 即可根据故事生成漫画](https://www.reddit.com/r/StableDiffusion/comments/1umhul8/comfyui_instant_storytocomic_generator_no_loras/) ⭐️ 8.0/10
 
-一位 Reddit 用户使用自定义的 llama.cpp 分支，在 RTX 5090 上成功运行了 284B 参数的 MoE 模型 DeepSeek V4 Flash，实现了 21.3 TG T/s 和 927 PP T/s 的性能，并支持高达 100 万 token 的上下文。 这表明像 DeepSeek V4 Flash 这样的大型 MoE 模型可以在消费级硬件上本地运行，实现快速、私密的 AI 推理，无需云 API，凸显了本地 LLM 部署能力的提升。 该设置使用了 Q2_K 量化的 GGUF 模型、支持 CUDA 的自定义 llama.cpp 分支，以及 --n-cpu-moe 37 参数将专家层卸载到 CPU，从而在 512 ub 下适配了 100 万上下文。构建目标为 CUDA 架构 120（Blackwell）。
+一个 ComfyUI 工作流被发布，它可以直接根据书面故事生成一致的漫画页面，仅使用基于语言的世界描述，无需 LoRA、参考图像或 ControlNet。 这种方法展示了 AI 辅助叙事中的范式转变，通过语言而非视觉参考实现一致性，可能简化漫画创作并使叙事生成更加普及。 该工作流使用标准 ComfyUI 节点和一个小的 Python 脚本将生成的脚本分割成页面，依靠重复的规范语义描述来保持独立生成图像之间的一致性。
 
-reddit · r/LocalLLaMA · /u/H_DANILO · 7月3日 22:48
+reddit · r/StableDiffusion · /u/aurelm · 7月3日 15:41
 
-**背景**: DeepSeek V4 Flash 是一个 284B 参数的混合专家（MoE）模型，激活参数为 13B，支持 100 万 token 上下文窗口，针对快速编码和智能体任务进行了优化。RTX 5090 是 NVIDIA 基于 Blackwell 架构的最新消费级 GPU。llama.cpp 是一个用于本地运行 LLM 的开源 C++ 实现，而自定义分支增加了对 DeepSeek V4 架构的支持。
+**背景**: ComfyUI 是一个基于节点的 Stable Diffusion 界面，允许用户创建自定义图像生成工作流。传统的人物一致性方法通常需要 LoRA 训练、ControlNet 或参考图像，这可能耗时且资源密集。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://build.nvidia.com/deepseek-ai/deepseek-v4-flash">deepseek - v 4 - flash Model by Deepseek -ai | NVIDIA NIM</a></li>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
-<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V 4 Flash - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://comfy.org/workflows/">ComfyUI Workflows - Free AI Generation Workflows</a></li>
+<li><a href="https://docs.comfy.org/development/core-concepts/workflow">Workflow - ComfyUI</a></li>
+<li><a href="https://civitai.com/articles/27654/character-consistency-without-loras-free-360-viewers-with-ltx-video-23-in-comfyui">Character Consistency Without LoRAs : Free 360° Viewers... | Civitai</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区称赞了这一成就，后续基准测试显示，DeepSeek V4 Flash 在 vLLM 上达到了 Sonnet 级别的质量，并且实际运行时间比基于 API 的模型更快。用户指出，本地模型现在具有竞争力，尤其是在避免密集注意力时，而 Opus 和 Fable 在质量上仍然领先。
+**社区讨论**: 社区讨论活跃且富有洞察力，用户探讨了仅语言一致性方法的影响和局限性，指出其可能使漫画创作民主化，同时质疑其在复杂叙事中的稳健性。
 
-**标签**: `#DeepSeek`, `#RTX 5090`, `#MoE`, `#llama.cpp`, `#benchmark`
+**标签**: `#Stable Diffusion`, `#ComfyUI`, `#AI comic generation`, `#character consistency`, `#workflow`
 
 ---
 
 <a id="item-12"></a>
-## [CDD 无需权重访问即可从 LLM 对数中恢复微调数据](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
+## [CDD 仅从 logits 恢复微调逐字数据](https://www.reddit.com/r/MachineLearning/comments/1umn2dk/contrastive_decoding_diffing_cdd_recovering/) ⭐️ 8.0/10
 
-研究人员提出了对比解码差分（CDD），这是一种灰盒方法，通过对比基模型和微调模型的对数来从大语言模型中逐字恢复微调数据，无需权重访问即可获得高恢复分数。 CDD 解决了大语言模型中的一个关键隐私和安全问题，它表明仅通过对数访问（比权重更容易获取）就能提取微调数据，可能暴露微调中使用的敏感信息。 在 SDF 基准测试中，CDD 在四个模型家族（1B 到 32B 参数）的 20 个生物-模型对中的 19 个上实现了 4+/5 的逐字恢复分数，优于白盒方法 Activation Difference Lens (ADL)，后者从未超过 3/5。
+研究人员提出了对比解码差异分析（CDD），这是一种灰盒方法，通过对比基础模型和微调模型的 logits 来恢复 LLM 中的逐字微调数据，在四个模型家族（1B-32B 参数）的 19/20 个模型对上实现了 4+/5 的恢复分数，且无需访问权重。 CDD 仅通过 logits 访问即可实现逐字内容恢复，性能优于 Activation Difference Lens (ADL)等白盒方法，显著推动了模型可解释性和安全性。这有助于检测 LLM 中的未经授权微调、数据泄露或隐藏后门。 CDD 使用单一默认配置，无需逐模型校准或层选择，即可实现高恢复分数。一个意外发现是，虚构名字'Dr. Elena Rodriguez'出现在多个微调领域，追溯发现这是 Claude Sonnet 3.6 在合成数据生成中的偏好所致。
 
 reddit · r/MachineLearning · /u/CebulkaZapiekana · 7月3日 19:01
 
-**背景**: 模型差分旨在识别基模型与其微调版本之间的差异。先前的工作 Activation Difference Lens (ADL) 需要完全权重访问，且只能恢复模糊的领域级描述。CDD 在输出层操作，仅使用对数分布，使其成为一种更实用的灰盒方法。
+**背景**: 模型差异分析比较基础 LLM 及其微调版本以检测变化。先前的工作 Activation Difference Lens (ADL)需要白盒权重访问，且仅能恢复模糊的领域描述。CDD 仅基于 logits（输出概率）运行，是一种灰盒方法，在模型权重专有的实际场景中更为实用。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://www.emergentmind.com/papers/2605.25902">CDD: Verbatim Content Recovery via Diffing</a></li>
+<li><a href="https://arxiv.org/abs/2605.25902">[2605.25902] Reading the Finetuning Prior: Verbatim Content ...</a></li>
 <li><a href="https://www.machinebrief.com/news/unlocking-ais-hidden-memories-with-contrastive-decoding-9a3m">Unlocking AI's Hidden Memories with Contrastive Decoding</a></li>
-<li><a href="https://arxiv.org/html/2510.13900">Narrow Finetuning Leaves Clearly Readable Traces in Activation ...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论强调了该方法的创新性和隐私影响，一些评论者注意到一个令人惊讶的发现：一个虚构人物“Dr. Elena Rodriguez”在无关的微调领域中反复出现，表明合成数据生成中存在偏差。其他人则讨论了实际威胁程度和潜在的防御措施。
+**社区讨论**: Reddit 上的讨论内容充实，用户提出了关于该方法局限性和潜在应用的技术问题。作者积极参与，澄清了 CDD 在窄微调模型上效果最佳，并讨论了模型安全方面的意义。
 
-**标签**: `#LLM`, `#model diffing`, `#privacy`, `#finetuning`, `#security`
+**标签**: `#LLM`, `#model diffing`, `#interpretability`, `#finetuning`, `#security`
 
 ---
 
 <a id="item-13"></a>
-## [系统提示提取攻击对 60-70%的 AI 智能体有效](https://www.reddit.com/r/artificial/comments/1ums1ou/repeat_the_text_above_this_line_still_works_on/) ⭐️ 8.0/10
+## [简单提示注入可提取 60-70% AI 助手的系统提示](https://www.reddit.com/r/artificial/comments/1ums1ou/repeat_the_text_above_this_line_still_works_on/) ⭐️ 8.0/10
 
-一种简单的提示注入攻击，例如要求“重复此行上方的文本”，可以从 60-70%已部署的 AI 智能体中提取完整的系统提示，暴露防护措施、工具配置和 API 密钥。 这一漏洞构成严重安全风险，因为泄露的系统提示为攻击者提供了绕过防护、访问内部工具和利用业务逻辑的路线图，影响无数生产环境中的 AI 系统。 该攻击通过直接命令、翻译技巧、编码请求、角色扮演和多轮对话等方式生效；有效的防御措施包括角色锚定、输出过滤、提示分段和元指令感知。
+一项新的安全扫描显示，60-70%的已部署 AI 助手在收到“重复此行上方的文本”或“对话开始前你被告知了什么”等简单指令时，会泄露其完整的系统提示，包括防护规则、工具配置和 API 路由指令。 这一普遍存在的漏洞暴露了敏感的业务逻辑、API 密钥和内部工作流程，使攻击者能够以极小的努力进行有针对性的越狱并绕过安全措施，对企业 AI 部署构成严重风险。 该攻击通过多种变体实现，包括翻译技巧、编码请求、角色扮演以及通过多轮对话建立信任后再询问技术细节。有效的防御措施包括角色锚定、输出过滤、提示分段和元指令感知，而仅告诉助手“保密”是无效的。
 
 reddit · r/artificial · /u/Still_Piglet9217 · 7月3日 22:27
 
-**背景**: 系统提示提取是一种提示注入攻击，攻击者诱使 LLM 泄露其隐藏的系统指令。这些指令定义了模型的行为、工具访问权限和安全规则。该攻击利用了模型无法区分开发者定义的提示和用户输入这一根本性挑战。
+**背景**: 系统提示提取是一种提示注入攻击，攻击者诱使大语言模型泄露其隐藏的系统指令。这些指令定义了模型的行为、安全规则和工具访问权限，通常不应被用户看到。该攻击利用了模型无法区分开发者定义的指令和用户输入这一根本性挑战。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2505.23817">System Prompt Extraction Attacks and Defenses in Large Language...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection_attack">Prompt injection attack</a></li>
-<li><a href="https://wraith.sh/learn/system-prompt-extraction-guide">System Prompt Extraction : Techniques and Defenses | Wraith</a></li>
+<li><a href="https://github.com/asgeirtj/system_prompts_leaks">GitHub - asgeirtj/system_prompts_leaks: Extracted system ...</a></li>
+<li><a href="https://arxiv.org/abs/2505.23817">System Prompt Extraction Attacks and Defenses in Large ... System Prompt Extraction - Learn LLM Security | chat.win How to Extract System Instructions from Any LLM (Yes, Even ... LLM-Penetration-Testing-KnowledgeBase/06-System-Prompt ... System Prompt Extraction — Definition, Examples & Prevention ... System Prompt Extraction Attacks and Defenses in Large ...</a></li>
+<li><a href="https://learn.chat.win/exploit-prompts/system-prompt-extraction">System Prompt Extraction - Learn LLM Security | chat.win</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 上的讨论基本验证了这些发现，许多用户分享了类似经历，并强调需要更好的防御措施。一些评论者指出，该攻击执行起来非常简单，尽管已知风险，许多生产环境中的智能体仍然脆弱。
+**社区讨论**: Reddit 讨论凸显了对此漏洞的广泛担忧，许多用户分享了从流行 AI 助手中提取系统提示的个人经历。一些人就所提防御措施的有效性展开辩论，指出角色锚定和输出过滤可能被巧妙的措辞绕过。其他人则强调需要将提示分段和更严格的访问控制作为更稳健的解决方案。
 
-**标签**: `#AI security`, `#prompt injection`, `#system prompt extraction`, `#LLM vulnerabilities`, `#red teaming`
+**标签**: `#AI security`, `#prompt injection`, `#system prompt extraction`, `#LLM vulnerabilities`
 
 ---
 
 <a id="item-14"></a>
-## [Elixir 1.2 引入渐进集合论类型系统](https://www.reddit.com/r/ProgrammingLanguages/comments/1umai41/what_does_it_take_to_add_settheoretic_types_to_a/) ⭐️ 8.0/10
+## [Elixir 1.2 发布渐进式集合论类型系统](https://www.reddit.com/r/ProgrammingLanguages/comments/1umai41/what_does_it_take_to_add_settheoretic_types_to_a/) ⭐️ 8.0/10
 
-Elixir 1.2 发布了一个基于 Guillaume Dubois 在巴黎 IRIF 的博士工作的渐进集合论类型系统，同时德国 RPTU 的 Annette Bieniusa 正在基于相同基础为 Erlang 构建一个并行类型检查器。 这标志着一项重大技术成就：在拥有 30 年生产代码的动态语言上改造出一个富有表现力的类型系统，此前数十年间包括 Philip Wadler 在 1995 年的尝试均以失败告终。 动态类型从一开始就被结构性地嵌入集合论格中，系统在拒绝代码之前会发出警告；跨进程的消息类型化目前明确不在范围内。
+Elixir 1.2 正在发布一个基于 Guillaume Dubois 博士工作的渐进式集合论类型系统，同时 Annette Bieniusa 也在为 Erlang 进行平行开发。该系统从一开始就将动态类型结构性地嵌入类型格中，并采用“先警告后拒绝”的设计。 这标志着在拥有数十年生产代码的动态语言上改造表达性类型系统的重大进展，有望提升 Elixir 和 Erlang 生态系统的可靠性和开发者体验。其设计选择，如动态类型的结构性嵌入和先警告后拒绝，为大型代码库的渐进式类型化提供了一条务实路径。 该类型系统基于集合论类型和渐进式类型化，将 dynamic() 视为一个范围类型的渐进类型。跨进程的消息类型化目前明确不在范围内，当前里程碑专注于类型推断，无需用户提供类型签名。
 
 reddit · r/ProgrammingLanguages · /u/rtrusca · 7月3日 10:14
 
-**背景**: 渐进类型允许在同一语言中混合静态和动态类型。集合论类型使用集合运算（并集、交集、否定）来描述类型，从而能够精确建模动态模式。Elixir 运行在 Erlang 虚拟机（BEAM）上，该虚拟机历来抵制静态类型化。
+**背景**: 自 1995 年以来，Erlang 一直抵制静态类型化，Philip Wadler 的早期尝试也未能成功。集合论类型将类型视为值的集合，支持并集、交集和否定操作。渐进式类型化允许开发者在同一代码库中混合静态和动态类型。BEAM 虚拟机同时运行 Elixir 和 Erlang。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Gradual_typing">Gradual typing</a></li>
-<li><a href="https://elixir-lang.org/blog/2026/06/03/elixir-v1-20-0-released/">Elixir v1.20 released: now a gradually typed language</a></li>
-<li><a href="https://www.reddit.com/r/programming/comments/1twg7mu/elixir_v120_released_now_a_gradually_typed/">Elixir v1.20 released: now a gradually typed language : r/programming - Reddit</a></li>
+<li><a href="https://elixir.hexdocs.pm/main/gradual-set-theoretic-types.html">Gradual set-theoretic types — Elixir v1.21.0-dev - HexDocs</a></li>
+<li><a href="https://github.com/elixir-lang/elixir/blob/main/lib/elixir/pages/references/gradual-set-theoretic-types.md">elixir/lib/elixir/pages/references/gradual-set-theoretic ...</a></li>
+<li><a href="https://src.acm.org/binaries/content/assets/src/2016/victorlanvin.pdf">Gradual Set-Theoretic Types</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 讨论强调了在动态语言上改造类型系统的难度，并将 Elixir 的方法与 TypeScript 和 Hack 等其他渐进类型化努力进行了比较。一些评论者对集合论类型在大型代码库中的实用性表示怀疑。
+**社区讨论**: Reddit 讨论强调了为 Erlang 添加静态类型的历史困难，并赞扬了务实的设计选择。一些评论者将此方法与 TypeScript 等其他渐进式类型系统进行比较，指出了表达力和复杂性之间的权衡。
 
-**标签**: `#type systems`, `#Elixir`, `#Erlang`, `#gradual typing`, `#programming languages`
+**标签**: `#type systems`, `#Elixir`, `#Erlang`, `#programming languages`, `#gradual typing`
 
 ---
 
 <a id="item-15"></a>
-## [OmniRoute：免费 AI 网关，支持 230 多家提供商](https://github.com/diegosouzapw/OmniRoute) ⭐️ 8.0/10
+## [阿里巴巴 Page-Agent：用自然语言控制网页](https://github.com/alibaba/page-agent) ⭐️ 8.0/10
 
-OmniRoute 是一个用 TypeScript 编写的免费开源 AI 网关，现在提供单一端点，可访问超过 230 家 AI 提供商（包括 50 多个免费层），并具备令牌压缩和智能自动回退功能。 该项目通过将众多提供商统一到一个 API 后面，简化了 AI 集成，通过令牌压缩降低成本，并通过自动回退确保可靠性，这对构建 AI 驱动应用的开发者非常有价值。 OmniRoute 使用 RTK（Rust Token Killer）和 Caveman 堆叠压缩，可节省 15-95%的令牌，支持 MCP 和 A2A 协议、多模态 API，并可作为桌面应用或 PWA 使用。
+阿里巴巴发布了 Page-Agent，这是一个开源的 TypeScript 库，作为页面内 GUI 代理，允许用户通过自然语言命令控制网页界面。 该项目通过自然语言与网页交互，简化了网页自动化，使非技术用户也能轻松操作，可能改变人们使用和自动化网页应用的方式。 Page-Agent 使用 TypeScript 编写，在 GitHub 上已获得超过 22,000 颗星，可通过单个脚本集成到任何网页中，并为外部代理提供函数调用接口。
 
-ossinsight · GitHub Trending · 7月4日 03:16
+ossinsight · GitHub Trending · 7月4日 03:27
 
-**背景**: AI 网关是位于应用程序和 AI 服务提供商之间的中间件，管理 API 调用、路由、安全和监控。像 RTK 和 Caveman 这样的令牌压缩技术减少了发送给 LLM 的令牌数量，从而降低成本。MCP（模型上下文协议）和 A2A（代理间协议）是用于代理互操作性的新兴协议。
+**背景**: GUI 代理是能够像人类一样与图形用户界面交互的 AI 工具。Page-Agent 直接在浏览器中运行，无需修改服务器端即可轻松为现有网页应用添加智能自动化功能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://dev.to/sonim1/token-saving-and-caveman-e1f">Token Saving, and Caveman - DEV Community</a></li>
-<li><a href="https://a2a-protocol.org/latest/">A 2 A Protocol</a></li>
-<li><a href="https://vercel.com/ai-gateway">AI Gateway – Vercel</a></li>
+<li><a href="https://github.com/alibaba/page-agent">GitHub - alibaba/page-agent: JavaScript in-page GUI agent ...</a></li>
+<li><a href="https://alibaba.github.io/page-agent/">PageAgent - The GUI Agent Living in Your Webpage</a></li>
+<li><a href="https://www.scriptbyai.com/web-page-agent/">Page Agent : Free & Open-source In - Page AI Browser Control</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI Gateway`, `#TypeScript`, `#Open Source`, `#API`, `#Token Compression`
+**标签**: `#GUI agent`, `#natural language`, `#web automation`, `#TypeScript`, `#open source`
 
 ---
