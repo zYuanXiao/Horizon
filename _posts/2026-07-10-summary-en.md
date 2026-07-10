@@ -9,150 +9,128 @@ lang: en
 
 ---
 
-1. [EU Parliament Approves Chat Control 1.0 via Procedural Loophole](#item-1) ⭐️ 9.0/10
-2. [OpenAI Releases GPT-5.6 with ARC-AGI-3 SOTA](#item-2) ⭐️ 9.0/10
-3. [SpaceXAI Launches Grok 4.5, an Opus-Class Model](#item-3) ⭐️ 9.0/10
-4. [Gemma 4: Open Multimodal Models with Diverse Architectures](#item-4) ⭐️ 9.0/10
-5. [Agent Skills: Production-Grade Skills for AI Coding Agents](#item-5) ⭐️ 8.0/10
-6. [OfficeCLI: Open-source CLI for AI-driven Office automation](#item-6) ⭐️ 8.0/10
-7. [Vidu S1: Real-Time Interactive Video Generation Model](#item-7) ⭐️ 8.0/10
-8. [Meta Launches Muse Spark 1.1 with Pay-Per-Task Pricing](#item-8) ⭐️ 8.0/10
-9. [GPT-5.6 Becomes Preferred Model in Microsoft 365 Copilot](#item-9) ⭐️ 8.0/10
+1. [EU Parliament Reauthorizes Mass Message Scanning Until 2028](#item-1) ⭐️ 9.0/10
+2. [OpenAI Releases GPT-5.6 with SOTA on ARC-AGI-3](#item-2) ⭐️ 9.0/10
+3. [SpaceXAI Launches Grok 4.5, First Opus-Class Model After Cursor Acquisition](#item-3) ⭐️ 9.0/10
+4. [Agent Skills: Production-Grade Engineering Skills for AI Coders](#item-4) ⭐️ 8.0/10
+5. [OfficeCLI: AI agents control Office files without installation](#item-5) ⭐️ 8.0/10
+6. [SciReasoner: Interpretable Structural Reasoning Across Sciences](#item-6) ⭐️ 8.0/10
+7. [LaMem-VLA: Latent Memory for Robot Long-Horizon Tasks](#item-7) ⭐️ 8.0/10
+8. [Undergrad First Author Achieves 7.92x Speedup in Speculative Decoding](#item-8) ⭐️ 8.0/10
+9. [OpenAI Launches Bio Bug Bounty for GPT-5.5](#item-9) ⭐️ 8.0/10
 10. [Humanoid Robots Perform World-First Surgery on Live Pigs](#item-10) ⭐️ 8.0/10
-11. [OpenAI faces sanctions for hiding ChatGPT logs in NYT lawsuit](#item-11) ⭐️ 8.0/10
-12. [GLM-5.2 (744B MoE) Runs on 25GB RAM Consumer Laptop](#item-12) ⭐️ 8.0/10
-13. [Untuned 27B Model Beats Tuned 75B in Agentic Tasks](#item-13) ⭐️ 8.0/10
-14. [Quantization Hits Math Harder Than Chat: User's Systematic Test](#item-14) ⭐️ 8.0/10
-15. [Court Orders OpenAI to Disclose 20M ChatGPT Conversations](#item-15) ⭐️ 8.0/10
+11. [GLM-5.2 744B MoE Runs on 25GB RAM Consumer Laptop](#item-11) ⭐️ 8.0/10
+12. [Untuned 27B Model Outperforms Tuned 75B in Agent Tasks](#item-12) ⭐️ 8.0/10
+13. [75B MoE Model Runs at 132 t/s on 3×3090 GPUs](#item-13) ⭐️ 8.0/10
+14. [Quantization Hits LLM Capabilities Unevenly](#item-14) ⭐️ 8.0/10
+15. [OpenAI Ordered to Disclose ChatGPT Conversations in Copyright Case](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [EU Parliament Approves Chat Control 1.0 via Procedural Loophole](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 9.0/10
+## [EU Parliament Reauthorizes Mass Message Scanning Until 2028](https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/) ⭐️ 9.0/10
 
-On July 8, 2026, the European Parliament approved Chat Control 1.0, allowing mass scanning of private messages without a warrant, despite a majority of MEPs voting against it. The measure was adopted because a motion to reject failed to secure the required absolute majority of 361 votes. This decision sets a precedent for mass surveillance in the EU, undermining digital privacy and encryption. It directly impacts users of platforms like Instagram, Discord, Gmail, and iCloud, and could influence future surveillance legislation globally. The regulation was reinstated until 2028, allowing US tech companies to scan private messages without suspicion. The vote was held on the last day before summer break, with 113 MEPs absent, enabling the procedural trick to succeed.
+The EU Parliament has reauthorized Chat Control 1.0, allowing mass scanning of private messages without a warrant until 2028, despite a majority of voting MEPs opposing it (314 against, 276 in favor). The measure was rejected twice in March but passed due to a procedural requirement for an absolute majority of 361 votes to block it. This decision significantly undermines digital privacy and end-to-end encryption in the EU, setting a precedent for mass surveillance of private communications. It affects millions of users on platforms like Instagram, Discord, Snapchat, Skype, Xbox, Gmail, and iCloud, and could embolden similar measures globally. The reauthorization was pushed through using an urgency procedure on the last parliamentary session before the summer break, requiring an absolute majority of all MEPs (361) to reject it—a threshold not met despite 314 votes against. The measure applies to direct messages and emails, while public posts and cloud storage were already scannable.
 
 hackernews · rapnie · Jul 9, 11:03 · [Discussion](https://news.ycombinator.com/item?id=48843923)
 
-**Background**: Chat Control 1.0 is an EU regulation that permits voluntary, indiscriminate scanning of private messages for child sexual abuse material. It originally expired but was revived through a procedural loophole in the second reading, where the Council's position can only be rejected by an absolute majority of all MEPs, not just those voting.
+**Background**: Chat Control 1.0 is a temporary EU regulation originally introduced in 2021 to combat child sexual abuse material online. It allows tech companies to voluntarily scan private messages, but critics argue it effectively mandates mass surveillance and breaks end-to-end encryption. The European Parliament requires an absolute majority (361 of 720 MEPs) to reject certain procedural motions, a rule that enabled the measure's passage despite majority opposition.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.patrick-breyer.de/en/procedural-trick-before-summer-recess-pushes-eu-parliament-towards-capitulation-on-chat-control/">Procedural Trick Before Summer Recess Pushes EU Parliament Towards Capitulation on "Chat Control"</a></li>
-<li><a href="https://cyberinsider.com/eu-now-one-step-away-from-reviving-private-message-scanning-rules/">EU now one step away from reviving private message scanning rules</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chat_Control_1.0">Chat Control 1.0</a></li>
+<li><a href="https://www.techtimes.com/articles/320010/20260709/eu-parliament-passes-chat-control-default-314-meps-couldnt-block-scanning-law.htm">EU Parliament Passes Chat Control by Default: 314 MEPs Couldn ...</a></li>
+<li><a href="https://www.europarl.europa.eu/external/appendix/legislativeprocedure/europarl_ordinarylegislativeprocedure_glossary_en.pdf">Legislative procedure - European Parliament</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed outrage at the undemocratic procedure, calling it a 'stupid parliamentary trick' and warning that the EU is moving toward totalitarianism. Some highlighted that the vote was forced on the last session before summer break, with many MEPs absent, and criticized the use of the EU as a blame-laundering mechanism for unpopular laws.
+**Discussion**: Commenters expressed outrage over the procedural trick, calling it undemocratic and warning that the EU is becoming totalitarian. Some highlighted that the vote was held on the last day before summer break, with many MEPs absent, and criticized Roberta Metsola's role in forcing the urgency procedure.
 
-**Tags**: `#privacy`, `#surveillance`, `#EU legislation`, `#digital rights`, `#encryption`
+**Tags**: `#privacy`, `#surveillance`, `#EU legislation`, `#encryption`, `#digital rights`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI Releases GPT-5.6 with ARC-AGI-3 SOTA](https://openai.com/index/gpt-5-6/) ⭐️ 9.0/10
+## [OpenAI Releases GPT-5.6 with SOTA on ARC-AGI-3](https://openai.com/index/gpt-5-6/) ⭐️ 9.0/10
 
-OpenAI has released GPT-5.6, a new frontier model that achieves state-of-the-art performance on the ARC-AGI-3 benchmark with a score of 7.8% using the Sol variant at max reasoning effort. The model also introduces enhanced intent understanding and preserves original image dimensions for better detail. GPT-5.6 is the first verified frontier model to beat an ARC-AGI-3 game, marking a significant step toward agentic intelligence. Its improved intent understanding and image processing could enhance developer applications and user interactions. The model achieves 7.8% on ARC-AGI-3, a benchmark that tests interactive reasoning through novel environments. OpenAI's developer guide highlights that GPT-5.6 can better infer user intent and preserves original image dimensions, unlike previous models that resized images.
+OpenAI has released the GPT-5.6 family of models, achieving a new state-of-the-art score of 7.8% on the ARC-AGI-3 benchmark and introducing enhanced intent understanding and image detail preservation capabilities. This release marks a significant step toward more capable AI agents, as GPT-5.6 is the first verified frontier model to beat an ARC-AGI-3 game, demonstrating improved reasoning and adaptability in novel environments. The model family includes GPT-5.6 Sol at max reasoning effort, which scored 7.8% on ARC-AGI-3. OpenAI also notes that GPT-5.6 preserves original image dimensions and can better infer user intent without explicit step-by-step instructions.
 
 hackernews · OpenAI Blog · Jul 9, 17:04 · [Discussion](https://news.ycombinator.com/item?id=48849066)
 
-**Background**: ARC-AGI-3 is an interactive benchmark for evaluating agentic intelligence through novel, abstract, turn-based environments where agents must explore, infer goals, and plan actions. Frontier models are the most advanced general-purpose AI models, capable of reasoning, multimodal generation, and agentic workflows. GPT-5.6 is OpenAI's latest flagship model, succeeding GPT-5.5.
+**Background**: ARC-AGI-3 is an interactive benchmark that evaluates agentic intelligence by requiring AI agents to explore, infer goals, and plan in novel turn-based environments without explicit instructions. It builds on previous ARC-AGI versions, which measured passive fluid intelligence, and focuses on adaptive efficiency. GPT-5.6's performance on this benchmark suggests progress toward more general artificial intelligence.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arcprize.org/arc-agi/3">ARC-AGI-3</a></li>
-<li><a href="https://arxiv.org/abs/2603.24621">ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence Announcing ARC-AGI-3 - ARC Prize GPT 5.6 Sol Tops ARC-AGI 3 With 7.8%, Becomes First Model To ... ARC-AGI-3: The New Interactive Reasoning Benchmark - DataCamp ARC-AGI-3: Interactive AGI Benchmark - emergentmind.com</a></li>
-<li><a href="https://www.nvidia.com/en-us/glossary/frontier-models/">What Are Frontier AI Models and How They Work - NVIDIA</a></li>
+<li><a href="https://arxiv.org/abs/2603.24621">ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence ARC-AGI-3 Leaderboard - ARC Prize ARC-AGI-3: The New Interactive Reasoning Benchmark - DataCamp GitHub - arcprize/arc-agi-3-benchmarking GPT 5.6 Sol Tops ARC-AGI 3 With 7.8%, Becomes First Model To ...</a></li>
+<li><a href="https://arxiv.org/html/2603.24621v1">ARC-AGI-3: A New Challenge for Frontier Agentic Intelligence</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments show mixed reactions: some users praise the ARC-AGI-3 achievement and intent understanding, while others note that GPT-5.6's coding performance (e.g., in a toy RTS game) is similar to GPT-5.5 and behind Sonnet 5. A user also points out that OpenAI excluded a competitor model from comparisons because it refused most biology questions.
+**Discussion**: Community comments highlight GPT-5.6's SOTA on ARC-AGI-3 and its improved intent understanding, with some users noting that it was not compared to certain models like Fable 5 in biology benchmarks due to refusal to answer. There is also discussion about coding performance, with one user finding GPT-5.6 similar to GPT-5.5 and slightly behind Sonnet 5 in a toy RTS game test.
 
-**Tags**: `#GPT-5.6`, `#OpenAI`, `#AI`, `#LLM`, `#ARC-AGI`
+**Tags**: `#AI`, `#OpenAI`, `#GPT-5.6`, `#benchmarks`, `#machine learning`
 
 ---
 
 <a id="item-3"></a>
-## [SpaceXAI Launches Grok 4.5, an Opus-Class Model](https://www.latent.space/p/ainews-spacexai-launches-grok-45) ⭐️ 9.0/10
+## [SpaceXAI Launches Grok 4.5, First Opus-Class Model After Cursor Acquisition](https://www.latent.space/p/ainews-spacexai-launches-grok-45) ⭐️ 9.0/10
 
-SpaceXAI has launched Grok 4.5, an Opus-class model co-trained with Cursor, designed to excel at coding, agentic tasks, and knowledge work. The model is priced at $2/$6 per million tokens and serves at 80 tokens per second. This release marks a significant milestone in frontier AI development, as Grok 4.5 is positioned as a direct competitor to Anthropic's Opus-class models, offering faster and cheaper performance. It also reflects SpaceXAI's accelerated pace following its $60 billion acquisition of Cursor. Grok 4.5 is a mixture-of-experts model that was trained alongside Cursor, SpaceXAI's recently acquired coding assistant. According to benchmarks, it is competitive with top models from other labs, though just short of best-in-class in some areas.
+SpaceXAI released Grok 4.5, described as an 'Opus-class' model, marking its first major model launch since going public and acquiring Cursor for $60 billion. Grok 4.5 represents a new frontier-class AI model that could intensify competition among leading AI labs, especially in coding and knowledge work, reshaping the industry landscape. Grok 4.5 excels in knowledge work and STEM tasks, with a deliberately broad training data mix, but its speed is moderate (31st percentile) and pricing is premium (6th percentile).
 
 rss · Latent Space · Jul 9, 06:05
 
-**Background**: Opus-class models, such as Anthropic's Claude Opus, are designed for intensive and complex tasks, including advanced coding and agentic workflows. SpaceXAI acquired Cursor, an AI coding startup, for $60 billion in June 2026, marking its first major move after the largest IPO ever.
+**Background**: SpaceXAI, formerly xAI, went public in 2026 and acquired Cursor (Anysphere) for $60 billion in June 2026 to strengthen its AI coding capabilities. Grok 4.5 is the first model released after this acquisition, combining Cursor's coding expertise with broader knowledge work.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus-class model' | TechCrunch</a></li>
-<li><a href="https://x.ai/news/grok-4-5">Introducing Grok 4 . 5 | SpaceXAI</a></li>
-<li><a href="https://thenewstack.io/grok-45-opus-killer-launch/">"Opus-class, but faster": What Elon Musk says about beating Anthropic - The New Stack</a></li>
+<li><a href="https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/">SpaceXAI releases Grok 4.5, which Elon describes as an 'Opus ...</a></li>
+<li><a href="https://cursor.com/blog/grok-4-5">Introducing Grok 4.5 - Cursor</a></li>
+<li><a href="https://benchable.ai/models/x-ai/grok-4.5-20260708">xAI: Grok 4.5 - AI Model Details & Benchmarks</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#Machine Learning`, `#SpaceXAI`, `#Grok`, `#Frontier Models`
+**Tags**: `#AI`, `#Grok`, `#SpaceXAI`, `#frontier models`, `#industry news`
 
 ---
 
 <a id="item-4"></a>
-## [Gemma 4: Open Multimodal Models with Diverse Architectures](https://huggingface.co/papers/2607.02770) ⭐️ 9.0/10
+## [Agent Skills: Production-Grade Engineering Skills for AI Coders](https://github.com/addyosmani/agent-skills) ⭐️ 8.0/10
 
-Google DeepMind released Gemma 4, a new generation of open-weight, natively multimodal language models featuring dense and Mixture-of-Experts architectures ranging from 2.3B to 31B parameters, along with improved vision and audio encoders and a novel encoder-free architecture for the 12B model. Gemma 4 establishes a leap in performance across STEM, multimodal, and long-context benchmarks, rivaling larger frontier open models, and its diverse architectures and thinking mode enhance compute efficiency and reasoning capabilities, making advanced AI more accessible. The Gemma 4 suite includes dense models (2.3B, 12B) and MoE models (9B, 31B), with the 12B model using an encoder-free architecture that processes raw image patches and audio segments via lightweight linear projections, enabling local deployment on 16GB RAM.
+Addy Osmani released agent-skills, a curated collection of production-grade engineering skills for AI coding agents, which gained over 2,500 stars on GitHub in a single day. This repository addresses a critical gap by packaging senior engineer workflows and best practices into reusable skills that AI agents can follow consistently, potentially improving code quality and development efficiency across the industry. The skills encode workflows, quality gates, and best practices used by senior engineers, and are packaged so AI agents can apply them across all development phases. The repository is written in JavaScript and has amassed over 76,000 total stars.
 
-huggingface_papers · Hugging Face Papers · Jul 8, 00:00
+github_trending · GitHub Trending · Jul 10, 03:37
 
-**Background**: Mixture-of-Experts (MoE) is an AI architecture that uses multiple specialized submodels (experts) to handle tasks efficiently, activating only a subset of parameters per input. Encoder-free architectures eliminate separate vision/audio encoders, feeding raw inputs directly into the language model, reducing parameters and memory. Thinking mode allows models to generate reasoning traces before answering, improving accuracy on complex tasks.
+**Background**: AI coding agents are tools that autonomously write, modify, debug, and refactor code, understanding multi-file context and planning changes across a codebase. Unlike basic code completion, they can execute multi-step tasks and learn from project conventions. This repository provides structured 'skills' to guide these agents toward production-quality outputs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
-<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
-<li><a href="https://betterstack.com/community/guides/ai/gemma-4-12b-encoder/">Gemma 4 12B: Encoder-Free Multimodal Architecture with Linear ...</a></li>
+<li><a href="https://github.com/addyosmani/agent-skills">GitHub - addyosmani/agent-skills: Production-grade ...</a></li>
+<li><a href="https://agentic.ai/best/coding-agents">20 Best AI Coding Agents in 2026 — Agentic.ai</a></li>
+<li><a href="https://pyshine.com/Agent-Skills-Production-Grade-Engineering-for-AI/">Agent Skills: Production-Grade Engineering Skills for AI ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#multimodal`, `#language models`, `#open-weight`, `#reasoning`, `#efficiency`
+**Tags**: `#AI Agents`, `#Software Engineering`, `#Developer Tools`, `#JavaScript`
 
 ---
 
 <a id="item-5"></a>
-## [Agent Skills: Production-Grade Skills for AI Coding Agents](https://github.com/addyosmani/agent-skills) ⭐️ 8.0/10
+## [OfficeCLI: AI agents control Office files without installation](https://github.com/iOfficeAI/OfficeCLI) ⭐️ 8.0/10
 
-Addy Osmani released an open-source repository called agent-skills, a curated collection of 20 production-grade engineering skills designed to enhance AI coding agents' capabilities. The repository gained over 2,500 stars on GitHub in a single day, reaching 76,000 total stars. This repository addresses a critical gap in AI-assisted development by providing structured, best-practice workflows that help AI agents produce higher-quality code. The massive community engagement signals strong demand for tools that bridge the gap between AI capabilities and production-grade software engineering. The skills cover workflows, quality gates, and best practices that senior engineers use, encoded in a format AI agents can consume. The repository is written in JavaScript and has 8,174 forks, indicating active community contribution.
+OfficeCLI, an open-source single-binary tool, has been released, enabling AI agents to read, edit, and automate Word, Excel, and PowerPoint files without requiring Microsoft Office installation. It gained 1929 stars on GitHub in one day, indicating strong community interest. This tool addresses a critical gap in AI automation by allowing AI agents to directly manipulate Office documents without the overhead of a full Office installation, streamlining workflows for developers and enterprises. It could significantly reduce costs and complexity in document-heavy automation tasks. OfficeCLI is written in C# and automatically detects AI tools like Claude Code, GitHub Copilot, and Codex, installing its skill file for seamless integration. It supports creating, reading, and modifying DOCX, XLSX, and PPTX files via a command-line interface.
 
-github_trending · GitHub Trending · Jul 10, 03:26
+github_trending · GitHub Trending · Jul 10, 03:37
 
-**Background**: AI coding agents are software tools that can autonomously write, modify, debug, and refactor code, understanding multi-file context and planning changes across a codebase. However, without explicit guidance, they may not follow production-grade engineering practices. This repository provides a skill library that encodes such practices, making it easier for agents to adhere to high standards.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/addyosmani/agent-skills">GitHub - addyosmani/agent- skills : Production - grade engineering ...</a></li>
-<li><a href="https://www.everydev.ai/tools/addy-osmani-agent-skills">Addy Osmani Agent Skills - Skill Library by Addy Osmani | EveryDev.ai</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI coding agents`, `#software engineering`, `#developer tools`, `#JavaScript`
-
----
-
-<a id="item-6"></a>
-## [OfficeCLI: Open-source CLI for AI-driven Office automation](https://github.com/iOfficeAI/OfficeCLI) ⭐️ 8.0/10
-
-OfficeCLI, a free open-source single-binary tool, has been released to enable AI agents to read, edit, and automate Word, Excel, and PowerPoint files without requiring Microsoft Office installation. It gained 1,929 stars on GitHub in a single day, reaching over 13,600 total stars. This tool bridges the gap between AI agents and Office file manipulation, enabling seamless automation of document workflows without proprietary software dependencies. It empowers developers and automation teams to integrate Office tasks into AI-driven pipelines, potentially boosting productivity across industries. OfficeCLI is written in C# and distributed as a single binary, meaning no runtime or Office installation is needed. It supports Word, Excel, and PowerPoint files, and can be invoked with a single line of code from any AI agent.
-
-github_trending · GitHub Trending · Jul 10, 03:26
-
-**Background**: AI agents are software programs that can autonomously perform tasks by perceiving their environment and taking actions. Office automation traditionally requires either the Microsoft Office suite or complex APIs like Open XML SDK. OfficeCLI simplifies this by providing a lightweight, cross-platform command-line interface that any AI agent can use directly.
+**Background**: Traditionally, automating Office files required either a full Microsoft Office installation or complex third-party libraries. OfficeCLI provides a lightweight alternative that runs as a single binary, making it ideal for server environments and CI/CD pipelines where Office is not available. The tool is free and open-source under the iOfficeAI organization.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/iOfficeAI/OfficeCLI">GitHub - iOfficeAI/OfficeCLI: OfficeCLI is the first and best Office suite purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required. · GitHub</a></li>
-<li><a href="https://officecli.io/">OfficeCLI | External and Hosted AI PPTX, DOCX, XLSX, REPORT...</a></li>
-<li><a href="https://azure.microsoft.com/en-us/blog/ai-agents-at-work-the-new-frontier-in-business-automation/">AI agents at work: The new frontier in business automation | Microsoft Azure Blog</a></li>
+<li><a href="https://www.coddykit.com/pages/blog-detail?id=512903&slug=officecli-the-open-source-office-suite-that-gives-ai-agents-full-control-over-wo">OfficeCLI: The Open-Source Office Suite That Gives... | CoddyKit Blog</a></li>
 
 </ul>
 </details>
@@ -161,208 +139,229 @@ github_trending · GitHub Trending · Jul 10, 03:26
 
 ---
 
-<a id="item-7"></a>
-## [Vidu S1: Real-Time Interactive Video Generation Model](https://huggingface.co/papers/2607.03118) ⭐️ 8.0/10
+<a id="item-6"></a>
+## [SciReasoner: Interpretable Structural Reasoning Across Sciences](https://huggingface.co/papers/2607.07708) ⭐️ 8.0/10
 
-Vidu S1 is a real-time interactive video generation model that enables voice-controlled digital character animation with infinite-length, high-frame-rate output on consumer GPUs. It achieves up to 42 FPS at 540p resolution on standard consumer hardware. This represents a significant advancement in AI video generation, moving from offline batch processing to real-time interactive control, which could transform applications like virtual avatars, gaming, and live content creation. The ability to run on consumer GPUs makes it accessible to a wide range of creators. Vidu S1 is built on TurboDiffusion and TurboServe, two acceleration frameworks that enable real-time performance. It supports uploading custom images of real people, anime, and pets, and allows users to choose different voice tones for personalized experiences.
+Researchers introduced SciReasoner, a multimodal scientific foundation model that discretizes structural elements of proteins, molecules, and crystals into a unified vocabulary for interpretable reasoning. It achieves state-of-the-art performance on 67 out of 86 benchmarks, including improving Gene Ontology prediction F_max from 0.42 to 0.55 and single-step retrosynthesis accuracy from 0.63 to 0.72. SciReasoner addresses a key challenge in AI for science by enabling interpretable structural reasoning across multiple domains, which can accelerate discovery in biology, chemistry, and materials science. Its ability to provide transparent reasoning traces makes it more trustworthy for scientific applications. The model uses a unified structure-aware vocabulary to represent coordinates, topologies, and periodic connectivities as addressable evidence units. In double-blind expert evaluation, SciReasoner's reasoning traces were preferred or comparable to a frontier large language model in 98% of cases.
 
-huggingface_papers · Hugging Face Papers · Jul 10, 00:00
+huggingface_papers · Hugging Face Papers · Jul 9, 00:00
 
-**Background**: Traditional video generation models are often slow and require powerful hardware, limiting their use to offline tasks. TurboDiffusion is an acceleration framework that makes video generation 100–200 times faster with minimal quality loss, while TurboServe likely optimizes serving infrastructure for low-latency inference.
+**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, but AI models often struggle to interpret structural evidence under scientific constraints. SciReasoner discretizes structural elements into tokens, similar to how language models tokenize text, enabling the model to reason about specific structural features. This approach bridges the gap between accurate prediction and interpretable scientific inference.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.vidu.com/vidu-stream">Vidu S1 AI Video Model | Vidu AI</a></li>
-<li><a href="https://github.com/thu-ml/TurboDiffusion">GitHub - thu-ml/ TurboDiffusion : TurboDiffusion : 100–200...</a></li>
+<li><a href="https://huggingface.co/SciReason/SciReasoner-8B">SciReason/ SciReasoner -8B · Hugging Face</a></li>
+<li><a href="https://github.com/SpectrAI-Initiative/SciReasoner">GitHub - SpectrAI-Initiative/ SciReasoner · GitHub</a></li>
+<li><a href="https://www.emergentmind.com/topics/scireasoner">SciReasoner : Unified Scientific Reasoning Model</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#video generation`, `#real-time`, `#voice control`, `#diffusion models`, `#AI`
+**Tags**: `#AI for Science`, `#Multimodal Learning`, `#Structural Biology`, `#Materials Science`, `#Interpretability`
+
+---
+
+<a id="item-7"></a>
+## [LaMem-VLA: Latent Memory for Robot Long-Horizon Tasks](https://huggingface.co/papers/2607.07608) ⭐️ 8.0/10
+
+LaMem-VLA introduces a latent-memory-native framework that integrates historical experience into vision-language-action (VLA) reasoning via four coordinated components: curator, seeker, condenser, and weaver. This addresses a key limitation of mainstream VLA models that rely on the Markovian assumption, enabling robots to handle long-horizon, temporally dependent tasks more effectively. The framework operates entirely in the same continuous latent space, using short-term and long-term memory vaults to store and retrieve context-relevant evidence, which is then condensed into compact latent memory tokens and interwoven with current observations and instructions.
+
+huggingface_papers · Hugging Face Papers · Jul 9, 00:00
+
+**Background**: Vision-Language-Action (VLA) models combine visual input, language instructions, and action generation for robotic manipulation. Most VLAs assume the Markov property, meaning they only consider the current observation, which limits performance in tasks requiring memory of past events. LaMem-VLA breaks this assumption by introducing a dedicated memory system that operates in the same latent space as the VLA reasoning.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://huggingface.co/papers/2607.07608">Paper page - Dual Latent Memory in Vision-Language-Action Models ...</a></li>
+<li><a href="https://arxiv.org/pdf/2607.07608">Dual Latent Memory in Vision-Language-Action Models for Robotic...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Markov_property">Markov property - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#robotics`, `#vision-language-action`, `#memory`, `#AI`, `#machine learning`
 
 ---
 
 <a id="item-8"></a>
-## [Meta Launches Muse Spark 1.1 with Pay-Per-Task Pricing](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) ⭐️ 8.0/10
+## [Undergrad First Author Achieves 7.92x Speedup in Speculative Decoding](https://mp.weixin.qq.com/s?__biz=MzIzNjc1NzUzMw==&mid=2247902587&idx=3&sn=879066ecce663ab9daba5d73fe2dc27b) ⭐️ 8.0/10
 
-Meta released Muse Spark 1.1, its first commercial agentic AI model, with a pay-per-task pricing model via the Meta Model API. The model is designed for coding and agentic tasks, and is available in the Meta AI app's 'Thinking' mode. This marks Meta's entry into the paid AI model market, potentially commoditizing coding models by offering competitive performance at lower cost. The pay-per-task model could reshape how developers and businesses adopt AI agents, lowering barriers to experimentation. Muse Spark 1.1 pricing is $1.25/$4.5 per 1M tokens for input/output, with $0.15 for cached input. The model is evaluated on Terminal-Bench 2.1, though some community members noted that the evaluation used 6 CPU cores and 8GB RAM, which may exceed task limits.
+An undergraduate first-author paper proposes a parallel draft mechanism for speculative decoding, achieving a 7.92x speedup over standard autoregressive decoding. The work has been cited by DeepSeek and StepFun, indicating strong industry interest. This breakthrough significantly reduces LLM inference latency, making large models more practical for real-time applications. The parallel draft approach addresses a key bottleneck in speculative decoding, potentially accelerating adoption across AI services. The method introduces a parallel draft mechanism that generates multiple draft sequences simultaneously, overcoming the sequential dependency in traditional speculative decoding. The paper also addresses block internal causal consistency to ensure output quality.
 
-hackernews · ot · Jul 9, 14:10 · [Discussion](https://news.ycombinator.com/item?id=48846184)
+rss · 量子位 · Jul 9, 04:17
 
-**Background**: Agentic AI models can autonomously perform multi-step tasks, such as coding or using tools, without constant human guidance. Meta's previous models were mostly open-source, but Muse Spark 1.1 is a commercial offering, signaling a shift in strategy. Pay-per-task pricing ties cost directly to value delivered, contrasting with traditional token-based or subscription models.
+**Background**: Speculative decoding is an inference optimization technique that uses a small draft model to propose tokens and a larger target model to verify them in parallel, achieving 2-3x speedup without quality loss. Traditional speculative decoding relies on sequential draft generation, which limits parallelism. The new parallel draft mechanism breaks this sequential dependency, enabling higher speedups.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.datacamp.com/blog/muse-spark-1-1">Muse Spark 1.1: Meta's Agentic Model and API | DataCamp</a></li>
-<li><a href="https://www.digitalapplied.com/blog/meta-muse-spark-1-1-agentic-model-api-2026">Meta Muse Spark 1.1: Meta's First Paid Agent Model</a></li>
-<li><a href="https://www.cnet.com/tech/services-and-software/meta-muse-spark-new-ai-model-agentic/">Meta Introduces a Big New AI Model for the Agentic Age - CNET</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Speculative_decoding">Speculative decoding</a></li>
+<li><a href="https://developer.nvidia.com/blog/an-introduction-to-speculative-decoding-for-reducing-latency-in-ai-inference/">An Introduction to Speculative Decoding for Reducing Latency ...</a></li>
+<li><a href="https://www.aimodels.fyi/papers/arxiv/parallelspec-parallel-drafter-efficient-speculative-decoding">ParallelSpec: Parallel Drafter for Efficient Speculative Decoding</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community reactions are mixed: some praise the low pricing and competitive performance, while others question the evaluation methodology, noting that resource caps were overridden. There is also debate about whether Meta's strategy is to commoditize coding models, potentially undercutting competitors like OpenAI and Anthropic.
-
-**Tags**: `#AI`, `#Meta`, `#agentic model`, `#pricing`, `#open source`
+**Tags**: `#speculative decoding`, `#LLM inference`, `#speedup`, `#undergraduate research`, `#AI acceleration`
 
 ---
 
 <a id="item-9"></a>
-## [GPT-5.6 Becomes Preferred Model in Microsoft 365 Copilot](https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot) ⭐️ 8.0/10
+## [OpenAI Launches Bio Bug Bounty for GPT-5.5](https://openai.com/index/bio-bug-bounty) ⭐️ 8.0/10
 
-OpenAI announced that GPT-5.6 is now the preferred model powering Microsoft 365 Copilot, replacing the previous model to deliver stronger AI capabilities across Word, Excel, PowerPoint, Chat, and the new Cowork feature. This upgrade directly enhances productivity for millions of Microsoft 365 users by enabling faster, higher-quality work across core office applications, and signals the deepening integration between OpenAI's frontier models and Microsoft's enterprise ecosystem. GPT-5.6 is integrated into Microsoft 365 Copilot's Chat, Cowork, and individual app assistants; Cowork is a new agentic feature that automates tasks like sending emails, scheduling meetings, and creating documents based on user descriptions.
+OpenAI has launched a bug bounty program specifically targeting biological misuse of GPT-5.5, inviting researchers to identify risks of dual-use in biotechnology. This initiative is a novel approach to AI safety, addressing the growing concern that advanced AI models could be misused to create biological threats, and sets a precedent for responsible AI deployment in sensitive domains. The program focuses on universal jailbreaks that defeat OpenAI's predefined biosafety challenge, and is now an ongoing private program starting with GPT-5.6. Participants must be vetted and operate under NDA.
 
-rss · OpenAI Blog · Jul 9, 13:00
+rss · OpenAI Blog · Jul 9, 10:00
 
-**Background**: Microsoft 365 Copilot is an AI assistant launched in 2023, built on OpenAI's GPT models, that helps users automate and accelerate tasks across Office apps. It was rebranded from Bing Chat and is available as a freemium service. The new Cowork feature, announced in March 2026, acts as an autonomous agent that can execute multi-step workflows on behalf of the user.
+**Background**: AI models like GPT-5.5 have advanced capabilities that could be misused for biological weaponization or other harmful purposes. Bug bounty programs are common in cybersecurity to incentivize finding vulnerabilities, but applying them to biosecurity is relatively new. OpenAI's program aims to proactively identify and mitigate such risks before they can be exploited.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Microsoft_365_Copilot">Microsoft 365 Copilot</a></li>
-<li><a href="https://www.microsoft.com/en-us/microsoft-365-copilot/cowork">Microsoft 365 Copilot Cowork | Automate tasks and workflows</a></li>
-<li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/">Copilot Cowork: A new way of getting work done | Microsoft 365 Blog</a></li>
+<li><a href="https://openai.com/bio-bug-bounty/">Agent bio bug bounty - OpenAI</a></li>
+<li><a href="https://arxiv.org/abs/2306.13952">[2306.13952] Artificial intelligence and biological misuse ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#GPT-5.6`, `#Microsoft 365`, `#AI`, `#Copilot`, `#Productivity`
+**Tags**: `#AI Safety`, `#Bug Bounty`, `#Biosecurity`, `#OpenAI`, `#GPT-5.5`
 
 ---
 
 <a id="item-10"></a>
 ## [Humanoid Robots Perform World-First Surgery on Live Pigs](https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/) ⭐️ 8.0/10
 
-Surgeons successfully performed two gallbladder removal surgeries on live pigs using teleoperated humanoid robots, marking the world's first preclinical trial of humanoid robots in surgery. 这一里程碑证明了人形机器人用于远程手术的可行性，有望扩大医疗资源匮乏地区的手术可及性，并推动远程医疗发展。 The trial involved a humanoid robot assisted by a human attendant for one procedure, and a pair of robots working together for another. The surgeries were gallbladder removals in large, non-primate mammals.
+Surgeons successfully teleoperated humanoid robots to perform surgery on live pigs in a world-first preclinical trial, demonstrating the feasibility of using humanoid robots for surgical procedures. This milestone could pave the way for humanoid robots to assist in complex surgeries, potentially improving precision and enabling remote surgery in underserved areas. The trial involved teleoperated humanoid robots performing live surgery on large non-primate mammals, with one procedure conducted by two robots working side by side as a team.
 
 rss · Ars Technica AI · Jul 9, 20:12
 
-**Background**: Telesurgery allows surgeons to operate on patients from miles away using robotic systems. Humanoid robots, which mimic human form and movement, offer potential advantages in dexterity and adaptability over traditional surgical robots. This preclinical trial is a step toward human trials.
+**Background**: Humanoid robots are designed to resemble the human body, allowing them to use tools and navigate environments built for humans. Preclinical trials test medical procedures in animals before human clinical trials to assess safety and feasibility.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arstechnica.com/ai/2026/07/humanoid-robots-controlled-by-surgeons-did-world-first-operation-on-live-pigs/">Humanoid robots controlled by surgeons did world-first ...</a></li>
 <li><a href="https://www.popsci.com/technology/humanoid-robots-perform-surgery/">In groundbreaking first, humanoid robots performed surgery</a></li>
-<li><a href="https://interestingengineering.com/ai-robotics/us-world-first-surgery-teleoperated-humanoid-robots">World-first: Teleoperated humanoid robots conduct surgery in US</a></li>
+<li><a href="https://today.ucsd.edu/story/surgeons-use-teleoperated-humanoid-robots-to-perform-live-surgery-a-world-first">Surgeons Use Teleoperated Humanoid Robots to Perform Live...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#robotics`, `#surgery`, `#AI`, `#medical technology`, `#telemedicine`
+**Tags**: `#robotics`, `#surgery`, `#AI`, `#medical technology`, `#humanoid robots`
 
 ---
 
 <a id="item-11"></a>
-## [OpenAI faces sanctions for hiding ChatGPT logs in NYT lawsuit](https://arstechnica.com/tech-policy/2026/07/openai-faked-inability-to-search-training-data-hid-billions-of-logs-nyt-says/) ⭐️ 8.0/10
+## [GLM-5.2 744B MoE Runs on 25GB RAM Consumer Laptop](https://www.reddit.com/r/LocalLLaMA/comments/1us5m0g/glm52_744b_moe_on_a_25gbram_consumer_machine/) ⭐️ 8.0/10
 
-The New York Times and other publishers have filed a motion asking the court to sanction OpenAI for allegedly hiding and deleting ChatGPT logs that could identify copyrighted content in training data. If sanctioned, OpenAI could face severe penalties, including adverse inference instructions or monetary fines, setting a precedent for evidence preservation in AI copyright disputes. A federal court order previously required OpenAI to retain all ChatGPT user logs indefinitely, but the publishers allege OpenAI violated this order by deleting billions of logs.
+A developer created Colibrì, a lightweight inference engine that runs the 744B-parameter GLM-5.2 MoE model on a consumer laptop with only 25GB RAM by streaming experts from disk and using int4 quantization. This demonstrates that extremely large MoE models can be run on consumer hardware without a GPU, drastically lowering the barrier for local LLM deployment and enabling privacy-sensitive or offline use cases. Colibrì is a single C file (~1,300 lines) with no dependencies, using int4 quantization and an LRU cache to keep only ~11GB of active weights in RAM while the rest reside on disk (~370GB). The engine achieves 0.1 tok/s on a 12-core laptop with 25GB RAM.
 
-rss · Ars Technica AI · Jul 9, 18:57
+reddit · r/LocalLLaMA · /u/yogthos · Jul 9, 22:43
 
-**Background**: The New York Times sued OpenAI and Microsoft in December 2023 for copyright infringement, claiming OpenAI trained its models on NYT articles without permission. The case is ongoing, and evidence preservation has become a central issue.
+**Background**: GLM-5.2 is a 744B-parameter Mixture-of-Experts (MoE) model with 256 experts, activating only ~40B parameters per token. MoE models use multiple specialized sub-networks (experts) and a gating mechanism to select which experts to use for each input, enabling large total capacity with lower per-token computation. Int4 quantization reduces model weights from 32-bit floats to 4-bit integers, shrinking memory footprint by roughly 8x.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/The_New_York_Times_v._Microsoft_and_OpenAI">The New York Times v. Microsoft and OpenAI - Wikipedia</a></li>
-<li><a href="https://www.nytimes.com/2026/07/09/technology/new-york-times-openai.html">New York Times and other publishers ask court to penalize OpenAI</a></li>
-<li><a href="https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/">New York Times says OpenAI hid evidence in ChatGPT copyright ...</a></li>
+<li><a href="https://lucaberton.com/blog/glm-5-2-744b-moe-architecture-2026/">GLM - 5 . 2 744 B : Sparse Attention Meets Efficient MoE</a></li>
+<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained - Hugging Face</a></li>
+<li><a href="https://apxml.com/courses/quantized-llm-deployment/chapter-1-advanced-llm-quantization-fundamentals/low-bit-quantization-techniques">Low-Bit LLM Quantization (INT4, NF4, FP4) - apxml.com</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#copyright`, `#OpenAI`, `#legal`, `#NYT`
+**Discussion**: Commenters expressed curiosity about practical token rates, with some noting that 0.1 tok/s is too slow for interactive use but could still be useful for overnight batch processing. Others pointed out that llama.cpp already supports mmap-based offloading, but praised the minimal implementation in a single C file. Several users suggested the approach would pair well with Apple Silicon's unified memory.
+
+**Tags**: `#LLM`, `#MoE`, `#quantization`, `#local deployment`, `#consumer hardware`
 
 ---
 
 <a id="item-12"></a>
-## [GLM-5.2 (744B MoE) Runs on 25GB RAM Consumer Laptop](https://www.reddit.com/r/LocalLLaMA/comments/1us5m0g/glm52_744b_moe_on_a_25gbram_consumer_machine/) ⭐️ 8.0/10
+## [Untuned 27B Model Outperforms Tuned 75B in Agent Tasks](https://www.reddit.com/r/LocalLLaMA/comments/1us8x06/the_untuned_27b_beat_the_tuned_75b_as_an_agent/) ⭐️ 8.0/10
 
-A developer successfully ran the 744B-parameter GLM-5.2 Mixture-of-Experts model on a consumer laptop with only 25GB RAM using a custom single-file inference engine called Colibrì, achieving 0.1 tokens per second. This demonstrates that extremely large MoE models can be run on consumer hardware without a GPU, dramatically lowering the barrier for local LLM experimentation and enabling privacy-preserving AI on everyday machines. The model uses int4 quantization, stores dense parameters (~17B) in RAM (~9.9GB), and streams 21,504 routed experts from disk (~370GB) on demand with an LRU cache. The engine is a single ~1,300-line C file with no BLAS, Python, or GPU dependencies.
-
-reddit · r/LocalLLaMA · /u/yogthos · Jul 9, 22:43
-
-**Background**: GLM-5.2 is a 744B-parameter Mixture-of-Experts (MoE) model developed by Zhipu AI, with only ~40B active parameters per token. MoE models use multiple specialized sub-networks (experts) and activate only a subset per input, enabling large total capacity with lower per-token computation. Int4 quantization reduces model weights to 4-bit integers, shrinking memory footprint at the cost of minor accuracy loss.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.digitalapplied.com/blog/zhipu-ai-glm-5-release-744b-moe-model-analysis">GLM-5 Released: 744B MoE Model vs GPT-5.2 & Claude 4.5</a></li>
-<li><a href="https://github.com/zai-org/GLM-5">GitHub - zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic ...</a></li>
-<li><a href="https://lucaberton.com/blog/glm-5-2-744b-moe-architecture-2026/">GLM-5.2 744B: Sparse Attention Meets Efficient MoE</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters expressed interest but questioned practical usability at 0.1 tok/s, noting that even 1 tok/s can be useful for overnight batch tasks. Others shared similar projects targeting Apple Silicon or using mmap-based streaming, praising the minimal dependency approach while wondering about performance gains over existing solutions like llama.cpp.
-
-**Tags**: `#LLM`, `#MoE`, `#Local LLM`, `#Optimization`, `#Consumer Hardware`
-
----
-
-<a id="item-13"></a>
-## [Untuned 27B Model Beats Tuned 75B in Agentic Tasks](https://www.reddit.com/r/LocalLLaMA/comments/1us8x06/the_untuned_27b_beat_the_tuned_75b_as_an_agent/) ⭐️ 8.0/10
-
-A 27B parameter untuned model (Qwen3.6-27B-INT8-AutoRound) outperformed a 75B tuned model (Nemotron Puzzle-75B-A9B NVFP4) in agentic tasks, requiring fewer tool calls (6-9 vs 13-23) and less time per task (134-190s vs 221-384s). This challenges the assumption that larger, tuned models are always better for agentic tasks, highlighting that model efficiency and inference speed can be more critical than raw parameter count. It suggests that smaller models with fewer tool calls can reduce latency and cost in real-world agent deployments. The 27B model used INT8 quantization (W8A16) with vLLM and achieved 37.7 t/s fresh and up to 72 t/s with MTP enabled, while the 75B model used NVFP4 quantization and ran at ~65 t/s. The author also discovered that prefix caching can cause non-independent benchmark samples, recommending a per-run nonce to avoid this.
+An untuned Qwen3.6-27B-INT8-AutoRound model (27B parameters) achieved 100% pass rate on agentic tasks with 6-9 tool calls and 134-190 seconds per task, while a tuned Nemotron Puzzle-75B-A9B NVFP4 model (75B parameters) required 13-23 tool calls and 221-384 seconds, and only passed after a hand-tuned system prompt. This result challenges the assumption that larger, fine-tuned models are always better for agentic tasks, highlighting that smaller models with efficient inference (e.g., MTP speculative decoding) can achieve higher success rates and faster completion by reducing unnecessary tool calls. The 27B model used vLLM with INT8 quantization (W8A16) and MTP speculative decoding, achieving up to 72 tok/s decode speed; the 75B model used NVFP4 quantization and ran on 3 GPUs at ~65 tok/s. The author also discovered that prefix caching with fp8 KV cache can cause non-independent benchmark samples, and added a per-run nonce to the system prompt to mitigate this.
 
 reddit · r/LocalLLaMA · /u/Important_Quote_1180 · Jul 10, 01:00
 
-**Background**: Agentic tasks involve an LLM using tools (via function calls) to complete multi-step objectives. Model size and tuning are often assumed to improve performance, but this benchmark shows that inference efficiency and the ability to complete tasks in fewer steps can be more important. Multi-Token Prediction (MTP) is a technique that predicts multiple future tokens at once, speeding up inference without quality loss.
+**Background**: Agentic tasks require LLMs to autonomously plan and execute multi-step actions using external tools, where each tool call adds latency. Multi-Token Prediction (MTP) is a technique that predicts multiple future tokens in one forward pass, accelerating inference. The Qwen3.6-27B model is a dense multimodal model with hybrid attention and MTP support, while Nemotron Puzzle-75B-A9B is a compressed Mixture-of-Experts model optimized for high-throughput deployment.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4">nvidia/NVIDIA- Nemotron -Labs-3- Puzzle - 75 B - A 9 B - NVFP 4 · Hugging...</a></li>
-<li><a href="https://huggingface.co/Minachist/Qwen3.6-27B-INT8-AutoRound">Minachist/Qwen3.6-27B-INT8-AutoRound - Hugging Face</a></li>
-<li><a href="https://runaihome.com/blog/why-local-llms-got-good-mid-2026-speculative-decoding-moe/">Why Local LLMs Got Good in 2026: Multi - Token Prediction ...</a></li>
+<li><a href="https://recipes.vllm.ai/Qwen/Qwen3.6-27B">Qwen/Qwen3.6-27B | vLLM Recipes</a></li>
+<li><a href="https://arxiv.org/abs/2509.18362">[2509.18362] FastMTP: Accelerating LLM Inference with ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community validated the results, with many users agreeing that smaller, untuned models can be surprisingly effective for agentic tasks. Some discussed the importance of tool-call efficiency and the pitfalls of prefix caching in benchmarks.
+**Discussion**: The Reddit community widely praised the finding, with many users noting that smaller, untuned models can be more efficient for agentic workflows. Some discussed the importance of MTP and quantization techniques, while others shared similar experiences where larger models underperformed due to excessive tool calls.
 
-**Tags**: `#LLM`, `#agentic`, `#model comparison`, `#benchmark`, `#local LLM`
+**Tags**: `#LLM`, `#agent`, `#benchmark`, `#model comparison`, `#efficiency`
+
+---
+
+<a id="item-13"></a>
+## [75B MoE Model Runs at 132 t/s on 3×3090 GPUs](https://www.reddit.com/r/LocalLLaMA/comments/1uru9ja/nvidia_puzzle75ba9b_nvfp4_at_132_ts_on_33090_why/) ⭐️ 8.0/10
+
+A user demonstrated that the NVIDIA Nemotron-3-Puzzle-75B-A9B MoE model, quantized to NVFP4, achieves 132 tokens/s decode throughput across three streams on three RTX 3090 GPUs using vLLM 0.22.1 with pipeline parallelism. This finding highlights a gap in the model landscape: the 70-80B total / ~10B active MoE size perfectly fills 72GB of quantized VRAM, offering dense-class quality at A3B-class speed, yet almost no other models exist in this band. The setup uses three 3090s capped at 200W each, with a fourth card for a speech sidecar, achieving ~500W total power draw. The model uses hybrid Mamba layers to keep KV cache small, and vLLM's new Marlin fallback enables FP4 on Ampere GPUs.
+
+reddit · r/LocalLLaMA · /u/Important_Quote_1180 · Jul 9, 15:53
+
+**Background**: Mixture-of-Experts (MoE) models activate only a subset of parameters per token, allowing larger total capacity with lower compute. NVFP4 is a 4-bit floating point quantization format that reduces memory footprint. vLLM is an inference engine that supports various quantization and parallelism strategies.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://sgl-project.github.io/advanced_features/quantization.html">Quantization — SGLang</a></li>
+<li><a href="https://docs.vllm.ai/en/stable/features/quantization/llm_compressor/fp8/">FP8 W8A8 - vLLM</a></li>
+<li><a href="https://arxiv.org/abs/2403.19887">Jamba: A Hybrid Transformer-Mamba Language Model</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The community validated the findings, noting that the 75B/9B MoE shape is indeed optimal for multi-24GB GPU setups. Some users expressed interest in seeing similar benchmarks for other models like Qwen 72B or DeepSeek MoE.
+
+**Tags**: `#MoE`, `#LLM inference`, `#GPU optimization`, `#vLLM`, `#quantization`
 
 ---
 
 <a id="item-14"></a>
-## [Quantization Hits Math Harder Than Chat: User's Systematic Test](https://www.reddit.com/r/LocalLLaMA/comments/1us7a22/has_anyone_tested_how_quantization_hits_different/) ⭐️ 8.0/10
+## [Quantization Hits LLM Capabilities Unevenly](https://www.reddit.com/r/LocalLLaMA/comments/1us7a22/has_anyone_tested_how_quantization_hits_different/) ⭐️ 8.0/10
 
-A Reddit user systematically tested how GGUF quantization levels (Q4_K_M, Q5_K_M) affect different LLM capabilities, finding that math accuracy dropped nearly 9% at Q4 while conversational tasks degraded less than 2% on a 27B model. This challenges the common practice of using a single aggregate benchmark score to evaluate quantization quality, showing that the optimal quant level depends heavily on the intended use case. The user tested math (GSM8K), code (HumanEval), reasoning (ARC-Challenge), and knowledge recall (MMLU-Pro) across FP16 and GGUF quants, and noted that Q5_K_M nearly eliminated the math gap. They also raised an open question about context decay in quantized models.
+A Reddit user systematically tested GGUF quantization levels (Q4_K_M, Q5_K_M) on a 27B model and found that Q4_K_M degrades math accuracy by 9% but barely affects knowledge tasks, while Q5_K_M nearly eliminates the math gap. This highlights that choosing a quantization level should depend on the target task, not just a single aggregate score, and reveals a gap in systematic testing of context retrieval decay in quantized models. The tests used GSM8K for math, HumanEval for code, ARC-Challenge for reasoning, and MMLU-Pro for knowledge recall; the author also asks whether quantized models lose context retrieval accuracy faster than FP16 as context fills up.
 
 reddit · r/LocalLLaMA · /u/BBASecure · Jul 9, 23:50
 
-**Background**: Quantization reduces model precision (e.g., from 16-bit to 4-bit) to lower memory usage and speed up inference, but it can degrade output quality. GGUF is a popular format for quantized models in local LLM tools like llama.cpp. Different capabilities may be affected unevenly because they rely on different parts of the model's representational capacity.
+**Background**: GGUF quantization reduces model size and memory usage by lowering numerical precision (e.g., from 16-bit to 4-bit). Common levels like Q4_K_M and Q5_K_M trade off quality for efficiency, but their impact on specific capabilities is not well studied. The community lacks rigorous benchmarks comparing context retrieval across quant levels.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://bmdpat.com/blog/gguf-quantization-q4-q5-q8-explained-2026">GGUF Q4 vs Q5 vs Q8: Which to Pick | Patrick Hughes</a></li>
-<li><a href="https://tech-champion.com/data-science/reasoning-decay-and-perplexity-spikes-in-4-bit-quantized-long-context-llms/">Reasoning Decay and Perplexity Spikes in 4-bit Quantized ...</a></li>
+<li><a href="https://arxiv.org/html/2406.10251v3">The Impact of Quantization on Retrieval-Augmented Generation ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The post generated substantial discussion, with many users agreeing that per-capability evaluation is needed. Some shared anecdotal evidence of context decay in quantized models, while others pointed to existing research on reasoning decay in 4-bit long-context LLMs.
+**Discussion**: The post has sparked discussion about the need for task-specific quantization benchmarks and context decay testing. Some users share anecdotal evidence of quantized models hallucinating earlier in long contexts, but no rigorous data has been presented.
 
-**Tags**: `#quantization`, `#LLM evaluation`, `#GGUF`, `#model accuracy`, `#context decay`
+**Tags**: `#quantization`, `#LLM evaluation`, `#benchmarking`, `#model compression`, `#local LLM`
 
 ---
 
 <a id="item-15"></a>
-## [Court Orders OpenAI to Disclose 20M ChatGPT Conversations](https://www.reddit.com/r/artificial/comments/1usbdyd/updated_millions_of_chatgpt_user_conversations/) ⭐️ 8.0/10
+## [OpenAI Ordered to Disclose ChatGPT Conversations in Copyright Case](https://www.reddit.com/r/artificial/comments/1usbdyd/updated_millions_of_chatgpt_user_conversations/) ⭐️ 8.0/10
 
-A federal court ordered OpenAI to produce 20 million de-identified ChatGPT user conversation logs for keyword searching by plaintiffs in a copyright litigation case, and plaintiffs are now seeking sanctions against OpenAI for alleged failure to retain conversations and excessive redactions. This case sets a major precedent for user privacy in AI chatbots, as courts have ruled that conversations with public chatbots carry no expectation of privacy, potentially affecting millions of users and shaping future AI regulation. The plaintiffs allege OpenAI failed to retain many conversations, including those from 'Temporary Chat,' and applied 19 billion redactions to the produced logs, averaging 1,000 redactions per log. OpenAI's custom de-identification tool's effectiveness is also questioned.
+A federal court ordered OpenAI to produce 20 million de-identified ChatGPT user conversation logs for keyword searching in a copyright infringement lawsuit, and plaintiffs now seek sanctions alleging OpenAI failed to retain conversations and applied excessive redactions. This ruling sets a major legal precedent regarding user privacy expectations in AI chatbot interactions and could affect millions of ChatGPT users whose conversations are now subject to discovery in litigation. The plaintiffs allege OpenAI failed to retain many conversations, including those from the Temporary Chat feature, underrepresented RAG usage in the produced logs, and applied 19 billion redactions (about 1,000 per log). They request sanctions including prohibiting OpenAI from using the logs for its defense and informing the jury of deleted conversations.
 
 reddit · r/artificial · /u/Apprehensive_Sky1950 · Jul 10, 02:54
 
-**Background**: In federal civil litigation, 'discovery' is the process where parties exchange relevant documents and information. Courts can order production of data, often requiring de-identification to protect privacy. De-identified data is generally considered less protected under privacy laws, but re-identification risks remain a concern.
+**Background**: The case is part of a broader copyright infringement lawsuit against OpenAI, where plaintiffs argue that ChatGPT was trained on copyrighted material without permission. De-identification is a process that removes personally identifiable information to protect privacy, but the effectiveness of OpenAI's custom tool is questioned. Courts have also ruled that conversations with public chatbots carry no expectation of privacy.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://uslawexplained.com/de-identified_information">De-Identified Information: The Ultimate Guide to Data Privacy ...</a></li>
-<li><a href="https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/index.html">Guidance Regarding Methods for De-identification of Protected ... De-identification: New Laws, New Threats, New Approaches De-Identified and Unregulated: How Data Brokers Outpace State ... De-Identification: The Ultimate Guide to Protecting Privacy ... The Myth of Anonymity: De-Identified Data as Legal Fiction Demystifying Data De-Identification for US Privacy Compliance</a></li>
-<li><a href="https://www.uscourts.gov/">United States Courts</a></li>
+<li><a href="https://legalresearch.com/privacy-in-discovery-de-identified-non-party-medical-information/">Privacy in Discovery: De-identified, Non-party Medical ...</a></li>
+<li><a href="https://www.jdsupra.com/legalnews/artists-copyright-infringement-suit-6066715/">Artists’ Copyright Infringement Suit Against AI Companies... - JDSupra</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Reddit users expressed strong privacy concerns, with many shocked that their ChatGPT conversations could be disclosed. Some debated the effectiveness of de-identification, while others criticized OpenAI's handling of user data and the court's ruling on privacy expectations.
+**Discussion**: Reddit users expressed strong privacy concerns, with many criticizing the court order and questioning the adequacy of de-identification. Some argued that users should have no expectation of privacy when using a commercial chatbot, while others feared that personal or sensitive information could be exposed despite de-identification.
 
-**Tags**: `#OpenAI`, `#ChatGPT`, `#privacy`, `#litigation`, `#AI regulation`
+**Tags**: `#OpenAI`, `#ChatGPT`, `#privacy`, `#legal`, `#AI regulation`
 
 ---
