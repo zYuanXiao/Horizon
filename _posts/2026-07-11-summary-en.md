@@ -9,32 +9,164 @@ lang: en
 
 ---
 
-1. [GPT-5.6 Sol Ultra Proves Cycle Double Cover Conjecture](#item-1) ⭐️ 9.0/10
-2. [OpenAI Launches GPT-5.6 Family and Codex Superapp](#item-2) ⭐️ 9.0/10
-3. [OpenAI Codex CLI: Lightweight Rust-Based Coding Agent](#item-3) ⭐️ 9.0/10
-4. [OfficeCLI: Open-source CLI for AI agents to edit Office files](#item-4) ⭐️ 8.0/10
-5. [Vidu S1: Real-Time Interactive Video Generation Model](#item-5) ⭐️ 8.0/10
+1. [OpenAI Launches GPT-5.6 and Codex Superapp](#item-1) ⭐️ 9.0/10
+2. [BABEL Codec Fully Decodes GPT-2 Small Internals](#item-2) ⭐️ 9.0/10
+3. [OfficeCLI: Open-source CLI for AI-driven Office automation](#item-3) ⭐️ 8.0/10
+4. [Agent Skills: Production-Grade Engineering for AI Coders](#item-4) ⭐️ 8.0/10
+5. [Vidu S1: Real-Time Interactive Video Generation](#item-5) ⭐️ 8.0/10
 6. [SciReasoner: Unified Structural Reasoning Across Sciences](#item-6) ⭐️ 8.0/10
-7. [Apple Sues OpenAI Over Trade Secret Theft](#item-7) ⭐️ 8.0/10
-8. [Course Explores Computation as Universal Fundamental Concept](#item-8) ⭐️ 8.0/10
-9. [Scarf moves from Haskell to Python after 7 years](#item-9) ⭐️ 8.0/10
-10. [Boko Haram Uses Frontier AI for Tactical Planning](#item-10) ⭐️ 8.0/10
-11. [George Hotz Quits Streaming, Laments Lost Internet](#item-11) ⭐️ 8.0/10
-12. [Unsloth NVFP4 Quants 2.5x Faster for Qwen3.6](#item-12) ⭐️ 8.0/10
-13. [Tencent-HY3 295B MoE Runs Well on MacBook M5 Max 128GB](#item-13) ⭐️ 8.0/10
-14. [Local LLM Survival Kit Proposed on USB Drive](#item-14) ⭐️ 8.0/10
-15. [Chicken-Shooter Game Built with Lingbot-World-2](#item-15) ⭐️ 8.0/10
+7. [GPT-5.6 Sol Ultra Claims Proof of Cycle Double Cover Conjecture](#item-7) ⭐️ 8.0/10
+8. [SpaceX seeks 100,000 more Starlink satellites for 100x bandwidth](#item-8) ⭐️ 8.0/10
+9. [Computation as a Universal and Fundamental Concept](#item-9) ⭐️ 8.0/10
+10. [Scarf moves from Haskell to Python after 7 years](#item-10) ⭐️ 8.0/10
+11. [Boko Haram Uses Frontier AI for Tactical Planning and Bomb-Making](#item-11) ⭐️ 8.0/10
+12. [George Hotz Quits Streaming, Critiques Internet Superficiality](#item-12) ⭐️ 8.0/10
+13. [Unsloth NVFP4 Quants 2.5x Faster for Qwen3.6](#item-13) ⭐️ 8.0/10
+14. [Training an LLM from Scratch on 1800s Texts](#item-14) ⭐️ 8.0/10
+15. [Tencent-HY3 Runs Well on 128GB MacBook M5 Max](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [GPT-5.6 Sol Ultra Proves Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 9.0/10
+## [OpenAI Launches GPT-5.6 and Codex Superapp](https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna) ⭐️ 9.0/10
 
-OpenAI's GPT-5.6 Sol Ultra model has produced a proof of the Cycle Double Cover Conjecture, a major open problem in graph theory, as announced in a preprint released on July 10, 2026. This marks the first time an AI has autonomously generated a proof of a long-standing open conjecture in mathematics, sparking debate about AI's role in mathematical research and the verification of machine-generated proofs. The proof is notably concise, suggesting a clever insight that may have been overlooked by human mathematicians. OpenAI also released the full prompt used to guide the model, providing transparency into the reasoning process.
+OpenAI has launched GPT-5.6, codenamed Sol/Terra/Luna, and integrated Codex into a ChatGPT superapp that combines coding, browsing, and desktop control. This marks a major step toward an all-in-one AI platform, potentially reshaping how developers and consumers interact with AI tools by merging coding agents with a general-purpose assistant. The new ChatGPT superapp is powered by GPT-5.6 and can code, control the PC, browse the web, and even publish websites, directly competing with Claude Desktop.
+
+rss · Latent Space · Jul 10, 06:19
+
+**Background**: OpenAI Codex was originally a language model for translating natural language into code, and later evolved into a suite of AI coding agents. The superapp concept combines ChatGPT, a web browser, and Codex into a single desktop application, as reported by CNBC in March 2026.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Codex_(AI_agent)">Codex (AI agent) - Wikipedia</a></li>
+<li><a href="https://www.pcworld.com/article/3188176/the-new-chatgpt-superapp-takes-aim-at-claude-desktop.html">The new ChatGPT superapp takes aim at Claude Desktop</a></li>
+<li><a href="https://www.cnbc.com/2026/03/19/openai-desktop-super-app-chatgpt-browser-codex.html">OpenAI to create desktop super app, combining ChatGPT ... - CNBC</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#OpenAI`, `#GPT`, `#AI`, `#ChatGPT`, `#Codex`
+
+---
+
+<a id="item-2"></a>
+## [BABEL Codec Fully Decodes GPT-2 Small Internals](https://www.reddit.com/r/artificial/comments/1ut82rh/gpt2_fully_decoded_internally_black_box_fully/) ⭐️ 9.0/10
+
+The BABEL codec achieves the first complete, certified decode of GPT-2 small's internal state, enabling reading and writing of model thoughts with 94.7% accuracy. The open-source release includes the paper, full lexicon, grammar tables, decoder/encoder weights, reproduction scripts, and an interactive demo. This breakthrough in mechanistic interpretability allows researchers to directly read and manipulate a language model's internal representations, potentially enabling safer and more controllable AI systems. It sets a new benchmark for transparency in neural networks. The codec works bidirectionally: it translates internal activations into English and injects English phrases back into the model to steer its behavior. The 94.7% reconstruction accuracy holds across all layers and text regimes tested.
+
+reddit · r/artificial · /u/Revolutionary-Lab882 · Jul 11, 02:47
+
+**Background**: Mechanistic interpretability aims to reverse-engineer neural networks by understanding their internal circuits. GPT-2 small is a 124M-parameter transformer model that serves as a common testbed for interpretability research. Prior work could only decode isolated components, not the entire model state.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/wpferrell/babel-codec-gpt2">GitHub - wpferrell/babel-codec-gpt2: The BABEL codec - a ...</a></li>
+<li><a href="https://github.com/wpferrell/babel-codec-gpt2/blob/main/README.md">babel-codec-gpt2/README.md at main · wpferrell ... - GitHub</a></li>
+<li><a href="https://arxiv.org/abs/2407.02646">[2407.02646] A Practical Review of Mechanistic ... - arXiv.org babel-codec-gpt2/README.md at main · wpferrell ... - GitHub 1 Introduction - arXiv.org Mechanistic Interpretability — A Field Guide Mechanistic Interpretability — Neel Nanda</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#mechanistic interpretability`, `#GPT-2`, `#open source`, `#AI safety`, `#transformer`
+
+---
+
+<a id="item-3"></a>
+## [OfficeCLI: Open-source CLI for AI-driven Office automation](https://github.com/iOfficeAI/OfficeCLI) ⭐️ 8.0/10
+
+OfficeCLI, an open-source single-binary tool, has been released to enable AI agents to read, edit, and automate Word, Excel, and PowerPoint files without requiring Microsoft Office installation. The project gained over 1,200 GitHub stars in a single day and now has more than 14,000 total stars. This tool fills a critical gap in AI agent workflows by providing a lightweight, dependency-free way to manipulate Office documents programmatically. It could accelerate the adoption of AI-powered office automation across industries, reducing reliance on heavy Office installations. OfficeCLI is written in C# and distributed as a single binary, meaning no runtime or Office installation is needed. It supports reading, editing, and generating Word (.docx), Excel (.xlsx), and PowerPoint (.pptx) files, and can be integrated into CI/CD pipelines or local automation scripts.
+
+github_trending · GitHub Trending · Jul 11, 02:54
+
+**Background**: Traditionally, automating Office files required either a full Office installation or proprietary libraries like Microsoft Office Interop. AI agents often need to generate reports, update spreadsheets, or create presentations autonomously, but existing solutions are either heavy or limited. OfficeCLI provides a free, open-source alternative that is purpose-built for AI agent use cases.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/iOfficeAI/OfficeCli">GitHub - iOfficeAI/OfficeCLI: OfficeCLI is the first and best ...</a></li>
+<li><a href="https://github.com/officecli/officecli">GitHub - officecli/officecli: OfficeCLI is AI document ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI agents`, `#Office automation`, `#open-source`, `#C#`, `#productivity`
+
+---
+
+<a id="item-4"></a>
+## [Agent Skills: Production-Grade Engineering for AI Coders](https://github.com/addyosmani/agent-skills) ⭐️ 8.0/10
+
+Addy Osmani released a curated repository called agent-skills on GitHub, providing production-grade engineering skills for AI coding agents. The repository gained over 1,100 stars in a single day, reflecting strong community interest. This repository addresses a critical gap in AI-assisted software development by encoding hard-won engineering judgment into structured workflows, helping AI agents produce production-quality code rather than prototypes. It could significantly improve the reliability and adoption of AI coding agents in real-world projects. The skills cover areas such as writing specifications, testing, code review, and shipping decisions, and are designed to be opinionated and process-driven rather than generic prompts. The repository is written in JavaScript and has already accumulated over 76,000 total stars.
+
+github_trending · GitHub Trending · Jul 11, 02:54
+
+**Background**: AI coding agents are tools that autonomously write, review, and debug code, but they often produce prototype-quality output lacking the rigor of production software. Production-grade engineering skills refer to the disciplined workflows and best practices that senior engineers apply to ensure code is reliable, maintainable, and safe to deploy.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/addyosmani/agent-skills">GitHub - addyosmani/agent-skills: Production-grade engineering skills for AI coding agents. · GitHub</a></li>
+<li><a href="https://dev.to/vikrant_bagal_afae3e25ca7/production-grade-engineering-skills-for-ai-coding-agents-56nb">Production-Grade Engineering Skills for AI Coding Agents - DEV Community</a></li>
+<li><a href="https://pyshine.com/Agent-Skills-Production-Grade-Engineering-for-AI/">Agent Skills: Production-Grade Engineering Skills for AI Coding Agents | PyShine</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The community response has been overwhelmingly positive, with many developers praising the repository for filling a real need in AI-assisted development. Some commenters noted that the skills are practical and directly applicable to their daily workflows.
+
+**Tags**: `#AI coding agents`, `#software engineering`, `#developer tools`, `#JavaScript`
+
+---
+
+<a id="item-5"></a>
+## [Vidu S1: Real-Time Interactive Video Generation](https://huggingface.co/papers/2607.03118) ⭐️ 8.0/10
+
+Vidu S1 is a real-time interactive video generation model that enables voice-controlled digital character animation with infinite-length, high-frame-rate output on consumer GPUs. It achieves up to 42 FPS at 540p resolution on standard consumer hardware. This breakthrough brings real-time, interactive video generation to consumer hardware, enabling applications like live virtual avatars and interactive storytelling without expensive cloud infrastructure. It democratizes access to high-quality, voice-controlled digital character animation. Vidu S1 is built on TurboDiffusion and TurboServe, two acceleration frameworks that enable 100-200x speedup for diffusion models. It supports custom image uploads (real people, anime, pets) and multiple voice tones, with a playable demo available at vidu.com.
+
+huggingface_papers · Hugging Face Papers · Jul 10, 00:00
+
+**Background**: Traditional video generation models are slow and require powerful cloud servers, making real-time interaction difficult. Diffusion models, which generate content by iteratively denoising random noise, are computationally expensive. TurboDiffusion accelerates this process using techniques like SageAttention and timestep distillation, while TurboServe optimizes serving infrastructure.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/thu-ml/TurboDiffusion">GitHub - thu-ml/TurboDiffusion: TurboDiffusion: 100–200× ...</a></li>
+<li><a href="https://grokipedia.com/page/TurboDiffusion">TurboDiffusion</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#video generation`, `#real-time`, `#voice control`, `#AI`, `#diffusion models`
+
+---
+
+<a id="item-6"></a>
+## [SciReasoner: Unified Structural Reasoning Across Sciences](https://huggingface.co/papers/2607.07708) ⭐️ 8.0/10
+
+Researchers introduced SciReasoner, a multimodal scientific foundation model that discretizes structural elements of proteins, molecules, and crystals into a unified vocabulary for interpretable reasoning. It achieves state-of-the-art performance on 67 out of 86 benchmarks, including improving Gene Ontology prediction F_max from 0.42 to 0.55 and single-step retrosynthesis accuracy from 0.63 to 0.72. SciReasoner bridges the gap between accurate prediction and interpretable scientific inference, making structure an inspectable substrate for reasoning under scientific constraints. This could accelerate discovery in biology, chemistry, and materials science by providing transparent, domain-grounded explanations for predictions. The model was pretrained on a 206B-token corpus and aligned via supervised fine-tuning on 40M instructions with reinforcement learning. In double-blind expert evaluation, its reasoning traces were preferred or comparable to a frontier large language model in 98% of cases.
+
+huggingface_papers · Hugging Face Papers · Jul 9, 00:00
+
+**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, but applying AI to interpret these relationships requires preserving domain-native structural information while showing how evidence supports predictions. Previous models often lacked interpretability or were limited to single domains. SciReasoner addresses this by treating structural tokens as addressable evidence units during reasoning.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/abs/2607.07708">[2607.07708] Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning</a></li>
+<li><a href="https://arxiv.org/abs/2509.21320">[2509.21320] SciReasoner: Laying the Scientific Reasoning ...</a></li>
+<li><a href="https://github.com/SpectrAI-Initiative/SciReasoner">GitHub - SpectrAI-Initiative/SciReasoner</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI for Science`, `#Multimodal Learning`, `#Structural Biology`, `#Materials Science`, `#Foundation Model`
+
+---
+
+<a id="item-7"></a>
+## [GPT-5.6 Sol Ultra Claims Proof of Cycle Double Cover Conjecture](https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf) ⭐️ 8.0/10
+
+OpenAI released a preprint claiming that its GPT-5.6 Sol Ultra model generated a proof of the Cycle Double Cover Conjecture, a major open problem in graph theory. The proof and the prompt used are publicly available as PDFs. If verified, this would be a landmark achievement in AI-assisted mathematics, demonstrating that large language models can contribute to solving long-standing open problems. It also raises questions about attribution and the role of AI in mathematical research. The proof is reportedly very concise, suggesting it exploits a clever trick that experts had missed. The community notes that the prompt heavily instructs the model on problem-solving strategies, indicating significant human guidance.
 
 hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.com/item?id=48863490)
 
-**Background**: The Cycle Double Cover Conjecture, posed by W. T. Tutte and others, asks whether every bridgeless undirected graph has a collection of cycles such that each edge appears exactly twice. It is a central problem in graph theory with connections to graph embeddings and the circular embedding conjecture. GPT-5.6 Sol Ultra is OpenAI's most advanced reasoning model, featuring an 'ultra mode' that uses subagents to tackle complex tasks.
+**Background**: The Cycle Double Cover Conjecture asks whether every bridgeless undirected graph has a collection of cycles such that each edge appears exactly twice. It has been open for decades and is related to graph embeddings and the circular embedding conjecture. GPT-5.6 Sol Ultra is OpenAI's latest model, featuring an 'ultra mode' that uses subagents for complex reasoning.
 
 <details><summary>References</summary>
 <ul>
@@ -45,305 +177,174 @@ hackernews · scrlk · Jul 10, 18:29 · [Discussion](https://news.ycombinator.co
 </ul>
 </details>
 
-**Discussion**: The community expressed amazement at the achievement but noted that the proof's conciseness suggests a clever trick rather than a deep theory-building approach. Some commenters highlighted the extensive prompt engineering required, questioning the model's autonomy, while others praised the release of the prompt for transparency.
+**Discussion**: Comments express skepticism about attribution, with one user stating the title should credit the human prompters rather than the AI. Others note the extensive human guidance in the prompt and question whether this constitutes an autonomous AI proof. Some are impressed by the conciseness of the proof but await verification.
 
-**Tags**: `#AI`, `#mathematics`, `#graph theory`, `#OpenAI`, `#conjecture proof`
-
----
-
-<a id="item-2"></a>
-## [OpenAI Launches GPT-5.6 Family and Codex Superapp](https://www.latent.space/p/ainews-openai-launches-gpt-56-solterraluna) ⭐️ 9.0/10
-
-OpenAI has launched the GPT-5.6 family of models (Sol, Terra, Luna) and announced the integration of Codex into a ChatGPT desktop superapp. The GPT-5.6 series includes Sol for frontier reasoning, Terra as a balanced everyday model, and Luna as the fastest, most affordable option. This marks a significant step in OpenAI's product strategy, offering tiered model capabilities and a unified superapp that combines chat, coding, and browsing. It could reshape how developers and enterprises interact with AI, making advanced reasoning and agentic work more accessible. GPT-5.6 Sol is designed for long-horizon agentic tasks, while Terra offers GPT-5.5-competitive performance at half the cost. The superapp merges ChatGPT, Codex, and a web browser into a single desktop application, with usage limits varying by plan.
-
-rss · Latent Space · Jul 10, 06:19
-
-**Background**: OpenAI's GPT series has evolved from GPT-3 to GPT-5.6, with each generation improving reasoning and coding abilities. Codex, originally a standalone coding assistant, is now being folded into ChatGPT to create a more comprehensive AI workspace. The superapp concept aims to centralize AI tools for productivity.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna">GPT-5.6 in ChatGPT - OpenAI Help Center</a></li>
-<li><a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/">The new GPT-5.6 family: Luna, Terra, Sol - simonwillison.net</a></li>
-<li><a href="https://www.cnbc.com/2026/03/19/openai-desktop-super-app-chatgpt-browser-codex.html">OpenAI to create desktop super app, combining ChatGPT ... - CNBC</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#OpenAI`, `#GPT-5.6`, `#Codex`, `#AI`, `#superapp`
-
----
-
-<a id="item-3"></a>
-## [OpenAI Codex CLI: Lightweight Rust-Based Coding Agent](https://github.com/openai/codex) ⭐️ 9.0/10
-
-OpenAI has released Codex CLI, a lightweight coding agent written in Rust that runs directly in the terminal, and it has gained over 97,000 stars on GitHub with 413 stars added today. Codex CLI provides developers with a fast, local coding assistant that integrates seamlessly into terminal workflows, potentially boosting productivity for software engineering teams and expanding the adoption of AI-assisted coding tools. The tool is built in Rust, emphasizing performance and memory safety, and is designed to run locally without requiring a cloud connection for core operations. It also supports integration with IDEs like VS Code, Cursor, and Windsurf.
-
-github_trending · GitHub Trending · Jul 11, 02:43
-
-**Background**: OpenAI Codex is a descendant of GPT-3, trained on both natural language and billions of lines of source code from public repositories. Rust is a systems programming language known for memory safety and high performance, making it ideal for building reliable developer tools.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/openai/codex">GitHub - openai/codex: Lightweight coding agent that runs in ...</a></li>
-<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software ... - OpenAI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust (programming language)</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#coding agent`, `#AI`, `#Rust`, `#developer tools`, `#open source`
-
----
-
-<a id="item-4"></a>
-## [OfficeCLI: Open-source CLI for AI agents to edit Office files](https://github.com/iOfficeAI/OfficeCLI) ⭐️ 8.0/10
-
-OfficeCLI, an open-source single-binary CLI tool, has been released, enabling AI agents to read, edit, and automate Word, Excel, and PowerPoint files without requiring Microsoft Office installation. It gained over 1,224 stars on GitHub in a single day, indicating strong community interest. This tool fills a critical gap in AI agent automation by providing direct, programmatic access to Office file formats, which are ubiquitous in business workflows. It simplifies integration for developers and reduces dependency on proprietary software, potentially accelerating adoption of AI-driven document processing. OfficeCLI is written in C# and is available as a single binary, meaning no runtime dependencies or Office installation are needed. It supports reading, editing, and generating DOCX, XLSX, and PPTX files, and is designed to be used by AI agents via simple command-line instructions.
-
-github_trending · GitHub Trending · Jul 11, 02:43
-
-**Background**: AI agents often need to interact with Office documents for tasks like report generation or data extraction, but existing solutions typically require full Office installation or cloud APIs. OfficeCLI provides a lightweight, local-first alternative that can be easily integrated into automation pipelines. The project is hosted on GitHub under the iOfficeAI organization and is licensed as open-source.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/iOfficeAI/OfficeCLI">GitHub - iOfficeAI/ OfficeCLI : OfficeCLI is the first and best Office suite...</a></li>
-<li><a href="https://officecli.io/">OfficeCLI | External and Hosted AI PPTX, DOCX, XLSX, REPORT...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community response has been overwhelmingly positive, with many praising the tool's simplicity and potential for AI integration. Some users expressed interest in additional features like support for more file formats or integration with popular AI frameworks. A few raised concerns about handling complex formatting, but overall sentiment is enthusiastic.
-
-**Tags**: `#AI agents`, `#Office automation`, `#open-source`, `#C#`, `#CLI`
-
----
-
-<a id="item-5"></a>
-## [Vidu S1: Real-Time Interactive Video Generation Model](https://huggingface.co/papers/2607.03118) ⭐️ 8.0/10
-
-Vidu S1 is a real-time interactive video generation model that enables voice-controlled digital character animation with infinite-length, high-frame-rate output on consumer GPUs. This breakthrough makes real-time, interactive video generation accessible on consumer hardware, opening up new possibilities for live streaming, virtual avatars, and interactive storytelling. Vidu S1 outputs 540p video at up to 42 FPS on consumer GPUs, and supports custom character images and voice tones. It is built on TurboDiffusion and TurboServe technologies.
-
-huggingface_papers · Hugging Face Papers · Jul 10, 00:00
-
-**Background**: Traditional video generation models are slow and require powerful hardware, limiting real-time interaction. TurboDiffusion accelerates video diffusion models by 100-200x with minimal quality loss, while TurboServe likely optimizes serving infrastructure. Vidu S1 combines these to achieve real-time performance.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.vidu.com/vidu-stream">Vidu S1 AI Video Model | Vidu AI</a></li>
-<li><a href="https://github.com/thu-ml/TurboDiffusion">GitHub - thu-ml/TurboDiffusion: TurboDiffusion: 100–200× Acceleration for Video Diffusion Models</a></li>
-
-</ul>
-</details>
-
-**Discussion**: No community comments were provided for this news item.
-
-**Tags**: `#video generation`, `#real-time`, `#voice control`, `#AI`, `#diffusion models`
-
----
-
-<a id="item-6"></a>
-## [SciReasoner: Unified Structural Reasoning Across Sciences](https://huggingface.co/papers/2607.07708) ⭐️ 8.0/10
-
-Researchers introduced SciReasoner, a multimodal scientific foundation model that discretizes structural elements of proteins, molecules, and crystals into a unified vocabulary for interpretable reasoning. It achieves state-of-the-art performance on 67 out of 86 benchmarks, improving Gene Ontology prediction F_max from 0.42 to 0.55 and retrosynthesis accuracy from 0.63 to 0.72. SciReasoner bridges the gap between accurate prediction and interpretable scientific inference, enabling researchers to understand why a model makes certain predictions. This could accelerate drug discovery and materials science by providing transparent reasoning traces that experts can trust and validate. The model treats structural tokens as addressable evidence units during reasoning, and double-blind expert evaluation rated its reasoning traces as preferred or comparable to a frontier LLM in 98% of cases. SciReasoner covers proteins, small molecules, and inorganic crystals, and its representations can separate elemental and compound phases as well as high- and low-band-gap regimes.
-
-huggingface_papers · Hugging Face Papers · Jul 9, 00:00
-
-**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, but applying AI to interpret these relationships requires preserving domain-specific structural information while showing how evidence supports predictions. Previous models often lacked interpretability or were limited to a single domain. SciReasoner addresses this by discretizing coordinates, topologies, and periodic connectivities into a unified structure-aware vocabulary, enabling reasoning under scientific constraints.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://huggingface.co/SciReason/SciReasoner-8B">SciReason/ SciReasoner -8B · Hugging Face</a></li>
-<li><a href="https://github.com/SpectrAI-Initiative/SciReasoner">GitHub - SpectrAI-Initiative/ SciReasoner · GitHub</a></li>
-<li><a href="https://www.alphaxiv.org/overview/2509.21320">SciReasoner : Laying the Scientific Reasoning Ground... | alphaXiv</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI for Science`, `#Structural Biology`, `#Materials Science`, `#Multimodal Learning`, `#Interpretable AI`
-
----
-
-<a id="item-7"></a>
-## [Apple Sues OpenAI Over Trade Secret Theft](https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/) ⭐️ 8.0/10
-
-Apple has filed a lawsuit against OpenAI, alleging that the company systematically stole trade secrets through ex-Apple employees, including instructing new hires to conceal their employment at OpenAI to prolong access to Apple's confidential information. This lawsuit represents a major legal confrontation between two tech giants, potentially impacting OpenAI's IPO and setting a precedent for how companies protect trade secrets in the AI industry. Apple claims OpenAI used confidential Apple hardware information when approaching Apple suppliers, and that OpenAI recruits, such as a person named Tan, emailed themselves confidential information upon leaving Apple.
-
-hackernews · stock_toaster · Jul 10, 20:47 · [Discussion](https://news.ycombinator.com/item?id=48865019)
-
-**Background**: Trade secret theft occurs when confidential business information is improperly obtained or disclosed. Apple and OpenAI are both major players in AI and hardware, making this dispute particularly significant. The lawsuit alleges a pattern of misconduct that could undermine trust in OpenAI's business practices.
-
-**Discussion**: Community comments express strong support for Apple's case, with many believing the evidence is damning and that OpenAI will face severe consequences. Some question who is orchestrating the alleged scheme, while others note that discovery will be advantageous for Apple.
-
-**Tags**: `#Apple`, `#OpenAI`, `#trade secrets`, `#lawsuit`, `#AI`
+**Tags**: `#AI`, `#mathematics`, `#graph theory`, `#GPT-5.6`, `#conjecture proof`
 
 ---
 
 <a id="item-8"></a>
-## [Course Explores Computation as Universal Fundamental Concept](https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept) ⭐️ 8.0/10
+## [SpaceX seeks 100,000 more Starlink satellites for 100x bandwidth](https://www.zdnet.com/home-and-office/networking/spacex-wants-to-launch-100000-more-starlink-satellites/) ⭐️ 8.0/10
 
-A course and discussion on Ergo.org examines computation as a universal and fundamental concept, sparking debate on its metaphysical and physical implications. This discussion challenges the boundaries of computer science and philosophy, potentially reshaping how we understand the universe and our models of reality. The course is linked to Tim Roughgarden, a noted instructor in algorithmic game theory, and comments reference undecidable physical processes like spectral gaps and fluid dynamics.
+SpaceX has filed an application with the FCC to launch up to 100,000 additional Starlink satellites, aiming to increase total bandwidth by 100 times and enable direct-to-cellphone connectivity. If approved, this would dramatically expand global internet coverage, especially in remote areas, but raises serious concerns about space sustainability, light pollution, and the risk of Kessler syndrome. The proposal relies on SpaceX's Starship for cost-effective launches; the current Starlink constellation has about 6,000 satellites, and the FCC has already approved up to 12,000. The new plan would require a separate authorization.
 
-hackernews · simonpure · Jul 10, 15:23 · [Discussion](https://news.ycombinator.com/item?id=48861213)
+hackernews · CrankyBear · Jul 10, 17:51 · [Discussion](https://news.ycombinator.com/item?id=48863064)
 
-**Background**: Computation, traditionally a concept in computer science, is being explored as a fundamental principle of the universe, akin to earlier analogies like the universe as a clock or steam engine. This idea, known as digital physics or pancomputationalism, suggests that physical processes can be viewed as computational processes.
+**Background**: Starlink is a satellite internet constellation operated by SpaceX, providing broadband to over 160 countries. Megaconstellations like Starlink have been criticized for their environmental impact, including light pollution and orbital debris. Kessler syndrome refers to a scenario where satellite collisions create cascading debris, making space unusable.
 
-**Discussion**: Comments are mixed: some argue computation is metaphysically universal due to human symbolic communication, while others caution against overextending the analogy, noting historical patterns of explaining the universe with the latest technology.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Starlink">Starlink - Wikipedia</a></li>
+<li><a href="https://www.space.com/spacex-starlink-satellites.html">Starlink satellites : Facts, tracking and impact on astronomy | Space</a></li>
+<li><a href="https://pirg.org/edfund/resources/wastex-environmental-harms-of-satellite-internet-mega-constellations/">Environmental harms of satellite internet mega-constellations</a></li>
 
-**Tags**: `#computation`, `#philosophy`, `#computer science`, `#metaphysics`
+</ul>
+</details>
+
+**Discussion**: Comments reflect mixed views: some question the economic viability outside underserved regions, others worry about losing the night sky and triggering Kessler syndrome. A few highlight the potential for global cellphone coverage and even space-based data centers.
+
+**Tags**: `#SpaceX`, `#Starlink`, `#satellite internet`, `#space sustainability`, `#global connectivity`
 
 ---
 
 <a id="item-9"></a>
-## [Scarf moves from Haskell to Python after 7 years](https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html) ⭐️ 8.0/10
+## [Computation as a Universal and Fundamental Concept](https://ergo.org/courses/computation-as-a-universal-and-fundamental-concept) ⭐️ 8.0/10
 
-After 7 years in production, Scarf has reluctantly moved away from Haskell to Python, citing Haskell's slow compile times as a critical bottleneck for LLM-based agentic development. This decision highlights a growing tension between strong type systems and the rapid iteration cycles required by AI-driven development, potentially influencing language choices for agentic workflows. Scarf is an open-source intelligence platform that tracks how agents and humans use open-source software. The move was driven by the need for faster compile times to support parallel agent iterations, which Haskell's compiler could not provide.
+A course titled 'Computation as a Universal and Fundamental Concept' explores the idea that computation is not just a technical tool but a fundamental principle underlying metaphysics and physical processes, linking Turing machines to broader scientific inquiry. This discussion challenges the boundaries of computer science and philosophy, potentially reshaping how we understand the universe and our models of reality, with implications for fields like algorithmic game theory and undecidability in physical systems. The course is taught by Tim Roughgarden, a renowned instructor in algorithmic game theory, and has sparked a community debate on whether equating computation with physical processes is a metaphysical overreach or a valid insight.
 
-hackernews · aviaviavi · Jul 10, 13:30 · [Discussion](https://news.ycombinator.com/item?id=48859673)
+hackernews · simonpure · Jul 10, 15:23 · [Discussion](https://news.ycombinator.com/item?id=48861213)
 
-**Background**: Haskell is a purely functional programming language known for its strong static type system and lazy evaluation, but its compiler can be slow, especially for large codebases. Agentic development involves using AI agents to autonomously write and iterate code, requiring rapid feedback loops. Python, while dynamically typed, offers faster edit-compile-run cycles, making it more suitable for such workflows.
+**Background**: Computation, traditionally defined via Turing machines, is a formal model of symbol manipulation. The idea that the universe itself is a computer has been debated for decades, with parallels to historical analogies like the universe as a clock or steam engine.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://about.scarf.sh/platform/">Scarf Open Source Intelligence Platform | Scarf</a></li>
-<li><a href="https://about.scarf.sh/">Open source intelligence for the agentic era | Scarf</a></li>
-<li><a href="https://stackoverflow.com/questions/2475828/haskell-compile-time-function-calculation">compiler construction - Haskell compile time ... - Stack Overflow</a></li>
+**Discussion**: Commenters are divided: some argue computation is metaphysically universal due to human symbolic communication, while others warn against overgeneralization, citing historical analogies and noting that real physical processes like spectral gaps are undecidable.
 
-</ul>
-</details>
-
-**Discussion**: The community is divided: some agree that fast compile times are crucial for agents, while others argue that strong type systems are essential to catch LLM-generated errors. Some Haskell users report successful agentic development with Haskell, suggesting the issue may be specific to Scarf's practices.
-
-**Tags**: `#Haskell`, `#LLM`, `#software engineering`, `#type systems`, `#agentic development`
+**Tags**: `#computation`, `#philosophy`, `#theory of computation`, `#undecidability`, `#algorithmic game theory`
 
 ---
 
 <a id="item-10"></a>
-## [Boko Haram Uses Frontier AI for Tactical Planning](https://casp.ac/reports/ai-enabled-terrorism) ⭐️ 8.0/10
+## [Scarf moves from Haskell to Python after 7 years](https://avi.press/posts/2026-07-10-after-7-years-in-production-scarf-has-reluctantly-moved-away-from-haskell.html) ⭐️ 8.0/10
 
-A report from the Center for Analysis of Security Policy (CASP) details how the terrorist group Boko Haram reportedly used frontier AI models like ChatGPT, Gemini, and Claude for tactical planning, bomb-making instructions, and attack coordination. This marks one of the first documented cases of a terrorist group leveraging frontier AI for operational purposes, raising urgent concerns about AI safety, model misuse, and the need for robust guardrails. The report is based on interviews with 15 former Boko Haram commanders who claimed to have used AI for tasks such as calculating motorcycle jumps over bridges and optimizing attack squad sizes, though the credibility of these claims is debated.
+Scarf, a company that used Haskell in production for 7 years, has reluctantly migrated to Python, citing slow compile times as a critical hindrance to LLM-based agentic development. This move highlights a growing tension between expressive type systems and the fast iteration cycles demanded by AI-assisted coding, potentially influencing language choices for agentic workflows. The company found that Haskell's slow compilation made it impractical for agents to rapidly iterate and fix errors, while Python's faster feedback loop enabled more effective agentic development.
 
-hackernews · imustachyou · Jul 10, 18:49 · [Discussion](https://news.ycombinator.com/item?id=48863707)
+hackernews · aviaviavi · Jul 10, 13:30 · [Discussion](https://news.ycombinator.com/item?id=48859673)
 
-**Background**: Frontier AI refers to the most advanced general-purpose AI models, capable of reasoning, multimodal understanding, and autonomous task execution. Boko Haram is a jihadist terrorist group based in northeastern Nigeria, known for violent attacks and insurgency since 2009.
+**Background**: LLM-based agentic development involves using AI agents to autonomously write and debug code, requiring fast compile-edit cycles. Haskell is known for its strong type system but also for notoriously slow compilation times, especially for large projects.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://savedelete.com/news/boko-haram-ai/">Report details how terrorist group Boko Haram uses fron ...</a></li>
-<li><a href="https://digg.com/tech/wbncubnt">Cambridge research paper finds Boko Haram terrorists used ...</a></li>
-<li><a href="https://www.nytimes.com/2026/07/10/us/politics/ai-terrorism-boko-haram-nigeria.html">How Terrorist Groups Are Using A.I. to Gain an Edge in Battle</a></li>
+<li><a href="https://agentultra.com/blog/using-haskell-in-production/">Agentultra - Using Haskell in Production</a></li>
+<li><a href="https://serokell.io/blog/compile-time-evaluation-haskell">Compile-Time Evaluation in Haskell - Serokell</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express skepticism about the report's claims, noting that jailbroken LLM responses to bomb-making queries are often not actionable and that the interviews involved only 15 individuals who may not have directly used the AI themselves. Some commenters find the methodology sound but the results exaggerated.
+**Discussion**: The community is divided: some argue that strong type systems are essential to constrain LLM outputs, while others agree that fast compile times are critical for agentic workflows. A Haskell shop reports success with agentic development, suggesting that development practices may mitigate compile-time issues.
+
+**Tags**: `#Haskell`, `#Python`, `#LLM`, `#type systems`, `#software engineering`
+
+---
+
+<a id="item-11"></a>
+## [Boko Haram Uses Frontier AI for Tactical Planning and Bomb-Making](https://casp.ac/reports/ai-enabled-terrorism) ⭐️ 8.0/10
+
+A new report from the Center for Analysis of Security and Policy (CASP) details how the terrorist group Boko Haram uses frontier AI models for tactical planning, bomb-making instructions, and attack simulations. This marks one of the first documented cases of a terrorist group actively using advanced AI, raising urgent concerns about AI misuse and the need for stronger safeguards on frontier models. The report is based on interviews with 15 Boko Haram members who had knowledge of AI but did not use it themselves, and some claims—such as using AI to learn motorcycle jumps—have been met with skepticism from the technical community.
+
+hackernews · imustachyou · Jul 10, 18:49 · [Discussion](https://news.ycombinator.com/item?id=48863707)
+
+**Background**: Frontier AI refers to the most advanced general-purpose models capable of reasoning, multimodal understanding, and autonomous task execution. Boko Haram is a jihadist terrorist group based in northeastern Nigeria that has been active since 2009.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.crowdstrike.com/en-us/cybersecurity-101/artificial-intelligence/frontier-ai/">Frontier AI Explained: Key Models, Players, and Business Impact</a></li>
+<li><a href="https://aiuntethered.com/news/boko-haram-ai-advancements/">Boko Haram 's Use of AI : A Dangerous Evolution | AiUntethered</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters express skepticism about the report's claims, noting that jailbroken LLM responses are often not actionable and that the methodology relies on hearsay from only 15 individuals. Some agree that AI may aid in general information gathering but doubt specific tactical benefits.
 
 **Tags**: `#AI safety`, `#terrorism`, `#LLM misuse`, `#security`, `#ethics`
 
 ---
 
-<a id="item-11"></a>
-## [George Hotz Quits Streaming, Laments Lost Internet](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [George Hotz Quits Streaming, Critiques Internet Superficiality](https://geohot.github.io//blog/jekyll/update/2026/05/03/punk-or-why-i-dont-stream.html) ⭐️ 8.0/10
 
-George Hotz, known as geohot, published a blog post explaining why he stopped streaming, criticizing the superficiality of public online spaces and the decline of the old internet. As a prominent figure in tech, Hotz's critique reflects a growing disillusionment with mainstream streaming platforms and centralized internet, resonating with many who miss the decentralized, community-driven web. Hotz describes the current internet as dominated by a few corporate towns and Chinese platforms that are hard to access, contrasting it with the old internet of blogs and forums. He also mentions trying a flip phone in 2014 but finding it impractical due to app requirements.
+George Hotz, known as geohot, published a blog post explaining why he stopped streaming, arguing that modern internet platforms prioritize superficial engagement over authentic connection. This critique from a prominent hacker highlights growing concerns about internet culture and the need for decentralized, authentic online spaces, resonating with many in the tech community. Hotz describes the internet as dominated by five corporate towns and inaccessible Chinese platforms, and advocates for a return to the old-style internet of blogs and direct discussions.
 
 hackernews · surprisetalk · Jul 10, 13:30 · [Discussion](https://news.ycombinator.com/item?id=48859671)
 
-**Background**: George Hotz is a well-known security hacker who gained fame for jailbreaking iPhones and reverse-engineering the PlayStation 3. He later worked on self-driving car technology and AI. Streaming became a popular way for him to share his work and thoughts, but he now finds the format shallow and commercialized.
+**Background**: George Hotz is a well-known security hacker who gained fame for jailbreaking the iPhone and PlayStation 3. He later worked on autonomous driving at comma.ai. His blog post reflects a broader debate about platform centralization and authenticity online.
 
-**Discussion**: Commenters expressed mixed reactions: some agreed with his critique of internet centralization, while others pointed out that the old internet still exists in niche communities like blogs and forums. One commenter noted that Hotz's life is inseparable from meta commentary, and another questioned if he was too young to remember earlier internet eras.
+**Discussion**: Commenters like firasd note Hotz's life is inseparable from meta commentary, while rmunn argues that the old-style internet still exists on blogs. everdrive questions if Hotz is very young, pointing out that looking up movie times is a solved problem.
 
-**Tags**: `#internet culture`, `#streaming`, `#geohot`, `#online communities`, `#meta commentary`
+**Tags**: `#internet culture`, `#streaming`, `#authenticity`, `#decentralization`, `#geohot`
 
 ---
 
-<a id="item-12"></a>
+<a id="item-13"></a>
 ## [Unsloth NVFP4 Quants 2.5x Faster for Qwen3.6](https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants/) ⭐️ 8.0/10
 
-Unsloth released NVFP4 quantized versions of Qwen3.6 27B and 35B-A3B models, achieving up to 2.5x speedup over NVIDIA's implementation with no accuracy degradation, and added FP8 KV cache support for 2x longer contexts. This breakthrough significantly improves inference speed for large language models on NVIDIA Blackwell GPUs, making high-performance LLM deployment more efficient and accessible for local and enterprise use. Unsloth's NVFP4 uses W4A4 (4-bit weights and activations) for matrix multiplications, while NVIDIA's uses W4A16; they also provide two 35B versions: NVFP4-Fast (1.79x faster, full W4A4) and NVFP4 (1.56x faster, mixed precision for slightly higher accuracy).
+Unsloth released NVFP4 quantized versions of Qwen3.6 27B and 35B-A3B models, achieving up to 2.5x speedup over NVIDIA's NVFP4 implementation with no accuracy loss, using W4A4 tensor cores and FP8 KV cache. This breakthrough significantly improves inference efficiency for large language models, enabling faster deployment on consumer hardware and reducing memory usage, which is critical for local LLM inference and edge applications. The 27B model achieves 2.5x speedup, while the 35B-A3B variants achieve 1.56x to 1.79x speedup. Unsloth's NVFP4 uses true W4A4 (4-bit weights and activations) matmuls, whereas NVIDIA's implementation uses W4A16. FP8 KV cache calibration is also provided, automatically enabling 2x longer contexts.
 
 reddit · r/LocalLLaMA · /u/danielhanchen · Jul 10, 13:20
 
-**Background**: NVFP4 is a 4-bit floating-point quantization format introduced with NVIDIA Blackwell GPUs, offering higher dynamic range than INT4. W4A4 means both weights and activations are quantized to 4 bits, maximizing compute efficiency. FP8 KV cache reduces memory usage for key-value cache, enabling longer context windows.
+**Background**: NVFP4 is a 4-bit floating-point quantization format introduced with NVIDIA's Blackwell architecture, offering higher dynamic range than uniform INT4. W4A4 quantization promises full utilization of INT4 tensor cores for maximum throughput, but prior systems often fell back to mixed precision due to dequantization overhead. FP8 KV cache reduces memory footprint of the key-value cache, enabling longer context windows.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://build.nvidia.com/spark/nvfp4-quantization">NVFP4 Quantization | DGX Spark</a></li>
 <li><a href="https://developers.redhat.com/articles/2026/02/04/accelerating-large-language-models-nvfp4-quantization">Accelerating large language models with NVFP4 quantization | Red Hat Developer</a></li>
-<li><a href="https://docs.vllm.ai/projects/llm-compressor/en/latest/examples/quantization_w4a4_fp4/">fp4 Quantization with NVFP4 - LLM Compressor Docs</a></li>
+<li><a href="https://docs.vllm.ai/en/latest/features/quantization/quantized_kvcache/">Quantized KV Cache - vLLM</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#quantization`, `#performance`, `#Qwen`, `#NVFP4`
+**Tags**: `#LLM`, `#quantization`, `#inference optimization`, `#Qwen`, `#Unsloth`
 
 ---
 
-<a id="item-13"></a>
-## [Tencent-HY3 295B MoE Runs Well on MacBook M5 Max 128GB](https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb/) ⭐️ 8.0/10
+<a id="item-14"></a>
+## [Training an LLM from Scratch on 1800s Texts](https://www.reddit.com/r/LocalLLaMA/comments/1uswlq8/training_an_llm_from_scratch_on_1800s_texts_160gb/) ⭐️ 8.0/10
 
-A Reddit user successfully runs the new Tencent-HY3 295B-A21B MoE model on a MacBook M5 Max with 128GB unified memory using a custom UD128 quantized GGUF and a patched build of llama.cpp, achieving double the token generation speed compared to DeepSeek V4 Flash. This demonstrates that frontier-level MoE models can run on consumer hardware, making advanced AI accessible to individuals and small teams without cloud dependencies. The user used a 107GB UD128 quant (Unsloth Dynamic 2.0) and had to fix a GGUF architecture naming mismatch (hy-v3 vs hy_v3) before the model would load. Performance benchmarks show 32.4 tokens/s decode at empty context and 16.3 tokens/s at 16K context.
+A developer pretrained a 500M parameter LLM on 160GB of 1800s English texts (40B tokens) and fine-tuned it on synthetic Q&A pairs for historical question answering, with plans to train a 2B parameter model. This demonstrates the feasibility of domain-specific pretraining on historical texts, enabling accurate Q&A about 1800s culture, events, and figures. It opens the door for specialized historical NLP models that can assist researchers, educators, and enthusiasts. The 500M evaluation model was trained on a 5B token sample of the full 40B token dataset, covering 1800-1875 English texts from England and the US. The fine-tuning used synthetic Q&A pairs generated from the dataset itself, and the model currently performs better on London-related content.
 
-reddit · r/LocalLLaMA · /u/returnity · Jul 10, 19:53
+reddit · r/LocalLLaMA · /u/Remarkable-Trick-177 · Jul 10, 18:51
 
-**Background**: Tencent-HY3 (Hy3) is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters, released under Apache 2.0. It competes with models like DeepSeek V4 Flash. Running such large models locally requires quantization to reduce memory footprint, and tools like llama.cpp enable inference on consumer hardware.
+**Background**: Large language models (LLMs) are typically trained on massive, general-purpose internet text. Domain-specific pretraining, such as on historical texts, allows models to capture specialized language and knowledge. Synthetic Q&A generation is a technique to create training data for question answering when human-annotated data is scarce.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/tencent/Hy3">tencent / Hy 3 · Hugging Face</a></li>
-<li><a href="https://unsloth.ai/docs/basics/unsloth-dynamic-2.0-ggufs">Unsloth Dynamic 2.0 GGUFs | Unsloth Documentation</a></li>
-<li><a href="https://huggingface.co/collections/unsloth/unsloth-dynamic-20-quants">Unsloth Dynamic 2.0 Quants - a unsloth Collection</a></li>
+<li><a href="https://medium.com/@yashwanths_29644/llm-series-05-how-large-language-models-perform-across-different-parameter-scales-4ccdb9f4bf7f">LLM Series — 05: How Large Language Models Perform Across Different Parameter Scales | by Yashwanth S | Medium</a></li>
+<li><a href="https://www.digitaldividedata.com/blog/fine-tuning-techniques-for-domain-specific-language-models">Advanced Fine-Tuning Techniques For Domain-Specific Language Models - Digitaldividedata.com</a></li>
+<li><a href="https://www.emergentmind.com/topics/syntheticqa">SyntheticQA: Methods & Applications</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#LLM`, `#pretraining`, `#historical NLP`, `#domain-specific model`, `#open source`
+
+---
+
+<a id="item-15"></a>
+## [Tencent-HY3 Runs Well on 128GB MacBook M5 Max](https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb/) ⭐️ 8.0/10
+
+A user successfully ran Tencent's new 295B MoE model (HY3) on a MacBook M5 Max with 128GB RAM using a 107GB Unsloth dynamic quant, achieving double the token generation speed of DeepSeek V4 Flash with similar or better quality. This demonstrates that large MoE models can be effectively deployed on high-end consumer hardware, making frontier-level AI more accessible to individuals and small teams without expensive GPU clusters. The user used a custom build of llama.cpp with PR #25395 for HY3 support, fixed a GGUF architecture naming mismatch, and set GPU memory limit to 122GB. Benchmarks showed 32.4 tokens/sec decode on empty context and 16.3 tokens/sec at 16K context.
+
+reddit · r/LocalLLaMA · /u/returnity · Jul 10, 19:53
+
+**Background**: Tencent's HY3 is a 295B-parameter Mixture-of-Experts (MoE) model with 21B active parameters per token and a 256K context window, released under Apache-2.0. MoE models activate only a subset of parameters per token, enabling large total capacity with lower computational cost. Quantization reduces model size by using fewer bits per weight, trading some accuracy for feasibility on consumer hardware.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/">Tencent Releases Hy3: An Open 295B Mixture-of-Experts (MoE) Model with 21B Active Parameters and 256K Context - MarkTechPost</a></li>
+<li><a href="https://huggingface.co/tencent/Hy3">tencent/Hy3 · Hugging Face</a></li>
+<li><a href="https://letsdatascience.com/news/tencent-open-sources-hy3-295b-moe-model-c3d05258">Tencent open-sources Hy3 295B MoE model | Let's Data Science</a></li>
 
 </ul>
 </details>
 
 **Tags**: `#LLM`, `#MoE`, `#Tencent-HY3`, `#local inference`, `#quantization`
-
----
-
-<a id="item-14"></a>
-## [Local LLM Survival Kit Proposed on USB Drive](https://www.reddit.com/r/LocalLLaMA/comments/1uspcg0/has_anyone_created_a_local_llm_survival_kit/) ⭐️ 8.0/10
-
-A Reddit user proposed a 'Local LLM Survival Kit' — a USB thumb drive containing llama.cpp binaries, quantized models (Qwen3.5 35B-A3B and Gemma 4 E4B), a compressed SQLite knowledge base, and a browser frontend for fully offline, portable AI access. This concept addresses the growing need for portable, offline AI knowledge bases that work on any computer without internet or GPU, potentially empowering users in remote areas, during travel, or in privacy-sensitive scenarios. The kit targets 64 GB USB drives (under $10) and includes CPU-only inference via llama.cpp, achieving 5-20 tokens/s on most PCs from the past 15 years. The SQLite database uses sqlite-zstd compression to fit a pruned English Wikipedia dump and freely licensed books.
-
-reddit · r/LocalLLaMA · /u/-p-e-w- · Jul 10, 14:30
-
-**Background**: llama.cpp is a C++ library optimized for CPU inference using SIMD instructions (AVX2/AVX-512 on x86, NEON on ARM). Q4_K_M is a quantization method that balances model size and quality, allowing large models like Qwen3.5 35B-A3B to run on systems with 32 GB RAM. sqlite-zstd provides transparent row-level compression for SQLite, enabling efficient storage of large text datasets.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://d-central.tech/ollama-vs-vllm-vs-llama-cpp/">Ollama vs vLLM vs llama . cpp : Local Inference Server Comparison...</a></li>
-<li><a href="https://willitrunai.com/blog/qwen-3-5-35b-a3b-vram-requirements">Qwen 3 . 5 - 35 B - A 3 B VRAM Requirements 2026... | Will It Run AI Blog</a></li>
-<li><a href="https://github.com/phiresky/sqlite-zstd">GitHub - phiresky/sqlite-zstd: Transparent dictionary-based row-level compression for SQLite · GitHub</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community discussion is not provided, so no summary is available.
-
-**Tags**: `#local-llm`, `#offline-ai`, `#llama.cpp`, `#knowledge-base`, `#portable-ai`
-
----
-
-<a id="item-15"></a>
-## [Chicken-Shooter Game Built with Lingbot-World-2](https://www.reddit.com/r/StableDiffusion/comments/1ut0gay/used_lingbotworld2_to_build_a_game_where_you/) ⭐️ 8.0/10
-
-A Reddit user built a real-time interactive game using Lingbot-World-2 where a chicken acts as an explosive-egg launcher, demonstrating coherent object persistence and camera control across generated scenes. This showcases a significant leap in real-time AI-generated worlds, with coherent interactivity and object persistence that was not possible six months ago, hinting at future applications in gaming and simulation. The game uses a prompt that defines a world rule where a hen is an explosive-egg launcher, and the system maintains this rule across frames. The environment remains coherent during mouse-based camera orbit, and the chicken stays consistent across scenes.
-
-reddit · r/StableDiffusion · /u/boudaboy · Jul 10, 21:15
-
-**Background**: Lingbot-World-2 is an open-source AI world model that generates infinite, real-time navigable video streams from a reference image and text prompt. Unlike traditional video generation, it creates explorable 3D spaces with persistent memory and consistent physics, enabling interactive experiences.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://digg.com/tech/bnxehiyh">LingBot - World 2 .0 open-sources an interactive AI world model...</a></li>
-<li><a href="https://docs.reactor.inc/model-api-reference/lingbot-world-2/overview">What LingBot World 2 is, its key features, and a quick start.</a></li>
-<li><a href="https://lingbot-world.com/">LingBot - World : Open Source AI World Model | 16FPS 3D</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community praised the coherence and interactivity, with many noting it as a major improvement over previous AI world models. Some users discussed potential game applications, while others questioned the scalability to longer sessions.
-
-**Tags**: `#AI-generated worlds`, `#real-time rendering`, `#interactive AI`, `#Stable Diffusion`, `#game development`
 
 ---
