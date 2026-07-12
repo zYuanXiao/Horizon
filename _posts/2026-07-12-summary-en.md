@@ -5,107 +5,279 @@ date: 2026-07-12
 lang: en
 ---
 
-> From 122 items, 15 important content pieces were selected
+> From 119 items, 15 important content pieces were selected
 
 ---
 
-1. [vLLM v0.25.0: Model Runner V2 Default, PagedAttention Removed](#item-1) ⭐️ 9.0/10
-2. [Weekly AI Recap: GPT-5.6, Grok 4.5, Gemini Delay, Copilot Data](#item-2) ⭐️ 9.0/10
-3. [Vidu S1: Real-Time Interactive Video Generation](#item-3) ⭐️ 8.0/10
-4. [SciReasoner: Interpretable Structural Reasoning Across Science](#item-4) ⭐️ 8.0/10
-5. [Quad RTX 5060 Ti Build Benchmarks Qwen3.6-27B for Code Gen](#item-5) ⭐️ 8.0/10
-6. [RTX 5090 vs 6000 PRO: Shunt Mod & Water Cooling Benchmarks](#item-6) ⭐️ 8.0/10
-7. [Jacobian Lens Tool for GGUF Models on llama.cpp](#item-7) ⭐️ 8.0/10
-8. [Direct Face Similarity Loss Boosts Character LoRA Training](#item-8) ⭐️ 8.0/10
+1. [Weekly AI Recap: GPT-5.6, Grok 4.5, Gemini Delay, Copilot Data](#item-1) ⭐️ 9.0/10
+2. [Nvidia's Circular Financing in GPU Boom](#item-2) ⭐️ 8.0/10
+3. [Deep Dive into UPI Payment Architecture](#item-3) ⭐️ 8.0/10
+4. [Early History of the Singular Value Decomposition (1993)](#item-4) ⭐️ 8.0/10
+5. [DeepSeek reportedly developing its own AI chip](#item-5) ⭐️ 8.0/10
+6. [Ultra-Budget 20GB VRAM Dual P102-100 Setup for $100](#item-6) ⭐️ 8.0/10
+7. [Interactive Jacobian Lens visualizer and steerer for GGUF models on llama.cpp](#item-7) ⭐️ 8.0/10
+8. [RTX 5090 vs 6000 Pro: Shunt Modded Power Scaling Benchmarks](#item-8) ⭐️ 8.0/10
 9. [VultronRetriever Models Top MTEB, Run Offline on iPhone](#item-9) ⭐️ 8.0/10
-10. [Apple sues OpenAI over trade secret theft](#item-10) ⭐️ 8.0/10
+10. [Apple Sues OpenAI Over Trade Secret Theft](#item-10) ⭐️ 8.0/10
 11. [OpenAI's Head of Safety Departs](#item-11) ⭐️ 8.0/10
-12. [Superpowers: Agentic Skills Framework Trending on GitHub](#item-12) ⭐️ 8.0/10
-13. [OpenManus AI Agent Framework Surges on GitHub](#item-13) ⭐️ 8.0/10
-14. [OpenAI Releases Codex CLI: Lightweight Rust-Based Coding Agent](#item-14) ⭐️ 8.0/10
-15. [Hugging Face Launches Speech-to-Speech Repository for Local Voice Agents](#item-15) ⭐️ 8.0/10
+12. [SciReasoner: Interpretable Structural Reasoning Across Sciences](#item-12) ⭐️ 8.0/10
+13. [Awesome-LLM-Apps: 100+ AI Agent & RAG Apps](#item-13) ⭐️ 7.0/10
+14. [Ant: A New JavaScript Runtime and Ecosystem](#item-14) ⭐️ 7.0/10
+15. [ClickHouse Scales PgBouncer to 4x Throughput](#item-15) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [vLLM v0.25.0: Model Runner V2 Default, PagedAttention Removed](https://github.com/vllm-project/vllm/releases/tag/v0.25.0) ⭐️ 9.0/10
-
-vLLM v0.25.0 makes Model Runner V2 the default for all dense models, removes the legacy PagedAttention implementation, and achieves speed parity between the Transformers modeling backend and native vLLM. The release also adds new models like LLaVA-OneVision-2 and GLM-5, a Streaming Parser Engine, and universal speculative decoding for heterogeneous vocabularies. This release marks a major architectural shift in vLLM, simplifying the codebase and improving performance by making Model Runner V2 the standard and removing PagedAttention. The Transformers backend speed parity lowers the barrier for users to run Hugging Face models with vLLM's efficiency, while new models and speculative decoding features expand vLLM's applicability in production LLM serving. Model Runner V2 now supports EVS, realtime embeddings, prefix caching for Mamba hybrid models, and dynamic speculative decoding with full CUDA graphs. The Transformers backend gained FP8 MoE support and migrated GPTBigCode/Starcoder2 and RoBERTa. PagedAttention was deleted entirely, as V1/MRv2 backends have become the standard path.
-
-github · khluu · Jul 11, 20:06
-
-**Background**: vLLM is a high-performance open-source library for LLM inference and serving, known for its PagedAttention algorithm that efficiently manages KV cache memory. Model Runner V2 is a newer execution engine that improves performance and flexibility. The Transformers backend allows vLLM to run Hugging Face Transformers models natively without requiring a dedicated vLLM model implementation.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/vllm-project/vllm/releases">Releases · vllm -project/ vllm</a></li>
-<li><a href="https://en.wikipedia.org/wiki/PagedAttention">PagedAttention - Wikipedia</a></li>
-<li><a href="https://vllm.ai/blog/2025-04-11-transformers-backend">Transformers modeling backend integration in vLLM</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#vLLM`, `#LLM inference`, `#open source`, `#release`, `#AI infrastructure`
-
----
-
-<a id="item-2"></a>
 ## [Weekly AI Recap: GPT-5.6, Grok 4.5, Gemini Delay, Copilot Data](https://www.reddit.com/r/artificial/comments/1utc0he/weekly_recap_gpt56_public_launch_grok_45_gemini/) ⭐️ 9.0/10
 
-OpenAI publicly launched the GPT-5.6 family (Sol, Terra, Luna) on July 9, along with GPT-Live-1 full-duplex voice model and gpt-realtime-2.1. xAI released Grok 4.5 trained with Cursor, Google delayed Gemini 3.5 Pro to July 17, and Microsoft disclosed that fewer than 4.5% of M365 seats converted to paid Copilot. This week saw simultaneous price drops across multiple frontier models, making near-frontier inference economically viable for more automation use cases. Microsoft's low conversion rate suggests horizontal AI assistants face adoption challenges, while the DeepSeek API retirement highlights the need for model abstraction. GPT-5.6 Sol achieves state-of-the-art coding performance at 80 on the Artificial Analysis Coding Agent Index, outperforming Fable 5 while using fewer tokens. Grok 4.5 is priced at $2/M input and $6/M output, claiming Opus-class performance on coding, legal, and finance tasks, though independent evaluations are pending.
+OpenAI publicly launched the GPT-5.6 family (Sol, Terra, Luna) on July 9, along with GPT-Live-1 full-duplex voice model and gpt-realtime-2.1 with lower latency. xAI released Grok 4.5 trained with Cursor, while Google delayed Gemini 3.5 Pro to July 17 and Microsoft disclosed that fewer than 4.5% of M365 seats have converted to paid Copilot. This week's simultaneous price drops across multiple frontier models (Terra, Grok 4.5, Sonnet 5) make near-frontier inference more economically viable, potentially accelerating AI automation adoption. Microsoft's low Copilot conversion rate suggests horizontal AI assistants face adoption challenges, favoring task-specific automation. GPT-5.6 Sol is the flagship reasoning model, Terra offers previous-flagship performance at ~2x lower cost, and Luna is fast/cheap. Grok 4.5 claims Opus-class performance on coding/legal/finance tasks at $2/M input and $6/M output, but independent evals are pending. DeepSeek will retire deepseek-chat and deepseek-reasoner on July 24, with deepseek-reasoner mapping to v4-flash thinking mode, not v4-pro.
 
 reddit · r/artificial · /u/ksraj1001 · Jul 11, 06:10
 
-**Background**: The GPT-5.6 family includes three tiers: Luna (smallest, cheapest), Terra (mid-range, previous-flagship performance at lower cost), and Sol (largest, frontier reasoning). Full-duplex voice models like GPT-Live-1 can listen and speak simultaneously, enabling more natural conversations. Microsoft Copilot is an AI assistant integrated into Microsoft 365, but the 4.5% conversion rate indicates limited paid adoption among its 450 million M365 users.
+**Background**: Large language model (LLM) providers frequently release new model families with different tiers for various use cases. Full-duplex voice models can listen and speak simultaneously, enabling more natural conversation. Enterprise AI assistants like Microsoft Copilot are integrated into productivity suites to automate tasks, but adoption metrics are closely watched as indicators of market demand.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/gpt-5-6/">GPT‑5.6: Frontier intelligence that scales with your ambition</a></li>
-<li><a href="https://cursor.com/grok-4-5">Cursor · Grok 4 . 5</a></li>
-<li><a href="https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna">GPT-5.6 in ChatGPT - OpenAI Help Center</a></li>
+<li><a href="https://medium.com/mlworks/whats-new-with-openai-s-gpt5-6-551b3d8cc6b6">What’s New With OpenAI’s GPT 5 . 6 ? | by Mayur Jain | Medium</a></li>
+<li><a href="https://openai.com/index/introducing-gpt-live/">Introducing GPT-Live | OpenAI</a></li>
+<li><a href="https://cursor.com/blog/grok-4-5">Introducing Grok 4.5 · Cursor</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion highlights that simultaneous price drops across vendors are more impactful than any single benchmark, and that Microsoft's 4.5% conversion suggests demand is for task-specific automation rather than horizontal assistants. There is also a reminder to abstract the model layer due to the DeepSeek API retirement.
+**Discussion**: The Reddit discussion highlighted that simultaneous price drops across vendors are more impactful than any single benchmark, and that Microsoft's 4.5% conversion rate confirms horizontal assistants struggle to gain traction. Users also warned about the DeepSeek retirement mapping nuance, advising developers to abstract their model layer.
 
 **Tags**: `#AI`, `#GPT-5.6`, `#Grok`, `#Gemini`, `#Microsoft Copilot`
 
 ---
 
-<a id="item-3"></a>
-## [Vidu S1: Real-Time Interactive Video Generation](https://huggingface.co/papers/2607.03118) ⭐️ 8.0/10
+<a id="item-2"></a>
+## [Nvidia's Circular Financing in GPU Boom](https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom) ⭐️ 8.0/10
 
-Vidu S1 is a real-time interactive video generation model that enables voice-controlled digital character animation with infinite-length output and high frame rates on consumer GPUs. This breakthrough makes real-time, interactive video generation accessible on consumer hardware, opening up new possibilities for live content creation, virtual avatars, and interactive entertainment without requiring expensive cloud infrastructure. Vidu S1 outputs 540p video at up to 42 FPS on regular consumer GPUs, using TurboDiffusion for acceleration and TurboServe for efficient serving. Users can upload custom images of real people, anime, or pets and choose different voice tones.
+An analysis reveals that Nvidia's investments in CoreWeave and Nebius may constitute circular financing, where Nvidia provides capital to cloud companies that then spend heavily on Nvidia GPUs, raising questions about the sustainability of the GPU boom. This matters because if circular financing is widespread, it could inflate demand artificially and create a financial bubble in AI infrastructure, potentially leading to a market correction that affects investors, cloud providers, and the broader AI ecosystem. Nvidia invested $2 billion for a 9% stake in CoreWeave, which plans $35 billion in CapEx in 2026, meaning Nvidia's investment covers only 5.7% of that year's spending. Critics argue the arrangement still creates a circular dependency, while others see it as a strategic hedge against hyperscalers developing their own chips.
 
-huggingface_papers · Hugging Face Papers · Jul 10, 00:00
+hackernews · adletbalzhanov · Jul 11, 17:21 · [Discussion](https://news.ycombinator.com/item?id=48873836)
 
-**Background**: Traditional video generation models are slow and require high-end hardware, limiting real-time interactivity. TurboDiffusion is an acceleration framework that speeds up diffusion models by 100-200x, while TurboServe optimizes serving infrastructure. Vidu S1 combines these to achieve real-time performance on consumer GPUs.
+**Background**: Circular financing occurs when a company invests in customers that use its products, creating a loop of money and revenue. In the GPU boom, Nvidia's investments in GPU cloud providers like CoreWeave and Nebius help those companies buy Nvidia hardware, which boosts Nvidia's sales and justifies further investment. This dynamic has drawn scrutiny from analysts concerned about artificial demand and financial stability.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/thu-ml/TurboDiffusion">GitHub - thu-ml/TurboDiffusion: TurboDiffusion: 100–200× ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CoreWeave">CoreWeave</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nebius_Group">Nebius Group</a></li>
+<li><a href="https://heatmap.news/ideas/data-center-bubble">A Backup Plan for the AI Boom - Heatmap News</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#video generation`, `#real-time`, `#voice control`, `#diffusion models`, `#AI`
+**Discussion**: Commenters are divided: some argue the circular financing narrative is overblown, noting Nvidia's investment is a small fraction of CoreWeave's CapEx, while others warn it could lead to a house of cards collapse. There is also interest in whether these builds can become economically profitable, with suggestions to monitor ROI per token and enterprise token budgets.
+
+**Tags**: `#GPU`, `#Nvidia`, `#cloud computing`, `#financing`, `#AI infrastructure`
+
+---
+
+<a id="item-3"></a>
+## [Deep Dive into UPI Payment Architecture](https://timeseriesofindia.com/economy/reads/upi-architecture/) ⭐️ 8.0/10
+
+A detailed technical article explains the architecture of UPI (Unified Payments Interface), covering its core components, transaction flow, and the scale of operations handling billions of transactions monthly. Understanding UPI's architecture is crucial for engineers and fintech professionals, as UPI has become a global benchmark for real-time payment systems, enabling financial inclusion for hundreds of millions of users in India. The article highlights that UPI processes over 10 billion transactions monthly, with an average of ~700 QPS at the NPCI switch, though traffic peaks much higher. The system relies on a centralized switch managed by NPCI, with banks and PSPs as intermediaries.
+
+hackernews · prtk25 · Jul 11, 16:33 · [Discussion](https://news.ycombinator.com/item?id=48873457)
+
+**Background**: UPI (Unified Payments Interface) is a real-time payment system launched in India in 2016, enabling instant inter-bank transactions via mobile phones. It uses a virtual payment address (VPA) to link bank accounts, eliminating the need for card details or bank account numbers. The system is built on a distributed architecture with a central switch (NPCI) orchestrating transactions between payer and payee banks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://medium.com/@avinashkariya05910/deep-dive-system-design-of-upi-unified-payments-interface-eff3b0334b0d">Deep Dive: System Design of UPI (Unified Payments Interface)</a></li>
+<li><a href="https://www.geeksforgeeks.org/system-design/designing-upi-system-design/">Designing UPI - System Design - GeeksforGeeks</a></li>
+<li><a href="https://www.thesgn.blog/blog/upi">UPI System Design Explained | High-Level Architecture of ...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters praised UPI's societal impact, noting it enabled even elderly people to go fully digital. Some compared its QPS to stock exchanges, while others raised concerns about centralization and KYC requirements. One reader disliked the article's design choices.
+
+**Tags**: `#UPI`, `#payment systems`, `#architecture`, `#India`, `#fintech`
 
 ---
 
 <a id="item-4"></a>
-## [SciReasoner: Interpretable Structural Reasoning Across Science](https://huggingface.co/papers/2607.07708) ⭐️ 8.0/10
+## [Early History of the Singular Value Decomposition (1993)](https://www.math.ucdavis.edu/~saito/courses/229A/stewart-svd.pdf) ⭐️ 8.0/10
 
-Researchers introduced SciReasoner, a multimodal scientific foundation model that discretizes structural elements of proteins, molecules, and crystals into a unified vocabulary for interpretable reasoning. It achieves state-of-the-art performance on 67 out of 86 benchmarks, including improving Gene Ontology prediction F_max from 0.42 to 0.55 and single-step retrosynthesis accuracy from 0.63 to 0.72. SciReasoner addresses a key challenge in AI for science by combining accurate prediction with interpretable reasoning, making structural evidence inspectable under scientific constraints. This could accelerate discovery in biology, chemistry, and materials science by providing transparent insights into structure-property relationships. The model uses a unified structure-aware vocabulary to tokenize coordinates, topologies, and periodic connectivities, treating tokens as addressable evidence units. In double-blind expert evaluation, its reasoning traces were preferred or comparable to a frontier large language model in 98% of cases.
+A historical paper detailing the development of the Singular Value Decomposition (SVD) from its origins in the 19th century to its modern form, including contributions from mathematicians like Beltrami, Jordan, and Eckart-Young. SVD is a fundamental tool in linear algebra with wide applications in machine learning, data analysis, and computer vision, making its history valuable for understanding modern computational methods. The paper was dedicated to Gene Golub on his 15th birthday (actually his 60th, as his birthday is February 29), highlighting Golub's role in developing practical SVD algorithms alongside William Kahan.
 
-huggingface_papers · Hugging Face Papers · Jul 9, 00:00
+hackernews · wolfi1 · Jul 11, 15:26 · [Discussion](https://news.ycombinator.com/item?id=48872858)
 
-**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, where function emerges from spatial and chemical organization. Traditional AI models often lack interpretability, making it hard to understand how predictions are derived from structural evidence. SciReasoner discretizes structural elements into a vocabulary, enabling models to reason step-by-step while preserving domain-native information.
+**Background**: The Singular Value Decomposition (SVD) factorizes a matrix into three components: U, Σ, and V^T, where Σ contains singular values. It generalizes eigenvalue decomposition to non-square matrices and is used for dimensionality reduction, noise reduction, and low-rank approximation.
+
+**Discussion**: Commenters praised the historical context, with one noting that eigenvalues only exist for square matrices while singular values generalize them. Another highlighted the Eckart-Young-Mirsky theorem, which states that truncated SVD gives the optimal low-rank approximation in Frobenius norm.
+
+**Tags**: `#linear algebra`, `#singular value decomposition`, `#history of mathematics`, `#numerical analysis`
+
+---
+
+<a id="item-5"></a>
+## [DeepSeek reportedly developing its own AI chip](https://www.reddit.com/r/LocalLLaMA/comments/1uu15mz/chinas_deepseek_developing_its_own_ai_chip/) ⭐️ 8.0/10
+
+Chinese AI startup DeepSeek is developing its own AI chip, according to three sources familiar with the matter, aiming to reduce reliance on Nvidia and Huawei chips. This move could reshape the AI hardware landscape by enabling DeepSeek to bypass US export restrictions and achieve self-sufficiency, potentially accelerating China's AI independence. The chip development is still in early stages, and no timeline for production has been disclosed. DeepSeek currently relies on Nvidia and Huawei chips for its AI models.
+
+reddit · r/LocalLLaMA · /u/TheRealMasonMac · Jul 12, 01:04
+
+**Background**: DeepSeek is a Chinese generative AI chatbot that gained global attention in January 2025 with its R1 model. The US has imposed export restrictions on advanced AI chips to China, prompting Chinese companies to seek domestic alternatives.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2509.21320">[2509.21320] SciReasoner: Laying the Scientific Reasoning ...</a></li>
-<li><a href="https://github.com/OpenDCAI/SciReasoner">GitHub - OpenDCAI/SciReasoner</a></li>
+<li><a href="https://www.reuters.com/world/china/chinas-deepseek-developing-its-own-ai-chip-sources-say-2026-07-07/">EXCLUSIVE: China's DeepSeek developing its own AI chip ...</a></li>
+<li><a href="https://www.usnews.com/news/top-news/articles/2026-07-07/exclusive-chinas-deepseek-developing-its-own-ai-chip-sources-say">Exclusive-China's DeepSeek Developing Its Own AI Chip ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Deepseek_ai_chatbot">Deepseek ai chatbot</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI chips`, `#DeepSeek`, `#semiconductors`, `#geopolitics`, `#hardware`
+
+---
+
+<a id="item-6"></a>
+## [Ultra-Budget 20GB VRAM Dual P102-100 Setup for $100](https://www.reddit.com/r/LocalLLaMA/comments/1utwqf8/ultra_budget_20gb_vram_with_448gbs_for_100_bucks/) ⭐️ 8.0/10
+
+A Reddit user demonstrated a dual NVIDIA P102-100 GPU setup costing only $100 that provides 20GB of VRAM and 448GB/s memory bandwidth, capable of running a 35B parameter quantized LLM (Qwen3.6-35B-A3B-UD-IQ4_XS) with three concurrent users and 32K context each. This setup offers an extremely cost-effective alternative to expensive consumer GPUs for local LLM inference, democratizing access to large language models for hobbyists and small teams on a tight budget. The P102-100 is a Pascal-era mining card with 10GB GDDR5X per GPU and a 320-bit bus, achieving 448GB/s total bandwidth when paired. The setup runs llama.cpp server with 3 slots and uses a 35B parameter model with 32K context, though the model's native context is 262K.
+
+reddit · r/LocalLLaMA · /u/Boricua-vet · Jul 11, 21:49
+
+**Background**: Running large language models locally requires significant VRAM; for example, a 35B parameter quantized model may need 15-20GB. Consumer GPUs like the RTX 3090 offer 24GB but cost over $1000. The P102-100, originally designed for cryptocurrency mining, lacks display outputs but is cheap on the used market and can be repurposed for compute workloads via CUDA.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.techpowerup.com/gpu-specs/p102-100.c3100">NVIDIA P102-100 Specs | TechPowerUp GPU Database</a></li>
+<li><a href="https://www.ebay.com/sch/i.html?_nkw=p102-100&_sop=12">P102-100 for sale | eBay</a></li>
+<li><a href="https://insiderllm.com/guides/multi-gpu-local-ai/">Best Dual-GPU Local AI Setup: RTX 3090, 5060 Ti (2026)</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#LLM`, `#GPU`, `#budget`, `#local inference`, `#hardware`
+
+---
+
+<a id="item-7"></a>
+## [Interactive Jacobian Lens visualizer and steerer for GGUF models on llama.cpp](https://www.reddit.com/r/LocalLLaMA/comments/1uu32z6/interactive_jacobianlens_visualizer_and_live/) ⭐️ 8.0/10
+
+A new tool, jlens-gguf, brings interactive Jacobian Lens visualization and live steering to GGUF models running on llama.cpp, supporting both dense and mixture-of-experts architectures. This bridges a gap by making advanced interpretability techniques accessible to the local LLM community, enabling users to observe and manipulate model internals in real time without relying on proprietary frameworks. The tool includes a native GGUF server for both observation and steering, and can also observe (but not steer) models running on llama-server. Memory overhead for the lens is roughly 1/8 of model size, e.g., 20 GB for a 160 GB model.
+
+reddit · r/LocalLLaMA · /u/Responsible_Fig_1271 · Jul 12, 02:37
+
+**Background**: The Jacobian Lens is an interpretability technique that reads out what an internal activation disposes a model to say by linearly transporting residual-stream vectors to the final layer and decoding them into token probabilities. GGUF is a model format designed for efficient local inference on llama.cpp, a high-performance C/C++ inference engine. Prior Jacobian Lens implementations focused on PyTorch/Hugging Face models, leaving GGUF users without such tools.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/anthropics/jacobian-lens">GitHub - anthropics/jacobian-lens: Companion code for the ...</a></li>
+<li><a href="https://github.com/ggml-org/llama.cpp">GitHub - ggml-org/llama.cpp: LLM inference in C/C++</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#interpretability`, `#llama.cpp`, `#GGUF`, `#Jacobian Lens`, `#steering`
+
+---
+
+<a id="item-8"></a>
+## [RTX 5090 vs 6000 Pro: Shunt Modded Power Scaling Benchmarks](https://www.reddit.com/r/LocalLLaMA/comments/1utvbey/performance_comparison_on_full_compute/) ⭐️ 8.0/10
+
+A Reddit user shunt-modded and water-cooled an RTX 6000 Pro MaxQ to run at up to 600W, then compared its full compute (Anima) and LLM prompt processing performance against an RTX 5090 and a stock RTX 6000 Pro WS at various power limits. This provides rare, detailed data on how power scaling affects professional GPUs for AI workloads, showing that shunt-modded MaxQ cards can outperform the stock WS edition and even the RTX 5090 at higher power limits. The shunt mod involved soldering a 0.002-ohm resistor to trick the card into drawing double power, reaching 600W. At 600W, the modded MaxQ achieved 2442 MHz core clock and completed the Anima benchmark 12.8% faster than the RTX 5090 at 600W.
+
+reddit · r/LocalLLaMA · /u/panchovix · Jul 11, 20:49
+
+**Background**: Shunt modding is a hardware modification where resistors on the GPU are altered to bypass power limits, allowing higher wattage. The RTX 6000 Pro MaxQ is a lower-power variant of the workstation card, while the WS edition has a higher power ceiling. Anima is a local AI image generation benchmark.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.reddit.com/r/overclocking/comments/x877ov/how_exactly_does_a_shunt_mod_and_gpucpu_current/">How exactly does a shunt mod and gpu/cpu current ... - Reddit</a></li>
+<li><a href="https://www.fpshub.com/775797/how-to-shunt-modding-an-nvidia-laptop-gpu/">HOW TO: Shunt Modding an NVIDIA Laptop GPU - FPSHUB</a></li>
+<li><a href="https://www.pugetsystems.com/labs/articles/nvidia-rtx-pro-6000-blackwell-max-q-vs-workstation-for-content-creation/">NVIDIA RTX PRO 6000 Blackwell Max - Q vs ... | Puget Systems</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters praised the thoroughness of the testing and asked technical questions about the shunt mod and cooling setup. Some debated the practicality of shunt modding for everyday use, noting the risk of damaging the card.
+
+**Tags**: `#GPU`, `#LLM`, `#performance`, `#modding`, `#hardware`
+
+---
+
+<a id="item-9"></a>
+## [VultronRetriever Models Top MTEB, Run Offline on iPhone](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
+
+The VultronRetriever family of embedding models was released on HuggingFace, achieving #1 on the MTEB leaderboard with up to 16x smaller index storage and 12x higher throughput, and demonstrated running fully offline on an iPhone. This breakthrough enables high-performance retrieval on edge devices without internet connectivity, significantly reducing storage and latency, which could transform mobile and IoT applications. The family includes three models: Prime-8B (global #1), Core-4.5B (second only to Prime), and Flash-0.8B (outperforms models 5x its size, indexes 60 images/min offline). They use the Hydra Architecture for late interaction retrieval with up to half the memory of comparable models.
+
+reddit · r/MachineLearning · /u/madkimchi · Jul 11, 15:22
+
+**Background**: MTEB (Massive Text Embedding Benchmark) is a standard leaderboard for evaluating embedding models on retrieval, classification, clustering, and other tasks. Late interaction retrieval, as used in models like ColBERT, processes queries and documents separately until the final matching step, balancing efficiency and precision.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB Leaderboard - a Hugging Face Space by mteb</a></li>
+<li><a href="https://weaviate.io/blog/late-interaction-overview">An Overview of Late Interaction Retrieval Models... | Weaviate</a></li>
+<li><a href="https://jina.ai/news/what-is-colbert-and-late-interaction-and-why-they-matter-in-search/">What is ColBERT and Late Interaction and Why They Matter in Search?</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#embedding models`, `#MTEB`, `#edge AI`, `#information retrieval`, `#HuggingFace`
+
+---
+
+<a id="item-10"></a>
+## [Apple Sues OpenAI Over Trade Secret Theft](https://www.reddit.com/r/artificial/comments/1utkdha/apple_just_sued_openai_and_the_details_are_wild/) ⭐️ 8.0/10
+
+Apple has filed a lawsuit against OpenAI, alleging that former executives and engineers stole trade secrets, including hardware components and confidential documents, and recruited over 400 Apple employees to work at OpenAI. This lawsuit escalates tensions between two major tech companies that previously partnered on ChatGPT integration with Siri, and it could set a precedent for how trade secret disputes are handled in the AI and hardware industries. Apple alleges that former hardware chief Tang Tan coached recruits to bring actual hardware parts to interviews, and that engineer Chang Liu downloaded confidential files after retaining access to Apple's cloud storage post-employment.
+
+reddit · r/artificial · /u/Direct-Attention8597 · Jul 11, 13:37
+
+**Background**: System-in-Package (SiP) technology integrates multiple components into a single package, which is crucial for miniaturization in devices like iPhones. Apple's proprietary metal-finishing technique is a closely guarded manufacturing process. The lawsuit also involves an internal offboarding document that allegedly taught employees how to leave Apple without triggering security checks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.businessinsider.com/apple-lawsuit-openai-trade-secrets-what-smart-people-are-saying-2026-7">What Smart People Are Saying About Apple 's Lawsuit Against OpenAI</a></li>
+<li><a href="https://wccftech.com/openai-poached-over-400-apple-employees-and-told-recruits-to-bring-hardware-samples-for-show-and-tell-sessions-apples-lawsuit-alleges/">OpenAI Poached Over 400 Apple Employees And Told Recruits To...</a></li>
+<li><a href="https://mashable.com/life/apple-openai-lawsuit-allegations">Apple v. OpenAI lawsuit: 8 key allegations explained | Mashable</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit discussion is highly engaged, with many users expressing shock at the scale of alleged espionage and questioning OpenAI's ethics. Some commenters note the irony of the former partnership, while others debate the legal implications and potential impact on AI development.
+
+**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#corporate espionage`
+
+---
+
+<a id="item-11"></a>
+## [OpenAI's Head of Safety Departs](https://www.reddit.com/r/artificial/comments/1utb2cp/openais_head_of_safety_is_leaving_the_company/) ⭐️ 8.0/10
+
+OpenAI's head of safety has left the company, according to a Reddit post linking to a Bloomberg report. This departure raises concerns about the company's commitment to AI safety. The departure of a key safety leader at a leading AI company signals potential shifts in safety culture and priorities. It may affect public trust and regulatory scrutiny around AI development. The specific reasons for the departure and the successor have not been disclosed. This follows a series of high-profile exits at OpenAI, including co-founder Ilya Sutskever.
+
+reddit · r/artificial · /u/Horsesrunfree · Jul 11, 05:18
+
+**Background**: OpenAI is a leading artificial intelligence research organization known for developing GPT models and ChatGPT. AI safety is a critical area focused on ensuring AI systems are aligned with human values and operate safely.
+
+**Discussion**: The Reddit discussion likely includes concerns about OpenAI's safety culture and comparisons to previous departures. Some users may debate the impact on AI safety research.
+
+**Tags**: `#OpenAI`, `#AI Safety`, `#Leadership`, `#Artificial Intelligence`
+
+---
+
+<a id="item-12"></a>
+## [SciReasoner: Interpretable Structural Reasoning Across Sciences](https://huggingface.co/papers/2607.07708) ⭐️ 8.0/10
+
+Researchers introduced SciReasoner, a multimodal scientific foundation model that discretizes structural elements of proteins, molecules, and crystals into a unified vocabulary for interpretable reasoning. It achieves state-of-the-art performance on 67 out of 86 benchmarks and improves Gene Ontology prediction F_max from 0.42 to 0.55 for low-homology proteins. SciReasoner addresses a key challenge in AI for science by enabling transparent, interpretable reasoning across biology, chemistry, and materials science. Its ability to treat structural tokens as addressable evidence units could accelerate scientific discovery and improve trust in AI-driven predictions. In double-blind expert evaluation, SciReasoner's reasoning traces were preferred or comparable to those of a frontier large language model in 98% of cases. The model also improves single-step retrosynthesis accuracy from 0.63 to 0.72 and generates fragment-level disconnection and precursor-verification traces.
+
+huggingface_papers · Hugging Face Papers · Jul 9, 00:00
+
+**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, where function emerges from spatial and chemical organization. Traditional AI models often struggle to preserve domain-native structural information while providing interpretable reasoning. SciReasoner discretizes coordinates, topologies, and periodic connectivities into a unified structure-aware vocabulary, enabling native structural reasoning.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://huggingface.co/SciReason/SciReasoner-8B">SciReason/ SciReasoner -8B · Hugging Face</a></li>
+<li><a href="https://github.com/SpectrAI-Initiative/SciReasoner">GitHub - SpectrAI-Initiative/ SciReasoner · GitHub</a></li>
+<li><a href="https://arxiv.org/abs/2607.07708">[2607.07708] Accurate, Interdisciplinary and Transparent ...</a></li>
 
 </ul>
 </details>
@@ -114,234 +286,73 @@ huggingface_papers · Hugging Face Papers · Jul 9, 00:00
 
 ---
 
-<a id="item-5"></a>
-## [Quad RTX 5060 Ti Build Benchmarks Qwen3.6-27B for Code Gen](https://www.reddit.com/r/LocalLLaMA/comments/1uturng/i_benched_quad_5060tis_for_code_generation_with/) ⭐️ 8.0/10
-
-A Reddit user benchmarked a quad RTX 5060 Ti setup running Qwen3.6-27B for code generation, achieving strong performance at a total build cost of approximately $3,000. This demonstrates that a relatively affordable multi-GPU configuration can run a state-of-the-art 27B parameter model with full precision and large context, making high-quality local code generation accessible to budget-conscious developers. The build uses four RTX 5060 Ti 16GB cards on an X570 or X870E motherboard with PCIe bifurcation, achieving 16GB/s bidirectional bandwidth per card. The setup runs Qwen3.6-27B at Q8_0 with FP16 KV cache and MTP enabled, targeting 256K context.
-
-reddit · r/LocalLLaMA · /u/starkruzr · Jul 11, 20:28
-
-**Background**: Running large language models locally requires significant GPU VRAM. Qwen3.6-27B is a 27B parameter dense model optimized for agentic coding and multimodal reasoning, with 256K native context. Multi-GPU setups like this allow running larger models or higher precision quants than a single consumer GPU can handle.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://qwen.ai/blog?id=qwen3.6-27b">Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model</a></li>
-<li><a href="https://recipes.vllm.ai/Qwen/Qwen3.6-27B">Qwen/Qwen3.6-27B | vLLM Recipes</a></li>
-<li><a href="https://www.kunalganglani.com/blog/running-local-llms-2026-hardware-setup-guide">Local LLM Hardware Guide 2026: VRAM, GPUs, Setup [Tested]</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit discussion praised the detailed benchmarking and cost-effectiveness, with some users questioning the long-term viability of quad 5060 Ti setups due to potential driver and scaling issues. Others shared alternative configurations like dual 3090s or used server GPUs.
-
-**Tags**: `#GPU benchmarking`, `#code generation`, `#Qwen3.6-27B`, `#local LLM`, `#hardware`
-
----
-
-<a id="item-6"></a>
-## [RTX 5090 vs 6000 PRO: Shunt Mod & Water Cooling Benchmarks](https://www.reddit.com/r/LocalLLaMA/comments/1utvbey/performance_comparison_on_full_compute/) ⭐️ 8.0/10
-
-A Reddit user shunt-modded and water-cooled an RTX 6000 PRO MaxQ to run at up to 600W, then compared its compute and LLM prompt processing performance against an RTX 5090 and a stock RTX 6000 PRO WS at various power limits. This hands-on comparison provides rare, real-world data on how shunt modding and water cooling can unlock additional performance from professional GPUs, which is valuable for AI researchers and enthusiasts seeking cost-effective high-performance inference hardware. The shunt mod involved soldering a 0.002-ohm resistor to trick the GPU into drawing up to 600W, while water cooling kept temperatures at 60°C under load. The modified MaxQ at 600W achieved 12.8% faster Anima compute time than the RTX 5090 at 600W.
-
-reddit · r/LocalLLaMA · /u/panchovix · Jul 11, 20:49
-
-**Background**: Shunt modding is a hardware modification that alters the resistance on power measurement circuits, causing the GPU to draw more power than its stock limit. Water cooling is used to dissipate the extra heat generated. The Anima benchmark tests full compute performance, while LLM prompt processing tests inference speed for large language models.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.reddit.com/r/overclocking/comments/x877ov/how_exactly_does_a_shunt_mod_and_gpucpu_current/">How exactly does a shunt mod and gpu/cpu current ... - Reddit</a></li>
-<li><a href="https://www.pcworld.com/article/2854038/this-nvidia-rtx-laptop-mod-unlocks-amazing-performance-dont-do-it.html">This Nvidia RTX laptop mod unlocks amazing ... - PCWorld</a></li>
-<li><a href="https://www.nvidia.com/en-us/products/workstations/professional-desktop-gpus/rtx-pro-6000-max-q/">RTX PRO 6000 Blackwell Max - Q Workstation Edition | NVIDIA</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit discussion praised the detailed methodology and results, with some users questioning the practicality of shunt modding for everyday use due to the risk of damaging the card. Others noted that the performance gains at higher power draw were diminishing, suggesting that undervolting might be more efficient.
-
-**Tags**: `#GPU benchmarking`, `#LLM inference`, `#hardware modding`, `#performance analysis`, `#NVIDIA`
-
----
-
-<a id="item-7"></a>
-## [Jacobian Lens Tool for GGUF Models on llama.cpp](https://www.reddit.com/r/LocalLLaMA/comments/1uu32z6/interactive_jacobianlens_visualizer_and_live/) ⭐️ 8.0/10
-
-A new open-source tool, jlens-gguf, brings Anthropic's Jacobian lens technique to GGUF models running on llama.cpp, enabling interactive visualization and live steering of model internals for the first time. This fills a critical gap by making mechanistic interpretability accessible on the widely-used llama.cpp inference engine, allowing researchers and hobbyists to probe and steer large language models locally without requiring PyTorch or Hugging Face infrastructure. The tool includes a native GGUF server based on llama.cpp for both observation and steering, and can also observe running llama-server models (but not steer them). Memory overhead for the lens is roughly 1/8 of model size, e.g., 20 GB extra for a 160 GB model.
-
-reddit · r/LocalLLaMA · /u/Responsible_Fig_1271 · Jul 12, 02:37
-
-**Background**: The Jacobian lens is a mechanistic interpretability technique that reads out what an internal activation is disposed to make the model say, by linearly transporting residual-stream vectors to the final layer and decoding them into vocabulary tokens. GGUF is a model format designed by the llama.cpp team for efficient local inference, and llama.cpp is a high-performance C/C++ inference engine widely used for running LLMs on consumer hardware.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/anthropics/jacobian-lens">GitHub - anthropics/jacobian-lens: Companion code for the ...</a></li>
-<li><a href="https://github.com/ggml-org/llama.cpp">GitHub - ggml-org/ llama . cpp : LLM inference in C/C++ · GitHub</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The community discussion on Reddit was substantive, with users asking technical questions about memory requirements, compatibility with MoE models, and potential applications for model steering. The author actively responded, clarifying details and engaging with feedback.
-
-**Tags**: `#llama.cpp`, `#GGUF`, `#Jacobian lens`, `#mechanistic interpretability`, `#open-source`
-
----
-
-<a id="item-8"></a>
-## [Direct Face Similarity Loss Boosts Character LoRA Training](https://www.reddit.com/r/StableDiffusion/comments/1utkvsk/direct_face_similarity_optimization_for_fast/) ⭐️ 8.0/10
-
-A new training method for character LoRA in Stable Diffusion directly optimizes face similarity using a differentiable face embedding loss, achieving better results than vanilla SFT in just 10-12 minutes on an RTX 4090. This approach significantly reduces training time while improving face consistency, making character LoRA creation more accessible and efficient for artists and developers. The method uses INT8 for original weights and bf16 with fp32 master weights for LoRA, with a batch size of 1 and 12 sampling steps during training; each step takes 4.11 seconds including image generation, VAE decode, face detection, loss, and backward pass.
-
-reddit · r/StableDiffusion · /u/Ok-Constant8386 · Jul 11, 13:59
-
-**Background**: LoRA (Low-Rank Adaptation) is a technique for fine-tuning large models by adding small trainable matrices, commonly used in Stable Diffusion to learn new concepts like characters. Vanilla SFT (Supervised Fine-Tuning) trains the model to predict noise or velocity, which can be slow and suboptimal for face consistency. Face similarity loss directly measures the distance between face embeddings, enabling more targeted optimization.
-
-**Tags**: `#LoRA`, `#face similarity`, `#diffusion models`, `#reinforcement learning`, `#Stable Diffusion`
-
----
-
-<a id="item-9"></a>
-## [VultronRetriever Models Top MTEB, Run Offline on iPhone](https://www.reddit.com/r/MachineLearning/comments/1utmxq8/vultronretriever_family_of_models_released_on/) ⭐️ 8.0/10
-
-Vultr released the VultronRetriever family of embedding models, including Prime-8B, Core-4.5B, and Flash-0.8B, which rank #1 in their respective classes on the MTEB leaderboard. The models were demonstrated running fully offline on an iPhone for question answering and document embedding. These models achieve up to 16x smaller index storage and 12x higher throughput compared to previous 9B-class leaders, enabling high-performance retrieval on edge devices. This could democratize advanced retrieval-augmented generation (RAG) and on-device AI applications. The models use the Hydra architecture, which provides late-interaction retrieval and generation from a single vision-language model, reducing memory by up to half. The Flash-0.8B model can index up to 60 images per minute fully offline and outperforms models up to 5x its size.
-
-reddit · r/MachineLearning · /u/madkimchi · Jul 11, 15:22
-
-**Background**: MTEB (Massive Text Embedding Benchmark) is a widely used leaderboard for evaluating embedding models across tasks like retrieval, classification, and clustering. Late-interaction retrieval, pioneered by ColBERT, allows fine-grained token-level matching between queries and documents, improving precision. The Hydra architecture unifies retrieval and generation in one model, reducing system complexity.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://huggingface.co/spaces/mteb/leaderboard">MTEB Leaderboard - a Hugging Face Space by mteb</a></li>
-<li><a href="https://arxiv.org/abs/2603.28554">[2603.28554] Hydra: Unifying Document Retrieval and ...</a></li>
-<li><a href="https://weaviate.io/blog/late-interaction-overview">An Overview of Late Interaction Retrieval Models: ColBERT ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#retrieval`, `#MTEB`, `#edge AI`, `#embedding`, `#NLP`
-
----
-
-<a id="item-10"></a>
-## [Apple sues OpenAI over trade secret theft](https://www.reddit.com/r/artificial/comments/1utkdha/apple_just_sued_openai_and_the_details_are_wild/) ⭐️ 8.0/10
-
-Apple has filed a lawsuit against OpenAI, alleging that former executives and engineers stole trade secrets, including hardware designs and proprietary manufacturing techniques, and recruited over 400 Apple employees. This lawsuit escalates tensions between two major tech companies and could reshape competition in AI hardware, as Apple seeks to protect its intellectual property and supply chain relationships. Apple alleges that former hardware chief Tang Tan coached employees to bring actual hardware parts to interviews, and that engineer Chang Liu downloaded confidential files after retaining access to Apple's cloud storage. OpenAI also allegedly used Apple's proprietary metal-finishing technique without permission.
-
-reddit · r/artificial · /u/Direct-Attention8597 · Jul 11, 13:37
-
-**Background**: System-in-Package (SiP) is a technology that integrates multiple components into a single package, commonly used in Apple devices. Apple's offboarding process typically involves securing company data and devices. The lawsuit highlights the competitive dynamics in AI hardware development.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/">Apple sues OpenAI over alleged trade secret theft - TechCrunch</a></li>
-<li><a href="https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/">Apple sues OpenAI, accuses ex-employees of stealing trade ...</a></li>
-<li><a href="https://officechai.com/ai/how-apple-alleges-former-employees-chang-liu-and-alyssa-peng-stole-its-secrets-for-openai/">How Apple Alleges Former Employees Chang Liu And Alyssa Peng ...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Reddit users expressed shock at the detailed allegations, with some noting the irony of Apple's prior partnership with OpenAI. Others debated the implications for AI hardware competition and employee mobility.
-
-**Tags**: `#Apple`, `#OpenAI`, `#lawsuit`, `#trade secrets`, `#AI`
-
----
-
-<a id="item-11"></a>
-## [OpenAI's Head of Safety Departs](https://www.reddit.com/r/artificial/comments/1utb2cp/openais_head_of_safety_is_leaving_the_company/) ⭐️ 8.0/10
-
-OpenAI's head of safety has left the company, as reported by Bloomberg and discussed on Reddit. This departure raises concerns about OpenAI's commitment to AI safety, potentially signaling a shift in priorities at a leading AI firm. The exact reasons for the departure have not been disclosed, and it is unclear who will succeed the role.
-
-reddit · r/artificial · /u/Horsesrunfree · Jul 11, 05:18
-
-**Background**: OpenAI is a prominent AI research organization known for developing advanced models like GPT-4. The head of safety oversees efforts to ensure AI systems are developed responsibly and align with human values.
-
-**Discussion**: The Reddit discussion likely includes concerns about AI safety culture and speculation about internal tensions, though no specific comments are provided.
-
-**Tags**: `#OpenAI`, `#AI safety`, `#leadership change`, `#artificial intelligence`
-
----
-
-<a id="item-12"></a>
-## [Superpowers: Agentic Skills Framework Trending on GitHub](https://github.com/obra/superpowers) ⭐️ 8.0/10
-
-The GitHub repository obra/superpowers has gained over 740 stars in a single day, reaching a total of 252,502 stars, as an agentic skills framework and software development methodology. This rapid growth indicates strong community interest in structured, reusable agent skills for AI coding agents, which could standardize how developers integrate AI into their workflows. The framework is primarily targeted at AI coding agents like Claude Code, Cursor, Codex, OpenCode, and Gemini CLI, and emphasizes composable skills that trigger based on context.
-
-github_trending · GitHub Trending · Jul 12, 02:52
-
-**Background**: Agent skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows, defined by a SKILL.md file. The Agent Skills open standard ensures compatibility across different coding agents, enabling a plug-and-play ecosystem.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/obra/superpowers">GitHub - obra/superpowers: An agentic skills framework ...</a></li>
-<li><a href="https://agentskills.io/home">Agent Skills Overview - Agent Skills</a></li>
-<li><a href="https://agentskills.io/specification">Specification - Agent Skills</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#software development`, `#methodology`, `#framework`, `#agentic`
-
----
-
 <a id="item-13"></a>
-## [OpenManus AI Agent Framework Surges on GitHub](https://github.com/FoundationAgents/OpenManus) ⭐️ 8.0/10
+## [Awesome-LLM-Apps: 100+ AI Agent & RAG Apps](https://github.com/Shubhamsaboo/awesome-llm-apps) ⭐️ 7.0/10
 
-OpenManus, an open-source AI agent framework developed by FoundationAgents, has gained 226 stars in a single day, reaching a total of 57,179 stars on GitHub. This rapid growth signals strong community interest in open-source AI agent frameworks, which are crucial for building autonomous workflows and multi-step task execution without manual scripting. The repository is written in Python and has 9,953 forks, indicating active community contributions. The project's philosophy emphasizes openness, with the tagline 'No fortress, purely open ground.'
+The GitHub repository 'Shubhamsaboo/awesome-llm-apps' has gained 549 stars in a single day, reaching over 118,000 total stars, offering a curated collection of 100+ AI agent and RAG applications that are ready to clone, customize, and deploy. This repository lowers the barrier for developers to build and experiment with AI agents and retrieval-augmented generation (RAG) systems, accelerating practical adoption of LLM-based applications. The repository is written in Python and has 17,537 forks, indicating strong community involvement. It provides runnable examples that cover various use cases, from simple chatbots to complex multi-agent systems.
 
-github_trending · GitHub Trending · Jul 12, 02:52
+github_trending · GitHub Trending · Jul 12, 03:02
 
-**Background**: AI agent frameworks enable developers to build autonomous agents that can interpret goals and execute complex workflows. OpenManus provides essential capabilities for creating such agents, focusing on flexibility and community-driven development. FoundationAgents is an organization that builds open-source infrastructure for general-purpose AI agents.
+**Background**: AI agents are autonomous programs that can perform tasks using large language models (LLMs). Retrieval-Augmented Generation (RAG) is a technique that enhances LLM outputs by retrieving relevant information from external knowledge bases before generating a response. This repository combines both concepts into ready-to-use applications.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openmanus.github.io/">OpenManus - Open-source Framework for Building AI Agents</a></li>
-<li><a href="https://github.com/FoundationAgents">FoundationAgents · GitHub</a></li>
-<li><a href="https://www.everydev.ai/developers/foundationagents">FoundationAgents - 1 AI Tool | EveryDev.ai</a></li>
+<li><a href="https://aws.amazon.com/what-is/retrieval-augmented-generation/">What is RAG? - Retrieval-Augmented Generation AI Explained - AWS</a></li>
+<li><a href="https://github.com/microsoft/agent-governance-toolkit">GitHub - microsoft/ agent - governance - toolkit : AI Agent Governance ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI Agents`, `#Open Source`, `#Python`, `#Framework`
+**Discussion**: No community comments were provided in the input. However, the high star count and fork activity suggest strong positive reception and active usage.
+
+**Tags**: `#AI Agents`, `#RAG`, `#LLM`, `#Python`, `#Open Source`
 
 ---
 
 <a id="item-14"></a>
-## [OpenAI Releases Codex CLI: Lightweight Rust-Based Coding Agent](https://github.com/openai/codex) ⭐️ 8.0/10
+## [Ant: A New JavaScript Runtime and Ecosystem](https://antjs.org/) ⭐️ 7.0/10
 
-OpenAI has released Codex CLI, a lightweight coding agent built in Rust that runs directly in the terminal, as an open-source project on GitHub. The repository has already amassed over 97,000 stars and gained 224 stars in the past day. Codex CLI represents a practical, locally-run coding agent that integrates seamlessly into developer workflows, competing with tools like Claude Code. Its high community traction signals strong demand for terminal-based AI-assisted development tools. Codex CLI is built in Rust, emphasizing performance and lightweight operation, and runs locally on the user's computer. It is distinct from the earlier OpenAI Codex model (a GPT-3 descendant) and focuses on terminal-based agentic coding rather than IDE integration.
+Ant is a new JavaScript runtime and ecosystem that includes its own JavaScript engine, a package manager, the ants.land package registry, a deployment platform, and Ant Desktop for building native desktop apps. The author has shared it on Hacker News, highlighting its growth from a runtime into a broader ecosystem. Ant aims to be a coherent alternative to existing JavaScript stacks, potentially offering a more integrated and efficient development experience. Its emergence reflects a trend of individual developers building complex software that previously required entire teams. Ant is built from scratch in C, using a custom bytecode virtual machine called Silver VM. It is lightweight and high-performance, and the author claims it was initially built in one month.
 
-github_trending · GitHub Trending · Jul 12, 02:52
+hackernews · theMackabu · Jul 11, 20:07 · [Discussion](https://news.ycombinator.com/item?id=48875377)
 
-**Background**: Coding agents are AI tools that understand codebases and can execute tasks like editing files, running commands, and managing git workflows through natural language. OpenAI's Codex was originally a model powering GitHub Copilot, but Codex CLI is a new standalone agent. Similar tools include Anthropic's Claude Code, which also operates in the terminal.
+**Background**: JavaScript runtimes like Node.js and Deno execute JavaScript outside the browser. Ant introduces its own engine, package manager, and deployment platform, aiming for a more unified ecosystem. The name 'Ant' may cause confusion with Apache Ant, a build tool for Java.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/openai/codex">GitHub - openai/codex: Lightweight coding agent that runs in ...</a></li>
-<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software ... - OpenAI</a></li>
-<li><a href="https://openai.com/index/openai-codex/">OpenAI Codex</a></li>
+<li><a href="https://github.com/themackabu/ant">GitHub - theMackabu/ ant : javascript for 's, a tiny runtime with big...</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48875377">Show HN: Ant – A JavaScript runtime and ecosystem | Hacker News</a></li>
+<li><a href="https://ants.land/">ants . land , the open package registry</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#coding agent`, `#AI`, `#terminal`, `#Rust`, `#developer tools`
+**Discussion**: Community comments raised concerns about the project's origins, noting that the initial version was based on an AGPL-licensed codebase (Elk), though the author has since rewritten it. There was also discussion about naming conflicts with Apache Ant and the economics of building a new runtime from scratch.
+
+**Tags**: `#JavaScript`, `#runtime`, `#ecosystem`, `#programming languages`, `#web development`
 
 ---
 
 <a id="item-15"></a>
-## [Hugging Face Launches Speech-to-Speech Repository for Local Voice Agents](https://github.com/huggingface/speech-to-speech) ⭐️ 8.0/10
+## [ClickHouse Scales PgBouncer to 4x Throughput](https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres) ⭐️ 7.0/10
 
-Hugging Face has released a new open-source repository, huggingface/speech-to-speech, that enables developers to build local voice agents using open-source models. The repository has gained significant traction, with 94 stars today and over 6,000 total stars. This repository empowers developers to create voice agents that run entirely locally, enhancing privacy and reducing reliance on cloud services. It aligns with the growing trend of on-device AI and open-source voice technologies. The repository is written in Python and provides tools to build speech-to-speech pipelines using open-source models. It currently has 857 forks, indicating active community involvement.
+ClickHouse detailed how they scaled PgBouncer, a PostgreSQL connection pooler, to 4x throughput by implementing peering and other optimizations such as using SO_REUSEPORT and running multiple processes. This improvement turns PgBouncer from a potential bottleneck into mere plumbing, allowing PostgreSQL deployments to handle significantly higher connection loads without scaling the pooler itself. The key technique is peering, where multiple PgBouncer processes share a single port via SO_REUSEPORT and forward cancel requests to the correct process, preventing dropped cancellations. Every ClickHouse Managed Postgres server ships with this setup by default.
 
-github_trending · GitHub Trending · Jul 12, 02:52
+hackernews · saisrirampur · Jul 11, 15:28 · [Discussion](https://news.ycombinator.com/item?id=48872874)
 
-**Background**: Speech-to-speech systems convert spoken input directly into spoken output, often involving automatic speech recognition (ASR), natural language processing (NLP), and text-to-speech (TTS) components. Local voice agents run on the user's device without sending data to external servers, offering lower latency and better privacy. Hugging Face is a leading platform for open-source machine learning models and tools.
+**Background**: PgBouncer is a lightweight connection pooler for PostgreSQL that reuses database connections to reduce overhead. In high-throughput scenarios, a single PgBouncer process can become a bottleneck, limiting overall performance. Peering allows multiple PgBouncer processes to work together as a group, sharing the load and improving resilience.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/jesuscopado/local-voice-ai-agent">GitHub - jesuscopado/local-voice-ai-agent: A real-time voice ...</a></li>
-<li><a href="https://github.com/ShayneP/local-voice-ai">GitHub - ShayneP/local-voice-ai: Local voice AI powered by ...</a></li>
+<li><a href="https://clickhouse.com/blog/pgbouncer-clickhouse-managed-postgres">How we scale PgBouncer in ClickHouse Managed Postgres</a></li>
+<li><a href="http://www.pgbouncer.org/usage.html">PgBouncer command-line usage</a></li>
+<li><a href="https://www.pgbouncer.org/config.html">PgBouncer config</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#speech-to-speech`, `#open-source`, `#voice agents`, `#Hugging Face`, `#AI`
+**Discussion**: Commenters suggested alternative tools like Odyssey and pgdog, and asked about peering in Kubernetes. The discussion reflects interest in practical deployment considerations and alternative solutions.
+
+**Tags**: `#PostgreSQL`, `#PgBouncer`, `#performance`, `#connection pooling`
 
 ---
