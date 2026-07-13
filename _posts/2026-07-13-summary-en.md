@@ -10,338 +10,326 @@ lang: en
 ---
 
 1. [AI Agent Autonomously Executes Full Ransomware Attack](#item-1) ⭐️ 9.0/10
-2. [OpenAI Codex: Lightweight Terminal-Based Coding Agent](#item-2) ⭐️ 8.0/10
+2. [OpenAI Codex: Lightweight AI Coding Agent in Terminal](#item-2) ⭐️ 8.0/10
 3. [ComfyUI: Modular Graph-Based GUI for Diffusion Models](#item-3) ⭐️ 8.0/10
-4. [Vidu S1: Real-Time Interactive Video Generation](#item-4) ⭐️ 8.0/10
+4. [Vidu S1: Real-Time Interactive Video Generation on Consumer GPUs](#item-4) ⭐️ 8.0/10
 5. [SciReasoner: Interpretable Structural Reasoning Across Sciences](#item-5) ⭐️ 8.0/10
-6. [Claude Code uses 33k tokens vs OpenCode's 7k per task](#item-6) ⭐️ 8.0/10
-7. [Google Research reduces traffic by rerouting a fraction of drivers](#item-7) ⭐️ 8.0/10
-8. [AI Automation Risks Eroding Human Expertise](#item-8) ⭐️ 8.0/10
-9. [LLMs Are Great, But Hype Over Frontier Labs Is Overblown](#item-9) ⭐️ 8.0/10
-10. [Causality Theory Applied to Understand LLM Reasoning](#item-10) ⭐️ 8.0/10
-11. [Open Source AI Faces Critical 6-Month Test](#item-11) ⭐️ 8.0/10
-12. [Apple Sues OpenAI for Trade Secret Theft](#item-12) ⭐️ 8.0/10
-13. [Swift/MLX Port of Hunyuan3D Enables Fast Local 3D on Apple Silicon](#item-13) ⭐️ 8.0/10
-14. [Fine-tuning on Summarized CoT Traces Questioned](#item-14) ⭐️ 8.0/10
-15. [Fixes Make Qwen3.5-122B Usable on Mac Studio](#item-15) ⭐️ 8.0/10
+6. [AI Progress May Undermine Human Expertise](#item-6) ⭐️ 8.0/10
+7. [Causality Theory Applied to LLM Interpretability](#item-7) ⭐️ 8.0/10
+8. [George Hotz: LLMs Are Great, But Hype Is Overblown](#item-8) ⭐️ 8.0/10
+9. [Open Source AI Faces Critical 6-Month Test](#item-9) ⭐️ 8.0/10
+10. [Apple Sues OpenAI for Trade Secret Theft](#item-10) ⭐️ 8.0/10
+11. [Swift-MLX Port Brings Hunyuan3D to Apple Silicon](#item-11) ⭐️ 8.0/10
+12. [Moondream 3.1: 9B MoE VLM with 2B Active Parameters](#item-12) ⭐️ 8.0/10
+13. [Pitfalls of Fine-Tuning on Summarized CoT Traces](#item-13) ⭐️ 8.0/10
+14. [Fixes 3 bugs enable sub-second prefill for Qwen3.5-122B on Mac Studio](#item-14) ⭐️ 8.0/10
+15. [Applying Anthropic's J-space reasoning to Qwen3-8B](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [AI Agent Autonomously Executes Full Ransomware Attack](https://www.reddit.com/r/artificial/comments/1uuouu7/someone_built_an_ai_agent_that_hacks_networks_and/) ⭐️ 9.0/10
 
-Sysdig documented JadePuffer, the first known LLM-powered agent that autonomously hacked networks, stole credentials, encrypted databases, and demanded ransom without human intervention. The agent even rewrote its own code when encountering errors, adapting from a failed login to a working exploit in 31 seconds. This demonstrates that autonomous AI agents can now carry out sophisticated cyberattacks end-to-end, raising urgent security concerns for organizations running exposed services like Langflow. It shifts the threat model from accidental misuse of benign agents to purpose-built malicious agents. The agent exploited a Langflow bug (CVE-2026-33017) that allowed unauthenticated remote code execution, then used stolen root credentials to create rogue admin accounts via an old auth bypass. It encrypted 1,342 service configs and left a ransom note with a Bitcoin address.
+Sysdig researchers documented the first known agentic ransomware operation, dubbed JADEPUFFER, where an LLM-based agent autonomously hacked a Langflow server, stole credentials, moved laterally, encrypted databases, and demanded ransom—all without human intervention. This demonstrates that AI agents can now execute complex, multi-stage cyberattacks end-to-end, including self-adaptation to errors, which poses a significant escalation in autonomous cyber threats and forces a rethinking of defensive strategies. The agent exploited CVE-2025-3248, a Langflow vulnerability allowing unauthenticated remote code execution, and rewrote its own code in 31 seconds when encountering a malformed response, adapting from a failed login to a working exploit.
 
 reddit · r/artificial · /u/Still_Piglet9217 · Jul 12, 19:22
 
-**Background**: Langflow is an open-source visual framework for building LLM-powered applications, but a critical bug allowed unauthenticated attackers to execute arbitrary Python code. LLM agents are AI systems that can plan and execute multi-step tasks autonomously using a plan-act-observe loop, similar to coding assistants but with broader capabilities.
+**Background**: Langflow is a low-code tool for building LLM applications, and CVE-2025-3248 is a critical vulnerability that allows unauthenticated attackers to execute arbitrary code. Agentic ransomware refers to ransomware that uses AI agents to autonomously plan and execute attacks, adapting to defenses in real time.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion">JADEPUFFER: Agentic ransomware for automated database extortion</a></li>
-<li><a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/">JadePuffer ransomware used AI agent to automate entire attack</a></li>
-<li><a href="https://teckupwave.com/hackers-exploited-a-critical-langflow-bug-within-20-hours-of-disclosure-cve-2026-33017">Hackers Exploited a Critical Langflow Bug Within 20 Hours of Disclosure (CVE-2026-33017) | TeckUpWave</a></li>
+<li><a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion">JADEPUFFER: Agentic ransomware for automated database extortion | Sysdig</a></li>
+<li><a href="https://arxiv.org/abs/2402.06664">[2402.06664] LLM Agents can Autonomously Hack Websites</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion highlighted the significance of this proof-of-concept, with many users expressing concern that the agent's self-adaptation ability makes it far more dangerous than traditional automated attacks. Some noted that the same architecture used in benign coding agents can be repurposed for malicious objectives, emphasizing the need for better infrastructure security.
-
-**Tags**: `#AI security`, `#autonomous agents`, `#ransomware`, `#LLM`, `#cybersecurity`
+**Tags**: `#AI security`, `#autonomous agents`, `#cybersecurity`, `#ransomware`, `#LLM`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI Codex: Lightweight Terminal-Based Coding Agent](https://github.com/openai/codex) ⭐️ 8.0/10
+## [OpenAI Codex: Lightweight AI Coding Agent in Terminal](https://github.com/openai/codex) ⭐️ 8.0/10
 
-OpenAI Codex, a lightweight coding agent implemented in Rust, has gained 195 stars today and now totals over 97,000 stars on GitHub. It runs in the terminal and provides AI-powered code generation and assistance. This tool significantly lowers the barrier for AI-assisted coding by offering a lightweight, terminal-based alternative to IDE plugins, making it accessible to a wide range of developers. Its high star count and Rust implementation indicate strong community validation and performance benefits. Codex is available as a CLI tool that runs locally, and can also be integrated into IDEs like VS Code, Cursor, and Windsurf. It supports tasks such as pull requests, refactoring, code reviews, and automations.
+OpenAI Codex, a lightweight coding agent that runs in the terminal, has gained 195 stars today on GitHub, reaching over 97,400 total stars. It is built in Rust and provides AI-powered code generation and assistance directly in the command line. Codex represents a practical application of large language models for software development, making AI-assisted coding accessible directly in the terminal. Its high community engagement (97k+ stars) and daily growth indicate strong developer interest in AI-powered developer tools. Codex is written in Rust, a systems programming language known for performance and memory safety. It is included in ChatGPT Plus, Pro, Business, Edu, and Enterprise plans, and is also available as a Visual Studio Code extension.
 
-github_trending · GitHub Trending · Jul 13, 02:53
+github_trending · GitHub Trending · Jul 13, 03:04
 
-**Background**: OpenAI Codex is an AI coding agent that helps developers write, review, and ship code faster. It was originally introduced as a GPT-3-based model for code generation, and the current version is a lightweight agent written in Rust, a language known for performance and memory safety.
+**Background**: OpenAI Codex is a coding agent that leverages OpenAI's frontier coding models to assist developers with tasks like code generation, refactoring, and debugging. It runs in the terminal, providing a lightweight alternative to IDE-based assistants. Rust is a language that emphasizes performance and safety, making it suitable for building reliable developer tools.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/openai/codex">GitHub - openai / codex : Lightweight coding agent that runs in your...</a></li>
-<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software... | OpenAI</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=openai.chatgpt">Codex – OpenAI’s coding agent - Visual Studio Marketplace</a></li>
+<li><a href="https://chatgpt.com/codex/">Codex in ChatGPT | AI Coding Agents for Software Engineering</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust (programming language)</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#coding agent`, `#Rust`, `#developer tools`, `#OpenAI`
+**Tags**: `#AI`, `#coding agent`, `#OpenAI`, `#developer tools`, `#Rust`
 
 ---
 
 <a id="item-3"></a>
 ## [ComfyUI: Modular Graph-Based GUI for Diffusion Models](https://github.com/Comfy-Org/ComfyUI) ⭐️ 8.0/10
 
-ComfyUI, a modular GUI and backend for diffusion models with a graph/nodes interface, continues to gain popularity, earning over 125 stars on GitHub in a single day and reaching 120,495 total stars. ComfyUI's rapid growth reflects the strong demand for flexible, visual tools in the AI/ML community, enabling users to easily compose and customize diffusion model workflows without deep coding. ComfyUI is written in Python and provides both a graphical user interface and an API/backend, allowing integration into larger systems. Its node-graph architecture lets users chain models, prompts, and image operations visually.
+ComfyUI, a popular graph-based GUI and backend for diffusion models, continues to gain traction with 125 new stars on GitHub today, reaching over 120,000 total stars. ComfyUI's modular node-based interface enables complex and customizable AI image generation workflows, making advanced diffusion models more accessible to artists and developers. The repository is written in Python and has over 14,000 forks, indicating a large and active community contributing to its development.
 
-github_trending · GitHub Trending · Jul 13, 02:53
+github_trending · GitHub Trending · Jul 13, 03:04
 
-**Background**: Diffusion models are a class of generative AI models that learn to reverse a noise-adding process to create high-quality images, videos, and other data. ComfyUI simplifies working with these models by providing a node-based interface where users can connect different components (e.g., text encoders, denoising U-Nets) as visual blocks.
+**Background**: Diffusion models are a class of generative models that learn to reverse a noise-adding process to generate new data, such as images. ComfyUI provides a visual graph interface where users can connect nodes representing different model components, enabling flexible workflow design without coding.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Diffusion_model">Diffusion model</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Node_graph_architecture">Node graph architecture - Wikipedia</a></li>
+<li><a href="https://www.trendingaitools.com/ai-tools/comfyui-web/">ComfyUI Web: Web- Based GUI for AI Image Workflow Automation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#diffusion models`, `#GUI`, `#AI/ML`, `#Python`, `#open source`
+**Tags**: `#AI`, `#diffusion models`, `#GUI`, `#Python`, `#machine learning`
 
 ---
 
 <a id="item-4"></a>
-## [Vidu S1: Real-Time Interactive Video Generation](https://huggingface.co/papers/2607.03118) ⭐️ 8.0/10
+## [Vidu S1: Real-Time Interactive Video Generation on Consumer GPUs](https://huggingface.co/papers/2607.03118) ⭐️ 8.0/10
 
-Vidu S1 is a real-time interactive video generation model that supports voice-controlled digital character animation with infinite-length output at up to 42 FPS on consumer GPUs. This breakthrough brings real-time, voice-controlled video generation to consumer hardware, enabling personalized digital character experiences for a wide audience without requiring expensive infrastructure. Vidu S1 is built on TurboDiffusion and TurboServe, achieving 540p resolution at 42 FPS on regular consumer GPUs, and supports custom image uploads of real people, anime, and pets with various voice tones.
+Vidu S1 is a real-time interactive video generation model that supports voice-controlled digital character animation with infinite-length output at up to 42 FPS on consumer GPUs. This breakthrough enables real-time, interactive video generation on affordable hardware, opening up new possibilities for live content creation, virtual avatars, and interactive entertainment without requiring expensive cloud infrastructure. Vidu S1 is built on TurboDiffusion and TurboServe, achieving 540p resolution at 42 FPS on standard consumer GPUs, and supports custom image uploads for real people, anime, and pets with various voice tones.
 
 huggingface_papers · Hugging Face Papers · Jul 10, 00:00
 
-**Background**: Video generation models typically require significant computational resources and produce short clips with delays. TurboDiffusion accelerates diffusion models by 100-200x with minimal quality loss, while TurboServe optimizes serving infrastructure. Vidu S1 combines these to enable real-time interactive generation.
+**Background**: Traditional video generation models are slow and require powerful servers, making real-time interaction difficult. TurboDiffusion accelerates diffusion models by 100–200x with minimal quality loss, while TurboServe optimizes serving efficiency. Vidu S1 combines these to enable real-time, voice-controlled video generation on consumer hardware.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/TurboDiffusion">TurboDiffusion</a></li>
-<li><a href="https://github.com/thu-ml/TurboDiffusion">GitHub - thu-ml/TurboDiffusion: TurboDiffusion: 100–200× Acceleration for Video Diffusion Models</a></li>
-<li><a href="https://arxiv.org/abs/2512.16093">[2512.16093] TurboDiffusion: Accelerating Video Diffusion Models by 100-200 Times</a></li>
+<li><a href="https://github.com/thu-ml/TurboDiffusion">GitHub - thu-ml/ TurboDiffusion : TurboDiffusion : 100–200...</a></li>
+<li><a href="https://www.vidu.com/vidu-stream">Vidu S1 AI Video Model | Vidu AI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#video generation`, `#real-time`, `#voice control`, `#diffusion models`, `#consumer hardware`
+**Tags**: `#video generation`, `#real-time`, `#voice control`, `#AI`, `#consumer hardware`
 
 ---
 
 <a id="item-5"></a>
 ## [SciReasoner: Interpretable Structural Reasoning Across Sciences](https://huggingface.co/papers/2607.07708) ⭐️ 8.0/10
 
-Researchers introduce SciReasoner, a multimodal scientific foundation model that discretizes structural elements of proteins, molecules, and crystals into a unified vocabulary for interpretable reasoning. It achieves state-of-the-art performance on 67 out of 86 benchmarks, including improvements in Gene Ontology prediction and retrosynthesis accuracy. SciReasoner bridges accurate prediction with interpretable scientific inference, enabling researchers to understand why a model makes certain predictions. This could accelerate discovery in biology, chemistry, and materials science by providing transparent reasoning traces that experts trust. In homology-controlled Gene Ontology prediction, SciReasoner improved Cellular Component annotation F_max from 0.42 to 0.55. For single-step retrosynthesis, accuracy rose from 0.63 to 0.72 with fragment-level disconnection traces. Double-blind expert evaluation rated its reasoning traces as preferred or comparable to a frontier LLM in 98% of cases.
+Researchers introduced SciReasoner, a multimodal scientific foundation model that discretizes structural elements into a unified vocabulary for interpretable reasoning across proteins, molecules, and crystals. It achieves state-of-the-art performance on 67 out of 86 benchmarks, improving Gene Ontology prediction F_max from 0.42 to 0.55 and retrosynthesis accuracy from 0.63 to 0.72. SciReasoner bridges the gap between accurate prediction and interpretable scientific inference, enabling researchers to understand why a model makes certain predictions. This could accelerate drug discovery and materials science by providing transparent reasoning traces that experts can verify. The model uses a structure-aware vocabulary of tokens representing coordinates, topologies, and periodic connectivities, treating them as addressable evidence units. In double-blind expert evaluation, SciReasoner's reasoning traces were preferred or comparable to a frontier large language model in 98% of cases.
 
 huggingface_papers · Hugging Face Papers · Jul 9, 00:00
 
-**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, where function emerges from spatial and chemical organization. Traditional AI models often lack interpretability, making it hard to trust their predictions. SciReasoner addresses this by treating structural tokens as addressable evidence units, enabling reasoning under scientific constraints like stereochemistry and symmetry.
+**Background**: Structure-property relationships are fundamental in biology, chemistry, and materials science, where function emerges from spatial and chemical organization. Traditional AI models often lack interpretability, making it hard to trust predictions. SciReasoner addresses this by discretizing structural elements into a unified vocabulary, allowing the model to reason step-by-step under scientific constraints.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2509.21320">SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines</a></li>
-<li><a href="https://github.com/SpectrAI-Initiative/SciReasoner">GitHub - SpectrAI-Initiative/SciReasoner</a></li>
-<li><a href="https://www.nature.com/articles/s41524-023-01163-9">Towards understanding structure–property relations in materials with interpretable deep learning | npj Computational Materials</a></li>
+<li><a href="https://arxiv.org/abs/2509.21320">[2509.21320] SciReasoner: Laying the Scientific Reasoning Ground Across Disciplines</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#multimodal AI`, `#scientific foundation model`, `#structural reasoning`, `#materials science`, `#interpretability`
+**Tags**: `#AI for Science`, `#Structural Biology`, `#Materials Science`, `#Multimodal Learning`, `#Interpretable AI`
 
 ---
 
 <a id="item-6"></a>
-## [Claude Code uses 33k tokens vs OpenCode's 7k per task](https://systima.ai/blog/claude-code-vs-opencode-token-overhead) ⭐️ 8.0/10
+## [AI Progress May Undermine Human Expertise](https://arxiv.org/abs/2607.06377) ⭐️ 8.0/10
 
-A systematic study found that Claude Code sends approximately 33,000 tokens before processing a user's prompt, while OpenCode sends only about 7,000 tokens for the same task, indicating a 4.7x overhead in token consumption. This token inefficiency directly increases costs for users and raises concerns about whether AI coding tools are optimized for efficiency or designed to maximize API revenue. It also highlights the importance of transparent token usage reporting for developers choosing between tools. The overhead stems from large system prompts, aggressive sub-agent orchestration, and resending full conversation history on every turn. The study logged all requests between the agentic coding tool and Anthropic's endpoint to capture exact usage.
+A discussion on the article "Automation Without Understanding" warns that as AI systems become more capable, humans may lose the expertise needed to detect AI errors, leading to an inability to verify AI outputs. This matters because it highlights a critical societal risk: if we stop producing experts who can understand and verify AI, we may become dependent on systems we cannot correct or trust, undermining accountability in science, engineering, and decision-making. The discussion points out that AI systems often produce outputs without transparent reasoning, and the community suggests forcing AI to show its work through formal proofs, execution traces, or source citations to maintain verifiability.
 
-hackernews · systima · Jul 12, 18:25 · [Discussion](https://news.ycombinator.com/item?id=48883275)
+hackernews · root-parent · Jul 12, 16:54 · [Discussion](https://news.ycombinator.com/item?id=48882554)
 
-**Background**: AI coding tools like Claude Code and OpenCode act as autonomous agents that plan and execute software tasks by making API calls to large language models. Each API call consumes tokens representing the amount of text processed, and users are billed per token. Efficient token usage is critical for cost management, especially for heavy users.
+**Background**: As AI systems become more advanced, they are increasingly used to automate tasks that previously required human expertise, such as writing code, generating proofs, or analyzing data. However, if humans stop practicing these skills, they may lose the ability to critically evaluate AI outputs, creating a knowledge gap that makes errors harder to detect.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.firecrawl.dev/blog/claude-code-token-efficiency">12 Ways to Cut Token Consumption in Claude Code</a></li>
-<li><a href="https://github.com/ramtinJ95/opencode-tokenscope">GitHub - ramtinJ95/opencode-tokenscope: Comprehensive token usage analysis and cost tracking for opencode sessions · GitHub</a></li>
-<li><a href="https://www.truefoundry.com/blog/opencode-token-usage-how-it-works-and-how-to-optimize-it">OpenCode Token Usage: How It Works and How to Optimize It</a></li>
+**Discussion**: Commenters express concern that AI could replace experts without producing new ones, leading to a future where AI outputs are unverifiable. One commenter suggests forcing AI to show its work using formal proofs or execution traces, while another notes that even current experts may struggle to pass exams they once took, highlighting the fragility of expertise.
 
-</ul>
-</details>
-
-**Discussion**: Community comments highlight that sub-agents are a major source of token waste, with one user reporting that Claude Code launched 7 sub-agents for a single task, burning through budget before any completed. Others suspect Anthropic intentionally inflates token usage to drive subscription revenue, noting that users cannot use their own API key with Claude Code. The author plans to follow up with deeper analysis including qualitative results.
-
-**Tags**: `#AI coding tools`, `#token efficiency`, `#cost analysis`, `#Claude Code`, `#OpenCode`
+**Tags**: `#AI`, `#expertise`, `#verification`, `#societal impact`, `#epistemology`
 
 ---
 
 <a id="item-7"></a>
-## [Google Research reduces traffic by rerouting a fraction of drivers](https://research.google/blog/the-power-of-collaboration-how-we-can-reduce-traffic-congestion/) ⭐️ 8.0/10
+## [Causality Theory Applied to LLM Interpretability](https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason/) ⭐️ 8.0/10
 
-Google Research collaborated with cities to reduce traffic congestion by subtly rerouting a fraction of drivers to alternative routes, validated via a city-wide switchback experiment over six months. This data-driven approach offers a scalable, low-cost way to alleviate urban congestion without requiring new infrastructure, potentially improving travel efficiency for millions of drivers. The Google Maps algorithm was modified to prefer alternative routes with similar travel times and segment types, and the experiment used a switchback design alternating between treatment and control on consecutive days.
-
-hackernews · raahelb · Jul 12, 15:35 · [Discussion](https://news.ycombinator.com/item?id=48881967)
-
-**Background**: Traffic congestion is a major urban problem caused by too many vehicles using the same routes. Traditional solutions like building more roads are expensive and often ineffective. Switchback experiments are a statistical method used when network effects make standard A/B tests impractical, such as in ride-hailing or traffic routing.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.statsig.com/blog/switchback-experiments">Switchback experiments: Overview and considerations</a></li>
-<li><a href="https://arxiv.org/abs/2009.00148">[2009.00148] Design and Analysis of Switchback Experiments</a></li>
-<li><a href="https://towardsdatascience.com/what-is-switchback-testing-for-decision-models-e26d2007325a/">What Is Switchback Testing for Decision Models? | Towards Data Science</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters raised concerns about infrastructure wear on less hardy roads, the annoyance of automatic rerouting in Google Maps, and argued that the best solution is to design communities where people can live near work and amenities, reducing the need for driving altogether.
-
-**Tags**: `#traffic congestion`, `#Google Maps`, `#route optimization`, `#urban planning`, `#experimental design`
-
----
-
-<a id="item-8"></a>
-## [AI Automation Risks Eroding Human Expertise](https://arxiv.org/abs/2607.06377) ⭐️ 8.0/10
-
-A critical paper titled 'Automation Without Understanding' examines the dangers of relying on AI without maintaining human expertise to verify its outputs. This matters because as AI systems become more capable, there is a growing risk that humans will lose the ability to detect errors, leading to unchecked mistakes in critical fields like medicine, law, and engineering. The paper argues that automation without understanding can lead to an erosion of human expertise, making it difficult to notice when AI is confidently wrong.
-
-hackernews · root-parent · Jul 12, 16:54 · [Discussion](https://news.ycombinator.com/item?id=48882554)
-
-**Background**: AI systems, especially large language models, can generate plausible but incorrect outputs. Historically, human experts have been the final check on such outputs. The paper warns that if we stop training new experts, we lose the ability to verify AI results.
-
-**Discussion**: Commenters express concern that AI may replace experts without producing new ones, leading to a future where no one can verify AI outputs. Some suggest forcing AI to show its work, such as producing proofs or sources, to maintain transparency.
-
-**Tags**: `#AI`, `#epistemology`, `#automation`, `#expertise`, `#transparency`
-
----
-
-<a id="item-9"></a>
-## [LLMs Are Great, But Hype Over Frontier Labs Is Overblown](https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html) ⭐️ 8.0/10
-
-A critical blog post argues that while LLMs are transformative, the massive valuations of frontier AI labs are unjustified because these labs will fail to capture the value they create, as personalized and private AI use becomes dominant. This analysis challenges the prevailing narrative that frontier AI labs will capture most of the value from AI advances, suggesting instead that value will be distributed widely through open-source models and private deployments, which could reshape investment and business strategies. The author points to productivity gains that are not reflected in new software products because they occur privately in homelabs, and notes that open-source models enable users to customize AI for specific needs, reducing dependence on frontier labs.
-
-hackernews · therepanic · Jul 12, 18:31 · [Discussion](https://news.ycombinator.com/item?id=48883343)
-
-**Background**: Value capture refers to the ability of a company to turn the value it creates into profit. In AI, frontier labs like OpenAI and Anthropic have raised billions at high valuations, but critics argue that open-source alternatives and private deployments may prevent them from monetizing their models effectively.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Value_capture_financing">Value capture financing</a></li>
-<li><a href="https://newsletter.semianalysis.com/p/ai-value-capture-the-shift-to-model">AI Value Capture - The Shift To Model Labs</a></li>
-<li><a href="https://cheatsheets.davidveksler.com/ai-frontier.html">Frontier AI Companies & Labs: Complete List of Models (2026)</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters largely agree with the value capture argument, sharing personal experiences of using LLMs privately for niche tasks. Some note that recent model improvements (e.g., Sonnet 4, Opus 4.5) are accelerating progress, making future outcomes uncertain.
-
-**Tags**: `#LLM`, `#AI hype`, `#open source`, `#productivity`, `#value capture`
-
----
-
-<a id="item-10"></a>
-## [Causality Theory Applied to Understand LLM Reasoning](https://cacm.acm.org/news/can-we-understand-how-large-language-models-reason/) ⭐️ 8.0/10
-
-Researchers are applying causality theory from mechanistic interpretability to analyze how large language models (LLMs) reason, moving beyond simple correlation-based explanations. This approach could lead to more transparent and trustworthy AI systems by revealing the internal causal mechanisms behind LLM outputs, which is critical for safety and reliability. The article references a paper on arXiv (2301.04709) and discusses experiments where researchers tweaked weights and activations to observe reasoning-like concepts, such as clock time calculations.
+Researchers are applying causality theory to mechanistic interpretability of large language models (LLMs), aiming to understand whether the knowledge encoded in neural networks corresponds to reasoning-like concepts. This approach involves experiments like tweaking weights and activations to probe internal mechanisms. This work is significant for AI safety and transparency, as understanding LLM reasoning could help ensure these models are reliable and aligned with human goals. It also advances the field of explainable AI by moving beyond black-box analysis toward reverse engineering neural networks. The research is highlighted in an article on CACM, referencing a paper on arXiv (2301.04709) and a related YouTube discussion. One example shows researchers observing how a model approached clock time calculations through weight and activation tweaks.
 
 hackernews · adunk · Jul 12, 18:04 · [Discussion](https://news.ycombinator.com/item?id=48883090)
 
-**Background**: Mechanistic interpretability is a subfield of explainable AI that aims to reverse-engineer neural networks by analyzing their internal structures, algorithms, and circuits. Causality theory, pioneered by Judea Pearl, provides tools to identify cause-effect relationships, which can help uncover how LLMs arrive at specific outputs.
+**Background**: Mechanistic interpretability is a subfield of explainable AI that aims to reverse-engineer neural networks by analyzing their internal structures, algorithms, and circuits. Causality theory, particularly Judea Pearl's framework, provides tools for causal discovery and inference, which can help identify how model components contribute to outputs. This combination offers a path toward understanding the hidden algorithms in deep neural networks.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mechanistic_interpretability">Mechanistic interpretability</a></li>
-<li><a href="https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70015">The Role of Causality in Explainable Artificial Intelligence - Carloni - 2025 - WIREs Data Mining and Knowledge Discovery - Wiley Online Library</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Causal_AI">Causal AI - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted that the article's title is misleading, as it focuses on mechanistic interpretability rather than philosophical reasoning. Some expressed skepticism about whether neural networks can ever be fully understood due to their inherent complexity, comparing them to 'spaghetti code'.
+**Discussion**: Community comments express cautious optimism, with some questioning whether mechanistic interpretability can ever fully reduce LLMs to simple equations. One commenter notes the analogy to 'spaghetti code' in neural networks, suggesting complexity may inherently limit interpretability.
 
-**Tags**: `#mechanistic interpretability`, `#LLMs`, `#causality`, `#AI research`
+**Tags**: `#mechanistic interpretability`, `#LLMs`, `#causality`, `#AI safety`, `#deep learning`
+
+---
+
+<a id="item-8"></a>
+## [George Hotz: LLMs Are Great, But Hype Is Overblown](https://geohot.github.io//blog/jekyll/update/2026/07/12/i-love-llms.html) ⭐️ 8.0/10
+
+George Hotz published a blog post arguing that while LLMs are transformative, frontier labs like OpenAI and Anthropic will not capture the value they create, and productivity gains are real but manifest in private, one-off software rather than visible new products. This analysis challenges the high valuations of frontier AI labs and suggests that the economic benefits of LLMs may flow to users and open-source projects rather than the companies building the models, which has implications for investment and business strategy in AI. Hotz points out that despite massive productivity improvements from LLMs, there is a lack of new visible software products, because the gains are realized as private, custom scripts and tools. He also notes that open-source models are commoditizing LLM capabilities, making it harder for frontier labs to charge premium prices.
+
+hackernews · therepanic · Jul 12, 18:31 · [Discussion](https://news.ycombinator.com/item?id=48883343)
+
+**Background**: George Hotz, known as geohot, is a prominent hacker and entrepreneur who founded comma.ai and created the tinygrad deep learning framework. Frontier labs refer to leading AI companies like OpenAI, Anthropic, and Google DeepMind that develop state-of-the-art large language models. The debate about value capture centers on whether these companies can monetize AI sufficiently to justify their multi-trillion-dollar valuations.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/George_Hotz">George Hotz</a></li>
+<li><a href="https://drux.space/search/are-we-as-society-going-to-let-llm-companies-take-all-the-va-dvzqj">Are we as society going to let LLM companies take all the… — Drux</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Commenters largely agree with Hotz's thesis, sharing personal experiences of using LLMs to build one-off software for niche needs. Some note that newer models like Sonnet 4 and Opus 4.5 feel like step changes, but the overall sentiment is that frontier labs face a value capture problem and that open-source alternatives are eroding their moat.
+
+**Tags**: `#LLM`, `#AI hype`, `#open source`, `#productivity`, `#valuation`
+
+---
+
+<a id="item-9"></a>
+## [Open Source AI Faces Critical 6-Month Test](https://www.interconnects.ai/p/6-months-to-live-for-open-models) ⭐️ 8.0/10
+
+An analysis argues that the current period is the most serious test yet for the viability of open source AI models, suggesting they have roughly six months to prove their worth. This debate directly impacts the future direction of AI development, determining whether open models can compete with proprietary systems and maintain a role in the ecosystem. The analysis does not specify which models or metrics are being tested, but the provocative title highlights urgency for the open source community to demonstrate progress.
+
+rss · Interconnects · Jul 12, 16:47
+
+**Background**: Open source AI models, such as those from Meta and Mistral, have gained popularity for their accessibility and customizability. However, they often lag behind proprietary models like GPT-4 in performance, raising questions about their long-term viability.
+
+**Tags**: `#open source`, `#AI`, `#viability`, `#models`, `#analysis`
+
+---
+
+<a id="item-10"></a>
+## [Apple Sues OpenAI for Trade Secret Theft](https://www.reddit.com/r/LocalLLaMA/comments/1uus189/apple_sues_openai_alleging_trade_secret_theft/) ⭐️ 8.0/10
+
+Apple has filed a lawsuit against OpenAI, alleging systematic theft of trade secrets at every level of the organization. This lawsuit could reshape intellectual property enforcement in the AI industry and set a precedent for how trade secrets are protected amid rapid AI development. The complaint claims that OpenAI's scheme involved trade secret theft 'at every level,' though specific details of the alleged thefts have not been publicly disclosed.
+
+reddit · r/LocalLLaMA · /u/fallingdowndizzyvr · Jul 12, 21:25
+
+**Background**: Trade secrets are confidential business information that provides a competitive edge. Apple and OpenAI are major players in AI, with Apple focusing on on-device AI and OpenAI on large language models. This lawsuit highlights tensions between proprietary AI development and open-source or collaborative approaches.
+
+**Discussion**: The Reddit community on r/LocalLLaMA expressed mixed reactions, with some users skeptical of Apple's claims and others concerned about the implications for open-source AI. A few commenters noted the irony of Apple, known for its secrecy, suing over trade secrets.
+
+**Tags**: `#Apple`, `#OpenAI`, `#trade secrets`, `#lawsuit`, `#AI industry`
 
 ---
 
 <a id="item-11"></a>
-## [Open Source AI Faces Critical 6-Month Test](https://www.interconnects.ai/p/6-months-to-live-for-open-models) ⭐️ 8.0/10
+## [Swift-MLX Port Brings Hunyuan3D to Apple Silicon](https://www.reddit.com/r/LocalLLaMA/comments/1uuga40/local_image_to_3d_2gb_ram_20s_apple_silicon_iphone/) ⭐️ 8.0/10
 
-An article argues that the next six months will be a decisive test for the viability of open source AI models, suggesting that the current period is the most serious challenge yet. This analysis is significant because it addresses a critical debate about whether open source AI can compete with proprietary models, with potential implications for the entire AI ecosystem and industry direction. The article does not provide specific technical details but focuses on the strategic and competitive landscape, emphasizing that the coming months will determine the future of open source AI.
-
-rss · Interconnects · Jul 12, 16:47
-
-**Background**: Open source AI models, such as those released by Meta and other organizations, have gained popularity for their accessibility and customizability. However, they face challenges in matching the performance and resources of proprietary models from companies like OpenAI and Google. The debate centers on whether open models can sustain innovation and remain competitive.
-
-**Tags**: `#open source`, `#AI`, `#viability`, `#industry analysis`
-
----
-
-<a id="item-12"></a>
-## [Apple Sues OpenAI for Trade Secret Theft](https://www.reddit.com/r/LocalLLaMA/comments/1uus189/apple_sues_openai_alleging_trade_secret_theft/) ⭐️ 8.0/10
-
-Apple has filed a lawsuit against OpenAI, accusing the company of orchestrating a widespread scheme to steal trade secrets at every level of its operations. This lawsuit could reshape the competitive landscape of the AI industry by setting legal precedents on trade secret protection and potentially straining partnerships between major tech firms. The lawsuit alleges that OpenAI's scheme was pervasive, involving employees at multiple levels, though specific trade secrets or damages are not detailed in the available summary.
-
-reddit · r/LocalLLaMA · /u/fallingdowndizzyvr · Jul 12, 21:25
-
-**Background**: Trade secret theft involves the unauthorized use of confidential business information that provides a competitive edge. Apple and OpenAI are both major players in AI, with Apple focusing on on-device AI and OpenAI on large language models like GPT-4.
-
-**Discussion**: The Reddit community on r/LocalLLaMA is likely to debate the merits of the case, with some questioning the validity of Apple's claims and others discussing the broader implications for open-source AI development.
-
-**Tags**: `#Apple`, `#OpenAI`, `#trade secrets`, `#legal`, `#AI`
-
----
-
-<a id="item-13"></a>
-## [Swift/MLX Port of Hunyuan3D Enables Fast Local 3D on Apple Silicon](https://www.reddit.com/r/LocalLLaMA/comments/1uuga40/local_image_to_3d_2gb_ram_20s_apple_silicon_iphone/) ⭐️ 8.0/10
-
-A developer has released a Swift/MLX port of Tencent's Hunyuan3D models, enabling image-to-3D generation on Apple Silicon with under 2GB RAM and under 20 seconds for small shapes, and also running on iPhone. This makes high-quality 3D asset generation accessible on consumer Apple devices without cloud dependency, lowering the barrier for creators and developers to produce 3D content locally. The port uses MLX (Apple's machine learning framework) and Swift, avoiding PyTorch overhead, and supports FP16 with Q4/Q8 quantization for even lower memory usage on iPhones.
+A developer has completed a Swift-MLX port of Tencent's Hunyuan3D models, enabling image-to-3D generation on Apple Silicon devices including iPhones, with inference times under 20 seconds and memory usage below 2 GB for the small model. This brings high-quality 3D asset generation to local Apple devices without cloud dependency, democratizing 3D content creation for developers and hobbyists on Macs and iPhones. The port supports Hunyuan3D-Shape and Hunyuan3D-Paint models, with benchmarks on M4 Max showing 20.9s at ~5.6 GB for shape (small) and 231s at ~38 GB for paint (RGB). The app, Modelr, is open-source and available on Mac and iOS.
 
 reddit · r/LocalLLaMA · /u/arduinoRPi4 · Jul 12, 14:00
 
-**Background**: Hunyuan3D is a series of large-scale diffusion models from Tencent for generating high-resolution textured 3D assets from images or text. MLX is an open-source array framework by Apple for efficient machine learning on Apple Silicon. This port combines both to run locally on Mac and iOS devices.
+**Background**: Hunyuan3D is a series of large-scale diffusion models from Tencent for generating high-resolution textured 3D assets from images or text. MLX is an open-source array framework by Apple for efficient machine learning on Apple Silicon, providing a NumPy-like API. Swift-MLX is the Swift API for MLX, allowing native integration into Swift apps.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://github.com/Tencent-Hunyuan/Hunyuan3D-2">GitHub - Tencent-Hunyuan/Hunyuan3D-2: High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models. · GitHub</a></li>
-<li><a href="https://mlx-framework.org/">MLX</a></li>
 <li><a href="https://github.com/ml-explore/mlx-swift">GitHub - ml-explore/ mlx - swift : Swift API for MLX · GitHub</a></li>
+<li><a href="https://mlx-framework.org/">MLX</a></li>
 
 </ul>
 </details>
-
-**Discussion**: The Reddit community showed strong interest, with users asking about integration into game engines like Godot and discussing potential use cases for rapid prototyping and asset creation.
 
 **Tags**: `#3D generation`, `#Apple Silicon`, `#MLX`, `#image-to-3D`, `#local AI`
 
 ---
 
-<a id="item-14"></a>
-## [Fine-tuning on Summarized CoT Traces Questioned](https://www.reddit.com/r/LocalLLaMA/comments/1uuvkw9/why_do_people_keep_finetuning_on/) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [Moondream 3.1: 9B MoE VLM with 2B Active Parameters](https://www.reddit.com/r/LocalLLaMA/comments/1uunqcz/moondream319ba2b/) ⭐️ 8.0/10
 
-A Reddit user questions the common practice of fine-tuning open-source LLMs on summarized or censored chain-of-thought (CoT) traces from proprietary models like Claude, arguing that such distillation degrades output quality. This debate highlights a critical flaw in current distillation practices, potentially leading to widespread adoption of suboptimal fine-tuning methods that limit model capabilities. The user specifically mentions "Fable fine-tunes" and notes that reasoning traces from Anthropic's models differ significantly from the actual chain of thought, making fine-tuning on them likely to worsen performance.
+Moondream 3.1 is a 9B-parameter vision-language model using a mixture-of-experts architecture with only 2B active parameters, achieving state-of-the-art visual reasoning and detection while remaining fast and cheap to deploy. This model demonstrates that MoE can dramatically reduce inference cost for VLMs without sacrificing performance, making advanced visual AI more accessible for real-world applications. The model natively supports query, detect, point, and caption tasks, all returning structured output. It is open-source and designed for efficient deployment.
 
-reddit · r/LocalLLaMA · /u/wombweed · Jul 12, 23:54
+reddit · r/LocalLLaMA · /u/secopsml · Jul 12, 18:40
 
-**Background**: Chain-of-thought (CoT) fine-tuning is a technique where LLMs are trained on step-by-step reasoning traces to improve their reasoning abilities. Distillation involves using outputs from a larger, proprietary model to train a smaller open-source model. However, if the traces are summarized or censored (e.g., due to safety filters), they may not faithfully represent the original reasoning process, leading to degraded performance.
+**Background**: Vision-language models (VLMs) combine image and text understanding, but large models are often expensive to run. Mixture-of-experts (MoE) architectures use multiple specialized sub-networks (experts) and activate only a subset per input, reducing computation while keeping high capacity.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.emergentmind.com/topics/chain-of-thought-fine-tuning">Chain-of-Thought Fine-Tuning</a></li>
-<li><a href="https://arxiv.org/html/2510.13170v2">Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning from the Perspective of Human Reasoning Mechanism</a></li>
-<li><a href="https://aclanthology.org/2025.naacl-long.584.pdf">On the Impact of Fine-Tuning on Chain-of-Thought ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
+<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vision-language_model">Vision-language model</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit thread likely contains substantive debate, with some users agreeing that distillation on censored traces is problematic, while others may defend the practice as a pragmatic way to transfer capabilities.
+**Tags**: `#vision-language model`, `#mixture-of-experts`, `#efficient AI`, `#visual reasoning`, `#open-source`
 
-**Tags**: `#fine-tuning`, `#distillation`, `#chain-of-thought`, `#LLM training`, `#model capability`
+---
+
+<a id="item-13"></a>
+## [Pitfalls of Fine-Tuning on Summarized CoT Traces](https://www.reddit.com/r/LocalLLaMA/comments/1uuvkw9/why_do_people_keep_finetuning_on/) ⭐️ 8.0/10
+
+A Reddit post critically examines the practice of fine-tuning open-source models on summarized or censored chain-of-thought traces from proprietary models like Claude, arguing that this degrades performance rather than improving it. This highlights a fundamental misunderstanding in the LLM community about distillation fidelity, potentially leading many practitioners to waste resources on fine-tuning strategies that harm model capability. The post specifically mentions 'Fable fine-tunes' as an example, noting that the reasoning traces from Anthropic's models are completely different from the actual chain of thought, making the resulting fine-tune guaranteed to be worse.
+
+reddit · r/LocalLLaMA · /u/wombweed · Jul 12, 23:54
+
+**Background**: Chain-of-thought (CoT) reasoning involves models generating explicit intermediate steps before arriving at an answer. Knowledge distillation transfers knowledge from a large 'teacher' model to a smaller 'student' model, often using the teacher's outputs as training data. However, when the teacher's internal CoT is summarized or censored before being used for distillation, the student learns a distorted reasoning process, which can degrade its performance.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Knowledge_distillation">Knowledge distillation - Wikipedia</a></li>
+<li><a href="https://huggingface.co/Trilogix1/Anthropics-Fable-finetuned-in-Qwen3.6-35B">Trilogix1/Anthropics- Fable - finetuned -in-Qwen3.6-35B · Hugging Face</a></li>
+<li><a href="https://arxiv.org/html/2511.10714v1">BadThink: Triggered Overthinking Attacks on Chain - of - Thought ...</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The post has sparked substantive debate, with many commenters agreeing that distillation on summarized traces is flawed, while some defend the practice as a pragmatic way to inject reasoning patterns. A few note that the issue is not distillation itself but the quality of the traces used.
+
+**Tags**: `#LLM fine-tuning`, `#distillation`, `#chain-of-thought`, `#model capability`, `#reasoning traces`
+
+---
+
+<a id="item-14"></a>
+## [Fixes 3 bugs enable sub-second prefill for Qwen3.5-122B on Mac Studio](https://www.reddit.com/r/LocalLLaMA/comments/1uuwrc0/running_qwen35122b_on_mac_studio_96gb_fixed_3/) ⭐️ 8.0/10
+
+A developer fixed three bugs in the qMLX serving stack (a fork of rapid-mlx) that reduced prefill time from minutes to sub-seconds for Qwen3.5-122B on a 96GB M3 Ultra Mac Studio, enabling usable long-context inference. This breakthrough makes large hybrid MoE models like Qwen3.5-122B practical for local agentic coding on consumer hardware, significantly lowering the barrier for running state-of-the-art LLMs offline. The three bugs were: prompt instability from a unique message ID breaking byte-exact KV cache matching, interrupted streaming replies not persisting, and a background writer creating unmatchable checkpoints that caused aggressive eviction. After fixes, a 53k-token cached context required only 33 tokens to be prefilled.
+
+reddit · r/LocalLLaMA · /u/marzukia · Jul 13, 00:47
+
+**Background**: LLMs use a KV cache to avoid recomputing previous tokens, but it requires exact match of the input prefix. Hybrid attention models like Qwen3.5 combine local and global attention, making caching more complex. The qMLX stack is a specialized serving framework for Apple Silicon optimized for such models.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/">qMLX: Maximising my AI psychosis by minmaxing my Mac Studio · Andryo Marzuki - Net Zero Productivity by 2050</a></li>
+<li><a href="https://betterstack.com/community/guides/ai/omlx-apple-silicon/">oMLX: Apple Silicon-Optimized LLM Inference with Two-Tier KV Caching | Better Stack Community</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit community praised the detailed debugging and open-source contribution, with some users noting similar issues with hybrid attention caching and expressing interest in testing the fork. The author engaged actively, explaining the rationale for forking rather than upstreaming.
+
+**Tags**: `#LLM inference`, `#Mac Studio`, `#bug fix`, `#long context`, `#qMLX`
 
 ---
 
 <a id="item-15"></a>
-## [Fixes Make Qwen3.5-122B Usable on Mac Studio](https://www.reddit.com/r/LocalLLaMA/comments/1uuwrc0/running_qwen35122b_on_mac_studio_96gb_fixed_3/) ⭐️ 8.0/10
+## [Applying Anthropic's J-space reasoning to Qwen3-8B](https://www.reddit.com/r/LocalLLaMA/comments/1uugulk/anthropic_found_claude_reasoning_in_silence/) ⭐️ 8.0/10
 
-A developer fixed three bugs in the qMLX serving stack that reduced prefill time from minutes to sub-seconds for Qwen3.5-122B on a Mac Studio with 96GB memory, enabling usable long-context inference. This breakthrough makes large hybrid MoE models like Qwen3.5-122B practical on consumer Apple Silicon hardware, significantly lowering the barrier for local long-context agentic coding and research. The three bugs were: a unique message ID in the system prompt breaking byte-exact KV cache matching, interrupted streaming replies not being persisted, and a background writer creating unmatchable checkpoints that triggered aggressive eviction.
+A Reddit user applied Anthropic's Jacobian lens to the open-source Qwen3-8B model, detecting silent reasoning (J-space) and using it to catch prose drift before tool calls, then wired it into agent guard loops with LoRA recovery. This demonstrates that Anthropic's novel J-space research can be replicated on open models, enabling practical agent safety mechanisms like detecting prose drift and preventing guard loop failures, which is crucial for reliable AI agents. The user fitted the Jacobian lens on Qwen3-8B locally, used it to catch prose drift (e.g., model leaning toward 'To, You, Do…' instead of JSON), and built agent guards that stop, cancel, or keep useful space, with distill recoveries into LoRA data.
 
-reddit · r/LocalLLaMA · /u/marzukia · Jul 13, 00:47
+reddit · r/LocalLLaMA · /u/Murky-Sign37 · Jul 12, 14:22
 
-**Background**: KV cache stores intermediate key and value computations for reuse during inference, speeding up text generation. Byte-exact KV cache matching allows sharing cache across requests with identical prefixes, which is critical for multi-turn chat. The qMLX fork of rapid-mlx is specialized for serving Qwen hybrid MoE models on Apple Silicon.
+**Background**: Anthropic recently discovered that large language models have a hidden internal workspace called J-space, where silent reasoning occurs in neural activations without visible text. The Jacobian lens is an interpretability tool that estimates which internal activity patterns influence future token generation, allowing researchers to observe this hidden reasoning.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/marzukia/qMLX">GitHub - marzukia/ qMLX : The fastest local AI engine for Apple Silicon.</a></li>
-<li><a href="https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/">qMLX : Maximising my AI psychosis by minmaxing my Mac Studio</a></li>
-<li><a href="https://pypi.org/project/qmlx-serve/">qmlx - serve · PyPI</a></li>
+<li><a href="https://www.anthropic.com/research/global-workspace">A global workspace in language models \ Anthropic</a></li>
+<li><a href="https://www.developersdigest.tech/blog/anthropic-j-space-global-workspace-llm">Anthropic Discovers J-Space: A Global Workspace Inside Language Models - Developers Digest</a></li>
+<li><a href="https://www.1950.ai/post/anthropic-s-j-lens-unlocks-the-hidden-logic-of-ai-a-major-leap-in-understanding-large-language-mode">Anthropic's J- Lens Unlocks the Hidden Logic of AI, A Major Leap in...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM inference`, `#long-context`, `#Mac Studio`, `#KV cache`, `#bug fix`
+**Tags**: `#mechanistic interpretability`, `#LLM reasoning`, `#open source`, `#agent safety`, `#Qwen`
 
 ---
