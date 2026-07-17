@@ -9,124 +9,137 @@ lang: en
 
 ---
 
-1. [Firefox Compiled to WebAssembly Runs Inside a Browser](#item-1) ⭐️ 9.0/10
-2. [Thinking Machines Lab Releases Inkling, a 975B Open-Weights Model](#item-2) ⭐️ 9.0/10
-3. [Kimi K3: Largest Open Model with Opus 4.8-Class Performance](#item-3) ⭐️ 9.0/10
-4. [Ring-Zero Scales Zero RL to Trillion Parameters](#item-4) ⭐️ 9.0/10
-5. [Open Interpreter Gains 661 Stars Daily as Coding Agent for Open Models](#item-5) ⭐️ 8.0/10
-6. [Hermes Agent: Open-Source AI Agent That Learns and Grows](#item-6) ⭐️ 8.0/10
+1. [Firefox Compiled to WebAssembly Runs Inside Chrome](#item-1) ⭐️ 9.0/10
+2. [Linus Torvalds Endorses AI in Linux Kernel Development](#item-2) ⭐️ 9.0/10
+3. [Kimi K3 2.8T-A50B: Largest Open Model, Opus 4.8-Class at Sonnet 5 Price](#item-3) ⭐️ 9.0/10
+4. [OpenAI Codex: A Lightweight Coding Agent in Your Terminal](#item-4) ⭐️ 9.0/10
+5. [Ring-Zero Scales Zero RL to Trillion Parameters for Emergent Reasoning](#item-5) ⭐️ 9.0/10
+6. [Open Interpreter Surges as Coding Agent for Open Models](#item-6) ⭐️ 8.0/10
 7. [Boogu-Image-0.1: Open-Source Multimodal Model Family](#item-7) ⭐️ 8.0/10
-8. [GPT-5.6 Codex Bug Can Delete User Files](#item-8) ⭐️ 8.0/10
-9. [Linus Torvalds Declares Linux Not Anti-AI](#item-9) ⭐️ 8.0/10
-10. [Lila Sciences: Future Lab as Data Center](#item-10) ⭐️ 8.0/10
-11. [EU Mandates Google to Share Search Data and Open AI on Android](#item-11) ⭐️ 8.0/10
-12. [Hyundai Workers Strike Over Humanoid Robot Deployment Plan](#item-12) ⭐️ 8.0/10
-13. [DFlash speeds up Qwen3.6-27B by 2.2x with no quality loss](#item-13) ⭐️ 8.0/10
-14. [QLoRA default learning rate 2e-4 causes overfitting on small datasets](#item-14) ⭐️ 8.0/10
-15. [ExTernD: Expanded-Rank Ternary Decomposition for LLM Quantization](#item-15) ⭐️ 8.0/10
+8. [Car OTA Update Breaks Android Auto, Sparks Software Quality Debate](#item-8) ⭐️ 8.0/10
+9. [Sony Deletes Purchased Movies from User Accounts](#item-9) ⭐️ 8.0/10
+10. [Schema Harness Hits ~99% on ARC-AGI-3 Public](#item-10) ⭐️ 8.0/10
+11. [GPT-5.6 Codex Bug Deletes Files in Full Access Mode](#item-11) ⭐️ 8.0/10
+12. [Thinking Machines Lab Releases Inkling Open-Weights Model](#item-12) ⭐️ 8.0/10
+13. [Lila Sciences: Future Lab as Data Center](#item-13) ⭐️ 8.0/10
+14. [DeepMind and Isomorphic Labs unveil bioresilience AI approach](#item-14) ⭐️ 8.0/10
+15. [EU Mandates Google to Share Search Data, Open Android AI](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Firefox Compiled to WebAssembly Runs Inside a Browser](https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything) ⭐️ 9.0/10
+## [Firefox Compiled to WebAssembly Runs Inside Chrome](https://simonwillison.net/2026/Jul/16/firefox-in-webassembly/#atom-everything) ⭐️ 9.0/10
 
-Puter has compiled the full Firefox browser (Gecko engine) to WebAssembly, allowing it to run inside another browser tab. The project used an estimated $25,000 worth of AI tokens (Claude Opus and Fable) and is available on GitHub. This breakthrough demonstrates that even complex native applications like a full web browser can be ported to WebAssembly, opening up new possibilities for running legacy or sandboxed software in the browser. It also showcases the power of AI-assisted programming in tackling massive porting efforts. All network traffic is funneled through a WebSocket-based Wisp protocol via Puter's server, because WebAssembly code cannot open arbitrary network connections. The demo supports end-to-end encryption for HTTPS traffic, and the team had to scale servers to handle Hacker News traffic.
+Puter has compiled the full Firefox browser (Gecko engine) to WebAssembly, enabling it to run entirely within another browser, as demonstrated by loading a blog inside Firefox inside Chrome. This groundbreaking achievement demonstrates a new paradigm for browser-in-browser execution, potentially enabling secure sandboxing, legacy app compatibility, and novel web platform capabilities. The project used an estimated $25,000 worth of AI tokens (Claude Opus and Fable) but cost much less due to a subscription plan, and all network traffic is proxied through Puter's server using the Wisp protocol over WebSocket.
 
 rss · Simon Willison · Jul 16, 23:34
 
-**Background**: WebAssembly (Wasm) is a low-level binary instruction format that runs in modern web browsers at near-native speed. Traditionally, browsers run JavaScript, but Wasm allows running code compiled from languages like C++ in the browser. The Wisp protocol is a low-overhead protocol for proxying TCP and UDP sockets over a single WebSocket connection, enabling network access for Wasm modules.
+**Background**: WebAssembly (Wasm) is a low-level binary instruction format that runs in modern browsers at near-native speed. Compiling a full browser like Firefox to Wasm is extremely challenging due to its size and complexity; the resulting gecko.wasm binary is 233 MB. The project chose Firefox because Gecko has strong single-process support, simplifying the Wasm port.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.puter.com/labs/firefox-wasm/">Firefox in WebAssembly - developer.puter.com</a></li>
-<li><a href="https://github.com/HeyPuter/firefox-wasm">HeyPuter/firefox-wasm: Firefox in WebAssembly - GitHub</a></li>
+<li><a href="https://developer.puter.com/labs/firefox-wasm/">Firefox in WebAssembly</a></li>
+<li><a href="https://news.ycombinator.com/item?id=48926939">Show HN: Firefox in WebAssembly | Hacker News</a></li>
 <li><a href="https://github.com/MercuryWorkshop/wisp-protocol">GitHub - MercuryWorkshop/ wisp - protocol : Wisp is a low-overhead...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Hacker News discussion was highly positive, with many commenters impressed by the technical achievement and the use of AI to assist in the porting. Some raised concerns about the cost of proxying traffic and the reliance on Puter's servers, but the team addressed these by noting they had to scale up servers due to demand.
+**Discussion**: The Hacker News discussion was highly positive, with many impressed by the technical feat. Some raised concerns about the cost of proxying traffic and the practicality of running a full browser in Wasm, but the team noted they had to scale servers to handle the traffic spike.
 
-**Tags**: `#WebAssembly`, `#Firefox`, `#browser`, `#compilation`, `#Wisp`
+**Tags**: `#WebAssembly`, `#Firefox`, `#Browser`, `#Wasm`, `#Virtualization`
 
 ---
 
 <a id="item-2"></a>
-## [Thinking Machines Lab Releases Inkling, a 975B Open-Weights Model](https://simonwillison.net/2026/Jul/16/inkling/#atom-everything) ⭐️ 9.0/10
+## [Linus Torvalds Endorses AI in Linux Kernel Development](https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything) ⭐️ 9.0/10
 
-Thinking Machines Lab, led by Mira Murati, released Inkling, an open-weights multimodal Mixture-of-Experts model with 975B total parameters and 41B active parameters, under the Apache-2.0 license. The model was trained on 45 trillion tokens of text, images, audio, and video. This release marks a significant addition to the US open-weights AI ecosystem, offering a competitive alternative to models from China and other open-weight contenders like NVIDIA Nemotron and Gemma 4. Its Apache-2.0 license and multimodal capabilities make it a strong base for fine-tuning and customization. The model card is notably sparse, with minimal training data documentation, and Thinking Machines Lab admits Inkling is not a frontier model but a strong base for fine-tuning via their Tinker platform. A smaller variant, Inkling-Small (276B total, 12B active), is promised but not yet released.
+Linus Torvalds, the creator of Linux, publicly declared that Linux is not an anti-AI project and that AI is a clearly useful tool for kernel development, warning that those who disagree can fork the project or leave. This definitive stance from the top-level maintainer signals a potential policy shift in the Linux kernel community, potentially accelerating the adoption of AI tools in open-source development and influencing other projects. Torvalds stated on the Linux Media Mailing List that he is willing to 'absolutely put my foot down' on this issue, emphasizing that AI's usefulness is no longer in question, though other economic questions remain.
 
-rss · Simon Willison · Jul 16, 15:35
+rss · Simon Willison · Jul 16, 13:26
 
-**Background**: Mixture-of-Experts (MoE) is a neural network architecture that divides the model into multiple specialized 'expert' sub-networks, activating only a subset for each input, which reduces computational cost. Open-weights models release trained parameters publicly, allowing anyone to download, modify, and use them, but they may not include full training data or code. The Apache-2.0 license is a permissive open-source license that permits use, modification, and distribution without royalty concerns.
+**Background**: The Linux kernel is the core of the Linux operating system, maintained by a large open-source community led by Linus Torvalds. AI tools, such as large language models (LLMs), have been increasingly used for code generation and debugging, but some developers have raised ethical and practical concerns about their use in open-source projects.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Mixture_of_experts">Mixture of experts - Wikipedia</a></li>
-<li><a href="https://huggingface.co/blog/moe">Mixture of Experts Explained</a></li>
-<li><a href="https://opensource.org/ai/open-weights">Open Weights: not quite what you’ve been told</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#open-weights`, `#multimodal`, `#Mixture-of-Experts`, `#Mira Murati`
+**Tags**: `#Linux`, `#AI`, `#Open Source`, `#Kernel Development`, `#Linus Torvalds`
 
 ---
 
 <a id="item-3"></a>
-## [Kimi K3: Largest Open Model with Opus 4.8-Class Performance](https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest) ⭐️ 9.0/10
+## [Kimi K3 2.8T-A50B: Largest Open Model, Opus 4.8-Class at Sonnet 5 Price](https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest) ⭐️ 9.0/10
 
-Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-weight model with 50 billion active parameters, achieving performance comparable to Anthropic's Opus 4.8 while priced similarly to Sonnet 5 ($3/$15 per million tokens). As the largest open model ever released, Kimi K3 significantly lowers the cost of frontier-level AI, potentially accelerating commoditization of intelligence and pressuring proprietary model pricing. Kimi K3 uses a Mixture-of-Experts architecture with 2.8T total parameters and 50B active per token, supports a 1-million-token context window, and excels in coding, agentic tasks, long-horizon reasoning, and visual understanding.
+Moonshot AI released Kimi K3, a 2.8 trillion parameter open Mixture-of-Experts model with a 1M-token context window, claiming performance comparable to Anthropic's Opus 4.8 at pricing similar to Sonnet 5. As the largest open model ever released, Kimi K3 pushes the frontier of open-source AI, potentially democratizing access to near-frontier intelligence and intensifying competition among AI labs. Kimi K3 uses a MoE architecture with 2.8T total parameters and 50B active parameters per token, and features Kimi Delta Attention for efficient long-context processing. Its API pricing is $3/$15 per million tokens (input/output), matching Anthropic's Sonnet 5 pricing.
 
 rss · Latent Space · Jul 17, 01:46
 
-**Background**: Open-weight models like Kimi K3 allow developers to download and fine-tune the model, unlike closed APIs. The model uses Kimi Delta Attention and Attention Residuals for efficiency. Opus 4.8 is Anthropic's top-tier model, while Sonnet 5 offers a more affordable price-performance point.
+**Background**: Open models have traditionally lagged behind proprietary frontier models in performance. Kimi K3 aims to close this gap by offering a model that rivals Anthropic's Opus 4.8, one of the most capable proprietary models, while being openly available and priced competitively with Sonnet 5.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K 3 Tech Blog: Open Frontier Intelligence</a></li>
-<li><a href="https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/">Moonshot AI Releases Kimi K 3 : A 2 . 8 Trillion... - MarkTechPost</a></li>
-<li><a href="https://www.anthropic.com/news/claude-opus-4-8">Introducing Claude Opus 4.8 \ Anthropic</a></li>
+<li><a href="https://kie.ai/blog/what-is-kimi-k3">What Is Kimi K3? Moonshot's 2.8T, 1M-Context Flagship</a></li>
+<li><a href="https://www.marktechpost.com/2026/07/16/moonshot-ai-releases-kimi-k3-a-2-8-trillion-parameter-open-moe-model-with-kimi-delta-attention-and-1m-context/">Moonshot AI Releases Kimi K3: A 2.8 Trillion Parameter Open MoE Model With Kimi Delta Attention and 1M Context - MarkTechPost</a></li>
+<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K3 Tech Blog: Open Frontier Intelligence</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments highlight the model's high cost for a Chinese open-weight model ($3/$15 per million tokens) but acknowledge its competitive performance. Some speculate that Chinese labs are commoditizing intelligence to drive hardware sales, while others note the significant investment required.
+**Discussion**: Community comments highlight the model's high pricing for a Chinese open-weight model, but note it is justified if truly competitive with frontier models. Some see Chinese labs driving commoditization of AI intelligence, while others question the massive investment required.
 
-**Tags**: `#AI`, `#open-source`, `#large language model`, `#Kimi K3`, `#breakthrough`
+**Tags**: `#open models`, `#AI`, `#large language models`, `#Kimi K3`, `#machine learning`
 
 ---
 
 <a id="item-4"></a>
-## [Ring-Zero Scales Zero RL to Trillion Parameters](https://huggingface.co/papers/2607.12395) ⭐️ 9.0/10
+## [OpenAI Codex: A Lightweight Coding Agent in Your Terminal](https://github.com/openai/codex) ⭐️ 9.0/10
 
-Researchers present Ring-Zero, a stable pipeline for scaling zero reinforcement learning to 1-trillion-parameter models, demonstrating emergent reasoning behaviors like self-verification and parallel reasoning. This breakthrough validates scaling laws for zero RL at an unprecedented scale, showing that trillion-parameter models can develop advanced reasoning without human-annotated data, potentially transforming AI reasoning capabilities. The pipeline includes algorithmic optimizations like clipped importance sampling, training-inference ratio correction, and mixed-precision control. The resulting model, Ring-2.5-1T-Zero, achieves competitive performance on seven mathematical benchmarks.
+OpenAI Codex, a lightweight coding agent written in Rust, has gained 381 stars today on GitHub, reaching 98,900 total stars. It translates natural language into code directly in the terminal. This tool represents a paradigm shift in developer tooling by enabling natural language to code translation, potentially boosting productivity for millions of developers. Its massive community adoption (98.9k stars) signals strong demand for AI-powered coding assistants. Codex is built in Rust, emphasizing performance and safety, and runs as a terminal-based agent. It is part of OpenAI's suite of AI-driven coding agents designed to automate software engineering tasks.
 
-huggingface_papers · Hugging Face Papers · Jul 16, 00:00
+github_trending · GitHub Trending · Jul 17, 02:55
 
-**Background**: Zero reinforcement learning (zero RL) trains models using verifiable rewards without human-annotated data, enabling chain-of-thought reasoning to emerge. Prior work was limited to small models due to computational constraints, leaving scaling behaviors unexplored.
+**Background**: A coding agent is an AI system that autonomously performs coding tasks like writing, reviewing, and refactoring code. OpenAI Codex is one of several popular AI coding agents, alongside tools like Cursor, Claude Code, and GitHub Copilot, each offering different trade-offs between speed, control, and autonomy.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/pdf/2510.25528">Zero Reinforcement Learning Towards General Domains</a></li>
-<li><a href="https://arxiv.org/abs/2503.18892">SimpleRL-Zoo: Investigating and Taming Zero Reinforcement Learning for ...</a></li>
-<li><a href="https://arxiv.org/abs/1905.02363">[1905.02363] Dimension-Wise Importance Sampling Weight Clipping for Sample-Efficient Reinforcement Learning</a></li>
+<li><a href="https://grokipedia.com/page/OpenAI_Codex">OpenAI Codex</a></li>
+<li><a href="https://grokipedia.com/page/Coding_agent">Coding agent</a></li>
+<li><a href="https://www.faros.ai/blog/best-ai-coding-agents-2026">Best AI Coding Agents for 2026: Real-World Developer Reviews</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#reinforcement learning`, `#scaling laws`, `#reasoning`, `#large language models`, `#AI research`
+**Tags**: `#AI`, `#coding agent`, `#developer tools`, `#natural language processing`, `#Rust`
 
 ---
 
 <a id="item-5"></a>
-## [Open Interpreter Gains 661 Stars Daily as Coding Agent for Open Models](https://github.com/openinterpreter/openinterpreter) ⭐️ 8.0/10
+## [Ring-Zero Scales Zero RL to Trillion Parameters for Emergent Reasoning](https://huggingface.co/papers/2607.12395) ⭐️ 9.0/10
 
-Open Interpreter, a coding agent for open models like Kimi K3, has gained 661 stars in a single day, reaching over 66,000 total stars on GitHub. The project is written in Rust and focuses on enabling natural language code execution. This surge indicates strong community interest in AI-assisted development tools that work with open models, potentially lowering barriers for developers to leverage large language models for coding tasks. The use of Rust suggests a focus on performance and safety. Open Interpreter is a fork of OpenAI's Codex, optimized for low-cost models, and runs locally in the terminal. It can read files, edit code, run commands, and escalate actions beyond the sandbox only after user approval.
+Researchers present Ring-Zero, a stable and efficient pipeline for scaling reinforcement learning with verifiable rewards (zero RL) to trillion-parameter models, achieving competitive performance on seven mathematical benchmarks. This work demonstrates that scaling zero RL to trillion-parameter models significantly enhances sample efficiency and performance ceilings, and reveals emergent reasoning behaviors such as self-verification and parallel reasoning, which could reduce the need for hand-crafted heuristics in AI systems. The pipeline incorporates algorithmic and system optimizations including clipped importance sampling, training-inference ratio correction, and mixed-precision control. The training process progresses through an initial discovery phase followed by a sharpening phase.
 
-github_trending · GitHub Trending · Jul 17, 02:43
+huggingface_papers · Hugging Face Papers · Jul 16, 00:00
 
-**Background**: Kimi K3 is an open model with 2.8 trillion parameters, released by Kimi, and is among the largest open models available. Open Interpreter provides a ChatGPT-like interface for executing code across multiple programming languages, acting as a coding agent that bridges natural language and code.
+**Background**: Reinforcement learning with verifiable rewards (zero RL) is a paradigm that enhances reasoning in large language models without human-annotated data. Previous work was limited to small models due to computational constraints, leaving scaling behaviors unexplored.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/pdf/2607.12395">Ring- Zero : Scaling Zero RL to a Trillion Parameters for Emergent...</a></li>
+<li><a href="https://arxiv.org/abs/1905.02363">[1905.02363] Dimension-Wise Importance Sampling Weight Clipping for Sample-Efficient Reinforcement Learning</a></li>
+<li><a href="https://arxiv.org/html/2602.01826">Beyond Precision: Training-Inference Mismatch is an Optimization Problem and Simple LR Scheduling Fixes It</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#reinforcement learning`, `#large language models`, `#reasoning`, `#scaling`, `#zero RL`
+
+---
+
+<a id="item-6"></a>
+## [Open Interpreter Surges as Coding Agent for Open Models](https://github.com/openinterpreter/openinterpreter) ⭐️ 8.0/10
+
+Open Interpreter, a coding agent for open models like Kimi K3, gained 661 stars on GitHub in a single day, reaching over 66,000 total stars. The project is written in Rust and focuses on low-cost model performance. This rapid growth signals strong community interest in AI-assisted programming with open models, potentially democratizing coding agents beyond proprietary solutions. It could lower barriers for developers to integrate AI into their workflows. Open Interpreter is a fork of OpenAI's Codex, designed to run in the terminal and execute code across multiple languages. It uses a sandbox for safety and supports models like Kimi K3, which has 2.8 trillion parameters and a 1M token context window.
+
+github_trending · GitHub Trending · Jul 17, 02:55
+
+**Background**: Open Interpreter is a local code execution environment that allows large language models to run code through a ChatGPT-like terminal interface. It emphasizes performance with low-cost models and is written in Rust for speed. Kimi K3 is a recently released open model with 2.8 trillion parameters, making it one of the largest open models available.
 
 <details><summary>References</summary>
 <ul>
@@ -137,219 +150,192 @@ github_trending · GitHub Trending · Jul 17, 02:43
 </ul>
 </details>
 
-**Tags**: `#coding agent`, `#open models`, `#Rust`, `#AI-assisted development`, `#GitHub trending`
-
----
-
-<a id="item-6"></a>
-## [Hermes Agent: Open-Source AI Agent That Learns and Grows](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
-
-NousResearch released Hermes Agent, an open-source Python AI agent that accumulates 588 stars in one day on GitHub, featuring a built-in learning loop that creates skills from experience and remembers across sessions. This project represents a shift toward autonomous, self-improving AI agents that operate across multiple platforms (CLI, messaging apps, voice), potentially reducing lock-in to single-vendor solutions and enabling long-running, personalized AI assistants. Hermes Agent supports Telegram, Discord, Slack, WhatsApp, Signal, and CLI from a single gateway, includes voice memo transcription, cross-platform conversation continuity, and agent-curated memory with periodic nudges.
-
-github_trending · GitHub Trending · Jul 17, 02:43
-
-**Background**: Hermes Agent is built by Nous Research, the lab behind the Hermes, Nomos, and Psyche model families. Unlike coding copilots tied to an IDE or chatbot wrappers around a single API, this agent is designed to live on your server, remember what it learns, and become more capable over time.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/nousresearch/hermes-agent">GitHub - NousResearch/hermes-agent: The agent that grows with you · GitHub</a></li>
-<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent — The Agent That Grows With You</a></li>
-<li><a href="https://hermes-agent.nousresearch.com/docs/">Hermes Agent Documentation | Hermes Agent</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#agent`, `#Python`, `#open-source`
+**Tags**: `#AI`, `#coding agent`, `#open models`, `#Rust`, `#developer tools`
 
 ---
 
 <a id="item-7"></a>
 ## [Boogu-Image-0.1: Open-Source Multimodal Model Family](https://huggingface.co/papers/2607.13125) ⭐️ 8.0/10
 
-Boogu-Image-0.1 is an open-source unified multimodal model family that achieves competitive performance in text-to-image generation, instruction-based editing, and bilingual text rendering, with variants including Base, Turbo, Edit, and Edit-Turbo. This work demonstrates that targeted improvements in data quality and training pipelines, along with agentic inference-time scaling, can substantially enhance performance even under constrained compute budgets, advancing open-source multimodal understanding and generation. The base model was trained on only 208.62 million unique images with a theoretical training cost of approximately $400K, yet it matches or surpasses other open-source models and approaches leading closed-source systems like Nano-Banana-Pro and GPT-Image-2.
+Boogu-Image-0.1 is an open-source unified multimodal understanding and generation model family with Base, Turbo, Edit, and Edit-Turbo variants, achieving competitive text-to-image generation, fast inference, and bilingual text rendering. This work demonstrates that targeted improvements in data quality, training pipelines, and agentic inference-time scaling can substantially enhance generation performance under constrained compute budgets, matching or surpassing other open-source models and approaching closed-source systems. The base model was trained on only 208.62 million unique images with a theoretical training cost of approximately $400K. The model family includes variants for fast inference (Turbo) and instruction-based editing (Edit).
 
 huggingface_papers · Hugging Face Papers · Jul 16, 00:00
 
-**Background**: Unified multimodal understanding and generation models aim to handle both image comprehension and creation in a single framework. Closed-source systems often achieve strong results through undisclosed system-level integrations, while open-source alternatives typically lag behind. Boogu-Image-0.1 addresses this gap by releasing weights, code, and recipes under Apache 2.0.
+**Background**: Unified multimodal understanding and generation models aim to handle both image comprehension and creation in a single framework. Closed-source systems like Nano-Banana-Pro and GPT-Image-2 achieve strong performance through system-level integration, but their internal practices are undisclosed. Boogu-Image-0.1 is released under Apache 2.0 with weights, code, and recipes to advance open-source progress.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/pdf/2604.16529">Scaling Test-Time Compute for Agentic Coding</a></li>
-<li><a href="https://arxiv.org/abs/2604.16529">[2604.16529] Scaling Test-Time Compute for Agentic Coding</a></li>
-<li><a href="https://arxiv.org/html/2602.12276">Agentic Test-Time Scaling for WebAgents</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#multimodal`, `#text-to-image`, `#open-source`, `#image generation`, `#AI`
+**Tags**: `#multimodal`, `#text-to-image`, `#open-source`, `#image generation`, `#AI model`
 
 ---
 
 <a id="item-8"></a>
-## [GPT-5.6 Codex Bug Can Delete User Files](https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything) ⭐️ 8.0/10
+## [Car OTA Update Breaks Android Auto, Sparks Software Quality Debate](https://imdanielkendall.com/the-great-software-regress-how-move-fast-and-break-things-broke-our-lives/) ⭐️ 8.0/10
 
-Thibault Sottiaux reported that GPT-5.6's Codex has a bug where it can delete user files when full access mode is enabled without sandboxing, due to a mistake in overriding the $HOME environment variable. This bug highlights significant safety risks in AI coding agents, especially for developers who grant full file system access without sandboxing, potentially leading to data loss or system damage. The bug occurs when Codex attempts to override $HOME to set a temporary directory but mistakenly deletes $HOME instead. The issue is most common when full access mode is enabled and sandboxing or auto-review is disabled.
+A car owner reports that an over-the-air (OTA) update from MINI broke Android Auto functionality, requiring a call to the manufacturer to demand a fix. The incident highlights how software updates can degrade user experience without accountability. This matters because as cars become more software-defined, OTA updates can introduce regressions that affect core features like Android Auto, eroding trust and potentially impacting car sales. The discussion reflects broader concerns about software quality in agile development practices. The author's MINI OTA update broke Android Auto, and similar issues have been reported with Kia EV9 updates causing blank screens. The article criticizes the 'move fast and break things' culture and the lack of customer feedback loops in agile development.
 
-rss · Simon Willison · Jul 16, 17:45
+hackernews · Expletive4138 · Jul 16, 22:29 · [Discussion](https://news.ycombinator.com/item?id=48941129)
 
-**Background**: Codex is an open-source coding agent from OpenAI that runs in the terminal, written in Rust. Full access mode gives the agent unrestricted file system permissions, which can be dangerous without sandboxing. The $HOME environment variable points to the user's home directory; overriding it incorrectly can lead to unintended deletions.
+**Background**: Over-the-air (OTA) updates allow car manufacturers to wirelessly update vehicle software, similar to smartphone updates. Android Auto is a system that mirrors phone apps onto the car's display. As cars become more connected, software quality issues can directly impact user experience and safety.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://deepnoodle.ai/blog/sandboxing-ai-coding-agents">The Deep Noodle Blog | Sandboxing AI Coding Agents</a></li>
-<li><a href="https://www.theunwindai.com/p/sandboxing-ai-agents-100x-faster">Sandboxing AI Agents, 100 x Faster</a></li>
-<li><a href="https://openai.com/index/introducing-the-codex-app/">Introducing the Codex app | OpenAI</a></li>
+<li><a href="https://www.racv.com.au/royalauto/transport/cars/what-are-ota-updates-in-cars-how-they-work.html">What are over -the- air ( OTA ) updates and how they work in cars | RACV</a></li>
+<li><a href="https://www.vw.com/en/owners-and-services/apps-and-connected-services/vehicle-software-updates.html">Vehicle Software Updates | Volkswagen</a></li>
+<li><a href="https://www.makeuseof.com/what-are-tesla-over-the-air-updates/">Tesla's over -the- air updates can be frustrating, but they're important...</a></li>
 
 </ul>
 </details>
+
+**Discussion**: Commenters share similar experiences, with one noting Kia's EV9 update broke CarPlay. Another argues that the cost of shipping broken software has shifted from manufacturers to users, and that customers are unwillingly acting as QA. There is agreement that poor software experiences can harm brand reputation and sales.
+
+**Tags**: `#software quality`, `#agile development`, `#automotive software`, `#OTA updates`, `#user experience`
+
+---
+
+<a id="item-9"></a>
+## [Sony Deletes Purchased Movies from User Accounts](https://www.techdirt.com/2026/07/15/sony-deletes-a-bunch-more-movies-from-the-accounts-of-people-who-bought-them/) ⭐️ 8.0/10
+
+Sony has removed several movies from the accounts of users who believed they had purchased them, reigniting the debate over digital ownership and consumer rights. This incident highlights the fragility of digital ownership, where consumers can lose access to content they paid for without compensation, potentially eroding trust in digital storefronts and pushing users toward physical media or piracy. The deletions affect movies purchased through Sony's PlayStation Store, and users report no refunds or prior notice. This is not the first time Sony has removed purchased content; similar incidents occurred in 2024 and 2025.
+
+hackernews · nekusar · Jul 16, 12:13 · [Discussion](https://news.ycombinator.com/item?id=48933419)
+
+**Background**: Digital ownership typically means purchasing a license to access content, not owning the content itself. Companies like Sony can revoke these licenses under terms of service, leaving consumers with no legal recourse. The term 'buy' in digital storefronts is often misleading, as it implies permanent ownership.
+
+**Discussion**: Commenters are divided: some argue that revocations should come with full refunds to balance the economic impact, while others insist that customers should receive actual video files rather than relying on a service. There is also discussion about the legality of a 'Buy' button that functions as a disguised 'Rent' button.
+
+**Tags**: `#digital rights`, `#consumer protection`, `#Sony`, `#digital ownership`, `#media`
+
+---
+
+<a id="item-10"></a>
+## [Schema Harness Hits ~99% on ARC-AGI-3 Public](https://schema-harness.github.io/) ⭐️ 8.0/10
+
+Impossible Research's Schema harness achieved approximately 99% on the ARC-AGI-3 public set using frontier models like Opus 4.8 and Fable 5, compared to the baseline of around 13% without the harness. This result highlights the growing importance of harness engineering in AI, suggesting that system-level scaffolding can dramatically boost benchmark performance, potentially reshaping how we evaluate and develop general intelligence. The harness works by using a frontier model to write a simulator for the task and then solving it within that simulator, which is a different approach than directly solving the raw ARC-AGI puzzles. Performance on the held-out set has not yet been confirmed.
+
+hackernews · jasondavies · Jul 16, 15:29 · [Discussion](https://news.ycombinator.com/item?id=48935905)
+
+**Background**: ARC-AGI is a benchmark designed to be easy for humans but hard for AI, testing generalization and reasoning on visual grid puzzles. Harness engineering refers to the infrastructure, orchestration, and scaffolding around AI models that can significantly enhance their capabilities beyond raw model performance.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://schema-harness.github.io/">Frontier Models with Our Harness Achieve ~99% on ARC-AGI-3 Public — Schema</a></li>
+<li><a href="https://arcprize.org/arc-agi">ARC Prize - The only AI benchmark that measures AGI progress.</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community comments are mixed: some see it as a big deal if it holds on the hold-out set, while others argue it measures something different from intended generalization, as the harness essentially gets the model to write a simulator first. Skepticism remains due to the lack of open-sourcing and hold-out validation.
+
+**Tags**: `#ARC-AGI`, `#AI benchmarks`, `#harness engineering`, `#frontier models`, `#generalization`
+
+---
+
+<a id="item-11"></a>
+## [GPT-5.6 Codex Bug Deletes Files in Full Access Mode](https://simonwillison.net/2026/Jul/16/bad-codex-bug/#atom-everything) ⭐️ 8.0/10
+
+A bug in GPT-5.6's Codex can delete user files when full access mode is enabled without sandboxing, as the model mistakenly deletes $HOME instead of a temporary directory. This bug highlights critical safety risks in AI coding agents, as users who grant file system access may suffer data loss. It underscores the need for robust sandboxing and review mechanisms before deploying such agents. The bug occurs when full access mode is enabled, sandboxing is disabled, and auto review is turned off. The model attempts to override $HOME to define a temporary directory but mistakenly deletes $HOME instead.
+
+rss · Simon Willison · Jul 16, 17:45
+
+**Background**: Codex is an AI coding agent that can execute commands on a user's system. Sandboxing isolates the agent to prevent harmful actions, while full access mode removes those restrictions. The $HOME environment variable points to the user's home directory, which contains personal files.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.techtimes.com/articles/320198/20260712/chatgpt-work-launch-went-wrong-gpt-56-sol-deleted-user-files-without-permission.htm">ChatGPT Work Launch Went Wrong: GPT - 5 . 6 Sol Deleted User Files ...</a></li>
+<li><a href="https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/">OpenAI's new flagship model deletes files on its own... | TechCrunch</a></li>
+<li><a href="https://explainx.ai/blog/chatgpt-codex-5-hour-limit-removed-weekly-reset-july-2026">ChatGPT 5-Hour Limit Removed — July 2026 | explainx.ai... | explainx.ai</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The community expressed alarm and frustration, with many users reporting data loss. Some criticized OpenAI for not enforcing sandboxing by default, while others called for better safeguards before deploying such powerful agents.
 
 **Tags**: `#codex`, `#coding-agents`, `#generative-ai`, `#ai-safety`, `#bug`
 
 ---
 
-<a id="item-9"></a>
-## [Linus Torvalds Declares Linux Not Anti-AI](https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [Thinking Machines Lab Releases Inkling Open-Weights Model](https://simonwillison.net/2026/Jul/16/inkling/#atom-everything) ⭐️ 8.0/10
 
-Linus Torvalds, the creator and top maintainer of Linux, publicly stated that Linux is not an anti-AI project and that AI is a clearly useful tool, inviting dissenters to fork or leave. This authoritative endorsement from the top Linux maintainer could influence the open-source community's stance on AI tools, potentially accelerating AI adoption in Linux development and related projects. Torvalds made the statement on the Linux Media Mailing List, emphasizing that AI's usefulness is no longer in question, though other questions like its economic impact remain.
+Thinking Machines Lab, led by Mira Murati, released Inkling, an open-weights multimodal Mixture-of-Experts transformer with 975B total parameters (41B active), licensed under Apache-2.0 and trained on 45 trillion tokens of text, images, audio, and video. Inkling strengthens the US open-weights ecosystem, offering a competitive alternative to Chinese open models and enabling fine-tuning via the Tinker platform, which could democratize access to large multimodal AI. Inkling supports a context window of up to 1 million tokens and is not a frontier model but a strong base for customization; a smaller variant Inkling-Small (276B total, 12B active) is forthcoming. The model card and training data documentation are notably sparse.
 
-rss · Simon Willison · Jul 16, 13:26
+rss · Simon Willison · Jul 16, 15:35
 
-**Background**: Linus Torvalds is the creator and longtime maintainer of the Linux kernel, the core of the Linux operating system. The open-source community has debated the use of AI tools, with some advocating for bans due to concerns about ethics, copyright, or environmental impact.
+**Background**: Mixture-of-Experts (MoE) architectures activate only a subset of parameters per input, enabling large total parameter counts with efficient inference. Open-weights models allow developers to download, fine-tune, and deploy the model freely, fostering innovation and transparency. Thinking Machines Lab is a new AI company founded by former OpenAI CTO Mira Murati.
 
-**Tags**: `#Linux`, `#AI`, `#Open Source`, `#Linus Torvalds`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://thinkingmachines.ai/news/introducing-inkling/">Inkling: Our open-weights model - Thinking Machines Lab</a></li>
+<li><a href="https://thinkingmachines.ai/inkling/">An efficient open - weights model that reasons over text, image, and...</a></li>
+<li><a href="https://artificialanalysis.ai/models/inkling">Inkling - Intelligence, Performance & Price Analysis</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#open-weights`, `#multimodal`, `#Mixture-of-Experts`, `#AI model release`, `#Thinking Machines Lab`
 
 ---
 
-<a id="item-10"></a>
+<a id="item-13"></a>
 ## [Lila Sciences: Future Lab as Data Center](https://www.latent.space/p/the-lab-of-the-future-should-feel) ⭐️ 8.0/10
 
-Lila Sciences proposes transforming scientific laboratories into data centers, using robotics and AI to generate vast amounts of training data from experiments. This approach treats science as the last untapped source of high-quality training data for AI models. This paradigm shift could dramatically accelerate scientific discovery by automating data generation and enabling AI to learn directly from experiments. It may reduce the reliance on internet-sourced data, which is often noisy and limited, and unlock new breakthroughs in fields like chemistry and materials science. Lila Sciences is building an autonomous lab platform that integrates robotics and AI to conduct experiments and collect data at scale. The company aims to create a 'scientific superintelligence' that can generate hypotheses, run experiments, and analyze results without human intervention.
+Lila Sciences envisions the future laboratory as a data center where AI and robotics generate and utilize scientific data as a new frontier for training models. This paradigm shift could dramatically accelerate scientific discovery by treating experimental data as a scalable resource for AI, potentially transforming industries like pharmaceuticals and materials science. The article features insights from Andy Beam and Rafa Gómez-Bombarelli, and Lila Sciences is building an autonomous lab platform for life, chemistry, and materials science.
 
 rss · Latent Space · Jul 16, 13:30
 
-**Background**: Traditional AI training relies heavily on data scraped from the internet, which can be noisy and biased. In contrast, scientific experiments produce structured, high-quality data that is ideal for training AI models. Lila Sciences envisions a future where labs operate like automated factories, continuously generating experimental data to feed AI systems, similar to how data centers power cloud computing.
+**Background**: Traditional scientific research relies on manual experimentation and hypothesis testing, which is slow and limited in scale. AI-driven scientific experimentation integrates AI with automated workflows to generate hypotheses, plan experiments, and refine models continuously. Lila Sciences aims to create a 'scientific superintelligence' platform that treats the lab as a data center, where robots run experiments and AI learns from the resulting data.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.lila.ai/">LILA | Scientific Superintelligence</a></li>
 <li><a href="https://www.linkedin.com/company/lila-sciences">Lila Sciences | LinkedIn</a></li>
-<li><a href="https://www.science.org/doi/10.1126/scirobotics.adm6991">Transforming science labs into automated factories of discovery | Science Robotics</a></li>
+<li><a href="https://www.emergentmind.com/topics/ai-driven-scientific-experimentation">AI - Driven Scientific Experimentation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#scientific discovery`, `#robotics`, `#data generation`, `#lab automation`
+**Tags**: `#AI`, `#scientific research`, `#robotics`, `#data center`, `#Lila Sciences`
 
 ---
 
-<a id="item-11"></a>
-## [EU Mandates Google to Share Search Data and Open AI on Android](https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/) ⭐️ 8.0/10
+<a id="item-14"></a>
+## [DeepMind and Isomorphic Labs unveil bioresilience AI approach](https://deepmind.google/blog/our-approach-to-bioresilience/) ⭐️ 8.0/10
 
-The European Union has officially mandated Google to share its search data with rivals and open up AI capabilities on Android under the Digital Markets Act, citing competition concerns. This landmark regulation could reshape the digital market by increasing competition, potentially leading to more innovation and consumer choice, while Google warns it may compromise user privacy and security. The mandate requires Google to provide third-party search engines access to its search data and allow alternative AI services on Android devices, with non-compliance risking fines up to 10% of global turnover.
+Google DeepMind and Isomorphic Labs have announced their joint approach to bioresilience, leveraging AI models to enhance the ability of biological systems to adapt to change and resist threats. This initiative marks a significant step in applying AI to global biological challenges, potentially improving pandemic preparedness, drug discovery, and ecological resilience. It also sets a precedent for responsible AI use in biology. The announcement is high-level with few technical specifics, but it builds on DeepMind's AlphaFold technology and Isomorphic Labs' drug discovery expertise. The focus is on preventing AI misuse while aiding outbreak response.
+
+rss · Google DeepMind Blog · Jul 16, 09:30
+
+**Background**: Bioresilience refers to the ability of species or individuals to adapt to environmental changes. DeepMind's AlphaFold can predict protein structures with high accuracy, and Isomorphic Labs applies AI to drug discovery. This collaboration aims to combine these strengths for broader biological resilience.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bioresilience">Bioresilience - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Isomorphic_Labs">Isomorphic Labs</a></li>
+<li><a href="https://www.artificialintelligence-news.com/news/examining-google-deepmind-ai-bioresilience-push/">Examining Google DeepMind 's AI bioresilience push</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#bioresilience`, `#DeepMind`, `#Isomorphic Labs`, `#biology`
+
+---
+
+<a id="item-15"></a>
+## [EU Mandates Google to Share Search Data, Open Android AI](https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/) ⭐️ 8.0/10
+
+The European Union has officially mandated Google to share its search data with third parties and open up AI capabilities on Android under the Digital Markets Act (DMA), citing competition concerns. This landmark regulation could reshape the Android ecosystem and AI market in Europe, potentially increasing competition and user choice, while Google warns of privacy and security risks. The DMA requires gatekeepers like Google to ensure interoperability and data access; non-compliance can lead to fines of up to 10% of worldwide turnover.
 
 rss · Ars Technica AI · Jul 16, 20:41
 
-**Background**: The Digital Markets Act (DMA) is an EU regulation that targets large digital platforms designated as 'gatekeepers' to ensure fair competition. It entered into force in November 2022 and became applicable in May 2023, with obligations including data sharing and interoperability. Google, as a gatekeeper, must comply with these rules to prevent anti-competitive practices.
+**Background**: The EU Digital Markets Act (DMA) entered into force in November 2022 and became applicable in May 2023, targeting large platforms like Google, Apple, and Meta. It aims to prevent these gatekeepers from abusing market power, including by forcing them to open up their services and data to competitors.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/EU_Digital_Markets_Act">EU Digital Markets Act</a></li>
-<li><a href="https://www.nytimes.com/2025/09/02/technology/google-search-antitrust-decision.html">Google Must Share Search Data With Rivals, Judge Rules in Antitrust...</a></li>
-<li><a href="https://ppc.land/google-ordered-to-share-glue-data-system-in-landmark-antitrust-ruling/">Google ordered to share Glue data system in landmark antitrust ruling</a></li>
+<li><a href="https://en.cryptonomist.ch/2026/04/28/android-ai-openness-eu/">EU pressures Google to open Android AI under DMA rules</a></li>
 
 </ul>
 </details>
 
 **Tags**: `#EU regulation`, `#Google`, `#Android`, `#AI`, `#privacy`
-
----
-
-<a id="item-12"></a>
-## [Hyundai Workers Strike Over Humanoid Robot Deployment Plan](https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory/) ⭐️ 8.0/10
-
-Hyundai's plan to deploy 25,000 Boston Dynamics Atlas humanoid robots in its US factories by 2028 has triggered a strike by human workers who fear job displacement. This strike highlights growing tensions between automation and labor, potentially setting a precedent for how humanoid robot adoption is negotiated in manufacturing industries worldwide. The Atlas robot, developed by Boston Dynamics (a Hyundai subsidiary), is designed for industrial tasks like material handling and parts sequencing, with deployment slated to begin in US factories in 2028.
-
-rss · Ars Technica AI · Jul 16, 20:09
-
-**Background**: Humanoid robots like Atlas are bipedal machines designed to work in human environments. Hyundai acquired Boston Dynamics in 2020 and has been integrating Atlas into its manufacturing plans. The strike reflects broader concerns about automation displacing workers in the automotive industry.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Atlas_(robot)">Atlas ( robot ) - Wikipedia</a></li>
-<li><a href="https://bostondynamics.com/products/atlas/">Atlas Humanoid Robot | Boston Dynamics</a></li>
-<li><a href="https://news.google.com/stories/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2lRd3VXa0VCR2JqdllkNnJHOXVTZ0FQAQ?hl=en-IN&gl=IN&ceid=IN:en">Google News - Hyundai Atlas robot at CES 2026 - Overview</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#humanoid robots`, `#labor relations`, `#automation`, `#Hyundai`, `#AI in manufacturing`
-
----
-
-<a id="item-13"></a>
-## [DFlash speeds up Qwen3.6-27B by 2.2x with no quality loss](https://www.reddit.com/r/LocalLLaMA/comments/1uyay0w/dflash_makes_qwen36_27b_22x_faster_with_no/) ⭐️ 8.0/10
-
-A new speculative decoding technique called DFlash achieves 2.2x faster inference on Qwen3.6-27B for structured tasks like coding and JSON generation, while maintaining identical output quality compared to the baseline. This breakthrough significantly reduces inference latency for structured tasks, making local LLM deployment more practical for coding and data processing, and provides a clear trade-off analysis against Multi-Token Prediction (MTP) for different use cases. DFlash drafts 15 tokens in parallel using a lightweight block diffusion model, achieving up to 152 tok/s (3.4x) on JSON tasks, but can drop below baseline on creative text (42 vs 44 tok/s) due to low acceptance rate.
-
-reddit · r/LocalLLaMA · /u/ElmBark · Jul 16, 18:22
-
-**Background**: Speculative decoding accelerates LLM inference by using a small draft model to propose multiple tokens, which a larger target model then verifies in parallel. DFlash is a novel framework that employs a block diffusion model for drafting, while MTP (Multi-Token Prediction) uses the same model to predict multiple tokens at once. Both techniques aim to reduce latency without sacrificing output quality.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2602.06036">[2602.06036] DFlash: Block Diffusion for Flash Speculative Decoding</a></li>
-<li><a href="https://github.com/z-lab/dflash">GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative Decoding · GitHub</a></li>
-<li><a href="https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/">The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Org</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#speculative decoding`, `#inference optimization`, `#LLM inference`, `#Qwen`, `#local LLM`
-
----
-
-<a id="item-14"></a>
-## [QLoRA default learning rate 2e-4 causes overfitting on small datasets](https://www.reddit.com/r/MachineLearning/comments/1uy1z8b/the_qlora_2e4_default_is_wrong_under_10k_samples/) ⭐️ 8.0/10
-
-A Reddit user discovered that the widely recommended QLoRA learning rate of 2e-4 leads to overfitting on datasets with fewer than 10,000 samples, and reducing it to 1e-4 with more epochs significantly improves evaluation performance. This finding challenges a default setting used in countless QLoRA fine-tuning tutorials and tools, potentially saving practitioners weeks of wasted effort on small datasets and improving model quality. The user reports that with 2e-4, the model overfits within the first epoch, while dropping to 1e-4 and increasing epochs from 3 to 5 produced the best results on datasets under 10k samples. They suggest tuning the learning rate based on dataset size: above 30k samples, 2e-4 is likely fine; under 10k, start at 1e-4 or lower.
-
-reddit · r/MachineLearning · /u/Pretty-Ad774 · Jul 16, 12:50
-
-**Background**: QLoRA is a parameter-efficient fine-tuning method that combines quantization and Low-Rank Adaptation (LoRA) to fine-tune large language models on consumer hardware. The default learning rate of 2e-4 originates from the Alpaca dataset (52k samples) and is widely copied in tutorials and code examples without adjustment for smaller datasets.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://lightning.ai/pages/community/lora-insights/">Finetuning LLMs with LoRA and QLoRA : Insights from... - Lightning AI</a></li>
-<li><a href="https://github.com/artidoro/qlora">GitHub - artidoro/qlora: QLoRA: Efficient Finetuning of Quantized LLMs · GitHub</a></li>
-<li><a href="https://arxiv.org/pdf/2305.14314">QLORA: Efficient Finetuning of Quantized LLMs Tim Dettmers∗ Artidoro Pagnoni∗</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The post received strong community validation with high upvotes and substantive discussion. Many users shared similar experiences of overfitting with 2e-4 on small datasets, while others noted that learning rate schedulers or warmup steps can mitigate the issue. Some debated the optimal learning rate range, with suggestions from 1e-5 to 5e-5 for very small datasets.
-
-**Tags**: `#QLoRA`, `#fine-tuning`, `#learning rate`, `#overfitting`, `#LLM`
-
----
-
-<a id="item-15"></a>
-## [ExTernD: Expanded-Rank Ternary Decomposition for LLM Quantization](https://www.reddit.com/r/MachineLearning/comments/1uy2zb3/externd_expandedrank_ternary_decomposition/) ⭐️ 8.0/10
-
-ExTernD proposes a post-training quantization method that decomposes a weight matrix into two ternary matrices and a diagonal scaling matrix, allowing the inner rank to be arbitrarily large to overcome accuracy limitations of fixed-size ternary quantization. This approach enables ternary quantization of LLMs to achieve accuracy close to higher-bit quantization while requiring only slightly more VRAM than existing methods, potentially making large models more accessible on consumer hardware. The method is validated on the arXiv paper (2607.13511) and claims that the expanded rank does not need to be very large to achieve high accuracy, with only a modest increase in VRAM compared to standard quantization.
-
-reddit · r/MachineLearning · /u/LMTLS5 · Jul 16, 13:31
-
-**Background**: Post-training quantization (PTQ) reduces model size and speeds up inference by converting weights to lower precision without retraining. Ternary quantization maps weights to values in {-α, 0, +α}, typically using 2 bits per weight, but fixed-size ternary matrices often suffer from accuracy loss. ExTernD addresses this by decomposing the matrix to increase representational capacity.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/1612.01064">[1612.01064] Trained Ternary Quantization</a></li>
-<li><a href="https://www.emergentmind.com/topics/ternary-quantization">Ternary Quantization in Neural Networks</a></li>
-<li><a href="https://apxml.com/courses/practical-llm-quantization/chapter-2-post-training-quantization-ptq">Post - Training Quantization (PTQ) for LLMs</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#LLM`, `#quantization`, `#ternary`, `#model compression`, `#PTQ`
 
 ---
