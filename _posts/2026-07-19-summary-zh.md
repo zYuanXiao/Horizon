@@ -9,285 +9,303 @@ lang: zh
 
 ---
 
-1. [Ring-Zero 将零强化学习扩展到万亿参数](#item-1) ⭐️ 9.0/10
-2. [SigNoz 日增 432 星，开源可观测性平台受热捧](#item-2) ⭐️ 8.0/10
-3. [Open Interpreter 因支持 Kimi K3 的编码代理日增 383 星](#item-3) ⭐️ 8.0/10
-4. [LongStraw：固定 GPU 预算下的百万 Token 强化学习后训练](#item-4) ⭐️ 8.0/10
-5. [Kimi K3：来自中国的蒸馏里程碑](#item-5) ⭐️ 8.0/10
-6. [运河底部的计算机](#item-6) ⭐️ 8.0/10
-7. [PHK 反思自行车棚效应与可逆决策](#item-7) ⭐️ 8.0/10
-8. [Qubes OS 安全论文发布，附公开证据](#item-8) ⭐️ 8.0/10
-9. [控制 LLM 推理努力程度](#item-9) ⭐️ 8.0/10
-10. [Basalt Labs 被指控 AI 模型欺诈](#item-10) ⭐️ 8.0/10
-11. [SooFi 团队发布开源混合 Mamba-Transformer MoE 模型](#item-11) ⭐️ 8.0/10
-12. [字节精确 KV 缓存嫁接提升 Gemma 4 准确率](#item-12) ⭐️ 8.0/10
-13. [涉嫌 AI 垃圾作品赢得 DeepMind Kaggle 2.5 万美元大奖](#item-13) ⭐️ 8.0/10
+1. [LG 显示器通过 Windows Update 静默安装软件](#item-1) ⭐️ 9.0/10
+2. [Ring-Zero：将零强化学习扩展到万亿参数](#item-2) ⭐️ 9.0/10
+3. [SigNoz 作为 OpenTelemetry 原生可观测性平台在 GitHub 上星数激增](#item-3) ⭐️ 8.0/10
+4. [OpenInterpreter 日增 383 星，支持 Kimi K3 模型](#item-4) ⭐️ 8.0/10
+5. [Boogu-Image-0.1：开源多模态模型家族](#item-5) ⭐️ 8.0/10
+6. [运河底发现的 1980 年代能力计算机](#item-6) ⭐️ 8.0/10
+7. [PHK 反思开源社区中的自行车棚效应](#item-7) ⭐️ 8.0/10
+8. [通过公开证据分析 Qubes OS 安全性](#item-8) ⭐️ 8.0/10
+9. [Anthropic 在竞争压力下永久保留 Claude Fable 5](#item-9) ⭐️ 8.0/10
+10. [控制大语言模型的推理努力](#item-10) ⭐️ 8.0/10
+11. [Basalt Labs 被指控在 AI 基准测试中造假](#item-11) ⭐️ 8.0/10
+12. [SooFi 发布开源 MoE 混合 Mamba-Transformer 模型](#item-12) ⭐️ 8.0/10
+13. [字节精确 KV 缓存嫁接提升 Gemma 4 准确率](#item-13) ⭐️ 8.0/10
 14. [GPT-2 词元嵌入的交互式 t-SNE 地图](#item-14) ⭐️ 8.0/10
-15. [白宫将决定前沿 AI 模型的访问权限](#item-15) ⭐️ 8.0/10
+15. [白宫将控制前沿 AI 模型的访问权限](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Ring-Zero 将零强化学习扩展到万亿参数](https://huggingface.co/papers/2607.12395) ⭐️ 9.0/10
+## [LG 显示器通过 Windows Update 静默安装软件](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent) ⭐️ 9.0/10
 
-一篇新论文提出了一种稳定的训练流程，将零强化学习（zero RL）扩展到万亿参数模型，在数学基准测试上实现了涌现推理能力和更高的样本效率。 这项工作在空前规模上验证了零强化学习的扩展优势，表明万亿参数模型能自发发展出高级推理行为，有望在无需人工标注的情况下显著推动 AI 推理能力。 该流程采用了裁剪重要性采样、训练-推理比率校正和混合精度控制等算法与系统优化。最终模型 Ring-2.5-1T-Zero 在七个数学基准测试上取得了有竞争力的性能。
+LG 显示器利用 Windows Update 在未经用户同意的情况下静默安装软件，包括一个具有完全系统访问权限的 McAfee 推广应用。 这破坏了用户对 Windows Update 的信任，并可能使用户面临供应链攻击风险，因为未经验证的第三方软件可以自动以高权限安装。 该软件在通过 HDMI 连接 LG 显示器时自动安装，重启后持续存在，且具有完全系统访问权限且无沙箱保护。
 
-huggingface_papers · Hugging Face Papers · 7月16日 00:00
+hackernews · baranul · 7月18日 10:21 · [社区讨论](https://news.ycombinator.com/item?id=48956688)
 
-**背景**: 零强化学习（zero RL）是一种直接对预训练语言模型应用可验证奖励的强化学习范式，无需监督微调。此前由于计算限制，相关工作仅限于小模型，大规模下的动态未被探索。本文通过扩展到 1 万亿参数填补了这一空白。
+**背景**: Windows Update 旨在提供来自硬件厂商的驱动程序和软件更新，但通常需要用户同意才能安装非关键软件。此事件表明，微软可能没有充分审查供应商通过该系统推送的内容，从而允许潜在不需要的应用程序被静默安装。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2510.25528">[2510.25528] Zero Reinforcement Learning Towards General Domains</a></li>
-<li><a href="https://swift.readthedocs.io/en/latest/Instruction/GRPO/AdvancedResearch/CISPO.html">Clipped Importance Sampling Policy Optimization (CISPO) — swift 4.5.0.dev0 documentation</a></li>
-<li><a href="https://www.emergentmind.com/topics/training-inference-ratio-correction">Training-Inference Ratio Correction - emergentmind.com</a></li>
+<li><a href="https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent">LG monitors silently install software through Windows Update without user consent - VideoCardz.com</a></li>
+<li><a href="https://cybersecuritynews.com/windows-update-installs-lg-monitor-app-pushes-mcafee-ads/">Windows Update Silently Installs LG Monitor App That Pushes McAfee Ads</a></li>
 
 </ul>
 </details>
 
-**标签**: `#reinforcement learning`, `#large language models`, `#reasoning`, `#scaling`, `#AI research`
+**社区讨论**: 评论者对该软件无需用户交互即可安装、具有完全系统访问权限且通过 HDMI 连接触发感到震惊。一些人提供了通过组策略或设备安装设置解决的方法，而另一些人则指责微软未对供应商软件进行适当审查。
+
+**标签**: `#security`, `#privacy`, `#Windows`, `#LG`, `#supply chain attack`
 
 ---
 
 <a id="item-2"></a>
-## [SigNoz 日增 432 星，开源可观测性平台受热捧](https://github.com/SigNoz/signoz) ⭐️ 8.0/10
+## [Ring-Zero：将零强化学习扩展到万亿参数](https://huggingface.co/papers/2607.12395) ⭐️ 9.0/10
 
-SigNoz 是一款开源、原生支持 OpenTelemetry 的可观测性平台，单日在 GitHub 上获得 432 颗星，总星数超过 30,000。该平台统一了日志、指标和链路追踪，并提供 APM、分布式追踪及 AI 代理支持。 星数的快速增长反映了社区对开源可观测性工具（尤其是集成 AI 代理的工具）的浓厚兴趣。SigNoz 的统一方法简化了 DevOps 团队的监控工作，可能对 Datadog 等专有解决方案构成挑战。 SigNoz 使用 TypeScript 构建，原生支持 OpenTelemetry，可实现无缝数据接入。它还提供 SigNoz MCP 用于自定义查询，并在云版本中内置 AI 助手。
+一篇研究论文提出了 Ring-Zero，这是一个稳定高效的流水线，用于将零强化学习（zero RL）扩展到万亿参数模型，在数学基准上展示了涌现推理能力和改进的样本效率。 这项工作验证了扩展的“苦涩教训”，表明更大的模型自发地发展出自我验证和并行推理等高级推理行为，这可能会减少 AI 训练中对人工设计启发式的需求。 该流水线包含算法和系统优化，如裁剪重要性采样、训练-推理比例校正和混合精度控制。最终模型 Ring-2.5-1T-Zero 在七个数学基准上取得了有竞争力的性能。
 
-github_trending · GitHub Trending · 7月19日 02:48
+huggingface_papers · Hugging Face Papers · 7月16日 00:00
 
-**背景**: 可观测性平台通过收集日志、指标和链路追踪，帮助工程师监控和调试分布式系统。OpenTelemetry 是 CNCF 的应用 instrumentation 标准，SigNoz 利用它提供统一的、开源的专有工具替代方案。
+**背景**: 零强化学习（zero RL）使用可验证的奖励而无需人工标注数据，以激发大型语言模型中的思维链推理。由于计算限制，先前的工作仅限于小模型，扩展行为未被探索。本文通过扩展到 1 万亿参数填补了这一空白。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://opentelemetry.io/">OpenTelemetry</a></li>
-<li><a href="https://github.com/SigNoz/signoz-mcp-server">GitHub - SigNoz / signoz - mcp -server: MCP Server for SigNoz · GitHub</a></li>
-<li><a href="https://signoz.io/tags/mcp/">mcp | SigNoz</a></li>
+<li><a href="https://arxiv.org/pdf/2510.25528">Zero Reinforcement Learning Towards General Domains</a></li>
+<li><a href="https://www.emergentmind.com/topics/rl-zero">RL- Zero : Zero -Shot Reinforcement Learning</a></li>
+<li><a href="https://swift.readthedocs.io/en/v3.12/Instruction/GRPO/AdvancedResearch/CISPO.html">Clipped Importance Sampling Policy Optimization (CISPO) — swift...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#observability`, `#open-source`, `#OpenTelemetry`, `#APM`, `#DevOps`
+**标签**: `#reinforcement learning`, `#large language models`, `#reasoning`, `#scaling`, `#AI`
 
 ---
 
 <a id="item-3"></a>
-## [Open Interpreter 因支持 Kimi K3 的编码代理日增 383 星](https://github.com/openinterpreter/openinterpreter) ⭐️ 8.0/10
+## [SigNoz 作为 OpenTelemetry 原生可观测性平台在 GitHub 上星数激增](https://github.com/SigNoz/signoz) ⭐️ 8.0/10
 
-Open Interpreter 是一个支持 Kimi K3 等开放模型的编码代理，今日在 GitHub 上获得 383 颗星，总星数超过 66,000。该项目使用 Rust 编写，允许用户通过自然语言与代码交互。 该项目使开源模型能够使用先进的编码代理，降低了开发者使用 AI 辅助编程的门槛。其高星数反映了社区对开源 AI 工具的强大兴趣。 Open Interpreter 在终端中运行，可以读取文件、编辑代码和执行命令，并在升级操作前进行安全检查。它支持拥有 2.8 万亿参数和 1M token 上下文窗口的 Kimi K3 模型。
+SigNoz 是一个开源的 OpenTelemetry 原生可观测性平台，在 GitHub 上单日获得 432 颗星，总星数超过 30,000。该平台将日志、指标和追踪与 APM、分布式追踪及 AI 驱动功能统一起来。 这种快速增长反映了社区对开源、OpenTelemetry 原生的可观测性工具的强烈需求，这些工具可以减少供应商锁定并简化监控。SigNoz 与 AI 代理和 MCP 服务器的集成使其成为现代软件和 AI 运维中的关键参与者。 SigNoz 使用 TypeScript 编写，拥有超过 2,300 个复刻。它提供 APM、分布式追踪、日志管理和基础设施监控等功能，并在 SigNoz Cloud 中包含原生 AI 队友以及用于自定义查询的 SigNoz MCP 服务器。
 
-github_trending · GitHub Trending · 7月19日 02:48
+github_trending · GitHub Trending · 7月19日 02:58
 
-**背景**: 编码代理是能够理解和生成代码的 AI 工具，通常与大型语言模型（LLM）集成。Kimi K3 是最近发布的开源 LLM，拥有 2.8 万亿参数，基于混合专家架构，与 OpenAI 和 Anthropic 的专有模型竞争。
+**背景**: 可观测性平台通过收集日志、指标和追踪来帮助开发者监控和调试应用程序。OpenTelemetry 是一个用于对应用程序进行插桩以生成遥测数据的开放标准，而作为 OpenTelemetry 原生平台意味着 SigNoz 可以直接接收数据，无需专有代理。SigNoz 与 Datadog 和 New Relic 等工具竞争，但提供了开源替代方案。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/openinterpreter/openinterpreter">GitHub - openinterpreter/openinterpreter: A coding agent for open ...</a></li>
-<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K 3 Tech Blog: Open Frontier Intelligence</a></li>
-<li><a href="https://artificialanalysis.ai/models/kimi-k3">Kimi K 3 - Intelligence, Performance & Price Analysis</a></li>
+<li><a href="https://signoz.io/comparisons/site24x7-alternatives/">Top 6 Site24x7 Alternatives for Monitoring in 2026 | SigNoz</a></li>
+<li><a href="https://github.com/SigNoz/signoz-mcp-server">GitHub - SigNoz / signoz - mcp -server: MCP Server for SigNoz · GitHub</a></li>
+<li><a href="https://mcp.so/servers/signoz-mcp-server">Signoz Mcp Server | MCP Server</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#coding agent`, `#open source`, `#Rust`, `#LLM`
+**标签**: `#observability`, `#OpenTelemetry`, `#APM`, `#open-source`, `#monitoring`
 
 ---
 
 <a id="item-4"></a>
-## [LongStraw：固定 GPU 预算下的百万 Token 强化学习后训练](https://huggingface.co/papers/2607.14952) ⭐️ 8.0/10
+## [OpenInterpreter 日增 383 星，支持 Kimi K3 模型](https://github.com/openinterpreter/openinterpreter) ⭐️ 8.0/10
 
-LongStraw 是一个架构感知的执行栈，在固定 GPU 预算下实现百万 Token 的强化学习后训练，并以 GRPO 实例化。它无需自动求导即可评估共享提示，仅保留模型特定状态，并逐个重放短响应分支以减少内存。 这弥合了推理上下文长度（接近百万 Token）与强化学习后训练（通常≤256K Token）之间日益扩大的差距，这对具有长轨迹的 AI 智能体至关重要。它无需额外 GPU 资源即可实现实用的长上下文强化学习微调。 在 8 块 H20 GPU 上，LongStraw 在组大小为 2 和 8 时完成了 2.1M 位置的 Qwen 分组评分和响应反向传播，每增加一组大小仅增加 0.21 GB 峰值内存。压力测试达到 4.46M 位置，在 32 块 H20 GPU 上，它验证了跨 GLM-5.2 所有 78 层的 2.1M Token 提示。
+OpenInterpreter 是一个用 Rust 编写的编码代理，今日在 GitHub 上获得 383 颗星，总星数达 66,685，并开始支持 Kimi K3 等开放模型。 该项目使开发者能够使用开放模型运行编码代理，减少对专有 API 的依赖，推动开源 AI 辅助编程的发展。 OpenInterpreter 使用 Rust 编写，其对 Kimi K3（一个 2.8 万亿参数的开放模型）的支持，标志着在利用大型开放模型进行编码任务方面迈出了重要一步。
 
-huggingface_papers · Hugging Face Papers · 7月17日 00:00
+github_trending · GitHub Trending · 7月19日 02:59
 
-**背景**: 长上下文强化学习后训练内存密集，因为 PPO 等标准方法需要评论家模型并保留整个序列的梯度。GRPO 通过使用组统计作为基线消除了评论家，但仍面临长上下文的内存瓶颈。LongStraw 通过避免对共享提示进行自动求导并顺序重放响应分支来优化内存，以额外计算换取峰值内存降低。
+**背景**: 编码代理是一种自主执行编码任务（如编写、审查和重构代码）的 AI 系统。Kimi K3 是一个开源的混合专家模型，拥有 2.8 万亿参数，与 OpenAI 和 Anthropic 的专有模型竞争。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://cs360umass.org/grpo-demo.html">GRPO — Group Relative Policy Optimization</a></li>
-<li><a href="https://sebastianraschka.com/llm-architecture-gallery/hybrid-attention/">Hybrid Attention | Sebastian Raschka, PhD</a></li>
-<li><a href="https://datanorth.ai/blog/what-is-mixture-of-experts-moe-and-why-does-it-matter">What is mixture of experts (MoE) and why does it matter?</a></li>
+<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K 3 Tech Blog: Open Frontier Intelligence</a></li>
+<li><a href="https://artificialanalysis.ai/models/kimi-k3">Kimi K 3 - Intelligence, Performance & Price Analysis</a></li>
+<li><a href="https://grokipedia.com/page/Coding_agent">Coding agent</a></li>
 
 </ul>
 </details>
 
-**标签**: `#reinforcement learning`, `#long-context`, `#GPU optimization`, `#AI agents`, `#GRPO`
+**标签**: `#AI`, `#coding agent`, `#open source`, `#Rust`, `#developer tools`
 
 ---
 
 <a id="item-5"></a>
-## [Kimi K3：来自中国的蒸馏里程碑](https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/) ⭐️ 8.0/10
+## [Boogu-Image-0.1：开源多模态模型家族](https://huggingface.co/papers/2607.13125) ⭐️ 8.0/10
 
-来自中国的 Kimi K3 模型可能代表了 AI 蒸馏领域的一个重要里程碑，它可能通过蒸馏技术达到了与美国前沿模型相当的水平。 这挑战了美国的前沿实验室，并引发了关于国家安全和开放权重访问的问题，可能改变 AI 发展的地缘政治格局。 Kimi K3 可通过订阅计划使用，其中 1M 上下文模型仅限每月 79 美元的计划访问，而最低每月 15 美元的计划不支持 K3 模型。
+Boogu-Image-0.1 是一个开源统一多模态理解与生成模型家族，包含 Base、Turbo、Edit 和 Edit-Turbo 等变体，在文本到图像生成、快速推理和基于指令的编辑方面取得了具有竞争力的性能。 该发布推动了多模态 AI 的开源生态系统，其性能匹配或超越其他开源模型，接近闭源系统，且训练成本仅约 40 万美元，使用了 2.0862 亿张独特图像。 该模型家族包含四个变体：Base 用于高质量生成，Turbo 用于快速推理，Edit 用于基于指令的编辑，Edit-Turbo 用于快速编辑。它还具备强大的双语（中英文）文本渲染能力，并以 Apache 2.0 许可证发布。
 
-hackernews · sbochins · 7月18日 17:32 · [社区讨论](https://news.ycombinator.com/item?id=48960218)
+huggingface_papers · Hugging Face Papers · 7月16日 00:00
 
-**背景**: AI 蒸馏是一种从大型模型创建更小、更快模型而不牺牲太多准确性的技术。开放权重访问允许开发者本地运行模型，引发了双重用途的担忧。
+**背景**: 多模态理解与生成模型旨在处理和生成多种数据类型，如文本和图像。像 Nano-Banana-Pro 和 GPT-Image-2 这样的闭源系统通过未公开的系统级集成实现了强大性能，而 Boogu-Image-0.1 则展示了在有限计算预算下，通过模型理解、数据质量和训练流程的针对性改进，也能取得有竞争力的结果。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://medium.com/@As_Yu_like_it/the-power-and-promise-of-ai-distillation-26bca5e50461">The Power and Promise of AI Distillation | by Lawrence Yu | Medium</a></li>
-<li><a href="https://www.linkedin.com/pulse/understanding-distillation-ai-how-models-can-extracted-pooni-vvaqc">Understanding " Distillation " in AI : How Models Can Be Extracted and...</a></li>
-<li><a href="https://rdi.berkeley.edu/llm-agents/assets/percyliang.pdf">Open -source and Science in the Era of Foundation Models - Berkeley...</a></li>
+<li><a href="https://boogu.org/">Boogu - Image - 0 . 1 — Efficient Image Generation Foundation Model</a></li>
+<li><a href="https://github.com/boogu-project/Boogu-Image">GitHub - boogu-project/ Boogu - Image : Boogu - Image - 0 . 1 is an...</a></li>
+<li><a href="https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo">Boogu/ Boogu - Image - 0 . 1 -Turbo · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出蒸馏是不可避免的，并且进展速度令人惊讶。一些人担心政府可能对开放权重模型施加限制，将其与 Napster 时代相提并论。
-
-**标签**: `#AI`, `#distillation`, `#open-source`, `#geopolitics`, `#machine learning`
+**标签**: `#multimodal`, `#text-to-image`, `#open-source`, `#AI`, `#image generation`
 
 ---
 
 <a id="item-6"></a>
-## [运河底部的计算机](https://negroniventurestudios.com/2026/07/18/the-computer-at-the-bottom-of-a-canal/) ⭐️ 8.0/10
+## [运河底发现的 1980 年代能力计算机](https://negroniventurestudios.com/2026/07/18/the-computer-at-the-bottom-of-a-canal/) ⭐️ 8.0/10
 
-一篇历史文章详细介绍了在运河中发现的一台独特的基于能力（capability）的计算机，探讨了其创新的标记架构（tagged architecture）以及在后商品化时代对专用硬件的启示。 这个故事凸显了专用硬件与通用计算之间的权衡，暗示随着商品化曲线的终结，定制硬件可能再次变得可行，从而影响未来的计算机架构设计。 这台计算机使用了标记架构和基于能力的寻址方式，这些概念在 20 世纪 70 年代和 80 年代是前沿技术，但后来被通用芯片和摩尔定律所超越。
+一篇文章详细介绍了一款来自 1980 年代、已被遗忘的基于能力（capability）的计算机设计，强调了其创新的标记架构以及对现代硬件专业化的启示。 这个故事挑战了通用硬件的统治地位，暗示摩尔定律的终结和 AI 的兴起可能复兴专用架构。它为当前关于硬件安全性和效率的辩论提供了宝贵的历史背景。 这台由格拉斯哥一个小团队制造的计算机采用了基于能力的安全模型和标记内存，类似于 Intel iAPX 432 但更实用。它被藏在运河底部以保护其专有设计。
 
 hackernews · Kudos · 7月18日 08:33 · [社区讨论](https://news.ycombinator.com/item?id=48956231)
 
-**背景**: 能力机器（如 Intel iAPX 432 和 CAP 计算机）是通过硬件实施细粒度访问控制的研究系统。标记架构为每个内存字附加元数据，从而实现安全高效的面相对象编程。由于通用 CPU 的主导地位，这些想法大多被放弃，但像 CHERI 这样的现代项目正在复兴能力概念以增强安全性。
+**背景**: 能力机器在 1970 和 1980 年代是热门研究课题，通过硬件强制访问控制提供强大的安全性。然而，它们被像 x86 这样优先考虑成本和性能的通用架构所取代。文章认为，随着现代芯片成本和 AI 驱动的专业化，能力架构可能再次变得可行。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Capability_Hardware_Enhanced_RISC_Instructions">Capability Hardware Enhanced RISC Instructions - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Capability-based_addressing">Capability-based addressing - Wikipedia</a></li>
 <li><a href="https://homes.cs.washington.edu/~levy/capabook/Chapter1.pdf">Object- Based</a></li>
+<li><a href="https://www.princeton.edu/~rblee/ELE572Papers/Fall04Readings/Microarch_Capability.pdf">Micro- Architecture</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者指出，能力机器曾是最前沿的技术，但被商品化曲线和摩尔定律所碾压。一些人认为作者关于商品化曲线已经结束的观点很有趣，暗示随着硬件成本降低和 AI 的发展，专用硬件可能再次变得可行。
+**社区讨论**: 评论者指出，能力机器在研究领域很常见，但输给了商品化曲线和摩尔定律。一位读者认为作者关于商品化曲线已经结束的想法很有趣，而另一位则幽默地想知道是否可以把微控制器藏在运河里。
 
-**标签**: `#computer architecture`, `#capability machines`, `#history of computing`, `#hardware design`, `#tagged architectures`
+**标签**: `#computer architecture`, `#capability machines`, `#history of computing`, `#hardware design`
 
 ---
 
 <a id="item-7"></a>
-## [PHK 反思自行车棚效应与可逆决策](https://queue.acm.org/detail.cfm?id=3818307) ⭐️ 8.0/10
+## [PHK 反思开源社区中的自行车棚效应](https://queue.acm.org/detail.cfm?id=3818307) ⭐️ 8.0/10
 
-Poul-Henning Kamp 在 ACM Queue 上发表文章，反思开源中的自行车棚效应，倡导可逆决策以避免对琐事过度分析。 这篇文章为开源治理和决策提供了宝贵见解，帮助团队减少在琐碎争论上浪费的时间，专注于真正重要的事情。 Kamp 于 1999 年在 BSD 社区推广了“自行车棚效应”一词，现在他认为可逆决策应快速且凭直觉做出，无需冗长讨论。
+著名开源开发者 Poul-Henning Kamp 在 ACM Queue 上发表了一篇回顾性文章《再见，感谢所有的自行车棚》，反思自行车棚效应及其对开源治理和决策的影响。 这篇文章提供了开源历史关键人物的宝贵见解，帮助项目维护者和社区理解并缓解自行车棚效应导致的低效问题，避免在琐事上浪费时间和资源。 Kamp 以创建 MD5crypt 密码哈希算法而闻名，并且是 FreeBSD 的长期贡献者。文章讨论了开源项目中琐碎决策往往吸引不成比例关注的现象，即帕金森琐碎定律。
 
 hackernews · Ygg2 · 7月18日 17:27 · [社区讨论](https://news.ycombinator.com/item?id=48960155)
 
-**背景**: 自行车棚效应，又称帕金森琐碎定律，描述了人们不成比例地关注容易理解的琐碎问题，而忽视复杂但重要的问题。Kamp 在 1999 年的原始邮件在软件开发中推广了这一术语。可逆决策是指那些可以低成本轻松撤销的决策，专家建议快速做出此类决策以避免分析瘫痪。
+**背景**: 自行车棚效应，又称帕金森琐碎定律，描述的是群体倾向于在琐碎问题上花费过多时间而忽视更重要问题的现象。该术语源于一个故事：委员会迅速批准了核电站设计，却无休止地争论员工自行车棚的颜色。在开源社区中，这常表现为对代码风格、命名约定或次要功能的冗长讨论。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Bikeshed_effect">Bikeshed effect</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Law_of_triviality">Law of triviality - Wikipedia</a></li>
-<li><a href="https://strategizeyourcareer.com/p/how-software-engineers-make-productive-decisions">How Software Engineers Make Productive Decisions (without slowing the team down)</a></li>
+<li><a href="https://www.theglobeandmail.com/business/careers/management/article-explaining-bikeshedding-when-trivial-things-waste-meeting-time/">Explaining ‘ bikeshedding ': When trivial things... - The Globe and Mail</a></li>
+<li><a href="https://thecodersblog.com/parkinson-law-triviality-bikeshedding-art-prioritization-depth-exploration/">Parkinson's Law of Triviality, Bikeshedding ... | The Coders Blog | Home</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论者讨论了可逆决策的价值，有人指出在琐碎决策上花钱可以避免自行车棚效应。另一位评论者强调了 Kamp 创建的 MD5crypt 算法。一些人批评 Kamp 对 LLM 的看法脱离现实，而另一些人在多次阅读后称赞了这篇文章。
+**社区讨论**: 评论者指出，可逆决策应由执行者快速做出，正如一位用户所建议的。另一位评论者强调了 Kamp 创建 MD5crypt 的历史背景。少数评论批评了文章对 LLM 的看法，认为其与当前现实脱节。
 
-**标签**: `#open source`, `#software engineering`, `#bikeshedding`, `#governance`, `#decision making`
+**标签**: `#open source`, `#software engineering`, `#community governance`, `#bikeshedding`
 
 ---
 
 <a id="item-8"></a>
-## [Qubes OS 安全论文发布，附公开证据](https://arxiv.org/abs/2607.14587) ⭐️ 8.0/10
+## [通过公开证据分析 Qubes OS 安全性](https://arxiv.org/abs/2607.14587) ⭐️ 8.0/10
 
-一篇题为《Qubes OS Security in the Public Record》的学术论文已在 arXiv 上发表，利用公开证据分析了 Qubes OS 的安全主张。作者 Alfonso De Gregorio 在社区讨论中参与了 AMA（有问必答）环节。 该论文对 Qubes OS 的安全性进行了基于证据的严格评估，超越了营销宣传。对于注重安全的用户和研究人员而言，这具有重要意义，因为它为这一广受认可的安全操作系统提供了透明度和问责制。 该论文聚焦于 Qubes OS 的架构，该架构利用虚拟化技术将应用程序隔离到称为 qubes 的独立虚拟机中。分析基于公开记录，包括源代码、文档和社区讨论。
+arXiv 上的一篇新学术论文仅使用公开证据审查 Qubes OS 的安全声明，作者正在 Hacker News 上参与 AMA。 该论文对 Qubes OS 的安全性进行了独立的、基于证据的评估，这对于依赖其隔离方法的用户和组织非常重要。作者的 AMA 增加了透明度，并允许社区深入探讨研究结果。 该论文侧重于由公开证据支持的安全声明，而非营销宣传，社区讨论中提到了 Edward Snowden 对 Qubes OS 的认可。作者在评论中回答问题。
 
 hackernews · sciences44 · 7月18日 08:50 · [社区讨论](https://news.ycombinator.com/item?id=48956307)
 
-**背景**: Qubes OS 是一款面向安全的桌面操作系统，通过将应用程序隔离到不同的虚拟机中来限制安全漏洞的影响。它曾得到爱德华·斯诺登等知名人士的推荐。该论文采用公开证据的方法与项目的开源精神一致。
+**背景**: Qubes OS 是一个注重安全的桌面操作系统，通过虚拟化将应用程序隔离到称为 qubes 的独立虚拟机中。它依赖 Xen 虚拟机监控器，并使用模板在多个 qubes 之间共享共同的根文件系统，从而减少存储空间并简化更新。该系统旨在提供不同安全域之间的强隔离，因此在注重隐私的用户和组织中很受欢迎。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2607.14587">[2607.14587] Qubes OS Security in the Public Record</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Qubes_OS">Qubes OS - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Qubes_OS">Qubes OS</a></li>
 <li><a href="https://www.qubes-os.org/">Qubes OS : A reasonably secure operating system | Qubes OS</a></li>
+<li><a href="https://news.ycombinator.com/item?id=42770125">I'm Peter Roberts, immigration attorney, who does work... | Hacker News</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区成员表达了对 Qubes OS 的怀念和赞赏，一位用户指出其精简设计以及更广泛用途的潜力。另一位用户提到了爱德华·斯诺登的推荐。作者的 AMA 增加了可信度和互动。
+**社区讨论**: 社区评论表达了对 Qubes 和 Whonix 的怀旧之情，并指出鉴于 Qubes 的简洁设计，论文的发现并不令人意外。用户更欣赏基于证据的安全声明而非营销宣传，一位评论者表示如今他们不会使用比 Qubes OS 安全性更低的系统。
 
-**标签**: `#Qubes OS`, `#security`, `#academic paper`, `#operating systems`, `#privacy`
+**标签**: `#Qubes OS`, `#security`, `#academic paper`, `#operating systems`, `#AMA`
 
 ---
 
 <a id="item-9"></a>
-## [控制 LLM 推理努力程度](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms) ⭐️ 8.0/10
+## [Anthropic 在竞争压力下永久保留 Claude Fable 5](https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/#atom-everything) ⭐️ 8.0/10
 
-Sebastian Raschka 的一篇新文章探讨了如何训练 LLM 在低、中、高推理努力模式下运行，使用户能够平衡准确性和计算成本。该方法通过系统提示切换推理努力程度，如 OpenAI 的 o3-mini 和 gpt-oss 模型所示。 该技术允许用户为每个任务选择合适的推理深度，从而更高效地部署 LLM，为简单查询降低延迟和成本，同时为复杂问题保留高努力。它解决了 LLM 实际部署中的一个关键挑战：在不牺牲性能的情况下控制计算努力。 高努力在基准测试上可将准确率提高 10-30%，但成本可能比标准模型增加 10-74 倍。推理努力通过在每个提示前添加系统提示参数（如“Reasoning effort: low/medium/high”）来控制。
+Anthropic 撤销了从订阅中移除 Claude Fable 5 的计划，宣布自 7 月 20 日起，Fable 5 将以 50% 的限额包含在 Max 和 Team Premium 套餐中，Pro 和 Team Standard 用户将获得一次性 100 美元积分。 此举凸显了 AI 模型市场的激烈竞争，Anthropic 对 OpenAI 的 GPT-5.6 Sol 和 Kimi 3 的压力做出回应。它确保订阅者继续使用 Anthropic 的最佳模型，防止用户流失到竞争对手。 每月 20 美元的套餐仍不包含 Fable 5；只有 Max 套餐（每月 100/200 美元）和 Team Premium 才能使用。最初移除 Fable 5 的计划是出于计算能力考虑，Anthropic 可能需要减少训练以释放 GPU 用于服务。
 
-rss · Sebastian Raschka · 7月18日 11:16
+rss · Simon Willison · 7月18日 06:00
 
-**背景**: 具有思维链推理能力的大型语言模型（LLM）可以解决复杂问题，但通常对简单任务使用过多计算。推理努力模式允许模型为当前任务分配恰好足够的计算量，类似于人类调整脑力努力。这一概念已在 OpenAI 的 o3-mini 和开源 gpt-oss 系列等模型中实现。
+**背景**: Claude Fable 5 是 Anthropic 的 Mythos 级模型，专为自主知识工作和编码设计，被认为是他们最强大的公开可用模型。OpenAI 于 2026 年 7 月 9 日发布的 GPT-5.6 Sol 在编码基准上优于 Fable 5，同时使用更少的 token 且成本更低。中国 AI 公司月之暗面的 Kimi 3 也参与竞争。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms">Controlling Reasoning Effort in LLMs</a></li>
-<li><a href="https://www.vellum.ai/llm-parameters/reasoning-effort">Reasoning effort - LLM Parameter Guide - Vellum</a></li>
-<li><a href="https://cameronrwolfe.substack.com/p/demystifying-reasoning-models">Demystifying Reasoning Models - by Cameron R. Wolfe, Ph.D.</a></li>
+<li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Claude Fable 5 and Claude Mythos 5 \ Anthropic</a></li>
+<li><a href="https://openai-dotcom-git-main-openai.vercel.app/index/gpt-5-6/">GPT - 5 . 6 : Frontier intelligence that scales with your ambition | OpenAI</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLMs`, `#reasoning`, `#efficiency`, `#AI training`
+**社区讨论**: 提供的评论讨论了无关的话题，如评估图表和编码工具比较，而非 Fable 5 的定价变化。一位用户指出 Claude 在长时间会话中会忘记指令，建议 /goal 功能可能有所帮助。
+
+**标签**: `#AI`, `#Anthropic`, `#Claude`, `#pricing`, `#competition`
 
 ---
 
 <a id="item-10"></a>
-## [Basalt Labs 被指控 AI 模型欺诈](https://www.reddit.com/r/LocalLLaMA/comments/1uztylz/basalt_labs_pulling_a_generationally_dumb_scam/) ⭐️ 8.0/10
+## [控制大语言模型的推理努力](https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms) ⭐️ 8.0/10
 
-Basalt Labs 被指控虚假声称在 HLE 基准测试中达到 99.44% 的分数，而其发布的模型基于 Qwen2.5-7B-Instruct，实际提供服务的模型却是 DeepSeek。 这一骗局破坏了人们对 AI 基准测试和模型声明的信任，可能误导投资者和用户。它凸显了 AI 社区透明度和验证的必要性。 HLE 基准测试是衡量 AI 向 AGI 进展的困难测试，领先模型的最佳分数约为 64.5%。Basalt Labs 声称的 99.44% 高得离谱，且模型替换表明存在故意欺骗。
+本文探讨了如何训练大语言模型在低、中、高三种推理努力模式下运行，从而实现对计算成本和输出质量的动态控制。 该方法通过允许用户在推理深度和计算效率之间进行权衡，解决了大语言模型部署中的关键挑战，有望降低成本并提高可解释性。 本文讨论了训练方法，使大语言模型能够生成不同长度的中间推理痕迹，从快速回答到详细的逐步思维链。
+
+rss · Sebastian Raschka · 7月18日 11:16
+
+**背景**: 具有思维链推理能力的大语言模型在得出最终答案之前会生成中间步骤，这提高了准确性但增加了计算成本。控制努力水平使模型能够适应任务复杂性和资源限制。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://magazine.sebastianraschka.com/p/controlling-reasoning-effort-in-llms">Controlling Reasoning Effort in LLMs</a></li>
+
+</ul>
+</details>
+
+**标签**: `#LLMs`, `#reasoning`, `#efficiency`, `#machine learning`, `#deep learning`
+
+---
+
+<a id="item-11"></a>
+## [Basalt Labs 被指控在 AI 基准测试中造假](https://www.reddit.com/r/LocalLLaMA/comments/1uztylz/basalt_labs_pulling_a_generationally_dumb_scam/) ⭐️ 8.0/10
+
+Basalt Labs 被指控欺诈性地声称在人类最后一次考试（HLE）基准测试中取得 99.44%的分数，而其实际模型是重新包装的 Qwen2.5-7B-Instruct，并且在其网站上提供的是 DeepSeek 模型。 这一骗局破坏了人们对 AI 基准测试声明的信任，凸显了 AI 社区透明度和验证的必要性，尤其是像 HLE 这样的基准测试被用于衡量向 AGI 的进展。 HLE 基准测试于 2025 年 1 月发布，旨在衡量 AI 向 AGI 的进展，顶级模型得分约为 64.5%，因此 99.44%的声明高度可疑。Basalt Labs 的网站和模型发布被发现存在虚假陈述。
 
 reddit · r/LocalLLaMA · /u/WithoutReason1729 · 7月18日 11:58
 
-**背景**: HLE（人类最后的考试）基准测试于 2025 年 1 月发布，旨在衡量 AI 向 AGI 的进展。Qwen2.5-7B-Instruct 是阿里巴巴推出的 70 亿参数开源模型，而 DeepSeek 是一家以高性价比模型闻名的中国 AI 公司。声称的模型与实际模型之间的差异表明存在“偷梁换柱”的策略。
+**背景**: 人类最后一次考试（HLE）是一个具有挑战性的基准测试，旨在测试 AI 模型接近 AGI 水平的能力。Qwen2.5-7B-Instruct 是阿里巴巴开源的一个 70 亿参数模型，而 DeepSeek 是另一个 AI 模型。Basalt Labs 自称是一个开放研究实验室，但被发现对其工作进行了虚假陈述。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://benchlm.ai/benchmarks/hle">HLE Leaderboard & Scores — July 2026 | BenchLM. ai</a></li>
 <li><a href="https://huggingface.co/Qwen/Qwen2.5-7B-Instruct">Qwen/ Qwen 2 . 5 - 7 B - Instruct · Hugging Face</a></li>
+<li><a href="https://basaltlabs.org/">Basalt</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 社区表达了愤怒和嘲讽，称这一骗局“世代级的愚蠢”和“难以置信的愚蠢”。用户指出了基准测试分数的明显差异，并敦促其他人独立验证声明。
+**社区讨论**: Reddit 社区表达了愤怒和难以置信，称这一骗局“世代级的愚蠢”，并批评缺乏监督。用户指出声称的分数与实际模型能力之间存在明显差异。
 
-**标签**: `#AI ethics`, `#scam`, `#LLM`, `#fraud`, `#community alert`
-
----
-
-<a id="item-11"></a>
-## [SooFi 团队发布开源混合 Mamba-Transformer MoE 模型](https://www.reddit.com/r/LocalLLaMA/comments/1v0cyix/german_soofi_team_launches_soofi_s_30ba3b_an/) ⭐️ 8.0/10
-
-德国 SooFi 团队发布了 Soofi S 30B-A3B，这是一个开源的混合专家（MoE）模型，结合了 Mamba 和 Transformer 架构，总参数量为 300 亿，活跃参数量为 30 亿，针对德语和英语进行了优化。 该模型通过在 MoE 框架中结合 Mamba 和 Transformer，为德语和英语 NLP 任务提供了高效推理，是一项新颖的技术贡献。其开源特性使社区能够研究并基于这种混合架构进行开发，有望推动多语言 AI 的发展。 该模型总参数量为 300 亿，但每个 token 仅激活 30 亿参数，因此适合本地部署。它是一个混合 Mamba-Transformer 模型，利用了 Mamba 的线性时间序列建模和 Transformer 的注意力机制。
-
-reddit · r/LocalLLaMA · /u/epSos-DE · 7月19日 01:14
-
-**背景**: 混合专家（MoE）是一种架构，每个输入仅激活部分参数，从而在降低计算成本的同时实现更大的模型。Mamba 是一种状态空间模型，提供线性时间序列建模，而 Transformer 使用注意力机制。混合 Mamba-Transformer 模型旨在结合两者的优势，实现高准确性和高效率。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://arxiv.org/abs/2312.00752">Mamba : Linear-Time Sequence Modeling with Selective State Spaces</a></li>
-<li><a href="https://www.emergentmind.com/topics/hybrid-mamba-transformer-model">Hybrid Mamba - Transformer Model</a></li>
-<li><a href="https://agentaibox.com/en/articles/moe-sparse-architecture-why-llms-going-sparse">MoE Architecture Explained: Why Every Major LLM Is Going Sparse</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 社区讨论活跃，用户称赞该模型的效率和开源发布。一些评论者讨论了混合架构的技术细节及其在德语 NLP 中的潜力，另一些人则将其与 Llama 和 Mistral 等现有模型进行比较。
-
-**标签**: `#Mixture-of-Experts`, `#Mamba`, `#Transformer`, `#German NLP`, `#open-source`
+**标签**: `#AI ethics`, `#scam`, `#LLM`, `#model authenticity`, `#community alert`
 
 ---
 
 <a id="item-12"></a>
+## [SooFi 发布开源 MoE 混合 Mamba-Transformer 模型](https://www.reddit.com/r/LocalLLaMA/comments/1v0cyix/german_soofi_team_launches_soofi_s_30ba3b_an/) ⭐️ 8.0/10
+
+德国 SooFi 团队发布了 Soofi S 30B-A3B，这是一个面向德语和英语的开源混合专家（MoE）Mamba-Transformer 基础模型。 该模型引入了一种新颖架构，结合了 Mamba 的高效性和 Transformer 的表现力，有望推动多语言 NLP 发展，并为德语和英语任务提供强大的开源替代方案。 该模型总参数量为 300 亿，每个 token 激活 30 亿参数（30B-A3B），采用稀疏 MoE 方法降低计算成本，同时保持高容量。
+
+reddit · r/LocalLLaMA · /u/epSos-DE · 7月19日 01:14
+
+**背景**: 混合专家（MoE）模型使用多个专门的子网络（专家）和门控机制，每次只激活部分专家，从而提高效率。Mamba 是一种状态空间模型（SSM），提供线性时间推理，而 Transformer 依赖注意力机制。混合 Mamba-Transformer 模型交错使用 SSM 和注意力层，以结合两者优势。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://medium.com/@apoorvajain1111/inside-the-sparse-brain-how-mixture-of-experts-moe-makes-llms-smarter-faster-and-greener-205b0fea1416">Inside the Sparse Brain: How Mixture - of - Experts ( MoE )... | Medium</a></li>
+<li><a href="https://grokipedia.com/page/Mamba_deep_learning_architecture">Mamba (deep learning architecture)</a></li>
+<li><a href="https://www.emergentmind.com/topics/hybrid-mamba-transformer-model">Hybrid Mamba - Transformer Model</a></li>
+
+</ul>
+</details>
+
+**标签**: `#MoE`, `#Mamba`, `#Transformer`, `#open-source`, `#multilingual`
+
+---
+
+<a id="item-13"></a>
 ## [字节精确 KV 缓存嫁接提升 Gemma 4 准确率](https://www.reddit.com/r/LocalLLaMA/comments/1v07tib/byte_exact_kv_cache_grafting_on_frozen_gemma_4/) ⭐️ 8.0/10
 
-研究人员发布了一种在冻结的 Gemma 4 12B 模型上进行字节精确 KV 缓存嫁接的方法，将 AIME 2025 上的路由准确率从 76.7%提升至 90.0%。 该技术能够在不重新训练的情况下存储和恢复已验证的知识作为 KV 状态，显著提升大语言模型的推理准确性和效率。 该方法名为 Taliesin，实现了 KV 缓存的字节精确恢复，验证后缓存的循环称为 Galahad。它还将可用上下文从 32,768 个 token 扩展到 2,854,766 个 token，且不增加额外的加速器内存。
+研究人员发布了一种名为字节精确 KV 缓存嫁接的方法，将验证过的知识存储为 KV 状态，并恢复为与全新计算完全相同的状态，使冻结的 Gemma 4 12B 在 AIME 2025 路由准确率从 76.7%提升至 90.0%。 该技术表明，无需重新训练即可显著提升冻结 LLM 的性能，有望降低推理成本并实现跨任务的高效知识复用。 该方法在论文《Smarter and Cheaper at Once: Byte-Exact KV-Cache Grafting Turns Frozen LLMs into Lifelong Learners》（arXiv:2607.14431）中详细阐述，还能在不增加加速器内存的情况下将可用上下文从 32,768 个 token 扩展到 2,854,766 个 token，并可在相同架构的机器间迁移。
 
 reddit · r/LocalLLaMA · /u/MindPsychological140 · 7月18日 21:24
 
-**背景**: KV 缓存存储先前 token 的键值对以加速 Transformer 推理。字节精确嫁接意味着恢复的缓存与重新计算完全一致，从而实现可靠的知识复用。
+**背景**: KV 缓存存储 LLM 推理过程中注意力层的中间键值对，避免重复计算。嫁接指将预计算的 KV 缓存插入模型的前向传播中。字节精确嫁接确保恢复的缓存与全新计算完全相同，从而保持模型行为一致。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -297,73 +315,51 @@ reddit · r/LocalLLaMA · /u/MindPsychological140 · 7月18日 21:24
 </ul>
 </details>
 
-**标签**: `#KV cache`, `#LLM`, `#inference optimization`, `#Gemma`, `#knowledge storage`
-
----
-
-<a id="item-13"></a>
-## [涉嫌 AI 垃圾作品赢得 DeepMind Kaggle 2.5 万美元大奖](https://www.reddit.com/r/MachineLearning/comments/1uzyf66/did_blatant_ai_slop_just_win_a_25k_usd_deepmind/) ⭐️ 8.0/10
-
-一位 Reddit 用户声称，在 Google DeepMind 赞助的 Kaggle 竞赛“衡量 AGI 进展——认知能力”中，一个构建糟糕的作品赢得了 2.5 万美元的大奖，并指控该作品包含无意义的代码和毫无根据的论断。 这一争议对 AI 基准测试的诚信以及高知名度竞赛的评审过程提出了严重质疑，可能削弱人们对 AGI 进展衡量方式的信任。 据称该作品超出规定格式 10 倍，Reddit 用户提供了两篇详细帖子，分析其文稿、方法论、代码和数据以支持其指控。
-
-reddit · r/MachineLearning · /u/TheWerkmeister · 7月18日 15:10
-
-**背景**: 该竞赛由 Google DeepMind 于 2026 年 3 月发起，要求参与者设计基于认知科学的新型 AI 基准测试，以评估前沿模型超越简单记忆的能力。获胜作品获得了 2.5 万美元奖金和大奖标识。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/">Measuring Progress Towards AGI : A Cognitive Framework</a></li>
-<li><a href="https://ailearninghubhq.beehiiv.com/p/google-deepmind-wants-you-to-help-measure-agi">Google DeepMind Wants You to Help Measure AGI</a></li>
-<li><a href="https://medium.com/@Micheal-Lanham/deepmind-just-told-you-how-to-evaluate-agi-and-why-agent-benchmarks-miss-7-of-10-cognitive-55e2eed37aed">DeepMind Just Told You How to Evaluate AGI , and Why... | Medium</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: Reddit 上的讨论非常激烈，许多评论者表示难以置信，并要求更透明的评审过程。一些人为主办方辩护，认为评审具有主观性，但多数观点认为获胜作品存在缺陷。
-
-**标签**: `#Kaggle`, `#DeepMind`, `#AI benchmarking`, `#controversy`, `#research integrity`
+**标签**: `#KV cache`, `#LLM inference`, `#Gemma 4`, `#knowledge grafting`, `#efficiency`
 
 ---
 
 <a id="item-14"></a>
 ## [GPT-2 词元嵌入的交互式 t-SNE 地图](https://www.reddit.com/r/MachineLearning/comments/1v09muj/interactive_map_of_gpt2s_token_embedding_space/) ⭐️ 8.0/10
 
-一位 Reddit 用户发布了 GPT-2-small 词元嵌入空间的交互式 t-SNE 可视化，覆盖 32,070 个字母词元，并用最小生成树边展示最近亲缘关系。 该工具使 GPT-2 的词元嵌入变得直观可探索，帮助研究人员和学生无需运行模型即可理解语义关系，降低了检查大语言模型内部语言表示的门槛。 该可视化对嵌入表的压缩表示使用 t-SNE，并绘制最小生成树的边，因此每条线都代表真实的最近邻关系。它支持移动端双指缩放，并包含搜索框。
+一位用户创建了 GPT-2 Small 的 32,070 个字母词元嵌入的交互式 t-SNE 地图，允许用户点击任意词元并通过最小生成树探索其最近邻。 该可视化提供了一种直观、动手的方式，帮助理解大型语言模型中词元嵌入的几何结构，这对 NLP 研究和教育至关重要。 该地图对嵌入表的压缩表示使用 t-SNE，边表示最小生成树，确保每条线都显示真实的最近邻关系。该工具支持移动端，具有双指缩放和搜索框功能。
 
 reddit · r/MachineLearning · /u/Limp-Contest-7309 · 7月18日 22:42
 
-**背景**: 词元嵌入是语言模型（如 GPT-2）学习的词或子词的稠密向量表示。t-SNE 是一种降维技术，将高维向量映射到二维同时保留局部结构。最小生成树以最小总边权连接所有点，揭示嵌入空间中最紧密的关系。
+**背景**: 词元嵌入是语言模型（如 GPT-2）学习到的词元稠密向量表示。t-SNE 是一种降维技术，可将高维向量投影到二维空间进行可视化。最小生成树以最小总边权连接所有点，揭示局部结构。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding">t -distributed stochastic neighbor embedding - Wikipedia</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Minimum_spanning_tree">Minimum spanning tree</a></li>
+<li><a href="https://lvdmaaten.github.io/tsne/">t - SNE – Laurens van der Maaten</a></li>
 <li><a href="https://readmedium.com/line-by-line-lets-reproduce-gpt-2-section-1-b26684f98492">Line By Line, Let’s Reproduce GPT - 2 : Section 1</a></li>
+<li><a href="https://analyticalnikita.substack.com/p/how-llms-embeds-input-tokens">How LLMs Embeds Input Tokens ? - by Nikita Prasad</a></li>
 
 </ul>
 </details>
 
-**标签**: `#GPT-2`, `#token embeddings`, `#t-SNE`, `#visualization`, `#NLP`
+**社区讨论**: 该帖子获得了大量点赞和正面评论，用户称赞其教育价值和交互性。一些人讨论了离散化与连续最近邻之间的差异，注意到围绕“Trump”的政治聚类。
+
+**标签**: `#GPT-2`, `#embeddings`, `#visualization`, `#NLP`, `#t-SNE`
 
 ---
 
 <a id="item-15"></a>
-## [白宫将决定前沿 AI 模型的访问权限](https://www.reddit.com/r/artificial/comments/1v010pk/the_white_house_is_dictating_access_to_frontier/) ⭐️ 8.0/10
+## [白宫将控制前沿 AI 模型的访问权限](https://www.reddit.com/r/artificial/comments/1v010pk/the_white_house_is_dictating_access_to_frontier/) ⭐️ 8.0/10
 
-据报道，白宫计划决定前沿 AI 模型的访问权限，将权力从科技公司转移到政府手中。 这代表了 AI 治理的范式转变，可能使政府控制最先进的 AI 系统，并影响全球 AI 发展。 前沿 AI 模型是最先进的通用 AI 模型，使用大量算力和数据进行训练，被认为会带来系统性风险，如虚假信息和网络攻击。
+据报道，白宫正在控制前沿 AI 模型的访问权限，将权力从科技巨头转移到政府手中。这标志着对 AI 治理的重大干预。 这可能从根本上改变 AI 开发中的权力平衡，使政府获得对私营公司的影响力。它可能为全球 AI 监管树立先例，并影响创新动态。 前沿 AI 模型是最强大的模型，通常拥有数千亿参数和高级推理能力。白宫的控制可能涉及类似欧盟 AI 法案的发布前检查点。
 
 reddit · r/artificial · /u/PsychologicalBox5208 · 7月18日 16:54
 
-**背景**: 由于潜在风险，全球各国政府正越来越多地监管前沿 AI。例如，欧盟 AI 法案关注具有高影响力能力的模型，使用 10^25 FLOPs 的训练算力阈值。白宫此举与此趋势一致，尽管此前它曾与更严格的监管保持距离。
+**背景**: 前沿 AI 模型代表最先进的通用 AI 系统，通过大量计算和数据训练以实现最先进的性能。白宫此前曾与更严格的监管保持距离，但国家安全担忧正推动其转向发布前监督。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.linkedin.com/pulse/beyond-hype-what-makes-frontier-ai-truly-hint-its-billions-tiwari-bgrff">Beyond the Hype: What Makes a ' Frontier AI ' Truly Frontier ?</a></li>
+<li><a href="https://www.linkedin.com/pulse/small-large-frontier-ai-models-choosing-right-model-jeyaram-itopc">Small, Large, and Frontier AI Models : Choosing the Right Model</a></li>
 <li><a href="https://www.linkedin.com/posts/massimodonna_white-house-distances-itself-from-tighter-activity-7458410261708980224-wdZT">White House distances itself from tighter AI regulation</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI regulation`, `#White House`, `#frontier AI`, `#tech giants`, `#governance`
+**标签**: `#AI regulation`, `#frontier models`, `#White House`, `#tech policy`, `#governance`
 
 ---
