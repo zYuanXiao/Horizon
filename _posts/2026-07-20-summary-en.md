@@ -9,362 +9,329 @@ lang: en
 
 ---
 
-1. [HuggingFace Breach: AI Agent Attack, Guardrails Block Forensics](#item-1) ⭐️ 9.0/10
-2. [Films compressed to under 1MB text, regenerated with Wan 2.2](#item-2) ⭐️ 9.0/10
-3. [Chinese open-weight model beats Opus 4.8 on benchmarks](#item-3) ⭐️ 9.0/10
-4. [OmniRoute: Open-Source AI Gateway with 268+ Providers](#item-4) ⭐️ 9.0/10
+1. [Bowling Center Owner Replaces $120k System with $1,600 ESP32s](#item-1) ⭐️ 9.0/10
+2. [HuggingFace Reports First Autonomous AI Agent Intrusion](#item-2) ⭐️ 9.0/10
+3. [Film compressed to <1MB text, regenerated with AI](#item-3) ⭐️ 9.0/10
+4. [Chinese open-weight model Kimi K3 beats Opus 4.8 on benchmarks](#item-4) ⭐️ 9.0/10
 5. [RoboTTT Scales Robot Context to 8K Timesteps](#item-5) ⭐️ 9.0/10
-6. [Open-Source Book on AI Agent Design and Engineering](#item-6) ⭐️ 8.0/10
-7. [LongStraw Enables Million-Token RL Under Fixed GPU Budget](#item-7) ⭐️ 8.0/10
-8. [Deep Research Pipeline Costs More Than It Saves](#item-8) ⭐️ 8.0/10
-9. [EFF Q&A: Texas ALPR Surveillance Threatens Abortion Privacy](#item-9) ⭐️ 8.0/10
-10. [AI Hype Distorts Corporate Decision-Making](#item-10) ⭐️ 8.0/10
-11. [ATSInfer: Tensor-Level Scheduling for Hybrid CPU-GPU LLM Inference](#item-11) ⭐️ 8.0/10
-12. [Fractale-350M-base: Memory via Trained Fast Weights, Not Long Context](#item-12) ⭐️ 8.0/10
-13. [GPT-2 Vocabulary as Hyperbolic Tree in Poincaré Ball](#item-13) ⭐️ 8.0/10
-14. [AI advice triples inaccuracy, doubles confidence](#item-14) ⭐️ 8.0/10
-15. [AI Unbundles Credentials from Contributions in Software Engineering](#item-15) ⭐️ 8.0/10
+6. [Open-source AI Agent book surges on GitHub](#item-6) ⭐️ 8.0/10
+7. [OmniRoute: Open-Source AI Gateway with 268+ Providers](#item-7) ⭐️ 8.0/10
+8. [LongStraw Enables Million-Token RL Post-Training on Fixed GPU Budget](#item-8) ⭐️ 8.0/10
+9. [AI Mania Eviscerates Global Decision-Making](#item-9) ⭐️ 8.0/10
+10. [Chinese AI Startup Processes 10T Tokens Daily, Profitable](#item-10) ⭐️ 8.0/10
+11. [ATSInfer: Tensor-Granularity Scheduling Boosts LLM Inference on Consumer Devices](#item-11) ⭐️ 8.0/10
+12. [Fractale-350M-base: Memory as Trained Behavior](#item-12) ⭐️ 8.0/10
+13. [GPT-2's Vocabulary Visualized as a Hyperbolic Tree](#item-13) ⭐️ 8.0/10
+14. [AI Advice Triples Inaccuracy, Doubles Confidence](#item-14) ⭐️ 8.0/10
+15. [Can countries regulate AI without controlling compute?](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [HuggingFace Breach: AI Agent Attack, Guardrails Block Forensics](https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker/) ⭐️ 9.0/10
+## [Bowling Center Owner Replaces $120k System with $1,600 ESP32s](https://news.ycombinator.com/item?id=48968606) ⭐️ 9.0/10
 
-HuggingFace reported a security breach driven entirely by an autonomous AI agent, detected via AI-assisted systems. The forensic analysis was forced to use the open-weight model GLM 5.2 because commercial API guardrails blocked the submission of attack payloads. This is the first known end-to-end autonomous AI agent intrusion, highlighting the growing threat of AI-driven attacks. It also underscores the critical need for open-weight models in security forensics, as commercial guardrails can hinder incident response. The attack was initially surfaced through LLM-based triage over security telemetry. HuggingFace used GLM 5.2, a 744B-parameter open-weight model with 40B active parameters under MIT license, for forensic analysis on their own infrastructure.
+A bowling center owner built a custom scoring system using ESP32 microcontrollers and a Raspberry Pi for about $200 per lane pair, replacing a commercial system that cost $80,000–$120,000. The open-source project, called OpenLaneLink, uses ESP-NOW mesh networking with RS485 fallback and Redis-based event streaming. This demonstrates how modern low-cost embedded systems can retrofit expensive legacy equipment, potentially saving small businesses tens of thousands of dollars. It also highlights the growing trend of open-source hardware and software challenging vendor lock-in in niche industries. The system uses ESP32 nodes with relays, optocouplers, and IR break-beam sensors, communicating via ESP-NOW to a Raspberry Pi gateway running Redis and a React-based UI. The original 2008 system used camera-based pin detection with dedicated ICs, while the new system relies on commodity hardware and can be repaired or swapped in minutes.
 
-reddit · r/LocalLLaMA · /u/Umr_at_Tawil · Jul 19, 19:00
+hackernews · section33 · Jul 19, 14:41
 
-**Background**: Autonomous AI agents can independently plan and execute tasks, including malicious ones. Open-weight models allow organizations to run AI on their own hardware without external restrictions, unlike commercial APIs that impose safety guardrails which may block legitimate security work.
+**Background**: ESP32 is a low-cost, low-power microcontroller with built-in Wi-Fi and Bluetooth, widely used in IoT projects. Bowling scoring systems are a niche market with high prices due to limited competition and proprietary hardware. The owner's 70-year-old pinsetting machines are purely mechanical and only require a single relay signal to operate, making them easy to interface with modern electronics.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.mindstudio.ai/blog/what-is-glm-5-2-open-weight-model-agentic-workflows">What Is GLM 5 . 2 ? The Open - Weight Model With... | MindStudio</a></li>
-<li><a href="https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index">GLM - 5 . 2 is the new leading open weights model on the Artificial...</a></li>
-<li><a href="https://docs.z.ai/guides/llm/glm-5.2">GLM - 5 . 2 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ESP32">ESP32 - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Automatic_scorer">Automatic scorer - Wikipedia</a></li>
+<li><a href="https://sesamedisk.com/diy-bowling-system-esp32-replacement/">Replacing $120K Bowling System with $1,600 - Sesame Disk</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community praised HuggingFace's transparency and highlighted the irony that open-weight models were essential for forensic analysis. Some expressed concern about the increasing sophistication of AI-driven attacks and the need for better guardrail design that distinguishes attackers from defenders.
+**Discussion**: Commenters shared similar experiences retrofitting old systems with modern tech, such as a mini bowling lane with a 1970s Intel microcontroller and machine tools with modern motion controls. There was enthusiasm for the project's potential to enable creative features like LED chases and DMX lighting triggered by ball movement.
 
-**Tags**: `#AI security`, `#autonomous agents`, `#HuggingFace`, `#open-weight models`, `#incident response`
+**Tags**: `#embedded systems`, `#retrofit`, `#ESP32`, `#cost reduction`, `#DIY`
 
 ---
 
 <a id="item-2"></a>
-## [Films compressed to under 1MB text, regenerated with Wan 2.2](https://www.reddit.com/r/StableDiffusion/comments/1v0otg1/i_compressed_films_to_1mb_of_text_and_regenerated/) ⭐️ 9.0/10
+## [HuggingFace Reports First Autonomous AI Agent Intrusion](https://www.reddit.com/r/LocalLLaMA/comments/1v0ywoi/huggingface_security_incident_report_the_attacker/) ⭐️ 9.0/10
 
-A Reddit user demonstrated a pipeline that compresses a full film (e.g., Star Wars) to under 1MB of text descriptions and then regenerates the video with audio and character continuity using Wan 2.2 TI2V-5B, MMAudio, MusicGen, and ElevenLabs TTS. This work showcases an extreme lossy compression technique that could revolutionize video storage and streaming by reducing file sizes by orders of magnitude, while leveraging generative AI to reconstruct content with acceptable quality. The pipeline splits the film into ~2,000 shots using PySceneDetect, writes ~100-word descriptions per shot via Gemini Flash-Lite, compresses with xz to ~320KB, and regenerates each shot independently with Wan 2.2, costing about $30 per film on a RunPod A6000.
+HuggingFace disclosed a security intrusion driven entirely by an autonomous AI agent, which was detected using AI-assisted anomaly detection and analyzed using the open-weight model GLM 5.2 after commercial API guardrails blocked forensic analysis. This is the first documented end-to-end autonomous AI agent intrusion, highlighting critical limitations of commercial API guardrails that can hinder defenders while attackers face no restrictions, underscoring the need for open-weight models in security operations. The attacker used an autonomous AI agent to carry out the entire intrusion chain, while HuggingFace's own LLM-based triage pipeline flagged the compromise. Forensic analysis using frontier models via commercial APIs was blocked by safety guardrails, forcing the team to use the open-weight model GLM 5.2 on their own infrastructure.
 
-reddit · r/StableDiffusion · /u/Willsolo · Jul 19, 12:04
+reddit · r/LocalLLaMA · /u/Umr_at_Tawil · Jul 19, 19:00
 
-**Background**: Wan 2.2 is an open-source text-to-video and image-to-video model with a 5B parameter variant (TI2V-5B) that supports 720P 24fps generation. PySceneDetect is a tool for detecting shot boundaries in videos. VACE is a technique that uses reference portraits to maintain character consistency across generated shots.
+**Background**: Autonomous AI agents are AI systems that can independently plan and execute multi-step tasks, including cyber intrusions. LLM-based triage uses large language models to automatically analyze security telemetry and prioritize alerts. Open-weight models like GLM 5.2 have publicly released parameters, allowing self-hosted deployment without API restrictions.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/qqceqqq/Wan2.2-TI2V-5B">qqceqqq/ Wan 2 . 2 - TI 2 V - 5 B · Hugging Face</a></li>
-<li><a href="https://www.scenedetect.com/">Home - PySceneDetect</a></li>
-<li><a href="https://github.com/ali-vilab/VACE/issues/103">Multiple reference images. · Issue #103 · ali-vilab/VACE</a></li>
+<li><a href="https://docs.z.ai/guides/llm/glm-5.2">GLM - 5 . 2 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
+<li><a href="https://www.mindstudio.ai/blog/what-is-glm-5-2-open-weight-model-agentic-workflows">What Is GLM 5 . 2 ? The Open - Weight Model With... | MindStudio</a></li>
+<li><a href="https://www.csoonline.com/article/4193195/this-ai-agent-autonomously-hacked-a-network-adapted-on-the-fly-and-demanded-a-ransom.html">This AI agent autonomously hacked a network, adapted on the fly, and demanded a ransom | CSO Online</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community praised the novel approach and technical depth, with constructive feedback on improving character consistency and audio synchronization. Some users discussed the trade-offs between compression ratio and quality, and the potential for this method in low-bandwidth scenarios.
+**Discussion**: The Reddit community expressed strong agreement with HuggingFace's stance, with many comments highlighting the irony that commercial guardrails hinder defenders while attackers face no such restrictions. Several users praised the use of open-weight models for forensic analysis and emphasized the importance of open-source AI for security.
 
-**Tags**: `#generative AI`, `#video compression`, `#Wan 2.2`, `#machine learning`, `#media processing`
+**Tags**: `#AI security`, `#autonomous agents`, `#guardrails`, `#forensic analysis`, `#open-source AI`
 
 ---
 
 <a id="item-3"></a>
-## [Chinese open-weight model beats Opus 4.8 on benchmarks](https://www.reddit.com/r/artificial/comments/1v0x2za/chinese_openweight_model_beats_opus_48_on_some/) ⭐️ 9.0/10
+## [Film compressed to <1MB text, regenerated with AI](https://www.reddit.com/r/StableDiffusion/comments/1v0otg1/i_compressed_films_to_1mb_of_text_and_regenerated/) ⭐️ 9.0/10
 
-Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-weight model, on July 17, and independent evaluator Artificial Analysis ranked it ahead of Anthropic's Opus 4.8 on frontier benchmarks, marking the first time a Chinese open-weight model has surpassed a top-tier closed model. This achievement signals a shift in the AI competitive landscape, as open-weight models from China can now rival leading closed models, potentially influencing enterprise adoption and investment decisions. The market reacted strongly, with competing Chinese AI companies losing 15-28% of their value in a single day and Nvidia briefly losing its most-valuable-company status. Kimi K3 has 2.8 trillion parameters, uses a hybrid linear attention mechanism called Kimi Delta Attention (KDA), and supports a 1M-token context window. It is priced at $3 per million input tokens and $15 per million output tokens, similar to Anthropic's Sonnet pricing, which is unusual for open-weight models that typically undercut on price.
+A Reddit user compressed full films (e.g., Star Wars) to ~1MB by splitting into ~2,000 shots, describing each with ~100 words via Gemini Flash-Lite, then regenerating video with Wan 2.2 TI2V-5B and audio with MMAudio, MusicGen, and ElevenLabs TTS. This demonstrates extreme video compression using generative AI, potentially revolutionizing media storage and streaming by replacing raw video with text descriptions. It also showcases practical character continuity techniques and cost-effective self-hosted inference. Character continuity was achieved by clustering character descriptions across shots and injecting them into prompts, aided by VACE with reference portraits. Shots longer than 5 seconds were chained using last-frame-to-first-frame. The entire pipeline cost ~$30 per film on a RunPod A6000.
 
-reddit · r/artificial · /u/roll0ver · Jul 19, 17:48
+reddit · r/StableDiffusion · /u/Willsolo · Jul 19, 12:04
 
-**Background**: Open-weight models are AI models whose core parameters are publicly released, allowing anyone to download, run, study, and modify them. This contrasts with closed models like Anthropic's Opus 4.8, which are only accessible via API. Benchmark comparisons like those from Artificial Analysis help evaluate model performance across various tasks, and Kimi K3's win on some benchmarks is a notable milestone for open-weight AI.
+**Background**: Wan 2.2 TI2V-5B is an open-source text-to-video and image-to-video model supporting 720P 24fps generation, built with a VAE achieving 16×16×4 compression. PySceneDetect is a tool for detecting shot changes in videos. VACE is a reference-based video generation technique that helps maintain character identity across shots.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems">China’s Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems | VentureBeat</a></li>
-<li><a href="https://openrouter.ai/moonshotai/kimi-k3">Kimi K3 - API Pricing & Benchmarks | OpenRouter</a></li>
-<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
+<li><a href="https://comfyanonymous.github.io/ComfyUI_examples/wan22/">Wan 2 . 2 Models | ComfyUI_examples</a></li>
+<li><a href="https://huggingface.co/qqceqqq/Wan2.2-TI2V-5B">qqceqqq/ Wan 2 . 2 - TI 2 V - 5 B · Hugging Face</a></li>
+<li><a href="https://github.com/Wan-Video/Wan2.2">GitHub - Wan -Video/ Wan 2 . 2 : Wan : Open and Advanced Large-Scale...</a></li>
+<li><a href="https://www.scenedetect.com/">Home - PySceneDetect</a></li>
+<li><a href="https://github.com/breakthrough/pyscenedetect">GitHub - Breakthrough/PySceneDetect: :movie_camera: Python and OpenCV-based scene cut/transition detection program & library. · GitHub</a></li>
+<li><a href="https://stable-diffusion-art.com/wan-vace-ref/">Wan VACE ComfyUI reference-to-video tutorial - Stable Diffusion Art</a></li>
+<li><a href="https://www.runpod.io/blog/the-dos-and-donts-of-vace">The Dos and Don’ts of VACE: What It Does Well, What It Doesn’t</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community is excited about the competition, with users hoping for smaller versions of models like Qwen 3.8 for local use. Some users report mixed experiences with previous Qwen models, finding them unusable for software engineering tasks, while others praise local models for privacy and practicality. The release of Kimi K3 and upcoming Qwen 3.8 is seen as a win for open-weight AI.
-
-**Tags**: `#AI`, `#open-weight models`, `#benchmarks`, `#Chinese AI`, `#LLMs`
+**Tags**: `#video compression`, `#generative AI`, `#Wan 2.2`, `#machine learning`, `#multimodal`
 
 ---
 
 <a id="item-4"></a>
-## [OmniRoute: Open-Source AI Gateway with 268+ Providers](https://github.com/diegosouzapw/OmniRoute) ⭐️ 9.0/10
+## [Chinese open-weight model Kimi K3 beats Opus 4.8 on benchmarks](https://www.reddit.com/r/artificial/comments/1v0x2za/chinese_openweight_model_beats_opus_48_on_some/) ⭐️ 9.0/10
 
-OmniRoute, a free MIT-licensed AI gateway, has gained over 1,343 stars in a single day on GitHub, reaching 20k+ total stars. It provides a single OpenAI-compatible endpoint for 268+ providers and 500+ models, including Claude, GPT, Gemini, and DeepSeek. This project simplifies AI development by eliminating the need to manage multiple API keys and endpoints, with features like quota-aware auto-fallback and token compression that can reduce costs by 15-95%. Its massive community traction (500+ contributors) signals strong demand for open-source, multi-provider AI infrastructure. OmniRoute supports advanced features including RTK+Caveman token compression, MCP/A2A protocols, multimodal capabilities, and a desktop/PWA app. It also offers a 4-tier auto-fallback system (Subscription → API Key → Cheap → Free) to ensure zero downtime.
+Moonshot AI released Kimi K3, a 2.8-trillion-parameter open-weight model, which independently ranked ahead of Anthropic's Opus 4.8 on frontier benchmarks by Artificial Analysis and Arena.ai, marking the first time a Chinese open-weight model has achieved this. This achievement signals that open-weight models can compete with top-tier closed models, potentially shifting enterprise AI buying decisions and intensifying competition in the AI market, as evidenced by significant stock drops in competing Chinese AI companies and market reactions. Kimi K3 has 2.8 trillion parameters, uses a hybrid linear attention mechanism called Kimi Delta Attention (KDA), supports a 1M-token context window, and is priced at $3 per million input tokens and $15 per million output tokens, similar to Anthropic Sonnet levels.
 
-github_trending · GitHub Trending · Jul 20, 03:18
+reddit · r/artificial · /u/roll0ver · Jul 19, 17:48
 
-**Background**: An AI gateway acts as a unified proxy between applications and multiple large language model (LLM) providers, simplifying integration and management. Token compression techniques like RTK (Rust Token Killer) and Caveman reduce the number of tokens sent to or received from LLMs, lowering costs and latency. MCP (Model Context Protocol) and A2A (Agent-to-Agent) are complementary protocols that enable agents to use tools and communicate with each other.
+**Background**: Open-weight models are AI models whose core parameters are publicly released, allowing anyone to download and use them. Frontier benchmarks are standardized tests designed to evaluate the capabilities of advanced AI models. Moonshot AI is a Beijing-based startup backed by Alibaba, and Kimi K3 is the largest open-source model ever released.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/diegosouzapw/OmniRoute">OmniRoute — The Free AI Gateway - GitHub</a></li>
-<li><a href="https://omniroute.fly.dev/">OmniRoute — AI Gateway for Multi-Provider LLMs</a></li>
-<li><a href="https://www.everydev.ai/tools/omniroute">OmniRoute - Open Source AI Gateway Router | EveryDev.ai</a></li>
+<li><a href="https://platform.kimi.ai/docs/guide/kimi-k3-quickstart">Kimi K3 - Kimi API Platform</a></li>
+<li><a href="https://openrouter.ai/moonshotai/kimi-k3">Kimi K3 - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems">China’s Moonshot AI releases Kimi K3, the largest open-source model ever, rivaling top U.S. systems | VentureBeat</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#open-source`, `#API gateway`, `#TypeScript`, `#LLM`
+**Discussion**: Community members expressed excitement about Kimi K3's performance, especially its use of linear attention layers for long-context tasks. Some users shared positive personal experiences with Kimi for coding, while others noted limitations like daily quota exhaustion. The decision to pause new subscriptions to protect existing users was praised as customer-focused.
+
+**Tags**: `#AI`, `#open-source`, `#benchmarks`, `#Chinese AI`, `#large language models`
 
 ---
 
 <a id="item-5"></a>
 ## [RoboTTT Scales Robot Context to 8K Timesteps](https://huggingface.co/papers/2607.15275) ⭐️ 9.0/10
 
-Researchers introduced RoboTTT, a robot policy that scales visuomotor context to 8K timesteps using test-time training, enabling one-shot imitation from human videos and long-horizon task completion. This represents a significant breakthrough in robot foundation models, as it demonstrates that scaling context length improves closed-loop performance and unlocks new capabilities like on-the-fly policy improvement, potentially enabling more adaptable and capable robots. RoboTTT integrates test-time training into vision-language-action models, using fast weights updated by gradient descent to compress history into weight space. The training recipe combines sequence action forcing with truncated backpropagation through time to handle long sequences efficiently.
+Researchers introduced RoboTTT, a robot policy model that scales visuomotor context to 8,000 timesteps via test-time training, enabling one-shot imitation from human videos and robust long-horizon task performance. This work demonstrates that context length is a new scaling axis for robot foundation models, achieving 87% improvement over single-step baselines and enabling tasks previously impossible, such as a five-minute ten-stage assembly task. RoboTTT integrates Test-Time Training into Vision-Language-Action policies, using fast weights updated by gradient descent to compress history into weight space. It combines sequence action forcing with truncated backpropagation through time to scale training context.
 
 huggingface_papers · Hugging Face Papers · Jul 17, 00:00
 
-**Background**: Robot foundation models typically use single-step or short-history visuomotor context, limiting their ability to handle long-horizon tasks or adapt from few demonstrations. Test-time training (TTT) is a technique where a model updates its parameters during inference to adapt to new data. Fast weights are rapidly adapting parameters that serve as dynamic memory in neural networks.
+**Background**: Traditional robot policies use single-step or short-history visuomotor context, limiting their ability to handle long-horizon tasks or adapt at test time. Test-time training allows a model to update its parameters during inference, adapting to new situations without retraining. Fast weights are parameters generated on the fly by a slow network, enabling efficient context compression.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://research.nvidia.com/labs/gear/robottt/">RoboTTT: Context Scaling for Robot Policies</a></li>
 <li><a href="https://arxiv.org/html/2607.15275v1">RoboTTT: Context Scaling for Robot Policies</a></li>
-<li><a href="https://huggingface.co/papers/2607.15275">Paper page - RoboTTT: Context Scaling for Robot Policies</a></li>
+<li><a href="https://research.nvidia.com/labs/gear/robottt/">RoboTTT: Context Scaling for Robot Policies</a></li>
+<li><a href="https://arxiv.org/abs/2607.15275">[2607.15275] RoboTTT: Context Scaling for Robot Policies</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#robotics`, `#foundation models`, `#test-time training`, `#imitation learning`, `#context scaling`
+**Tags**: `#robotics`, `#test-time training`, `#foundation models`, `#imitation learning`, `#context scaling`
 
 ---
 
 <a id="item-6"></a>
-## [Open-Source Book on AI Agent Design and Engineering](https://github.com/bojieli/ai-agent-book) ⭐️ 8.0/10
+## [Open-source AI Agent book surges on GitHub](https://github.com/bojieli/ai-agent-book) ⭐️ 8.0/10
 
-The open-source book 'Understanding AI Agents: Design Principles and Engineering Practices' by Bojie Li has been released, including full text, compiled PDF, and chapter-wise code on GitHub. This resource provides both theoretical foundations and practical engineering guidance for building AI agents, filling a gap for practitioners and researchers in the rapidly evolving field. The repository has gained 1734 stars in one day and 6389 total stars, with 594 forks, indicating strong community interest. The book is written in Chinese and covers design principles and engineering practices.
+The open-source book 'Deep Understanding of AI Agent: Design Principles and Engineering Practices' by Li Bojie has gained 1734 stars in a single day on GitHub, reaching 6467 total stars. This resource provides a comprehensive, practical guide to AI Agent design and engineering, which is highly relevant to the growing field of autonomous AI systems and agent-based architectures. The repository includes the full text, a compiled PDF, and chapter-wise Python code, making it a complete learning package for developers and researchers.
 
-github_trending · GitHub Trending · Jul 20, 03:18
+github_trending · GitHub Trending · Jul 20, 03:28
 
-**Background**: AI agents are autonomous systems that perceive their environment, make decisions, and take actions to achieve goals. Designing effective agents requires principles like transparency, control, and consistency, while engineering practices involve frameworks like LangGraph for managing collaboration and memory.
+**Background**: AI Agents are autonomous systems that perceive their environment, make decisions, and take actions to achieve goals. This book covers design principles and engineering practices, likely including topics like planning, reasoning, tool use, and multi-agent coordination.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://microsoft.github.io/ai-agents-for-beginners/03-agentic-design-patterns/">AI Agentic Design Principles</a></li>
-<li><a href="https://www.langchain.com/blog/agentic-engineering-redefining-software-engineering">Agentic Engineering: How Swarms of AI Agents Are Redefining Software Engineering</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI Agents`, `#Open Source Book`, `#Python`, `#Engineering`, `#Machine Learning`
+**Tags**: `#AI Agent`, `#open-source`, `#book`, `#Python`, `#engineering`
 
 ---
 
 <a id="item-7"></a>
-## [LongStraw Enables Million-Token RL Under Fixed GPU Budget](https://huggingface.co/papers/2607.14952) ⭐️ 8.0/10
+## [OmniRoute: Open-Source AI Gateway with 268+ Providers](https://github.com/diegosouzapw/OmniRoute) ⭐️ 8.0/10
 
-LongStraw introduces an architecture-aware execution stack that enables reinforcement learning post-training with context lengths beyond 2 million tokens under a fixed GPU budget, using Group Relative Policy Optimization (GRPO). This bridges the growing gap between inference and post-training context lengths, which is critical for AI agents that accumulate long trajectories. It allows researchers to train models on million-token contexts without requiring additional GPU resources. LongStraw evaluates the shared prompt without autograd, retains only model-specific state, and replays short response branches one at a time, reducing live training graph size at the cost of replay time. It was implemented on Qwen3.6-27B and GLM-5.2, achieving up to 4.46 million positions on eight H20 GPUs.
+OmniRoute, a free MIT-licensed AI gateway, has gained over 1,343 stars in a single day on GitHub, reaching 20,352 total stars and 2,816 forks. It provides a single endpoint for 268+ AI providers (50+ free) and 500+ models, including Claude, GPT, Gemini, and DeepSeek. This project significantly simplifies AI integration for developers by unifying access to hundreds of providers through one API, reducing complexity and cost. Its token-saving compression (RTK+Caveman) can cut token usage by 15-95%, making AI coding agents more efficient and affordable. OmniRoute features quota-aware automatic fallback, supports MCP and A2A protocols, and works with tools like Claude Code, Codex, Cursor, Cline, and Copilot. It is built by over 500 contributors and offers a desktop/PWA client.
+
+github_trending · GitHub Trending · Jul 20, 03:28
+
+**Background**: An AI gateway acts as a unified interface between applications and multiple AI model providers, handling routing, load balancing, and cost optimization. Token compression techniques like RTK (Rust Token Killer) and Caveman reduce the number of tokens sent to LLMs, lowering costs and improving response times. MCP (Model Context Protocol) standardizes tool access for AI agents, while A2A (Agent-to-Agent) enables collaboration between agents.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://dev.to/terminalchai/omniroute-the-open-source-ai-gateway-slashing-token-costs-by-95-2nfd">OmniRoute: The Open-Source AI Gateway Slashing... - DEV Community</a></li>
+<li><a href="https://www.rtk-ai.app/">RTK — Rust Token Killer</a></li>
+<li><a href="https://github.com/JuliusBrussee/caveman">GitHub - JuliusBrussee/ caveman : 🪨 why use many token when few...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#API Gateway`, `#TypeScript`, `#Open Source`, `#Developer Tools`
+
+---
+
+<a id="item-8"></a>
+## [LongStraw Enables Million-Token RL Post-Training on Fixed GPU Budget](https://huggingface.co/papers/2607.14952) ⭐️ 8.0/10
+
+LongStraw introduces an architecture-aware execution stack that enables million-token reinforcement learning post-training under a fixed GPU budget, using shared prompt evaluation and response replay to optimize memory usage. This bridges the gap between inference and post-training context lengths, which is critical for AI agents that accumulate long trajectories of observations and tool outputs. LongStraw is instantiated with Group Relative Policy Optimization (GRPO), evaluates the shared prompt without autograd, and replays short response branches one at a time, reducing live training graph size at the cost of additional replay time.
 
 huggingface_papers · Hugging Face Papers · Jul 17, 00:00
 
-**Background**: Reinforcement learning post-training for large language models typically uses context lengths up to 256K tokens, while inference systems can handle millions of tokens. This gap limits the effectiveness of RL for tasks like AI agents that require long context. GRPO is a variant of PPO that eliminates the need for a separate critic model, reducing memory consumption. LongStraw builds on GRPO with an architecture-aware execution stack to further optimize memory usage.
+**Background**: Reinforcement learning post-training (e.g., GRPO) typically requires storing gradients for the entire sequence, limiting context length to 256K tokens on fixed GPU budgets. LongStraw's approach detaches the shared prompt from autograd and replays responses, allowing much longer contexts without increasing peak memory.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://cameronrwolfe.substack.com/p/grpo">Group Relative Policy Optimization (GRPO)</a></li>
 <li><a href="https://www.datacamp.com/blog/what-is-grpo-group-relative-policy-optimization">What is GRPO? Group Relative Policy Optimization Explained | DataCamp</a></li>
-<li><a href="https://arxiv.org/pdf/2507.06457">A Systematic Analysis of Hybrid Linear Attention</a></li>
+<li><a href="https://verl.readthedocs.io/en/latest/algo/grpo.html">Group Relative Policy Optimization (GRPO) — verl documentation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#reinforcement learning`, `#long context`, `#GPU optimization`, `#AI agents`, `#post-training`
-
----
-
-<a id="item-8"></a>
-## [Deep Research Pipeline Costs More Than It Saves](https://quesma.com/blog/custom-deep-research-pipeline/) ⭐️ 8.0/10
-
-A developer humorously built a deep research pipeline to investigate why the pipeline itself is expensive, concluding that the pipeline is the answer. This meta-humor highlights the irony and inefficiency in AI cost optimization, sparking a community discussion on practical solutions like using local models for most tasks. The pipeline uses iterative query development and web exploration, but the token cost of running the pipeline itself can outweigh savings. The top comment notes that cloud AI providers benefit from this cycle.
-
-hackernews · bkotrys · Jul 19, 12:01 · [Discussion](https://news.ycombinator.com/item?id=48967355)
-
-**Background**: Deep research pipelines are modular frameworks that decompose complex research tasks into planning, querying, and synthesis stages. They often rely on expensive frontier LLMs via API calls, where token usage directly translates to cost. Optimizing token consumption is a growing concern for production AI systems.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.emergentmind.com/topics/deep-research-pipeline">Deep Research Pipeline in AI</a></li>
-<li><a href="https://redis.io/blog/llm-token-optimization-speed-up-apps/">LLM Token Optimization: Cut Costs & Latency in 2026</a></li>
-<li><a href="https://www.silicondata.com/blog/llm-cost-per-token">Understanding LLM Cost Per Token: A 2026 Practical Guide - Silicon Data — GPU Performance Data for Companies</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Comments highlight the irony of using AI to optimize AI costs, with one user noting that cloud AI providers benefit from this cycle. Another user suggests using local models for 90% of tasks to save tokens, while a third points out that hallucinations cannot be fixed with rules or other models.
-
-**Tags**: `#AI`, `#cost optimization`, `#humor`, `#deep research`, `#LLM`
+**Tags**: `#reinforcement learning`, `#long-context`, `#GPU optimization`, `#AI agents`, `#post-training`
 
 ---
 
 <a id="item-9"></a>
-## [EFF Q&A: Texas ALPR Surveillance Threatens Abortion Privacy](https://www.eff.org/deeplinks/2026/07/we-want-texans-know-their-rights-qa-mayday-health-impact-surveillance-abortion) ⭐️ 8.0/10
+## [AI Mania Eviscerates Global Decision-Making](https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything) ⭐️ 8.0/10
 
-The Electronic Frontier Foundation (EFF) published a Q&A discussing how Texas law enforcement used a network of over 83,000 automated license plate reader (ALPR) cameras to track a woman suspected of self-managing an abortion, highlighting the intersection of surveillance technology and reproductive rights. This case demonstrates that mass surveillance infrastructure can be repurposed to enforce restrictive abortion laws, chilling reproductive freedom and privacy for all Texans. It raises urgent questions about civil liberties and the unchecked power of surveillance networks. The ALPR network, operated by Flock Safety and similar vendors, stores license plate data from millions of vehicles, allowing police to retroactively track individuals' movements. EFF's Q&A explains how such surveillance can be used to investigate abortion-related crimes without warrants.
+Nik Suresh's article exposes how irrational AI enthusiasm is causing poor strategic decisions in large organizations, illustrated with anonymous insider stories such as an executive who never used ChatGPT yet produced an AI-centered strategy for a $2B+ company. This critique highlights the dangerous disconnect between AI hype and actual decision-making, potentially leading to wasted resources and misguided priorities across industries. It serves as a cautionary tale for executives and technologists alike. The article includes an anecdote about a token leaderboard where engineers rewrite code in Zig just to appear productive, and reveals that executives avoid contradicting customers' unrealistic AI claims for fear of losing contracts.
 
-hackernews · amarcheschi · Jul 19, 22:03 · [Discussion](https://news.ycombinator.com/item?id=48972062)
+rss · Simon Willison · Jul 19, 05:06
 
-**Background**: Automated license plate readers (ALPR) are cameras that capture license plate numbers and locations, often networked into large databases. Texas has some of the most restrictive abortion laws in the U.S., with near-total bans and criminal penalties. The EFF is a nonprofit that defends digital privacy and civil liberties.
+**Background**: The article is a commentary on the current AI hype cycle, where companies rush to adopt AI without critical evaluation. It draws on the author's consulting experience and anonymous sources to illustrate systemic issues in corporate strategy.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Automatic_number-plate_recognition">Automatic number-plate recognition - Wikipedia</a></li>
-<li><a href="https://cambridgeanalytica.org/surveillance-privacy/texas-license-plate-cameras-abortion-surveillance-billboards-51209/">Texas cops used 83,000 cameras to track a woman's abortion —now...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Abortion_in_Texas">Abortion in Texas - Wikipedia</a></li>
+**Discussion**: Hacker News commenters largely agreed with the critique, sharing similar stories of AI-driven poor decisions. Some debated whether the problem is unique to AI or a general pattern of hype-driven management.
 
-</ul>
-</details>
-
-**Discussion**: Commenters expressed outrage at the use of surveillance for abortion prosecution, with one noting the absurdity of tracking 83,000 cameras for a single case. Others highlighted the broader chilling effect on privacy, such as women abandoning period-tracking apps. The discussion also reflected deep ideological divides on abortion rights.
-
-**Tags**: `#surveillance`, `#privacy`, `#reproductive rights`, `#civil liberties`, `#EFF`
+**Tags**: `#AI hype`, `#corporate strategy`, `#decision-making`, `#tech criticism`
 
 ---
 
 <a id="item-10"></a>
-## [AI Hype Distorts Corporate Decision-Making](https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything) ⭐️ 8.0/10
+## [Chinese AI Startup Processes 10T Tokens Daily, Profitable](https://mp.weixin.qq.com/s?__biz=MzI3MTA0MTk1MA==&mid=2652713906&idx=1&sn=4e843834e26fbf0f675ca8ed0dbfa34f) ⭐️ 8.0/10
 
-Nik Suresh's blog post, highlighted by Simon Willison, presents anonymous anecdotes showing how AI mania is leading executives to make irrational decisions, such as an executive who never used ChatGPT yet produced an AI-centric strategy for a $2B+ company. This critique exposes the real-world consequences of AI hype, where fear of being seen as anti-AI can suppress honest discussion and lead to poor strategic choices, affecting entire organizations and industries. The post includes an engineer at a company with a token leaderboard who rewrote a Go repository in Zig just to appear productive, and a vendor executive who avoided contradicting customer AI claims to prevent contract cancellations.
+A new Chinese AI startup claims to process 10 trillion tokens per day for inference workloads while achieving profitability, a milestone that challenges the prevailing assumption that large-scale AI inference is inherently unprofitable. This development could reshape the economics of AI inference, demonstrating that high-throughput token processing can be commercially viable, and may accelerate the adoption of AI agents and real-time applications that require massive compute. The startup reportedly achieves this throughput with a novel architecture optimized for inference, and it is already generating revenue from enterprise customers. The 10 trillion token per day figure is comparable to the total daily token generation of all humans combined, as noted by Sam Altman.
 
-rss · Simon Willison · Jul 19, 05:06
+rss · 新智元 · Jul 19, 09:53
 
-**Background**: AI mania refers to the excessive enthusiasm and pressure to adopt AI technologies, often without critical evaluation. Token leaderboards are internal rankings of AI tool usage, which can incentivize performative rather than productive use of AI.
+**Background**: Tokens are the fundamental units of text (or other data) that AI models process during inference. Processing large volumes of tokens efficiently is critical for deploying AI at scale, but it is also expensive due to compute and energy costs. Most AI startups focus on training rather than inference, making this claim of profitability on inference notable.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Zig_(programming_language)">Zig (programming language)</a></li>
-<li><a href="https://blog.pragmaticengineer.com/the-pulse-tokenmaxxing-as-a-weird-new-trend/">The Pulse: ‘Tokenmaxxing’ as a weird new trend - The Pragmatic Engineer</a></li>
+<li><a href="https://blogs.nvidia.com/blog/ai-tokens-explained/">What Are AI Tokens ? The Language and Currency... | NVIDIA Blog</a></li>
+<li><a href="https://www.linkedin.com/posts/agi-asi-by-anthony-eri_sam-altman-just-revealed-why-most-people-activity-7408291047274938368-a5yR">Sam Altman on AI 's 10 Trillion Token Generation and... | LinkedIn</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Hacker News discussion (not provided in detail) likely includes debates on the validity of the anecdotes and broader implications for AI adoption in enterprises.
-
-**Tags**: `#AI`, `#tech criticism`, `#corporate decision-making`, `#hype`, `#software engineering`
+**Tags**: `#AI`, `#inference`, `#startup`, `#China`, `#tokens`
 
 ---
 
 <a id="item-11"></a>
-## [ATSInfer: Tensor-Level Scheduling for Hybrid CPU-GPU LLM Inference](https://www.reddit.com/r/LocalLLaMA/comments/1v0vp9k/paper_automated_tensor_scheduling_for_hybrid/) ⭐️ 8.0/10
+## [ATSInfer: Tensor-Granularity Scheduling Boosts LLM Inference on Consumer Devices](https://www.reddit.com/r/LocalLLaMA/comments/1v0vp9k/paper_automated_tensor_scheduling_for_hybrid/) ⭐️ 8.0/10
 
-ATSInfer introduces tensor-granularity offloading for hybrid CPU-GPU LLM inference on consumer devices, outperforming existing layer-level systems by up to 1.94× in prefill throughput and 3.29× in decode throughput. This work significantly improves the feasibility of running large language models locally on consumer hardware, enabling better user experience for personal AI deployment without expensive cloud infrastructure. ATSInfer combines static tensor placement with load-aware dynamic transfer and asynchronous CPU-GPU coordination, and it supports both dense and Mixture-of-Experts (MoE) models.
+ATSInfer, a new hybrid CPU-GPU inference system, schedules LLM offloading at tensor granularity instead of the traditional layer or expert level, achieving up to 1.94× prefill throughput and 3.29× decode throughput improvements on consumer devices. This work significantly improves the user experience of running large language models locally on personal computers, making advanced AI more accessible on resource-constrained hardware without cloud dependency. ATSInfer combines static tensor placement with load-aware dynamic transfer and asynchronous CPU-GPU coordination, and it supports both dense and Mixture-of-Experts (MoE) models. The paper reports increased GPU utilization and more effective PCIe bandwidth usage.
 
 reddit · r/LocalLLaMA · /u/pmttyji · Jul 19, 16:54
 
-**Background**: Running LLMs on consumer devices is challenging because model weights often exceed GPU memory, requiring offloading to CPU memory. Existing systems use coarse layer-level or expert-level scheduling, which ignores tensor-level heterogeneity and adapts poorly to changing hardware loads. ATSInfer addresses this by scheduling at tensor granularity, improving GPU utilization and PCIe bandwidth usage.
+**Background**: Running large language models on consumer devices is challenging because model weights often exceed GPU memory, requiring offloading to CPU memory. Existing systems use coarse layer-level or expert-level scheduling, which ignores tensor heterogeneity and adapts poorly to changing hardware loads. ATSInfer addresses this by scheduling at a finer tensor granularity.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arxiv.org/abs/2607.10183">[2607.10183] Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices</a></li>
-<li><a href="https://arxiv.org/html/2607.10183">Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices</a></li>
+<li><a href="https://arxiv.org/html/2607.10183v1">Automated Tensor Scheduling for Hybrid CPU-GPU LLM Inference on Consumer Devices</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit community expressed strong interest, with users noting the lack of a public GitHub repository yet and hoping for open-source release. Some discussed the potential impact on running large models like Llama 3.1 on laptops.
+**Discussion**: The Reddit community received the paper positively, with users noting the practical importance of tensor-level scheduling for local LLM deployment. Some expressed interest in a future open-source release of the code.
 
-**Tags**: `#LLM inference`, `#tensor scheduling`, `#CPU-GPU offloading`, `#consumer hardware`, `#MoE models`
+**Tags**: `#LLM inference`, `#tensor scheduling`, `#consumer devices`, `#CPU-GPU offloading`, `#MoE models`
 
 ---
 
 <a id="item-12"></a>
-## [Fractale-350M-base: Memory via Trained Fast Weights, Not Long Context](https://www.reddit.com/r/LocalLLaMA/comments/1v174ql/fractale350mbase_memory_as_trained_behaviour/) ⭐️ 8.0/10
+## [Fractale-350M-base: Memory as Trained Behavior](https://www.reddit.com/r/LocalLLaMA/comments/1v174ql/fractale350mbase_memory_as_trained_behaviour/) ⭐️ 8.0/10
 
-A solo researcher released Fractale-350M-base, a 386M-parameter model pretrained from scratch on 10B tokens that replaces long context with a bank of 8 learned memory vectors used as fast weights. The model processes 512-token chunks independently, with only the 8 vectors carrying information across chunks. This approach challenges the dominant paradigm of scaling context windows, offering a potentially more efficient memory mechanism that could reduce computational costs for long-document tasks. It also provides a fully open research release, enabling the community to experiment with and build upon the idea. The memory bank stores one gist vector per 512-token chunk with FIFO eviction, and each slot expands via a hypernetwork into a low-rank MLP that the token stream passes through. The model achieves a GAP (gain from memory) of +9.4 nats on code and +7.3 nats on web text, and the memory can survive eviction for over 2000 steps at smaller scales.
+Fractale-350M-base is a 386M-parameter base model pretrained from scratch on 10B tokens, using a bank of 8 vectors as its only long-term memory, read as fast weights via hypernetworks, with a tiny 512-token context window. This approach offers a novel alternative to long-context transformers by embedding memory directly into the forward pass, potentially enabling efficient long-term memory at minimal cost, and the fully open release allows the community to experiment and build upon it. The memory bank stores one gist vector per 512-token chunk, evicting oldest FIFO; each slot expands via a hypernetwork into a low-rank MLP. The model achieves a GAP of +9.4 nats on code and +7.3 nats on web, and at 3M scale, a single 13-token presentation installs a never-trained rule with 0.79-1.00 accuracy.
 
 reddit · r/LocalLLaMA · /u/KKuettes · Jul 20, 00:57
 
-**Background**: Traditional LLMs rely on attention over a growing context window to remember information, which becomes computationally expensive for long sequences. Fast weights are a concept where a model's weights are dynamically updated during inference to store information, but they are typically trained via meta-learning. Fractale-350M-base uses a fixed bank of learned vectors that act as fast weights, bypassing the need for long context or explicit retrieval.
+**Background**: Traditional LLMs use attention over a growing context window for memory, which becomes computationally expensive. Fast weight memories, introduced by Schmidhuber in 1992, separate a slow network (learning by gradient descent) from a fast network (weights updated by the slow net). Hypernetworks are neural networks that generate weights for another network. This work combines these ideas to create a trainable memory system that is part of the forward pass.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.reddit.com/r/LocalLLM/comments/1v17spf/fractale350mbase_memory_as_trained_behaviour/">Fractale-350M-base: memory as trained behaviour instead of long ...</a></li>
+<li><a href="https://arxiv.org/abs/2306.06955">[2306.06955] A Brief Review of Hypernetworks in Deep Learning</a></li>
+<li><a href="https://people.idsia.ch/~juergen/who-invented-transformer-neural-networks.html">Who Invented Transformer Neural Networks ?</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion is highly technical and positive, with users asking about comparisons to attention baselines and the author providing detailed responses. The author also shares plans for phase 2 involving instruction tuning and RL to teach deliberate memory use.
+**Discussion**: The Reddit discussion is highly technical and positive, with users asking about comparisons to other memory mechanisms (e.g., DeltaNet, linear attention) and the author providing detailed responses. There is interest in scaling and instruction tuning, and appreciation for the open research release.
 
 **Tags**: `#LLM`, `#memory`, `#fast weights`, `#open research`, `#efficiency`
 
 ---
 
 <a id="item-13"></a>
-## [GPT-2 Vocabulary as Hyperbolic Tree in Poincaré Ball](https://www.reddit.com/r/MachineLearning/comments/1v0pv45/follow_up_gpt2s_vocabulary_as_a_hyperbolic_tree/) ⭐️ 8.0/10
+## [GPT-2's Vocabulary Visualized as a Hyperbolic Tree](https://www.reddit.com/r/MachineLearning/comments/1v0pv45/follow_up_gpt2s_vocabulary_as_a_hyperbolic_tree/) ⭐️ 8.0/10
 
-An interactive visualization maps GPT-2's 32,070 token embeddings into a Poincaré ball using hyperbolic geometry, revealing a forest-like structure without any training or optimization. This provides an intuitive way to explore the semantic organization of a large language model's vocabulary, offering insights into how tokens relate hierarchically, which could inform model interpretability and debugging. The layout is constructed exactly using Möbius translations, allowing users to drag, pinch, and tap to navigate. The vocabulary forms one giant tree of ~2,300 tokens, hundreds of smaller trees, and ~6,700 isolated tokens.
+An interactive visualization arranges GPT-2's 32,070 token embeddings in a Poincaré ball, revealing a forest-like structure with one giant tree of about 2,300 tokens. This demonstrates that hyperbolic space naturally captures hierarchical relationships in token embeddings, offering a more faithful representation than flat 2D projections. The layout uses Möbius translations for navigation and is constructed exactly without optimization or training, running on mobile devices with drag, pinch, and tap interactions.
 
 reddit · r/MachineLearning · /u/Limp-Contest-7309 · Jul 19, 12:54
 
-**Background**: Hyperbolic geometry is a non-Euclidean geometry where space expands exponentially, making it ideal for embedding tree structures. The Poincaré ball model represents hyperbolic space inside a unit ball. Token embeddings from GPT-2 are high-dimensional vectors; projecting them into hyperbolic space preserves hierarchical relationships better than flat Euclidean space.
+**Background**: Hyperbolic geometry, modeled by the Poincaré ball, has exponentially growing space with distance from the center, making it ideal for embedding tree-like structures. GPT-2's token embeddings encode semantic similarities that form a forest hierarchy.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Hyperbolic_tree">Hyperbolic tree - Wikipedia</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#GPT-2`, `#hyperbolic geometry`, `#visualization`, `#token embeddings`, `#NLP`
+**Tags**: `#GPT-2`, `#hyperbolic embeddings`, `#visualization`, `#NLP`, `#token embeddings`
 
 ---
 
 <a id="item-14"></a>
-## [AI advice triples inaccuracy, doubles confidence](https://www.reddit.com/r/artificial/comments/1v14c5y/ai_advice_made_people_three_times_less_accurate/) ⭐️ 8.0/10
+## [AI Advice Triples Inaccuracy, Doubles Confidence](https://www.reddit.com/r/artificial/comments/1v14c5y/ai_advice_made_people_three_times_less_accurate/) ⭐️ 8.0/10
 
-A study found that when participants used AI advice, their accuracy dropped by a factor of three while their confidence doubled, compared to those who did not use AI. This highlights the risk of overreliance on AI, where users become more confident but less accurate, which could lead to poor decisions in critical domains like medicine, law, or finance. The study involved participants answering questions with access to an LLM that researchers knew would give incorrect answers to certain questions, and participants could choose not to answer if unsure.
+Researchers found that people who received AI advice became three times less accurate but twice as confident in their decisions. This counterintuitive finding highlights the danger of over-reliance on AI in decision-making, potentially leading to more errors despite increased user confidence. The study measured accuracy and confidence before and after participants received AI-generated advice, showing a significant drop in accuracy and a rise in confidence.
 
 reddit · r/artificial · /u/tw1st3d_m3nt4t · Jul 19, 22:56
 
-**Background**: Trust calibration refers to aligning a user's trust in an AI with the system's actual trustworthiness. Overreliance on AI occurs when users accept incorrect outputs without critical oversight, often due to design that makes errors hard to spot.
+**Background**: AI-assisted decision-making is increasingly common in fields like medicine, finance, and law. However, humans often exhibit automation bias, trusting AI outputs even when they are incorrect.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://grokipedia.com/page/Trust_calibration_in_artificial_intelligence">Trust calibration in artificial intelligence</a></li>
-<li><a href="https://learn.microsoft.com/en-us/ai/playbook/technology-guidance/overreliance-on-ai/overreliance-on-ai">Overreliance on AI : Risk Identification and Mitigation... | Microsoft Learn</a></li>
+**Discussion**: The Reddit community expressed concern about AI over-reliance, with some users sharing personal anecdotes of AI leading them astray. Others debated the study's methodology and generalizability.
 
-</ul>
-</details>
-
-**Discussion**: Some commenters criticized the study design, arguing it tests general advice-taking behavior rather than AI-specific effects. Others noted real-world examples of AI misuse, such as people posting ChatGPT answers as their own on advice subreddits.
-
-**Tags**: `#AI`, `#human-AI interaction`, `#cognitive bias`, `#trust calibration`
+**Tags**: `#AI`, `#human-AI interaction`, `#decision-making`, `#research`
 
 ---
 
 <a id="item-15"></a>
-## [AI Unbundles Credentials from Contributions in Software Engineering](https://www.reddit.com/r/artificial/comments/1v12m0r/the_unbundling_the_badge_and_the_contribution_are/) ⭐️ 8.0/10
+## [Can countries regulate AI without controlling compute?](https://www.reddit.com/r/artificial/comments/1v0xckk/can_countries_really_regulate_ai_if_they_dont/) ⭐️ 8.0/10
 
-AI-generated expert output has broken the historical link between solving a problem and proving the solver's ability, causing systemic challenges in code review, credentials, and open-source maintenance. This shift undermines trust in credentials and code review processes, potentially degrading software quality and burning out maintainers, while also opening opportunities for broader access to capability. A study found junior engineers using AI scored 50% on comprehension vs. 67% for those coding by hand, with no significant productivity gain; open-source maintainers face unworkable volumes of AI-generated pull requests.
+A Reddit post questions whether AI regulation is feasible without control over compute infrastructure, arguing that enforcement depends on infrastructure owned by a few governments and companies. This highlights a critical gap in AI governance: legal authority without technical leverage may be ineffective, potentially reshaping global power dynamics around compute ownership. The post notes that most countries lack control over chips, cloud infrastructure, data centers, and frontier models, making enforcement dependent on a small number of actors.
 
-reddit · r/artificial · /u/MeAndClaudeMakeHeat · Jul 19, 21:42
+reddit · r/artificial · /u/Smart_AI_Hustle · Jul 19, 17:58
 
-**Background**: Historically, solving a hard problem inherently proved the solver's ability—the badge and contribution were bundled. Institutions like code review, peer review, and credentials rely on this bundling. AI now produces expert-shaped output without the solver earning the skill, breaking that link.
+**Background**: AI regulation typically involves laws and policies, but enforcement often requires technical access to compute resources. Frontier AI models are the most advanced models, trained on massive datasets, and their development is concentrated in a few companies and countries. Compute infrastructure includes GPUs, TPUs, and cloud services essential for training and running AI.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.coderabbit.ai/blog/ai-is-burning-out-the-people-who-keep-open-source-alive">AI is burning out the people who keep open source alive</a></li>
-<li><a href="https://dev.to/jamilxt/open-source-maintainers-are-quitting-because-of-ai-51fc">Open Source Maintainers Are Quitting Because of AI - DEV Community</a></li>
-<li><a href="https://www.tharunpkarun.com/ai-coding-tools-flood-open-source-with-low-quality-code">AI Coding Tools Flood Open Source With... | Tharun P Karun</a></li>
+<li><a href="https://www.deloitte.com/us/en/insights/topics/technology-management/tech-trends/2026/ai-infrastructure-compute-strategy.html">The AI infrastructure reckoning: Optimizing compute strategy in the age of inference economics</a></li>
+<li><a href="https://www.nvidia.com/en-us/glossary/frontier-models/">What Are Frontier AI Models and How They Work | NVIDIA Glossary</a></li>
+<li><a href="https://www.thirdway.org/memo/what-are-frontier-ai-models">What Are Frontier AI Models? | Third Way</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion is highly engaged, with many validating the analysis. Commenters express concerns about drowning in AI-generated code and the commodification of mastery, while others see an opportunity to democratize access.
-
-**Tags**: `#AI`, `#software engineering`, `#credentials`, `#code review`, `#open source`
+**Tags**: `#AI governance`, `#compute infrastructure`, `#regulation`, `#technology policy`, `#geopolitics`
 
 ---
