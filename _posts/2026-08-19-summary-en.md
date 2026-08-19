@@ -5,178 +5,179 @@ date: 2026-08-19
 lang: en
 ---
 
-> From 131 items, 15 important content pieces were selected
+> From 126 items, 15 important content pieces were selected
 
 ---
 
-1. [Mojo Programming Language Open-Sourced Under Apache 2.0](#item-1) ⭐️ 9.0/10
-2. [VibeWorlding: Benchmarking Multimodal Agents for 3D World Construction](#item-2) ⭐️ 8.0/10
-3. [SA-MRPO: Saturation-Aware Reweighting for Multi-Reward RL](#item-3) ⭐️ 8.0/10
-4. [Linux 7.3 Boosts Performance When GPU VRAM Runs Out](#item-4) ⭐️ 8.0/10
-5. [Rethinking Database Programming: Non-SQL Schema Definition Sparks Debate](#item-5) ⭐️ 8.0/10
-6. [Asana Completes 5 Years of Engineering Work in 2 Weeks with OpenAI Codex](#item-6) ⭐️ 8.0/10
-7. [Microsoft Copilot Secret Parameter Enables Password Theft](#item-7) ⭐️ 8.0/10
+1. [Mojo Programming Language Goes Open Source Under Apache 2](#item-1) ⭐️ 9.0/10
+2. [VibeWorlding: A Unified Framework for 3D Open World Construction by Multimodal Agents](#item-2) ⭐️ 8.0/10
+3. [SA-MRPO: Saturation-Aware Advantage Reweighting for Multi-Reward Policy Optimization](#item-3) ⭐️ 8.0/10
+4. [Apple Replaces Core Technology Fee with 5% Commission in EU](#item-4) ⭐️ 8.0/10
+5. [Linux 7.3 Improves VRAM Exhaustion Handling](#item-5) ⭐️ 8.0/10
+6. [Asana completes 5 years of engineering work in 2 weeks with Codex](#item-6) ⭐️ 8.0/10
+7. [Microsoft Copilot flaw allows one-click password theft via hidden parameter](#item-7) ⭐️ 8.0/10
 8. [Alibaba's RISC-V CPU Runs Qwen-3.8 27B at 30 tps](#item-8) ⭐️ 8.0/10
-9. [Memory Prices Surge 500% in a Year, 128GB DDR5 Hits $3,399](#item-9) ⭐️ 8.0/10
-10. [DeepSeek V4 Flash Q4_K_XL Hits 100 tok/s on 4× RTX 3060](#item-10) ⭐️ 8.0/10
-11. [DFlash 2: Parallel Drafting Boosts Speculative Decoding](#item-11) ⭐️ 8.0/10
-12. [Qwen3.8-27B hits 124 tps on RTX 3090 via hyper-optimized engine](#item-12) ⭐️ 8.0/10
-13. [Anthropic-Cybersecurity-Skills: 817 AI Agent Skills for Security](#item-13) ⭐️ 8.0/10
-14. [Unsloth Gains 449 Stars, Adds Support for Qwen3.8 and DeepSeek-V4](#item-14) ⭐️ 8.0/10
-15. [omlx: LLM Inference Server with Continuous Batching & SSD Caching for Apple Silicon](#item-15) ⭐️ 8.0/10
+9. [Memory prices surge 500% in a year, 128GB DDR5 now $3,399](#item-9) ⭐️ 8.0/10
+10. [DeepSeek V4 Flash Q4_K_XL runs at ~100 tok/s on 4× RTX 3060](#item-10) ⭐️ 8.0/10
+11. [GLM5.3 Benchmarks Surface on Artificial Analysis](#item-11) ⭐️ 8.0/10
+12. [Qwen3.8-27B hits 124 tps on RTX 3090 via advanced optimizations](#item-12) ⭐️ 8.0/10
+13. [ComfyUI Launches Official Local Open-Source MCP Server](#item-13) ⭐️ 8.0/10
+14. [Anthropic-Cybersecurity-Skills: 817 AI Agent Security Skills Go Viral](#item-14) ⭐️ 8.0/10
+15. [ai-memory: Rust-based Long-Term Memory for Agent Coding CLIs](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Mojo Programming Language Open-Sourced Under Apache 2.0](https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/) ⭐️ 9.0/10
+## [Mojo Programming Language Goes Open Source Under Apache 2](https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/) ⭐️ 9.0/10
 
-Modular has open-sourced the Mojo programming language, including its compiler and toolchain, under the Apache 2.0 license. This release follows the recent Mojo 1.0 milestone and fulfills a promise made in May 2023. This open-sourcing is a major milestone for the AI and developer community, as Mojo is designed to combine Python-like syntax with high performance for AI workloads. It could accelerate adoption and foster a broader ecosystem around Mojo, potentially impacting Python-based AI tooling and performance-sensitive applications. Mojo was originally intended to be a superset of Python, but this goal was abandoned around August 2025; it is now its own language. Mojo builds on the MLIR compiler framework, enabling efficient compilation to CPUs, GPUs, TPUs, and other accelerators.
+Mojo, the programming language developed by Modular, has been officially open-sourced under the Apache 2 license, following the release of version 1.0 last week. This fulfills a promise made in May 2023 to eventually open source the language. Open-sourcing Mojo under a permissive license is a significant milestone that could accelerate its adoption in the AI/ML and systems programming communities. It allows developers to inspect, modify, and contribute to the compiler and toolchain, potentially fostering a vibrant ecosystem around the language. Mojo was originally intended to be a superset of Python, but this goal was abandoned around August 2025; it is now its own language with Python-inspired syntax. The compiler is built on MLIR, which enables targeting GPUs, TPUs, and other accelerators, making it well-suited for AI workloads.
 
 rss · Simon Willison · Aug 18, 21:39
 
-**Background**: Mojo is a systems programming language developed by Modular Inc., designed for high-performance AI infrastructure. It uses a syntax reminiscent of Python but incorporates systems programming features like static typing and a borrow checker, inspired by Rust. The language leverages the MLIR compiler framework to target diverse hardware, making it well-suited for AI applications.
+**Background**: Mojo is a systems programming language developed by Modular Inc., designed to combine Python's ease of use with C-like performance for AI infrastructure. It leverages the MLIR compiler framework to enable high-level optimizations and support for diverse hardware. The Apache 2 license is a permissive open-source license that allows free use, modification, and distribution, which is common for major open-source projects.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mojo_(programming_language)">Mojo (programming language)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Apache_License">Apache License</a></li>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License , Version 2 .0 | Apache Software Foundation</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion on Lobste.rs and Reddit generally expresses excitement and approval, with many noting the fulfillment of a long-awaited promise. Some users discuss the implications of Mojo no longer being a Python superset, while others highlight the potential benefits of open-sourcing for transparency and community contributions.
+**Discussion**: The announcement has generated positive reactions on platforms like Lobste.rs, with many expressing excitement about the open-sourcing and its potential to boost Mojo's adoption. Some commenters noted the shift away from Python superset compatibility, but overall sentiment is optimistic about the language's future.
 
-**Tags**: `#Mojo`, `#open source`, `#programming language`, `#AI`, `#compiler`
+**Tags**: `#Mojo`, `#open source`, `#programming language`, `#compiler`, `#AI/ML`
 
 ---
 
 <a id="item-2"></a>
-## [VibeWorlding: Benchmarking Multimodal Agents for 3D World Construction](https://huggingface.co/papers/2608.15265) ⭐️ 8.0/10
+## [VibeWorlding: A Unified Framework for 3D Open World Construction by Multimodal Agents](https://huggingface.co/papers/2608.15265) ⭐️ 8.0/10
 
-VibeWorlding introduces a unified framework and benchmark, VWE-BENCH, with 2,616 3D assets, 323 seed worlds, and 6,828 multimodal queries, to train and evaluate multimodal agents that construct interactive 3D worlds from user queries. The paper also presents VibeWorlding-Gym, a reinforcement learning post-training framework, and shows that their VibeWorlder-30B-A3B model achieves the best Pass@1 among all evaluated models, surpassing closed-source frontiers. This work addresses a significant gap in evaluating multimodal agents for complex 3D world construction, moving beyond idealized simple queries. By demonstrating that reinforcement learning can boost open-source models to surpass closed-source ones, it has implications for embodied AI and interactive systems, potentially democratizing advanced 3D generation capabilities. The benchmark includes verified queries with ground-truth and unverified queries with carefully designed rubrics. The VibeWorlding-Gym integrates a sandbox environment with MCP tools for asset retrieval, editing, and rendering, and a rubric-based verifier that checks physical feasibility and intent fulfillment. Current frontier MLLMs like GPT-5.5 and Qwen3.8-Max achieve below 60% success rate, with the bottleneck traced to precise 3D world editing.
+VibeWorlding introduces a unified framework and benchmark (VWE-BENCH) for training and evaluating multimodal agents that construct 3D open worlds from user queries, along with a reinforcement learning post-training method (VibeWorlding-Gym). Experiments show that RL-trained open-source models, such as VibeWorlder-30B-A3B, outperform closed-source frontier models like GPT-5.5 and Qwen3.8-Max on the benchmark. This work addresses a challenging and emerging area at the intersection of multimodal AI, 3D understanding, and agentic systems, providing a standardized benchmark and training paradigm that could accelerate research in interactive 3D world generation. The finding that RL can boost open-source models beyond closed-source counterparts has significant implications for democratizing advanced AI capabilities. The benchmark VWE-BENCH includes 2,616 high-quality 3D assets, 323 human-annotated seed worlds, and 6,828 reverse-synthesized multimodal queries, split into verified and unverified sets. The framework uses MCP tools for asset retrieval, editing, and rendering, and a rubric-based verifier for physical feasibility and intent fulfillment; the flagship model VibeWorlder-30B-A3B achieves the best Pass@1 among all evaluated models.
 
 huggingface_papers · Hugging Face Papers · Aug 18, 00:00
 
-**Background**: Multimodal agents are AI systems that process and reason across multiple data types, such as text, images, and audio, often using external tools. 3D world generation from text is an emerging field, with systems like Meta's WorldGen generating interactive 3D scenes from prompts. Reinforcement learning is a machine learning paradigm where agents learn through trial-and-error interactions with an environment, which has been applied to improve AI agent performance.
+**Background**: Multimodal agents are AI systems that can process and generate multiple types of data, such as text, images, and 3D scenes. Constructing interactive 3D open worlds from natural language queries requires understanding user intent, planning scene layouts, and using 3D tools, which is a complex task that current models struggle with. Reinforcement learning (RL) is a training method where agents learn by interacting with an environment and receiving rewards, which can improve performance on such tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Multimodal_and_tool-use_in_AI_agents">Multimodal and tool-use in AI agents</a></li>
-<li><a href="https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/">Research Update: WorldGen — From Text to Immersive 3D Worlds</a></li>
-<li><a href="https://hackernoon.com/beyond-transformers-the-overlooked-potential-of-reinforcement-learning">Beyond Transformers: The Overlooked Potential of Reinforcement ...</a></li>
+<li><a href="https://huggingface.co/papers/2608.15265">Paper page - VibeWorlding: Can Multimodal Agents Construct ...</a></li>
+<li><a href="https://github.com/usail-hkust/VibeWorlding-Gym">GitHub - usail-hkust/ VibeWorlding -Gym · GitHub</a></li>
+<li><a href="https://arxiv.org/pdf/2608.15265">VibeWorlding: Can Multimodal Agents Construct 3 D Open Worlds ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#multimodal agents`, `#3D world generation`, `#benchmark`, `#reinforcement learning`, `#AI`
+**Tags**: `#multimodal agents`, `#3D world generation`, `#benchmarking`, `#reinforcement learning`, `#AI research`
 
 ---
 
 <a id="item-3"></a>
-## [SA-MRPO: Saturation-Aware Reweighting for Multi-Reward RL](https://huggingface.co/papers/2608.16072) ⭐️ 8.0/10
+## [SA-MRPO: Saturation-Aware Advantage Reweighting for Multi-Reward Policy Optimization](https://huggingface.co/papers/2608.16072) ⭐️ 8.0/10
 
-The paper introduces SA-MRPO, a method that standardizes each reward objective independently and adaptively discounts saturated objectives based on batch-level saturation estimates, dynamically reallocating optimization effort toward under-optimized goals. It improves the harder correctness objective over GDPO in 12 of 15 benchmark comparisons, with gains up to 5% on AIME24. This work addresses a fundamental limitation in multi-reward RL for LLMs, where fixed weighted sum scalarization leads to inefficient gradient allocation. By focusing on under-optimized objectives, SA-MRPO could improve training efficiency and final performance, benefiting the broader AI alignment and post-training community. SA-MRPO can reverse the sign of an update, not just rescale its magnitude, which is a notable property. It shows consistent improvements across mathematical reasoning, adaptive reasoning, and coding benchmarks, while maintaining performance on easier objectives.
+The paper introduces SA-MRPO, a method that standardizes each reward objective independently and adaptively discounts saturated objectives based on batch-level saturation estimates, reallocating optimization effort toward under-optimized goals. It demonstrates improvements over GDPO in mathematical reasoning, adaptive reasoning, and coding benchmarks. This work addresses a fundamental limitation in multi-reward RL for LLM post-training, where fixed weighted scalarization leads to inefficient gradient allocation. By dynamically reweighting objectives, SA-MRPO can improve training efficiency and final performance, potentially benefiting the broader RLHF/LLM alignment community. SA-MRPO can reverse the sign of an update in certain parameter subspaces, not just rescale its magnitude. It improves the harder correctness objective over GDPO in 12 of 15 benchmark comparisons, with gains up to 5% on AIME24, and improves accuracy on all five adaptive reasoning benchmarks by 3.8% on average.
 
 huggingface_papers · Hugging Face Papers · Aug 18, 00:00
 
-**Background**: Group-relative policy optimization methods like GRPO are standard for post-training LLMs, but they typically scalarize multiple rewards with fixed weights before standardization. This can cause rollouts with different reward profiles to receive identical advantages and continue optimizing already-solved objectives. SA-MRPO addresses this by independently standardizing each reward and adaptively discounting saturated ones.
+**Background**: Reinforcement learning with group-relative advantages, such as GRPO, is widely used for post-training language models. However, when optimizing multiple rewards, existing methods typically use a fixed weighted sum before standardization, which can cause rollouts with different reward profiles to receive identical advantages and allocate gradient budget to already-solved objectives. SA-MRPO addresses this by independently standardizing each reward and adaptively discounting saturated objectives.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2601.23058v1">From Absolute to Relative: Rethinking Reward Shaping in Group-Based Reinforcement Learning</a></li>
-<li><a href="https://cameronrwolfe.substack.com/p/grpo">Group Relative Policy Optimization (GRPO)</a></li>
-<li><a href="https://huggingface.co/papers/2601.05242">Paper page - GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization</a></li>
+<li><a href="https://arxiv.org/pdf/2608.16072">Learn What's Left, Not What's Mastered: Saturation Aware ...</a></li>
+<li><a href="https://paperium.net/article/en/22776/learn-whats-left-not-whats-mastered-saturation-aware-advantage-reweightingfor-multi-reward-policy-op">Learn What's Left, Not What's Mastered: Saturation Aware ... | Paperium</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#reinforcement learning`, `#multi-objective optimization`, `#LLM post-training`, `#policy optimization`, `#AI alignment`
+**Tags**: `#reinforcement learning`, `#multi-objective optimization`, `#LLM post-training`, `#policy optimization`, `#RLHF`
 
 ---
 
 <a id="item-4"></a>
-## [Linux 7.3 Boosts Performance When GPU VRAM Runs Out](https://pixelcluster.dev/VRAM-Overcommit/) ⭐️ 8.0/10
+## [Apple Replaces Core Technology Fee with 5% Commission in EU](https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/) ⭐️ 8.0/10
 
-Linux kernel version 7.3 introduces VRAM overcommit improvements that enhance performance when GPU memory is exhausted. This update is particularly notable for its potential to improve LLM inference and shared memory systems. This improvement is significant because it addresses a common bottleneck in GPU-intensive workloads, such as AI inference and gaming, where running out of VRAM often causes severe performance degradation or crashes. It could benefit a wide range of users, from gamers to data scientists, by making systems more resilient and efficient. The update focuses on virtual memory fragmentation and paging mechanisms, potentially allowing the kernel to manage GPU memory more effectively. However, Nvidia GPUs currently lack support for paging, which may limit the benefits for Nvidia users until driver updates are released.
+Apple announced sweeping changes to its App Store policies in the European Union, replacing the Core Technology Fee with a 5% commission on digital transactions outside the App Store. The new terms also eliminate the initial acquisition fee and store services fee, resolving disagreements with the European Commission. This resolves a major antitrust dispute with the European Commission and provides a simpler, more predictable fee structure for developers. It could set a precedent for how Apple and other platforms comply with the Digital Markets Act, affecting the broader tech industry. The Core Technology Fee, a per-install fee for developers exceeding one million annual installs, is replaced by a 5% commission on digital transactions outside the App Store. Apple will continue to require notarization for all alternatively distributed apps to ensure user safety.
 
-hackernews · flaburgan · Aug 18, 07:51 · [Discussion](https://news.ycombinator.com/item?id=49342719)
+hackernews · newusertoday · Aug 18, 16:21 · [Discussion](https://news.ycombinator.com/item?id=49348055)
 
-**Background**: VRAM overcommit is a technique where the system allows more memory to be allocated than physically available, relying on paging or swapping to handle excess demand. In Linux, overcommit accounting has been a feature for CPU memory, but applying it to GPU memory is relatively new. For LLM inference, GPU memory is critical for storing model weights and activations, and running out of VRAM often leads to out-of-memory errors. Shared memory architectures, such as AMD APUs, can benefit from improved VRAM management by better utilizing available system RAM.
+**Background**: The European Union's Digital Markets Act (DMA) requires gatekeepers like Apple to allow alternative app distribution and payment systems. In early 2024, Apple introduced the Core Technology Fee as part of its compliance plan, but it faced criticism and a formal dispute with the European Commission. The new changes aim to address these concerns by simplifying the fee structure.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.kernel.org/doc/Documentation/vm/overcommit-accounting">kernel .org/doc/Documentation/vm/ overcommit -accounting</a></li>
-<li><a href="https://developer.nvidia.com/blog/accelerate-large-scale-llm-inference-and-kv-cache-offload-with-cpu-gpu-memory-sharing/">Accelerate Large-Scale LLM Inference and KV Cache Offload with CPU-GPU Memory Sharing | NVIDIA Technical Blog</a></li>
-<li><a href="https://www.spheron.network/blog/dedicated-vs-shared-gpu-memory/">What Is Shared GPU Memory? Dedicated vs Shared (2026) | Spheron Blog</a></li>
+<li><a href="https://developer.apple.com/support/core-technology-fee/">Core Technology Fee - Support - Apple Developer</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-08-18/apple-lowers-app-store-fees-in-europe-to-settle-dispute-with-eu">Apple Lowers App Store Fees in Europe to Settle Dispute With EU</a></li>
+<li><a href="https://9to5mac.com/2026/08/18/apple-overhauls-app-store-fees-in-the-eu-with-new-unified-terms/">Apple overhauls App Store fees in the EU with new unified... - 9to5Mac</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express excitement about the improvement, with users hoping for upstream integration and noting the lack of Nvidia support for paging. Some users question whether the benefits extend to compute workloads like LLM inference, while others share experiences with shared memory systems and performance diagnostics. Overall sentiment is positive, with anticipation for future kernel updates.
+**Discussion**: Community comments express mixed reactions. Some question why Apple needs a new commission when it already charges a developer program fee, while others note improvements for reader apps like Netflix and Spotify. Overall, sentiment is cautiously positive but with lingering skepticism about Apple's rationale.
 
-**Tags**: `#Linux kernel`, `#VRAM`, `#GPU memory`, `#performance`, `#open source`
+**Tags**: `#Apple`, `#EU`, `#App Store`, `#Regulation`, `#Developer Fees`
 
 ---
 
 <a id="item-5"></a>
-## [Rethinking Database Programming: Non-SQL Schema Definition Sparks Debate](https://acadia.engineering/blog/rethinking-database-programming) ⭐️ 8.0/10
+## [Linux 7.3 Improves VRAM Exhaustion Handling](https://pixelcluster.dev/VRAM-Overcommit/) ⭐️ 8.0/10
 
-The article proposes rethinking database programming by defining schemas in a non-SQL language, challenging the conventional use of SQL for schema definition. This approach aims to offer a more expressive and integrated way to define database structures. This matters because it could influence how developers approach database design, potentially offering more flexibility and expressiveness than SQL. It also sparks a broader discussion about the trade-offs between SQL and alternative approaches, affecting the future of database tooling and interoperability. The article suggests that schemas defined in a non-SQL language can coexist with SQL, but community comments highlight concerns about lagging behind database features, interop issues with custom encodings, and the risks of closed-source licensing. The discussion references PostgreSQL's extensive CREATE TABLE features as a benchmark for what such languages must support.
+Linux kernel 7.3 introduces a more nuanced approach to handling out-of-vRAM situations, moving away from the all-or-nothing fallback to system RAM or outright failure. This improvement aims to maintain performance when GPU memory is exhausted. This change is significant for GPU users and developers, as it can reduce stuttering and crashes in memory-constrained scenarios, benefiting gaming and compute workloads. It also addresses a long-standing pain point where VRAM exhaustion often led to poor performance or system instability. The improvement is part of the DRM memory management subsystem, which handles GEM objects and buffer allocation. It may be particularly relevant for NVIDIA users, as AMD GPUs reportedly handle VRAM exhaustion better, and the fix could be implemented at the kernel level.
 
-hackernews · honungsburk · Aug 18, 07:28 · [Discussion](https://news.ycombinator.com/item?id=49342530)
+hackernews · flaburgan · Aug 18, 07:51 · [Discussion](https://news.ycombinator.com/item?id=49342719)
 
-**Background**: SQL is the standard language for relational database management, including schema definition via Data Definition Language (DDL). Alternatives to SQL exist, such as NoSQL databases and query languages like Gremlin or N1QL, but they often sacrifice relational integrity or expressiveness. The article's proposal is part of a broader trend of seeking more developer-friendly or expressive ways to interact with databases.
+**Background**: In older kernels, when the GPU driver couldn't allocate more VRAM, it would either fall back to system RAM (which is slower) or fail outright, causing crashes. Linux 7.3 introduces a more nuanced approach to handle VRAM starvation without severely impacting performance. This is part of ongoing kernel improvements, following the release of Linux 7.2 which brought cache-aware scheduling and other performance enhancements.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.ionos.com/digitalguide/server/know-how/the-best-sql-alternatives/">What alternatives to SQL are there? - IONOS</a></li>
-<li><a href="https://grokipedia.com/page/SQL-92">SQL -92 — Grokipedia</a></li>
+<li><a href="https://dev.to/adilaidev/how-linux-73-handles-vram-starvation-without-slowing-down-29me">How Linux 7.3 Handles VRAM Starvation Without... - DEV Community</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49342719">Linux 7.3 improves performance when running out of vRAM</a></li>
+<li><a href="https://docs.kernel.org/gpu/drm-mm.html">DRM Memory Management — The Linux Kernel documentation</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express skepticism about replacing SQL, noting that relational database architecture is proven and composable. Concerns include the difficulty of keeping up with database features, potential interop issues with custom encodings, and the risks of adopting closed-source software with restrictive licenses, as seen with Elm's trajectory.
+**Discussion**: Community comments express excitement about the improvement, with users hoping for upstreaming and better NVIDIA support. Some question its impact on compute workloads like LLM inference, while others note that Windows handles VRAM exhaustion more seamlessly. There is also curiosity about memory fragmentation and potential kernel-level defragmentation.
 
-**Tags**: `#database`, `#SQL`, `#programming-languages`, `#schema`, `#interop`
+**Tags**: `#Linux`, `#VRAM`, `#GPU`, `#kernel`, `#performance`
 
 ---
 
 <a id="item-6"></a>
-## [Asana Completes 5 Years of Engineering Work in 2 Weeks with OpenAI Codex](https://openai.com/index/asana) ⭐️ 8.0/10
+## [Asana completes 5 years of engineering work in 2 weeks with Codex](https://openai.com/index/asana) ⭐️ 8.0/10
 
-Asana used OpenAI Codex to replace an outdated testing system in just two weeks, a task that was expected to take five years, at a cost of approximately $12,000. This case demonstrates the transformative potential of AI coding tools in modernizing legacy systems, offering significant time and cost savings. It highlights a practical, real-world application that could influence how engineering teams approach large-scale refactoring projects. The project involved replacing an outdated testing system, which typically requires extensive manual effort and domain knowledge. The use of Codex, an AI coding agent, enabled Asana to automate and accelerate the process, achieving in weeks what was estimated to take years.
+Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work estimated at five years for about $12K. This case demonstrates the potential of AI-assisted coding to dramatically accelerate engineering work, which could reshape software development practices and productivity expectations across the industry. The project involved migrating from an outdated testing system to a new one, a task typically requiring significant manual effort. The cost of about $12K includes Codex usage and related expenses, highlighting the cost-effectiveness of AI-driven development.
 
 rss · OpenAI Blog · Aug 18, 07:00
 
-**Background**: OpenAI Codex is a coding agent that can edit code repositories, run tests, and perform code reviews, available in various interfaces like CLI, IDE, and cloud. Legacy system modernization often involves refactoring or replacing outdated components, which is time-consuming and risky, but AI tools like Codex can help streamline these efforts.
+**Background**: OpenAI Codex is a coding agent available in ChatGPT, CLI, IDE, desktop, and cloud environments, capable of editing repositories, running tests, and performing code review. Asana is a project management tool that integrates with various testing tools like TestLodge, but the migration involved replacing an internal testing system.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.goodvibecode.com/tools/codex">OpenAI Codex Review 2026: Features, Pricing & Alternatives</a></li>
 <li><a href="https://github.com/openai/codex">GitHub - openai / codex : Lightweight coding agent that runs in your...</a></li>
-<li><a href="https://www.testingxperts.com/blog/legacy-system">Legacy System Modernization: Challenges & Best Practices</a></li>
+<li><a href="https://asana.com/apps/testlodge">TestLodge • Asana</a></li>
+<li><a href="https://www.testlodge.com/integrations/asana">Asana Test Case Management Tool - TestLodge</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI coding`, `#software engineering`, `#legacy modernization`, `#OpenAI Codex`, `#productivity`
+**Tags**: `#AI-assisted development`, `#Codex`, `#software engineering`, `#productivity`, `#case study`
 
 ---
 
 <a id="item-7"></a>
-## [Microsoft Copilot Secret Parameter Enables Password Theft](https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/) ⭐️ 8.0/10
+## [Microsoft Copilot flaw allows one-click password theft via hidden parameter](https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/) ⭐️ 8.0/10
 
-Researchers discovered a critical vulnerability in Microsoft 365 Copilot for enterprise, where a secret parameter in a URL allowed attackers to steal passwords when a target clicked a malicious link. The vulnerability, named CoSnitch, was disclosed by Varonis researchers and affects Microsoft Copilot Personal. This vulnerability is significant because it affects a widely-used AI product and enables real-world password theft, posing a direct threat to enterprise security. It highlights the growing security risks in AI-powered assistants and the need for robust input validation and access controls. The exploit leverages a hidden 'autorun' parameter in Copilot's URL handling, allowing one-click data exfiltration. The vulnerability was discovered through an unusual source, though the exact method remains undisclosed in the summary.
+Researchers at Varonis discovered a critical vulnerability in Microsoft 365 Copilot, named CoSnitch, that allows attackers to steal passwords when a target clicks a malicious link. The exploit leverages a hidden 'autorun' parameter in Copilot, enabling one-click data exfiltration. This vulnerability is significant because Microsoft Copilot is widely used in enterprise environments, and a one-click attack that steals passwords poses a severe security risk. It highlights the growing threat of prompt injection attacks on AI assistants, which can be exploited to access sensitive data through integrated services like Gmail and Google Drive. The CoSnitch attack follows a previous one-click exfiltration attack named SearchLeak, also discovered by Varonis. The vulnerability is a type of prompt injection attack, where Copilot treats malicious instructions as legitimate user commands, potentially exfiltrating data via OAuth connectors to various services.
 
 rss · Ars Technica AI · Aug 18, 13:00
 
-**Background**: Prompt injection is a cybersecurity exploit where innocuous-looking inputs are designed to cause unintended behavior in large language models (LLMs). In this case, the secret parameter likely triggers a prompt injection that overrides Copilot's intended instructions, leading to data leakage. This attack vector is a growing concern for AI security, as highlighted by OWASP and other sources.
+**Background**: Prompt injection attacks are a class of security vulnerabilities where an attacker embeds malicious instructions in input that an AI model processes, causing it to perform unintended actions. In the context of AI assistants like Microsoft Copilot, these attacks can be direct (user types a malicious prompt) or indirect (malicious content from external sources). The CoSnitch vulnerability specifically exploits a hidden URL parameter to trigger the attack without user interaction beyond clicking a link.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/">Microsoft Copilot reveals secret input that allowed it to... - Ars Technica</a></li>
 <li><a href="https://getaibook.com/news/cosnitch-exploit-leaks-copilot-data-via-hidden-url-parameter/">CoSnitch Exploit Leaks Copilot Data via Hidden URL Parameter | News</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection - Wikipedia</a></li>
+<li><a href="https://www.theregister.com/research/2026/08/18/copilot-tricked-into-telling-reseachers-how-to-hack-itself/5288857">Copilot tricked into telling reseachers how to hack itself</a></li>
 
 </ul>
 </details>
@@ -188,125 +189,150 @@ rss · Ars Technica AI · Aug 18, 13:00
 <a id="item-8"></a>
 ## [Alibaba's RISC-V CPU Runs Qwen-3.8 27B at 30 tps](https://www.reddit.com/r/LocalLLaMA/comments/1vs0wsl/alibabas_riscv_cpu_xuantie_c950_runs_qwen38_27b/) ⭐️ 8.0/10
 
-Alibaba's XuanTie C950 RISC-V CPU has demonstrated the ability to run the Qwen-3.8 27B large language model at 30 tokens per second, marking a significant performance milestone for CPU-based LLM inference. This achievement challenges the dominance of GPUs in LLM inference, potentially offering a more accessible and cost-effective alternative for deploying large models. It also highlights the growing maturity of the RISC-V ecosystem for AI workloads. The XuanTie C950 is a 5nm, RVA23-compliant RISC-V core with up to 8 cores clocked at 3.2 GHz, achieving a SPECint2006 score of over 70. The Qwen-3.8 27B model is a 27-billion-parameter LLM that scores 52 on the Artificial Analysis Intelligence Index.
+Alibaba's XuanTie C950 RISC-V CPU has demonstrated running the Qwen-3.8 27B large language model at 30 tokens per second, showcasing viable CPU-based LLM inference without GPUs. This milestone highlights RISC-V's growing capability in AI inference, potentially reducing dependency on GPUs and offering a more accessible, cost-effective alternative for running large models. It could influence hardware choices for AI deployment, especially in edge and server environments. The XuanTie C950 is a 5nm, RVA23-compliant RISC-V core with up to 8 cores clocked at 3.2 GHz, achieving a SPECint2006 score of over 70. The Qwen-3.8 27B model supports a native context of 262,144 tokens, extendable to 1,000,000 via YaRN.
 
 reddit · r/LocalLLaMA · /u/DeltaSqueezer · Aug 18, 20:24
 
-**Background**: LLM inference typically relies on GPUs due to their parallel processing capabilities, but CPUs are increasingly being optimized for this task. Tokens per second (TPS) measures the generation speed after the first token, and 30 TPS is considered usable for interactive applications. RISC-V is an open instruction set architecture that has been gaining traction in various computing domains.
+**Background**: RISC-V is an open-standard instruction set architecture (ISA) that allows anyone to design processors based on it, offering flexibility and customization. Traditionally, running large language models (LLMs) like Qwen-3.8 27B has required powerful GPUs due to their parallel processing capabilities, but CPU-based inference is becoming more feasible with optimized software and hardware. Alibaba's XuanTie C950 is part of the company's effort to advance RISC-V performance, particularly for AI workloads.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.cnx-software.com/2026/03/25/alibaba-xuantie-c950-a-powerful-rva2364-bit-risc-v-core-for-edge-ai-computing/">Alibaba XuanTie C 950 - A powerful, RVA23-compliant... - CNX Software</a></li>
+<li><a href="https://abit.ee/en/processors/alibaba-xuantie-c950-risc-v-processor-ai-damo-academy-artificial-intelligence-chip-en">Alibaba XuanTie C 950 : The RISC - V Chip That's Supposed to Scare...</a></li>
 <li><a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen/ Qwen 3 . 8 - 27 B · Hugging Face</a></li>
-<li><a href="https://www.gmicloud.ai/en/blog/ttft-llm-speed-metrics">TTFT vs Tokens Per Second : LLM Inference Speed... | GMI Cloud</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#RISC-V`, `#LLM inference`, `#CPU performance`, `#Alibaba`, `#Qwen`
+**Discussion**: The community discussion likely includes technical insights and debate about the feasibility of CPU-based inference, comparisons with GPU performance, and the implications for RISC-V adoption. Some may question the practical usability of 30 tps for real-world applications, while others may highlight the potential for cost savings and energy efficiency.
+
+**Tags**: `#RISC-V`, `#CPU inference`, `#LLM`, `#Alibaba`, `#Hardware`
 
 ---
 
 <a id="item-9"></a>
-## [Memory Prices Surge 500% in a Year, 128GB DDR5 Hits $3,399](https://www.reddit.com/r/LocalLLaMA/comments/1vrwsfl/memory_prices_climb_500_in_12_months_up_to_10x/) ⭐️ 8.0/10
+## [Memory prices surge 500% in a year, 128GB DDR5 now $3,399](https://www.reddit.com/r/LocalLLaMA/comments/1vrwsfl/memory_prices_climb_500_in_12_months_up_to_10x/) ⭐️ 8.0/10
 
-Memory prices have climbed 500% in 12 months, with 128GB DDR5 kits now costing $3,399, up to 10 times the lowest ever tracked prices. This dramatic increase is attributed to supply constraints and rising demand, particularly from AI applications. This price surge significantly impacts AI/ML practitioners who rely on local hardware for LLM inference, as memory is a critical component for running large models. It may force users to delay upgrades, seek alternatives like DDR4, or shift to cloud-based solutions, affecting the broader AI hardware ecosystem. The price increase is not uniform; DDR4 prices have also risen by 120-180% due to increased demand from users avoiding expensive DDR5. Recent tracking shows a slight drop in DDR5 prices this week, but discounts are limited to a few vendors, suggesting volatility remains.
+Memory prices have climbed 500% in the past 12 months, with 128GB DDR5 kits now costing $3,399, up to 10 times the lowest ever tracked prices. This dramatic price surge significantly impacts AI/ML practitioners who rely on large memory configurations for local LLM inference, making it more costly to run models locally and potentially pushing users toward cloud solutions or alternative hardware. The price increase is attributed to supply constraints and increased demand, with DDR4 prices also rising by 120-180% as users shift to older platforms. The 500% increase is based on tracking over the last 18 months, with the current price being up to 10 times the historical low.
 
 reddit · r/LocalLLaMA · /u/johnnyApplePRNG · Aug 18, 17:59
 
-**Background**: Memory prices are influenced by supply-demand dynamics, manufacturing capacity, and market speculation. For local LLM inference, high-capacity memory (e.g., 128GB) is essential for running large models without relying on cloud services, as unified memory on Apple Silicon or high-end GPUs can serve as VRAM. The surge in prices is partly driven by AI's growing demand for memory, alongside traditional PC market cycles.
+**Background**: Memory prices have historically been volatile, but the current surge is particularly severe. For local LLM inference, RAM capacity is crucial, and quantization is a key technique to reduce memory requirements. The price hike affects both DDR4 and DDR5, with DDR5 seeing a 414% increase since July 2025 in some markets.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399">Memory prices climb 500% in 12 months, up to... | Tom's Hardware</a></li>
+<li><a href="https://wccftech.com/ddr5-memory-continues-to-sell-at-a-whopping-400-premium-in-germany/">DDR 5 Memory Continues To Sell At A Whopping 400%+ Premium In...</a></li>
 <li><a href="https://www.aroged.com/2026/08/17/rammageddon-has-arrived-ram-prices-have-soared-to-crazy-heights-128-gb-ddr5-costs-3399/">RAMmageddon has arrived: RAM prices have soared to... - Aroged</a></li>
-<li><a href="https://wccftech.com/ddr5-prices-just-posted-their-first-drop-in-several-months/">DDR 5 Memory Prices Just Took a Noticeable Dive for the First Time...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments on Reddit likely express frustration over rising costs, with some suggesting alternatives like using DDR4 or cloud services. Others may discuss the impact on local LLM projects and speculate on future price trends, with a mix of concern and pragmatic advice.
+**Discussion**: The Reddit discussion likely includes concerns about affordability, debates on alternatives like cloud computing or older hardware, and speculation on future price trends. Some users may suggest waiting for prices to drop or exploring DDR4 platforms.
 
-**Tags**: `#hardware`, `#memory`, `#LLM`, `#pricing`, `#AI infrastructure`
+**Tags**: `#hardware`, `#memory-prices`, `#LLM`, `#AI-infrastructure`, `#market-trends`
 
 ---
 
 <a id="item-10"></a>
-## [DeepSeek V4 Flash Q4_K_XL Hits 100 tok/s on 4× RTX 3060](https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks/) ⭐️ 8.0/10
+## [DeepSeek V4 Flash Q4_K_XL runs at ~100 tok/s on 4× RTX 3060](https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks/) ⭐️ 8.0/10
 
-A user successfully ran the 144 GiB DeepSeek-V4-Flash-0731 UD-Q4_K_XL GGUF model on four RTX 3060 12GB GPUs with a 368k context window, achieving ~100 tok/s prompt processing and ~10 tok/s generation using llama.cpp build b10181. The breakthrough involves a custom layer distribution using -ncmoe 34 and explicit -ot overrides to place expert layers on GPUs 1-3 while keeping most non-expert tensors on GPU0. This demonstrates that large MoE models (144 GiB) can run on consumer hardware with reasonable performance, pushing the boundaries of local LLM inference. The technique of combining -ncmoe with explicit tensor placement could be adopted by others to run models that would otherwise require expensive enterprise GPUs. The configuration uses -ts 100,1,1,1 to push non-expert tensors to GPU0, while -ot assigns expert layers from blocks 34-42 to GPUs 1-3. Microbatch size (-ub) was the biggest performance lever: increasing from 1024 to 2048 boosted prompt processing from ~63 to ~99 tok/s. The model is mostly in system RAM, so quad-channel memory bandwidth is critical.
+A user successfully ran the 144 GiB DeepSeek-V4-Flash-0731 UD-Q4_K_XL GGUF on four RTX 3060 12GB GPUs, achieving ~100 tok/s prompt processing and ~10 tok/s generation with a 368k context. They shared detailed llama.cpp settings, including -ncmoe 34 and explicit expert offloading. This demonstrates that large MoE models can be run efficiently on consumer hardware with careful tensor placement, making advanced AI models more accessible to hobbyists and researchers. The configuration provides a practical reference for optimizing memory usage and throughput on multi-GPU setups. The setup uses -ncmoe 34 to keep experts from blocks 0-33 in system RAM, while explicitly distributing the remaining nine expert layers across GPUs 1-3. The extreme -ts 100,1,1,1 split pushes non-expert tensors onto GPU0, and microbatch size (-ub 2048) was the biggest performance lever, doubling prompt processing speed compared to -ub 1024.
 
 reddit · r/LocalLLaMA · /u/syscomua · Aug 18, 14:15
 
-**Background**: DeepSeek V4 Flash is a Mixture-of-Experts (MoE) model, meaning only a subset of parameters are active per token, reducing compute. GGUF quantization (Q4_K_XL) compresses weights to 4-bit, reducing memory footprint. llama.cpp supports multi-GPU inference via tensor splitting and layer distribution, but manual placement can optimize VRAM usage.
+**Background**: DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts (MoE) model with 284B total parameters and 13B activated, supporting a 1M-token context. GGUF quantization like Q4_K_XL reduces model size for local inference, and llama.cpp supports MoE expert offloading to balance memory between CPU and GPU.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
-<li><a href="https://github.com/ggml-org/llama.cpp/blob/master/docs/multi-gpu.md">llama . cpp /docs/ multi - gpu .md at master · ggml-org/ llama . cpp · GitHub</a></li>
-<li><a href="https://insiderllm.com/guides/llm-quantization-explained/">Quantization Explained: What It Means for Local AI | InsiderLLM</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V 4 Flash 0423 - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://huggingface.co/blog/Doctor-Shotgun/llamacpp-moe-offload-guide">Performant local mixture-of- experts CPU inference with GPU...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The comment mentions that a second version of DeepSeek Flash GGUF quants has been released by the original authors, along with an accompanying llama.cpp PR (https://github.com/ggml-org/llama.cpp/pull/27342). This suggests ongoing improvements and community interest in optimizing this model.
-
-**Tags**: `#llama.cpp`, `#DeepSeek`, `#GGUF`, `#multi-GPU`, `#local LLM`
+**Tags**: `#llama.cpp`, `#DeepSeek`, `#GGUF`, `#MoE`, `#local-llm`
 
 ---
 
 <a id="item-11"></a>
-## [DFlash 2: Parallel Drafting Boosts Speculative Decoding](https://www.reddit.com/r/LocalLLaMA/comments/1vs2tz1/dflash_2_keep_drafting_parallel/) ⭐️ 8.0/10
+## [GLM5.3 Benchmarks Surface on Artificial Analysis](https://www.reddit.com/r/LocalLLaMA/comments/1vs3joh/glm53_artificial_analysis_benchmarks/) ⭐️ 8.0/10
 
-DFlash 2 introduces a novel parallel drafting method for speculative decoding, which could significantly improve LLM inference speed. The approach allows multiple candidate tokens to be drafted simultaneously, reducing latency compared to traditional sequential drafting. This advancement is significant for the AI/ML community as it addresses a key bottleneck in LLM inference, potentially enabling faster and more cost-effective deployment of large models. It could impact a wide range of applications, from real-time chatbots to large-scale batch processing. The method is designed to work with existing speculative decoding frameworks, requiring minimal changes to the target model. The paper likely includes experimental results demonstrating speedups on standard benchmarks, though specific numbers are not provided in the summary.
+Benchmark results for GLM5.3 have been shared on Artificial Analysis, indicating a notable advancement in LLM performance. However, Z.ai has not officially announced or released GLM5.3 as of July 15, 2026. This is significant because GLM5.3 represents a potential major step forward in open-weight LLM performance, which could impact the AI community and downstream applications. The community discussion on r/LocalLLaMA likely includes technical comparisons and insights, adding value to the release. According to unofficial sources, GLM5.3 uses the same base model as GLM5.2, with all performance gains coming from post-training. Terminal-Bench 3.0 scores reportedly jumped from 4.6 to 28.3, roughly a 6x improvement on identical underlying weights.
 
-reddit · r/LocalLLaMA · /u/coder543 · Aug 18, 21:37
+reddit · r/LocalLLaMA · /u/anderspitman · Aug 18, 22:05
 
-**Background**: Speculative decoding is an inference-time optimization for autoregressive large language models (LLMs) that generates multiple tokens per decoding step instead of one. A smaller draft model proposes a sequence of candidate tokens, and the larger target model verifies them in a single forward pass, preserving the original output distribution while cutting latency by roughly two to three times. Parallel drafting methods, like DFlash 2, aim to further improve this process by drafting multiple candidate tokens simultaneously, potentially increasing the acceptance rate and reducing the number of verification steps.
+**Background**: GLM5.3 is the community label for Z.ai's expected next model release in the GLM-5 series, but it does not exist as a shipped product yet. Artificial Analysis is an independent platform that evaluates and ranks LLMs using its Intelligence Index, which currently ranks Claude Opus 5 at #1 with a score of 63.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Speculative_decoding">Speculative decoding</a></li>
-<li><a href="https://arxiv.org/pdf/2401.07851">Unlocking Efficiency in Large Language Model Inference</a></li>
-<li><a href="https://rits.shanghai.nyu.edu/ai/jetspec-causal-parallel-tree-drafting-hits-9-64x-faster-llm-inference/">JetSpec: Causal Parallel Tree Drafting Hits 9.64x Faster LLM Inference</a></li>
+<li><a href="https://kie.ai/blog/what-is-glm-5-3">What Is GLM - 5 . 3 ? Z.ai's Next Open-Weight Model</a></li>
+<li><a href="https://www.youtube.com/watch?v=CFSIHHKn-e8">GLM 5 . 3 : The Best Hacking Model Isn't Open Yet !! - YouTube</a></li>
+<li><a href="https://shaam.blog/articles/glm-5-3-next-open-weight-model-guide-2026">GLM - 5 . 3 : What Z.ai's Next Open-Weight Model Actually Means for...</a></li>
+<li><a href="https://artificialanalysis.ai/leaderboards/models">LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#speculative decoding`, `#inference optimization`, `#AI/ML`
+**Tags**: `#GLM5.3`, `#LLM`, `#benchmarks`, `#AI`
 
 ---
 
 <a id="item-12"></a>
-## [Qwen3.8-27B hits 124 tps on RTX 3090 via hyper-optimized engine](https://www.reddit.com/r/LocalLLaMA/comments/1vrw4sz/i_pushed_qwen3827b_to_124_tps_on_a_single_request/) ⭐️ 8.0/10
+## [Qwen3.8-27B hits 124 tps on RTX 3090 via advanced optimizations](https://www.reddit.com/r/LocalLLaMA/comments/1vrw4sz/i_pushed_qwen3827b_to_124_tps_on_a_single_request/) ⭐️ 8.0/10
 
-A developer released a hyper-optimized inference engine for Qwen3.8-27B on an RTX 3090, achieving 124 tokens per second (tps) on a single request with greedy sampling, up from 90 tps. The update adds GPTQ-int4 quantization for the lm_head and MTP module, a split-KV attention kernel, and a new draft vocabulary covering 97.5% of model outputs. This demonstrates that highly optimized local inference can rival cloud performance on consumer hardware, potentially enabling more accessible and private LLM deployment. The techniques (FP8 KV cache, int8 activations, MTP speculative decoding) could be adopted by the broader community to improve inference efficiency. The engine uses fp8 KV cache, int8 activations, and MTP-4 drafts with a 40k-token draft head, achieving 124 tps greedy and ~114 tps at default sampling. The GPTQ-int4 quantization adds only +0.6% PPL with GSM8K unchanged, and the split-KV kernel is 5x faster at 1.5k context and 10x at 16k. The full 262k context fits with KVarN 4/2-bit KV cache, correct to 240k.
+A developer optimized Qwen3.8-27B inference on an RTX 3090 to 124 tokens per second (greedy) and 114 tps with default sampling, up from 90/98 tps. The improvements include a refined draft vocabulary, GPTQ-int4 quantization of the lm_head and MTP module, a split-KV attention kernel, and a sort-free sampler patch. This demonstrates that significant performance gains in local LLM inference are still achievable through careful engineering, making high-throughput local inference more accessible. It also showcases techniques that could be applied to other models and hardware, benefiting the broader local AI community. The optimizations include fp8 KV cache, int8 activations, MTP-4 drafts with a 40k-token draft head, and a new draft vocabulary covering 97.5% of the model's outputs (up from 92%). The GPTQ-int4 quantization adds only +0.6% PPL with GSM8K unchanged, and the split-KV kernel is 5-10x faster at longer contexts. Peak concurrent throughput remains ~1,000 tps at 64 concurrent requests.
 
 reddit · r/LocalLLaMA · /u/iamMess · Aug 18, 17:35
 
-**Background**: Speculative decoding uses a small draft model to propose multiple tokens, which the target model verifies in parallel, speeding up generation without changing output distribution. MTP (Multi-Token Prediction) is a specific approach where the draft head is trained on the target model's distribution. Quantization reduces model size and memory bandwidth by using lower-precision numbers, but can degrade quality; GPTQ is a popular post-training quantization method. The RTX 3090 has 24GB VRAM and 82 SMs, limiting inference speed, so optimizations like kernel fusion and KV cache compression are crucial.
+**Background**: Speculative decoding uses a small draft model to propose tokens, which are then verified by the full model, speeding up inference without changing output distribution. KV cache stores key-value pairs to avoid recomputation, and using lower precision (like fp8) reduces memory and bandwidth. MTP (Multi-Token Prediction) is a technique where the model predicts multiple future tokens simultaneously, improving draft quality.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ai.plainenglish.io/gemma-4-mtp-local-inference-benchmarks-6711c8589d2f">Gemma 4 MTP Local Inference Benchmarks & Real-World Testing</a></li>
-<li><a href="https://effloow.com/articles/gemma-4-mtp-multi-token-prediction-inference-guide-2026">Gemma 4 MTP Drafters: How Multi-Token Prediction... — Effloow</a></li>
-<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical...</a></li>
+<li><a href="https://atomic.chat/blog/guides/what-is-kv-cache">What Is a KV Cache in an LLM? Calculator and Detailed... - Atomic Chat</a></li>
+<li><a href="https://www.buildfastwithai.com/blogs/gemma-4-mtp-drafter-faster-inference">Gemma 4 MTP Drafter: Get 3x Faster Inference (2026 Guide)</a></li>
+<li><a href="https://huggingface.co/Inferact/Kimi-K3-DSpark">Inferact/Kimi-K3-DSpark · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM inference`, `#quantization`, `#speculative decoding`, `#RTX 3090`, `#performance optimization`
+**Tags**: `#LLM inference`, `#performance optimization`, `#Qwen`, `#GPU`, `#local LLM`
 
 ---
 
 <a id="item-13"></a>
-## [Anthropic-Cybersecurity-Skills: 817 AI Agent Skills for Security](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+## [ComfyUI Launches Official Local Open-Source MCP Server](https://www.reddit.com/r/StableDiffusion/comments/1vrx5tm/comfyui_official_local_mcp/) ⭐️ 8.0/10
 
-A GitHub repository named mukul975/Anthropic-Cybersecurity-Skills has gained over 730 stars in a day, offering 817 structured cybersecurity skills for AI agents. These skills are mapped to six major frameworks and are compatible with multiple AI platforms. This repository addresses the growing need for AI agents to perform cybersecurity tasks with structured, framework-aligned knowledge. Its rapid popularity indicates strong community interest and potential to standardize AI-driven security operations across various tools. The skills cover 29 security domains and follow the agentskills.io open standard, making them usable with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI, and over 20 other platforms. The repository is licensed under Apache 2.0 and includes mappings to MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF, and MITRE F3.
+ComfyUI has released an official local and open-source MCP server, enabling AI agents like Claude, Codex, and Cursor to interact directly with local ComfyUI installations. This follows the earlier Cloud MCP release in June and addresses the community's demand for local functionality. This release significantly lowers the barrier for AI-driven workflow automation in ComfyUI, allowing users to leverage AI agents for tasks like model selection and workflow management without relying on cloud services. It strengthens ComfyUI's ecosystem by integrating with the growing MCP standard, potentially attracting more users and developers. The local MCP server is fully open-source and can read the user's GPU specifications to advise on whether a model is worth running before download. It also reads all installed nodes and models, and handles setup complexities, making it easier to use with local workflows like MiniMax H3. The Cloud MCP remains available with all its previous features.
 
-github_trending · GitHub Trending · Aug 19, 01:17
+reddit · r/StableDiffusion · /u/crystal_alpine · Aug 18, 18:11
 
-**Background**: AI agents are increasingly used in cybersecurity for tasks like threat detection and response. Frameworks like MITRE ATT&CK and NIST CSF provide structured knowledge of attack and defense techniques, while the agentskills.io standard offers a way to package such knowledge for AI agents. This repository combines these elements, providing a comprehensive resource for developers and security professionals.
+**Background**: The Model Context Protocol (MCP) is an open standard introduced by Anthropic for connecting AI applications to external systems, providing a universal way for AI agents to access data and tools. ComfyUI is a popular node-based interface for generating images and videos with AI models. The new local MCP server allows AI agents to control ComfyUI directly on the user's machine, bridging the gap between conversational AI and local creative workflows.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://comfy.org/mcp/">Comfy MCP - Drive ComfyUI from any AI agent</a></li>
+<li><a href="https://github.com/joenorton/comfyui-mcp-server">GitHub - joenorton/ comfyui - mcp - server : lightweight Python-based...</a></li>
+<li><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol \ Anthropic</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The community has responded positively, with users expressing excitement about the official local MCP support and its potential to simplify workflows. Some users are discussing the implications for automation and integration with various AI agents, while others are sharing their experiences and asking for more details on setup and compatibility.
+
+**Tags**: `#ComfyUI`, `#MCP`, `#AI agents`, `#open-source`, `#local deployment`
+
+---
+
+<a id="item-14"></a>
+## [Anthropic-Cybersecurity-Skills: 817 AI Agent Security Skills Go Viral](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+
+The GitHub repository mukul975/Anthropic-Cybersecurity-Skills has surged to over 29,000 stars, gaining 730 stars in a single day. It provides 817 structured cybersecurity skills for AI agents, mapped to six major security frameworks and compatible with 20+ AI platforms. This repository addresses the growing need for AI agents to operate securely in enterprise environments, offering a standardized, framework-aligned skill set. Its rapid adoption signals strong community interest in bridging AI capabilities with established cybersecurity practices, potentially influencing how AI agents are deployed and secured across industries. The skills span 29 security domains and follow the agentskills.io open standard, ensuring compatibility with tools like Claude Code, GitHub Copilot, Codex CLI, Cursor, and Gemini CLI. The repository is licensed under Apache 2.0, allowing broad use and modification.
+
+github_trending · GitHub Trending · Aug 19, 01:29
+
+**Background**: AI agents are increasingly used to automate tasks, but they require specialized knowledge to handle cybersecurity operations safely. Frameworks like MITRE ATT&CK and NIST CSF provide structured taxonomies of threats and defenses, which this repository translates into actionable skills for AI agents. The agentskills.io standard offers a common format for defining such skills, enabling interoperability across different AI platforms.
 
 <details><summary>References</summary>
 <ul>
@@ -317,50 +343,27 @@ github_trending · GitHub Trending · Aug 19, 01:17
 </ul>
 </details>
 
-**Tags**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST`, `#open source`
-
----
-
-<a id="item-14"></a>
-## [Unsloth Gains 449 Stars, Adds Support for Qwen3.8 and DeepSeek-V4](https://github.com/unslothai/unsloth) ⭐️ 8.0/10
-
-Unsloth, a Python library for efficient LLM and diffusion model training and inference, gained 449 stars on GitHub today, reaching 73,601 total stars. The project now supports recent models including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, and FLUX. Unsloth's continued growth and rapid adoption of cutting-edge models highlight its importance in the open-source AI ecosystem, enabling developers to fine-tune and run state-of-the-art models locally with reduced resource requirements. This trend reflects the broader movement toward accessible, efficient AI development tools. The repository is written in Python and has 6,648 forks. The local UI supports both LLMs and diffusion models, catering to a wide range of generative AI tasks. The daily star increase of 449 indicates strong community interest and active maintenance.
-
-github_trending · GitHub Trending · Aug 19, 01:17
-
-**Background**: Unsloth is a popular open-source library that optimizes the fine-tuning and inference of large language models and diffusion models, often achieving significant speedups and memory savings. Models like Qwen3.8 and DeepSeek-V4 are recent releases in the rapidly evolving AI landscape, with Qwen3.8 focusing on agentic coding and DeepSeek-V4 offering Pro and Flash variants with 1M context support. FLUX is a professional-grade image generation model known for high-resolution output.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://apidog.com/blog/what-is-qwen-3-8/">What Is Qwen 3 . 8 -Max?</a></li>
-<li><a href="https://deepseek.ai/deepseek-v4">DeepSeek V 4 Explained: V 4 -Pro 1.6T vs V 4 -Flash 284B (2026)</a></li>
-<li><a href="https://www.datacamp.com/tutorial/flux-ai">Flux AI Image Generator: A Guide With Examples | DataCamp</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#LLM`, `#fine-tuning`, `#diffusion models`, `#open-source`, `#Python`
+**Tags**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST`, `#security frameworks`
 
 ---
 
 <a id="item-15"></a>
-## [omlx: LLM Inference Server with Continuous Batching & SSD Caching for Apple Silicon](https://github.com/jundot/omlx) ⭐️ 8.0/10
+## [ai-memory: Rust-based Long-Term Memory for Agent Coding CLIs](https://github.com/akitaonrails/ai-memory) ⭐️ 8.0/10
 
-omlx is a new open-source LLM inference server for Apple Silicon, featuring continuous batching and SSD caching, and is managed from the macOS menu bar. It has gained rapid traction, with 370 stars in a day and over 19,000 total stars. This tool addresses the growing need for efficient local LLM inference on Apple Silicon, potentially improving throughput and reducing latency for developers and researchers. Its popularity indicates strong community interest in optimizing LLM serving on consumer hardware. The server uses continuous batching to schedule new requests as slots free up, and SSD caching offloads hot cache blocks to disk in safetensors format, restoring them on matching prefixes even after restarts. It is written in Python and available on GitHub.
+ai-memory, a Rust-based solution for providing long-term memory to agent coding CLIs and facilitating handoff between different agent vendors, has gained 648 stars today on GitHub, reaching a total of 2739 stars. This project addresses a critical challenge in AI agent development—long-term memory and cross-vendor handoff—which is essential for building robust and interoperable agentic coding tools. Its rapid star growth indicates strong community interest and potential to influence how agent coding CLIs are designed. The repository is written in Rust and has 236 forks. It aims to provide a solution for long-term memory in agent coding CLIs and to facilitate handoff between different agent vendors, which is a novel approach in the ecosystem.
 
-github_trending · GitHub Trending · Aug 19, 01:17
+github_trending · GitHub Trending · Aug 19, 01:29
 
-**Background**: Continuous batching is a technique that improves LLM inference throughput by dynamically scheduling requests instead of waiting for a fixed batch to complete. SSD caching helps reduce recomputation by storing intermediate results, which is especially useful on devices with limited RAM like Apple Silicon Macs. This project combines these techniques to offer a user-friendly inference server for macOS users.
+**Background**: Agent coding CLIs are AI-powered tools that run in the terminal and can autonomously read, write, and execute code in a repository. Handoffs are a coordination pattern used to transfer control between agents or states, often via tool calls, as coined by OpenAI. Long-term memory is crucial for agents to maintain context across sessions, and cross-vendor handoff enables interoperability between different agent systems.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/jundot/omlx">jundot/omlx: LLM inference server with continuous batching & SSD ...</a></li>
-<li><a href="https://insujang.github.io/2024-01-07/llm-inference-continuous-batching-and-pagedattention/">LLM Inference : Continuous Batching and PagedAttention</a></li>
-<li><a href="https://www.anyscale.com/blog/continuous-batching-llm-inference">Achieve 23x LLM Inference Throughput & Reduce p50 Latency</a></li>
+<li><a href="https://github.com/bradAGI/awesome-cli-coding-agents">GitHub - bradAGI/awesome- cli - coding - agents : Curated directory of...</a></li>
+<li><a href="https://langchain-5e9cc07a.mintlify.app/oss/javascript/langchain/multi-agent/handoffs">Handoffs - Docs by LangChain</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#inference`, `#Apple Silicon`, `#macOS`, `#open-source`
+**Tags**: `#AI agents`, `#long-term memory`, `#Rust`, `#developer tools`, `#agent interoperability`
 
 ---

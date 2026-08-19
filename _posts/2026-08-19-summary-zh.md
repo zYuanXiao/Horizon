@@ -5,178 +5,179 @@ date: 2026-08-19
 lang: zh
 ---
 
-> 从 131 条内容中筛选出 15 条重要资讯。
+> 从 126 条内容中筛选出 15 条重要资讯。
 
 ---
 
-1. [Mojo 编程语言以 Apache 2.0 协议开源](#item-1) ⭐️ 9.0/10
-2. [VibeWorlding：为 3D 世界构建的多模态智能体基准测试](#item-2) ⭐️ 8.0/10
-3. [SA-MRPO：面向多奖励强化学习的饱和感知重加权方法](#item-3) ⭐️ 8.0/10
-4. [Linux 7.3 在 GPU 显存耗尽时提升性能](#item-4) ⭐️ 8.0/10
-5. [重新思考数据库编程：非 SQL 模式定义引发争论](#item-5) ⭐️ 8.0/10
-6. [Asana 借助 OpenAI Codex 两周完成五年工程量](#item-6) ⭐️ 8.0/10
-7. [微软 Copilot 秘密参数导致密码被盗](#item-7) ⭐️ 8.0/10
-8. [阿里巴巴 RISC-V 芯片以 30 tokens/s 运行 Qwen-3.8 27B](#item-8) ⭐️ 8.0/10
-9. [内存价格一年飙升 500%，128GB DDR5 达 3399 美元](#item-9) ⭐️ 8.0/10
-10. [DeepSeek V4 Flash Q4_K_XL 在 4× RTX 3060 上达到 100 tok/s](#item-10) ⭐️ 8.0/10
-11. [DFlash 2：并行草稿提升推测解码效率](#item-11) ⭐️ 8.0/10
-12. [Qwen3.8-27B 在 RTX 3090 上通过超优化引擎达到 124 tps](#item-12) ⭐️ 8.0/10
-13. [Anthropic-Cybersecurity-Skills：为 AI 代理提供 817 项网络安全技能](#item-13) ⭐️ 8.0/10
-14. [Unsloth 日增 449 星，新增支持 Qwen3.8 和 DeepSeek-V4](#item-14) ⭐️ 8.0/10
-15. [omlx：面向 Apple Silicon 的 LLM 推理服务器，支持连续批处理与 SSD 缓存](#item-15) ⭐️ 8.0/10
+1. [Mojo 编程语言在 Apache 2 许可下开源](#item-1) ⭐️ 9.0/10
+2. [VibeWorlding：多模态智能体构建 3D 开放世界的统一框架](#item-2) ⭐️ 8.0/10
+3. [SA-MRPO：面向多奖励策略优化的饱和度感知优势重加权](#item-3) ⭐️ 8.0/10
+4. [苹果以 5%佣金取代欧盟核心技术费](#item-4) ⭐️ 8.0/10
+5. [Linux 7.3 改进显存耗尽处理](#item-5) ⭐️ 8.0/10
+6. [Asana 借助 Codex 两周完成五年工程量](#item-6) ⭐️ 8.0/10
+7. [微软 Copilot 漏洞：隐藏参数导致一键密码窃取](#item-7) ⭐️ 8.0/10
+8. [阿里 RISC-V 芯片运行 Qwen-3.8 27B，速度达 30 tokens/s](#item-8) ⭐️ 8.0/10
+9. [内存价格一年飙升 500%，128GB DDR5 现价 3399 美元](#item-9) ⭐️ 8.0/10
+10. [DeepSeek V4 Flash Q4_K_XL 在 4× RTX 3060 上实现约 100 tok/s](#item-10) ⭐️ 8.0/10
+11. [GLM5.3 基准测试结果在 Artificial Analysis 上公布](#item-11) ⭐️ 8.0/10
+12. [Qwen3.8-27B 在 RTX 3090 上通过高级优化达到 124 tps](#item-12) ⭐️ 8.0/10
+13. [ComfyUI 推出官方本地开源 MCP 服务器](#item-13) ⭐️ 8.0/10
+14. [Anthropic-Cybersecurity-Skills：817 项 AI 代理安全技能走红](#item-14) ⭐️ 8.0/10
+15. [ai-memory：基于 Rust 的代理编码 CLI 长期记忆解决方案](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Mojo 编程语言以 Apache 2.0 协议开源](https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/) ⭐️ 9.0/10
+## [Mojo 编程语言在 Apache 2 许可下开源](https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/) ⭐️ 9.0/10
 
-Modular 已将 Mojo 编程语言（包括其编译器和工具链）以 Apache 2.0 许可证开源。此次发布紧随 Mojo 1.0 里程碑之后，兑现了 2023 年 5 月做出的承诺。 此次开源对 AI 和开发者社区来说是一个重要里程碑，因为 Mojo 旨在将类似 Python 的语法与 AI 工作负载的高性能相结合。这可能会加速 Mojo 的采用，并围绕其构建更广泛的生态系统，从而可能影响基于 Python 的 AI 工具和对性能敏感的应用程序。 Mojo 最初旨在成为 Python 的超集，但这一目标在 2025 年 8 月左右被放弃；它现在是一种独立的语言。Mojo 基于 MLIR 编译器框架，能够高效编译到 CPU、GPU、TPU 和其他加速器。
+由 Modular 开发的编程语言 Mojo 在发布 1.0 版本一周后，已正式在 Apache 2 许可下开源。这兑现了 2023 年 5 月做出的最终开源该语言的承诺。 在宽松许可下开源 Mojo 是一个重要里程碑，可能加速其在 AI/ML 和系统编程社区的采用。它允许开发者检查、修改并为编译器和工具链做出贡献，有望围绕该语言培育一个充满活力的生态系统。 Mojo 最初旨在成为 Python 的超集，但这一目标在 2025 年 8 月左右被放弃；它现在是一种拥有 Python 风格语法的独立语言。编译器基于 MLIR 构建，能够针对 GPU、TPU 和其他加速器，非常适合 AI 工作负载。
 
 rss · Simon Willison · 8月18日 21:39
 
-**背景**: Mojo 是由 Modular Inc. 开发的系统编程语言，专为高性能 AI 基础设施设计。它采用类似 Python 的语法，但融入了受 Rust 启发的静态类型和借用检查器等系统编程特性。该语言利用 MLIR 编译器框架来针对多种硬件，非常适合 AI 应用。
+**背景**: Mojo 是由 Modular Inc. 开发的系统编程语言，旨在结合 Python 的易用性和 C 语言般的性能，用于 AI 基础设施。它利用 MLIR 编译器框架实现高级优化并支持多种硬件。Apache 2 许可是一种宽松的开源许可，允许自由使用、修改和分发，常见于主要开源项目。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Mojo_(programming_language)">Mojo (programming language)</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Apache_License">Apache License</a></li>
+<li><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License , Version 2 .0 | Apache Software Foundation</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Lobste.rs 和 Reddit 上的社区讨论普遍表达了兴奋和认可，许多人指出这是兑现了期待已久的承诺。一些用户讨论了 Mojo 不再是 Python 超集的影响，而另一些用户则强调了开源对透明度和社区贡献的潜在好处。
+**社区讨论**: 这一公告在 Lobste.rs 等平台上引发了积极反响，许多人表达了对开源及其推动 Mojo 采用潜力的兴奋。一些评论者注意到偏离 Python 超集兼容性的转变，但总体情绪对该语言的未来持乐观态度。
 
-**标签**: `#Mojo`, `#open source`, `#programming language`, `#AI`, `#compiler`
+**标签**: `#Mojo`, `#open source`, `#programming language`, `#compiler`, `#AI/ML`
 
 ---
 
 <a id="item-2"></a>
-## [VibeWorlding：为 3D 世界构建的多模态智能体基准测试](https://huggingface.co/papers/2608.15265) ⭐️ 8.0/10
+## [VibeWorlding：多模态智能体构建 3D 开放世界的统一框架](https://huggingface.co/papers/2608.15265) ⭐️ 8.0/10
 
-VibeWorlding 提出了一个统一的框架和基准 VWE-BENCH，包含 2,616 个 3D 资产、323 个种子世界和 6,828 个多模态查询，用于训练和评估从用户查询构建交互式 3D 世界的多模态智能体。论文还介绍了 VibeWorlding-Gym，一个强化学习后训练框架，并展示了他们的 VibeWorlder-30B-A3B 模型在所有评估模型中取得了最佳的 Pass@1，超越了闭源前沿模型。 这项工作填补了多模态智能体在复杂 3D 世界构建评估方面的重大空白，超越了理想化的简单查询。通过证明强化学习可以使开源模型超越闭源模型，这对具身 AI 和交互系统具有重要意义，可能使先进的 3D 生成能力更加普及。 该基准包括带有真实标注的已验证查询和带有精心设计评分标准的未验证查询。VibeWorlding-Gym 集成了使用 MCP 工具进行资产检索、编辑和渲染的沙盒环境，以及一个基于评分标准的验证器，用于检查物理可行性和意图满足。当前前沿 MLLM 如 GPT-5.5 和 Qwen3.8-Max 的成功率低于 60%，瓶颈在于精确的 3D 世界编辑。
+VibeWorlding 提出了一个统一框架和基准（VWE-BENCH），用于训练和评估从用户查询构建 3D 开放世界的多模态智能体，并配套了强化学习后训练方法（VibeWorlding-Gym）。实验表明，经过 RL 训练的开源模型（如 VibeWorlder-30B-A3B）在基准上超越了 GPT-5.5 和 Qwen3.8-Max 等闭源前沿模型。 这项工作解决了多模态 AI、3D 理解和智能体系统交叉领域中的一个挑战性新兴问题，提供了标准化基准和训练范式，可能加速交互式 3D 世界生成的研究。RL 能够使开源模型超越闭源模型的发现，对先进 AI 能力的普及具有重大意义。 基准 VWE-BENCH 包含 2,616 个高质量 3D 资产、323 个人工标注的种子世界和 6,828 个逆向合成的多模态查询，分为已验证和未验证集。框架使用 MCP 工具进行资产检索、编辑和渲染，并使用基于规则的验证器检查物理可行性和意图满足；旗舰模型 VibeWorlder-30B-A3B 在所有评估模型中取得了最佳 Pass@1。
 
 huggingface_papers · Hugging Face Papers · 8月18日 00:00
 
-**背景**: 多模态智能体是能够处理并推理多种数据类型（如文本、图像和音频）的 AI 系统，通常使用外部工具。从文本生成 3D 世界是一个新兴领域，像 Meta 的 WorldGen 这样的系统可以从提示生成交互式 3D 场景。强化学习是一种机器学习范式，智能体通过与环境的试错交互来学习，已被应用于提升 AI 智能体的性能。
+**背景**: 多模态智能体是能够处理和生成多种类型数据（如文本、图像和 3D 场景）的 AI 系统。从自然语言查询构建交互式 3D 开放世界需要理解用户意图、规划场景布局和使用 3D 工具，这是一个复杂任务，当前模型难以胜任。强化学习（RL）是一种训练方法，智能体通过与环境交互并获得奖励来学习，可以提升此类任务的性能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Multimodal_and_tool-use_in_AI_agents">Multimodal and tool-use in AI agents</a></li>
-<li><a href="https://www.meta.com/blog/worldgen-3d-world-generation-reality-labs-generative-ai-research/">Research Update: WorldGen — From Text to Immersive 3D Worlds</a></li>
-<li><a href="https://hackernoon.com/beyond-transformers-the-overlooked-potential-of-reinforcement-learning">Beyond Transformers: The Overlooked Potential of Reinforcement ...</a></li>
+<li><a href="https://huggingface.co/papers/2608.15265">Paper page - VibeWorlding: Can Multimodal Agents Construct ...</a></li>
+<li><a href="https://github.com/usail-hkust/VibeWorlding-Gym">GitHub - usail-hkust/ VibeWorlding -Gym · GitHub</a></li>
+<li><a href="https://arxiv.org/pdf/2608.15265">VibeWorlding: Can Multimodal Agents Construct 3 D Open Worlds ...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#multimodal agents`, `#3D world generation`, `#benchmark`, `#reinforcement learning`, `#AI`
+**标签**: `#multimodal agents`, `#3D world generation`, `#benchmarking`, `#reinforcement learning`, `#AI research`
 
 ---
 
 <a id="item-3"></a>
-## [SA-MRPO：面向多奖励强化学习的饱和感知重加权方法](https://huggingface.co/papers/2608.16072) ⭐️ 8.0/10
+## [SA-MRPO：面向多奖励策略优化的饱和度感知优势重加权](https://huggingface.co/papers/2608.16072) ⭐️ 8.0/10
 
-该论文提出了 SA-MRPO 方法，该方法独立标准化每个奖励目标，并根据批次级饱和估计自适应地降低已饱和目标的权重，从而动态地将优化资源重新分配给未充分优化的目标。在 15 项基准比较中，SA-MRPO 在 12 项中优于 GDPO，在 AIME24 上最高提升 5%。 这项工作解决了大语言模型多奖励强化学习中一个根本性局限，即固定加权和标量化导致梯度分配效率低下。通过聚焦未充分优化的目标，SA-MRPO 有望提高训练效率和最终性能，惠及更广泛的 AI 对齐和后训练社区。 SA-MRPO 不仅能重新缩放更新幅度，还能反转更新的符号，这是一个显著特性。它在数学推理、自适应推理和编程基准上均表现出一致的改进，同时保持较容易目标的性能。
+该论文提出了 SA-MRPO 方法，该方法独立标准化每个奖励目标，并根据批次级饱和度估计自适应地降低已饱和目标的权重，将优化努力重新分配给未充分优化的目标。实验表明，在数学推理、自适应推理和编程基准上，该方法优于 GDPO。 这项工作解决了 LLM 后训练中多奖励强化学习的一个基本局限，即固定加权标量化导致梯度分配效率低下。通过动态重加权目标，SA-MRPO 可以提高训练效率和最终性能，可能惠及更广泛的 RLHF/LLM 对齐社区。 SA-MRPO 在某些参数子空间中不仅可以缩放更新幅度，还可以反转更新的符号。在 15 个基准比较中，它在 12 个上比 GDPO 提高了较难的正确性目标，在 AIME24 上最高提升 5%，并在所有五个自适应推理基准上平均提高 3.8%的准确率。
 
 huggingface_papers · Hugging Face Papers · 8月18日 00:00
 
-**背景**: 像 GRPO 这样的组相对策略优化方法是 LLM 后训练的标准方法，但它们通常先对多个奖励进行固定权重的标量化，再进行标准化。这可能导致具有不同奖励分布的 rollout 获得相同的优势，并继续优化已解决的目标。SA-MRPO 通过独立标准化每个奖励并自适应降低饱和目标的权重来解决这一问题。
+**背景**: 基于组相对优势的强化学习（如 GRPO）广泛用于语言模型的后训练。然而，在优化多个奖励时，现有方法通常在标准化之前使用固定加权和，这可能导致具有不同奖励分布的 rollout 获得相同的优势，并将梯度预算分配给已解决的目标。SA-MRPO 通过独立标准化每个奖励并自适应地降低饱和目标的权重来解决这个问题。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2601.23058v1">From Absolute to Relative: Rethinking Reward Shaping in Group-Based Reinforcement Learning</a></li>
-<li><a href="https://cameronrwolfe.substack.com/p/grpo">Group Relative Policy Optimization (GRPO)</a></li>
-<li><a href="https://huggingface.co/papers/2601.05242">Paper page - GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization</a></li>
+<li><a href="https://arxiv.org/pdf/2608.16072">Learn What's Left, Not What's Mastered: Saturation Aware ...</a></li>
+<li><a href="https://paperium.net/article/en/22776/learn-whats-left-not-whats-mastered-saturation-aware-advantage-reweightingfor-multi-reward-policy-op">Learn What's Left, Not What's Mastered: Saturation Aware ... | Paperium</a></li>
 
 </ul>
 </details>
 
-**标签**: `#reinforcement learning`, `#multi-objective optimization`, `#LLM post-training`, `#policy optimization`, `#AI alignment`
+**标签**: `#reinforcement learning`, `#multi-objective optimization`, `#LLM post-training`, `#policy optimization`, `#RLHF`
 
 ---
 
 <a id="item-4"></a>
-## [Linux 7.3 在 GPU 显存耗尽时提升性能](https://pixelcluster.dev/VRAM-Overcommit/) ⭐️ 8.0/10
+## [苹果以 5%佣金取代欧盟核心技术费](https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/) ⭐️ 8.0/10
 
-Linux 内核 7.3 版本引入了显存超量分配改进，在 GPU 显存耗尽时提升性能。这一更新尤其值得注意，因为它可能改善 LLM 推理和共享内存系统的表现。 这一改进意义重大，因为它解决了 GPU 密集型工作负载（如 AI 推理和游戏）中常见的瓶颈问题，在这些场景中，显存耗尽通常会导致严重的性能下降或崩溃。它可能使系统更具韧性和效率，惠及从游戏玩家到数据科学家的广泛用户。 该更新侧重于虚拟内存碎片化和分页机制，可能使内核更有效地管理 GPU 内存。然而，Nvidia GPU 目前缺乏对分页的支持，这可能会限制 Nvidia 用户受益，直到驱动程序更新发布。
+苹果宣布对欧盟 App Store 政策进行重大调整，以对 App Store 之外数字交易的 5%佣金取代核心技术费。新条款还取消了初始获取费和商店服务费，从而解决了与欧盟委员会的争议。 这解决了与欧盟委员会的重大反垄断争议，并为开发者提供了更简单、更可预测的费用结构。这可能为苹果及其他平台如何遵守《数字市场法案》树立先例，影响整个科技行业。 核心技术费（针对年安装量超过 100 万次的开发者按次收取）被 App Store 之外数字交易 5%的佣金所取代。苹果将继续要求所有替代分发的应用通过公证，以确保用户安全。
 
-hackernews · flaburgan · 8月18日 07:51 · [社区讨论](https://news.ycombinator.com/item?id=49342719)
+hackernews · newusertoday · 8月18日 16:21 · [社区讨论](https://news.ycombinator.com/item?id=49348055)
 
-**背景**: 显存超量分配是一种允许系统分配超过物理可用内存的技术，依赖分页或交换来处理超额需求。在 Linux 中，CPU 内存的超量分配会计功能早已存在，但将其应用于 GPU 内存相对较新。对于 LLM 推理，GPU 内存对于存储模型权重和激活至关重要，显存耗尽通常会导致内存不足错误。共享内存架构（如 AMD APU）可以通过改进的显存管理更好地利用可用的系统 RAM。
+**背景**: 欧盟的《数字市场法案》（DMA）要求苹果等守门人允许替代应用分发和支付系统。2024 年初，苹果推出了核心技术费作为其合规计划的一部分，但遭到批评并与欧盟委员会发生正式争议。新变化旨在通过简化费用结构来解决这些问题。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.kernel.org/doc/Documentation/vm/overcommit-accounting">kernel .org/doc/Documentation/vm/ overcommit -accounting</a></li>
-<li><a href="https://developer.nvidia.com/blog/accelerate-large-scale-llm-inference-and-kv-cache-offload-with-cpu-gpu-memory-sharing/">Accelerate Large-Scale LLM Inference and KV Cache Offload with CPU-GPU Memory Sharing | NVIDIA Technical Blog</a></li>
-<li><a href="https://www.spheron.network/blog/dedicated-vs-shared-gpu-memory/">What Is Shared GPU Memory? Dedicated vs Shared (2026) | Spheron Blog</a></li>
+<li><a href="https://developer.apple.com/support/core-technology-fee/">Core Technology Fee - Support - Apple Developer</a></li>
+<li><a href="https://www.bloomberg.com/news/articles/2026-08-18/apple-lowers-app-store-fees-in-europe-to-settle-dispute-with-eu">Apple Lowers App Store Fees in Europe to Settle Dispute With EU</a></li>
+<li><a href="https://9to5mac.com/2026/08/18/apple-overhauls-app-store-fees-in-the-eu-with-new-unified-terms/">Apple overhauls App Store fees in the EU with new unified... - 9to5Mac</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对这一改进表示兴奋，用户希望它能被上游整合，并指出 Nvidia 缺乏对分页的支持。一些用户质疑这些好处是否适用于 LLM 推理等计算工作负载，而另一些用户则分享了共享内存系统和性能诊断的经验。总体情绪积极，期待未来的内核更新。
+**社区讨论**: 社区评论反应不一。有人质疑苹果既然已经收取开发者计划费用，为何还需要新的佣金；也有人指出这对 Netflix 和 Spotify 等阅读器应用有所改善。总体情绪谨慎乐观，但对苹果的理由仍存疑虑。
 
-**标签**: `#Linux kernel`, `#VRAM`, `#GPU memory`, `#performance`, `#open source`
+**标签**: `#Apple`, `#EU`, `#App Store`, `#Regulation`, `#Developer Fees`
 
 ---
 
 <a id="item-5"></a>
-## [重新思考数据库编程：非 SQL 模式定义引发争论](https://acadia.engineering/blog/rethinking-database-programming) ⭐️ 8.0/10
+## [Linux 7.3 改进显存耗尽处理](https://pixelcluster.dev/VRAM-Overcommit/) ⭐️ 8.0/10
 
-这篇文章提出通过使用非 SQL 语言定义模式来重新思考数据库编程，挑战了传统使用 SQL 定义模式的方式。这种方法旨在提供一种更具表现力且更集成的方式来定义数据库结构。 这很重要，因为它可能影响开发者进行数据库设计的方式，可能提供比 SQL 更多的灵活性和表现力。它还引发了关于 SQL 与替代方法之间权衡的更广泛讨论，影响数据库工具和互操作性的未来。 文章建议用非 SQL 语言定义的模式可以与 SQL 共存，但社区评论指出，这些语言可能落后于数据库功能，自定义编码可能带来互操作性问题，以及闭源许可的风险。讨论中引用了 PostgreSQL 的 CREATE TABLE 功能作为此类语言必须支持的基准。
+Linux 内核 7.3 引入了一种更细致的方法来处理显存耗尽的情况，不再像以前那样要么回退到系统内存（速度慢），要么直接失败。这一改进旨在显存耗尽时保持性能。 这一变化对 GPU 用户和开发者意义重大，因为它可以减少在内存受限场景下的卡顿和崩溃，有利于游戏和计算负载。它也解决了长期以来的痛点，即显存耗尽往往导致性能下降或系统不稳定。 该改进是 DRM 内存管理子系统的一部分，负责处理 GEM 对象和缓冲区分配。它可能对 NVIDIA 用户尤其重要，因为据报道 AMD GPU 能更好地处理显存耗尽，而这一修复可以在内核层面实现。
 
-hackernews · honungsburk · 8月18日 07:28 · [社区讨论](https://news.ycombinator.com/item?id=49342530)
+hackernews · flaburgan · 8月18日 07:51 · [社区讨论](https://news.ycombinator.com/item?id=49342719)
 
-**背景**: SQL 是关系数据库管理的标准语言，包括通过数据定义语言（DDL）进行模式定义。SQL 的替代方案存在，如 NoSQL 数据库和 Gremlin 或 N1QL 等查询语言，但它们往往牺牲了关系完整性或表现力。这篇文章的提议是寻求更开发者友好或更具表现力的数据库交互方式这一更广泛趋势的一部分。
+**背景**: 在旧内核中，当 GPU 驱动无法分配更多显存时，它要么回退到系统内存（速度较慢），要么直接失败导致崩溃。Linux 7.3 引入了一种更细致的方法来处理显存不足，而不会严重影响性能。这是内核持续改进的一部分，继 Linux 7.2 带来缓存感知调度和其他性能增强之后。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.ionos.com/digitalguide/server/know-how/the-best-sql-alternatives/">What alternatives to SQL are there? - IONOS</a></li>
-<li><a href="https://grokipedia.com/page/SQL-92">SQL -92 — Grokipedia</a></li>
+<li><a href="https://dev.to/adilaidev/how-linux-73-handles-vram-starvation-without-slowing-down-29me">How Linux 7.3 Handles VRAM Starvation Without... - DEV Community</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49342719">Linux 7.3 improves performance when running out of vRAM</a></li>
+<li><a href="https://docs.kernel.org/gpu/drm-mm.html">DRM Memory Management — The Linux Kernel documentation</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 社区评论对替代 SQL 表示怀疑，指出关系数据库架构经过验证且可组合。担忧包括难以跟上数据库功能、自定义编码可能带来的互操作性问题，以及采用具有限制性许可的闭源软件的风险，如 Elm 的发展轨迹所示。
+**社区讨论**: 社区评论对这一改进表示兴奋，用户希望它能被上游化并改善 NVIDIA 支持。一些人质疑它对 LLM 推理等计算负载的影响，而另一些人指出 Windows 处理显存耗尽更无缝。还有人对内存碎片化以及内核级碎片整理的可能性表示好奇。
 
-**标签**: `#database`, `#SQL`, `#programming-languages`, `#schema`, `#interop`
+**标签**: `#Linux`, `#VRAM`, `#GPU`, `#kernel`, `#performance`
 
 ---
 
 <a id="item-6"></a>
-## [Asana 借助 OpenAI Codex 两周完成五年工程量](https://openai.com/index/asana) ⭐️ 8.0/10
+## [Asana 借助 Codex 两周完成五年工程量](https://openai.com/index/asana) ⭐️ 8.0/10
 
-Asana 使用 OpenAI Codex 在短短两周内替换了一个过时的测试系统，这项任务原本预计需要五年时间，成本约为 12,000 美元。 这一案例展示了 AI 编码工具在现代化遗留系统方面的变革潜力，带来了显著的时间和成本节约。它突出了一个实际应用场景，可能影响工程团队处理大规模重构项目的方式。 该项目涉及替换过时的测试系统，通常需要大量的人工工作和领域知识。使用 Codex（一种 AI 编码代理）使 Asana 能够自动化和加速这一过程，在数周内完成了原本估计需要数年的工作。
+Asana 使用 OpenAI Codex 在两周内替换了过时的测试系统，完成了预计需要五年、成本约 1.2 万美元的工作。 该案例展示了 AI 辅助编程在极大加速工程工作方面的潜力，可能重塑整个行业的软件开发实践和生产力预期。 该项目涉及从过时的测试系统迁移到新系统，这类任务通常需要大量人工投入。约 1.2 万美元的成本包括 Codex 使用及相关费用，凸显了 AI 驱动开发的高性价比。
 
 rss · OpenAI Blog · 8月18日 07:00
 
-**背景**: OpenAI Codex 是一种编码代理，可以编辑代码仓库、运行测试和执行代码审查，可在 CLI、IDE 和云等多种界面中使用。遗留系统现代化通常涉及重构或替换过时的组件，这既耗时又有风险，但像 Codex 这样的 AI 工具可以帮助简化这些工作。
+**背景**: OpenAI Codex 是一款编码代理，可在 ChatGPT、CLI、IDE、桌面和云环境中使用，能够编辑代码库、运行测试和执行代码审查。Asana 是一款项目管理工具，可与 TestLodge 等测试工具集成，但此次迁移涉及替换内部测试系统。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.goodvibecode.com/tools/codex">OpenAI Codex Review 2026: Features, Pricing & Alternatives</a></li>
 <li><a href="https://github.com/openai/codex">GitHub - openai / codex : Lightweight coding agent that runs in your...</a></li>
-<li><a href="https://www.testingxperts.com/blog/legacy-system">Legacy System Modernization: Challenges & Best Practices</a></li>
+<li><a href="https://asana.com/apps/testlodge">TestLodge • Asana</a></li>
+<li><a href="https://www.testlodge.com/integrations/asana">Asana Test Case Management Tool - TestLodge</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI coding`, `#software engineering`, `#legacy modernization`, `#OpenAI Codex`, `#productivity`
+**标签**: `#AI-assisted development`, `#Codex`, `#software engineering`, `#productivity`, `#case study`
 
 ---
 
 <a id="item-7"></a>
-## [微软 Copilot 秘密参数导致密码被盗](https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/) ⭐️ 8.0/10
+## [微软 Copilot 漏洞：隐藏参数导致一键密码窃取](https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/) ⭐️ 8.0/10
 
-研究人员发现微软 365 Copilot 企业版存在一个严重漏洞，URL 中的秘密参数允许攻击者在目标点击恶意链接时窃取密码。该漏洞名为 CoSnitch，由 Varonis 研究人员披露，影响微软 Copilot 个人版。 该漏洞影响广泛使用的 AI 产品，并导致实际密码被盗，对企业安全构成直接威胁。它凸显了 AI 助手中日益增长的安全风险，以及加强输入验证和访问控制的必要性。 该漏洞利用 Copilot URL 处理中隐藏的“autorun”参数，实现一键数据泄露。漏洞是通过不寻常的途径发现的，但摘要中未透露具体方法。
+Varonis 的研究人员发现了一个名为 CoSnitch 的微软 365 Copilot 严重漏洞，当目标点击恶意链接时，攻击者可借此窃取密码。该漏洞利用了 Copilot 中隐藏的“autorun”参数，实现一键数据外泄。 该漏洞意义重大，因为微软 Copilot 在企业环境中广泛使用，一键攻击即可窃取密码，构成严重安全风险。它凸显了 AI 助手面临的提示注入攻击威胁日益增长，攻击者可通过 Gmail、Google Drive 等集成服务访问敏感数据。 CoSnitch 攻击是继 Varonis 发现的另一个一键数据外泄攻击 SearchLeak 之后出现的。该漏洞属于提示注入攻击，Copilot 会将恶意指令视为合法用户命令，可能通过 OAuth 连接器向各种服务外泄数据。
 
 rss · Ars Technica AI · 8月18日 13:00
 
-**背景**: 提示注入是一种网络安全攻击，通过看似无害的输入使大型语言模型（LLM）产生非预期行为。在此案例中，秘密参数可能触发了提示注入，覆盖了 Copilot 的预期指令，导致数据泄露。正如 OWASP 等来源所强调，这种攻击向量是 AI 安全日益关注的问题。
+**背景**: 提示注入攻击是一类安全漏洞，攻击者在 AI 模型处理的输入中嵌入恶意指令，使其执行非预期操作。在微软 Copilot 等 AI 助手中，这些攻击可以是直接的（用户输入恶意提示）或间接的（来自外部来源的恶意内容）。CoSnitch 漏洞特别利用隐藏的 URL 参数，在用户仅点击链接的情况下触发攻击。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://arstechnica.com/security/2026/08/microsoft-copilot-reveals-secret-input-that-allowed-it-to-be-hacked/">Microsoft Copilot reveals secret input that allowed it to... - Ars Technica</a></li>
 <li><a href="https://getaibook.com/news/cosnitch-exploit-leaks-copilot-data-via-hidden-url-parameter/">CoSnitch Exploit Leaks Copilot Data via Hidden URL Parameter | News</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection - Wikipedia</a></li>
+<li><a href="https://www.theregister.com/research/2026/08/18/copilot-tricked-into-telling-reseachers-how-to-hack-itself/5288857">Copilot tricked into telling reseachers how to hack itself</a></li>
 
 </ul>
 </details>
@@ -186,127 +187,152 @@ rss · Ars Technica AI · 8月18日 13:00
 ---
 
 <a id="item-8"></a>
-## [阿里巴巴 RISC-V 芯片以 30 tokens/s 运行 Qwen-3.8 27B](https://www.reddit.com/r/LocalLLaMA/comments/1vs0wsl/alibabas_riscv_cpu_xuantie_c950_runs_qwen38_27b/) ⭐️ 8.0/10
+## [阿里 RISC-V 芯片运行 Qwen-3.8 27B，速度达 30 tokens/s](https://www.reddit.com/r/LocalLLaMA/comments/1vs0wsl/alibabas_riscv_cpu_xuantie_c950_runs_qwen38_27b/) ⭐️ 8.0/10
 
-阿里巴巴的 XuanTie C950 RISC-V CPU 展示了以每秒 30 个 token 的速度运行 Qwen-3.8 27B 大语言模型的能力，标志着基于 CPU 的 LLM 推理性能的一个重要里程碑。 这一成就挑战了 GPU 在 LLM 推理中的主导地位，可能为部署大型模型提供更易获取且成本更低的替代方案。同时，它也凸显了 RISC-V 生态在 AI 工作负载方面的日益成熟。 XuanTie C950 是一款 5nm 工艺、符合 RVA23 规范的 RISC-V 核心，最多 8 个核心，主频 3.2 GHz，SPECint2006 得分超过 70。Qwen-3.8 27B 是一个 270 亿参数的 LLM，在 Artificial Analysis Intelligence Index 上得分 52。
+阿里巴巴的玄铁 C950 RISC-V CPU 展示了以每秒 30 个 token 的速度运行 Qwen-3.8 27B 大语言模型，证明了无需 GPU 即可进行可行的 CPU 推理。 这一里程碑凸显了 RISC-V 在 AI 推理方面日益增强的能力，可能减少对 GPU 的依赖，为运行大型模型提供更易获取、更具成本效益的替代方案。它可能影响 AI 部署的硬件选择，尤其是在边缘和服务器环境中。 玄铁 C950 是一款 5nm、符合 RVA23 规范的 RISC-V 核心，最多 8 核，主频 3.2 GHz，SPECint2006 得分超过 70。Qwen-3.8 27B 模型原生支持 262,144 个 token 的上下文，可通过 YaRN 扩展到 1,000,000 个。
 
 reddit · r/LocalLLaMA · /u/DeltaSqueezer · 8月18日 20:24
 
-**背景**: LLM 推理通常依赖 GPU，因为其并行处理能力，但 CPU 正越来越多地被优化用于此任务。每秒 token 数（TPS）衡量首 token 之后的生成速度，30 TPS 被认为对交互式应用是可用的。RISC-V 是一种开放指令集架构，在多个计算领域日益受到关注。
+**背景**: RISC-V 是一种开放标准的指令集架构（ISA），允许任何人基于它设计处理器，提供灵活性和定制化。传统上，运行像 Qwen-3.8 27B 这样的大型语言模型（LLM）需要强大的 GPU，因为它们具有并行处理能力，但随着软件和硬件的优化，基于 CPU 的推理正变得越来越可行。阿里巴巴的玄铁 C950 是该公司推动 RISC-V 性能提升（尤其是在 AI 工作负载方面）的一部分。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://www.cnx-software.com/2026/03/25/alibaba-xuantie-c950-a-powerful-rva2364-bit-risc-v-core-for-edge-ai-computing/">Alibaba XuanTie C 950 - A powerful, RVA23-compliant... - CNX Software</a></li>
+<li><a href="https://abit.ee/en/processors/alibaba-xuantie-c950-risc-v-processor-ai-damo-academy-artificial-intelligence-chip-en">Alibaba XuanTie C 950 : The RISC - V Chip That's Supposed to Scare...</a></li>
 <li><a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen/ Qwen 3 . 8 - 27 B · Hugging Face</a></li>
-<li><a href="https://www.gmicloud.ai/en/blog/ttft-llm-speed-metrics">TTFT vs Tokens Per Second : LLM Inference Speed... | GMI Cloud</a></li>
 
 </ul>
 </details>
 
-**标签**: `#RISC-V`, `#LLM inference`, `#CPU performance`, `#Alibaba`, `#Qwen`
+**社区讨论**: 社区讨论可能包含关于 CPU 推理可行性的技术见解和辩论，与 GPU 性能的比较，以及对 RISC-V 采用的影响。一些人可能质疑 30 tps 在实际应用中的实用性，而另一些人可能强调节省成本和能源效率的潜力。
+
+**标签**: `#RISC-V`, `#CPU inference`, `#LLM`, `#Alibaba`, `#Hardware`
 
 ---
 
 <a id="item-9"></a>
-## [内存价格一年飙升 500%，128GB DDR5 达 3399 美元](https://www.reddit.com/r/LocalLLaMA/comments/1vrwsfl/memory_prices_climb_500_in_12_months_up_to_10x/) ⭐️ 8.0/10
+## [内存价格一年飙升 500%，128GB DDR5 现价 3399 美元](https://www.reddit.com/r/LocalLLaMA/comments/1vrwsfl/memory_prices_climb_500_in_12_months_up_to_10x/) ⭐️ 8.0/10
 
-内存价格在 12 个月内上涨了 500%，128GB DDR5 套件现价 3399 美元，是最低记录价格的 10 倍。这一急剧上涨归因于供应紧张和需求上升，尤其是来自 AI 应用的需求。 这一价格飙升对依赖本地硬件进行 LLM 推理的 AI/ML 从业者影响重大，因为内存是运行大型模型的关键组件。这可能迫使用户推迟升级、寻求 DDR4 等替代方案，或转向云端解决方案，从而影响整个 AI 硬件生态系统。 价格上涨并不均匀；由于用户避开昂贵的 DDR5，DDR4 价格也上涨了 120-180%。最近的跟踪显示本周 DDR5 价格略有下降，但折扣仅限于少数供应商，表明波动性仍然存在。
+过去 12 个月内存价格上涨了 500%，128GB DDR5 套件现价 3399 美元，是最低记录价格的 10 倍。 这一价格飙升对依赖大内存配置进行本地 LLM 推理的 AI/ML 从业者影响重大，使得本地运行模型的成本更高，可能促使部分用户转向云解决方案或替代硬件。 价格上涨归因于供应限制和需求增加，DDR4 价格也因用户转向旧平台而上涨 120-180%。500%的涨幅基于过去 18 个月的追踪数据，当前价格是最低历史价格的 10 倍。
 
 reddit · r/LocalLLaMA · /u/johnnyApplePRNG · 8月18日 17:59
 
-**背景**: 内存价格受供需动态、制造能力和市场投机影响。对于本地 LLM 推理，大容量内存（如 128GB）对于在不依赖云服务的情况下运行大型模型至关重要，因为 Apple Silicon 或高端 GPU 上的统一内存可作为 VRAM 使用。价格飙升部分是由 AI 对内存需求的增长以及传统 PC 市场周期驱动的。
+**背景**: 内存价格历史上波动较大，但当前涨幅尤为严重。对于本地 LLM 推理，RAM 容量至关重要，量化是降低内存需求的关键技术。此次涨价同时影响 DDR4 和 DDR5，部分市场 DDR5 自 2025 年 7 月以来涨幅达 414%。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399">Memory prices climb 500% in 12 months, up to... | Tom's Hardware</a></li>
+<li><a href="https://wccftech.com/ddr5-memory-continues-to-sell-at-a-whopping-400-premium-in-germany/">DDR 5 Memory Continues To Sell At A Whopping 400%+ Premium In...</a></li>
 <li><a href="https://www.aroged.com/2026/08/17/rammageddon-has-arrived-ram-prices-have-soared-to-crazy-heights-128-gb-ddr5-costs-3399/">RAMmageddon has arrived: RAM prices have soared to... - Aroged</a></li>
-<li><a href="https://wccftech.com/ddr5-prices-just-posted-their-first-drop-in-several-months/">DDR 5 Memory Prices Just Took a Noticeable Dive for the First Time...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 上的社区评论可能表达对成本上升的不满，一些人建议使用 DDR4 或云服务等替代方案。其他人可能讨论对本地 LLM 项目的影响，并推测未来价格趋势，既有担忧也有务实的建议。
+**社区讨论**: Reddit 讨论可能涉及对可负担性的担忧、关于云计算或旧硬件等替代方案的辩论，以及对未来价格走势的猜测。一些用户可能建议等待价格回落或探索 DDR4 平台。
 
-**标签**: `#hardware`, `#memory`, `#LLM`, `#pricing`, `#AI infrastructure`
+**标签**: `#hardware`, `#memory-prices`, `#LLM`, `#AI-infrastructure`, `#market-trends`
 
 ---
 
 <a id="item-10"></a>
-## [DeepSeek V4 Flash Q4_K_XL 在 4× RTX 3060 上达到 100 tok/s](https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks/) ⭐️ 8.0/10
+## [DeepSeek V4 Flash Q4_K_XL 在 4× RTX 3060 上实现约 100 tok/s](https://www.reddit.com/r/LocalLLaMA/comments/1vrqf4f/running_deepseek_v4_flash_q4_k_xl_at_100_toks/) ⭐️ 8.0/10
 
-一位用户成功在四块 RTX 3060 12GB 显卡上运行了 144 GiB 的 DeepSeek-V4-Flash-0731 UD-Q4_K_XL GGUF 模型，上下文窗口为 368k，使用 llama.cpp build b10181 实现了约 100 tok/s 的提示处理速度和约 10 tok/s 的生成速度。这一突破涉及使用 -ncmoe 34 和显式 -ot 覆盖的自定义层分布，将专家层放置在 GPU 1-3 上，同时将大多数非专家张量保留在 GPU0 上。 这表明大型 MoE 模型（144 GiB）可以在消费级硬件上以合理的性能运行，推动了本地 LLM 推理的边界。将 -ncmoe 与显式张量放置相结合的技术可能被其他人采用，以运行原本需要昂贵企业级 GPU 的模型。 该配置使用 -ts 100,1,1,1 将非专家张量推送到 GPU0，而 -ot 将第 34-42 块的专家层分配给 GPU 1-3。微批大小（-ub）是最大的性能杠杆：从 1024 增加到 2048 使提示处理速度从约 63 提升到约 99 tok/s。模型大部分位于系统 RAM 中，因此四通道内存带宽至关重要。
+一位用户成功在四块 RTX 3060 12GB 显卡上运行了 144 GiB 的 DeepSeek-V4-Flash-0731 UD-Q4_K_XL GGUF 模型，实现了约 100 tok/s 的提示处理速度和约 10 tok/s 的生成速度，上下文窗口为 368k。他们分享了详细的 llama.cpp 设置，包括-ncmoe 34 和显式的专家卸载配置。 这表明通过精心安排张量放置，大型 MoE 模型可以在消费级硬件上高效运行，使高级 AI 模型对爱好者和研究人员更加可及。该配置为在多 GPU 设置上优化内存使用和吞吐量提供了实用参考。 该设置使用-ncmoe 34 将第 0-33 块的专家保留在系统内存中，同时将剩余的九个专家层显式分配到 GPU 1-3 上。极端的-ts 100,1,1,1 拆分将非专家张量推送到 GPU0，而微批大小（-ub 2048）是最大的性能杠杆，与-ub 1024 相比，提示处理速度翻倍。
 
 reddit · r/LocalLLaMA · /u/syscomua · 8月18日 14:15
 
-**背景**: DeepSeek V4 Flash 是一种混合专家（MoE）模型，意味着每个 token 只激活部分参数，从而减少计算量。GGUF 量化（Q4_K_XL）将权重压缩到 4 位，减少内存占用。llama.cpp 通过张量分割和层分布支持多 GPU 推理，但手动放置可以优化 VRAM 使用。
+**背景**: DeepSeek V4 Flash 是一个效率优化的混合专家（MoE）模型，总参数 284B，激活参数 13B，支持 1M token 上下文。Q4_K_XL 等 GGUF 量化可减小模型大小以进行本地推理，而 llama.cpp 支持 MoE 专家卸载，以在 CPU 和 GPU 之间平衡内存。
 
 <details><summary>参考链接</summary>
 <ul>
 <li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
-<li><a href="https://github.com/ggml-org/llama.cpp/blob/master/docs/multi-gpu.md">llama . cpp /docs/ multi - gpu .md at master · ggml-org/ llama . cpp · GitHub</a></li>
-<li><a href="https://insiderllm.com/guides/llm-quantization-explained/">Quantization Explained: What It Means for Local AI | InsiderLLM</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash">DeepSeek V 4 Flash 0423 - API Pricing & Benchmarks | OpenRouter</a></li>
+<li><a href="https://huggingface.co/blog/Doctor-Shotgun/llamacpp-moe-offload-guide">Performant local mixture-of- experts CPU inference with GPU...</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: 评论提到，原作者已经发布了第二版 DeepSeek Flash GGUF 量化版本，并附带了 llama.cpp PR（https://github.com/ggml-org/llama.cpp/pull/27342）。这表明该模型的优化工作持续进行，社区对此兴趣浓厚。
-
-**标签**: `#llama.cpp`, `#DeepSeek`, `#GGUF`, `#multi-GPU`, `#local LLM`
+**标签**: `#llama.cpp`, `#DeepSeek`, `#GGUF`, `#MoE`, `#local-llm`
 
 ---
 
 <a id="item-11"></a>
-## [DFlash 2：并行草稿提升推测解码效率](https://www.reddit.com/r/LocalLLaMA/comments/1vs2tz1/dflash_2_keep_drafting_parallel/) ⭐️ 8.0/10
+## [GLM5.3 基准测试结果在 Artificial Analysis 上公布](https://www.reddit.com/r/LocalLLaMA/comments/1vs3joh/glm53_artificial_analysis_benchmarks/) ⭐️ 8.0/10
 
-DFlash 2 提出了一种用于推测解码的新型并行草稿方法，有望显著提升大语言模型的推理速度。该方法允许同时草拟多个候选词元，相比传统的顺序草拟方式降低了延迟。 这一进展对 AI/ML 社区意义重大，因为它解决了 LLM 推理中的关键瓶颈，可能使大型模型的部署更快、更具成本效益。它可能影响从实时聊天机器人到大规模批处理等广泛的应用场景。 该方法旨在与现有的推测解码框架兼容，对目标模型的改动极小。论文中可能包含在标准基准测试上的加速实验结果，但摘要中未提供具体数字。
+GLM5.3 的基准测试结果已在 Artificial Analysis 上分享，表明 LLM 性能有显著提升。然而，截至 2026 年 7 月 15 日，Z.ai 尚未正式宣布或发布 GLM5.3。 这很重要，因为 GLM5.3 可能代表开放权重 LLM 性能的重大进步，可能影响 AI 社区和下游应用。r/LocalLLaMA 上的社区讨论可能包含技术比较和见解，为发布增添了价值。 根据非官方消息，GLM5.3 使用与 GLM5.2 相同的基础模型，所有性能提升均来自后训练。据报道，Terminal-Bench 3.0 得分从 4.6 跃升至 28.3，在相同底层权重上大约提升了 6 倍。
 
-reddit · r/LocalLLaMA · /u/coder543 · 8月18日 21:37
+reddit · r/LocalLLaMA · /u/anderspitman · 8月18日 22:05
 
-**背景**: 推测解码是一种针对自回归大语言模型（LLM）的推理时优化技术，它每个解码步骤生成多个词元，而不是一个。较小的草稿模型提出一系列候选词元，较大的目标模型通过一次前向传播验证它们，同时保持原始输出分布，并将延迟降低约两到三倍。像 DFlash 2 这样的并行草稿方法旨在通过同时草拟多个候选词元来进一步改进这一过程，可能提高接受率并减少验证步骤的数量。
+**背景**: GLM5.3 是社区对 Z.ai 预期在 GLM-5 系列中下一个模型发布的标签，但尚未作为正式产品发布。Artificial Analysis 是一个独立平台，使用其智能指数评估和排名 LLM，目前 Claude Opus 5 以 63 分排名第一。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Speculative_decoding">Speculative decoding</a></li>
-<li><a href="https://arxiv.org/pdf/2401.07851">Unlocking Efficiency in Large Language Model Inference</a></li>
-<li><a href="https://rits.shanghai.nyu.edu/ai/jetspec-causal-parallel-tree-drafting-hits-9-64x-faster-llm-inference/">JetSpec: Causal Parallel Tree Drafting Hits 9.64x Faster LLM Inference</a></li>
+<li><a href="https://kie.ai/blog/what-is-glm-5-3">What Is GLM - 5 . 3 ? Z.ai's Next Open-Weight Model</a></li>
+<li><a href="https://www.youtube.com/watch?v=CFSIHHKn-e8">GLM 5 . 3 : The Best Hacking Model Isn't Open Yet !! - YouTube</a></li>
+<li><a href="https://shaam.blog/articles/glm-5-3-next-open-weight-model-guide-2026">GLM - 5 . 3 : What Z.ai's Next Open-Weight Model Actually Means for...</a></li>
+<li><a href="https://artificialanalysis.ai/leaderboards/models">LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic...</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM`, `#speculative decoding`, `#inference optimization`, `#AI/ML`
+**标签**: `#GLM5.3`, `#LLM`, `#benchmarks`, `#AI`
 
 ---
 
 <a id="item-12"></a>
-## [Qwen3.8-27B 在 RTX 3090 上通过超优化引擎达到 124 tps](https://www.reddit.com/r/LocalLLaMA/comments/1vrw4sz/i_pushed_qwen3827b_to_124_tps_on_a_single_request/) ⭐️ 8.0/10
+## [Qwen3.8-27B 在 RTX 3090 上通过高级优化达到 124 tps](https://www.reddit.com/r/LocalLLaMA/comments/1vrw4sz/i_pushed_qwen3827b_to_124_tps_on_a_single_request/) ⭐️ 8.0/10
 
-一位开发者发布了针对 RTX 3090 上 Qwen3.8-27B 的超优化推理引擎，在贪心采样下单请求达到每秒 124 个 token（tps），从 90 tps 提升而来。此次更新增加了对 lm_head 和 MTP 模块的 GPTQ-int4 量化、split-KV 注意力内核，以及覆盖模型输出 97.5% 的新草稿词汇表。 这表明高度优化的本地推理可以在消费级硬件上媲美云端性能，可能使 LLM 部署更易获取且更私密。这些技术（FP8 KV 缓存、int8 激活、MTP 投机解码）可被更广泛的社区采用，以提高推理效率。 该引擎使用 fp8 KV 缓存、int8 激活和带 40k token 草稿头的 MTP-4 草稿，贪心采样达到 124 tps，默认采样约 114 tps。GPTQ-int4 量化仅增加 +0.6% PPL，GSM8K 不变，split-KV 内核在 1.5k 上下文快 5 倍，16k 时快 10 倍。使用 KVarN 4/2-bit KV 缓存可容纳完整 262k 上下文，正确到 240k。
+一位开发者将 Qwen3.8-27B 在 RTX 3090 上的推理速度优化至每秒 124 个 token（贪心解码）和默认采样下每秒 114 个 token，从原来的 90/98 tps 提升。改进包括优化草稿词汇表、对 lm_head 和 MTP 模块进行 GPTQ-int4 量化、拆分 KV 注意力内核以及无排序采样器补丁。 这表明通过精细的工程优化，本地 LLM 推理仍能获得显著的性能提升，使高吞吐量的本地推理更加普及。同时，这些技术也可应用于其他模型和硬件，惠及更广泛的本地 AI 社区。 优化包括 fp8 KV 缓存、int8 激活、MTP-4 草稿（40k token 草稿头），以及覆盖模型输出 97.5% 的新草稿词汇表（原为 92%）。GPTQ-int4 量化仅增加 0.6% 的困惑度，GSM8K 不变，拆分 KV 内核在长上下文下快 5-10 倍。峰值并发吞吐量保持在 64 并发时约 1,000 tps。
 
 reddit · r/LocalLLaMA · /u/iamMess · 8月18日 17:35
 
-**背景**: 投机解码使用一个小型草稿模型提出多个 token，目标模型并行验证，从而在不改变输出分布的情况下加速生成。MTP（多 token 预测）是一种特定方法，草稿头在目标模型的分布上训练。量化通过使用低精度数字来减小模型大小和内存带宽，但可能降低质量；GPTQ 是一种流行的训练后量化方法。RTX 3090 拥有 24GB 显存和 82 个 SM，限制了推理速度，因此内核融合和 KV 缓存压缩等优化至关重要。
+**背景**: 投机解码使用一个小型草稿模型提出 token，然后由完整模型验证，从而在不改变输出分布的情况下加速推理。KV 缓存存储键值对以避免重复计算，使用较低精度（如 fp8）可减少内存和带宽。MTP（多 token 预测）是一种同时预测多个未来 token 的技术，可提高草稿质量。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://ai.plainenglish.io/gemma-4-mtp-local-inference-benchmarks-6711c8589d2f">Gemma 4 MTP Local Inference Benchmarks & Real-World Testing</a></li>
-<li><a href="https://effloow.com/articles/gemma-4-mtp-multi-token-prediction-inference-guide-2026">Gemma 4 MTP Drafters: How Multi-Token Prediction... — Effloow</a></li>
-<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical...</a></li>
+<li><a href="https://atomic.chat/blog/guides/what-is-kv-cache">What Is a KV Cache in an LLM? Calculator and Detailed... - Atomic Chat</a></li>
+<li><a href="https://www.buildfastwithai.com/blogs/gemma-4-mtp-drafter-faster-inference">Gemma 4 MTP Drafter: Get 3x Faster Inference (2026 Guide)</a></li>
+<li><a href="https://huggingface.co/Inferact/Kimi-K3-DSpark">Inferact/Kimi-K3-DSpark · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM inference`, `#quantization`, `#speculative decoding`, `#RTX 3090`, `#performance optimization`
+**标签**: `#LLM inference`, `#performance optimization`, `#Qwen`, `#GPU`, `#local LLM`
 
 ---
 
 <a id="item-13"></a>
-## [Anthropic-Cybersecurity-Skills：为 AI 代理提供 817 项网络安全技能](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+## [ComfyUI 推出官方本地开源 MCP 服务器](https://www.reddit.com/r/StableDiffusion/comments/1vrx5tm/comfyui_official_local_mcp/) ⭐️ 8.0/10
 
-名为 mukul975/Anthropic-Cybersecurity-Skills 的 GitHub 仓库一天内获得超过 730 颗星，为 AI 代理提供 817 项结构化网络安全技能。这些技能映射到六个主要框架，并兼容多个 AI 平台。 该仓库满足了 AI 代理执行网络安全任务时对结构化、框架对齐知识日益增长的需求。其迅速走红表明社区对此有浓厚兴趣，并可能推动 AI 驱动的安全操作在多种工具中的标准化。 这些技能涵盖 29 个安全领域，遵循 agentskills.io 开放标准，可用于 Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI 等 20 多个平台。仓库采用 Apache 2.0 许可证，并包含对 MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF 和 MITRE F3 的映射。
+ComfyUI 发布了官方本地开源 MCP 服务器，使 Claude、Codex、Cursor 等 AI 代理能够直接与本地 ComfyUI 安装交互。这是继 6 月发布 Cloud MCP 之后，回应社区对本地功能需求的举措。 此次发布大幅降低了在 ComfyUI 中进行 AI 驱动工作流自动化的门槛，使用户无需依赖云服务即可利用 AI 代理完成模型选择和工作流管理等任务。通过与日益增长的 MCP 标准集成，它增强了 ComfyUI 的生态系统，可能吸引更多用户和开发者。 本地 MCP 服务器完全开源，能够读取用户的 GPU 规格，在下载前建议模型是否值得运行。它还能读取所有已安装的节点和模型，并处理设置复杂性，使其更易于与 MiniMax H3 等本地工作流配合使用。Cloud MCP 仍保留其所有原有功能。
 
-github_trending · GitHub Trending · 8月19日 01:17
+reddit · r/StableDiffusion · /u/crystal_alpine · 8月18日 18:11
 
-**背景**: AI 代理在网络安全中的应用日益增多，用于威胁检测和响应等任务。MITRE ATT&CK 和 NIST CSF 等框架提供了攻击和防御技术的结构化知识，而 agentskills.io 标准则为 AI 代理打包此类知识提供了一种方式。该仓库结合了这些元素，为开发者和安全专业人员提供了全面的资源。
+**背景**: 模型上下文协议（MCP）是 Anthropic 推出的开放标准，用于将 AI 应用连接到外部系统，为 AI 代理访问数据和工具提供通用方式。ComfyUI 是一个流行的基于节点的界面，用于使用 AI 模型生成图像和视频。新的本地 MCP 服务器允许 AI 代理直接在用户机器上控制 ComfyUI，弥合了对话式 AI 与本地创意工作流之间的鸿沟。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://comfy.org/mcp/">Comfy MCP - Drive ComfyUI from any AI agent</a></li>
+<li><a href="https://github.com/joenorton/comfyui-mcp-server">GitHub - joenorton/ comfyui - mcp - server : lightweight Python-based...</a></li>
+<li><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol \ Anthropic</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区反应积极，用户对官方本地 MCP 支持及其简化工作流的潜力表示兴奋。一些用户正在讨论对自动化以及与各种 AI 代理集成的意义，而另一些用户则分享经验并询问有关设置和兼容性的更多细节。
+
+**标签**: `#ComfyUI`, `#MCP`, `#AI agents`, `#open-source`, `#local deployment`
+
+---
+
+<a id="item-14"></a>
+## [Anthropic-Cybersecurity-Skills：817 项 AI 代理安全技能走红](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) ⭐️ 8.0/10
+
+GitHub 仓库 mukul975/Anthropic-Cybersecurity-Skills 已飙升至超过 29,000 颗星，单日新增 730 颗星。它为 AI 代理提供了 817 项结构化网络安全技能，映射到六个主要安全框架，并兼容 20 多个 AI 平台。 该仓库满足了 AI 代理在企业环境中安全运行的日益增长的需求，提供了标准化、与框架对齐的技能集。其迅速被采用表明社区对将 AI 能力与既定网络安全实践相结合的浓厚兴趣，可能影响 AI 代理在各行业的部署和安全方式。 这些技能涵盖 29 个安全领域，并遵循 agentskills.io 开放标准，确保与 Claude Code、GitHub Copilot、Codex CLI、Cursor 和 Gemini CLI 等工具兼容。该仓库采用 Apache 2.0 许可证，允许广泛使用和修改。
+
+github_trending · GitHub Trending · 8月19日 01:29
+
+**背景**: AI 代理越来越多地用于自动化任务，但它们需要专业知识来安全地处理网络安全操作。MITRE ATT&CK 和 NIST CSF 等框架提供了结构化的威胁和防御分类法，该仓库将这些框架转化为 AI 代理可操作的技能。agentskills.io 标准为定义此类技能提供了通用格式，实现了不同 AI 平台之间的互操作性。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -317,50 +343,27 @@ github_trending · GitHub Trending · 8月19日 01:17
 </ul>
 </details>
 
-**标签**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST`, `#open source`
-
----
-
-<a id="item-14"></a>
-## [Unsloth 日增 449 星，新增支持 Qwen3.8 和 DeepSeek-V4](https://github.com/unslothai/unsloth) ⭐️ 8.0/10
-
-Unsloth 是一个用于高效训练和推理 LLM 及扩散模型的 Python 库，今天在 GitHub 上新增了 449 颗星，总星数达到 73,601。该项目现在支持包括 Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、DeepSeek-V4 和 FLUX 在内的最新模型。 Unsloth 的持续增长和对前沿模型的快速支持凸显了其在开源 AI 生态系统中的重要性，使开发者能够以更低的资源需求在本地微调和运行最先进的模型。这一趋势反映了向可访问、高效的 AI 开发工具发展的更广泛运动。 该仓库使用 Python 编写，拥有 6,648 个 fork。本地 UI 同时支持 LLM 和扩散模型，适用于广泛的生成式 AI 任务。每日新增 449 颗星表明社区兴趣浓厚，且项目维护活跃。
-
-github_trending · GitHub Trending · 8月19日 01:17
-
-**背景**: Unsloth 是一个流行的开源库，优化了大型语言模型和扩散模型的微调和推理，通常能显著提升速度并节省内存。Qwen3.8 和 DeepSeek-V4 等模型是快速发展的 AI 领域中的最新发布，其中 Qwen3.8 专注于智能体编码，DeepSeek-V4 提供 Pro 和 Flash 变体，支持 1M 上下文。FLUX 是一款专业级图像生成模型，以高分辨率输出著称。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://apidog.com/blog/what-is-qwen-3-8/">What Is Qwen 3 . 8 -Max?</a></li>
-<li><a href="https://deepseek.ai/deepseek-v4">DeepSeek V 4 Explained: V 4 -Pro 1.6T vs V 4 -Flash 284B (2026)</a></li>
-<li><a href="https://www.datacamp.com/tutorial/flux-ai">Flux AI Image Generator: A Guide With Examples | DataCamp</a></li>
-
-</ul>
-</details>
-
-**标签**: `#LLM`, `#fine-tuning`, `#diffusion models`, `#open-source`, `#Python`
+**标签**: `#cybersecurity`, `#AI agents`, `#MITRE ATT&CK`, `#NIST`, `#security frameworks`
 
 ---
 
 <a id="item-15"></a>
-## [omlx：面向 Apple Silicon 的 LLM 推理服务器，支持连续批处理与 SSD 缓存](https://github.com/jundot/omlx) ⭐️ 8.0/10
+## [ai-memory：基于 Rust 的代理编码 CLI 长期记忆解决方案](https://github.com/akitaonrails/ai-memory) ⭐️ 8.0/10
 
-omlx 是一个面向 Apple Silicon 的新型开源 LLM 推理服务器，具有连续批处理和 SSD 缓存功能，并通过 macOS 菜单栏进行管理。它迅速获得关注，一天内获得 370 颗星，总星数超过 19,000。 该工具满足了在 Apple Silicon 上进行高效本地 LLM 推理的日益增长的需求，可能为开发者和研究人员提高吞吐量并减少延迟。其受欢迎程度表明社区对在消费级硬件上优化 LLM 服务的浓厚兴趣。 该服务器使用连续批处理，在有空闲槽位时调度新请求，并通过 SSD 缓存将热缓存块以 safetensors 格式卸载到磁盘，在匹配前缀时恢复，甚至在重启后也能恢复。它使用 Python 编写，并在 GitHub 上可用。
+ai-memory，一个基于 Rust 的解决方案，旨在为代理编码 CLI 提供长期记忆并促进不同代理供应商之间的交接，今天在 GitHub 上获得了 648 颗星，总星数达到 2739 颗。 该项目解决了 AI 代理开发中的一个关键挑战——长期记忆和跨供应商交接，这对于构建健壮且可互操作的代理编码工具至关重要。其快速的星标增长表明社区兴趣浓厚，并有可能影响代理编码 CLI 的设计方式。 该仓库使用 Rust 编写，拥有 236 个分支。它旨在为代理编码 CLI 提供长期记忆解决方案，并促进不同代理供应商之间的交接，这在生态系统中是一种新颖的方法。
 
-github_trending · GitHub Trending · 8月19日 01:17
+github_trending · GitHub Trending · 8月19日 01:29
 
-**背景**: 连续批处理是一种通过动态调度请求而不是等待固定批次完成来提高 LLM 推理吞吐量的技术。SSD 缓存通过存储中间结果来减少重新计算，这在像 Apple Silicon Mac 这样内存有限的设备上尤其有用。该项目结合了这些技术，为 macOS 用户提供了一个用户友好的推理服务器。
+**背景**: 代理编码 CLI 是在终端中运行的 AI 驱动工具，可以自主读取、写入和执行仓库中的代码。交接是一种协调模式，用于在代理或状态之间转移控制权，通常通过工具调用实现，这一术语由 OpenAI 提出。长期记忆对于代理在会话间保持上下文至关重要，而跨供应商交接则实现了不同代理系统之间的互操作性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/jundot/omlx">jundot/omlx: LLM inference server with continuous batching & SSD ...</a></li>
-<li><a href="https://insujang.github.io/2024-01-07/llm-inference-continuous-batching-and-pagedattention/">LLM Inference : Continuous Batching and PagedAttention</a></li>
-<li><a href="https://www.anyscale.com/blog/continuous-batching-llm-inference">Achieve 23x LLM Inference Throughput & Reduce p50 Latency</a></li>
+<li><a href="https://github.com/bradAGI/awesome-cli-coding-agents">GitHub - bradAGI/awesome- cli - coding - agents : Curated directory of...</a></li>
+<li><a href="https://langchain-5e9cc07a.mintlify.app/oss/javascript/langchain/multi-agent/handoffs">Handoffs - Docs by LangChain</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM`, `#inference`, `#Apple Silicon`, `#macOS`, `#open-source`
+**标签**: `#AI agents`, `#long-term memory`, `#Rust`, `#developer tools`, `#agent interoperability`
 
 ---
