@@ -9,172 +9,240 @@ lang: zh
 
 ---
 
-1. [OpenAI Codex：终端编码代理获得巨大关注](#item-1) ⭐️ 9.0/10
-2. [Zetta：用于自进化物理智能的闭环具身控制框架](#item-2) ⭐️ 8.0/10
-3. [SemaPLC：验证门控智能体框架提升 PLC 代码生成](#item-3) ⭐️ 8.0/10
-4. [DFlash 2 基准测试：编码任务加速 2.26 倍，结合 n-gram 达 4.68 倍](#item-4) ⭐️ 8.0/10
-5. [在单张 RTX 5090 上以 NVFP4 运行 Qwen3.8-27B，实现完整 262K 上下文](#item-5) ⭐️ 8.0/10
-6. [开发者从零训练 250M 参数 LLM，部署仅需 60MB](#item-6) ⭐️ 8.0/10
-7. [DelveRL：用于训练游戏智能体的开源 Roguelike 游戏](#item-7) ⭐️ 8.0/10
-8. [Superpowers：智能体技能框架获 592 星](#item-8) ⭐️ 8.0/10
-9. [NousResearch Hermes Agent：与你一同成长的开源 AI 代理](#item-9) ⭐️ 8.0/10
-10. [ECC：智能体框架性能优化系统迅速走红](#item-10) ⭐️ 8.0/10
-11. [腾讯 AI-Infra-Guard：全栈 AI 红队平台](#item-11) ⭐️ 8.0/10
-12. [AirLLM 让 70B 大模型在单个 4GB GPU 上运行](#item-12) ⭐️ 8.0/10
-13. [vLLM：GitHub 上趋势上升的高吞吐量 LLM 推理引擎](#item-13) ⭐️ 8.0/10
-14. [阿里巴巴开源结合 LLM 的混合架构代码审查工具](#item-14) ⭐️ 8.0/10
-15. [OpenHuman：基于 Rust 的个人 AI 超级智能获得关注](#item-15) ⭐️ 8.0/10
+1. [OpenAI 的 Codex 终端编码代理在 GitHub 上迅速走红](#item-1) ⭐️ 9.0/10
+2. [EnvHarness：为智能体学习动态重塑环境](#item-2) ⭐️ 8.0/10
+3. [Zetta：用于自进化物理智能的闭环具身控制框架](#item-3) ⭐️ 8.0/10
+4. [AI 模拟：性能略逊 10%，成本百倍降低，速度万倍提升](#item-4) ⭐️ 8.0/10
+5. [视频详解 Claude 的隐形水印技术](#item-5) ⭐️ 8.0/10
+6. [llama.cpp 中的 DFlash 2：真实编码任务提速 2.26 倍](#item-6) ⭐️ 8.0/10
+7. [RTX 5090 以 262K 上下文运行 Qwen3.8-27B，速度达 77 tok/s](#item-7) ⭐️ 8.0/10
+8. [开发者从零训练 250M 参数 LLM，量化至 60MB 并支持磁盘长上下文](#item-8) ⭐️ 8.0/10
+9. [单个注意力头消融导致国际象棋 Transformer 错失皇后弃子](#item-9) ⭐️ 8.0/10
+10. [DelveRL：用于训练游戏智能体的开源 Roguelike 游戏](#item-10) ⭐️ 8.0/10
+11. [评估分辨率伪影削弱了未训练 CNN 脑相似性结论](#item-11) ⭐️ 8.0/10
+12. [UBS 预测 2028 年 AI 基础设施支出达 4.1 万亿美元，但电网排队问题凸显](#item-12) ⭐️ 8.0/10
+13. [NousResearch 的 Hermes Agent：自我改进型 AI 代理在 GitHub 上爆红](#item-13) ⭐️ 8.0/10
+14. [ECC：智能体性能优化系统迅速走红](#item-14) ⭐️ 8.0/10
+15. [腾讯 AI-Infra-Guard：全栈 AI 红队平台](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [OpenAI Codex：终端编码代理获得巨大关注](https://github.com/openai/codex) ⭐️ 9.0/10
+## [OpenAI 的 Codex 终端编码代理在 GitHub 上迅速走红](https://github.com/openai/codex) ⭐️ 9.0/10
 
-OpenAI 发布了 Codex，一个用 Rust 编写的轻量级编码代理，可在终端中运行。它在一天内获得了 1,544 颗星，总星数超过 113,000 颗。 Codex 代表了 AI 辅助编码的重大进步，提供了一个基于终端的代理，可以端到端处理复杂任务。它的快速采用凸显了开发者对无缝集成到工作流程中的自主编码工具日益增长的需求。 Codex 使用 Rust 构建，强调性能和可靠性。它是 OpenAI 更广泛的 Codex 生态系统的一部分，该生态系统还包括与 ChatGPT 和 Visual Studio Code 的集成，并可供 ChatGPT Plus、Pro、Business、Edu 和 Enterprise 用户使用。
+OpenAI 的 Codex 是一款用 Rust 编写的轻量级终端编码代理，在 GitHub 上获得了显著关注，今日新增 1,544 颗星，总星数达到 113,438 颗。该仓库目前正在 GitHub 上流行，表明开发者兴趣激增。 此次发布凸显了 OpenAI 对 AI 驱动的软件工程工具的持续投入，为开发者提供了一种将 AI 集成到终端工作流中的实用方式。高星数和快速增长表明社区对高效、本地编码代理的强烈需求，可能影响更广泛的开发者工具生态系统。 Codex 可通过 ChatGPT 网页应用、Codex CLI、Windows 和 macOS 桌面应用以及多种 IDE 集成使用。它旨在处理编写代码、修复错误和完成拉取请求等任务，并因其 Rust 实现而注重性能。
 
-github_trending · GitHub Trending · 8月23日 01:22
+github_trending · GitHub Trending · 8月23日 01:32
 
-**背景**: 代理式编码工具是自主 AI 系统，能够在最少人工干预的情况下规划、编写、测试和修改代码，超越了简单的自动补全。OpenAI 的 Codex 是此类工具之一，其他还包括 Anthropic 的 Claude Code 以及开源替代品如 opencode 和 oh-my-pi，这些工具也在 GitHub 上流行。
+**背景**: Codex 是 OpenAI 开发的 AI 编码代理，于 2025 年 4 月作为 Codex CLI 发布。它是 GPT-3 的后代，训练数据包含自然语言和来自公共仓库的数十亿行源代码。像 Codex 这样的终端编码代理可以直接访问文件系统、shell 和开发工具，从而自主编辑文件、运行测试并迭代错误。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://chatgpt.com/codex/">Codex in ChatGPT | AI Coding Agents for Software Engineering</a></li>
-<li><a href="https://www.reddit.com/r/singularity/comments/1ko3mxq/openai_introducing_codex_software_engineering/">r/singularity on Reddit: OpenAI: Introducing Codex (Software Engineering Agent)</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=openai.chatgpt">Codex – OpenAI’s coding agent - Visual Studio Marketplace</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">OpenAI Codex (AI agent) - Wikipedia</a></li>
+<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software ... - OpenAI</a></li>
+<li><a href="https://openai.com/index/openai-codex/">OpenAI Codex</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#coding agent`, `#developer tools`, `#OpenAI`, `#Rust`
+**标签**: `#AI`, `#coding agent`, `#OpenAI`, `#developer tools`, `#Rust`
 
 ---
 
 <a id="item-2"></a>
-## [Zetta：用于自进化物理智能的闭环具身控制框架](https://huggingface.co/papers/2608.16590) ⭐️ 8.0/10
+## [EnvHarness：为智能体学习动态重塑环境](https://huggingface.co/papers/2608.19880) ⭐️ 8.0/10
 
-Zetta 提出了一种闭环具身控制框架，在保持基础策略冻结的同时，在线进化基于代码的运行时批评者和恢复技能，在 LIBERO-Pro 上达到 90.8%的成功率，在 RoboCasa 上达到 93.6%，并实现了 11.1 倍的推理加速。 这项工作解决了具身 AI 中的一个关键限制，实现了对物理执行的实时治理，这对于在动态环境中的可靠部署至关重要。它为自进化的物理智能开辟了一条扩展路径，可能对机器人和自主系统产生深远影响。 Zetta 通过三个时间尺度分离的循环运行：动作频率治理、回滚级批评者-恢复提议和验证门控技能更新。它由 Z-Infra 支持，这是一种将代理逻辑与异构执行资源解耦的回滚基础设施，学习到的技能可以零样本迁移，并出现机器人“顿悟时刻”。
+EnvHarness 引入了一个可编程插件层，通过包装静态环境来动态重塑其行为，而 EnvRigger 通过观察目标策略的执行轨迹自动合成这些插件。在五个基准测试中，该方法优于原始环境和特定领域的生成流程，在保留实例上实现了高达 9.0 分的提升，并减少了 9.8% 的执行步骤。 该框架解决了强化学习和 LLM 智能体训练中的一个关键局限：静态环境无法适应智能体不断发展的能力。通过实现策略与环境的持续、针对性共同进化，EnvHarness 有望显著提高跨领域的训练效率和泛化能力。 EnvHarness 通过标准接口运行，确保每个重塑后的环境保留其原始验证器，从而避免昂贵或不可靠的验证。EnvRigger 将目标策略视为黑盒，诊断缺陷并通过新的回滚验证新组件，使该方法具有通用性和领域无关性。
 
-huggingface_papers · Hugging Face Papers · 8月20日 00:00
+huggingface_papers · Hugging Face Papers · 8月21日 00:00
 
-**背景**: 具身代理通常依赖端到端策略模型，但这些模型缺乏在执行过程中适应的能力。传统的代理控制框架是开环的，使用固定技能和事后反思，无法处理物理交互中的快速状态变化。Zetta 引入了一种闭环方法，在线进化运行时批评者和恢复技能，实现动作频率级别的实时治理。
+**背景**: LLM 智能体通过与环境的交互来学习，但这些环境通常是手工构建且静态的，随着智能体的改进而变得过时。最近的环境生成方法需要特定领域的流程，并依赖昂贵或不可靠的验证器，且仍产生静态环境。EnvHarness 通过提供可编程层来重塑现有环境，而无需修改其底层逻辑，从而减轻了工程负担。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2608.16590">[2608.16590] Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence</a></li>
-<li><a href="https://arxiv.org/html/2608.16590v1">Zetta ζ : An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence</a></li>
-<li><a href="https://www.alphaxiv.org/abs/2608.16590">Zetta $ζ$: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence | alphaXiv</a></li>
+<li><a href="https://arxiv.org/abs/2608.19880">EnvHarness: Awakening Static Worlds for Agent Learning</a></li>
+<li><a href="https://envharness.com/">EnvHarness: Awakening Static Worlds for Agent Learning</a></li>
+<li><a href="https://huggingface.co/papers/2608.19880">Paper page - EnvHarness: Awakening Static Worlds for Agent Learning</a></li>
 
 </ul>
 </details>
 
-**标签**: `#embodied AI`, `#robotics`, `#reinforcement learning`, `#closed-loop control`, `#agentic models`
+**标签**: `#reinforcement learning`, `#LLM agents`, `#environment generation`, `#AI research`, `#co-evolution`
 
 ---
 
 <a id="item-3"></a>
-## [SemaPLC：验证门控智能体框架提升 PLC 代码生成](https://huggingface.co/papers/2608.18565) ⭐️ 8.0/10
+## [Zetta：用于自进化物理智能的闭环具身控制框架](https://huggingface.co/papers/2608.16590) ⭐️ 8.0/10
 
-SemaPLC 提出了一种验证门控的智能体框架，通过外部编译和实时运行执行来验证生成的 PLC 代码，在 117 个独立 POU 任务上，七个模型的平均验证通过率达到 72.6%。在 65 个项目上下文任务中，它在集成编译、静态行为和动态行为方面也取得了最高平均值。 该方法解决了 PLC 代码生成中的一个关键缺口，确保生成的逻辑不仅能够编译，还能在实际项目中正确运行，这对工业安全和可靠性至关重要。验证门控机制依赖外部检查而非模型自我评估，可能为安全关键领域的可信代码生成树立新标准。 SemaPLC 采用严格的完成规则：仅当记录的外部检查确认规范、编译和运行时行为时，任务才被宣布完成。动态行为通过将生成逻辑和参考逻辑部署到实时 PLC 运行环境并比较执行轨迹来测量，SemaPLC 得分为 52.2，而基线得分在 22.4 到 31.4 之间。
+Zetta 提出了一种闭环具身控制框架，在保持基础策略冻结的同时在线进化基于代码的运行时评判器和恢复技能，在 LIBERO-Pro 和 RoboCasa 上分别达到 90.8%和 93.6%的最先进成功率，并实现了 11.1 倍的推理加速。 这项工作解决了当前智能体系统在物理执行过程中缺乏闭环学习的关键限制，这对于可靠的具身 AI 至关重要。它展示了通过自我探索实现物理智能的扩展路径，可能对机器人和自主系统产生深远影响。 Zetta 通过三个时间尺度分离的循环运行：动作频率治理、回滚级评判器-恢复提议以及验证门控的技能更新。它还引入了 Z-Infra，一种将智能体逻辑与异构执行资源解耦的回滚基础设施，且学到的技能可以零样本迁移，并出现机器人“顿悟时刻”。
 
 huggingface_papers · Hugging Face Papers · 8月20日 00:00
 
-**背景**: 可编程逻辑控制器（PLC）是控制制造过程的工业计算机，大型语言模型（LLM）可以为其生成代码。然而，先前的评估仅单独测试单个程序组织单元（POU），未测试其在完整 PLC 项目中的集成。SemaPLC 是一个开源智能体框架，集成外部编译和运行时检查，以在项目上下文中验证生成的代码。
+**背景**: 具身智能体通常依赖端到端策略模型，但智能体系统在物理执行过程中难以实现闭环学习。传统的控制框架是开环的，遵循固定技能并仅在回合结束后反思，无法适应快速变化的机器人-环境状态。Zetta 通过在线进化运行时评判器和恢复技能来解决这一问题，实现对物理动作的实时治理。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/papers/2608.18565">Paper page - SemaPLC: A Project-Grounded, Verification -Gated...</a></li>
-<li><a href="https://arxiv.org/html/2608.18565">SemaPLC: A Project-Grounded, Verification -Gated Agent Harness for...</a></li>
-<li><a href="https://github.com/Luoji-zju/Agents4PLC_release">GitHub - Luoji-zju/Agents4 PLC _release · GitHub</a></li>
+<li><a href="https://arxiv.org/pdf/2608.16590">Zetta ζ: An Efficient Closed - Loop Embodied Harness for...</a></li>
+<li><a href="https://huggingface.co/papers/2608.16590">Paper page - Zetta ζ: An Efficient Closed- Loop Embodied Harness for...</a></li>
+<li><a href="https://www.alphaxiv.org/abs/2608.16590">Zetta $ζ$: An Efficient Closed- Loop Embodied Harness for... | alphaXiv</a></li>
 
 </ul>
 </details>
 
-**标签**: `#PLC`, `#code generation`, `#verification`, `#agent harness`, `#LLM`
+**标签**: `#embodied AI`, `#robotics`, `#closed-loop learning`, `#agentic systems`, `#physical intelligence`
 
 ---
 
 <a id="item-4"></a>
-## [DFlash 2 基准测试：编码任务加速 2.26 倍，结合 n-gram 达 4.68 倍](https://www.reddit.com/r/LocalLLaMA/comments/1vvncyh/i_benchmark_dflash_2_pr_build_in_llamacpp_on_qwen/) ⭐️ 8.0/10
+## [AI 模拟：性能略逊 10%，成本百倍降低，速度万倍提升](https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x) ⭐️ 8.0/10
 
-一位用户在 llama.cpp 中对新的块扩散草稿模型 DFlash 2 在 Qwen 3.8 27B 上进行了基准测试，报告在 100 个真实编码提示上实现了 2.26 倍加速，结合 n-gram 草稿模型时最高可达 4.68 倍。结果还显示，添加第二个 n-gram 表会降低性能，这与 DFlash 1 的行为相反。 该基准测试为 DFlash 2 在 LLM 推理优化中的有效性提供了真实证据，显示在编码任务上显著加速。关于 n-gram 草稿模型组合的细致发现将帮助开发者为自己的工作负载选择最佳配置。 基准测试使用 RTX PRO 6000 GPU，目标模型为 Qwen 3.8 27B Q4_K_M，DFlash 2 草稿模型为 Q4_K_M，MTP 侧车为 Q8_0。单独使用 DFlash 2 实现了 2.26 倍加速（67.97 至 153.91 tok/s），额外占用 2.7 GB 显存；而添加一个 n-gram 查找表（ngram-map-k4v）在 18 轮编码会话中达到 4.68 倍。推荐的 --spec-draft-n-max 7 已过峰值；在 8K 编码提示上，5 提供了约 11% 的提升。
+文章强调了 AI 开发中模拟正在取代真实世界数据收集的趋势，声称性能仅下降 10%，但成本降低 100 倍，速度提升 10000 倍。这一方法正应用于机器人、生物学等领域，例如 World Labs 的 Real-to-Sim-to-Real 流程和 CZ Biohub 的虚拟细胞项目。 这一转变可能大幅降低 AI 训练和实验的成本与时间，使 AI 开发更加普及并加速创新。同时，它也引发了关于模拟保真度与真实世界性能之间权衡的讨论，影响依赖物理数据的行业。 文章引用了具体例子：Poolside 的“反向招聘信”区分了智能受限问题和实验受限问题；CZ Biohub 正在将人类细胞图谱成像为虚拟细胞，声称 in silico 比 in vivo 便宜和快约 1000 倍。World Labs 的 R2S2R 流程使机器人训练迭代更快、更便宜。
 
-reddit · r/LocalLLaMA · /u/FantasticNature7590 · 8月22日 20:41
+rss · Latent Space · 8月22日 07:36
 
-**背景**: 推测解码通过使用小型草稿模型预测多个 token，然后由目标模型并行验证，从而加速 LLM 推理。DFlash 2 是一种块扩散草稿模型，单次前向传播即可预测一整块 token，是对 DFlash 1 的改进。n-gram 草稿模型是一种轻量级、无需模型的方法，利用 token 历史生成草稿；MTP（多 token 预测）是某些模型的原生能力。
+**背景**: AI 中的模拟涉及创建虚拟环境来训练模型，这比收集真实世界数据更便宜、更快。sim-to-real 迁移等技术旨在弥合模拟环境与真实环境之间的差距。这一趋势由生成式 AI 和基于物理的模拟器进步推动，使模拟更加逼真和可扩展。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://huggingface.co/incoai/Qwen3.8-27B-DFlash2">incoai/Qwen3.8-27B- DFlash 2 · Hugging Face</a></li>
-<li><a href="https://inco.ai/blog/dflash2/">DFlash 2 : Keep Drafting Parallel — Inco AI</a></li>
-<li><a href="https://github.com/ggml-org/llama.cpp/blob/master/docs/speculative.md">llama.cpp/docs/speculative.md at master · ggml-org/llama.cpp</a></li>
+<li><a href="https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x">[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over</a></li>
+<li><a href="https://www.worldlabs.ai/blog/real-to-sim-to-real">Building Worlds That Train Robots | World Labs</a></li>
+<li><a href="https://aws.amazon.com/blogs/physical-ai/sim-to-real-and-real-to-sim-the-engine-behind-capable-physical-ai/">Sim-to-Real and Real-to-Sim: The Engine Behind Capable Physical AI | AWS Physical AI Blog</a></li>
 
 </ul>
 </details>
 
-**标签**: `#speculative decoding`, `#llama.cpp`, `#LLM inference`, `#benchmark`, `#DFlash`
+**标签**: `#AI`, `#Simulation`, `#Machine Learning`, `#Cost Efficiency`, `#Trends`
 
 ---
 
 <a id="item-5"></a>
-## [在单张 RTX 5090 上以 NVFP4 运行 Qwen3.8-27B，实现完整 262K 上下文](https://www.reddit.com/r/LocalLLaMA/comments/1vvl7pc/single_rtx_5090_qwen3827b_nvfp4_at_a_real_262k/) ⭐️ 8.0/10
+## [视频详解 Claude 的隐形水印技术](https://magazine.sebastianraschka.com/p/claude-watermarking) ⭐️ 8.0/10
 
-一份详细指南展示了在单张 RTX 5090 上使用 NVFP4 量化运行 Qwen3.8-27B，实现完整的 262,144 token 上下文窗口，短上下文解码速度达 77.2 tok/s，128K 上下文时为 64.7 tok/s。该配置使用 vLLM 0.27.1，并包含视觉、FP8 KV 缓存、前缀缓存和工具调用功能。 这一成就表明，具有长上下文窗口的大型语言模型可以在消费级硬件上运行，使长上下文 AI 应用更加普及。同时，它也凸显了 NVFP4 量化和混合架构在降低内存和计算需求方面的有效性。 该模型是一个 64 层混合架构，包含 48 个 Gated DeltaNet 层和 16 个全注意力层，检查点大小为 19.18 GiB。262,000 token 的预填充耗时 166 秒，前缀缓存在 TTFT 上实现了 22.3 倍加速。作者指出，启用前缀缓存时，vLLM 会将混合缓存置于实验性对齐模式，可能导致输出损坏。
+Sebastian Raschka 发布了一段 48 分钟的视频讲解，解释了 Anthropic 的 Claude 模型如何为 AI 生成的文本添加水印，涵盖了 token 采样、水印检测和可能的移除方法。该视频是在 Anthropic 最近宣布将对 Claude 的文本输出添加水印之后发布的。 这一分析意义重大，因为 AI 水印是 AI 安全和溯源的关键工具，有助于识别 AI 生成的内容，并符合欧盟透明度规则等法规。该视频提供了技术深度，帮助开发者和研究人员理解并可能实施或对抗此类水印。 该视频聚焦于 token 采样，这是水印嵌入的核心机制，通过在生成过程中微妙地偏置 token 的选择来实现。视频还讨论了检测方法和潜在的移除技术，但视频格式可能限制了覆盖的深度。
 
-reddit · r/LocalLLaMA · /u/Fz1zz · 8月22日 19:16
+rss · Sebastian Raschka · 8月22日 11:11
 
-**背景**: NVFP4 是一种 4 位浮点量化格式，比均匀 INT4 更好地保留动态范围，适合高效的 LLM 推理。vLLM 是一个高吞吐量的推理引擎，支持多种量化方法和优化。Gated DeltaNet 是混合模型中使用的线性注意力变体，旨在降低计算成本同时保持性能。
+**背景**: 大型语言模型（LLM）通过自回归方式生成文本，即给 token 分配概率，然后根据这些概率采样下一个 token。水印技术（如 Claude 使用的）通过使用密钥嵌入统计模式，而不改变文本的外观或质量，从而能够在后续检测 AI 的参与。这种方法符合对 AI 生成内容透明度日益增长的需求。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog</a></li>
-<li><a href="https://github.com/vllm-project/vllm">GitHub - vllm-project/vllm: A high-throughput and memory-efficient inference and serving engine for LLMs · GitHub</a></li>
-<li><a href="https://github.com/NVlabs/GatedDeltaNet">GitHub - NVlabs/GatedDeltaNet: [ICLR 2025] Official PyTorch ...</a></li>
+<li><a href="https://magazine.sebastianraschka.com/p/claude-watermarking">How Claude Watermarks AI -Generated Text</a></li>
+<li><a href="https://overcentral.com/en/claude-invisible-text-watermark/">Anthropic Reveals Claude 's Invisible Text Watermarking Technique</a></li>
+<li><a href="https://smartcr.org/ai-technologies/generative-ai/understanding-claude-s-text-watermarking-technique-in-artificial-intelligence/">Understanding Claude ’s Text Watermarking Technique In... - SmartCR</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM`, `#RTX 5090`, `#vLLM`, `#quantization`, `#local inference`
+**标签**: `#AI watermarking`, `#Claude`, `#LLM`, `#AI safety`, `#token sampling`
 
 ---
 
 <a id="item-6"></a>
-## [开发者从零训练 250M 参数 LLM，部署仅需 60MB](https://www.reddit.com/r/MachineLearning/comments/1vv2nkh/i_developed_my_own_quantized_llm_from_scratch/) ⭐️ 8.0/10
+## [llama.cpp 中的 DFlash 2：真实编码任务提速 2.26 倍](https://www.reddit.com/r/LocalLLaMA/comments/1vvncyh/i_benchmark_dflash_2_pr_build_in_llamacpp_on_qwen/) ⭐️ 8.0/10
 
-一位开发者从零开始，在 30B tokens 的 fineweb 数据上训练了一个 250M 参数的 LLM，量化到 2 比特以下，实现了 60MB 的部署体积，在 CPU 上以 400 tok/s 的速度运行。该模型还采用了一种新颖的基于磁盘的长上下文缓存，将较早的 token 压缩至 1 比特并存储在磁盘上，支持从多达 1 亿个 token 中进行检索。 该项目展示了极端的模型压缩和高效的边缘部署能力，有望使 LLM 在无需 GPU 的资源受限设备上运行。基于磁盘的长上下文方法为长上下文处理中的内存瓶颈提供了实用解决方案，这是该领域的一个重大挑战。 该模型使用固定的 512 位编码代替学习的嵌入表，所有 131k 个 token 仅占用 8.4MB，且没有可训练参数。最近的 2048 个 token 以 fp16 格式保留作为常规 KV 缓存，而较早的 token 被压缩至 1 比特（每个 token 约 320 字节）并写入磁盘。模型被训练为从磁盘缓存中检索信息，但未训练为对这些 token 进行推理，其在保留的英文网页文本上实现了 23.3 的困惑度。
+一位用户在 llama.cpp 中对 Qwen 3.8 27B 上的 DFlash 2 投机解码方法进行了基准测试，报告在 100 个真实 LiveCodeBench 问题上实现了 2.26 倍加速（从 67.97 到 153.91 tok/s），结合 n-gram 草稿器时最高可达 4.68 倍。结果显示，在相同草稿宽度下，DFlash 2 优于 DFlash 1，且 VRAM 成本减半。 该基准测试为 DFlash 2 在真实编码工作负载上的有效性提供了独立验证，显示出显著的加速效果，可能降低 LLM 服务的推理成本和延迟。研究结果还强调了 DFlash 2 与 n-gram 草稿器之间微妙的相互作用，这对优化投机解码配置很有价值。 基准测试使用 RTX PRO 6000 GPU，并发数为 1，DFlash 2 单独在 LiveCodeBench 上实现了 2.26 倍加速，而添加一个 n-gram 查找表（ngram-map-k4v）在 18 轮编码会话中达到 4.68 倍，但添加第二个表反而变慢（3.77 倍）。推荐的 --spec-draft-n-max 7 已过峰值；5 在 8K 编码提示上多出约 11%，而 --spec-draft-p-min 对 DFlash 2 无效。
 
-reddit · r/MachineLearning · /u/Final-Data-1410 · 8月22日 04:39
+reddit · r/LocalLLaMA · /u/FantasticNature7590 · 8月22日 20:41
 
-**背景**: 量化是一种压缩技术，通过降低模型权重的位宽来节省内存并加速推理。传统 LLM 使用学习的嵌入表，占用大量内存，而 KV 缓存随上下文长度线性增长，使得长上下文内存密集。该项目结合了极端量化（低于 2 比特）和基于磁盘的缓存来解决这两个问题，实现了 60MB 的模型，可在 CPU 上处理长上下文。
+**背景**: 投机解码是一种使用小型草稿模型预测多个未来 token，然后由主模型并行验证的技术，从而在不损失质量的情况下加速推理。DFlash 2 是一种专为投机解码设计的块扩散模型，而 llama.cpp 是一个流行的开源 LLM 推理引擎。该基准测试将 DFlash 2 与普通解码、MTP 和 n-gram 草稿器进行了比较，提供了关于每种方法何时最有效的见解。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://symbl.ai/developers/blog/a-guide-to-quantization-in-llms/">A Guide to Quantization in LLMs | Symbl.ai</a></li>
-<li><a href="https://github.com/pprp/Awesome-LLM-Quantization">GitHub - pprp/Awesome- LLM - Quantization : Awesome list for LLM ...</a></li>
-<li><a href="https://hackernoon.com/optimizing-llm-performance-with-lm-cache-architectures-strategies-and-real-world-applications">Optimizing LLM Performance with LM Cache ... | HackerNoon</a></li>
+<li><a href="https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/">The next generation of speculative decoding: DFlash and Spec V2 - LMSYS Org</a></li>
+<li><a href="https://github.com/z-lab/dflash">GitHub - z-lab/dflash: DFlash: Block Diffusion for Flash Speculative Decoding · GitHub</a></li>
+<li><a href="https://www.mindstudio.ai/blog/dflash-2-speculative-decoding-qwen">DFlash 2: Run Qwen3.8-27B at 2x Speed with Speculative Decoding | MindStudio</a></li>
 
 </ul>
 </details>
 
-**社区讨论**: Reddit 社区反应积极，作者对好奇且有帮助的评论表示感谢。讨论可能集中在量化方法、基于磁盘的缓存和固定 token 编码等技术细节上，一些用户可能质疑模型的推理局限性。
-
-**标签**: `#LLM`, `#quantization`, `#edge AI`, `#long context`, `#model compression`
+**标签**: `#speculative decoding`, `#llama.cpp`, `#benchmark`, `#LLM inference`, `#DFlash`
 
 ---
 
 <a id="item-7"></a>
-## [DelveRL：用于训练游戏智能体的开源 Roguelike 游戏](https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/) ⭐️ 8.0/10
+## [RTX 5090 以 262K 上下文运行 Qwen3.8-27B，速度达 77 tok/s](https://www.reddit.com/r/LocalLLaMA/comments/1vvl7pc/single_rtx_5090_qwen3827b_nvfp4_at_a_real_262k/) ⭐️ 8.0/10
 
-作者发布了 DelveRL，这是一个开源的、可供人类游玩的 Roguelike 游戏，专门用于训练游戏智能体。它具备结构化 API、确定性模拟、程序化关卡、部分可观测性，并包含一个达到中位数 18 层的循环 PPO 基线。 DelveRL 填补了强化学习研究中的一个空白，提供了一个既可供人类游玩又易于与智能体框架集成的游戏环境，这与许多现有游戏不同。这可能降低研究人员和开发者试验游戏智能体的门槛，从而加速 RL 和 AI 领域的进展。 该游戏是一款无尽的回合制 Roguelike，智能体需要探索、管理资源、与敌人战斗并逃离每一层。它支持本地运行，提供无渲染器的批量环境，基线 PPO 训练器是循环的；扩展运行可达 33 层。项目包含游戏代码、训练代码、检查点、桥接文档和原始基准。
+一位 Reddit 用户发布了详细指南和基准测试，展示了在单张 RTX 5090 上以完整 262,144 token 上下文运行 Qwen3.8-27B（NVFP4 量化），短上下文解码速度达到 77.2 tok/s，128K 上下文时速度为 64.7 tok/s。 这表明 27B 参数模型配合 262K 超长上下文窗口可以在消费级硬件上以可用性能运行，可能为本地机器上的代理工作流和文档分析等长上下文应用带来可能。同时，它也凸显了消费级 GPU 和高效量化技术的日益强大。 该设置使用 vLLM 0.27.1 和 NVFP4 量化，模型为混合架构，包含 48 层 Gated DeltaNet 和 16 层全注意力层，并保留了视觉塔和 MTP 头。前缀缓存显示缓存 TTFT 加速 22.3 倍，但 vLLM 将混合缓存置于实验性对齐模式，可能导致输出损坏；禁用前缀缓存是首要排查步骤。
 
-reddit · r/MachineLearning · /u/SnyderConsulting · 8月22日 17:32
+reddit · r/LocalLLaMA · /u/Fz1zz · 8月22日 19:16
 
-**背景**: Roguelike 是一种以程序化生成、回合制玩法和永久死亡为特征的游戏类型，使其具有挑战性和可重玩性。强化学习（RL）智能体通过与环境的交互来学习，像 NetHack 这样的游戏已被用作基准，但将它们与智能体框架集成往往很困难。DelveRL 旨在为 RL 研究提供一个更易访问的环境。
+**背景**: NVFP4 是 NVIDIA 为 Blackwell GPU 设计的 4 位浮点格式，旨在减少内存占用同时保持准确性。Gated DeltaNet 是 Qwen3-Next 中使用的线性注意力层，可高效处理长上下文。MTP（多 token 预测）头允许模型预测多个未来 token，提升推理速度。这些技术使得在消费级硬件上运行大型模型成为可能。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/SnyderConsulting/DelveRL">GitHub - SnyderConsulting/DelveRL: A human-playable turn ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/NetHack">NetHack - Wikipedia</a></li>
-<li><a href="https://kblip.com/products/delverl-open-source-roguelike-for-training-game-playing-T3Sm12A">DelveRL: Open-source roguelike for training game-playing ...</a></li>
+<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog</a></li>
+<li><a href="https://arxiv.org/abs/2412.06464">[2412.06464] Gated Delta Networks: Improving Mamba2 with Delta Rule</a></li>
+<li><a href="https://sebastianraschka.com/llm-architecture-gallery/mtp/">Multi-Token Prediction (MTP) | Sebastian Raschka, PhD</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区评论对模型的质量和性能表示热情，一位用户称其在 MacBook Pro 上“不笨”，另一位表示 4 位量化在内部测试中与 Gemini 3.7 flash 难以区分，还有一位称赞相比云服务商，本地运行对模型质量有更多控制。一些用户偏好更高精度的量化以保证准确性，而另一些则强调本地运行无审查模型的实用优势。
+
+**标签**: `#LLM`, `#RTX 5090`, `#vLLM`, `#Qwen`, `#NVFP4`
+
+---
+
+<a id="item-8"></a>
+## [开发者从零训练 250M 参数 LLM，量化至 60MB 并支持磁盘长上下文](https://www.reddit.com/r/MachineLearning/comments/1vv2nkh/i_developed_my_own_quantized_llm_from_scratch/) ⭐️ 8.0/10
+
+一位开发者从零开始，在 30B 个 fineweb token 上训练了一个 250M 参数的 LLM，并将其量化到每个权重低于 2 比特，最终部署体积为 60MB，在笔记本电脑 CPU 上运行速度达 400 tok/s。该模型还采用了一种新颖的基于磁盘的长上下文机制，将较早的 token 压缩至 1 比特，并支持从多达 1 亿个 token 的历史记录中进行检索。 这一成就表明，高度压缩的 LLM 可以在没有 GPU 的资源受限设备上部署，可能推动端侧 AI 应用的发展。基于磁盘的长上下文方法为传统 KV 缓存内存提供了一种可扩展的替代方案，解决了处理超长序列时的主要瓶颈。 该模型为 13.1 万个 token 中的每一个使用固定的 512 比特编码，从而无需训练嵌入表。长上下文机制将最近的 2048 个 token 保留为 fp16 格式，而较早的 token 则压缩至 1 比特并存储在磁盘上，每个 token 约 320 字节，因此 100 万个 token 的历史记录约占 320MB。基础模型在保留的英文网页文本上困惑度为 23.3，词汇表在 WordSim-353 上的 Spearman 相关系数为 0.619，而随机编码仅为 0.029。
+
+reddit · r/MachineLearning · /u/Final-Data-1410 · 8月22日 04:39
+
+**背景**: 量化将模型权重的精度降低到较低的比特宽度（如 8 位或 4 位），以减少内存占用和计算成本。最近的研究表明，低比特量化（例如低于 2 比特）往往对训练不足的 LLM 更有利，这与该模型在相对较小的 token 预算上训练的情况相符。传统的长上下文处理依赖于在内存中存储 KV 缓存，这随序列长度线性增长，对于数百万个 token 来说变得不切实际；基于磁盘的方法将数据卸载到存储中，从而以检索延迟为代价实现更长的上下文。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://arxiv.org/html/2411.17691v2">Low-Bit Quantization Favors Undertrained LLMs: Scaling Laws ...</a></li>
+<li><a href="https://arxiv.org/html/2606.26105v1">Context Recycling for Long-Horizon LLM Inference A Hierarchical Memory Architecture for Managing Fixed Context Budgets Across Unbounded Sessions</a></li>
+<li><a href="https://sampathkumaran.medium.com/llms-simplified-tokens-and-embeddings-f275e6ce016e">LLM’s Simplified — Tokens and Embeddings | by Sampath Kumaran Ganesan | Medium</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: 社区反应极为积极和好奇，作者对没有遭到嘲讽表示感谢，并提到仓库已达到 7 颗星。评论者可能对技术新颖性感兴趣，尤其是基于磁盘的检索和固定 token 编码，并可能询问更多关于训练和量化方法的细节。
+
+**标签**: `#LLM`, `#quantization`, `#efficient inference`, `#long context`, `#model compression`
+
+---
+
+<a id="item-9"></a>
+## [单个注意力头消融导致国际象棋 Transformer 错失皇后弃子](https://www.reddit.com/r/MachineLearning/comments/1vvsf5b/ablating_1_of_a_chess_transformers_128_attention/) ⭐️ 8.0/10
+
+研究人员发现，在 Maia-3 国际象棋 Transformer 的 128 个注意力头中消融一个头，会导致模型无法在著名棋局中找到著名的皇后弃子。这一发现是通过 chessformer_lens 可解释性库实现的。 这一发现表明，单个注意力头可以编码高度特定的策略行为，推进了 Transformer 的机制可解释性。它可能影响我们调试和理解复杂模型的方式，不仅限于国际象棋，还可能提高模型的可靠性和安全性。 被消融的头是 Maia-3 23M 模型中 128 个注意力头之一，消融操作使用了 chessformer_lens 库（DOI: 10.5281/zenodo.21986988）。该特定头的作用似乎对识别皇后弃子模式至关重要，表明其具有高度专门化。
+
+reddit · r/MachineLearning · /u/Weird-Asparagus4136 · 8月23日 00:22
+
+**背景**: Maia-3 是一系列基于 Transformer 的国际象棋模型，旨在预测不同技能水平的人类走法。chessformer_lens 库是用于此类模型机制可解释性的工具包，允许研究人员检查注意力模式并消融组件。注意力头消融是一种常见技术，通过将特定头的输出设为零并测量性能变化来评估其重要性。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://github.com/CSSLab/maia3">GitHub - CSSLab/maia3: Maia-3 is the most accurate and efficient human chess move prediction engine. · GitHub</a></li>
+<li><a href="https://github.com/chessformer-lens/chessformer_lens">GitHub - chessformer-lens/chessformer_lens: A toolkit ...</a></li>
+<li><a href="https://huggingface.co/UofTCSSLab/Maia3-79M">UofTCSSLab/Maia3-79M · Hugging Face</a></li>
+
+</ul>
+</details>
+
+**标签**: `#interpretability`, `#transformers`, `#chess`, `#mechanistic interpretability`, `#attention heads`
+
+---
+
+<a id="item-10"></a>
+## [DelveRL：用于训练游戏智能体的开源 Roguelike 游戏](https://www.reddit.com/r/MachineLearning/comments/1vvii1j/i_built_an_opensource_roguelike_specifically_for/) ⭐️ 8.0/10
+
+作者发布了 DelveRL，这是一个专为训练强化学习智能体而设计的开源 Roguelike 游戏，具有结构化 API、确定性模拟、程序化关卡、部分可观测性，以及一个循环 PPO 基线，中位数达到 18 层，最高可达 33 层。 这填补了强化学习研究中的一个实际空白，提供了一个易于与智能体框架集成的人类可玩游戏环境，可能加速探索、部分可观测性和长时域决策等领域的研究。它为比较智能体算法提供了标准化基准。 该游戏是一款无尽的回合制 Roguelike，智能体需要探索、管理资源、与敌人战斗并逃离每一层。它包含无渲染器的批量环境和循环 PPO 训练器，所有代码、检查点、文档和基准均已开源。
+
+reddit · r/MachineLearning · /u/SnyderConsulting · 8月22日 17:32
+
+**背景**: Roguelike 是一种以程序化关卡生成和永久死亡为特点的游戏类型，为 AI 智能体提供了丰富的挑战。强化学习（RL）通过试错训练智能体，通常使用 OpenAI Gym 等环境，但许多游戏难以与 RL 框架集成。DelveRL 旨在通过提供一个专门构建的环境来弥合这一差距，该环境具有部分可观测性等特性，这在现实场景中很常见。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Delver_(video_game)">Delver - Wikipedia</a></li>
+<li><a href="https://stable-baselines.readthedocs.io/">Welcome to Stable Baselines docs! - RL Baselines Made Easy...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Partially_observable_system">Partially observable system - Wikipedia</a></li>
 
 </ul>
 </details>
@@ -183,180 +251,115 @@ reddit · r/MachineLearning · /u/SnyderConsulting · 8月22日 17:32
 
 ---
 
-<a id="item-8"></a>
-## [Superpowers：智能体技能框架获 592 星](https://github.com/obra/superpowers) ⭐️ 8.0/10
+<a id="item-11"></a>
+## [评估分辨率伪影削弱了未训练 CNN 脑相似性结论](https://www.reddit.com/r/MachineLearning/comments/1vvdxwt/the_evaluation_resolution_has_been_shown_to_have/) ⭐️ 8.0/10
 
-GitHub 仓库 obra/superpowers（一个智能体技能框架和软件开发方法论）今日新增 592 颗星，总星数达 276,196，分叉数达 24,701。它面向 Claude Code、Cursor、Codex、OpenCode 和 Gemini CLI 等 AI 编码代理。 该仓库的快速增长表明人们对标准化 AI 代理处理软件开发任务的方式有浓厚兴趣。它可能通过提供可组合的、方法论驱动的方法来改善 AI 辅助编码工作流程，从而影响更广泛的生态系统。 该框架强调基于上下文触发的可组合技能，并托管在 GitHub 上。它包含可选的子代理和任务列表工具，并指出 Pi 具有原生技能，因此 Pi 不需要兼容性技能工具。
+一项新的预印本研究表明，未训练的 CNN 在匹配 V1 脑活动方面看似优于训练过的 CNN，这其实是评估分辨率的伪影。研究显示，反向传播与未训练模型在 V1 上的差距随图像分辨率非单调变化，从 32 像素时的-0.001±0.007 到 224 像素时的+0.044±0.006。 这一发现挑战了计算神经科学中被广泛引用的观点，并强调了评估方法在模型-大脑比较中的关键作用。它可能促使此类比较采用更严格的标准，影响机器学习和神经科学领域的研究者。 该研究使用了一个在 CIFAR-10 子集上以 32 像素训练的小型 CNN，五种学习规则（随机初始化、反向传播、反馈对齐、预测编码、STDP），并在 THINGS-fMRI 刺激上以从 32 到 224 像素的六种分辨率进行评估。他们排除了多种潜在混淆因素，包括训练/评估分辨率不匹配和批归一化问题，并发现 LOC 区域中反向传播优于未训练的效果在所有分辨率下均存在。
 
-github_trending · GitHub Trending · 8月23日 01:22
+reddit · r/MachineLearning · /u/ConfusionSpiritual19 · 8月22日 14:30
 
-**背景**: 智能体技能框架为 AI 代理在软件开发过程中获取和使用技能提供了一种结构化方式。软件开发方法论（如瀑布模型或敏捷）规定了构建软件的过程，而该框架将此类方法论与 AI 代理能力相结合。该仓库面向多种 AI 编码工具，旨在统一代理在不同平台上的操作方式。
+**背景**: 模型-大脑比较研究通常使用表征相似性分析（RSA）来比较人工神经网络的激活与大脑活动。一个常见的观点是，未训练的 CNN 在早期视觉皮层（V1）上可以匹配甚至超越训练过的 CNN，这表明像反向传播这样的学习规则可能并非产生类脑表征所必需。本研究探讨了此类结论是否对评估分辨率这一常被忽视的方法学因素具有稳健性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://grokipedia.com/page/Superpowers_agentic_skills_framework">Superpowers (agentic skills framework)</a></li>
-<li><a href="https://github.com/obra/superpowers">GitHub - obra/superpowers: An agentic skills framework & software...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Software_development_methodology">Software development methodology</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spike-timing-dependent_plasticity">Spike-timing-dependent plasticity - Wikipedia</a></li>
+<li><a href="https://towardsdatascience.com/feedback-alignment-methods-7e6c41446e36/">Feedback Alignment Methods - Towards Data Science</a></li>
 
 </ul>
 </details>
 
-**标签**: `#agentic`, `#software-development`, `#framework`, `#AI`, `#methodology`
+**社区讨论**: 未提供 Reddit 讨论内容，但作者在注释中邀请对感受野匹配框架的反馈，表明对批评持开放态度。社区可能赞赏其方法上的严谨性以及对早期预印本的更正。
+
+**标签**: `#neuroscience`, `#CNN`, `#evaluation`, `#brain-comparison`, `#RSA`
 
 ---
 
-<a id="item-9"></a>
-## [NousResearch Hermes Agent：与你一同成长的开源 AI 代理](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [UBS 预测 2028 年 AI 基础设施支出达 4.1 万亿美元，但电网排队问题凸显](https://www.reddit.com/r/artificial/comments/1vvfxyq/ubs_models_41t_in_ai_infrastructure_spending_by/) ⭐️ 8.0/10
 
-NousResearch/hermes-agent 是一个趋势 Python 仓库，今日新增 443 颗星，总星数达到 234,401，分叉数 47,167。该项目是一个开源、自托管的 AI 代理，具有持久记忆和自创技能。 该项目反映了对自主、自我改进且可自托管的 AI 代理日益增长的需求，为用户提供了控制和隐私。其快速的星标增长表明社区对集成多平台和多 LLM 提供商的 AI 代理有浓厚兴趣。 Hermes Agent 支持持久记忆、自动技能创建，以及用于 Telegram、Discord、Slack 等的消息网关。它采用 MIT 许可证，提供 macOS 和 Windows 桌面应用，以及 Linux 终端安装。
+UBS 预测到 2028 年 AI 基础设施支出将达到 4.1 万亿美元，但分析指出，电网互联排队问题而非芯片供应正成为更严峻的瓶颈。田纳西河谷管理局、丹麦电网运营商和 PJM 最近的行动表明，电力互联压力日益增大。 这很重要，因为它将焦点从芯片供应转移到电力基础设施上，后者成为 AI 扩张的关键制约因素。如果电网互联延迟持续，可能会减缓 AI 数据中心的部署，并影响整个科技行业的增长计划。 田纳西河谷管理局专门为 AI 数据中心设立了新的费率类别，丹麦电网运营商开始将其他需求类别置于新的数据中心互联请求之前，PJM 董事会否决了其利益相关者关于削减规则的投票。这些事件表明排队问题正在恶化，而 4.1 万亿美元的支出假设电力在需要时可用。
 
-github_trending · GitHub Trending · 8月23日 01:22
+reddit · r/artificial · /u/Servola-Journal · 8月22日 15:51
 
-**背景**: Hermes Agent 是由 Nous Research 开发的开源 AI 代理，旨在运行在您自己的服务器上，并跨会话记住上下文。它附带 80 多种技能，并支持 Anthropic、OpenAI、Google、xAI 和 Nous Portal 等主要 LLM 提供商。该代理可以从终端、仪表板、GitHub 工作流和消息渠道运行，使其适用于各种用例。
+**背景**: 电网互联是将新的发电或负荷接入电网的过程，需要进行影响研究，由于排队积压可能需要数年时间。与芯片短缺不同，芯片短缺是供应问题，最终会解决，而互联是排队问题，项目必须排队等待，支付更多费用也无法加快进程。UBS 预测到 2028 年 AI 基础设施支出达 4.1 万亿美元，其中包括数据中心，但鉴于当前的电网限制，电力供应假设可能过于乐观。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/nousresearch/hermes-agent">GitHub - NousResearch/hermes-agent: The agent that grows with ...</a></li>
-<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent — Open-Source AI Agent That Grows With You ...</a></li>
+<li><a href="https://www.interconnection.fyi/">Latest Interconnection Queue Requests with daily data updates ...</a></li>
+<li><a href="https://emp.lbl.gov/queues">Queued Up: Characteristics of Power Plants Seeking ...</a></li>
+<li><a href="https://www.unite.ai/tva-board-creates-data-center-rate-to-shield-households-from-ai-power-costs/">TVA Board Creates Data Center Rate to Shield Households From AI ...</a></li>
+
+</ul>
+</details>
+
+**社区讨论**: Reddit 上的讨论可能包括具有公用事业或监管经验的用户的评论，他们争论互联是否确实是相对于芯片和冷却的约束因素。一些人可能认为这个问题被夸大了，而另一些人可能分享排队延迟的第一手经验。
+
+**标签**: `#AI infrastructure`, `#energy grid`, `#data centers`, `#bottlenecks`, `#policy`
+
+---
+
+<a id="item-13"></a>
+## [NousResearch 的 Hermes Agent：自我改进型 AI 代理在 GitHub 上爆红](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
+
+NousResearch 的 hermes-agent 仓库在一天内获得 443 颗星，总星数达到 234,404，分叉数达 47,168。该项目是一个开源、自托管的 AI 代理，具有持久记忆、自我创建技能和多平台消息集成功能。 快速的星标增长表明社区对自我改进型 AI 代理的强烈兴趣，这是 AI/ML 生态中的一个关键趋势。该项目的开源特性和多平台支持可能使其成为开发者构建个性化 AI 助手的基础工具。 Hermes Agent 支持多种 LLM 提供商，包括 OpenAI、Anthropic、Google、xAI 和 Nous Portal，并集成了 24 个聊天平台，如 Telegram、Discord 和 Slack。它附带 80 多个预构建技能，并可通过 cron 运行定时任务，支持从终端、仪表板、GitHub 工作流和消息渠道操作。
+
+github_trending · GitHub Trending · 8月23日 01:32
+
+**背景**: AI 代理是使用大型语言模型（LLM）自主执行任务的软件程序。Hermes Agent 旨在通过跨会话保持持久记忆并根据用户交互创建新技能来“与你一起成长”，这使其区别于简单的聊天机器人。该项目由以 Hermes 模型系列闻名的 Nous Research 构建，并采用 MIT 许可证。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent — Open-Source AI Agent That... | Nous Research</a></li>
+<li><a href="https://github.com/nousresearch/hermes-agent">GitHub - NousResearch / hermes - agent : The agent that grows with you</a></li>
 <li><a href="https://hermesagents.net/">Hermes Agent : The AI That Grows With You</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI agent`, `#Python`, `#GitHub trending`, `#NousResearch`, `#LLM`
-
----
-
-<a id="item-10"></a>
-## [ECC：智能体框架性能优化系统迅速走红](https://github.com/affaan-m/ECC) ⭐️ 8.0/10
-
-这一迅速走红凸显了市场对优化 AI 编码智能体性能工具的日益增长的需求，这些智能体正成为现代软件开发不可或缺的一部分。ECC 对多种智能体的广泛兼容性使其有望成为 AI 开发者工具生态中的关键工具。 该仓库使用 JavaScript 编写，自称提供技能、直觉、记忆、安全性和研究优先的开发能力。它声称是一个完整的系统，而不仅仅是配置文件，但其新颖性和实现细节尚未完全验证。
-
-github_trending · GitHub Trending · 8月23日 01:22
-
-**背景**: 智能体框架是使 AI 编码智能体能够与代码库交互、执行任务和管理工作流的框架或环境。优化这些框架可以显著提高 AI 辅助开发的效率和可靠性。智能体框架优化是一个新兴领域，最近的研究如 arXiv 上的 VeRO 论文也强调了这一点。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/affaan-m/ECC">GitHub - affaan-m/ECC: The agent harness performance ...</a></li>
-<li><a href="https://arxiv.org/html/2602.22480v4">VeRO: A Harness for Agents to Optimize Agents - arXiv.org</a></li>
-<li><a href="https://github.com/anthropics/claude-code">anthropics/ claude - code : Claude Code is an agentic coding tool that...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI agents`, `#performance optimization`, `#developer tools`, `#JavaScript`, `#Claude Code`
-
----
-
-<a id="item-11"></a>
-## [腾讯 AI-Infra-Guard：全栈 AI 红队平台](https://github.com/Tencent/AI-Infra-Guard) ⭐️ 8.0/10
-
-腾讯发布了 AI-Infra-Guard，这是一个集成了 Agent 扫描、技能扫描、MCP 扫描、AI 基础设施扫描和 LLM 越狱评估的全面 AI 红队平台。该仓库今日新增 150 星，总星数达到 5499，分叉数 518。 该平台解决了快速发展的 AI 生态系统中关键的安全漏洞，特别是针对 MCP 服务器和智能体 AI，这些正日益成为攻击者的目标。其显著的社区关注度表明市场对统一 AI 安全测试工具的高需求。 AI-Infra-Guard 包含 AI 基础设施指纹识别功能，可匹配 100 多个组件与 1900 多个已知 CVE，并支持扫描 MCP 服务器、技能和 LLM 越狱。该平台使用 Python 编写，并在 GitHub 上开源。
-
-github_trending · GitHub Trending · 8月23日 01:22
-
-**背景**: AI 红队测试涉及对抗性测试，以在攻击者利用之前识别 AI 系统中的漏洞。该领域仍处于早期阶段，没有标准堆栈或主导平台，但像 MCP Scan 和 F5 AI Red Team 等工具正在兴起。MCP（模型上下文协议）是一种将 AI 模型连接到外部工具和数据的协议，保护 MCP 服务器正成为优先事项。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.enkryptai.com/mcp-scan">MCP Scan | AI -Powered Security Assessment by Enkrypt AI</a></li>
-<li><a href="https://snyk.io/blog/securing-low-code-agentic-ai-mcp-guardrails/">Beyond Automation: Securing Low-Code Agentic AI with MCP ... | Snyk</a></li>
-<li><a href="https://www.paloaltonetworks.com/cyberpedia/what-is-ai-red-teaming">What Is AI Red Teaming? Why You Need It and How to Implement - Palo Alto Networks</a></li>
-
-</ul>
-</details>
-
-**标签**: `#AI Security`, `#Red Teaming`, `#LLM`, `#MCP`, `#Tencent`
-
----
-
-<a id="item-12"></a>
-## [AirLLM 让 70B 大模型在单个 4GB GPU 上运行](https://github.com/lyogavin/airllm) ⭐️ 8.0/10
-
-AirLLM 是一个新的开源库，无需量化、蒸馏或剪枝，即可在单个 4GB GPU 上运行 70B 参数的大语言模型。该项目在 GitHub 上迅速走红，今日新增 85 星，总星数超过 32,000。 这大大降低了运行大语言模型的硬件门槛，使资源有限的个人开发者和小团队也能使用这些模型。通过让最先进的模型更加普及，它可能加速机器学习社区的创新和实验。 AirLLM 通过优化推理过程中的内存使用，使得通常需要 140GB 以上内存（FP16 精度）的模型仅需 4GB 显存即可运行。该仓库主要以 Jupyter Notebook 编写，表明其注重易用性和演示。
-
-github_trending · GitHub Trending · 8月23日 01:22
-
-**背景**: 大型语言模型（如 70B 参数模型）通常需要巨大的 GPU 内存，往往需要多个高端 GPU。传统的优化方法包括量化、剪枝和蒸馏，但 AirLLM 声称避免了这些方法，而是采用一种新颖的方法来减少推理过程中的内存占用。这是 LLM 推理优化大趋势的一部分，其他技术还包括 KV 缓存和前缀缓存等。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/lyogavin/airllm">GitHub - lyogavin/ airllm : AirLLM 70 B inference with single 4 GB GPU</a></li>
-<li><a href="https://huggingface.co/blog/lyogavin/airllm">Unbelievable! Run 70 B LLM Inference on a Single 4 GB GPU with...</a></li>
-<li><a href="https://medium.com/data-science-in-your-pocket/airllm-run-massive-llms-like-deepseek-v3-and-kimi-k3-on-just-4gb-vram-8bb424377546">AirLLM : Run Massive LLMs Like DeepSeek-V3 and Kimi... | Medium</a></li>
-
-</ul>
-</details>
-
-**社区讨论**: 社区反响热烈，许多人称赞该项目的实用性和普及 LLM 的潜力。一些用户对推理速度和其中的权衡提出了疑问，另一些用户则分享了他们使用 AirLLM 的自己的实验和结果。
-
-**标签**: `#LLM inference`, `#GPU optimization`, `#Machine Learning`, `#Open Source`, `#Model Deployment`
-
----
-
-<a id="item-13"></a>
-## [vLLM：GitHub 上趋势上升的高吞吐量 LLM 推理引擎](https://github.com/vllm-project/vllm) ⭐️ 8.0/10
-
-vLLM，一个用于大型语言模型的高吞吐量、内存高效的推理和服务引擎，目前在 GitHub 上趋势上升，今天新增了 71 颗星，总星数达到 89,723，复刻数为 21,060。该项目作为领先的开源 LLM 服务解决方案，持续获得社区的高度关注。 vLLM 的流行凸显了在生产环境中高效 LLM 服务的迫切需求，因为它能实现更快、更便宜的推理，使大规模 AI 应用更加普及。其广泛采用（近 9 万星）标志着社区的高度认可，并可能塑造 AI 基础设施的未来。 vLLM 最初由加州大学伯克利分校的 Sky Computing Lab 开发，基于 PagedAttention 算法构建，该算法受操作系统虚拟内存技术启发，将 KV 缓存存储在非连续的分页内存中。这种设计实现了 KV 缓存内存的近零浪费，并支持请求内和请求间的灵活共享，显著提高了吞吐量。
-
-github_trending · GitHub Trending · 8月23日 01:22
-
-**背景**: 大型语言模型（LLM）在推理时需要大量内存，尤其是存储中间注意力状态的键值（KV）缓存。传统的服务系统常常因碎片化和预分配而浪费内存，限制了吞吐量。2023 年提出的 PagedAttention 通过将 KV 缓存分页来解决这个问题，类似于操作系统管理内存的方式，从而实现高效的内存利用和更高的并发性。vLLM 实现了该算法，为 LLM 推理和服务提供了一个快速且易于使用的库。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/vllm-project/vllm">vllm -project/ vllm : A high-throughput and memory-efficient inference ...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/PagedAttention">PagedAttention - Wikipedia</a></li>
-<li><a href="https://arxiv.org/abs/2309.06180">[2309.06180] Efficient Memory Management for Large Language ... PagedAttention Algorithm - emergentmind.com Efficient Memory Management for Large Language Model Serving ... PagedAttention Algorithm - Zread</a></li>
-
-</ul>
-</details>
-
-**标签**: `#LLM`, `#inference`, `#serving`, `#Python`, `#AI/ML`
+**标签**: `#AI agent`, `#Python`, `#GitHub trending`, `#NousResearch`, `#open source`
 
 ---
 
 <a id="item-14"></a>
-## [阿里巴巴开源结合 LLM 的混合架构代码审查工具](https://github.com/alibaba/open-code-review) ⭐️ 8.0/10
+## [ECC：智能体性能优化系统迅速走红](https://github.com/affaan-m/ECC) ⭐️ 8.0/10
 
-阿里巴巴已开源 open-code-review，这是一款结合确定性流水线与 LLM 代理的混合架构代码审查工具，在 GitHub 上已获得 21,143 颗星和 1,542 个 fork。该工具提供精确的行级注释，并支持多种语言及内置安全规则。 该工具满足了日益增长的代码审查需求，尤其是在 AI 生成代码激增的背景下，提供了一种结合确定性分析与 LLM 灵活性的实用解决方案。其在阿里巴巴规模下的应用及开源可用性，可能影响团队将 AI 集成到开发工作流中的方式。 该工具使用 Go 编写，兼容 OpenAI 和 Anthropic API。它内置了针对常见问题（如 NPE、线程安全、XSS 和 SQL 注入）的规则，并设计为快速高效，已在阿里巴巴规模下经过实战检验。
+GitHub 仓库 affaan-m/ECC（一个基于 JavaScript 的智能体性能优化系统）今日新增 411 颗星，总星数达 242,176，分支数 36,700。它支持 Claude Code、Codex、Opencode 和 Cursor 等 AI 编程智能体。 该系统满足了日益增长的对 AI 编程智能体性能优化的需求，随着这些智能体在开发工作流中越来越普及，这一点至关重要。它的迅速走红表明，市场对能够跨多个平台提升智能体效率、记忆和安全的工具需求旺盛。 ECC 被描述为一个完整的系统，包括技能、直觉、记忆优化、持续学习、安全扫描和以研究为先的开发。它可通过官方渠道获取，如 GitHub 仓库、npm 包（ecc-universal 和 ecc-agentshield）、GitHub App 以及项目网站 ecc.tools。
 
-github_trending · GitHub Trending · 8月23日 01:22
+github_trending · GitHub Trending · 8月23日 01:32
 
-**背景**: 代码审查是软件开发中关键但耗时的环节。传统的静态分析工具是确定性的，但常产生误报；而基于 LLM 的工具灵活但可能不一致。这种混合方法旨在结合两者的优势，使用确定性流水线进行精确检查，利用 LLM 代理提供上下文感知的反馈。
+**背景**: 智能体框架（agent harness）是使 AI 编程智能体能够与代码库交互、执行命令和管理上下文的框架。优化这些框架涉及改进智能体如何从仓库历史中学习、管理记忆和维护安全。ECC 旨在将仓库的实际工作模式转化为可复用的智能体指导，提升其性能和可靠性。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/alibaba/open-code-review">GitHub - alibaba/open-code-review: Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. · GitHub</a></li>
-<li><a href="https://linkgo.dev/tools/opencodereview-ai-tools-2026-07-30">OpenCodeReview - AI Tool Review | LinkGo</a></li>
-<li><a href="https://listsopensource.com/repo/alibaba/open-code-review/">open- code - review — AI & Machine Learning · Open Source</a></li>
+<li><a href="https://github.com/affaan-m/ECC">GitHub - affaan-m/ECC: The agent harness performance ...</a></li>
+<li><a href="https://github.com/akashmehta10007/agent-harness-performance-optimization-system">akashmehta10007/agent-harness-performance-optimization-system</a></li>
+<li><a href="https://arxiv.org/html/2602.22480v4">VeRO: A Harness for Agents to Optimize Agents - arXiv.org</a></li>
 
 </ul>
 </details>
 
-**标签**: `#code-review`, `#LLM`, `#static-analysis`, `#security`, `#Go`
+**标签**: `#AI`, `#developer-tools`, `#performance`, `#agent-harness`, `#JavaScript`
 
 ---
 
 <a id="item-15"></a>
-## [OpenHuman：基于 Rust 的个人 AI 超级智能获得关注](https://github.com/tinyhumansai/openhuman) ⭐️ 8.0/10
+## [腾讯 AI-Infra-Guard：全栈 AI 红队平台](https://github.com/Tencent/AI-Infra-Guard) ⭐️ 8.0/10
 
-OpenHuman，一个用 Rust 构建的个人 AI 超级智能，在 GitHub 上获得了显著关注，目前有 36,502 颗星，今日新增 51 颗星。它创建你生活的本地优先记忆，并编排代理舰队进行深度研究。 该项目凸显了本地优先、保护隐私的个人 AI 助手的增长趋势，这些助手利用代理编排来处理复杂任务。其 Rust 实现表明对性能和可靠性的关注，这可能影响未来个人 AI 的发展。 OpenHuman 使用 Rust 编写，拥有 3,656 个分支，表明社区参与活跃。它结合了本地优先记忆、代理舰队编排和深度研究能力，定位为全面的个人 AI 解决方案。
+腾讯发布了 AI-Infra-Guard，这是一个全面的 AI 红队平台，可扫描和评估 AI 代理、技能、MCP、基础设施以及 LLM 越狱的安全性。该项目迅速获得关注，今日新增 150 星，总星数超过 5500。 该平台解决了快速扩张的 AI 生态系统中关键的安全漏洞，为多样化的攻击面提供了统一解决方案。其广泛的覆盖范围和社区的高度关注表明，它可能成为 AI 安全从业者的标准工具，影响组织保护其 AI 部署的方式。 该平台包含五个扫描模块：代理扫描、技能扫描、MCP 扫描、AI 基础设施扫描和 LLM 越狱评估。它使用 Python 编写，拥有 518 个分叉，表明社区参与活跃。
 
-github_trending · GitHub Trending · 8月23日 01:22
+github_trending · GitHub Trending · 8月23日 01:32
 
-**背景**: 本地优先的 AI 助手将数据存储在用户设备上，增强隐私和控制。代理编排涉及协调多个 AI 代理协作执行任务。Rust 是一种以性能和内存安全著称的系统编程语言，适合此类应用。
+**背景**: AI 红队是指在部署前对 AI 系统进行对抗性测试，以发现安全和安保故障。随着 AI 代理和 MCP（模型上下文协议）的普及，新的攻击面不断出现，需要专门的扫描工具。LLM 越狱评估侧重于通过精心设计的提示绕过安全机制。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/qualixar/superlocalmemory">GitHub - qualixar/superlocalmemory: Open-source governed, local-first memory control plane for AI agents and teams. arXiv:2608.08253 · GitHub</a></li>
-<li><a href="https://github.com/satyasairay/remembrane">GitHub - satyasairay/remembrane: Local-first memory for AI agents: one SQLite file, zero deps. Recency-aware exact recall, conflict detection, time-travel journal, MCP server. · GitHub</a></li>
-<li><a href="https://blogs.oracle.com/developers/build-an-an-ultra-lightweight-personal-ai-assistant">Build an Ultra-Lightweight, Local-First AI Assistant with Persistent Memory | developers</a></li>
+<li><a href="https://github.com/cisco-ai-defense/mcp-scanner">GitHub - cisco-ai-defense/mcp-scanner: Scan MCP servers for potential threats & security findings. · GitHub</a></li>
+<li><a href="https://jailbreakbench.github.io/">JailbreakBench: LLM robustness benchmark</a></li>
+<li><a href="https://neuraltrust.ai/blog/best-ai-red-teaming-platforms">The 10 Best AI Red Teaming Platforms for Enterprise AI ... | NeuralTrust</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI`, `#Rust`, `#personal-assistant`, `#agent-orchestration`, `#local-first`
+**标签**: `#AI Security`, `#Red Teaming`, `#LLM`, `#MCP`, `#DevOps`
 
 ---
