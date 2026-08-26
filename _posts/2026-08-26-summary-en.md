@@ -10,356 +10,363 @@ lang: en
 ---
 
 1. [Apple Unveils M6 and M5 Ultra Chips with Major AI Performance Leap](#item-1) ⭐️ 9.0/10
-2. [OpenAI's Jalapeño Chip Outperforms Nvidia Blackwell](#item-2) ⭐️ 9.0/10
-3. [OpenAI Codex: Terminal Coding Agent Gains Rapid Traction](#item-3) ⭐️ 9.0/10
+2. [OpenAI's Jalapeño chip sets new records in AI inference speed and efficiency](#item-2) ⭐️ 9.0/10
+3. [OpenAI Codex: Lightweight Terminal Coding Agent Surges on GitHub](#item-3) ⭐️ 9.0/10
 4. [Ponytail: AI Agent That Thinks Like a Lazy Senior Dev](#item-4) ⭐️ 8.0/10
-5. [EchoWM: Omnimodal World Model for Enterable Generative Media](#item-5) ⭐️ 8.0/10
-6. [MobilePA-Bench: New Benchmark for Mobile Planning Agents](#item-6) ⭐️ 8.0/10
+5. [EchoWM: Omnimodal World Model for Enterable 6-DoF Generative Media](#item-5) ⭐️ 8.0/10
+6. [Compute-Efficient Hyperparameter Transfer for Large-Scale MoE](#item-6) ⭐️ 8.0/10
 7. [Firefox 157 to Enable JPEG XL by Default on All Platforms](#item-7) ⭐️ 8.0/10
-8. [SpaceX Announces Starbase LA Launch Site in Louisiana](#item-8) ⭐️ 8.0/10
-9. [SiFive Unveils BigSky, Its First RISC-V Server Platform](#item-9) ⭐️ 8.0/10
-10. [Qwen3.8-Flash-Next: 125B MoE Model for Local AI](#item-10) ⭐️ 8.0/10
-11. [EVE Online Begins Migration from Stackless Python 2.7 to Python 3](#item-11) ⭐️ 8.0/10
-12. [IBM Releases Granite-4.2-30B: Open Reasoning Model with 512K Context](#item-12) ⭐️ 8.0/10
-13. [IBM Granite Speech 5.0 Turbo CTC: Fast, Accurate Transcription](#item-13) ⭐️ 8.0/10
-14. [Continual Learning Enables SovereignAI with Open-Weight Models](#item-14) ⭐️ 8.0/10
-15. [Building a SOTA Hybrid Search Engine with PostgreSQL, pgvector, and Qwen3](#item-15) ⭐️ 8.0/10
+8. [SiFive Unveils BigSky, Its First Server Platform for RISC-V](#item-8) ⭐️ 8.0/10
+9. [Qwen3.8-Flash-Next: 125B MoE Model Launching Tomorrow](#item-9) ⭐️ 8.0/10
+10. [EVE Online Begins Massive Python 3 Migration](#item-10) ⭐️ 8.0/10
+11. [IBM Releases Granite-4.2-30B: Apache 2.0 Reasoning Model with 512K Context](#item-11) ⭐️ 8.0/10
+12. [Tri-FAIR Report: Continual Learning Enables SovereignAI with Open-Weight Models](#item-12) ⭐️ 8.0/10
+13. [Building a SOTA Hybrid Search Engine with PostgreSQL, pgvector, and Qwen3](#item-13) ⭐️ 8.0/10
+14. [Uber Fined Nearly $1B for Automated Driver Suspensions](#item-14) ⭐️ 8.0/10
+15. [Benchmark Shows LLM-as-a-Judge Fails; Mechanical Grounding Wins](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
 ## [Apple Unveils M6 and M5 Ultra Chips with Major AI Performance Leap](https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/) ⭐️ 9.0/10
 
-Apple announced the M6 and M5 Ultra chips on August 25, 2026. The M6 is Apple's first 2nm chip with a 12-core CPU, 12-core GPU, and dual 16-core Neural Engine, while the M5 Ultra features a quad-die architecture and delivers up to 4.3x the peak AI compute performance of the M3 Ultra. This announcement marks a significant leap in Apple silicon performance and AI compute, positioning Apple to compete more aggressively in the AI-driven computing market. The new chips will benefit professionals in 3D rendering, visual effects, and scientific analysis, and signal Apple's continued investment in on-device AI capabilities. The M6 is built on a 2nm process, a first for Apple, and includes a redesigned GPU and faster memory. The M5 Ultra, Apple's most powerful chip ever, features a 32-core Neural Engine and up to 1.8x faster graphics than the previous generation, with a quad-die architecture for maximum performance.
+Apple announced the M6 and M5 Ultra chips on August 25, 2026, marking a significant leap in performance and AI compute. The M6 uses a 2nm process, while the M5 Ultra is Apple's most powerful chip ever, featuring a quad-chip architecture via UltraFusion. This announcement is significant as it sets a new benchmark for Apple silicon, particularly in AI compute, which is crucial for on-device AI applications. The M5 Ultra's 4.5x AI performance improvement over the M3 Ultra could reshape the high-end desktop market and influence competitors. The M6 is built on a 2nm process with three types of CPU cores, while the M5 Ultra combines four third-generation 3nm dies with 1.2TB/s memory bandwidth. Apple claims the M5 Ultra delivers 30% faster CPU, 80% faster graphics, and 4.5x higher AI performance compared to the M3 Ultra.
 
 hackernews · interpol_p · Aug 25, 13:01 · [Discussion](https://news.ycombinator.com/item?id=49433292)
 
-**Background**: Apple silicon is a series of ARM-based systems on a chip (SoC) used in Macs and iPads, known for integrating CPU, GPU, and Neural Engine for AI tasks. The M6 and M5 Ultra are the latest in this line, succeeding the M5 series. The Neural Engine is a dedicated hardware component for accelerating machine learning tasks, and the shift to 2nm process technology allows for more transistors and better power efficiency.
+**Background**: Apple silicon chips are ARM-based systems-on-a-chip used in Macs and iPads. The M6 and M5 Ultra are part of Apple's ongoing transition to custom silicon, with each generation improving performance and efficiency. The M5 Ultra's quad-chip design is a first for Apple, enabling higher performance for pro workloads.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Apple_M6">Apple M6 - Wikipedia</a></li>
-<li><a href="https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/">Apple introduces M6 and M 5 Ultra for a big leap in performance and...</a></li>
-<li><a href="https://www.macrumors.com/2026/08/25/apple-debuts-m5-ultra/">Apple Debuts M 5 Ultra as Most Powerful Chip Ever - MacRumors</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apple_M6">Apple M 6 - Wikipedia</a></li>
+<li><a href="https://xenospectrum.com/en/apple-silicon-chip-architecture/">Apple 's M 6 Chip Debuts 2nm Process, While... | XenoSpectrum</a></li>
+<li><a href="https://www.zdnet.com/article/mac-mini-mac-studio-new-m6-m5-max-ultra/">Apple 's M 5 Ultra is its most powerful chip ever - with... | ZDNET</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reflect excitement about the performance gains, with some users noting the significant speed improvements over previous models. However, there is also concern about rising prices, with one user calculating that a fully maxed-out Apple Studio could cost over $24,000. Additionally, rumors about Apple skipping M6 Pro, Max, and Ultra variants to focus on the M7 chip for AI have sparked discussion about Apple's future chip strategy.
+**Discussion**: Community comments show mixed reactions: some users are impressed by the performance gains and note that prices, though higher, are reasonable when adjusted for inflation. Others discuss rumors that Apple may skip M6 Pro/Max/Ultra to focus on an AI-capable M7, and some express concerns about high upgrade costs, such as the $6,400 price for a 512GB RAM upgrade on the Mac Studio.
 
-**Tags**: `#Apple`, `#Hardware`, `#AI`, `#Chips`, `#Performance`
+**Tags**: `#Apple`, `#hardware`, `#AI`, `#chips`, `#M6`
 
 ---
 
 <a id="item-2"></a>
-## [OpenAI's Jalapeño Chip Outperforms Nvidia Blackwell](https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia) ⭐️ 9.0/10
+## [OpenAI's Jalapeño chip sets new records in AI inference speed and efficiency](https://openai.com/index/jalapeno-first-results) ⭐️ 9.0/10
 
-OpenAI has unveiled a custom inference chip named 'Jalapeño', developed with Broadcom, which reportedly outperforms Nvidia's Blackwell in inference tasks. The chip delivers higher throughput and lower latency for modern AI models, with each rack equipped with 128 accelerators capable of 13.4 petaFLOPS at MXFP4. This development could significantly shift the AI hardware landscape, challenging Nvidia's dominance in the inference market. If OpenAI's chip proves superior in real-world deployments, it may prompt other AI companies to pursue custom silicon, accelerating innovation and potentially reducing costs for large-scale AI inference. Jalapeño is a reticle-sized ASIC built in a nine-month development cycle, designed based on OpenAI's understanding of LLM behavior to address bottlenecks like data movement and compute-memory balance. The chip uses a rack-scale architecture similar to Nvidia's NVL72, with 128 accelerators per rack, and supports MXFP4 precision.
+OpenAI announced Jalapeño, its first custom inference chip co-developed with Broadcom, delivering industry-leading speed and efficiency for AI inference. The chip reportedly outperforms Nvidia processors in tests, with higher throughput and lower latency. This marks a significant shift in AI infrastructure, as OpenAI moves to reduce reliance on Nvidia GPUs and optimize inference costs. It could reshape the competitive landscape of AI hardware and influence how other AI companies approach custom silicon. Jalapeño was developed in nine months from concept to manufacturable blueprint, and is purpose-built for inference rather than training. It supports FP4 precision and has a die size comparable to Nvidia's Rubin, but with one-third the NVFP4 PFLOPs, according to community analysis.
 
-hackernews · bmulholland · Aug 25, 14:06 · [Discussion](https://news.ycombinator.com/item?id=49434378)
+rss · OpenAI Blog · Aug 25, 07:00
 
-**Background**: AI inference hardware is critical for deploying large language models efficiently. Nvidia's Blackwell GPUs have been the industry standard, but custom chips like Jalapeño aim to optimize for specific workloads, potentially offering better performance per watt and cost per token. The development reflects a broader trend of AI companies designing specialized hardware to gain competitive advantages.
+**Background**: AI inference is the process of running a trained model to generate predictions or responses, distinct from training which builds the model's weights. Custom inference chips are specialized hardware designed to optimize this process, offering potential gains in speed and energy efficiency over general-purpose GPUs.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI and Broadcom unveil LLM-optimized inference chip | OpenAI</a></li>
-<li><a href="https://www.theregister.com/systems/2026/08/25/openais-upcoming-jalapeno-chip-looks-like-itll-be-an-inference-beast/5292052">OpenAI's upcoming Jalapeño chip looks like it'll be an inference beast</a></li>
-<li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor-openais-first-chip-is-a-massive-reticle-sized-asic-built-in-an-ultra-fast-nine-month-development-cycle">Broadcom and OpenAI unveil custom-built Jalapeño inference processor — OpenAI's first chip is a massive reticle-sized ASIC built in an ultra-fast nine-month development cycle | Tom's Hardware</a></li>
+<li><a href="https://dev.to/pueding/openai-and-broadcoms-jalapeno-a-custom-inference-asic-inference-asic-vs-gpu-36jm">OpenAI and Broadcom's Jalapeño, a Custom Inference ASIC...</a></li>
+<li><a href="https://sakutto.ai/en/articles/openai-jalapeno-inference-chip">What Is OpenAI Jalapeño? Broadcom's Custom Inference Chip</a></li>
+<li><a href="https://gcore.com/learning/what-is-ai-inference">What is AI inference and how does it work? | Gcore</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express excitement about the potential of inference chips, drawing parallels to the early 3dfx era of graphics cards. Some users question the comparison table's accuracy, noting die size and FP4 precision concerns, while others highlight the efficiency gains and the possibility of baking LLM weights into chips. Overall sentiment is optimistic but cautious, with technical debates about benchmarks and long-term viability.
+**Discussion**: Community comments express excitement about the potential of inference chips, comparing the nascent market to early graphics card competition. Some discuss the possibility of baking LLM weights into chips, while others note that human speech is still 22x more efficient than the chip, and question the die size comparison.
 
-**Tags**: `#AI hardware`, `#OpenAI`, `#Nvidia`, `#chip design`, `#inference`
+**Tags**: `#AI inference`, `#hardware`, `#OpenAI`, `#performance`, `#custom chip`
 
 ---
 
 <a id="item-3"></a>
-## [OpenAI Codex: Terminal Coding Agent Gains Rapid Traction](https://github.com/openai/codex) ⭐️ 9.0/10
+## [OpenAI Codex: Lightweight Terminal Coding Agent Surges on GitHub](https://github.com/openai/codex) ⭐️ 9.0/10
 
-OpenAI's Codex, a lightweight terminal-based coding agent written in Rust, has gained significant traction on GitHub, amassing 118,125 stars and 1,181 stars today. It was released as an open-source tool on April 16, 2025, integrating OpenAI's language models with local code and command-line tasks. This release represents a notable advancement in AI-assisted development, bringing powerful models like o3 and o4-mini directly into developers' local workflows. The high star count and community interest indicate strong engagement, potentially reshaping how developers interact with AI coding tools. Codex is a lightweight, open-source coding agent that runs in the terminal, allowing users to write and edit code, execute commands, and interact with files. It is built in Rust, emphasizing performance and safety, and is designed to pair with OpenAI's models for faster task completion.
+OpenAI's Codex, a lightweight coding agent that runs in the terminal, has gained over 1,181 stars in a single day, reaching a total of over 118,000 stars on GitHub. The repository is written in Rust and is part of OpenAI's broader Codex initiative. This release signals OpenAI's push into developer tools, offering a lightweight, terminal-based alternative to IDE-integrated coding agents. Its rapid adoption suggests strong demand for efficient, local-first coding assistance that can streamline developer workflows. Codex CLI runs locally on your computer, and can be installed in IDEs like VS Code, Cursor, and Windsurf, or used as a desktop app. The repository is written in Rust, emphasizing performance and reliability, and is part of OpenAI's Codex product family that includes ChatGPT integration.
 
-github_trending · GitHub Trending · Aug 26, 01:20
+github_trending · GitHub Trending · Aug 26, 01:31
 
-**Background**: Coding agents are AI-powered tools that assist developers by automating coding tasks, such as writing code, fixing bugs, or running commands. OpenAI's Codex CLI is part of a broader trend of AI-assisted development tools that aim to integrate seamlessly into existing developer workflows, often running locally in the terminal for privacy and speed.
+**Background**: Coding agents are AI-powered tools that assist developers by writing, debugging, and refactoring code. OpenAI's Codex builds on its earlier Codex model and GPT-4/5 technology, offering a terminal-based agent that can automate tasks like pull requests and code reviews. The Rust implementation suggests a focus on speed and low resource usage, appealing to developers who prefer command-line interfaces.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)">OpenAI Codex (AI agent) - Wikipedia</a></li>
-<li><a href="https://github.com/openai/codex">GitHub - openai/codex: Lightweight coding agent that runs in your terminal · GitHub</a></li>
-<li><a href="https://openai.com/index/introducing-codex/">Introducing Codex | OpenAI</a></li>
+<li><a href="https://github.com/openai/codex">GitHub - openai / codex : Lightweight coding agent that runs in your...</a></li>
+<li><a href="https://openai.com/codex/">Codex in ChatGPT | AI Coding Agents for Software... | OpenAI</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments were not provided, but the high star count and rapid growth suggest strong positive reception. Developers are likely excited about the integration of OpenAI's models into a lightweight terminal tool, though some may have concerns about dependency on OpenAI's services.
-
-**Tags**: `#AI`, `#coding agent`, `#developer tools`, `#OpenAI`, `#terminal`
+**Tags**: `#AI`, `#coding agent`, `#OpenAI`, `#developer tools`, `#Rust`
 
 ---
 
 <a id="item-4"></a>
 ## [Ponytail: AI Agent That Thinks Like a Lazy Senior Dev](https://github.com/DietrichGebert/ponytail) ⭐️ 8.0/10
 
-DietrichGebert/ponytail is a trending JavaScript repository that gained 982 stars in a day, reaching over 111k total stars. It provides an AI agent skill that encourages minimal code generation, inspired by the 'lazy senior dev' philosophy. This project highlights a shift in AI code generation towards efficiency and cost reduction, as generating less code saves tokens and reduces technical debt. It could influence how AI coding assistants are designed, benefiting developers and organizations by lowering costs and improving code quality. The repository installs as an OpenClaw skill from ClawHub, and also exposes a /ponytail command. It emphasizes searching before generating to avoid duplication, and includes related skills like review, audit, debt, gain, and help.
+Ponytail, a JavaScript repository by DietrichGebert, has gained 982 stars in a day and 111,066 total stars, promoting the 'laziest senior dev' philosophy to make AI agents generate minimal code. It encourages agents to ask 'does this already exist?' before writing new code. This trend could reshape AI-assisted development by reducing code bloat and technical debt, potentially improving code quality and maintainability. It may influence how AI coding tools are designed, making them more cost-efficient and aligned with senior developer best practices. The repository is written in JavaScript and has 6,104 forks. The concept is viral, with articles like 'Why your AI coding agent writes too much code' discussing the 'lazy senior developer' fix, and a framework called Ponytail applying this philosophy to code generation.
 
-github_trending · GitHub Trending · Aug 26, 01:20
+github_trending · GitHub Trending · Aug 26, 01:31
 
-**Background**: AI code generation typically produces verbose code, leading to higher token costs and maintenance burden. The 'lazy senior dev' philosophy advocates for minimal, reusable code, which Ponytail applies to AI agents by making them search existing code before generating new code.
+**Background**: AI coding agents often overbuild by default, generating more code than necessary and accumulating technical debt. The 'laziest senior dev' philosophy advocates that the best code is the code you never wrote, emphasizing reuse and minimalism. Ponytail applies this to AI agents, asking them to consider existing solutions before creating new code.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/DietrichGebert/ponytail">GitHub - DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote. · GitHub</a></li>
-<li><a href="https://fp8.co/articles/Ponytail-AI-Agent-Framework-Lazy-Senior-Dev-Approach">Ponytail: AI Agent that Thinks Like a Lazy Senior Dev | Aaron's Generative AI Feeds</a></li>
-<li><a href="https://www.alphamatch.ai/blog/ponytail-ai-coding-skill-2026">Ponytail: The AI Coding Skill That Saves Tokens by Writing Less Code</a></li>
+<li><a href="https://rocketdevs.com/blog/ai-agents-writing-too-much-code">Why your AI coding agent writes too much code : the viral " lazy senior ...</a></li>
+<li><a href="https://dev.to/umair24171/build-cost-aware-ai-agent-3-laziest-dev-patterns-2a08">build cost aware AI agent: 3 Laziest Dev Patterns - DEV Community</a></li>
+<li><a href="https://fp8.co/articles/Ponytail-AI-Agent-Framework-Lazy-Senior-Dev-Approach">Ponytail: AI Agent that Thinks Like a Lazy Senior Dev</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#code-generation`, `#JavaScript`, `#developer-tools`, `#productivity`
+**Tags**: `#AI`, `#code-generation`, `#developer-tools`, `#JavaScript`, `#productivity`
 
 ---
 
 <a id="item-5"></a>
-## [EchoWM: Omnimodal World Model for Enterable Generative Media](https://huggingface.co/papers/2608.23189) ⭐️ 8.0/10
+## [EchoWM: Omnimodal World Model for Enterable 6-DoF Generative Media](https://huggingface.co/papers/2608.23189) ⭐️ 8.0/10
 
-EchoWM is an omnimodal world model that generates synchronized 720p video, environmental sound, music, and speech while following continuous 6-DoF navigation trajectories in both first- and third-person views. It introduces a shared metric-scale relative trajectory representation and progressive training followed by autoregressive post-training for long-horizon generation. This work advances generative media by enabling interactive, enterable environments where users can navigate and receive synchronized multimodal feedback, bridging the gap between world models and immersive experiences. It could impact fields like gaming, virtual reality, and AI-driven content creation, offering a unified approach to multimodal generation and trajectory control. The model uses a shared metric-scale relative 6-DoF trajectory representation with dataset-level calibration to preserve motion magnitude across heterogeneous data. It supports both first- and third-person interaction and maintains synchronized audio and speech over long-horizon generation, achieving strong trajectory following and high visual quality on public benchmarks.
+EchoWM is a novel omnimodal world model that generates synchronized 720p video, environmental sound, music, and speech while following continuous 6-DoF navigation trajectories in both first- and third-person views. It introduces a shared metric-scale relative trajectory representation and dataset-level calibration to unify heterogeneous data. This work advances generative media by enabling enterable, interactive environments where users can navigate and experience coherent audio-visual content, which has significant implications for virtual reality, gaming, and AI-driven content creation. It also pushes the boundaries of world models by integrating multiple modalities and trajectory control into a single framework. The model uses progressive training followed by autoregressive post-training to handle long-horizon generation, and it supports both first- and third-person interaction across varied subjects. Extensive evaluations show strong trajectory following and high visual quality on public world-model benchmarks, with synchronized environmental sound and speech maintained over long sequences.
 
 huggingface_papers · Hugging Face Papers · Aug 25, 00:00
 
-**Background**: An omnimodal world model is an AI system that processes and generates multiple data modalities—such as video, audio, and text—within a unified architecture, aiming to understand and simulate the world holistically. 6-DoF (six degrees of freedom) navigation refers to movement in three translational and three rotational axes, commonly used in robotics, VR, and autonomous systems. Autoregressive post-training is a technique where a model generates outputs sequentially, feeding each output back as input for the next step, often used to improve long-horizon generation consistency.
+**Background**: World models are AI systems that learn to simulate environments, often used for planning and prediction in AI. Omnimodal world models extend this to generate multiple modalities like video, audio, and speech simultaneously. 6-DoF (six degrees of freedom) navigation refers to movement in 3D space with translation and rotation, commonly used in virtual reality and robotics. Autoregressive post-training is a technique to refine models for sequential generation tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2608.23189">[2608.23189] EchoWM: Open and Enterable Omnimodal World Models</a></li>
-<li><a href="https://www.nvidia.com/en-us/glossary/omni-model/">What is an Omni-Model? Definition, Architecture, & NVIDIA Solutions</a></li>
-<li><a href="https://eureka.patsnap.com/blog/what-is-6dof">6DoF: Understanding Its Role in VR, AR, and Robotics</a></li>
+<li><a href="https://echo-team-joy-future-academy-jd.github.io/Echo-1.5-Page/wm/">EchoWM | Enterable Omnimodal World Models</a></li>
+<li><a href="https://arxiv.org/abs/2606.02800">[2606.02800] Cosmos 3: Omnimodal World Models for Physical AI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Six_degrees_of_freedom">Six degrees of freedom - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#world models`, `#multimodal generation`, `#audio-visual`, `#navigation`, `#deep learning`
+**Tags**: `#world models`, `#generative media`, `#multimodal AI`, `#6-DoF navigation`, `#audio-visual generation`
 
 ---
 
 <a id="item-6"></a>
-## [MobilePA-Bench: New Benchmark for Mobile Planning Agents](https://huggingface.co/papers/2608.23035) ⭐️ 8.0/10
+## [Compute-Efficient Hyperparameter Transfer for Large-Scale MoE](https://huggingface.co/papers/2608.20061) ⭐️ 8.0/10
 
-MobilePA-Bench is an interactive, stateful, and tool-centric benchmark for evaluating mobile planning agents, covering 13 functional domains and 212 realistic mobile tools. It tests sub-agent collaboration, memory usage, and composite skill invocation under real runtime constraints. This benchmark addresses a critical gap in mobile agent evaluation by combining GUI and tool-calling aspects in an executable sandbox, providing a more realistic assessment than existing benchmarks. It can accelerate the development of dependable mobile agents and influence future research in AI and systems. The benchmark maintains live application databases and returns structured feedback, allowing evidence-based verification of both action traces and resulting states. Experiments show that current frontier LLMs remain unreliable in mobile settings, with performance dropping sharply under strict tool ordering, permission limits, and unexpected runtime errors.
+This paper introduces a two-step hyperparameter transfer framework that predicts optimal learning rates for large Mixture-of-Experts (MoE) models by scaling across widths and token budgets, enabling efficient pretraining without costly sweeps. The method achieves high fidelity (R^2=0.95) when extrapolating to 10 trillion tokens. This work addresses a significant computational bottleneck in training large MoE models, potentially reducing the cost and time required for hyperparameter tuning. It enables researchers to determine optimal learning rates using small proxy models, accelerating the development of large-scale foundation models. The framework adapts Maximal Update Parameterization (μP) for MoE architectures with Multi-head Latent Attention (MLA) and the Muon optimizer, showing consistent learning rate transfer across width-scaled models. It then establishes a predictive scaling law along the token dimension, using linear regression on optimal values from small proxy models to extrapolate to massive training horizons.
 
-huggingface_papers · Hugging Face Papers · Aug 25, 00:00
+huggingface_papers · Hugging Face Papers · Aug 24, 00:00
 
-**Background**: Mobile planning agents are AI agents that plan and execute multistep tasks on mobile devices, often using large language models (LLMs). Existing benchmarks fall into two categories: GUI-centric ones that test screen manipulation but overlook background tool use, and static function-calling ones that rely on offline API matching detached from real runtime. MobilePA-Bench bridges this gap by providing an interactive sandbox that simulates real mobile environments.
+**Background**: Mixture-of-Experts (MoE) architectures expand model capacity without proportional computational cost by activating only a subset of parameters per token. However, hyperparameter optimization, especially learning rate, becomes computationally prohibitive at extreme scales. Maximal Update Parameterization (μP) is a framework that enables hyperparameter transfer across model widths, and Multi-head Latent Attention (MLA) is an attention mechanism that reduces KV cache. This paper combines these techniques to enable efficient hyperparameter transfer for MoE models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2608.23035">[2608.23035] MobilePA-Bench: Benchmarking Mobile Planner Agents on ...</a></li>
-<li><a href="https://github.com/Tongyi-MAI/MobilePA-Bench/blob/main/">GitHub - Tongyi-MAI/MobilePA-Bench: MobilePA-Bench: Benchmarking Mobile ...</a></li>
-<li><a href="https://huggingface.co/papers/2608.23035">Paper page - MobilePA-Bench: Benchmarking Mobile Planner Agents ...</a></li>
+<li><a href="https://github.com/microsoft/mup">GitHub - microsoft/ mup : maximal update parametrization (µP) · GitHub</a></li>
+<li><a href="https://www.emergentmind.com/topics/maximal-update-parameterization-mup-eb29542f-5fe9-4278-b435-74318840a417">Maximal - Update Parameterization (μP)</a></li>
+<li><a href="https://medium.com/data-science/deepseek-v3-explained-1-multi-head-latent-attention-ed6bee2a67c4">DeepSeek-V3 Explained 1: Multi - head Latent Attention | Medium</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#benchmark`, `#mobile agents`, `#LLM`, `#tool-calling`, `#planning`
+**Tags**: `#Mixture-of-Experts`, `#Hyperparameter Optimization`, `#Scaling Laws`, `#Efficient Training`, `#Deep Learning`
 
 ---
 
 <a id="item-7"></a>
 ## [Firefox 157 to Enable JPEG XL by Default on All Platforms](https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1) ⭐️ 8.0/10
 
-Firefox 157 will enable JPEG XL by default on all platforms, marking a major step toward modern image format adoption. This change follows active community discussion on implementation details and browser support. This is significant because JPEG XL offers superior compression and progressive decoding compared to existing formats like JPEG, PNG, and WebP, potentially improving web performance and user experience. Widespread browser support could accelerate the transition away from legacy JPEG, benefiting developers and users alike. Notably, both Firefox and Chromium are using the Rust-based jxl-rs library, while Apple has shipped libjxl (C++). The community is curious about benchmark comparisons between the two implementations and whether Apple will adopt Rust in its platforms.
+Firefox 157 will enable JPEG XL by default on all platforms, marking a significant step for the adoption of this modern image format. This change is expected to ship in the upcoming release. This move is significant because JPEG XL offers superior compression and quality compared to existing formats like JPEG and WebP, potentially improving web performance and user experience. It also signals growing cross-browser support, which could accelerate the format's adoption across the web. Both Firefox and Chromium are reportedly using the Rust-based jxl-rs library, while Apple has shipped libjxl (C++) in its platforms. The community is curious about benchmark comparisons between the two libraries and Apple's stance on memory safety with Rust.
 
 hackernews · yboris · Aug 25, 17:55 · [Discussion](https://news.ycombinator.com/item?id=49437946)
 
-**Background**: JPEG XL is an image format developed by the Joint Photographic Experts Group, designed to outperform existing formats like PNG, JPEG 2000, GIF, and WebP with higher quality and better compression ratios. It supports progressive decoding, allowing images to display a useful preview with as little as 10-20% of the file data. Browser support has been growing, with Firefox and Chrome now moving to enable it by default.
+**Background**: JPEG XL is a next-generation image format designed to outperform popular web formats like PNG, JPEG, and WebP with higher quality and better compression ratios. It features state-of-the-art progressive encoding and decoding, allowing images to appear faster with as little as 1% of data loaded. The format has been in development for years, and browser support has been gradually increasing.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://jpegxl.info/">JPEG XL : Superior Image Compression</a></li>
 <li><a href="https://www.loc.gov/preservation/digital/formats/fdd/fdd000536.shtml">JPEG XL Image Encoding</a></li>
-<li><a href="https://caniuse.com/jpegxl">JPEG XL image format | Can I use... Support tables for...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments express optimism about JPEG XL adoption, with some hoping it will eventually replace JPEG entirely. There is curiosity about the Rust vs C++ implementations and benchmark comparisons, as well as concerns about handling websites that don't support JXL, suggesting automatic conversion or paste-as-image options.
+**Discussion**: Community comments express optimism about JPEG XL adoption, with one user hoping that in a few years nobody will be sharing or saving JPEGs. Others note that Chrome appears to be doing the same, and there are practical concerns about websites and upload fields that don't support JXL, suggesting automatic conversion or paste-as-image options.
 
-**Tags**: `#JPEG XL`, `#Firefox`, `#image formats`, `#web standards`, `#browser`
+**Tags**: `#JPEG XL`, `#Firefox`, `#Web Standards`, `#Image Compression`, `#Browser Development`
 
 ---
 
 <a id="item-8"></a>
-## [SpaceX Announces Starbase LA Launch Site in Louisiana](https://www.spacex.com/sites/starbase-la) ⭐️ 8.0/10
+## [SiFive Unveils BigSky, Its First Server Platform for RISC-V](https://chipsandcheese.com/p/sifives-first-server-platform) ⭐️ 8.0/10
 
-SpaceX has officially announced Starbase LA, a new launch site in Louisiana, after months of speculation. The announcement promises significant economic and aerospace developments for the region. This marks a major expansion of SpaceX's launch infrastructure, potentially creating thousands of jobs and boosting the local economy in one of the poorest areas of the US. It also enhances US capabilities for sun-synchronous orbit launches, which are critical for Earth observation and reconnaissance satellites. The site offers access to sun-synchronous orbits (SSO) with a launch angle of approximately 98 degrees, which is advantageous for polar-orbiting missions. The announcement includes plans for shoreline restoration and marshland rebuilding, though some observers have noted that the page's copy appears repetitive, possibly generated by an LLM.
-
-hackernews · bilsbie · Aug 25, 16:37 · [Discussion](https://news.ycombinator.com/item?id=49436822)
-
-**Background**: SpaceX operates several launch sites, including Starbase in Texas and facilities in Florida and California. Louisiana's location provides unique advantages for certain orbital trajectories, particularly sun-synchronous orbits, which are commonly used by weather, imaging, and spy satellites. The project is part of SpaceX's broader effort to expand its launch capabilities and support national security and commercial missions.
-
-**Discussion**: Community comments express optimism about the economic benefits for local tradespeople, noting the potential for 10-20 years of construction work. Some are excited about ambitious real-world projects, while others question the quality of the announcement page, pointing out repetitive text that may have been generated by an LLM. There is also a humorous reference to the phrase 'building a new space coast.'
-
-**Tags**: `#SpaceX`, `#aerospace`, `#Louisiana`, `#space industry`, `#economic development`
-
----
-
-<a id="item-9"></a>
-## [SiFive Unveils BigSky, Its First RISC-V Server Platform](https://chipsandcheese.com/p/sifives-first-server-platform) ⭐️ 8.0/10
-
-SiFive announced its first server platform, the BigSky Datacenter Development Platform, built around the high-performance P870 RISC-V core. This marks the company's entry into the enterprise server market with a RISC-V-based solution. This is a significant milestone for RISC-V in the data center, potentially disrupting the current vendor lock-in in cloud data centers. It provides an open-architecture alternative to x86 and Arm, which could lower costs and increase flexibility for enterprises. The BigSky platform supports double-wide GPUs up to 450W, indicating a focus on AI and high-performance computing workloads. However, the boot environment and driver support for less-common platforms remain open questions, as noted by community members.
+SiFive has announced its first server platform, the BigSky SF-2U870 Datacenter Development Platform, marking a significant step for RISC-V in the datacenter. The platform is built around a high-performance RISC-V core architecture optimized for server workloads. This milestone could accelerate the adoption of RISC-V in the datacenter, potentially disrupting the current vendor lock-in seen in cloud data centers. It provides an open architecture alternative to x86 and Arm, which may impact the broader hardware ecosystem and open architecture trends. The BigSky platform supports double-wide GPUs up to 450W, but community members have raised concerns about driver support and boot environment blobs. SiFive is not aiming to beat x86 or Arm with this platform, but rather to pave the way for RISC-V adoption in the datacenter.
 
 hackernews · geerlingguy · Aug 25, 03:06 · [Discussion](https://news.ycombinator.com/item?id=49428638)
 
-**Background**: RISC-V is an open-standard instruction set architecture (ISA) that allows anyone to design processors without paying licensing fees. SiFive is a leading provider of RISC-V cores and has now developed a server platform to compete in the data center market, which is currently dominated by x86 and Arm architectures.
+**Background**: RISC-V is a free and open standard instruction set architecture (ISA) based on reduced instruction set computer (RISC) principles. It has recently reached the datacenter with cloud servers, 64-core CPUs, and HPC clusters, and SiFive's BigSky platform is part of this trend. The platform is a development server, not a production system, and is designed to help accelerate RISC-V adoption in the datacenter.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://www.sifive.com/development-platforms">RISC-V Boards: HiFive™ Boards by SiFive</a></li>
-<li><a href="https://nanomachines.net/technology/sifive-s-first-server-platform/">SiFive 's First Server Platform - NanoMachines</a></li>
 <li><a href="https://chipsandcheese.com/p/sifives-first-server-platform">SiFive ’s First Server Platform - by George Cozma</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RISC-V">RISC - V - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members view this as a huge milestone for RISC-V, with potential to disrupt vendor lock-in. Some question the value of a license-free ISA in this market segment, arguing that CPU licensing costs are not the main bottleneck compared to RAM, storage, and GPU costs. Others raise concerns about driver support and boot environment openness.
+**Discussion**: The community is generally positive, with one user calling it a 'huge milestone' for RISC-V. However, there are concerns about driver support for GPUs, the value of a license-free ISA in this market segment, and the boot environment's openness. Some users also shared benchmark results and questioned the practical viability.
 
-**Tags**: `#RISC-V`, `#server`, `#hardware`, `#open-source`, `#data center`
+**Tags**: `#RISC-V`, `#hardware`, `#server`, `#open architecture`, `#datacenter`
+
+---
+
+<a id="item-9"></a>
+## [Qwen3.8-Flash-Next: 125B MoE Model Launching Tomorrow](https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next) ⭐️ 8.0/10
+
+Qwen is releasing Qwen3.8-Flash-Next tomorrow, a Mixture-of-Experts (MoE) model with 125B total parameters and 6B active parameters. The model also includes a 51B n-gram component, and its Hugging Face page is already available. This model could make frontier-level AI more accessible for local deployment, as its MoE architecture with sparse activation may run on consumer hardware with reasonable speed. It may also spur further development of inference engines optimized for MoE models, potentially ushering in a 'year of local AI'. Memory estimates suggest an ideal 4-bit quantized version would use about 82 GB (58 GB main weights + 24 GB n-gram tables), with real-world quants likely in the 80–90 GB range. The large n-gram table is sparsely accessed, making it a good candidate for system RAM offload, which could make the model surprisingly local-friendly.
+
+hackernews · garo-pro · Aug 25, 11:49 · [Discussion](https://news.ycombinator.com/item?id=49432317)
+
+**Background**: Mixture of Experts (MoE) is an architecture that activates only a small subset of parameters per input, saving computation while maintaining large total knowledge capacity. This design allows models like Qwen3.8-Flash-Next to have a large parameter count while keeping inference costs lower, making them more feasible for local deployment on high-end consumer hardware.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/JustVugg/colibri">GitHub - JustVugg/colibri: Run frontier MoE models on hardware you...</a></li>
+<li><a href="https://unsloth.ai/docs/models/muse-glimmer">Learn how to run the new Muse Glimmer 30B model from Meta.</a></li>
+<li><a href="https://localaimaster.com/blog/deepseek-v4-hardware-requirements">DeepSeek V4 Hardware Requirements : Flash vs Pro</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Community members are excited about the model's potential for local AI, with some noting it could justify owning high-memory devices like the Strix Halo or Mac Studio. Others discuss integration with inference engines like FreeToken to improve MoE distribution across CPU/RAM and GPU/VRAM, and some express frustration with OpenRouter's handling of Qwen models.
+
+**Tags**: `#AI`, `#LLM`, `#Qwen`, `#MoE`, `#Local AI`
 
 ---
 
 <a id="item-10"></a>
-## [Qwen3.8-Flash-Next: 125B MoE Model for Local AI](https://modelscope.cn/models/Qwen/Qwen3.8-Flash-Next) ⭐️ 8.0/10
+## [EVE Online Begins Massive Python 3 Migration](https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/) ⭐️ 8.0/10
 
-Qwen announced the release of Qwen3.8-Flash-Next, a 125B parameter Mixture-of-Experts (MoE) model with 6B active parameters, scheduled for release tomorrow. The model is available on ModelScope and Hugging Face. This model's efficient MoE architecture could enable competitive performance on consumer hardware, potentially accelerating the local AI movement. It offers a new option for developers and enthusiasts seeking to run large models without cloud dependencies. The model includes a 51B n-gram component, with memory estimates suggesting ideal 4-bit quantization around 82 GB (58 GB main weights + 24 GB n-gram tables). Real-world quantizations likely fall in the 80–90 GB range, and the sparse n-gram table is suitable for system RAM offload.
-
-hackernews · garo-pro · Aug 25, 11:49 · [Discussion](https://news.ycombinator.com/item?id=49432317)
-
-**Background**: Mixture of Experts (MoE) models activate only a subset of parameters per input, saving computation while maintaining large total knowledge capacity. This allows models like Qwen3.8-Flash-Next to have 125B total parameters but only 6B active, making them more efficient for inference.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://medium.com/ramses-engineering/not-one-brain-but-many-how-mixture-of-experts-moe-makes-ai-smarter-and-faster-568f41220852">Not One Brain, But Many: How Mixture of Experts ( MoE ) Makes AI ...</a></li>
-<li><a href="https://aplicar.ai/ai-glossary/mixture-of-experts-moe/">Mixture of Experts ( MoE ) - Learn & Apply AI</a></li>
-<li><a href="https://www.linkedin.com/pulse/mixture-experts-moe-ai-breakthrough-making-large-language-banafa-xk01c">Mixture of Experts ( MoE ): The AI Breakthrough Making Large...</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Community members are excited about the model's potential for local inference, with some noting it could justify high-memory devices like 128GB Strix Halo or Mac Studio. Others discuss integration with inference engines like FreeToken and the practicality of running it on used 3090s with DDR4, suggesting a possible 'year of local AI'.
-
-**Tags**: `#AI/ML`, `#LLM`, `#Qwen`, `#MoE`, `#Local AI`
-
----
-
-<a id="item-11"></a>
-## [EVE Online Begins Migration from Stackless Python 2.7 to Python 3](https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/) ⭐️ 8.0/10
-
-EVE Online has announced the start of its migration from Stackless Python 2.7 to Python 3, using the futurize script on 2.4 million lines of code and manually reviewing approximately 20,000 behavioral differences between Python 2 and 3. This migration is significant because EVE Online is one of the largest and longest-running Python codebases in production, and its successful transition will provide valuable insights for other organizations facing similar legacy Python 2 migrations. It also highlights the challenges of moving away from Stackless Python, a discontinued project. The migration will use the futurize script to automatically convert code, followed by manual review of ~20,000 places where Python 2 and 3 behavior differs, such as integer division (1/2 is 0 in Python 2 but 0.5 in Python 3). The announcement does not specify how they will replace Stackless, but last year they presented a talk on replacing it in their Carbon engine for EVE Frontier using the open-source carbonengine/scheduler library.
+EVE Online has announced the start of its migration from Stackless Python 2.7 to Python 3, involving 2.4 million lines of code. The process will begin using the futurize script, followed by manual review of approximately 20,000 behavioral differences between Python 2 and 3. This migration is significant for the Python community as it demonstrates a large-scale, real-world upgrade from a discontinued interpreter (Stackless Python) to Python 3. It highlights the challenges and strategies for modernizing legacy codebases, which is relevant for many organizations still running Python 2. The migration involves 2.4 million lines of code and will use the futurize script for initial conversion. The team will then manually review around 20,000 places where Python 2 and 3 behavior differ, such as integer division (1/2 is 0 in Python 2 but 0.5 in Python 3). The announcement does not specify how they will replace Stackless, but last year they presented a talk on using the carbonengine/scheduler library for EVE Frontier.
 
 rss · Simon Willison · Aug 25, 22:59
 
-**Background**: EVE Online has run on Stackless Python since its launch in 2003, and its last major upgrade was to Stackless Python 2.7 in 2010. Stackless Python is a variant of CPython that provides microthreads (tasklets) for lightweight concurrency, but the project has been officially discontinued and its GitHub repository archived since February 2025. The futurize tool is part of the python-future package, which helps convert Python 2 code to be compatible with Python 3 while maintaining backward compatibility.
+**Background**: Stackless Python is a variant of Python that provides microthreads (tasklets) for lightweight concurrency. It has been discontinued, with its GitHub repository archived in February 2025. EVE Online has used Stackless Python since its launch in 2003, with its last major upgrade to Stackless Python 2.7 in 2010. The futurize script is a tool from the python-future project that helps convert Python 2 code to be compatible with Python 3.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Stackless_Python">Stackless Python</a></li>
-<li><a href="https://python-future.org/futurize.html">futurize : Py 2 to Py 2 / 3 — Python -Future documentation</a></li>
+<li><a href="https://python-future.org/futurize.html">futurize : Py2 to Py2/3 — Python-Future documentation</a></li>
+<li><a href="https://grokipedia.com/page/Stackless_Python">Stackless Python</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community discussion on Lobsters is not provided, but based on the nature of the announcement, developers likely expressed interest in the scale of the migration and the challenges of handling behavioral differences. Some may have commented on the fate of Stackless and the alternative scheduler approach used in EVE Frontier.
+**Discussion**: The community discussion on Lobsters likely includes comments about the scale of the migration, the challenges of moving from Stackless Python, and the use of futurize. Some may express interest in how they will handle concurrency without Stackless, while others may share their own experiences with large Python migrations.
 
-**Tags**: `#Python`, `#Migration`, `#EVE Online`, `#Stackless`, `#Legacy Code`
+**Tags**: `#Python`, `#Migration`, `#EVE Online`, `#Stackless Python`, `#Legacy Code`
+
+---
+
+<a id="item-11"></a>
+## [IBM Releases Granite-4.2-30B: Apache 2.0 Reasoning Model with 512K Context](https://www.reddit.com/r/LocalLLaMA/comments/1vy2jz7/ibmgranitegranite4230b_hugging_face/) ⭐️ 8.0/10
+
+IBM has released Granite-4.2-30B, the flagship reasoning model in the Granite 4.2 family, available on Hugging Face under the Apache 2.0 license. It features built-in chain-of-thought reasoning, flexible thinking modes (full, non-thinking, low-effort), and a 512K context window. This release is significant because it brings a powerful, fully open-source reasoning model to the community, allowing commercial and research use without restrictions. The 512K context window and flexible thinking modes address key needs in long-document processing and agentic workflows, potentially influencing the adoption of open models in enterprise settings. The model is a decoder-only dense transformer with Grouped Query Attention (32 heads, 8 KV heads), RoPE with θ=10,000,000, SwiGLU activation, RMSNorm, and bfloat16 precision. It also supports reasoning-augmented tool calling, enabling more accurate function calls by reasoning about tool selection.
+
+reddit · r/LocalLLaMA · /u/jacek2023 · Aug 25, 15:10
+
+**Background**: Chain-of-thought reasoning is a technique that improves model performance on complex tasks by prompting the model to generate intermediate reasoning steps. Apache 2.0 is a permissive open-source license that allows free use, modification, and distribution, making it attractive for commercial adoption. A 512K context window enables the model to process very long documents or conversations in a single pass, which is crucial for tasks like document analysis and multi-turn agent interactions.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Apache_License">Apache License</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chain-of-thought_reasoning">Chain-of-thought reasoning</a></li>
+<li><a href="https://www.linkedin.com/posts/artemsemjanow_ai-contextwindow-bytedance-activity-7365759392530542592-Uzhs">The context window wars just got REAL | Artem Semyanov</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The Reddit discussion is not provided, but based on the high score and typical community sentiment, users likely appreciate the open license and the flexible thinking modes, while some may discuss the trade-offs between model size and performance. Without actual comments, the sentiment cannot be accurately summarized.
+
+**Tags**: `#AI`, `#LLM`, `#open-source`, `#reasoning model`, `#IBM`
 
 ---
 
 <a id="item-12"></a>
-## [IBM Releases Granite-4.2-30B: Open Reasoning Model with 512K Context](https://www.reddit.com/r/LocalLLaMA/comments/1vy2jz7/ibmgranitegranite4230b_hugging_face/) ⭐️ 8.0/10
+## [Tri-FAIR Report: Continual Learning Enables SovereignAI with Open-Weight Models](https://www.reddit.com/r/MachineLearning/comments/1vxvzju/continual_learning_of_frontier_models_for/) ⭐️ 8.0/10
 
-IBM has released Granite-4.2-30B, a 30-billion-parameter reasoning model under the Apache 2.0 license, featuring built-in chain-of-thought, flexible thinking modes (full, non-thinking, low-effort), and a 512K context window. The model is part of the Granite 4.2 family, which also includes 8B and 3B variants. This release is significant because it brings strong reasoning capabilities to an open-source model that can be run entirely within an enterprise's own infrastructure, offering a viable alternative to proprietary models. The flexible thinking modes and 512K context window make it highly relevant for complex agentic workflows and long-document processing, potentially influencing the broader LLM ecosystem. The model uses a decoder-only dense transformer with Grouped Query Attention (32 attention heads, 8 KV heads), RoPE with θ=10,000,000, SwiGLU activation, RMSNorm, and bfloat16 precision. It is post-trained from Granite-4.1-30B-Base through a multi-stage pipeline that unlocks reasoning, tool use, and instruction-following.
+Tri-FAIR released a technical report and open-weight model 'Thomson', arguing that frontier AI performance can be achieved by diverse institutions through continual learning on open-weight models, offering a concrete path toward SovereignAI. This challenges the assumption that only heavily funded players can build frontier models, potentially democratizing AI development. It provides a practical strategy for organizations to achieve sovereign AI capabilities with limited budgets. The approach uses continual learning to preserve plasticity and stability, making minimal high-impact parameter interventions. Thomson shows a 'π-shaped' performance pattern with improvements across diverse capabilities while avoiding catastrophic forgetting.
 
-reddit · r/LocalLLaMA · /u/jacek2023 · Aug 25, 15:10
+reddit · r/MachineLearning · /u/Forsaken_Scientist · Aug 25, 10:30
 
-**Background**: Chain-of-thought (CoT) is a technique that prompts LLMs to reason step-by-step, improving performance on complex tasks like math and coding. The 512K context window allows the model to process very long documents or maintain extensive multi-turn conversations, which is crucial for agentic applications. Apache 2.0 licensing permits commercial and research use without restrictions, making it attractive for enterprises.
+**Background**: Continual learning, also known as lifelong learning, enables AI systems to learn from new data without forgetting previously acquired knowledge. Open-weight models provide access to model weights, allowing customization and fine-tuning. SovereignAI refers to an organization's capability to independently build, deploy, and govern AI use, often using local data to reflect local language and culture.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/ibm-granite/granite-4.2-30b">ibm-granite/ granite - 4 . 2 - 30 b · Hugging Face</a></li>
-<li><a href="https://getaibook.com/news/granite-42-brings-open-reasoning-to-30b-models/">Granite 4 . 2 Brings Open Reasoning to 30 B Models | News</a></li>
-<li><a href="https://www.orcarouter.ai/blog/granite-4-2-30b-vs-gpt-5-6-luna">Granite 4 . 2 30 B vs GPT-5.6 Luna: rent $0.20 or own weights</a></li>
+<li><a href="https://www.linkedin.com/pulse/continual-learning-artificial-intelligence-varsc">Continual Learning in Artificial Intelligence</a></li>
+<li><a href="https://www.ultralytics.com/glossary/continual-learning">What is Continual Learning ? AI Concepts | Ultralytics</a></li>
+<li><a href="https://medium.com/@bhagyarana80/why-open-weight-models-matter-more-than-you-think-1d1d8787a4fe">Why Open - Weight Models Matter (More Than You Think) | Medium</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit discussion likely includes comparisons with other reasoning models, user experiences with the flexible thinking modes, and assessments of the model's performance on benchmarks. Some users may express enthusiasm for the open-source nature and long context, while others might note limitations or suggest improvements.
-
-**Tags**: `#LLM`, `#reasoning model`, `#open-source`, `#Hugging Face`, `#IBM`
+**Tags**: `#continual learning`, `#frontier models`, `#open-weight models`, `#SovereignAI`, `#AI research`
 
 ---
 
 <a id="item-13"></a>
-## [IBM Granite Speech 5.0 Turbo CTC: Fast, Accurate Transcription](https://www.reddit.com/r/LocalLLaMA/comments/1vya9ok/granite_speech_50_turbo_ctc_extremely_fast_and/) ⭐️ 8.0/10
+## [Building a SOTA Hybrid Search Engine with PostgreSQL, pgvector, and Qwen3](https://www.reddit.com/r/MachineLearning/comments/1vxyrsr/how_we_built_a_sota_search_engine_using/) ⭐️ 8.0/10
 
-IBM has released the Granite Speech 5.0 Turbo CTC model, a new speech-to-text solution designed for extremely fast and accurate transcription. The model is available on Hugging Face and removes the language-model decoder to achieve higher speed and lower memory usage. This model offers a compelling option for developers and researchers in the local AI community who need efficient, on-device speech recognition. Its speed and accuracy could enable real-time transcription applications on edge devices and servers, potentially lowering the barrier for deploying speech AI. As of 25 August 2026, the ibm-granite/granite-speech-5.0-470m-turboctc model ranked ninth in accuracy and the -nc variant ranked fifth, while both were the fastest two models in official results. The model targets English transcription and is designed for servers and edge devices.
+A detailed technical write-up explains how Papers with Code implements hybrid search combining keyword and semantic search using PostgreSQL with pgvector and Qwen3-Embedding-0.6B. The system also powers related paper recommendations and leverages Hugging Face infrastructure for batch and live embeddings. This demonstrates a practical, production-grade approach to hybrid search that outperforms keyword-only or semantic-only methods, offering valuable insights for ML infrastructure engineers. It highlights the viability of using PostgreSQL with pgvector as a cost-effective alternative to dedicated vector databases. The stack includes PostgreSQL with pgvector, Qwen3-Embedding-0.6B for embeddings, Hugging Face Jobs with an NVIDIA L4 for batch embedding generation, and Hugging Face Inference Endpoints for live embedding serving. The same infrastructure powers related paper recommendations on individual paper pages.
 
-reddit · r/LocalLLaMA · /u/coder543 · Aug 25, 19:44
+reddit · r/MachineLearning · /u/NielsRogge · Aug 25, 12:42
 
-**Background**: Connectionist Temporal Classification (CTC) is a loss function and output representation used to train neural networks on sequence-labeling tasks where input and output are not aligned in time, such as speech recognition. Traditional speech recognition systems often use a language-model decoder to improve accuracy, but this adds computational overhead. IBM's Granite Speech 5.0 Turbo CTC removes this decoder to achieve faster and more memory-efficient transcription, trading some accuracy for speed.
+**Background**: Hybrid search combines lexical (keyword-based) search with semantic (vector-based) search to improve relevance and recall. pgvector is a PostgreSQL extension that enables storing and querying high-dimensional vectors directly in the database, while Qwen3 embeddings are a family of models designed for text embedding and ranking tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Connectionist_temporal_classification">Connectionist temporal classification - Wikipedia</a></li>
-<li><a href="https://runtimewire.com/article/ibm-granite-speech-5-turboctc-transcription">IBM cuts the decoder from Granite Speech , says transcription runs...</a></li>
+<li><a href="https://www.tigerdata.com/learn/postgresql-extensions-pgvector">pgvector : Vector Search in PostgreSQL (Full Guide) | Tiger Data</a></li>
+<li><a href="https://supabase.com/docs/guides/database/extensions/pgvector">pgvector : Embeddings and vector similarity | Supabase Docs</a></li>
+<li><a href="https://grokipedia.com/page/Hybrid_search">Hybrid search</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#speech recognition`, `#AI model`, `#CTC`, `#IBM`, `#transcription`
+**Tags**: `#search`, `#embeddings`, `#PostgreSQL`, `#pgvector`, `#ML infrastructure`
 
 ---
 
 <a id="item-14"></a>
-## [Continual Learning Enables SovereignAI with Open-Weight Models](https://www.reddit.com/r/MachineLearning/comments/1vxvzju/continual_learning_of_frontier_models_for/) ⭐️ 8.0/10
+## [Uber Fined Nearly $1B for Automated Driver Suspensions](https://www.reddit.com/r/artificial/comments/1vxv8pl/uber_hit_with_a_near1b_gdpr_fine_after_algorithms/) ⭐️ 8.0/10
 
-A new technical report introduces Thomson, a frontier model trained via continual learning on open-weight models, claiming competitive performance with recent frontier models across diverse domains while reducing forgetting. The report and open weights are released to demonstrate that SovereignAI is achievable with lower compute and personnel budgets. This work challenges the notion that frontier AI development is exclusive to a few well-funded labs, potentially democratizing AI capabilities. It provides a concrete path for institutions to build and govern their own AI, addressing concerns about information and power asymmetry in AI. The continual learning approach emphasizes plasticity and stability at each training stage, using minimal high-impact parameter interventions. Thomson shows a distinctive π-shaped performance pattern, with improvements across many capabilities and near-elimination of catastrophic forgetting, and is evaluated on agentic tasks, safety, legal, tax, multilingualism, and Deep Research.
+Uber has been hit with a nearly $1 billion fine under the GDPR for using algorithms to suspend drivers without human review. This marks one of the largest penalties under the regulation to date. This fine underscores the legal and ethical risks of automated decision-making, especially when it significantly affects individuals. It sets a precedent for how regulators may enforce GDPR Article 22, impacting companies that rely on AI for employment decisions. The fine relates to Uber's use of algorithms to automatically suspend drivers' accounts without human intervention, which may violate GDPR Article 22 on automated individual decision-making. The exact amount is reported as nearly $1 billion, though the final figure may vary pending appeal.
 
-reddit · r/MachineLearning · /u/Forsaken_Scientist · Aug 25, 10:30
+reddit · r/artificial · /u/avishic · Aug 25, 09:48
 
-**Background**: Continual learning, also known as lifelong learning, enables AI systems to learn from new data without forgetting previously acquired knowledge. Open-weight models, which release trained parameters publicly, allow others to download, fine-tune, and modify them, facilitating broader access to AI development. SovereignAI refers to an organization's capability to independently build, deploy, and govern AI use, which this report aims to make viable for a wider range of actors.
+**Background**: GDPR Article 22 gives individuals the right not to be subject to decisions based solely on automated processing that produce legal or similarly significant effects. Exceptions exist, but they require safeguards such as human review. This case highlights the growing scrutiny of algorithmic accountability in the gig economy.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Open-weight_model">Open-weight model</a></li>
-<li><a href="https://www.ultralytics.com/glossary/continual-learning">What is Continual Learning ? AI Concepts | Ultralytics</a></li>
-<li><a href="https://hackernoon.com/building-lexiai-a-local-first-architecture-for-sovereign-ai">Building Lexi. AI : A Local-First Architecture for Sovereign ... | HackerNoon</a></li>
+<li><a href="https://gdpr-info.eu/art-22-gdpr/">Art. 22 GDPR – Automated individual decision - making , including...</a></li>
+<li><a href="https://www.linkedin.com/pulse/gdpr-automated-decision-making-profiling-lisa-downs">GDPR - Automated decision - making and profiling</a></li>
+<li><a href="https://app.custodia-privacy.com/blog/gdpr-automated-decision-making">GDPR Automated Decision Making : What Article 22 Requires</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#continual learning`, `#open-weight models`, `#SovereignAI`, `#frontier models`, `#AI governance`
+**Discussion**: The Reddit discussion likely includes debates on whether the fine is justified, concerns about Uber's lack of human oversight, and broader implications for AI regulation. Some may argue that automated systems can be biased, while others might question the scale of the penalty.
+
+**Tags**: `#GDPR`, `#AI regulation`, `#algorithmic accountability`, `#Uber`, `#automated decision-making`
 
 ---
 
 <a id="item-15"></a>
-## [Building a SOTA Hybrid Search Engine with PostgreSQL, pgvector, and Qwen3](https://www.reddit.com/r/MachineLearning/comments/1vxyrsr/how_we_built_a_sota_search_engine_using/) ⭐️ 8.0/10
+## [Benchmark Shows LLM-as-a-Judge Fails; Mechanical Grounding Wins](https://www.reddit.com/r/artificial/comments/1vya5ko/i_benchmarked_autogen_crewai_langgraph_and/) ⭐️ 8.0/10
 
-A technical breakdown was published detailing how Papers with Code built a state-of-the-art search engine using PostgreSQL with pgvector, Qwen3-Embedding-0.6B for embeddings, and Hugging Face infrastructure for batch and live inference. The system combines keyword and semantic search, achieving better results than either approach alone. This demonstrates a practical, production-grade hybrid search implementation that can serve as a reference for others building similar systems. It highlights the effectiveness of combining traditional keyword search with modern embedding-based semantic search, which is increasingly important for information retrieval in technical domains. The stack includes PostgreSQL with pgvector, Qwen3-Embedding-0.6B for text embeddings, Hugging Face Jobs with an NVIDIA L4 for batch embedding generation, and Hugging Face Buckets for storing artifacts. The same infrastructure also powers the 'related papers' recommendations on individual paper pages.
+A user benchmarked AutoGen, CrewAI, LangGraph, and MetaGPT against their own framework GenOS on a strict Rust coding task, using a local model (qwen2.5-coder:14b). The results showed that only GenOS, which relies on mechanical grounding via compilers and linters, met the security specs, while others either hallucinated success or failed honestly. This benchmark challenges the widely used LLM-as-a-judge paradigm, suggesting that using LLMs to evaluate other LLMs' outputs is unreliable for production systems. It highlights the importance of grounding AI agents in real tools and compilers, which could influence how agentic systems are designed for software engineering tasks. The benchmark used a 'Triple Constraint' task requiring Rust middleware with cryptographic hashing, constant-time protection, under 1ms latency, and 100% test coverage. AutoGen burned 517k tokens in debate, CrewAI drifted to a WebSocket handshake, MetaGPT produced a 1-line file with a fake QA report, and LangGraph failed to compile but was honest. GenOS delivered 117 lines with SHA-256 and subtle, but only 3/5 tests passed, ending with INTEGRATION_INCOMPLETE.
 
-reddit · r/MachineLearning · /u/NielsRogge · Aug 25, 12:42
+reddit · r/artificial · /u/MonokoEloba · Aug 25, 19:40
 
-**Background**: Vector databases like pgvector store and retrieve embeddings, enabling semantic similarity search. Hybrid search combines lexical (keyword) and semantic (vector) approaches to improve retrieval quality, often using techniques like reciprocal rank fusion. Qwen3-Embedding-0.6B is a text embedding model from the Qwen family, designed for embedding and ranking tasks.
+**Background**: LLM-as-a-judge is a common evaluation method where an LLM scores or reviews outputs from another LLM, often used in reinforcement learning and benchmarking. However, it suffers from biases and can rubber-stamp incorrect results. Mechanical grounding refers to connecting AI agents to real-world tools like compilers and linters to validate outputs, ensuring factual correctness rather than relying on probabilistic language models.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Pgvector">Pgvector</a></li>
-<li><a href="https://github.com/pgvector/pgvector">GitHub - pgvector / pgvector : Open-source vector similarity search for...</a></li>
-<li><a href="https://huggingface.co/Qwen/Qwen3-Embedding-0.6B">Qwen/ Qwen 3 - Embedding - 0 . 6 B · Hugging Face</a></li>
+<li><a href="https://arxiv.org/pdf/2411.15594">A Survey on LLM - as - a - Judge</a></li>
+<li><a href="https://www.confident-ai.com/blog/why-llm-as-a-judge-is-the-best-llm-evaluation-method">LLM - as - a - Judge Simply Explained: The Complete... - Confident AI</a></li>
+<li><a href="https://www.emergentmind.com/topics/symbol-grounding-problem">Symbol Grounding in AI and Cognition</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#search`, `#pgvector`, `#embeddings`, `#PostgreSQL`, `#hybrid search`
+**Tags**: `#AI agents`, `#benchmarking`, `#LLM evaluation`, `#software engineering`, `#Rust`
 
 ---
