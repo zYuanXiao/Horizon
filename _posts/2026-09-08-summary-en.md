@@ -5,363 +5,362 @@ date: 2026-09-08
 lang: en
 ---
 
-> From 128 items, 15 important content pieces were selected
+> From 127 items, 15 important content pieces were selected
 
 ---
 
-1. [Meta's Segment Anything Model Repository Gains Traction](#item-1) ⭐️ 9.0/10
-2. [Compile by Training: Turning Natural-Language Specs into Local Neural Functions](#item-2) ⭐️ 8.0/10
-3. [RoboTok: Internet-Scale Data Engine for Dexterous Manipulation Learning](#item-3) ⭐️ 8.0/10
-4. [Broadcom Pulls VDDK Downloads, Making VMware Migration Harder](#item-4) ⭐️ 8.0/10
-5. [Reconstructed Stuxnet Source Code Released for Education](#item-5) ⭐️ 8.0/10
-6. [OpenBMB Releases MiniCPM5-2B, Top-Scoring Small Open Model](#item-6) ⭐️ 8.0/10
-7. [DeepSeek Vision Model Enables Rapid Game World Creation via Screenshots](#item-7) ⭐️ 8.0/10
-8. [Rustuna: High-Performance Rust Implementation of Optuna Released](#item-8) ⭐️ 8.0/10
-9. [LLM-guided program evolution improves 10 circle-packing solutions](#item-9) ⭐️ 8.0/10
-10. [KV Cache as Agent Runtime: A New Axis for LLM Interactivity](#item-10) ⭐️ 8.0/10
-11. [LLM Benchmarks as Longitudinal Measurements: A 31,352-Run Study](#item-11) ⭐️ 8.0/10
-12. [ECC: AI Coding Agent Harness Optimization Tool Surges on GitHub](#item-12) ⭐️ 8.0/10
-13. [NousResearch's Hermes Agent Gains 638 Stars in a Day](#item-13) ⭐️ 8.0/10
-14. [AutoHedge: Open-Source Autonomous Hedge Fund via Swarm AI](#item-14) ⭐️ 8.0/10
-15. [Hyperframes: TypeScript Library for HTML-to-Video Rendering Gains 474 Stars in a Day](#item-15) ⭐️ 8.0/10
+1. [Segment Anything Model: Promptable Image Segmentation Breakthrough](#item-1) ⭐️ 9.0/10
+2. [ECC GitHub Repo Surges with 1897 Stars in a Day](#item-2) ⭐️ 8.0/10
+3. [Compile by Training: Turning Natural-Language Specs into Local Neural Functions](#item-3) ⭐️ 8.0/10
+4. [Game-Theoretic Framework for Multi-Agent LLM Coordination](#item-4) ⭐️ 8.0/10
+5. [Stuxnet Source Code Reconstructed for Research](#item-5) ⭐️ 8.0/10
+6. [vLLM Speculative Decoding on AMD GPUs](#item-6) ⭐️ 8.0/10
+7. [Task-Aware Quantization Achieves 99% of BF16 Reasoning at 15% Size](#item-7) ⭐️ 8.0/10
+8. [MiniCPM5-2B Tops Sub-4B Open Models on Intelligence Index](#item-8) ⭐️ 8.0/10
+9. [DeepSeek-V4-Flash-Vision-Exp Enables Rapid Game World Creation](#item-9) ⭐️ 8.0/10
+10. [Tiny Recurrent System Autonomously Generates Bad Apple Video](#item-10) ⭐️ 8.0/10
+11. [Rustuna: High-Performance Rust Implementation of Optuna Released](#item-11) ⭐️ 8.0/10
+12. [LLM-guided program evolution improves 10 circle-packing records](#item-12) ⭐️ 8.0/10
+13. [Yandex Researchers Propose KV Cache as Agent Runtime](#item-13) ⭐️ 8.0/10
+14. [Measuring LLM Performance Drift via Repeated Benchmarks](#item-14) ⭐️ 8.0/10
+15. [IEEE T-PAMI EIC Confirms Missing Fourth Review in Rejection Case](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Meta's Segment Anything Model Repository Gains Traction](https://github.com/facebookresearch/segment-anything) ⭐️ 9.0/10
+## [Segment Anything Model: Promptable Image Segmentation Breakthrough](https://github.com/facebookresearch/segment-anything) ⭐️ 9.0/10
 
-The official GitHub repository for Meta's Segment Anything Model (SAM) has seen a recent uptick in activity, gaining 17 stars today and reaching a total of 54,832 stars. The repository provides code for running inference, model checkpoints, and example notebooks for promptable image segmentation. SAM is a groundbreaking foundation model for image segmentation, enabling users to segment any object with simple prompts like points or boxes. Its continued popularity underscores its significance in the computer vision community, impacting researchers and developers who rely on it for various applications. The repository is primarily written in Jupyter Notebook and includes code for inference, links to download trained checkpoints, and example notebooks. It has over 6,300 forks, indicating active community engagement and adaptation.
+Facebook Research's Segment Anything Model (SAM) repository provides code, checkpoints, and example notebooks for promptable image segmentation, enabling zero-shot segmentation with prompts like clicks or boxes. The repository has gained over 54,000 stars and 6,300 forks, reflecting its widespread adoption. SAM represents a significant advancement in computer vision, enabling general-purpose segmentation without task-specific training. Its release has spurred applications in fields like medical imaging, autonomous driving, and content editing, and it has become a foundational model for further research. The repository is primarily written in Jupyter Notebook, indicating a focus on demonstration and ease of use. It includes links to download trained model checkpoints and example notebooks that illustrate how to use the model for various segmentation tasks.
 
-github_trending · GitHub Trending · Sep 8, 03:28
+github_trending · GitHub Trending · Sep 8, 03:38
 
-**Background**: Segment Anything Model (SAM) is an AI model developed by Meta AI that can identify and segment any object in an image with minimal human input. Unlike traditional segmentation models trained for specific tasks, SAM is promptable, meaning it can respond to inputs like points, boxes, or masks to extract objects of interest, even those it has never seen before. This capability makes it a versatile tool for various computer vision applications.
+**Background**: Image segmentation is a core computer vision task that partitions an image into meaningful regions. Traditional methods often require task-specific training data and models. SAM introduces a promptable approach, where users provide simple prompts (e.g., clicks, boxes, or text) to segment any object, enabling zero-shot generalization across diverse domains.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://viso.ai/deep-learning/segment-anything-model-sam-explained/">Segment Anything Model (SAM) - The Complete Guide - Viso</a></li>
-<li><a href="https://www.geeksforgeeks.org/data-science/what-is-sam-segment-anything-model/">What is SAM (Segment Anything Model) - GeeksforGeeks</a></li>
-<li><a href="https://deepwiki.com/facebookresearch/segment-anything/3.1-sam-model-architecture">SAM Model Architecture | facebookresearch/segment-anything | DeepWiki</a></li>
+<li><a href="https://www.emerald.com/ftcgv/article/18/1/1/1351968/Promptable-image-segmentation-a-survey-of-guided">Promptable image segmentation: a survey of guided input ...</a></li>
+<li><a href="https://www.emergentmind.com/topics/promptable-image-segmentation">Promptable Image Segmentation - emergentmind.com</a></li>
+<li><a href="https://ai.meta.com/research/sam2/">Meta Segment Anything Model 2</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#computer vision`, `#image segmentation`, `#AI model`, `#Meta`, `#SAM`
+**Tags**: `#computer vision`, `#image segmentation`, `#AI/ML`, `#open source`, `#research`
 
 ---
 
 <a id="item-2"></a>
-## [Compile by Training: Turning Natural-Language Specs into Local Neural Functions](https://huggingface.co/papers/2609.04199) ⭐️ 8.0/10
+## [ECC GitHub Repo Surges with 1897 Stars in a Day](https://github.com/affaan-m/ECC) ⭐️ 8.0/10
 
-The paper introduces 'compile by training,' a method that converts natural-language specifications into reusable neural functions by distilling teacher-generated examples into small adapters. On FuzzyBench-Hard, it achieves 83.6% semantic accuracy, outperforming the Program-as-Weights fast compiler which produced no exact matches. This approach addresses the cost, latency, and dependency issues of calling large remote models for every input, enabling efficient local deployment. It shows practical impact for software engineering and AI deployment, potentially influencing future work in model distillation and program synthesis. The compiled functions run without the teachers and can be stored, versioned, and composed like ordinary software. The higher accuracy comes with a higher compile-time cost: roughly a minute rather than seconds for the fast compiler.
+The GitHub repository affaan-m/ECC, an agent harness performance optimization system for AI coding agents, gained 1897 stars in a single day, reaching a total of 252,998 stars and 37,946 forks. The project is written in JavaScript and supports multiple AI coding tools including Claude Code, Codex, Opencode, and Cursor. This rapid star growth indicates strong community interest in enhancing AI coding agent performance, a critical need as developers increasingly rely on such tools. The project's cross-platform support could significantly improve developer workflows and productivity across multiple AI coding environments. The repository describes itself as providing skills, instincts, memory, security, and research-first development for AI coding agents. It is not just a wrapper but a performance optimization system that gives agents long-term memory and sharper instincts, according to an external description.
 
-huggingface_papers · Hugging Face Papers · Sep 4, 00:00
+github_trending · GitHub Trending · Sep 8, 03:38
 
-**Background**: FuzzyBench-Hard is a benchmark subset where the Program-as-Weights (PAW) fast compiler produced no exact matches, testing the limits of compiling natural language into local neural artifacts. PAW is a paradigm that treats foundation models as tool builders, compiling fuzzy functions into compact, locally-executable neural programs. Adapters are small neural network modules inserted into pre-trained models to adapt them to new tasks, enabling efficient fine-tuning.
+**Background**: AI coding agents like Claude Code and OpenAI Codex are tools that help developers write, edit, and test code by understanding codebases and executing commands. Agent harnesses are frameworks that enhance these agents' capabilities, such as memory and task structuring. ECC appears to be a popular open-source example of such a harness, gaining traction due to its broad compatibility and performance focus.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.alphaxiv.org/overview/2607.02512">Program - as - Weights : A Programming Paradigm for Fuzzy... | alphaXiv</a></li>
-<li><a href="https://blog.teliaz.com/2026/07/05/program-as-weights-compiling-natural-language-into-local-neural-programs/">Program - as - Weights : Compiling Natural Language Into Local Neural...</a></li>
-<li><a href="https://dennisy.me/notes/programs-as-weights">Program - as - Weights : compiling fuzzy functions into local LoRAs...</a></li>
+<li><a href="https://github.com/affaan-m/ECC">affaan-m/ECC: The agent harness performance optimization system.</a></li>
+<li><a href="https://ecc.apposters.com/">ECC - The Agent Harness Performance Optimization System</a></li>
+<li><a href="https://www.opensourceprojects.dev/post/1086f295-9627-490a-a94b-024d61682611">The agent harness performance optimization system.</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#natural-language processing`, `#model distillation`, `#program synthesis`, `#efficient deployment`, `#AI`
+**Tags**: `#AI coding agents`, `#performance optimization`, `#developer tools`, `#GitHub trending`, `#JavaScript`
 
 ---
 
 <a id="item-3"></a>
-## [RoboTok: Internet-Scale Data Engine for Dexterous Manipulation Learning](https://huggingface.co/papers/2609.03199) ⭐️ 8.0/10
+## [Compile by Training: Turning Natural-Language Specs into Local Neural Functions](https://huggingface.co/papers/2609.04199) ⭐️ 8.0/10
 
-RoboTok is introduced as an internet-scale data engine that retrieves relevant human manipulation videos from the web to train dexterous robot policies. It learns a latent motion space from 3D hand trajectories in actor-centered reference frames, enabling efficient retrieval across variations in viewpoint, appearance, and occlusion. This approach addresses the bottleneck of expensive and limited robot data collection by leveraging the vast and continuously growing source of web videos. It could significantly scale robot learning for dexterous manipulation, making it more practical for real-world tasks. RoboTok uses a latent motion space derived from 3D hand trajectories expressed in actor-centered reference frames, which allows comparison of manipulation behaviors despite differences in camera viewpoint, scene appearance, and actor occlusions. The representation is compact enough for efficient search and continual indexing over internet-scale video collections.
+The paper introduces 'compile by training,' a method that converts natural-language specifications into reusable neural functions by distilling teacher-generated examples into small adapters for a compact interpreter. On FuzzyBench-Hard, it achieves 83.6% semantic accuracy, outperforming the Program-as-Weights fast compiler which produced no exact matches on this subset. This approach addresses the cost, latency, and provider dependency issues of calling large remote models for every input, enabling efficient deployment of natural-language-defined functions. It has practical implications for software engineering and AI deployment, allowing functions to be stored, versioned, and composed like ordinary software. The compile-time cost is higher than the fast compiler, taking roughly a minute instead of seconds. The authors deployed the compiler in a public interactive service and demonstrated compiled functions in a multi-site website helper, a language-controlled 3D avatar, and a bidirectional English-Claudish translator.
 
 huggingface_papers · Hugging Face Papers · Sep 4, 00:00
 
-**Background**: Robot learning often relies on demonstrations, but collecting robot data is expensive and limited in covering the long tail of real-world tasks. Human videos on the web offer a scalable alternative, but retrieving relevant demonstrations is challenging due to variations in viewpoint, appearance, and occlusion. RoboTok addresses this by focusing on hand-pose trajectories rather than visual appearance or semantic content.
+**Background**: FuzzyBench is a benchmark for fuzzing and neural functions, and FuzzyBench-Hard is a subset where the Program-as-Weights (PAW) fast compiler produced no exact matches. PAW is a paradigm where a compiler emits parameter-efficient adapters for a frozen, lightweight interpreter, trained on a 10M-example dataset. Adapters are small neural network modules inserted into pre-trained models to adapt them to new tasks without retraining the entire model.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2609.03199">RoboTok: An Internet-Scale Data Engine for Human ...</a></li>
-<li><a href="https://arxiv.org/html/2609.03199v1">RoboTok: An Internet-Scale Data Engine for Human ...</a></li>
+<li><a href="https://kenashe.ai/blog/2026-07-03-compiling-a-prompt-into-weights-what-program-as-weights-actually-changes/">Compiling a Prompt Into Weights: What Program-as-Weights ...</a></li>
+<li><a href="https://arxiv.org/abs/2607.02512">[2607.02512] Program-as-Weights: A Programming Paradigm for ...</a></li>
+<li><a href="https://www.moveworks.com/us/en/resources/ai-terms-glossary/adapters">What are Adapters? - Moveworks</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#robotics`, `#data engine`, `#dexterous manipulation`, `#human demonstrations`, `#robot learning`
+**Tags**: `#natural-language processing`, `#neural networks`, `#model distillation`, `#software engineering`, `#AI deployment`
 
 ---
 
 <a id="item-4"></a>
-## [Broadcom Pulls VDDK Downloads, Making VMware Migration Harder](https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/) ⭐️ 8.0/10
+## [Game-Theoretic Framework for Multi-Agent LLM Coordination](https://huggingface.co/papers/2609.02750) ⭐️ 8.0/10
 
-Broadcom has restricted public access to the VMware Virtual Disk Development Kit (VDDK) downloads, effective August 25, 2026, without prior explanation. This move removes a critical component used by many third-party migration tools to move workloads off VMware. This change significantly hampers users' ability to migrate away from VMware, effectively increasing vendor lock-in. It affects enterprises and service providers that rely on VDDK-based tools for backup and migration, potentially forcing them to stay on Broadcom's platform or face costly, slower alternatives. VDDK is essential for reading VMware virtual disks from outside the hypervisor, and without it, migrations fall back to slower paths; for vSAN-backed VMs, VDDK is mandatory and cannot be redistributed. The removal was done overnight with no official explanation, and even the CloudStack administration guide references the now-unavailable download page.
+This paper formalizes orchestrator-worker interaction in multi-agent LLM systems as a bilevel coordination game and introduces Stochastic Reflective Memory Ascent (SRMA), an algorithm with convergence guarantees. It also proves an information-theoretic impossibility result for transcript-only gates and validates the approach on SWE-bench, achieving 72.2% resolution rate. This work provides a unified theoretical foundation for understanding coordination, memory improvement, and external verification in multi-agent LLM systems, which are widely used but lack formal analysis. The convergence guarantees and impossibility results could guide the design of more reliable and efficient multi-agent frameworks, impacting both research and practical applications. The paper models the workers' local-update game as an approximate potential game under bounded coupling, with equilibrium slack controlled by decomposition quality. SRMA accepts a candidate memory only when grounded evaluation risk strictly decreases, and under calibration and non-degenerate corrective mass, it converges exactly, geometrically or polynomially, with matching lower bounds showing order-tightness.
 
-hackernews · josephcsible · Sep 7, 20:32 · [Discussion](https://news.ycombinator.com/item?id=49602699)
+huggingface_papers · Hugging Face Papers · Sep 7, 00:00
 
-**Background**: Broadcom acquired VMware in 2023 and has since made numerous changes that have frustrated customers. VDDK is a software development kit that allows third-party tools to access VMware virtual disk formats, enabling efficient backup and migration. Without VDDK, migration tools must rely on slower, less efficient methods, and for certain storage configurations like vSAN, migration may become impossible.
+**Background**: Multi-agent LLM systems typically use an orchestrator to decompose tasks for a team of workers, which then improve through textual reflection. Despite strong empirical results, these systems lack a unified account of coordination and memory improvement. Game theory provides tools to analyze strategic interactions, and potential games guarantee convergence to equilibrium. SWE-bench is a benchmark for evaluating LLMs on real-world software engineering tasks.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.virtualizationhowto.com/2026/09/leaving-vmware-just-got-harder-after-broadcom-pulled-vddk-downloads/">Leaving VMware Just Got Harder After Broadcom Pulled VDDK Downloads - Virtualization Howto</a></li>
-<li><a href="https://www.shapeblue.com/broadcom-vddk-download-vmware-to-kvm/">Broadcom Removes VDDK Pages Without Explanation: What You Need to Know - ShapeBlue</a></li>
-<li><a href="https://platform9.com/blog/vddk-no-longer-available/">Broadcom Cut Public Access of Virtual Disk Development Kit (VDDK) Overnight • Platform9</a></li>
+<li><a href="https://arxiv.org/abs/2609.02750">[2609.02750] Bilevel Coordinated Reflection: A Game-Theoretic ...</a></li>
+<li><a href="https://github.com/YihangChen9/Bilevel-Coordinated-Reflection">Bilevel Coordinated Reflection (SRMA) - GitHub</a></li>
+<li><a href="https://learnijoy.com/newscenter/110914-game-theory-improves-multi-agent-llm-coordination-and-reflec">Game Theory Improves Multi-Agent LLM Coordination and Reflec ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reflect a mix of sadness and frustration. An ex-VMware engineer laments Broadcom's focus on extracting value rather than innovating, while another user shares their experience migrating from VMware to Hyper-V, noting the cumbersome nature of VMware's VCF environment. Some users point out that Proxmox migrations are unaffected and that tools like qemu-img can still convert VMDK files, suggesting that the impact may vary depending on the target platform.
-
-**Tags**: `#VMware`, `#Broadcom`, `#VDDK`, `#virtualization`, `#migration`
+**Tags**: `#multi-agent systems`, `#LLM`, `#game theory`, `#coordination`, `#reflection`
 
 ---
 
 <a id="item-5"></a>
-## [Reconstructed Stuxnet Source Code Released for Education](https://github.com/Sadpainy/Stuxnet) ⭐️ 8.0/10
+## [Stuxnet Source Code Reconstructed for Research](https://github.com/Sadpainy/Stuxnet) ⭐️ 8.0/10
 
-A GitHub repository named 'Stuxnet' by user Sadpainy has been published, containing a reconstructed source code of the infamous Stuxnet worm, derived from reverse engineering efforts. The project is intended strictly for educational and research purposes. This release provides an accessible, readable version of Stuxnet's code, enabling deeper study of one of history's most sophisticated cyber-weapons. It is significant for cybersecurity education, defensive research, and raising awareness about vulnerabilities in critical infrastructure. The repository includes approximately 15,000 lines of code, covering modules for privilege escalation, propagation, and PLC infection. It is a reconstruction from decompiled binaries, preserving original logic and attack vectors, but is not the original source code.
+A GitHub user named Sadpainy has published a reconstructed source code of the Stuxnet cyber-weapon, derived from decompiled binaries, intended strictly for research and educational purposes. This reconstruction makes the inner workings of one of history's most sophisticated cyber-weapons accessible to researchers and students, potentially advancing defensive techniques for industrial control systems. It also reignites discussions about the ethics and security implications of publishing malware code. The repository contains approximately 15,000 lines of code, but lacks documentation and navigation aids, which may limit its immediate usability. The code is a reproduction without original comments, and the author emphasizes it is for educational purposes only.
 
 hackernews · CMDDestory · Sep 7, 22:12 · [Discussion](https://news.ycombinator.com/item?id=49603546)
 
-**Background**: Stuxnet is a computer worm discovered in 2010 that targeted Siemens Step7 software and PLCs, famously disrupting Iran's nuclear enrichment centrifuges. It is considered the first known cyber-weapon to cause physical damage to industrial infrastructure. The worm exploited multiple zero-day vulnerabilities and used sophisticated techniques such as man-in-the-middle attacks on industrial control systems.
+**Background**: Stuxnet is a notorious cyber-weapon discovered in 2010, widely believed to be created by the U.S. and Israeli intelligence to disrupt Iran's nuclear enrichment program. It targeted Siemens S7 PLCs and spread via USB drives, marking the first known cyber-attack on industrial control systems. The original source code was never released, so this reconstruction is based on reverse engineering of the malware's binaries.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Stuxnet">Stuxnet - Wikipedia</a></li>
 <li><a href="https://github.com/Sadpainy/Stuxnet">GitHub - Sadpainy/Stuxnet: Stuxnet, Here reproduced by me ...</a></li>
-<li><a href="https://zeli.app/story/49603546">Stuxnet - Educational reconstruction · Hacker News | Zeli</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Stuxnet">Stuxnet - Wikipedia</a></li>
+<li><a href="https://github.com/Stux6-Technology/StuxNet">GitHub - Stux6-Technology/StuxNet: Detailed reverse ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community comments reflect strong interest and appreciation, with users sharing personal experiences and book recommendations. Some discuss technical aspects like decryption keys and USB propagation feasibility, while others humorously reference code increments. Overall sentiment is positive, emphasizing the educational value and historical significance.
+**Discussion**: Community members expressed appreciation for the educational value, with some sharing personal experiences working on similar Siemens S7 systems and recommending related books. However, others criticized the lack of documentation and navigation aids, suggesting that the effort spent on reconstruction could have been better used to annotate the code.
 
 **Tags**: `#cybersecurity`, `#stuxnet`, `#malware`, `#critical infrastructure`, `#reverse engineering`
 
 ---
 
 <a id="item-6"></a>
-## [OpenBMB Releases MiniCPM5-2B, Top-Scoring Small Open Model](https://www.reddit.com/r/LocalLLaMA/comments/1w9skjz/minicpm52b_release_day/) ⭐️ 8.0/10
+## [vLLM Speculative Decoding on AMD GPUs](https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus) ⭐️ 8.0/10
 
-OpenBMB released MiniCPM5-2B, a dense 2B parameter Transformer model, on Hugging Face. It achieved a score of 15 on the Artificial Analysis Intelligence Index v4.2, the highest among open-weights models at or below 4B parameters. This release demonstrates that small, efficient models can achieve competitive intelligence scores, which is significant for on-device and resource-constrained AI applications. It also signals ongoing progress in the local LLM community, offering users more powerful options for local deployment. MiniCPM5-2B supports a 131k token context window, hybrid Think/No-Think reasoning, and native tool calling, built on the standard Llama architecture. It is the second model in the MiniCPM5 series, following MiniCPM5-1B, and is designed for on-device and local deployment.
+vLLM published a blog post detailing the implementation and benefits of speculative decoding on AMD GPUs, showcasing performance improvements and addressing community questions about AMD support gaps. This marks a significant step toward first-class AMD GPU support in vLLM, a widely-used LLM inference engine. It could enable faster and cheaper LLM inference on AMD hardware, broadening the ecosystem beyond NVIDIA. Speculative decoding pairs a small draft model with a larger target model to speed up generation without quality loss. The blog likely covers implementation specifics for AMD's ROCm stack, though the exact performance numbers are not provided in the summary.
 
-reddit · r/LocalLLaMA · /u/Equivalent-Grass-527 · Sep 7, 13:43
+hackernews · ankitg12 · Sep 7, 09:26 · [Discussion](https://news.ycombinator.com/item?id=49596054)
 
-**Background**: The Artificial Analysis Intelligence Index is a composite benchmark that measures model capabilities across reasoning, coding, knowledge, instruction following, and multi-step tasks. OpenBMB is an open lab focused on building foundation models and systems towards AGI, and MiniCPM series targets efficient, on-device LLMs.
+**Background**: Speculative decoding is an inference-time optimization that speeds up LLM token generation without reducing output quality. It works by having a smaller, faster draft model propose several tokens, which a larger target model then verifies in parallel, accepting those that match its own predictions. vLLM is an open-source library for fast, memory-efficient LLM inference and serving, and it has been expanding support for AMD GPUs via ROCm.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/openbmb/MiniCPM5-2B">openbmb/ MiniCPM 5 - 2 B · Hugging Face</a></li>
-<li><a href="https://artificialanalysis.ai/models/minicpm5-2b">MiniCPM 5 - 2 B - Intelligence, Performance & Price... | Artificial Analysis</a></li>
-<li><a href="https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index">Artificial Analysis Intelligence Index v4.3 | Artificial Analysis</a></li>
+<li><a href="https://handbook.modular.com/inference-optimization/speculative-decoding/">Speculative decoding | LLM Inference Handbook</a></li>
+<li><a href="https://docs.vllm.ai/en/v0.6.5/getting_started/amd-installation.html">Installation with ROCm — vLLM</a></li>
+<li><a href="https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/inference/vllm.html">vLLM inference and serving on ROCm — AMD ROCm AI Ecosystem</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#Open Source`, `#Model Release`, `#Efficient AI`, `#Local LLM`
+**Discussion**: Community comments express appreciation for AMD support but highlight gaps, such as poor performance on workstation-grade AMD R9700 cards compared to forks like Radiance. Users also ask technical questions about how speculative decoding verifies candidate tokens and how acceptance rates compare to NVIDIA.
+
+**Tags**: `#vLLM`, `#AMD GPUs`, `#speculative decoding`, `#LLM inference`, `#performance`
 
 ---
 
 <a id="item-7"></a>
-## [DeepSeek Vision Model Enables Rapid Game World Creation via Screenshots](https://www.reddit.com/r/LocalLLaMA/comments/1wa06k3/deepseekv4flashvisionexp_is_amazing_at_creating/) ⭐️ 8.0/10
+## [Task-Aware Quantization Achieves 99% of BF16 Reasoning at 15% Size](https://www.reddit.com/r/LocalLLaMA/comments/1wa5dp9/my_qwen3827b_taskaware_quant_reaches_99_of_bf16/) ⭐️ 8.0/10
 
-A developer demonstrated that DeepSeek-V4-Flash-Vision-Exp, a vision-capable LLM, can create and refine a complete game world in about two days by iterating on screenshots. The model generates and corrects textures, fixes visual glitches, scripts animations, and play-tests UI and mechanics. This showcases a novel, practical application of vision-language models in game development, potentially accelerating prototyping and reducing manual effort. It highlights the growing capability of local LLMs to handle multimodal tasks, which could impact indie developers and AI-assisted coding workflows. The model is an experimental variant that adds vision to DeepSeek-V4-Flash, with improved multimodal agent capabilities while maintaining text performance. The developer used both local and API versions, and noted performance issues on laptops, prompting optimizations.
+A developer introduced TAK (Task Aware Knapsack), a quantization method that achieves 82.81% reasoning accuracy on Qwen3.8-27B, matching 99% of BF16 performance while using only 15% of the model size. The method outperforms Unsloth's Dynamic 3.0 quant by 5.47 points on the same benchmark. This breakthrough could significantly reduce the memory footprint of large language models for local deployment, making high-quality reasoning accessible on consumer hardware. It also demonstrates that task-specific quantization can outperform general-purpose methods, potentially shifting how quantization is approached in the industry. TAK combines TASA and TAQ, using an imatrix built from a task-specific corpus to identify the smallest model size before collapse, then allocates precision at the tensor level within a byte budget. The method has been tested across multiple architectures (dense, QAT, MoE) and models, consistently beating Unsloth comparators, but the author notes coding is outside its intended domain and repetition loops have been observed.
 
-reddit · r/LocalLLaMA · /u/sloptimizer · Sep 7, 18:27
+reddit · r/LocalLLaMA · /u/devildip · Sep 7, 21:42
 
-**Background**: Vision-language models (VLMs) combine visual understanding with language generation, enabling tasks like image captioning and visual question answering. In game development, iterative design relies on feedback loops; VLMs can act as automated testers and artists by analyzing screenshots and generating code or assets. DeepSeek-V4-Flash-Vision-Exp is an experimental model that extends DeepSeek's text LLM with visual modules, allowing it to process images and interact with game environments.
+**Background**: Quantization reduces the precision of model weights to lower memory usage and speed up inference. BF16 is a high-precision format often used as a baseline, while methods like IQ2_S achieve extreme compression but often sacrifice accuracy. TAK aims to preserve task-specific performance by allocating precision where it matters most, rather than applying uniform quantization across the model.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp">deepseek-ai/DeepSeek-V4-Flash-Vision-Exp · Hugging Face</a></li>
-<li><a href="https://api-docs.deepseek.com/news/news260821/">DeepSeek-V4-Flash-Vision-Exp Release: Multimodal API Now Live | DeepSeek API Docs</a></li>
-<li><a href="https://www.mindstudio.ai/blog/deepseek-v4-flash-vision-benchmarks">DeepSeek-V4-Flash-Vision-Exp: How Its Benchmarks Stack Up vs Opus 4.8 | MindStudio</a></li>
+<li><a href="https://github.com/ggml-org/llama.cpp/discussions/2094">Difference in different quantization methods · ggml-org llama.cpp...</a></li>
+<li><a href="https://nano-gpt.com/models/text/qwen3.8-27b">Qwen 3 . 8 27 B model | NanoGPT</a></li>
+<li><a href="https://arxiv.org/html/2606.25519">Quantization Inflates Reasoning: Token Inflation as a Hidden Cost of...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The Reddit post generated positive interest, with users impressed by the results and the workflow. Some likely discussed the model's performance and potential limitations, but specific comments were not provided.
+**Discussion**: The Reddit discussion likely includes technical questions about the TAK method and its reproducibility, as well as feedback on the coding repetition issue. Some users may express skepticism about the benchmark methodology or the generalizability of the results, while others may appreciate the open pipeline and potential for local deployment.
 
-**Tags**: `#DeepSeek`, `#vision-language-model`, `#game-development`, `#AI-assisted-coding`, `#local-LLM`
+**Tags**: `#quantization`, `#LLM`, `#Qwen`, `#efficiency`, `#local-llm`
 
 ---
 
 <a id="item-8"></a>
-## [Rustuna: High-Performance Rust Implementation of Optuna Released](https://www.reddit.com/r/MachineLearning/comments/1w9nyhz/rustuna_a_highperformance_rust_implementation_of/) ⭐️ 8.0/10
+## [MiniCPM5-2B Tops Sub-4B Open Models on Intelligence Index](https://www.reddit.com/r/LocalLLaMA/comments/1w9skjz/minicpm52b_release_day/) ⭐️ 8.0/10
 
-The Optuna team has released Rustuna, a high-speed, memory-efficient implementation of Optuna built entirely in Rust. It maintains API compatibility with Optuna while having zero Python dependencies. Rustuna addresses key concerns in the ML community, such as supply chain security and memory footprint, by eliminating Python dependencies and leveraging Rust's memory safety. This could attract users seeking more secure and efficient hyperparameter optimization, potentially influencing the broader adoption of Rust in ML tooling. Rustuna is designed to be API-compatible with Optuna, allowing users to migrate with minimal changes. It is hosted on GitHub under the Optuna organization, and a blog post provides further details.
+OpenBMB released MiniCPM5-2B, a dense open-weights model with 2.52 billion parameters, achieving a score of 15 on the Artificial Analysis Intelligence Index v4.2, the highest among open models at or below 4B parameters. This release demonstrates that small models can achieve competitive intelligence scores, making advanced AI more accessible for on-device and local deployment. It is particularly significant for the local LLM community, which values efficient models that run without cloud dependencies. The model has 2,516,756,480 total parameters, with 1,981,982,720 non-embedding parameters, placing it in the 2B class. It is optimized for agentic and tool-calling workloads, showing strength in tool use, coding agents, and long-context retrieval, but trails larger models on general knowledge benchmarks like MMLU-Pro and GPQA-Diamond.
 
-reddit · r/MachineLearning · /u/c-bata · Sep 7, 10:01
+reddit · r/LocalLLaMA · /u/Equivalent-Grass-527 · Sep 7, 13:43
 
-**Background**: Optuna is a popular open-source hyperparameter optimization framework for machine learning, known for its define-by-run API. Rust is a systems programming language that emphasizes performance and memory safety, offering advantages over Python in terms of speed and resource usage.
+**Background**: The Artificial Analysis Intelligence Index is a weighted average of production benchmark scores, scaled from 0 to 100, with four categories each contributing 25%: agents, coding, general capability, and scientific reasoning. MiniCPM5-2B is the second model in the MiniCPM 5 series, following the MiniCPM 5-1B released earlier. Small open-weights models like this are increasingly popular for on-device AI applications where computational resources are limited.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://optuna.org/">Optuna - A hyperparameter optimization framework</a></li>
-<li><a href="https://github.com/optuna/optuna">GitHub - optuna / optuna : A hyperparameter optimization framework</a></li>
+<li><a href="https://artificialanalysis.ai/evaluations/artificial-analysis-intelligence-index">Artificial Analysis Intelligence Index v4.2 | Artificial Analysis</a></li>
+<li><a href="https://www.orcarouter.ai/blog/minicpm5-2b-vs-gemma-4-12b">MiniCPM 5 - 2 B vs Gemma 4 12B: which local model wins?</a></li>
+<li><a href="https://www.marktechpost.com/2026/09/07/openbmb-releases-minicpm5-2b-a-2-52b-dense-model-averaging-53-9-across-34-benchmarks-and-built-to-run-on-device/">OpenBMB Releases MiniCPM 5 - 2 B : A 2.52B Dense Model Averaging...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#MiniCPM`, `#open-weights`, `#small language model`, `#LLM`, `#release`
+
+---
+
+<a id="item-9"></a>
+## [DeepSeek-V4-Flash-Vision-Exp Enables Rapid Game World Creation](https://www.reddit.com/r/LocalLLaMA/comments/1wa06k3/deepseekv4flashvisionexp_is_amazing_at_creating/) ⭐️ 8.0/10
+
+A developer demonstrated that DeepSeek-V4-Flash-Vision-Exp, a vision-enabled LLM, can generate, correct, and play-test a complete game world in about two days. The workflow leverages the model's ability to take and analyze screenshots for iterative development. This showcases a practical, novel application of vision-language models in game development, potentially reducing the time and skill required for indie developers to create polished game worlds. It highlights the growing trend of AI-assisted game production, which could democratize game creation and streamline QA processes. The model was used locally and via API when impatient, and the full game was released. The developer also added performance improvements after noticing the game was slow on a laptop, inviting feedback on speed.
+
+reddit · r/LocalLLaMA · /u/sloptimizer · Sep 7, 18:27
+
+**Background**: DeepSeek-V4-Flash-Vision-Exp is an experimental vision-enabled version of DeepSeek V4 Flash, released in August 2026, with a 1.0M-token context window and multimodal input. Vision-language models (VLMs) are increasingly used in game development for tasks like QA, as they can interpret screenshots and interact with game environments. This example illustrates an iterative workflow where the model generates assets, corrects visual artifacts, and play-tests mechanics.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://api-docs.deepseek.com/guides/vision/">Vision | DeepSeek API Docs</a></li>
+<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash-vision-exp">DeepSeek V 4 Flash Vision Exp - API Pricing & Providers | OpenRouter</a></li>
+<li><a href="https://llm-stats.com/models/deepseek-v4-flash-vision-exp">DeepSeek - V 4 - Flash - Vision - Exp API Pricing, Context Window...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#DeepSeek`, `#vision-language-model`, `#game-development`, `#AI-assisted-coding`, `#LLM-applications`
+
+---
+
+<a id="item-10"></a>
+## [Tiny Recurrent System Autonomously Generates Bad Apple Video](https://www.reddit.com/r/MachineLearning/comments/1wa8rub/generating_bad_apple_autonomously_from_a_single/) ⭐️ 8.0/10
+
+A researcher trained a tiny recurrent dynamical system with only 417k parameters to autonomously generate the entire ~6,500-frame Bad Apple video from a single initial state, without any timestamp inputs during inference. The system uses a 64-dimensional latent state and a 4-gate LSTM-style transition, achieving over 200 FPS on an RTX 4080. This work demonstrates that complex temporal sequences can be generated autonomously by small recurrent systems, potentially inspiring more efficient approaches to video generation and sequence modeling. It challenges the common reliance on explicit time conditioning in implicit neural representations and could lead to new methods for learning continuous dynamics in latent spaces. The model uses a 64-D latent state for h_t and c_t, with a frame decoder that performs 4-stage bilinear upsampling with depthwise-separable convolutions. Training employed techniques like learned latent teacher tables, rollout horizon curriculum (K from 2 to 512), state perturbation noise, and second-difference acceleration regularization to ensure long-horizon stability.
+
+reddit · r/MachineLearning · /u/SEBADA321 · Sep 8, 00:05
+
+**Background**: The work builds on SIREN (Sinusoidal Representation Networks), which use periodic activation functions to represent complex signals as implicit neural representations. Previous work trained a SIREN MLP to memorize Bad Apple as a coordinate function (t, y, x) to pixel, but this new approach removes the explicit time input, instead learning a recurrent dynamical system that generates frames in a closed loop. Bad Apple is a famous fan-made shadow art music video from 2009, often used as a benchmark for video processing tasks.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.vincentsitzmann.com/siren/">Implicit Neural Representations with Periodic Activation ...</a></li>
+<li><a href="https://github.com/vsitzmann/siren">GitHub - vsitzmann/siren: Official implementation of ... [2006.09661] Implicit Neural Representations with Periodic ... H-SIREN: Improving implicit neural representations with ... explore_siren.ipynb - Colab SIREN: Sinusoidal Representation Networks Pytorch implementation of SIREN - Implicit Neural ... - GitHub</a></li>
+<li><a href="https://arxiv.org/abs/2006.09661">[2006.09661] Implicit Neural Representations with Periodic ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#recurrent neural networks`, `#video generation`, `#dynamical systems`, `#machine learning`, `#SIREN`
+
+---
+
+<a id="item-11"></a>
+## [Rustuna: High-Performance Rust Implementation of Optuna Released](https://www.reddit.com/r/MachineLearning/comments/1w9nyhz/rustuna_a_highperformance_rust_implementation_of/) ⭐️ 8.0/10
+
+The Optuna team has released Rustuna, a high-speed, memory-efficient implementation of Optuna built in Rust. It maintains Optuna's familiar API while eliminating Python dependencies to mitigate supply chain risks. Rustuna brings Optuna's hyperparameter optimization capabilities to the Rust ecosystem, offering performance and memory efficiency benefits. It addresses supply chain security concerns and could attract Rust developers to adopt Optuna's optimization methods. Rustuna is available on GitHub at https://github.com/optuna/rustuna and is designed to be API-compatible with Optuna. It features zero Python dependencies and optimized memory management natively in Rust, as detailed in the announcement blog post.
+
+reddit · r/MachineLearning · /u/c-bata · Sep 7, 10:01
+
+**Background**: Optuna is a popular automatic hyperparameter optimization framework for machine learning, known for its define-by-run API and efficient optimization algorithms. Rust is a systems programming language that emphasizes performance, memory safety, and concurrency, making it suitable for building high-performance tools.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/optuna/optuna">Optuna: A hyperparameter optimization framework - GitHub Optuna: A hyperparameter optimization framework — Optuna 4.9. ... Optuna: A hyperparameter optimization framework - GitHub Optuna: A hyperparameter optimization framework — Optuna 3.6. ... [1907.10902] Optuna: A Next-generation Hyperparameter ... Optuna | Proceedings of the 25th ACM SIGKDD International ...</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust ( programming language ) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Rust`, `#Hyperparameter Optimization`, `#Optuna`, `#Machine Learning`, `#Performance`
+**Tags**: `#Rust`, `#Hyperparameter Optimization`, `#Machine Learning`, `#Optuna`, `#Performance`
 
 ---
 
-<a id="item-9"></a>
-## [LLM-guided program evolution improves 10 circle-packing solutions](https://www.reddit.com/r/MachineLearning/comments/1w9xlyi/llmguided_program_evolution_improves_10_bestknown/) ⭐️ 8.0/10
+<a id="item-12"></a>
+## [LLM-guided program evolution improves 10 circle-packing records](https://www.reddit.com/r/MachineLearning/comments/1w9xlyi/llmguided_program_evolution_improves_10_bestknown/) ⭐️ 8.0/10
 
-An LLM-guided program evolution method improved the best-known sum-of-radii for 10 values of N (101-114) on the Packomania csqv benchmark, by 2.4% to 5.4%, in 15 iterations. The total LLM cost was $27.72, and the results were independently accepted by Packomania. This demonstrates a novel and cost-effective application of LLMs to evolve optimization algorithms, achieving measurable improvements on established benchmarks. It suggests that LLM-guided program evolution could be a powerful general approach for solving complex optimization problems, potentially impacting fields like operations research and computational geometry. The method starts from a simple seed solver and iteratively proposes algorithmic changes guided by a scoreboard and history, with each candidate scored by an independent verifier. The paper is available at arxiv.org/abs/2609.05093, and code and solutions are on GitHub at github.com/ucsandman/discovery-loop.
+A researcher used an LLM to iteratively evolve an optimization algorithm, improving the best-known sum-of-radii for 10 values of N (101-114) on the Packomania csqv benchmark by 2.4-5.4% in 15 iterations, at a total LLM cost of $27.72. The results were independently accepted by Packomania. This demonstrates a novel, cost-effective application of LLMs for program evolution to improve benchmark results, potentially inspiring new approaches in optimization and algorithm discovery. It also highlights the value of independent verification in AI-driven research. The method starts from a simple seed solver and uses an LLM to propose algorithmic changes guided by a scoreboard and history, with each candidate scored by an independent verifier. The author specifically invites critique on the plateau-detection stopping rule, indicating a focus on methodological rigor.
 
 reddit · r/MachineLearning · /u/SIGH_I_CALL · Sep 7, 16:54
 
-**Background**: Circle packing is a classic optimization problem where circles are arranged to maximize density or, in the csqv variant, the sum of radii within a unit square. Traditional methods often rely on hand-crafted heuristics or metaheuristics. LLM-guided program evolution uses large language models to iteratively modify and improve solver programs, a technique related to AlphaEvolve and genetic programming.
+**Background**: Circle packing is a classic optimization problem where circles are arranged within a container to maximize or minimize a certain objective, such as the sum of radii. Packomania is a well-known benchmark for such problems, tracking best-known solutions. LLM-guided program evolution is an emerging technique where large language models propose modifications to code, guided by evaluation scores, to iteratively improve algorithms.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://arxiv.org/html/2609.05093">LLM - Guided Program Evolution for Circle Packing:Breaking 10...</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Packing_problems">Packing problems - Wikipedia</a></li>
 <li><a href="https://packomania.com/">Packomania (52C17)</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The author invites discussion on the plateau-detection stopping rule, indicating a desire for critique on that specific technical aspect. No community comments were provided in the news item.
-
-**Tags**: `#LLM`, `#program evolution`, `#optimization`, `#circle packing`, `#AI research`
+**Tags**: `#LLM`, `#program evolution`, `#optimization`, `#benchmark`, `#AI research`
 
 ---
 
-<a id="item-10"></a>
-## [KV Cache as Agent Runtime: A New Axis for LLM Interactivity](https://www.reddit.com/r/MachineLearning/comments/1w9myqc/kv_cache_as_an_agent_runtime_r/) ⭐️ 8.0/10
+<a id="item-13"></a>
+## [Yandex Researchers Propose KV Cache as Agent Runtime](https://www.reddit.com/r/MachineLearning/comments/1w9myqc/kv_cache_as_an_agent_runtime_r/) ⭐️ 8.0/10
 
-A research team at Yandex proposes using the KV cache as an agent runtime to enhance LLM interactivity, building on their prior work Hogwild! Inference and AsyncReasoning. They preview future work where a Qwen3.8-27B agent plays DOOM interactively using these techniques. This research highlights an under-explored axis of agent capabilities: the inference/runtime design itself, which sits between the model and the harness. If successful, it could lead to more responsive and interactive LLM systems, impacting applications like real-time gaming and conversational AI. The approach involves modifying the model's inference state (KV cache) to achieve interactivity, as detailed in the blog post. The team's previous papers, Hogwild! Inference and AsyncReasoning, provide the technical foundation, and the post includes a preview of future work with a Qwen3.8-27B agent in a DOOM environment.
+Yandex researchers have proposed using KV-cache modifications as an alternative runtime for interactive LLM agents, showcasing prior work and a DOOM demo where a Qwen3.8-27B agent plays interactively. This research direction highlights model inference/runtime design as an under-explored axis of agent capabilities, potentially enabling more responsive and interactive AI systems without costly model changes. The approach leverages techniques from Hogwild! Inference and AsyncReasoning, which use concurrent attention and asynchronous reasoning to modify the KV cache during inference. The DOOM demo previews future work in this direction.
 
 reddit · r/MachineLearning · /u/_puhsu · Sep 7, 09:03
 
-**Background**: KV cache stores intermediate key-value pairs during LLM inference to avoid recomputation, but it can have a large memory footprint. Traditional LLM inference is sequential and non-interactive, but techniques like Hogwild! Inference allow parallel generation with a shared attention cache, and AsyncReasoning enables asynchronous reasoning. This research explores using the KV cache as a runtime environment for agents, potentially enabling real-time interaction.
+**Background**: KV cache stores intermediate attention results during LLM inference to avoid recomputation, but it is typically managed at the page level and can consume significant memory. Traditional agent designs treat the model as a black box and modify the harness, while changing the model itself is costly. This research explores modifying the inference state (KV cache) as a middle ground for achieving interactivity.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/">Mastering LLM Techniques: Inference Optimization | NVIDIA Technical...</a></li>
+<li><a href="https://research.yandex.com/publications/hogwild-inference-parallel-llm-generation-via-concurrent-attention">Hogwild ! Inference : Parallel LLM Generation via Concurrent Attention</a></li>
 <li><a href="https://arxiv.org/abs/2504.06261">Hogwild ! Inference : Parallel LLM Generation via Concurrent Attention</a></li>
 <li><a href="https://arxiv.org/html/2512.10931v1">Asynchronous Reasoning : Training-Free Interactive Thinking LLMs</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#KV cache`, `#LLM agents`, `#inference`, `#interactivity`, `#research`
+**Discussion**: The Reddit discussion likely includes debate on the feasibility and novelty of using KV cache as a runtime, with some questioning the practicality and others appreciating the innovative direction. Specific comments are not provided, so sentiment is inferred from the post's context.
 
----
-
-<a id="item-11"></a>
-## [LLM Benchmarks as Longitudinal Measurements: A 31,352-Run Study](https://www.reddit.com/r/MachineLearning/comments/1w9llr4/measuring_llm_performance_drift_observations_and/) ⭐️ 8.0/10
-
-The author proposes treating LLM benchmarks as longitudinal measurements rather than static leaderboard scores, based on 31,352 repeated benchmark observations across 49 models. They found within-day score standard deviation of 2.80 points versus between-day daily median standard deviation of 8.43 points, a roughly 3:1 ratio. This matters because API-served models can change behavior over time without public version updates, making static benchmark scores misleading. Treating benchmarks as longitudinal measurements enables detection of performance drift, which is crucial for production ML systems relying on consistent model behavior. The methodology includes versioned benchmark configurations, repeated execution-based evaluation, separation of availability failures from valid outcomes, tracking of serving/version metadata, and change-point detection over time series. The author also highlights benchmark contamination concerns and withholds the exact live task bank to mitigate it.
-
-reddit · r/MachineLearning · /u/ionutvi · Sep 7, 07:44
-
-**Background**: LLM benchmarks like MMLU are typically static snapshots, evaluating a model once and publishing a score. However, models served via APIs may change due to infrastructure updates, configuration changes, or silent version updates, causing performance drift. Longitudinal measurement involves repeated evaluations over time to detect such drift, distinguishing it from normal variability.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://arxiv.org/html/2508.05452">LLMEval-Fair: A Large-Scale Longitudinal Study on Robustand Fair Evaluation of Large Language Models</a></li>
-<li><a href="https://www.langchain.com/resources/llm-evaluation-benchmarks">LLM Evaluation Benchmarks: What They Measure & Miss</a></li>
-<li><a href="https://magazine.sebastianraschka.com/p/llm-evaluation-4-approaches">Understanding the 4 Main Approaches to LLM Evaluation (From Scratch)</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The author seeks technical criticism on methodology, asking about using daily medians versus individual observations, distinguishing model drift from provider effects, how much of a live benchmark to hide, and better approaches than change-point detectors. No community comments were provided in the content.
-
-**Tags**: `#LLM`, `#benchmarking`, `#performance drift`, `#evaluation methodology`
-
----
-
-<a id="item-12"></a>
-## [ECC: AI Coding Agent Harness Optimization Tool Surges on GitHub](https://github.com/affaan-m/ECC) ⭐️ 8.0/10
-
-The GitHub repository affaan-m/ECC, described as an 'agent harness performance optimization system' for AI coding agents like Claude Code and Codex, gained 1,897 stars in a single day, reaching a total of 252,982 stars and 37,943 forks. The project is written in JavaScript and is currently trending on GitHub. This rapid growth indicates strong community interest in optimizing AI coding agents, a timely topic as developers increasingly rely on tools like Claude Code and Codex. The project's broad compatibility across multiple platforms suggests it could become a standard utility for enhancing agent performance, potentially improving developer productivity and code quality. The repository claims to provide 'skills, instincts, memory, security, and research-first development' for agents, but the description lacks technical depth. It supports Claude Code, Codex, Opencode, Cursor, and other platforms, and has a companion website at ecc.apposters.com that mentions '61 Specialized Agents' for tasks like planning, architecture, code review, and security.
-
-github_trending · GitHub Trending · Sep 8, 03:28
-
-**Background**: AI coding agents are tools that assist developers by generating or editing code based on natural language prompts. Examples include Claude Code (by Anthropic) and Codex (by OpenAI), which have gained popularity for their ability to handle complex coding tasks. An 'agent harness' refers to the underlying framework that manages these agents, including their memory, skills, and interactions with the environment. Optimizing this harness can improve efficiency, accuracy, and security of AI-assisted development.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/affaan-m/ECC">affaan-m/ECC: The agent harness performance optimization system.</a></li>
-<li><a href="https://ecc.apposters.com/">ECC - The Agent Harness Performance Optimization System</a></li>
-<li><a href="https://skillsllm.com/skill/ecc">ECC - AI Agents on GitHub (243k ) | SkillsLLM</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI coding agents`, `#performance optimization`, `#developer tools`, `#GitHub trending`
-
----
-
-<a id="item-13"></a>
-## [NousResearch's Hermes Agent Gains 638 Stars in a Day](https://github.com/NousResearch/hermes-agent) ⭐️ 8.0/10
-
-NousResearch's hermes-agent, a self-improving AI agent repository, gained 638 stars today, reaching 243,093 total stars and 50,059 forks. The project is described as 'The agent that grows with you,' featuring a built-in learning loop. This significant daily star gain indicates strong community interest in adaptive AI agents, a key trend in the AI/ML ecosystem. Hermes Agent's approach to persistent memory and self-created skills could influence future AI agent design and personalization. Hermes Agent is an open-source, self-hosted AI agent released under the MIT license, with support for messaging gateways like Telegram, Discord, and Slack. It includes features such as persistent memory, self-created skills, scheduled jobs, and a desktop app for macOS and Windows.
-
-github_trending · GitHub Trending · Sep 8, 03:28
-
-**Background**: AI agents are software systems that perform tasks autonomously, often using large language models. Traditional agents lack long-term memory and adaptability, but Hermes Agent aims to improve by learning from user interactions and creating reusable skills, positioning itself as a 'self-improving' agent.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/NousResearch/hermes-agent">GitHub - NousResearch/ hermes - agent : The agent that grows with you</a></li>
-<li><a href="https://hermes-agent.nousresearch.com/">Hermes Agent — Open-Source AI Agent That Grows With You ...</a></li>
-<li><a href="https://aitoolly.com/ai-news/article/2026-09-08-nousresearch-unveils-hermes-agent-a-new-paradigm-for-ai-agents-that-grow-with-users">Hermes-Agent: The New Growing AI Agent by NousResearch</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI agent`, `#GitHub trending`, `#Python`, `#NousResearch`
+**Tags**: `#KV-cache`, `#LLM agents`, `#inference`, `#interactive AI`, `#research`
 
 ---
 
 <a id="item-14"></a>
-## [AutoHedge: Open-Source Autonomous Hedge Fund via Swarm AI](https://github.com/The-Swarm-Corporation/AutoHedge) ⭐️ 8.0/10
+## [Measuring LLM Performance Drift via Repeated Benchmarks](https://www.reddit.com/r/MachineLearning/comments/1w9llr4/measuring_llm_performance_drift_observations_and/) ⭐️ 8.0/10
 
-AutoHedge, a Python-based open-source project by The-Swarm-Corporation, has gained significant traction on GitHub with 517 stars in a day and over 5,300 total stars. It enables users to build autonomous hedge funds using swarm intelligence and AI agents for market analysis, risk management, and trade execution. This project democratizes access to sophisticated hedge fund strategies by leveraging swarm intelligence and AI agents, potentially lowering barriers for individual investors and small firms. Its rapid popularity signals strong community interest in AI-driven autonomous trading, which could reshape fintech and quantitative finance. AutoHedge is written in Python and has 815 forks, indicating active community engagement. It automates market analysis, risk management, and trade execution, but the provided content lacks deep technical details on its architecture or specific algorithms.
+A study analyzed 31,352 repeated benchmark observations across 49 models, finding that between-day variation (std 8.43 points) is about three times larger than within-day variation (std 2.80 points). The authors propose a longitudinal methodology to detect significant model behavior changes beyond normal variability. This work challenges the common practice of treating LLM benchmark scores as stable snapshots, highlighting that API-served models can drift over time due to infrastructure or version changes. It provides a framework for more reliable model evaluation and monitoring, which is crucial for production ML and MLOps. The methodology uses versioned benchmark configurations, repeated execution-based evaluation, and separates availability failures from valid outcomes. The authors also address benchmark contamination by withholding the exact live task bank while publishing the methodology.
 
-github_trending · GitHub Trending · Sep 8, 03:28
+reddit · r/MachineLearning · /u/ionutvi · Sep 7, 07:44
 
-**Background**: Swarm intelligence mimics natural systems like ant colonies or bird flocks, where decentralized agents collectively solve problems. In finance, this concept is applied through multi-agent networks where specialized AI agents collaborate, as seen in projects like TradingAgents. AutoHedge extends this idea by aiming to create a fully autonomous hedge fund, which traditionally requires significant capital and expertise.
+**Background**: LLM benchmarks are often used to compare models, but scores can vary due to sampling, task composition, and provider-side changes. This study treats benchmarking as a longitudinal measurement problem, using statistical methods to distinguish genuine drift from noise. The approach is relevant for anyone relying on API-served models in production.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://syntiumalgo.com/multi-agent-llm-trading-networks/">Multi Agent LLM Trading Networks in Quantitative Finance : Beyond...</a></li>
-<li><a href="https://www.techdemand.io/insights/tech/what-are-the-applications-of-swarm-intelligence-si/?trk=article-ssr-frontend-pulse_little-text-block">What Are the Applications of Swarm Intelligence (SI)? | TechDemand</a></li>
-<li><a href="https://github.com/TauricResearch/TradingAgents">GitHub - TauricResearch/TradingAgents: TradingAgents: Multi ...</a></li>
+<li><a href="https://arxiv.org/html/2603.03111">Evaluating Performance Drift from Model Switching in Multi ...</a></li>
+<li><a href="https://arxiv.org/pdf/2410.03492">Towards Reproducible LLM Evaluation: Quantifying Uncertainty ...</a></li>
+<li><a href="https://stackpulsar.com/blog/llm-model-drift-detection/">LLM Model Drift Detection 2026: Monitoring AI Degradation</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#trading`, `#fintech`, `#swarm-intelligence`, `#Python`
+**Discussion**: The Reddit discussion likely includes questions about the choice of daily medians vs. individual observations, methods to separate model drift from provider effects, and the trade-off between benchmark transparency and contamination. The author seeks technical criticism on these points.
+
+**Tags**: `#LLM`, `#benchmarking`, `#performance drift`, `#evaluation`, `#MLOps`
 
 ---
 
 <a id="item-15"></a>
-## [Hyperframes: TypeScript Library for HTML-to-Video Rendering Gains 474 Stars in a Day](https://github.com/heygen-com/hyperframes) ⭐️ 8.0/10
+## [IEEE T-PAMI EIC Confirms Missing Fourth Review in Rejection Case](https://www.reddit.com/r/MachineLearning/comments/1w9v43o/update_eic_confirmed_ghost_reviewerhow_to_get/) ⭐️ 8.0/10
 
-Hyperframes, a TypeScript library by HeyGen for rendering HTML and video, gained 474 stars in a single day, reaching 46,299 total stars and 4,333 forks on GitHub. The library is designed for AI agents to compose videos by writing HTML, CSS, and JavaScript. This rapid popularity indicates strong developer interest in using AI agents for video creation, potentially streamlining workflows in content production and software development. Hyperframes could become a standard tool for vibe-coding video content, impacting how videos are generated and edited. Hyperframes is open-sourced under Apache 2.0 and available as an npm package (version 0.7.86). It supports deterministic MP4 rendering from HTML, CSS, media, and seekable animations, and includes skills for AI coding agents like Claude Code, Cursor, Gemini CLI, and Codex.
+The Editor-in-Chief of IEEE T-PAMI formally acknowledged that four reviews were received for a manuscript that was rejected despite three favorable reviews, confirming the existence of a missing fourth review after an investigation by the IEEE Computer Society Committee on Integrity. This case highlights potential editorial misconduct and systemic flaws in peer review at a top-tier journal, raising concerns about fairness and transparency in academic publishing. It could prompt reforms in how associate editors handle reviews and how journals address integrity complaints. The associate editor had attributed the rejection to negative comments from a 'fourth reviewer,' but the actual fourth review was positive and disappeared from the record. The authors spent six months pursuing the matter with IEEE before the EIC's acknowledgment.
 
-github_trending · GitHub Trending · Sep 8, 03:28
+reddit · r/MachineLearning · /u/cussealin · Sep 7, 15:22
 
-**Background**: Hyperframes is an open-source framework that turns HTML, CSS, media, and seekable animations into deterministic MP4 videos. It originated from HeyGen, a company known for AI video generation, and is built for the community. The library can be used locally via CLI, from AI coding agents with skills, or as the rendering core for hosted authoring workflows.
+**Background**: IEEE T-PAMI is a leading journal in pattern analysis and machine intelligence, where peer review typically involves multiple reviewers evaluating methodology, baselines, and reproducibility. The associate editor (AE) is responsible for selecting reviewers, weighing their reports, and issuing the decision. The IEEE Computer Society's Committee on Integrity handles complaints about reviewer and editor misconduct, and its investigation led to the EIC's confirmation.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/heygen-com/hyperframes">heygen-com/hyperframes: Write HTML. Render video . Built for agents .</a></li>
-<li><a href="https://www.npmjs.com/package/hyperframes">hyperframes - npm</a></li>
-<li><a href="https://hyperframes.heygen.com/">HyperFrames — Edit Videos By Vibe-Coding</a></li>
+<li><a href="https://manusights.com/blog/ieee-transactions-on-pattern-analysis-and-machine-intelligence-review-time">IEEE TPAMI Review Time (2026) - manusights.com</a></li>
+<li><a href="https://www.computer.org/volunteering/boards-and-committees/resources/policies-procedures-manual/section9">Publications Operations Handbook | IEEE Computer Society</a></li>
+<li><a href="https://casrai.org/guides/academic-editor">Academic Editor: Role vs Peer Reviewer — CASRAI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#TypeScript`, `#HTML`, `#video`, `#AI agents`, `#rendering`
+**Tags**: `#academic publishing`, `#peer review`, `#research integrity`, `#IEEE T-PAMI`, `#editorial misconduct`
 
 ---
