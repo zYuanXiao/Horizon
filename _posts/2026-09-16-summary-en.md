@@ -9,362 +9,360 @@ lang: en
 
 ---
 
-1. [Google DeepMind Launches Gemini 3.8 Live and Extended Thinking](#item-1) ⭐️ 9.0/10
-2. [Alibaba open-sources hybrid LLM code review tool](#item-2) ⭐️ 8.0/10
-3. [TradingAgents: Multi-Agent LLM Framework for Financial Trading Gains 727 Stars](#item-3) ⭐️ 8.0/10
-4. [Vidu S2 Enables Real-Time Interactive and Spatial Video Generation](#item-4) ⭐️ 8.0/10
-5. [Atria Dawn Preview: A Foundation Agentic Model for Scientific Research](#item-5) ⭐️ 8.0/10
-6. [Strix.ai AI agent finds Baseten GitHub admin token in 25 minutes](#item-6) ⭐️ 8.0/10
-7. [IEEE Spectrum Explores the 2026 Inference Hardware Revolution](#item-7) ⭐️ 8.0/10
-8. [Bruce Schneier: 25 Years of Mass Surveillance Is Enough](#item-8) ⭐️ 8.0/10
-9. [Driver's License Breach Exposes 153 Million Americans](#item-9) ⭐️ 8.0/10
-10. [AEF-1 standard for third-party AI evaluators emerges with xAI, OpenAI, Anthropic backing](#item-10) ⭐️ 8.0/10
-11. [CrofAI exposed as OpenRouter wrapper with 20x markup, then vanishes](#item-11) ⭐️ 8.0/10
-12. [Apple Ships Foundation Models Natively in macOS 27](#item-12) ⭐️ 8.0/10
-13. [Voodoo Dynamic Quant Open-Sourced Under MIT License](#item-13) ⭐️ 8.0/10
-14. [LynnReal-Omni: 32B Unified Video Diffusion Model with Open Weights and ComfyUI Nodes](#item-14) ⭐️ 8.0/10
-15. [SHADOW-50M: 44M ternary LLM ships in 19.8 MB, runs 1,900 tok/s on CPU](#item-15) ⭐️ 8.0/10
+1. [Google DeepMind Releases Gemini 3.8 Live and Live Extended Thinking](#item-1) ⭐️ 9.0/10
+2. [Agent-Reach: Free Multi-Platform CLI for AI Agents](#item-2) ⭐️ 8.0/10
+3. [Vidu S2 Enables Real-Time 720p Interactive Avatar and Video Editing](#item-3) ⭐️ 8.0/10
+4. [ZGCM-1: Fully Open 7B Model for Math and Agentic Search](#item-4) ⭐️ 8.0/10
+5. [Ex-Apple Engineer Builds Linux GPU Driver for M4 Mac Mini in One Month](#item-5) ⭐️ 8.0/10
+6. [Strix AI agent gains admin access to Baseten's GitHub in 25 minutes](#item-6) ⭐️ 8.0/10
+7. [Bruce Schneier Calls to End 25 Years of Mass Surveillance](#item-7) ⭐️ 8.0/10
+8. [Java 27 Announced as Community Debates Cadence and Valhalla Delay](#item-8) ⭐️ 8.0/10
+9. [Lawfare Calls 153M Driver's License Breach a National Security Disaster](#item-9) ⭐️ 8.0/10
+10. [AEF-1 standard for third-party AI evaluators emerges, co-signed by xAI, OpenAI, and Anthropic](#item-10) ⭐️ 8.0/10
+11. [Voodoo Dynamic Quant Released Under MIT License](#item-11) ⭐️ 8.0/10
+12. [LynnReal-Omni: 32B Unified Video Diffusion Model with ComfyUI Nodes](#item-12) ⭐️ 8.0/10
+13. [Meridian brings camera control and bullet time to existing videos](#item-13) ⭐️ 8.0/10
+14. [Prior Labs Releases TabPFN-3.5, New SOTA Tabular Foundation Model](#item-14) ⭐️ 8.0/10
+15. [Alibaba open-sources hybrid LLM code review tool, gaining 2,756 stars in a day](#item-15) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Google DeepMind Launches Gemini 3.8 Live and Extended Thinking](https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/) ⭐️ 9.0/10
+## [Google DeepMind Releases Gemini 3.8 Live and Live Extended Thinking](https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/) ⭐️ 9.0/10
 
-Google DeepMind announced Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, two new native speech-to-speech models that support real-time multimodal interaction, background tool calling, and support for 97 languages. Gemini 3.8 Live is built for scale and low-latency conversation, while the Extended Thinking variant targets high-complexity tasks with multi-step reasoning. The release intensifies competition in real-time voice AI, directly mirroring OpenAI's GPT-Live family and pushing production-grade voice agents closer to mainstream adoption. It also signals that Google is betting on native speech-to-speech plus extended reasoning as the next frontier for LLM assistants. The models handle complex reasoning, real-time visual context, and background task execution without interrupting the conversation, and they support 97 languages. Community testers noted low latency and good handling of thick accents, though one demo drew criticism for a chess blunder.
+Google DeepMind announced Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking, two new speech-to-speech models that process visual inputs in near real-time and add background reasoning during live audio sessions. They are positioned as the company's most advanced live dialogue models yet and are available through the Gemini API. The release intensifies competition in real-time, multimodal voice AI, where Google is directly matching OpenAI's GPT-Live family. Developers building voice agents, live translation, and conversational assistants gain a lower-latency default option plus a reasoning-enhanced variant, which could accelerate adoption of speech-first AI interfaces. Gemini 3.8 Live is positioned as the default choice for low-latency voice agent experiences and real-time dialogue without reasoning-induced delays, while the Extended Thinking variant introduces background reasoning during live audio sessions and requires clients to update their integration. Both models are part of the Gemini 3 series of natively multimodal reasoning models.
 
 rss · Google DeepMind Blog · Sep 15, 17:05
 
-**Background**: Gemini is Google DeepMind's flagship family of multimodal large language models, and the 'Live' line refers to models designed for real-time, speech-to-speech interaction rather than text-only chat. 'Extended Thinking' denotes a mode where the model spends more compute on step-by-step reasoning before answering, a pattern popularized by recent reasoning-focused LLMs. Native speech-to-speech means audio goes in and audio comes out without an intermediate text transcription step, which typically reduces latency and preserves tone.
+**Background**: Multimodal AI models can combine and reason across multiple data types such as text, images, and audio, enabling richer understanding than single-modality systems. Speech-to-speech models like these skip the traditional pipeline of transcribing audio to text and back, allowing more natural, low-latency conversation. Google's Gemini 3 series is its flagship family of natively multimodal reasoning models, and the Live variants extend that line into real-time voice interaction.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking</a></li>
-<li><a href="https://www.marktechpost.com/2026/09/15/google-releases-gemini-3-8-live-and-3-8-live-extended-thinking-for-production-grade-voice-agents/">Google Releases Gemini 3.8 Live and 3.8 Live Extended Thinking for Production Grade Voice Agents - MarkTechPost</a></li>
-<li><a href="https://www.thurrott.com/a-i/google-gemini-a-i/341685/google-announces-gemini-3-8-live-and-3-8-live-extended-thinking">Google Announces Gemini 3.8 Live and 3.8 Live Extended Thinking - Thurrott.com</a></li>
+<li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/">Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking - Google Blog</a></li>
+<li><a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live">Gemini 3.8 Live | Gemini API - Google AI for Developers</a></li>
+<li><a href="https://ai.google.dev/gemini-api/docs/models/gemini-3.8-live-extended-thinking">Gemini 3.8 Live Extended Thinking - Google AI for Developers</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were largely positive, praising low latency, pleasant voices, and strong multilingual ability, with one user calling Afrikaans live chat the most joyful LLM experience they have had. Others questioned whether Google is still trailing rivals and when Gemini 4 might arrive, while one critic mocked a demo video in which the model lost to a common chess checkmate pattern.
+**Discussion**: Commenters were largely positive: one praised Gemini's Afrikaans conversation and grammar help, and another called it a solid release with good accent handling, pleasant voices, and low latency, noting it finally works on a workspace account. Skeptics questioned whether Google can overtake rivals like Fable and Astra, and one criticized a demo video in which the model lost to a common chess checkmate pattern.
 
-**Tags**: `#AI`, `#Google DeepMind`, `#Gemini`, `#LLM`, `#Multimodal`
+**Tags**: `#AI`, `#Google DeepMind`, `#Gemini`, `#Multimodal Models`, `#Model Release`
 
 ---
 
 <a id="item-2"></a>
-## [Alibaba open-sources hybrid LLM code review tool](https://github.com/alibaba/open-code-review) ⭐️ 8.0/10
+## [Agent-Reach: Free Multi-Platform CLI for AI Agents](https://github.com/Panniantong/Agent-Reach) ⭐️ 8.0/10
 
-Alibaba has open-sourced open-code-review, a Go-based code review tool that combines deterministic pipelines with LLM agents, gaining 2,756 stars in a single day and reaching roughly 29,000 total stars. It produces precise line-level comments and ships with built-in multi-language security rules covering NPE, thread-safety, XSS, and SQL injection, while supporting OpenAI- and Anthropic-compatible APIs. Code review is a major bottleneck in software engineering, and pure-LLM reviewers often produce noisy or hallucinated feedback, so a battle-tested hybrid design from Alibaba could set a new standard for reliable AI-assisted review. The rapid star growth signals strong developer demand for tools that blend deterministic static analysis with LLM reasoning rather than relying on either alone. The tool is written in Go and pairs deterministic pipelines with LLM agents to deliver precise line-level comments, and its built-in ruleset targets common vulnerability classes such as NPE, thread-safety issues, XSS, and SQL injection across multiple languages. It is compatible with both OpenAI and Anthropic APIs, giving teams flexibility in which model provider they use.
+Panniantong/Agent-Reach, a Python-based CLI tool, gained 960 GitHub stars in a single day, bringing its total to over 82,000 stars and 7,155 forks. It lets AI agents read and search Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu through one unified command-line interface with zero API fees. API fees and rate limits are a major bottleneck for AI agents that need real-world data, so a free unified access layer across six major platforms could significantly lower costs and complexity for agent developers. Its rapid star growth suggests strong demand for practical, low-cost data access tools in the AI/ML and software engineering communities. The tool is written in Python and positions itself as giving an AI agent "eyes to see the entire internet" by combining reading and search across Twitter, Reddit, YouTube, GitHub, Bilibili, and XiaoHongShu in one CLI. Because it avoids official APIs, users should be aware that it likely relies on web scraping, which can be fragile when platforms change their pages or anti-bot measures.
 
-github_trending · GitHub Trending · Sep 16, 03:45
+github_trending · GitHub Trending · Sep 16, 03:55
 
-**Background**: Traditional code review relies on deterministic static analysis tools that apply fixed rules to detect bugs, but these tools struggle with context-dependent issues. Large language models can reason about code semantics but tend to hallucinate and give vague feedback. Alibaba's tool is a hybrid: deterministic pipelines handle rule-based checks while LLM agents handle nuanced reasoning, and the result is validated at Alibaba's own engineering scale. NPE (null pointer exception) is a common Java runtime error, while XSS and SQL injection are classic web security vulnerabilities.
+**Background**: AI agents are autonomous programs that can plan and take actions, but they need data from the web to be useful. Many platforms charge for API access or impose strict rate limits, which makes large-scale data collection expensive. Web scraping is an alternative that extracts content directly from web pages, though it is often less stable than official APIs. Agent-Reach targets this gap by offering one free CLI for multiple platforms, including Chinese services like Bilibili and XiaoHongShu that are less commonly supported by Western tools.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/alibaba/open-code-review">GitHub - alibaba/open-code-review: Fast, efficient, battle-tested at ...</a></li>
-<li><a href="https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/openai-sdk">OpenAI SDK compatibility - Claude Platform Docs</a></li>
-<li><a href="https://www.reddit.com/r/AI_Agents/comments/1udp99l/the_most_reliable_data_agent_ive_shipped_is_90/">The most reliable data agent I've shipped is ~90% deterministic code ...</a></li>
+<li><a href="https://www.youtube.com/watch?v=wk8joeKtXBA">Web Scraping, and how it gives AI Agents 100x more power - YouTube</a></li>
+<li><a href="https://www.globaltimes.cn/page/202608/1369095.shtml">Chinese video platform Bilibili relaunches international... - Global Times</a></li>
+<li><a href="https://prizmdigital.co.nz/what-is-xiaohongshu/">What is XiaoHongShu (REDNote) | Overview (2026) | Prizm Digital NZ</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community discussion around hybrid deterministic-plus-LLM agent architectures is broadly positive, with practitioners noting that keeping most logic deterministic and using the LLM mainly for intent parsing yields far more reliable results than pure LLM approaches. Some commenters caution that OpenAI-compatible endpoints do not always support advanced features like reasoning/thinking modes, which is worth verifying before deployment.
-
-**Tags**: `#code-review`, `#static-analysis`, `#llm`, `#developer-tools`, `#go`
+**Tags**: `#AI agents`, `#CLI`, `#web scraping`, `#data access`, `#open source`
 
 ---
 
 <a id="item-3"></a>
-## [TradingAgents: Multi-Agent LLM Framework for Financial Trading Gains 727 Stars](https://github.com/TauricResearch/TradingAgents) ⭐️ 8.0/10
+## [Vidu S2 Enables Real-Time 720p Interactive Avatar and Video Editing](https://huggingface.co/papers/2609.11638) ⭐️ 8.0/10
 
-TauricResearch/TradingAgents, a Python framework that uses multiple LLM-powered agents for financial trading, gained 727 stars in a single day and now has over 106,000 total stars on GitHub. The project, described in an arXiv paper (2412.20138), assigns specialized roles to LLM agents to break down complex trading objectives into manageable tasks. This rapid community validation highlights growing interest in applying multi-agent LLM systems to high-stakes domains like finance, potentially enabling more sophisticated and automated trading strategies. It represents a practical, research-backed use case that could influence both academic research and real-world trading tools. The framework works with any market covered by Yahoo Finance, using exchange-suffixed tickers, and automatically resolves company identity and alpha benchmarks per market. It is written in Python and has over 20,000 forks, indicating active community engagement.
+Vidu S2 introduces two models: Vidu S2-Avatar, a real-time interactive digital-character model supporting 720p video generation with dynamic references that can be updated at any moment, and Vidu S2-Editing, a real-time video editing model that handles style rendering, clothing replacement, character replacement, and background replacement. The team also explores real-time spatial video generation for both models, and a playable online demo is available at vidu.com/vidu-stream. This marks a notable step toward real-time, interactive video generation that goes beyond offline clip synthesis, potentially benefiting live streaming, virtual production, gaming, and AR/VR content creation. By combining avatar generation with stream editing and spatial capabilities in one release, Vidu S2 raises the bar for what interactive AI video tools can do in practical, latency-sensitive applications. Compared with Vidu S1, Vidu S2-Avatar adds real-time 720p output, dynamic references that can be swapped mid-generation, and stronger instruction following such as dancing, while experiments show Vidu S2 outperforms all baselines. The spatial video generation capability is described as exploratory, meaning it is a feasibility study rather than a fully productized feature.
 
-github_trending · GitHub Trending · Sep 16, 03:45
+huggingface_papers · Hugging Face Papers · Sep 15, 00:00
 
-**Background**: TradingAgents is inspired by the structure of real-world trading firms, where different specialists (e.g., fundamental analysts, sentiment analysts) collaborate to make decisions. The framework uses large language models (LLMs) as agents that each play a specific role, mimicking this division of labor. This approach allows complex trading objectives to be decomposed into smaller, manageable tasks that individual agents can handle.
+**Background**: Real-time interactive video generation is an emerging area where models produce or modify video continuously in response to user input, rather than generating a fixed clip in one pass. Spatial video typically refers to video that carries depth or 3D scene information, such as stereo MV-HEVC tracks with spatial metadata, enabling more immersive playback. Vidu S1, the predecessor, was a real-time interactive video generation model for voice-controlled digital characters, and Vidu S2 extends that line with higher resolution, editable streams, and spatial experiments.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/TauricResearch/TradingAgents">TauricResearch/ TradingAgents : TradingAgents : Multi - Agents LLM ...</a></li>
-<li><a href="https://arxiv.org/abs/2412.20138">TradingAgents: Multi-Agents LLM Financial Trading Framework - arXiv</a></li>
-<li><a href="https://tradingagents-ai.github.io/">TradingAgents: Multi-Agents LLM Financial Trading Framework</a></li>
+<li><a href="https://github.com/shengshu-ai/Vidu-S">GitHub - shengshu-ai/Vidu-S: Vidu S: Real - Time Interactive, Editable ...</a></li>
+<li><a href="https://developer.apple.com/documentation/imageio/creating-spatial-photos-and-videos-with-spatial-metadata">Creating spatial photos and videos with spatial metadata</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#multi-agent`, `#financial-trading`, `#Python`, `#framework`
+**Tags**: `#video generation`, `#real-time`, `#spatial video`, `#interactive AI`, `#video editing`
 
 ---
 
 <a id="item-4"></a>
-## [Vidu S2 Enables Real-Time Interactive and Spatial Video Generation](https://huggingface.co/papers/2609.11638) ⭐️ 8.0/10
+## [ZGCM-1: Fully Open 7B Model for Math and Agentic Search](https://huggingface.co/papers/2609.13356) ⭐️ 8.0/10
 
-Vidu S2 introduces two real-time models: Vidu S2-Avatar, an interactive digital-character model, and Vidu S2-Editing, a real-time video editing model. Compared with Vidu S1, Vidu S2-Avatar supports real-time 720p video generation, dynamic references that can be updated at any moment, and stronger instruction following such as dancing, while Vidu S2-Editing enables real-time style rendering, clothing replacement, character replacement, and background replacement. This marks a significant step toward real-time, interactive video generation that could reshape content creation, virtual avatars, and live streaming workflows. The availability of a playable online demo and claims of outperforming all baselines suggest strong practical impact for AI/ML and graphics communities. The models support high-resolution 720p output and dynamic reference updates, and the team also explores the feasibility of real-time spatial video generation for both Avatar and Editing. A playable online demo is available at https://vidu.com/vidu-stream.
+Researchers released ZGCM-1, a fully open 7B dense foundation model trained from scratch with a 256K context window that couples internal reasoning with external tool use. It achieves a ~4.2x efficiency improvement in 16K pre-training time-to-loss and remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1, on challenging math reasoning and agentic search benchmarks. The work shows that compact models can overcome parametric capacity limits by combining deliberate internal thinking with active external tool use, rather than passively memorizing the open web. Its fully open training recipe—including weights, intermediate checkpoints, training code, per-stage data recipes, and W&B logs—gives the community a rare end-to-end reproducible foundation-model pipeline. The architecture combines interleaved gated sliding-window attention with full attention and a stable FP8 Muon optimizer, while training uses a progressive curriculum scaling context across 16K, 64K, and 256K and reformulates interaction traces into Markov Decision Processes. The authors also distill eight actionable empirical findings spanning architectural scaling, SFT quality pruning, long-context generalization, and agentic co-training dynamics.
 
 huggingface_papers · Hugging Face Papers · Sep 15, 00:00
 
-**Background**: Real-time video generation is challenging because it requires maintaining temporal and spatial consistency while responding to user input with low latency. Spatial video generation, as explored in frameworks like Spatia, preserves a 3D scene point cloud as persistent memory to maintain long-term consistency, while dynamic reference updates allow the model to swap or adjust reference images on the fly. Vidu S2 builds on the earlier Vidu S1 and targets interactive applications such as digital avatars and live video editing.
+**Background**: Sliding-window attention limits each token to attending only to a nearby window of tokens, which cuts the cost of long-context processing, while full attention lets tokens attend globally; interleaving the two aims to balance efficiency and recall. The Muon optimizer is a momentum-based method that applies Newton-Schulz orthogonalization to gradients and has emerged as an alternative to Adam for large-scale LLM training. A Markov Decision Process formalizes sequential decision-making as states, actions, and rewards, which is the standard framing for reinforcement learning and agentic tool-use trajectories. Agent swarms here refer to multiple autonomous agents coordinating cluster operations, data curation, and diagnostic evaluation during model development.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2512.15716">[2512.15716] Spatia: Video Generation with Updatable Spatial Memory</a></li>
-<li><a href="https://www.vidu.com/ai-reference-to-video">Reference to Video AI — Keep Characters Consistent | Vidu AI</a></li>
+<li><a href="https://www.emergentmind.com/topics/gated-sliding-window-attention-g-swa">Gated Sliding-Window Attention (G-SWA) - Emergent Mind</a></li>
+<li><a href="https://docs.nvidia.com/nemo/rl/latest/guides/muon-optimizer.html">Muon Optimizer — NeMo-RL - NVIDIA Documentation</a></li>
+<li><a href="https://www.sciencedirect.com/topics/computer-science/markov-decision-process">sciencedirect.com/topics/computer-science/ markov - decision - process</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#video-generation`, `#real-time`, `#interactive`, `#spatial-video`, `#AI`
+**Tags**: `#foundation models`, `#efficient training`, `#long context`, `#tool use`, `#open source`
 
 ---
 
 <a id="item-5"></a>
-## [Atria Dawn Preview: A Foundation Agentic Model for Scientific Research](https://huggingface.co/papers/2609.15818) ⭐️ 8.0/10
+## [Ex-Apple Engineer Builds Linux GPU Driver for M4 Mac Mini in One Month](https://codyho.dev/blog/gpu-driver/) ⭐️ 8.0/10
 
-Researchers introduced Atria Dawn Preview, a foundation agentic language model trained via a Verifiable Experience Pipeline that links tool-mediated interactions to executable environments and externally verified outcomes. Across 16 benchmarks covering real-world research, engineering, and digital work, it is competitive with frontier agents and achieves the highest reported score on five of them. The work signals a shift from task-level execution to project-level human-AI partnership, where agents propose methods and implement revisions while humans retain final decisions and guide exploration. This has implications for how scientific research is conducted and how oversight and accountability are preserved as AI agents become participants in building their own successors. The study analyzed 769 task records from 56 participants alongside agent logs, finding that participants rated about one-third of completed AI-assisted tasks as infeasible without AI. The paper is a preview release, and the authors note that progress toward more autonomous AI research requires advancing both discovery capacity and meaningful human oversight.
+An ex-Apple engineer named Cody Ho developed a working Linux GPU driver for the M4 Mac Mini in just one month, relying heavily on large language models (LLMs) to assist with the development. The project was published on his blog and quickly gained attention on Hacker News, where it sparked 196 upvotes and 119 comments. This achievement demonstrates the potential of LLMs to accelerate reverse engineering and driver development for undocumented hardware, which could dramatically lower the barrier to creating open-source GPU drivers. It also raises important questions about the ethics of using LLMs in open-source projects and the acceptability of contributions from former employees of the hardware vendor. The driver targets the M4 Mac Mini's 10-core GPU, which supports hardware-accelerated ray tracing, dynamic caching, and mesh shading. However, the Asahi Linux project has a strict no-AI policy, meaning this LLM-assisted work cannot be upstreamed into the official Asahi Linux kernel; the author was also previously banned from Asahi Linux for concealing his LLM usage and his background as a former Apple engineer.
 
-huggingface_papers · Hugging Face Papers · Sep 15, 00:00
+hackernews · ADevWithAnIdea · Sep 15, 19:30 · [Discussion](https://news.ycombinator.com/item?id=49717638)
 
-**Background**: Agentic AI refers to semi- or fully autonomous systems that can perceive, reason, and act on their own, typically combining language models with extensible tools. Foundation models are large pretrained models adapted to many downstream tasks, and benchmarks are standardized tests used to compare system performance. The Verifiable Experience Pipeline described here trains the model by grounding its tool use in executable environments whose outcomes can be externally checked, rather than relying only on human preference or static data.
+**Background**: Apple Silicon Macs, including the M4 Mac Mini, use custom ARM-based chips with integrated GPUs that lack official Linux support. The Asahi Linux project has been reverse-engineering these chips to provide open-source drivers, but progress on newer chips like the M3 and M4 has been slow, especially for GPU acceleration. LLMs are increasingly used in software development to generate code, but their use in open-source projects raises concerns about licensing, originality, and community trust.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://mitsloan.mit.edu/ideas-made-to-matter/agentic-ai-explained">Agentic AI, explained | MIT Sloan</a></li>
-<li><a href="https://en.wikipedia.org/wiki/AI_agent">AI agent - Wikipedia</a></li>
+<li><a href="https://asahilinux.org/2022/12/gpu-drivers-now-in-asahi-linux/">Apple GPU drivers now in Asahi Linux</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apple_M4">Apple M4 - Wikipedia</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49717638">Building a Linux GPU Driver for the M4 Mac Mini in One Month</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#agentic AI`, `#language models`, `#scientific research`, `#benchmarks`, `#human-AI collaboration`
+**Discussion**: Community reactions were mixed: many praised the technical feat and saw it as a prime use case for LLMs in driver development, while others raised ethical concerns about the author's concealed LLM use and former Apple employment, suggesting the code may face upstream rejection. Some also noted that Asahi Linux's no-AI policy means this work cannot be officially integrated, potentially leading to AI-assisted forks.
+
+**Tags**: `#Linux`, `#GPU Driver`, `#Apple Silicon`, `#LLM`, `#Open Source`
 
 ---
 
 <a id="item-6"></a>
-## [Strix.ai AI agent finds Baseten GitHub admin token in 25 minutes](https://www.strix.ai/blog/baseten-harbor-github-pat-takeover) ⭐️ 8.0/10
+## [Strix AI agent gains admin access to Baseten's GitHub in 25 minutes](https://www.strix.ai/blog/baseten-harbor-github-pat-takeover) ⭐️ 8.0/10
 
-Strix.ai reported that its autonomous penetration-testing agent discovered an exposed GitHub personal access token for 'basetenbot' within 25 minutes, granting admin and push access to Baseten's main product repo, GitOps repo, and Homebrew tap. Baseten responded by making the Harbor project private and rotating the token, but the incident sparked debate over unsolicited AI-driven security testing on a prospective vendor. This incident highlights the growing power of AI agents to rapidly uncover exposed credentials that humans might overlook, raising urgent questions about disclosure ethics when security testing is performed on a prospective vendor without prior agreement. It also underscores the critical risk of leaked GitHub tokens, which can grant broad access to an organization's code and infrastructure. The token was found in Docker build history after the agent located a Baseten image repository, and it provided read/write access to other private repositories, including customer-specific ones. Baseten's security team confirmed the issue as critical on July 14 and asked Strix to securely delete any images they had pulled.
+Strix AI, an autonomous penetration-testing agent, discovered a leaked GitHub personal access token for the 'basetenbot' account and used it to gain admin and push access to Baseten's main product repository, GitOps cluster repo, and Homebrew tap within 25 minutes. The token was found in Docker build history after the agent located a Baseten image repository. This incident highlights the growing power of AI agents in automated security research, raising urgent questions about consent, rules of engagement, and whether AI-driven red-teaming should be conducted on prospective vendors without prior authorization. It also underscores the risks of credential leakage in CI/CD pipelines and the need for better secret management. The token granted admin and push access to Baseten's main product repo, the GitOps repo driving their clusters, and their Homebrew tap, plus read/write access to other private repositories including customer-specific repos. Baseten responded by making the Harbor project private and rotating the token, but the initial disclosure timeline shows the token remained active for a period after the first report.
 
 hackernews · bearsyankees · Sep 15, 18:11 · [Discussion](https://news.ycombinator.com/item?id=49716476)
 
-**Background**: Baseten is an AI inference platform that helps companies deploy and serve machine learning models in the cloud. Strix.ai offers autonomous AI penetration-testing agents that mimic real hackers to find vulnerabilities in code, APIs, and cloud infrastructure. GitHub personal access tokens are credentials that allow programmatic access to repositories; if exposed, they can be exploited to gain unauthorized control over an organization's codebase.
+**Background**: Strix is an open-source autonomous AI penetration testing tool developed by OmniSecure, Inc., designed to act like a real hacker by dynamically running code, finding vulnerabilities, and validating them with proof-of-concepts. Baseten is an AI inference platform that helps deploy and operate machine learning models in production. GitHub personal access tokens are credentials that allow programmatic access to repositories, and if leaked, can grant unauthorized access to sensitive code and infrastructure.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.strix.ai/">Strix</a></li>
-<li><a href="https://github.com/usestrix/strix">GitHub - usestrix/strix: Open-source AI penetration testing tool to find and ...</a></li>
-<li><a href="https://grokipedia.com/page/Baseten">Baseten</a></li>
+<li><a href="https://docs.strix.ai/">Introduction - Strix</a></li>
+<li><a href="https://github.com/usestrix/strix">GitHub - usestrix/ strix : Open-source AI penetration testing tool to find...</a></li>
+<li><a href="https://www.baseten.co/">Inference Platform : Deploy AI models in production | Baseten</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters debated the ethics of running an AI pentesting agent against a prospective vendor without prior negotiation, with some noting that the agent's speed in finding exposed secrets is impressive but not necessarily unique. Others questioned whether the disclosure was a genuine security contribution or a marketing stunt, and highlighted the broader issue of how many similar tokens might be exposed.
+**Discussion**: Community comments reflect a mix of appreciation for the disclosure and concern about the ethics of running an AI agent against a prospective vendor without prior negotiation. Some note that the agent likely found something a motivated human could find, just faster, and question whether this is a strong advert for Strix over other agents like Claude or Codex. Others praise Baseten's response and highlight the broader issue of credential leakage in Docker build history.
 
-**Tags**: `#security`, `#AI agents`, `#disclosure`, `#GitHub`, `#ethics`
+**Tags**: `#security`, `#AI agents`, `#red teaming`, `#disclosure`, `#GitHub`
 
 ---
 
 <a id="item-7"></a>
-## [IEEE Spectrum Explores the 2026 Inference Hardware Revolution](https://spectrum.ieee.org/inference-hardware-revolution) ⭐️ 8.0/10
+## [Bruce Schneier Calls to End 25 Years of Mass Surveillance](https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html) ⭐️ 8.0/10
 
-IEEE Spectrum published an in-depth article on the emerging 2026 inference hardware revolution, highlighting novel architectures such as logarithmic number systems and rack-scale accelerators, including Tensordyne's Napier rack-scale hardware that claims up to 1,300 tokens per second per user. The piece also notes that Anthropic is paying over a billion dollars per month to lease spare compute from LLM competitor SpaceXAI. As AI inference demand grows, hardware innovation is shifting from a single scaling axis toward a proliferation of architectural approaches, much like the CPU's evolution after transistor scaling slowed. This could reshape the economics of AI deployment and determine which companies lead the next phase of AI infrastructure. Tensordyne's Napier uses a logarithmic number system where storing numbers as exponents lets the chip add instead of multiply, since multiplier circuits draw more power and use more die area than adders. The article also highlights rack-scale designs where many accelerators participate in a single high-speed interconnect domain.
-
-hackernews · vinhnx · Sep 15, 14:24 · [Discussion](https://news.ycombinator.com/item?id=49713024)
-
-**Background**: A logarithmic number system (LNS) is an arithmetic representation that stores real numbers as their exponents, simplifying multiplication, division, roots, and powers into addition and subtraction. Rack-scale accelerators are dense systems in which every GPU or accelerator in a rack operates within a single high-speed interconnect domain, such as NVIDIA's NVLink, enabling much larger models to be served efficiently. AI inference hardware refers to the physical infrastructure that runs a trained model on new data to produce predictions or generations, as opposed to training hardware.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Logarithmic_number_system">Logarithmic number system</a></li>
-<li><a href="https://theoutpost.ai/news-story/amd-challenges-nvidia-with-ambitious-rack-scale-ai-accelerators-for-2026-15487/">AMD Challenges NVIDIA with Ambitious Rack - Scale AI Accelerators ...</a></li>
-<li><a href="https://telnyx.com/resources/ai-inference-hardware">AI Inference Hardware Guide for Production Deployments</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Hacker News commenters largely praised the article, with one drawing a parallel between AI inference evolution and the multi-axis proliferation of CPU innovations after transistor scaling slowed. Others highlighted the logarithmic number system's cleverness, noted that most future benchmark gains may come from this side of the stack, and expressed surprise at the billion-dollar monthly compute lease figure.
-
-**Tags**: `#AI inference`, `#hardware acceleration`, `#computer architecture`, `#logarithmic number systems`, `#IEEE Spectrum`
-
----
-
-<a id="item-8"></a>
-## [Bruce Schneier: 25 Years of Mass Surveillance Is Enough](https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html) ⭐️ 8.0/10
-
-Security expert Bruce Schneier published an essay titled "25 Years of Mass Surveillance Is Enough," arguing that a quarter-century of mass surveillance programs has failed to deliver promised security benefits and should be dismantled. The piece, published on his Schneier on Security blog and cross-posted to Lawfare, sparked a large Hacker News discussion with 822 points and 303 comments. Schneier is one of the most influential voices in computer security, and his argument that mass surveillance fails on its own terms—rather than only on civil-liberties grounds—reframes the policy debate at a time when surveillance powers are expanding. The discussion highlights growing concern that tools like ICE's surveillance of protesters and emerging policies such as NSPM-7 are making mass surveillance more oppressive and pervasive. Schneier's essay notes that mass surveillance is now a routine law-enforcement tool, with ICE using it in immigration actions and against people exercising First Amendment rights to protest. Commenters also point to the Patriot Act as an obvious turning point, while noting the FBI ran public data-collection and keyword-watching programs even earlier.
+Security expert Bruce Schneier, writing with Cindy Cohn in an essay originally published in Lawfare, argues that 25 years of mass surveillance has failed to deliver security and should be ended. The essay, posted on Schneier's blog, sparked a large Hacker News discussion with 823 points and 303 comments. The essay challenges the post-9/11 consensus that pervasive data collection is necessary for security, and its traction reflects growing bipartisan concern about surveillance powers. It could influence policy debates over programs like the Patriot Act and emerging directives such as NSPM-7. Schneier co-authored the piece with Cindy Cohn, and it originally appeared in Lawfare before being reposted on his blog. The discussion highlights historical precedents like pre-Patriot Act FBI data collection and proposals to limit camera networks to local jurisdictions.
 
 hackernews · iamnothere · Sep 15, 11:26 · [Discussion](https://news.ycombinator.com/item?id=49710883)
 
-**Background**: Mass surveillance refers to the intricate monitoring of an entire population or a substantial fraction of it, a practice expanded dramatically after the 2001 Patriot Act broadened government spying authority. Bruce Schneier is a cryptographer and public-interest technologist known for books such as Data and Goliath, in which he argues that mass surveillance cannot stop terrorist attacks. Debates over surveillance often center on whether such programs actually improve security or mainly erode privacy and civil liberties.
+**Background**: Mass surveillance refers to the systematic observation or data collection of an entire population or a substantial fraction of it, often through methods like wiretapping, CCTV, and data mining. Bruce Schneier is a renowned cryptographer and security technologist who has long criticized government surveillance programs. The essay's title references roughly 25 years since the expansion of surveillance powers following the September 11 attacks and the passage of the Patriot Act.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html">25 Years of Mass Surveillance Is Enough - Schneier on Security</a></li>
-<li><a href="https://www.lawfaremedia.org/article/25-years-of-mass-surveillance-is-enough">25 Years of Mass Surveillance Is Enough | Lawfare</a></li>
-<li><a href="https://www.vice.com/en/article/bruce-schneier-mass-surveillance-wont-stop-terror-876/">This Security Expert Thinks Mass Surveillance Doesn't Stop Terror...</a></li>
+<li><a href="https://www.schneier.com/">Schneier on Security -</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Surveillance">Surveillance - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely agreed with Schneier, with one invoking the Tao Te Ching to argue that restriction breeds the disorder it aims to prevent, and another tracing surveillance ambitions back before the Patriot Act. Practical proposals included building and widely distributing easy-to-use self-hosted services to leverage First and Fourth Amendment protections, and limiting camera networks to local jurisdictions rather than giving federal agencies eyes everywhere. Several expressed alarm that NSPM-7 will make mass surveillance far more oppressive.
+**Discussion**: Commenters largely agreed with Schneier, with some citing the Tao Te Ching to argue that restrictions breed the disorder they aim to prevent, and others noting that FBI data collection predated the Patriot Act. Proposals included building easy-to-use self-hosted services and limiting camera networks to local jurisdictions, while one commenter warned that NSPM-7 will make mass surveillance far more oppressive.
 
 **Tags**: `#surveillance`, `#privacy`, `#security`, `#policy`, `#civil-liberties`
 
 ---
 
-<a id="item-9"></a>
-## [Driver's License Breach Exposes 153 Million Americans](https://www.lawfaremedia.org/article/america%27s-drivers-licence-breach-is-a-national-security-disaster) ⭐️ 8.0/10
+<a id="item-8"></a>
+## [Java 27 Announced as Community Debates Cadence and Valhalla Delay](https://mail.openjdk.org/archives/list/announce@openjdk.org/thread/ORGGLMN75HFEWP7YL3ZLGHLYHVIBJDYT/) ⭐️ 8.0/10
 
-A massive data breach has reportedly exposed the driver's license records of approximately 153 million Americans, prompting an FBI investigation into what could be one of the largest-ever leaks of government-issued identity documents in North America. The Lawfare article frames this incident as a national security disaster, igniting debate over corporate accountability and the failures of identity verification systems. This breach affects nearly half of the U.S. adult population, creating severe risks of identity theft, fraud, and espionage, while exposing systemic weaknesses in how companies handle sensitive personal data. It underscores the urgent need for stronger corporate accountability and more robust KYC (Know Your Customer) verification processes across industries. The breach reportedly involves driver's license scans stored by a third-party identity verification company, and if confirmed, it would surpass many previous data breaches in scale. The FBI is investigating, but the full scope and the identity of the attackers remain unclear, raising concerns about the security of centralized identity databases.
+OpenJDK has announced Java 27 on its official announce mailing list, continuing the platform's six-month release cadence. The announcement drew heavy community discussion, including confirmation that Project Valhalla will slip to Java 28 as a preview feature. Java remains one of the most widely used enterprise languages, so each release shapes the tooling, frameworks, and long-term support decisions of millions of developers. The discussion around Valhalla's delay and Java's role in greenfield projects highlights growing questions about how the platform evolves relative to competitors like C#. Project Valhalla, an experimental OpenJDK effort to add value objects and primitive-like performance to Java's object model, is now expected to arrive as a preview in Java 28 rather than Java 27. Community members also noted that Java releases rarely include two preview rounds of the same feature, unlike some competing platforms.
 
-hackernews · hn_acker · Sep 15, 15:58 · [Discussion](https://news.ycombinator.com/item?id=49714547)
+hackernews · mkurz · Sep 15, 13:13 · [Discussion](https://news.ycombinator.com/item?id=49712041)
 
-**Background**: Driver's licenses are among the most widely used forms of government-issued identification in the United States, often required for opening bank accounts, boarding flights, and verifying identity for employment. KYC (Know Your Customer) regulations mandate that businesses verify customer identities to prevent fraud and money laundering, but these processes often rely on third-party vendors that store sensitive documents. The 2015 OPM breach, which compromised the personal data of millions of federal employees and security clearance applicants, serves as a historical parallel for the scale and national security implications of such incidents.
+**Background**: OpenJDK is the free, open-source reference implementation of Java SE, and since Java 9 Oracle has shipped a new feature release roughly every six months, with periodic long-term support (LTS) versions. Project Valhalla, announced in 2014 and led by Brian Goetz, aims to combine object-oriented abstractions with primitive-like memory efficiency. These frequent releases mean features often land incrementally, and major language changes like Valhalla can take years to mature.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.usnews.com/news/us/articles/2026-09-02/fbi-says-it-is-investigating-report-that-millions-of-us-drivers-licenses-exposed-in-data-breach">FBI Probes Report of Data Breach Exposing Millions of Drivers ...</a></li>
-<li><a href="https://time.com/article/2026/09/03/fbi-probes-reported-dark-web-drivers-license-breach/">FBI Probes Report of Breach Exposing 153 Million Driver's License Scans</a></li>
+<li><a href="https://openjdk.org/projects/valhalla/">Project Valhalla</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Project_Valhalla_(Java_language)">Project Valhalla (Java language)</a></li>
+<li><a href="https://blogs.oracle.com/java/update-and-faq-on-the-java-se-release-cadence">Update and FAQ on the Java SE Release Cadence | java</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters expressed deep frustration with the broken state of identity verification, with some calling for personal liability and clawbacks for executives and investors of breached companies. Others criticized KYC checks as ineffective, especially as AI makes forging documents easier, and drew parallels to the 2015 OPM breach, questioning whether any meaningful changes will occur this time.
+**Discussion**: Commenters compared Java's cadence favorably to Microsoft's, noting Oracle ships roughly twice as often and bundles less into the platform. Others debated when Java is the right choice for greenfield projects in 2026, recommended a documentary on Java's history, and expressed frustration that Valhalla keeps slipping while hoping for null type safety in their lifetime.
 
-**Tags**: `#security`, `#privacy`, `#data-breach`, `#national-security`, `#KYC`
+**Tags**: `#Java`, `#OpenJDK`, `#release`, `#Project Valhalla`, `#programming languages`
+
+---
+
+<a id="item-9"></a>
+## [Lawfare Calls 153M Driver's License Breach a National Security Disaster](https://www.lawfaremedia.org/article/america%27s-drivers-licence-breach-is-a-national-security-disaster) ⭐️ 8.0/10
+
+On September 14, 2026, Lawfare published an article titled "America's Driver's License Breach Is a National Security Disaster," reframing a massive leak of 153 million US and Canadian driver's licenses — allegedly stolen from identity-verification vendor IDScan.net and sold on the dark web via a service called Nexus — from a consumer data breach into a national security crisis. The FBI and RCMP are investigating, and the story has reportedly reached the inner circle of President Donald Trump. This breach is significant because driver's licenses are a foundational identity document used for KYC checks, age verification, and access to financial and government services, so compromising 153 million of them undermines trust in the entire identity-verification ecosystem. It also raises urgent questions about accountability, systemic security failures, and whether anything will change compared to past disasters like the 2015 OPM breach. The leaked data reportedly includes 153 million US and Canadian driver's licenses, and the breach has been linked to IDScan.net, a SaaS identity-verification provider; the data appeared on the dark web via a site called Nexus. The incident has prompted an FBI probe and comparisons to the 2015 OPM breach, which compromised millions of security-clearance applicants and fingerprints.
+
+hackernews · hn_acker · Sep 15, 15:58 · [Discussion](https://news.ycombinator.com/item?id=49714547)
+
+**Background**: KYC (Know Your Customer) is a regulatory requirement for financial institutions and other businesses to verify customer identities, often using government-issued documents like driver's licenses. Identity-verification SaaS providers such as IDScan.net collect and process these documents on behalf of clients, making them high-value targets for attackers. The 2015 OPM breach is a historical benchmark for US government data compromises, and Lawfare is a non-profit publication focused on national security law and policy.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.saasrise.com/news/darkweb-sale-of-153-million-drivers-licenses-highlights-identityverification-saas-flaws-70f76481-5bd0-4e5f-bc30-8cf1cbc76cae">153M Licenses Leak Exposes SaaS Identity‑Verification Gaps - SaasRise</a></li>
+<li><a href="https://tech-insider.org/drivers-license-breach-national-security-disaster-2026/">Driver ' s License Breach Is a National Security Disaster</a></li>
+<li><a href="https://shattered.io/nexus-breach-national-security-crisis-lawfare-2026/">3M Passports, 153M IDs: Nexus Now a Security Crisis</a></li>
+
+</ul>
+</details>
+
+**Discussion**: Hacker News commenters debated accountability and the limits of KYC, with some calling for personal liability and compensation clawbacks for executives and investors, while others argued that KYC provides only an illusion of security and that AI makes fake documents trivial to generate. Several drew parallels to the 2015 OPM breach, questioning whether any concrete changes would follow this time, and one commenter noted that "computer security is an oxymoron."
+
+**Tags**: `#security`, `#privacy`, `#national-security`, `#data-breach`, `#KYC`
 
 ---
 
 <a id="item-10"></a>
-## [AEF-1 standard for third-party AI evaluators emerges with xAI, OpenAI, Anthropic backing](https://www.latent.space/p/ainews-aef-1-standard-emerges-for) ⭐️ 8.0/10
+## [AEF-1 standard for third-party AI evaluators emerges, co-signed by xAI, OpenAI, and Anthropic](https://www.latent.space/p/ainews-aef-1-standard-emerges-for) ⭐️ 8.0/10
 
-The AI Evaluator Forum published AEF-1, a proposed baseline standard and checklist for independent third-party AI evaluations, covering areas such as access and conflicts of interest. The initiative has been co-signed by major AI labs including xAI, OpenAI, and Anthropic, signaling broad industry buy-in. This is a significant step toward professionalizing and standardizing how third-party AI evaluations are conducted, which could shape AI governance and accountability practices across the industry. If widely adopted, AEF-1 could give regulators, enterprises, and the public more trustworthy, independent assessments of AI systems. AEF-1 is framed as a set of 'minimum operating conditions' that third-party evaluators can use to demonstrate how they meet baseline requirements, with emphasis on access to models and managing conflicts of interest. It is a proposed standard rather than a binding regulation, so its real-world impact will depend on voluntary adoption by labs and evaluators.
+The AI Evaluator Forum has released AEF-1, a voluntary standard titled 'Minimum Operating Conditions for Independent Third Party AI Evaluations,' which leading labs including xAI, OpenAI, and Anthropic have all co-signed. The standard gives independent evaluators a baseline set of conditions they can use to demonstrate how they achieved a credible level of independence in their assessments. This marks a significant step toward standardized, credible third-party evaluation of frontier AI models, a key demand from safety advocates who argue that labs cannot credibly audit themselves. Broad co-signing by competing labs suggests emerging industry alignment on governance norms that could shape regulation and public trust in AI systems. AEF-1 is a voluntary standard rather than a binding regulation, and it explicitly treats assessments carried out under terms set by the party being evaluated as a lower standard of independence than a true independent audit. The standard is referenced in related technical work, such as an IETF draft SCITT profile for pre-run evaluation criteria.
 
 rss · Latent Space · Sep 15, 04:50
 
-**Background**: As AI systems grow more capable, independent third-party evaluations are seen as crucial for assessing risks because they are separate from the interests of the companies building the models. However, the field has lacked common standards for what counts as a credible evaluation, including how evaluators get access to models and how they handle conflicts of interest. AEF-1, published by the AI Evaluator Forum, aims to fill that gap by defining baseline operating conditions that evaluators can publicly attest to.
+**Background**: As AI models grow more capable, governments and researchers have pushed for independent evaluation to verify safety, bias, and robustness claims made by developers. The AI Evaluator Forum is a coalition of independent evaluation organizations that worked with partners across the AI ecosystem to define baseline conditions for credible third-party evaluations. Previously, Anthropic CEO Dario Amodei and Google DeepMind co-founder Demis Hassabis publicly called for embedded third-party evaluators and common safety standards, setting the stage for this kind of industry agreement.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://aievaluatorforum.org/initiatives/minimum-operating-conditions">AEF-1: Minimum Operating Conditions for Independent Third Party AI ...</a></li>
-<li><a href="https://www.latent.space/p/ainews-aef-1-standard-emerges-for">[AINews] AEF-1 standard emerges for Third Party Evaluators, as Xai ...</a></li>
-<li><a href="https://hai.stanford.edu/news/strengthening-ai-accountability-through-better-third-party-evaluations">Strengthening AI Accountability Through Better Third Party ...</a></li>
+<li><a href="https://aievaluatorforum.org/initiatives/minimum-operating-conditions">The AI Evaluator Forum brings together leading independent AI ...</a></li>
+<li><a href="https://datatracker.ietf.org/doc/draft-ozturk-scitt-prml-profile/">A SCITT Profile for Pre-Run Evaluation Criteria (PRML)</a></li>
+<li><a href="https://www.cbsnews.com/video/anthropic-ceo-calls-for-competitors-to-agree-to-third-party-evaluators-in-push-for-ai-safety/">Anthropic CEO calls for competitors to agree to " third - party ..."</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI governance`, `#AI evaluation`, `#standards`, `#industry news`, `#OpenAI`
+**Tags**: `#AI evaluation`, `#AI safety`, `#industry standard`, `#OpenAI`, `#Anthropic`
 
 ---
 
 <a id="item-11"></a>
-## [CrofAI exposed as OpenRouter wrapper with 20x markup, then vanishes](https://www.reddit.com/r/LocalLLaMA/comments/1wgwe4n/crofai_cheapest_inference_provider_in_the_world/) ⭐️ 8.0/10
+## [Voodoo Dynamic Quant Released Under MIT License](https://www.reddit.com/r/LocalLLaMA/comments/1wgszma/voodoo_dynamic_quant_now_mit_licensed/) ⭐️ 8.0/10
 
-CrofAI, which marketed itself as the cheapest inference provider in the world, was exposed as an OpenRouter wrapper that silently routed requests for expensive models like kimi-k3 to cheaper models such as GLM 5.3 Flash, charging up to 20x markup on output tokens. After denying the allegations, publishing a fake 'team takeover' blog post, and being reminded of wire fraud, the owner deleted nahcrof.com and crof.ai, removed the Twitter account, and made the /r/CrofAI subreddit private around September 15. This case highlights a serious trust and transparency problem in the third-party LLM inference market, where users cannot easily verify which model actually serves their requests. It serves as a warning to developers and companies relying on cheap API resellers, and could push the community toward more verifiable providers or self-hosted inference. The investigation found that CrofAI's 'own model family' was also fake: greg-2-ultra routed to GLM 5.2, greg-1-mini to Qwen 3.5 9B, and greg-2-super, greg-1 and greg-1-super to Kimi K2.7 Code, all at significant markups. CrofAI's hardware claims also failed scrutiny, since running Kimi K3 at Q2_K quantization needs about 802GiB while the largest RTX PRO 6000 machine on Vast offers only 765GiB, and a DGX Spark with 128GB cannot run deepseek-v4-flash-0731.
-
-reddit · r/LocalLLaMA · /u/SorosAhaverom · Sep 15, 10:19
-
-**Background**: OpenRouter is a unified API marketplace that lets developers access hundreds of AI models from many providers through a single interface, and it is widely used to compare prices and availability. Inference providers host and serve models, and some resellers wrap other APIs to offer lower prices, which makes it hard for customers to know which model actually handles a request. Model routing, the practice of sending each request to a cheaper or more suitable model, is a legitimate cost-saving technique, but secretly substituting a weaker model while charging for a stronger one is fraud.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://openrouter.ai/">OpenRouter</a></li>
-<li><a href="https://www.codecademy.com/article/what-is-openrouter">What is OpenRouter? A Guide with Practical Examples - Codecademy</a></li>
-<li><a href="https://rejoicehub.com/blogs/what-is-a-model-router">What Is a Model Router ? AI Routing Explained</a></li>
-
-</ul>
-</details>
-
-**Discussion**: Commenters noted that 'NahCrof' is '4chan in reverse' and pointed out the owner's Discord name 'Devious Flimflam', where 'flimflam' means deception or fraud, suggesting the operation was a deliberate scam from the start. The community also stressed that anyone who bought credits, even if already used, should seek a refund, and treated the episode as a cautionary tale about chasing the cheapest tokens.
-
-**Tags**: `#AI inference`, `#fraud`, `#OpenRouter`, `#LLM pricing`, `#community discussion`
-
----
-
-<a id="item-12"></a>
-## [Apple Ships Foundation Models Natively in macOS 27](https://www.reddit.com/r/LocalLLaMA/comments/1wh5fpa/apple_foundation_models_local_ai_natively_on/) ⭐️ 8.0/10
-
-Apple has made its Apple Foundation Models (AFM) available natively on macOS 27, allowing users to launch a local AI chat directly from the terminal with the command 'fm chat'. The release was shared on r/LocalLLaMA, where users began testing the models and debating their quality and the significance of Apple's move into on-device AI. This is a significant milestone for local AI because Apple is shipping optimized on-device models to every Mac user by default, dramatically lowering the barrier to running LLMs locally without third-party tools. It also signals that major platform vendors are embracing on-device inference, which could accelerate adoption and pressure the open-weight ecosystem to compete on quality and openness. The models are invoked through a simple terminal command, 'fm chat', which can also take a single prompt such as 'fm chat "summarize this text"'; a 'command not found' error typically means the binary is not in PATH or the system predates macOS 27. Apple's AFM family includes a 20-billion-parameter multimodal model (AFM 3 Core Advanced) and cloud variants, with some models reportedly built with Google Gemini collaboration and running on Nvidia GPUs under Apple's Private Cloud Compute.
-
-reddit · r/LocalLLaMA · /u/Cherlokoms · Sep 15, 16:37
-
-**Background**: Apple Foundation Models (AFM) are the generative AI models Apple introduced to power Apple Intelligence features such as the revamped Siri, designed to run on-device on Apple Silicon for privacy and low latency. macOS 27 is the version of Apple's desktop operating system that ships this native integration, letting developers and users access the models directly from the command line rather than only through apps. The move fits a broader trend of running LLMs locally on consumer hardware, where tools like Locally AI and Mirai Labs already offer on-device inference for iPhone, iPad, and Mac.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://gigazine.net/gsc_news/en/20260610-apple-foundation-models/">What's so amazing about the new AI, ' Apple Foundation Models '?</a></li>
-<li><a href="https://ai-manual.ru/article/apple-foundation-models-v-macos-27-kak-zapustit-lokalnyij-ai-iz-terminala-komandoj-fm-chat/">Apple Foundation Models в MacOS 27: как запустить... | AiManual</a></li>
-<li><a href="https://www.apple.com/apple-intelligence/">Apple Intelligence and Siri - Apple</a></li>
-
-</ul>
-</details>
-
-**Discussion**: The Reddit thread shows a mix of enthusiasm and skepticism: the original poster, who prefers open-weight models, still calls Apple's move 'a huge step in the direction of local AI' and asks whether others have tested or built with the models. Commenters debate model quality and the trade-offs between Apple's closed ecosystem and open alternatives, reflecting broader community tension over convenience versus openness.
-
-**Tags**: `#Apple`, `#Local AI`, `#macOS`, `#Foundation Models`, `#On-device AI`
-
----
-
-<a id="item-13"></a>
-## [Voodoo Dynamic Quant Open-Sourced Under MIT License](https://www.reddit.com/r/LocalLLaMA/comments/1wgszma/voodoo_dynamic_quant_now_mit_licensed/) ⭐️ 8.0/10
-
-The author of Voodoo Dynamic Quant has released their gradient-descent-based per-tensor quantization layout optimization method under the MIT license, along with a toolset (https://github.com/curvedinf/voodoo-dyn-quant) for creating custom dynamic quants. The method was previously kept private but is now available to the community to encourage further research and scaling. This open-sourcing provides the local LLM community with a novel state-of-the-art dynamic quantization technique that can be adapted and improved, potentially leading to better model compression and performance at aggressive quantization levels. It also challenges proprietary methods like Unsloth Dynamic 3.0 by offering a transparent, reproducible alternative. Voodoo Quant uses gradient descent to optimize per-tensor quant layouts by training scalar gates for each quant level per tensor, with a KL divergence loss against a BF16 reference and a filesize target. It is currently set up for Qwen models but can be adapted to other architectures; it excels at aggressive quant levels but is research-grade and not yet studied at larger model sizes.
+The creator of Voodoo Quant, a novel dynamic quantization method that uses gradient descent to optimize per-tensor quantization layouts for GGUF models, has open-sourced the full toolset under the MIT license on GitHub. Previously kept private for two months, the release includes complete tools for training custom dynamic quants, currently configured for Qwen models but adaptable to other architectures. This open-source release enables the local LLM community to create custom dynamic quants and potentially inspires further research into gradient-descent-based quantization optimization. It also increases transparency in a field where proprietary methods like Unsloth Dynamic 3.0 remain undisclosed, potentially leading to broader adoption and improvements. Voodoo Quant works by running all quantization levels simultaneously and training a scalar gate per tensor per quant level using gradient descent, with a tau annealing schedule and softmax to freeze selections, optimizing for KL divergence against a BF16 reference and a target filesize. The author notes it is research-grade, excels at aggressive quantization levels on smaller models, but is outperformed by Unsloth Dynamic 3.0 at mid-to-high levels and has not been studied at larger model sizes.
 
 reddit · r/LocalLLaMA · /u/1ncehost · Sep 15, 06:59
 
-**Background**: Quantization compresses large language models by reducing the precision of weights, and the GGUF format supports per-tensor quantization where each tensor can have a different quant level. Dynamic quants select quant levels per tensor for each checkpoint size, unlike static quants that use fixed selections. Voodoo Quant is the first method to use gradient descent to choose these levels, as opposed to static analysis techniques.
+**Background**: GGUF is a binary file format used by llama.cpp for efficient loading and inference of quantized LLMs, supporting various quantization levels from 2-bit to 8-bit. Dynamic quantization in this context means selecting different quantization levels for each tensor based on the model checkpoint size, unlike static quants that use fixed assignments. Voodoo Quant introduces a novel approach by using gradient descent to optimize these per-tensor selections, contrasting with traditional static analysis methods.
 
 <details><summary>References</summary>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/GGUF">GGUF - Wikipedia</a></li>
-<li><a href="https://huggingface.co/docs/hub/en/gguf">GGUF · Hugging Face</a></li>
-<li><a href="https://docs.pytorch.org/docs/2.13/generated/torch.quantize_per_tensor.html">quantize _ per _ tensor — PyTorch 2.13 documentation</a></li>
+<li><a href="https://developer.nvidia.com/blog/per-tensor-and-per-block-scaling-strategies-for-effective-fp8-training/">Per-Tensor and Per-Block Scaling Strategies for Effective FP8 Training</a></li>
+<li><a href="https://medium.com/@isanghao/optimizing-llm-inference-with-dynamic-quantization-056026701667">Optimizing LLM Inference with Dynamic Quantization - Medium</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#quantization`, `#LLM`, `#GGUF`, `#open-source`, `#model-compression`
+**Tags**: `#quantization`, `#GGUF`, `#local-llm`, `#model-compression`, `#open-source`
+
+---
+
+<a id="item-12"></a>
+## [LynnReal-Omni: 32B Unified Video Diffusion Model with ComfyUI Nodes](https://www.reddit.com/r/StableDiffusion/comments/1wh8hov/lynnrealomni_built_on_minmax_h3_weights_comfy/) ⭐️ 8.0/10
+
+LynnReal-Omni is a new unified 32B multimodal diffusion transformer built on the MiniMax H3 architecture that handles text-to-video, image-to-video, pose-guided generation, editing, restoration, and streaming long-video generation in a single framework at four-step fast generation. Its weights and ComfyUI nodes are now publicly available, alongside a 27B Flash variant that performs three-step generation and can render a 22-frame 540p video in 377 ms on a single H100. This release consolidates many previously separate video generation and editing tasks into one open-weight model, which could significantly simplify workflows for the Stable Diffusion and ComfyUI community. The Flash variant's real-time rendering speed lays groundwork for streaming video generation, potentially enabling interactive and agent-driven visual creation. The Standard model generates and decodes a 22-frame 540p video in 843 ms on a single H100, while the Flash variant reduces this to 377 ms through model and decoding acceleration including a lightweight VAE decoder. The framework accepts heterogeneous inputs such as appearance references, editable 3D renders, and game recordings, and introduces MSAVP, a 100-prompt, 20-metric evaluation design covering instruction following, plausibility, visual quality, temporal behavior, and audio coordination.
+
+reddit · r/StableDiffusion · /u/AgeNo5351 · Sep 15, 18:25
+
+**Background**: MiniMax H3 is an open-weight omni-modal video model with a 33B-parameter architecture that supports native 2K output, stereo audio, and instruction-based editing. Multimodal diffusion transformers, popularized by models like Stable Diffusion 3, use a transformer backbone to generate content from multiple input modalities. ComfyUI is an open-source node-based interface for building generative AI workflows, and the release of dedicated nodes means users can run LynnReal-Omni directly within that ecosystem.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://vesoa.ai/minimax-h3">MiniMax H 3 : Open Omni-Modal AI Video Model | 2K Native Audio</a></li>
+<li><a href="https://encord.com/blog/stable-diffusion-3-text-to-image-model/">Stable Diffusion 3: Multimodal Diffusion Transformer Model ...</a></li>
+<li><a href="https://docs.comfy.org/">ComfyUI Official Documentation - ComfyUI</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#diffusion-models`, `#video-generation`, `#multimodal`, `#comfyui`, `#open-weights`
+
+---
+
+<a id="item-13"></a>
+## [Meridian brings camera control and bullet time to existing videos](https://www.reddit.com/r/StableDiffusion/comments/1wh89rt/meridian_camera_control_fov_and_bullet_time_for/) ⭐️ 8.0/10
+
+Meridian is a new video-to-video model built on MiniMax-H3 that generates new viewpoints of existing footage, letting users combine orbits, dollies, and slides into complex camera paths while controlling position, viewing direction, and field of view. It also offers a bullet time mode that freezes action while the camera keeps moving, plus a fast preview that lets users check framing before spending GPU time on generation. This represents a significant step for AI-driven video editing, since most prior camera-control work focused on text-to-video generation rather than re-shooting user-provided footage. If the artifacts on large viewpoint changes can be reduced, it could give filmmakers and creators a practical post-production tool for virtual camera moves. The model is still early-stage, and large viewpoint changes can produce artifacts, so results are most reliable for modest camera moves. It is released by Viggle with an online demo on Hugging Face Spaces and weights on the Hugging Face Hub, and the fast preview works once geometry has been reconstructed.
+
+reddit · r/StableDiffusion · /u/init-5 · Sep 15, 18:17
+
+**Background**: MiniMax-H3 is an open-weights, general-purpose multimodal generation model that can combine text, images, video, and audio to produce 2K video with native stereo audio. Video-to-video camera control is a growing research area, with prior work such as CameraCtrl adding camera pose control to video diffusion models and ReCapture enabling generative camera controls for user-provided videos. Bullet time is the well-known "Matrix-style" effect where action freezes or slows dramatically while the camera continues to move around the scene.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H 3 : An Open Model Breaking the Boundaries Between Tasks...</a></li>
+<li><a href="https://hehao13.github.io/projects-CameraCtrl/">CameraCtrl: Enabling Camera Control for Video Diffusion Models - Hao He</a></li>
+<li><a href="http://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_ReCapture_Generative_Video_Camera_Controls_for_User-Provided_Videos_using_Masked_CVPR_2025_paper.pdf">[PDF] ReCapture: Generative Video Camera Controls for User-Provided Videos ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#video-generation`, `#camera-control`, `#AI`, `#stable-diffusion`, `#MiniMax-H3`
 
 ---
 
 <a id="item-14"></a>
-## [LynnReal-Omni: 32B Unified Video Diffusion Model with Open Weights and ComfyUI Nodes](https://www.reddit.com/r/StableDiffusion/comments/1wh8hov/lynnrealomni_built_on_minmax_h3_weights_comfy/) ⭐️ 8.0/10
+## [Prior Labs Releases TabPFN-3.5, New SOTA Tabular Foundation Model](https://www.reddit.com/r/MachineLearning/comments/1wh4xhy/tabpfn35_is_released_as_the_next_sota_tabular/) ⭐️ 8.0/10
 
-LynnReal-Omni is a unified 32B multimodal diffusion transformer built on the MiniMax H3 architecture that consolidates text-to-video, image-to-video, pose-guided generation, style transfer, video editing, degraded-video restoration, and streaming long-video generation into a single framework with four-step fast generation. A 27B Flash variant enables three-step generation, and both the open weights and ComfyUI nodes are now available on Hugging Face and GitHub. This release matters because it consolidates many previously separate video generation and editing tasks into one model, reducing the need to chain multiple specialized pipelines. With open weights and ComfyUI nodes, it gives the Stable Diffusion community a practical, controllable tool for agentic visual creation and real-time streaming video generation. On a single H100, warm generation and decoding of a 22-frame 540p video takes 843 ms with the Standard model and 377 ms with Flash, which uses model and decoding acceleration plus a lightweight VAE decoder. The team also introduces MSAVP, a 100-prompt, 20-metric evaluation design that separates instruction following, generating plausibility, visual quality, temporal behavior, and audio coordination.
+Prior Labs released TabPFN-3.5 today, a new tabular foundation model that tops both the TabArena and BeyondArena benchmarks and is claimed to be SOTA for datasets with up to 1M rows and 20k features. The release includes three variants: TabPFN-3.5-Fast (in alpha, 6x faster than the base model), TabPFN-3.5-Thinking (available via API, trading compute for accuracy), and TabPFN-3.5-Plus. Tabular data remains one of the most common data types in industry, yet it has lagged behind vision and language in foundation-model progress; a model that leads major benchmarks with large Elo gains could shift how practitioners approach tabular prediction tasks. The +250 Elo improvement over the strongest previous baseline on BeyondArena suggests a substantial capability jump rather than incremental tuning. On BeyondArena, TabPFN-3.5 leads on text-rich, high-cardinality, and high-dimensional data, with +250 Elo over the strongest previous baseline and +150 Elo ahead of the previous overall leader. TabPFN-3.5-Thinking adds +20 Elo over the base model on BeyondArena and +44 Elo on TabArena, though the Fast variant is still in alpha.
 
-reddit · r/StableDiffusion · /u/AgeNo5351 · Sep 15, 18:25
+reddit · r/MachineLearning · /u/tuanacelik · Sep 15, 16:18
 
-**Background**: MiniMax H3 is a general-purpose omni-modal generative system built on a dense single-stream Transformer that unifies understanding across text, images, and video. A multimodal diffusion transformer applies diffusion-based generation to multiple input modalities, and ComfyUI is a node-based interface where users connect modular nodes to build image and video generation workflows. LynnReal-Omni follows the MiniMax H3 architecture but is an independent community release rather than an official MiniMax product.
+**Background**: TabPFN is a transformer-based foundation model from Prior Labs that uses in-context learning to solve tabular prediction problems in a single forward pass, rather than requiring per-dataset training. TabArena is a continuously maintained 'living' benchmark for tabular machine learning, while BeyondArena is a newer benchmark spanning IID, temporal, and grouped tasks across 142 datasets to test how well tabular foundation models generalize beyond the IID setting. Prior releases such as TabPFN-2.5 and TabPFN-3 established the line of work that TabPFN-3.5 extends.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.minimax.io/blog/minimax-h3">MiniMax H3: An Open Model Breaking the Boundaries Between Tasks ...</a></li>
-<li><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3">MiniMaxAI/MiniMax-H3 - Hugging Face</a></li>
-<li><a href="https://docs.comfy.org/basic-concepts/nodes">Nodes - ComfyUI</a></li>
+<li><a href="https://github.com/PriorLabs/TabPFN">GitHub - PriorLabs/ TabPFN : TabPFN : Foundation Model for Tabular ...</a></li>
+<li><a href="https://github.com/autogluon/tabarena">GitHub - autogluon/tabarena: A Living Benchmark for Machine Learning ...</a></li>
+<li><a href="https://arxiv.org/abs/2506.16791">TabArena: A Living Benchmark for Machine Learning on Tabular Data</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#diffusion-models`, `#video-generation`, `#multimodal`, `#open-weights`, `#comfyui`
+**Tags**: `#tabular-data`, `#foundation-models`, `#machine-learning`, `#benchmark`, `#SOTA`
 
 ---
 
 <a id="item-15"></a>
-## [SHADOW-50M: 44M ternary LLM ships in 19.8 MB, runs 1,900 tok/s on CPU](https://www.reddit.com/r/MachineLearning/comments/1wgzpli/i_trained_a_44m_parameter_quantized_llm_from/) ⭐️ 8.0/10
+## [Alibaba open-sources hybrid LLM code review tool, gaining 2,756 stars in a day](https://github.com/alibaba/open-code-review) ⭐️ 8.0/10
 
-A developer trained SHADOW-50M, a 44M-parameter ternary-weight LLM, from scratch on 45B tokens, producing a complete 19.8 MB model that runs at roughly 1,900 tokens per second on a laptop CPU with about 41 MB RAM. It uses a 73,880-token vocabulary represented by fixed 512-bit fingerprints instead of a trained embedding, a 159 KB compiled kernel, and a hybrid calculation circuit that handles arithmetic, dates, units and sorting directly in the token stream. This is a striking proof of concept for the local and edge LLM space, showing that a useful, fully offline model can fit in under 20 MB and run fast on commodity CPUs without a GPU. It also demonstrates an unusual architecture combining ternary weights, fingerprint-based vocabulary and built-in calculation circuits, which could inspire new approaches to tiny, efficient models. The model is a proof of concept rather than a product, and it loses to a 51.8M-parameter bf16 Llama-style baseline called Supra-50M-Reasoning on standard benchmarks such as ARC-Easy (0.307 vs 0.435), PIQA (0.570 vs 0.600) and WikiText-2 perplexity (186 vs 165). Its archive stores attention states at 1 bit (288 bytes/token) with a 22-byte/token index, and a persistent reinforcement trail improved measured top-1 retrieval from 0.571 to 0.743 without retraining.
+Alibaba has open-sourced open-code-review, a Go-based CLI code review tool that combines deterministic pipelines with LLM agents, and it gained 2,756 GitHub stars in a single day, bringing its total to 29,032 stars and 2,067 forks. The tool produces precise line-level comments and ships with a built-in multi-language ruleset covering NPE, thread-safety, XSS, and SQL injection, while remaining compatible with OpenAI and Anthropic APIs. This release signals that large-scale engineering organizations are converging on hybrid architectures that pair deterministic static analysis with LLM reasoning, rather than relying on either alone. Because it is battle-tested at Alibaba's scale and freely available, it could become a reference implementation for teams building AI-assisted code review into their CI pipelines. The hybrid design uses deterministic pipelines for checks that require precision and reproducibility, while LLM agents handle contextual or semantic review, which helps control token costs and reduce false positives. The tool is written in Go and supports OpenAI- and Anthropic-compatible model endpoints, making it deployable with either commercial or self-hosted models.
 
-reddit · r/MachineLearning · /u/Final-Data-1410 · Sep 15, 12:59
+github_trending · GitHub Trending · Sep 16, 03:55
 
-**Background**: Ternary weight quantization restricts neural network weights to just -1, 0 or +1, which drastically shrinks model size and replaces expensive floating-point multiplications with additions or memory lookups; Microsoft's BitNet b1.58 popularized this idea. Most LLMs instead learn a large embedding table to map tokens to vectors, but SHADOW replaces that with fixed 512-bit fingerprints, avoiding a trained embedding entirely. The hybrid calculation circuit is also unusual: rather than calling an external calculator tool, the model emits a marker like [calc]347*86[eq] and a fixed circuit fills in the answer within the same token stream.
+**Background**: Code review tools traditionally fall into two camps: deterministic static analysis, which applies fixed rules to find issues like null pointer exceptions (NPE), SQL injection, or XSS, and LLM-based review, which uses large language models to reason about code semantics. Static analysis is fast and reproducible but limited to predefined patterns, while LLM review is flexible but can be slow, costly, and prone to hallucinated findings. A hybrid approach runs the cheap deterministic checks first and then invokes LLM agents only where deeper reasoning is needed, which is the architecture Alibaba has adopted here.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.emergentmind.com/topics/ternary-weight-quantization-scheme">Ternary Weight Quantization</a></li>
-<li><a href="https://www.youtube.com/watch?v=hnOpXlVZy6g">BitNet b1.58 How 1.58-Bit Ternary Weights Run LLMs on... - YouTube</a></li>
+<li><a href="https://github.com/alibaba/open-code-review">GitHub - alibaba/open-code-review: Fast, efficient, battle-tested at ...</a></li>
+<li><a href="https://blog.codacy.com/deterministic-static-analysis-for-ai-coding-workflows-how-to-cut-token-cost-without-weakening-code-review">Deterministic Static Analysis for AI Coding Workflows - Codacy | Blog</a></li>
+<li><a href="https://arxiv.org/pdf/2409.02977">Large Language Model-Based Agents for Software Engineering...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#quantization`, `#edge-computing`, `#efficient-inference`, `#from-scratch-training`
+**Tags**: `#code-review`, `#static-analysis`, `#llm`, `#security`, `#developer-tools`
 
 ---
