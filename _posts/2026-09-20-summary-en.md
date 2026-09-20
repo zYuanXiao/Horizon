@@ -5,362 +5,360 @@ date: 2026-09-20
 lang: en
 ---
 
-> From 123 items, 15 important content pieces were selected
+> From 122 items, 15 important content pieces were selected
 
 ---
 
-1. [Anthropic's Claude Code hits 146k GitHub stars](#item-1) ⭐️ 9.0/10
-2. [Microsoft Director Calls AI Scraping 'Largest Theft of Labor in Human History'](#item-2) ⭐️ 8.0/10
-3. [Qwen Image 2.1 Open-Source Model Launches Tomorrow with ComfyUI Support](#item-3) ⭐️ 8.0/10
-4. [Cloudflare open-sources security-audit skill for coding agents](#item-4) ⭐️ 8.0/10
+1. [Benchmarking Btrfs, ZFS, and bcachefs on overlooked workloads](#item-1) ⭐️ 8.0/10
+2. [Terry Tao argues math should celebrate more than proof](#item-2) ⭐️ 8.0/10
+3. [GPT-6 Astra Deciphers a 108-Year-Old WWI German Radio Cipher](#item-3) ⭐️ 8.0/10
+4. [Cloudflare releases security-audit-skill for coding agents, trending on GitHub](#item-4) ⭐️ 8.0/10
 5. [Alibaba open-sources hybrid LLM code review tool](#item-5) ⭐️ 8.0/10
-6. [cactus-compute/needle: 2-bit automation foundation model for tiny devices](#item-6) ⭐️ 8.0/10
-7. [Chrome DevTools MCP: Official Server Lets AI Agents Control Chrome](#item-7) ⭐️ 8.0/10
-8. [DeepSeek-V4.1-Flash Cuts KV Cache 8x for Million-Token Context](#item-8) ⭐️ 8.0/10
-9. [ScienceIDE Turns Scientific Code Repos into Agent Training Environments](#item-9) ⭐️ 8.0/10
-10. [JEPA-Anything Extends Predictive World Models Across Seven Domains](#item-10) ⭐️ 8.0/10
-11. [ProgramDistill benchmarks coding agents on reconstructing features from reference web apps](#item-11) ⭐️ 8.0/10
-12. [Agora Uses Git as Shared Memory for Collective AutoResearch Agents](#item-12) ⭐️ 8.0/10
-13. [OONI invites users to contribute to the largest open internet censorship dataset](#item-13) ⭐️ 7.0/10
-14. [Brood War Bench: A New StarCraft AI Benchmark Sparks Discussion](#item-14) ⭐️ 7.0/10
-15. [AI-Generated Posters: A Practical Guide and Heated Debate](#item-15) ⭐️ 7.0/10
+6. [Addy Osmani's agent-skills repo hits 97k stars, trending with 556 today](#item-6) ⭐️ 8.0/10
+7. [Anthropic's Claude Code Trends on GitHub with 483 Stars Today](#item-7) ⭐️ 8.0/10
+8. [cactus-compute/needle: 2-bit foundation model for tiny edge devices](#item-8) ⭐️ 8.0/10
+9. [Chrome DevTools MCP server lets AI agents debug Chrome](#item-9) ⭐️ 8.0/10
+10. [AirLLM Runs 70B LLMs on a Single 4GB GPU](#item-10) ⭐️ 8.0/10
+11. [DeepSeek-V4.1-Flash: 552B MoE with 1M Context and Extreme KV Cache Compression](#item-11) ⭐️ 8.0/10
+12. [ScienceIDE Turns Scientific Code Repos into Agent Training Environments](#item-12) ⭐️ 8.0/10
+13. [JEPA-Anything brings domain-agnostic world modeling via orthogonal predictive factorization](#item-13) ⭐️ 8.0/10
+14. [Agora Uses Git DAG as Shared Memory for Autonomous Research Agents](#item-14) ⭐️ 8.0/10
+15. [OONI Probe Install Page Sparks Debate on Censorship Measurement Bias](#item-15) ⭐️ 7.0/10
 
 ---
 
 <a id="item-1"></a>
-## [Anthropic's Claude Code hits 146k GitHub stars](https://github.com/anthropics/claude-code) ⭐️ 9.0/10
+## [Benchmarking Btrfs, ZFS, and bcachefs on overlooked workloads](https://bartosz.fenski.pl/modern-fs-benchmark/) ⭐️ 8.0/10
 
-Anthropic's Claude Code, an agentic terminal-based coding tool, is trending on GitHub with 483 stars gained today, bringing its total to 146,765 stars and 23,952 forks. The TypeScript project lets developers use natural language commands to understand codebases, execute routine tasks, and handle git workflows directly from the terminal. Claude Code's rapid rise reflects a broader industry shift toward agentic coding tools that autonomously plan, write, test, and modify code with minimal human intervention. Its popularity signals that terminal-based AI development workflows are becoming a mainstream part of professional software engineering, competing with tools like Cursor, GitHub Copilot, and OpenAI Codex. Claude Code runs in the terminal and works alongside existing IDEs and development tools without requiring workflow changes, and it is also available in IDE, desktop app, and browser versions. The repository is written in TypeScript and has accumulated nearly 24,000 forks, indicating substantial community engagement and derivative work.
+A new benchmark analysis compares Btrfs, ZFS, and bcachefs under workloads that classic benchmarks often skip, using 593 runs on GitHub Actions runners with per-run calibration to filter out unreliable VMs. The author directly engages with methodological criticism, acknowledging that shared ephemeral VMs introduce noise and that results should be compared as shapes and ratios rather than absolute MB/s. Filesystem choice is a long-term, hard-to-reverse decision for storage arrays and servers, and this benchmark highlights how Btrfs, ZFS, and bcachefs behave under realistic, non-synthetic workloads that standard benchmarks miss. The active discussion also surfaces practical concerns such as bcachefs's out-of-tree status and ZFS's licensing and reliability history, which affect real deployment decisions. The benchmark runs on GitHub Actions runners using loop devices on shared ephemeral VMs, with each job recording a host-calibration anchor to reject unreliable VMs; the author notes this limits but cannot fully fix noisy-neighbor effects. Commenters point out that without bare-metal testing, results may not be comparable at all if another tenant is using the same disk.
 
-github_trending · GitHub Trending · Sep 20, 03:50
+hackernews · farlight · Sep 19, 18:11 · [Discussion](https://news.ycombinator.com/item?id=49768833)
 
-**Background**: Agentic coding is a software development approach where autonomous AI agents plan, write, test, and modify code with minimal human intervention, unlike traditional AI assistants that simply respond to prompts. Claude Code is Anthropic's entry into this category, designed to live in the developer's terminal and operate on the codebase through natural language. It competes in a growing field of agentic CLI tools alongside OpenAI's Codex CLI and others.
+**Background**: Btrfs is a copy-on-write filesystem for Linux that combines filesystem and logical volume management, with a stable on-disk format since Linux 3.13. ZFS is an advanced filesystem and volume manager originally from Solaris, now available on Linux via OpenZFS but not in-tree due to licensing. Bcachefs is a newer copy-on-write filesystem by Kent Overstreet that was added to the Linux kernel but later removed from the mainline tree, making it a second-class citizen for many users.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/anthropics/claude-code">GitHub - anthropics/claude-code: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. · GitHub</a></li>
-<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal, IDE</a></li>
-<li><a href="https://cloud.google.com/discover/what-is-agentic-coding">What is agentic coding? How it works and use cases | Google Cloud</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bcachefs">Bcachefs - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Btfrs_file_system">Btfrs file system</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Z_filesystem">Z filesystem</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#developer-tools`, `#coding-assistant`, `#terminal`, `#TypeScript`
+**Discussion**: The discussion is largely positive about bcachefs's flexibility, with users praising its ability to mix device sizes and types, set per-file replication, and use foreground/background compression. However, some express frustration that bcachefs was removed from the kernel tree, leaving btrfs as the only in-tree modern filesystem, while others are skeptical of all three and prefer ZFS on another OS. The author responds directly to methodology concerns, emphasizing calibration and the large number of runs.
+
+**Tags**: `#filesystems`, `#benchmarking`, `#btrfs`, `#zfs`, `#bcachefs`
 
 ---
 
 <a id="item-2"></a>
-## [Microsoft Director Calls AI Scraping 'Largest Theft of Labor in Human History'](https://www.tomshardware.com/tech-industry/artificial-intelligence/microsoft-director-called-ai-scraping-the-largest-theft-of-labor-in-human-history-while-openai-head-brands-chatgpt-an-existential-threat-to-publishers-revelations-come-from-legal-briefs-filed-in-nyt-lawsuit) ⭐️ 8.0/10
+## [Terry Tao argues math should celebrate more than proof](https://terrytao.wordpress.com/2026/09/18/if-math-is-more-than-proof-we-need-to-better-celebrate-the-rest-of-it/) ⭐️ 8.0/10
 
-Newly unsealed court filings in The New York Times' copyright lawsuit against OpenAI and Microsoft reveal that a Microsoft director privately described AI web scraping as 'the largest theft of labor in human history,' while an OpenAI executive allegedly called ChatGPT an 'existential threat' to publishers. The documents also suggest Microsoft would have demanded OpenAI retrain its models had it known paywalled content was scraped. These admissions could significantly strengthen the NYT's copyright case and reshape how courts view the data-acquisition practices behind large language models, potentially forcing AI companies to license content or change training pipelines. The revelations also intensify scrutiny of Microsoft and OpenAI's partnership, which underpins Copilot and ChatGPT. The statements come from internal communications unsealed as part of the 2023 lawsuit, and reporting notes that only snippets were initially made public without full context. The filings also allege OpenAI's president was told about a method for bypassing the Times' paywall and responded with apparent approval.
+Terry Tao published an essay on his blog arguing that mathematics as a field overvalues formal proofs and should better recognize other contributions such as intuition, exposition, refactoring, and problem formulation. The post sparked a large Hacker News discussion with 320 points and 248 comments about intuition, AI, and academic incentives. The essay challenges the reward structures of academic mathematics, where tenure and prestige are tied almost entirely to producing new proofs, and it arrives as AI tools increasingly automate proof search. This could reshape how mathematicians, departments, and funders evaluate contributions and train the next generation. Tao's argument distinguishes proof from the broader mathematical process, including intuition, simplification, and clear exposition, which are often undervalued in hiring and tenure decisions. Commenters noted that AI can already handle many proof-search tasks, narrowing the skill advantage of even top mathematicians and pressuring the field to redefine what human mathematicians should do.
 
-hackernews · jonbaer · Sep 19, 18:21 · [Discussion](https://news.ycombinator.com/item?id=49768921)
+hackernews · num42 · Sep 19, 06:28 · [Discussion](https://news.ycombinator.com/item?id=49763928)
 
-**Background**: The New York Times sued OpenAI and Microsoft in 2023, alleging that their AI models were trained on millions of copyrighted articles without permission. At the center of the dispute is whether using scraped web content to train AI constitutes fair use under US copyright law, and whether bypassing paywalls or access controls crosses a legal line. Microsoft is OpenAI's largest investor and integrates OpenAI models into products like Copilot.
+**Background**: Mathematics has long debated the relationship between formal proof and intuition, a tension famously embodied in the 1900 Poincaré–Hilbert debate and later in intuitionist philosophy, which ties truth to constructive proof. Terry Tao is widely regarded as one of the greatest living mathematicians, so his essays on the culture and practice of mathematics carry unusual weight. Recent advances in AI for theorem proving have made these questions urgent rather than purely philosophical.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/">Microsoft exec called AI scraping ‘the largest theft of labor in human history,' new unredacted filings reveal | TechCrunch</a></li>
-<li><a href="https://www.engadget.com/2262055/microsoft-openai-internet-scraping-largest-theft-of-labor/">Microsoft executive called OpenAI's web scraping the 'largest theft of labor in human history' - Engadget</a></li>
-<li><a href="https://www.datasostech.com/blog/data-scraping-ai-training-legal-ethical-considerations/">Data Scraping for AI Training: Legal & Ethical Guide 2026 | DataSOS</a></li>
+<li><a href="https://plato.stanford.edu/entries/intuitionism/">Intuitionism in the Philosophy of Mathematics</a></li>
+<li><a href="https://www.nytimes.com/2015/07/26/magazine/the-singular-mind-of-terry-tao.html">The Singular Mind of Terry Tao - The New York Times</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were largely skeptical of Microsoft's stated willingness to force a retrain, with one dismissing it sarcastically as 'yeah, sure.' Others shared personal anecdotes about LLMs reproducing their own original coinages without attribution, and raised concerns that Microsoft's position as a middleman between enterprises and model servers could enable further undisclosed IP harvesting.
+**Discussion**: Commenters broadly agreed that proof-centric incentives are failing, with some invoking the 1900 Poincaré–Hilbert debate and lamenting that intuition is lost in modern math education. Others compared mathematics to software engineering, noting AI can automate tasks but not entire jobs, while a former PhD student said proof refactoring is enjoyable but unrewarded. A recurring view was that AI narrows the advantage of Fields Medal-level talent, though some argued this makes it a great time to be a mathematician.
 
-**Tags**: `#AI ethics`, `#copyright`, `#data scraping`, `#Microsoft`, `#OpenAI`
+**Tags**: `#mathematics`, `#philosophy-of-math`, `#AI`, `#academia`, `#Terry Tao`
 
 ---
 
 <a id="item-3"></a>
-## [Qwen Image 2.1 Open-Source Model Launches Tomorrow with ComfyUI Support](https://www.reddit.com/r/StableDiffusion/comments/1wl4xp2/qwen_image_21_releasing_tomorrow/) ⭐️ 8.0/10
+## [GPT-6 Astra Deciphers a 108-Year-Old WWI German Radio Cipher](https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio) ⭐️ 8.0/10
 
-Qwen Image 2.1, a new open-source image generation model, is set to release tomorrow, with example outputs already shared and its ComfyUI integration pull request merged. Early testers report it surpasses existing open-source models like ZIT in realism and maintains coherence at very high resolutions. This release could significantly advance the open-source image generation ecosystem by offering a model that rivals proprietary solutions in quality, while immediate ComfyUI support makes it instantly accessible to a wide community of practitioners. It may pressure other open-source projects to accelerate their own improvements. Early access users note that generation on ModelScope is quite slow with throttled download speeds, and there are questions about a ChatGPT-like yellow tint in outputs. The model is expected to be the best open text generation model according to OstrisAi, though official benchmarks are not yet available.
+A developer known as Prinz used GPT-6 Astra, OpenAI's latest large language model released in September 2026, to decipher a WWI-era German radio message that had remained unbroken for 108 years. The decoded message reportedly contained intelligence about enemy fleet movements and was verified against the logs of HMS Canterbury. This case shows that modern LLMs can be applied to historical cryptanalysis, potentially accelerating the decoding of long-unsolved ciphers that traditional methods have failed to crack. It also raises broader questions about AI's growing role in security research and how quickly such tools could be turned against modern cryptographic systems. According to community discussion, the solution may have relied on an existing published key that had not been tried because the message was sent before that key was supposed to be in use, which some commenters argue makes the headline misleading. Others raised the possibility that the model could have fabricated a plausible key and message, though they considered this unlikely.
 
-reddit · r/StableDiffusion · /u/fruesome · Sep 20, 02:39
+hackernews · nsoonhui · Sep 19, 06:41 · [Discussion](https://news.ycombinator.com/item?id=49763987)
 
-**Background**: Qwen Image is a series of image generation and understanding models developed by Alibaba Cloud, capable of tasks like object detection, semantic segmentation, and super-resolution. ComfyUI is an open-source, node-based graphical interface that allows users to build modular workflows with diffusion models, making it a popular tool for AI image generation. ModelScope is a model hub platform where users can access and run various AI models.
+**Background**: GPT-6 Astra is a large language model developed by OpenAI and released to approved users on September 3, 2026, with general availability the following day. Cryptanalysis is the practice of breaking encrypted communications without knowing the key, and it has historically relied on human analysts spotting patterns or weaknesses. World War I (1914–1918) saw extensive use of radio ciphers by both the Allies and the Central Powers, and many intercepted messages were never decoded.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/Qwen/Qwen-Image">Qwen / Qwen - Image · Hugging Face</a></li>
-<li><a href="https://en.wikipedia.org/wiki/ComfyUI">ComfyUI</a></li>
-<li><a href="https://modelscope.ai/">ModelScope</a></li>
+<li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/chatgpt-6-astra-cracks-108-year-old-unsolved-wwi-german-code-for-the-first-time-radio-message-sharing-enemy-movement-intelligence-had-evaded-decoding-1918-crimean-fleet-warning-verified-against-hms-canterbury-logs">ChatGPT-6 Astra cracks 108-year-old unsolved WWI German code for...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPT-6_Astra">GPT-6 Astra - Wikipedia</a></li>
+<li><a href="https://sesamedisk.com/gpt-6-astra-world-war-1/">How GPT-6 Solved WWI German Radio Cipher - Sesame Disk</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Community members who received early access praise Qwen Image 2.1 as better than anything else on the open-source side, surpassing ZIT's realism and delivering high-resolution coherence. Concerns were raised about slow generation and throttled downloads on ModelScope, and some users are awaiting clarification on a possible yellow tint in outputs. Overall sentiment is highly positive, with many eager to test the model upon release.
+**Discussion**: Commenters were divided: some celebrated the result and noted that AI agents can quickly find low-hanging fruit among unsolved ciphers, while others argued the headline is misleading because an existing published key may have been used. A few raised concerns about verification, suggesting the model could have fabricated a key and message, and one commenter joked about using the same model for mundane text summaries.
 
-**Tags**: `#AI`, `#image-generation`, `#Qwen`, `#ComfyUI`, `#open-source`
+**Tags**: `#AI`, `#cryptography`, `#GPT-6`, `#historical-ciphers`, `#machine-learning`
 
 ---
 
 <a id="item-4"></a>
-## [Cloudflare open-sources security-audit skill for coding agents](https://github.com/cloudflare/security-audit-skill) ⭐️ 8.0/10
+## [Cloudflare releases security-audit-skill for coding agents, trending on GitHub](https://github.com/cloudflare/security-audit-skill) ⭐️ 8.0/10
 
-Cloudflare has open-sourced cloudflare/security-audit-skill, a coding-agent skill that turns an AI coding agent into a multi-phase security auditor, gaining 3,155 stars in a single day and reaching 16,624 total stars with 913 forks. The skill orchestrates isolated agents through reconnaissance, coverage-led hunting, candidate validation, structured output, independent record verification, and target-neutral reporting. This release matters because it brings an official, Cloudflare-backed security auditing workflow to the fast-growing ecosystem of AI coding agents, addressing a critical need for trustworthy automated security review. The rapid star growth signals strong community validation and could push more teams to adopt agent-driven security audits in their DevOps pipelines. The skill is written in JavaScript and emphasizes independently verified, machine-readable findings, meaning the audit output is structured for automated consumption rather than free-form prose. Its multi-phase design separates reconnaissance, hunting, validation, and verification into distinct steps, which helps reduce false positives and keeps the audit process auditable.
+Cloudflare has released cloudflare/security-audit-skill, a coding-agent skill that turns an AI coding agent into a multi-phase security auditor with independently verified, machine-readable findings. The repository gained 3,155 stars in a single day, reaching 16,635 total stars and 913 forks, and is written in JavaScript. This tool addresses a critical gap in AI-assisted security by letting coding agents perform structured, repeatable audits rather than ad-hoc scans, which could change how software teams conduct security reviews. Its rapid star growth signals strong community demand for trustworthy, verifiable automation in security workflows. The skill orchestrates isolated agents through reconnaissance, coverage-led hunting, candidate validation, structured output, independent record verification, and target-neutral reporting; fresh agents verify every factual claim against the actual source code, and multiple runs against the same repo are additive because each run reads prior findings JSON files to skip known issues and target gaps.
 
-github_trending · GitHub Trending · Sep 20, 03:50
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: Coding-agent skills are reusable instruction packages, often distributed as SKILL.md files, that tell AI coding assistants such as Claude Code, Codex, Gemini CLI, or Cursor how to perform a specialized task step by step. A security audit normally involves manually checking a codebase for vulnerabilities, which is slow and error-prone; this skill automates that process by having isolated agents perform reconnaissance, hunt for issues, validate candidates, and produce structured findings. Machine-readable findings are important because they can be fed directly into CI/CD tools, dashboards, or ticketing systems instead of being read by a human.
+**Background**: A coding-agent skill is a module added to an AI coding agent to give it a specific job, in this case acting as a security auditor. Multi-phase security audits typically follow a structured methodology such as planning and scoping, reconnaissance, testing, and reporting, and machine-readable findings mean results are output in a structured format that tools can parse rather than free-form prose. Cloudflare's release comes amid growing scrutiny of AI agent skills, with a recent audit of 22,511 AI coding skills finding 140,963 issues.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/cloudflare/security-audit-skill">GitHub - cloudflare/security-audit-skill: A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings · GitHub</a></li>
-<li><a href="https://github.com/VoltAgent/awesome-agent-skills">GitHub - VoltAgent/awesome-agent-skills: A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more. · GitHub</a></li>
-<li><a href="https://dev.to/erfankashani/designing-coding-agent-skills-that-actually-work-5bjl">Designing Coding Agent Skills That Actually Work - DEV Community</a></li>
+<li><a href="https://github.com/cloudflare/security-audit-skill">GitHub - cloudflare/ security -audit-skill: A coding-agent skill for...</a></li>
+<li><a href="https://thenewstack.io/ai-agent-skills-security/">What a security audit of 22,511 AI coding skills found lurking in the code - The New Stack</a></li>
+<li><a href="https://www.opensourcedrop.com/tools/cloudflare/security-audit-skill">security -audit-skill | The Open Source Drop</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#security`, `#ai`, `#coding-agents`, `#cloudflare`, `#devops`
+**Tags**: `#security`, `#coding-agents`, `#static-analysis`, `#cloudflare`, `#devops`
 
 ---
 
 <a id="item-5"></a>
 ## [Alibaba open-sources hybrid LLM code review tool](https://github.com/alibaba/open-code-review) ⭐️ 8.0/10
 
-Alibaba has open-sourced open-code-review, a Go-based code review tool that combines deterministic pipelines with LLM agents, gaining 985 stars in a single day and reaching 37,737 total stars. It offers precise line-level comments, a built-in multi-language security ruleset covering NPE, thread-safety, XSS, and SQL injection, and is compatible with OpenAI and Anthropic models. This tool brings a battle-tested, hybrid approach to AI-assisted code review, pairing deterministic static analysis with LLM judgment to catch both mechanical bugs and nuanced issues. Its open-source release at Alibaba's scale could accelerate adoption of LLM-driven review pipelines across engineering teams, especially for security-focused checks. The architecture splits review into a deterministic pipeline that guarantees exact file selection and template-based rule matching, plus an LLM agent for judgment calls, enabling precise line-level comments. It is written in Go and supports OpenAI- and Anthropic-compatible models, though it is positioned as an incremental improvement rather than a paradigm shift.
+Alibaba has open-sourced open-code-review, a Go-based code review tool that combines deterministic analysis pipelines with LLM agents, gaining 985 stars in a single day and reaching over 37,700 total stars. It produces precise line-level comments and ships with built-in multi-language security rules covering NPE, thread-safety, XSS, and SQL injection, while remaining compatible with OpenAI and Anthropic APIs. This tool addresses a real pain point in software engineering by pairing the reliability of static analysis with the contextual reasoning of LLMs, potentially reducing false positives and missed defects in automated code review. Its battle-tested status at Alibaba's scale and rapid community adoption signal strong demand for hybrid AI-assisted developer tooling. The architecture separates deterministic pipelines, which handle rule-based checks like NPE and SQL injection detection, from LLM agents that provide contextual review comments. It is written in Go, has 2,693 forks, and supports OpenAI- and Anthropic-compatible model backends, making it flexible for teams with different LLM providers.
 
-github_trending · GitHub Trending · Sep 20, 03:50
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: Code review tools traditionally rely on deterministic static analysis, which uses fixed rules to detect issues like null pointer exceptions (NPE), cross-site scripting (XSS), and SQL injection, but can miss context-dependent problems. LLM agents can reason about code more flexibly but may hallucinate or produce inconsistent results. Alibaba's tool combines both: deterministic pipelines handle what must never go wrong, while the LLM agent handles judgment, a pattern increasingly explored in AI-assisted software engineering.
+**Background**: Automated code review traditionally relies on deterministic static analysis tools that apply fixed rules to detect bugs, but these can be rigid and produce false positives. LLM-based agents can understand code context and mimic peer review, but may hallucinate or miss deterministic security issues. Alibaba's tool combines both approaches so that rule-based pipelines catch known defect patterns while LLM agents handle nuanced, context-dependent feedback.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/alibaba/open-code-review">GitHub - alibaba/open-code-review: Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible. · GitHub</a></li>
-<li><a href="https://flowtivity.ai/blog/alibaba-open-code-review/">Alibaba Open Code Review: The Open Source AI Reviewer That Out-Engineered Claude Code | Flowtivity</a></li>
+<li><a href="https://github.com/alibaba/open-code-review">GitHub - alibaba/open- code - review : Fast, efficient, battle-tested at...</a></li>
 <li><a href="https://arxiv.org/pdf/2409.02977">Large Language Model-Based Agents for Software Engineering...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#code-review`, `#LLM`, `#static-analysis`, `#developer-tools`, `#Go`
+**Tags**: `#code-review`, `#static-analysis`, `#LLM`, `#developer-tools`, `#Go`
 
 ---
 
 <a id="item-6"></a>
-## [cactus-compute/needle: 2-bit automation foundation model for tiny devices](https://github.com/cactus-compute/needle) ⭐️ 8.0/10
+## [Addy Osmani's agent-skills repo hits 97k stars, trending with 556 today](https://github.com/addyosmani/agent-skills) ⭐️ 8.0/10
 
-cactus-compute/needle, a 2-bit automation foundation model ranging from 8 to 29 MB, has gained 234 stars today and over 11,600 total stars on GitHub. It supports tool calls, structured extraction, and embeddings on phones, wearables, smart homes, robots, cars, and microcontrollers. This model pushes extreme quantization and tinyML to new limits, enabling advanced AI capabilities like tool calls and structured extraction on resource-constrained hardware. It could significantly impact edge AI and embedded systems by bringing foundation-model functionality to devices that previously could not run such workloads. The model uses 2-bit quantization to achieve an 8–29 MB footprint, a drastic reduction compared to typical foundation models, though such low-bit quantization often introduces accuracy loss. It is implemented in Python and targets a wide range of devices from phones to microcontrollers.
+Addy Osmani released agent-skills, an open-source GitHub repository providing production-grade engineering skills for AI coding agents, which gained 556 stars today and now has over 97,000 total stars and 10,252 forks. The repo is written in JavaScript and contains a curated collection of SKILL.md files covering workflows like refactoring, code review, testing, documentation, and performance. As AI coding agents become mainstream, this repo addresses a critical gap by encoding the discipline and quality gates that senior engineers apply to production code, helping agents produce more reliable software. Its rapid star growth signals strong demand for standardized agent workflows across the developer ecosystem. The repository is MIT-licensed and designed to be used across projects, teams, and tools, with documentation including a getting-started guide. It is a curated collection of skill files rather than a marketplace, and reportedly installs into 70+ AI coding agents.
 
-github_trending · GitHub Trending · Sep 20, 03:50
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: Quantization reduces the precision of neural network weights and activations, shrinking model size and compute needs at the cost of some accuracy; 2-bit quantization is an aggressive form of this technique. TinyML focuses on running machine learning models on microcontrollers and other devices with only kilobytes of memory, often using frameworks like TensorFlow Lite for Microcontrollers. Tool calls allow language models to invoke external functions or APIs, extending their capabilities beyond text generation. This project combines these trends to deliver a foundation model for extremely constrained environments.
+**Background**: Addy Osmani is a well-known developer advocate, formerly at Google Chrome's DevRel team and now at Anthropic, recognized for his work on web performance and developer tooling. AI coding agents are tools that autonomously write, edit, and review code, and 'skills' here refer to structured instruction files (SKILL.md) that guide these agents through disciplined engineering workflows.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://leimao.github.io/article/Neural-Networks-Quantization/">Quantization for Neural Networks - Lei Mao's Log Book</a></li>
-<li><a href="https://www.youtube.com/watch?v=gDFWCxrJruQ">TinyML: Getting Started with TensorFlow Lite for Microcontrollers</a></li>
-<li><a href="https://arxiv.org/html/2505.00024v2">Nemotron-Research- Tool -N1: Exploring Tool -Using Language ...</a></li>
+<li><a href="https://github.com/addyosmani/agent-skills">addyosmani/ agent - skills : Production - grade engineering skills for AI ...</a></li>
+<li><a href="https://www.agensi.io/learn/addy-osmani-agent-skills-production-grade">Addy Osmani's agent-skills, Explained: What Is Inside and…</a></li>
+<li><a href="https://dev.to/_46ea277e677b888e0cd13/agent-skills-19-production-grade-skills-that-make-ai-coding-agents-work-like-senior-engineers-5bi9">agent - skills : 19 Production - Grade Skills That Make AI Coding ...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#edge-ai`, `#tiny-ml`, `#foundation-model`, `#embedded-systems`, `#quantization`
+**Tags**: `#AI`, `#coding agents`, `#software engineering`, `#developer tools`, `#GitHub trending`
 
 ---
 
 <a id="item-7"></a>
-## [Chrome DevTools MCP: Official Server Lets AI Agents Control Chrome](https://github.com/ChromeDevTools/chrome-devtools-mcp) ⭐️ 8.0/10
+## [Anthropic's Claude Code Trends on GitHub with 483 Stars Today](https://github.com/anthropics/claude-code) ⭐️ 8.0/10
 
-The Chrome DevTools team has released chrome-devtools-mcp, an official Model Context Protocol (MCP) server that allows coding agents such as Claude, Cursor, Copilot, and Antigravity to control and inspect a live Chrome browser. The repository has quickly gained over 52,000 stars and 4,200 forks, with 39 new stars added today. This bridges browser debugging and LLM-based coding agents, enabling AI assistants to directly inspect DOM, network traffic, and performance profiles during web development. It signals growing momentum for MCP as a standard interface between AI agents and developer tools, potentially transforming AI-assisted web debugging and automation workflows. The server is written in TypeScript and provides 29 tools spanning browser automation, performance profiling, network analysis, and debugging, giving agents full DevTools capabilities. It is designed to work with popular coding agents like Claude, Cursor, and Copilot, though it requires a live Chrome instance to operate.
+Anthropic's Claude Code repository is trending strongly on GitHub, gaining 483 stars in a single day and reaching over 146,000 total stars with nearly 24,000 forks. It is a terminal-based agentic coding tool that uses natural language to execute tasks, explain code, and manage git workflows. Claude Code represents a notable shift toward terminal-based agentic AI coding assistants that autonomously plan and execute development tasks, competing with tools like OpenAI Codex CLI, Cursor, and GitHub Copilot. Its rapid community adoption signals strong developer demand for AI agents that integrate directly into existing command-line workflows rather than only IDE plugins. The repository is written primarily in TypeScript and functions largely as a distribution and issue-tracking hub rather than a fully open-source codebase, which somewhat limits direct technical evaluation. Claude Code runs in the terminal, understands the entire codebase, and can work across multiple files and tools to complete tasks.
 
-github_trending · GitHub Trending · Sep 20, 03:50
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: The Model Context Protocol (MCP) is an open standard that lets large language models securely access external tools and data sources through a unified interface. Chrome DevTools is a set of web developer tools built into Google Chrome for debugging and profiling web applications. By implementing an MCP server, the Chrome DevTools team enables AI agents to interact with these tools programmatically, extending their capabilities beyond code generation to live browser inspection and control.
+**Background**: Agentic coding refers to a software development approach where autonomous AI agents plan, write, test, and modify code with minimal human intervention, unlike traditional assistants that simply respond to prompts. Claude Code is Anthropic's entry into this category, designed to meet developers where they already work — the command line — and handle routine tasks, explain complex code, and manage git operations through natural language.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">GitHub - ChromeDevTools/ chrome - devtools - mcp : Chrome DevTools ...</a></li>
-<li><a href="https://grokipedia.com/page/Chrome_DevTools_MCP">Chrome DevTools MCP</a></li>
-<li><a href="https://modelcontextprotocol.io/examples">Example Servers - Model Context Protocol</a></li>
+<li><a href="https://code.claude.com/docs/en/overview">Overview - Claude Code Docs</a></li>
+<li><a href="https://claude.com/product/claude-code">Claude Code by Anthropic | AI Coding Agent, Terminal , IDE</a></li>
+<li><a href="https://cloud.google.com/discover/what-is-agentic-coding">What is agentic coding? How it works and use cases | Google Cloud</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#MCP`, `#Chrome DevTools`, `#AI Agents`, `#Browser Automation`, `#Developer Tools`
+**Tags**: `#AI coding assistant`, `#agentic AI`, `#developer tools`, `#Anthropic`, `#TypeScript`
 
 ---
 
 <a id="item-8"></a>
-## [DeepSeek-V4.1-Flash Cuts KV Cache 8x for Million-Token Context](https://huggingface.co/papers/2609.19969) ⭐️ 8.0/10
+## [cactus-compute/needle: 2-bit foundation model for tiny edge devices](https://github.com/cactus-compute/needle) ⭐️ 8.0/10
 
-DeepSeek-AI released DeepSeek-V4.1-Flash, a 552B-parameter multimodal Mixture-of-Experts model with a Causal Encoder-Decoder architecture that supports contexts up to one million tokens. It activates 16B parameters per token during decode but only 8B during prefill, and combines Compressed Sparse Attention 2 (CSA2) with FP4 KV caching to shrink its global KV cache footprint to 890 bytes per token, roughly one quarter of DeepSeek-V4-Flash's, while a SWA Bounded Replay optimization cuts the persistent KV cache to about one eighth. Long-horizon agentic workloads are increasingly input-heavy, and prefill compute plus KV cache pressure on HBM and SSD bandwidth are the main bottlenecks to lowering deployment costs. By drastically shrinking KV cache while improving performance over the baseline, DeepSeek-V4.1-Flash could make million-token multimodal agents substantially cheaper to serve and more practical for production deployment. The model was pretrained on a 45T-token multimodal corpus and is available at huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash. CSA2 applies cross-layer reuse to global KV (including main KV and indexer K) and Top-K indices, and the architecture was streamlined with several efficient extensions, though the abstract does not detail benchmark numbers or latency trade-offs.
+cactus-compute/needle, an automation foundation model that is only 2-bit quantized and 8-29 MB in size, is trending on GitHub with 234 stars gained today and 11,656 total stars. It enables tool calls, structured extraction, and embeddings to run directly on phones, wearables, smart homes, robots, cars, and microcontrollers. This matters because it pushes capable AI automation onto extremely constrained hardware, potentially removing cloud dependency for tool calling and structured data extraction in IoT and embedded scenarios. It reflects the broader industry trend toward TinyML and on-device AI, where privacy, latency, and offline operation are critical. The model uses 29-121M parameter Laddered Simple Attention Networks with CQ2 quantization, trained on 360B tokens of a proprietary structured dataset, and is distributed as a single small binary that can run a full session in roughly 28MB of RAM. It is specialized for local tool calling and structured extraction, selecting the right function, filling arguments, handling multiple calls in order, and returning an empty list when no tool applies.
 
-huggingface_papers · Hugging Face Papers · Sep 18, 00:00
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: KV cache stores the key and value tensors of previous tokens so a model does not recompute them at every step; as context grows to hundreds of thousands or millions of tokens, this cache can consume enormous amounts of GPU high-bandwidth memory (HBM) and SSD capacity. Mixture-of-Experts (MoE) models keep a large total parameter count but activate only a small subset per token, reducing compute. Sparse attention, first shipped by DeepSeek in V3.2 as DeepSeek Sparse Attention (DSA), lets the model attend to only selected tokens, and CSA2 is its newest form, adding cross-layer KV reuse to further cut storage.
+**Background**: 2-bit quantization compresses neural network weights and activations down to two bits per value, dramatically reducing model size and memory use for edge deployment. TinyML refers to running machine learning on microcontrollers and other low-power devices, a field that has gained traction as demand grows for fast, private, offline AI. Foundation models are large pretrained models that can be adapted to many tasks; needle applies this idea at an unusually small scale.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/html/2609.19969v1">DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression</a></li>
-<li><a href="https://kgptalkie.com/tutorials/llm-benchmarking/deepseek-sparse-attention-explained">DeepSeek V4.1 Sparse Attention Explained with Pictures - KGP Talkie</a></li>
-<li><a href="https://miraflow.ai/blog/deepseek-v4-1-flash-causal-encoder-decoder-2026">DeepSeek-V4.1-Flash Explained: The Causal Encoder - Decoder ...</a></li>
+<li><a href="https://cactuscompute.com/needle">Needle 3 - 8-29 MB foundation model for tiny devices | Cactus</a></li>
+<li><a href="https://github.com/SynapticSmith/cactus-needle">GitHub - SynapticSmith/cactus-needle: 14MB foundation model for...</a></li>
+<li><a href="https://www.shadecoder.com/topics/2-bit-quantization-a-comprehensive-guide-for-2025">2-bit Quantization: A Comprehensive Guide for 2025 - Shadecoder - 100% Invisibile AI Coding Interview Copilot</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#Mixture-of-Experts`, `#KV Cache Compression`, `#Long Context`, `#Multimodal`
+**Tags**: `#edge-ai`, `#on-device-ml`, `#foundation-models`, `#tiny-ml`, `#automation`
 
 ---
 
 <a id="item-9"></a>
-## [ScienceIDE Turns Scientific Code Repos into Agent Training Environments](https://huggingface.co/papers/2609.19134) ⭐️ 8.0/10
+## [Chrome DevTools MCP server lets AI agents debug Chrome](https://github.com/ChromeDevTools/chrome-devtools-mcp) ⭐️ 8.0/10
 
-Researchers introduce ScienceIDE, infrastructure that converts scientific code repositories into executable, agent-learnable environments guided by expert-defined scientific cases and acceptance criteria. Using verified interaction trajectories from these environments, they train the PhAI-IDE model family (72B, 9B, and 4B), which shows gains in held-out scientific-code repair and on selected general-purpose benchmarks covering code, reasoning, and knowledge. Scientific repositories encode decades of executable knowledge, but fragmented toolchains and implicit domain conventions make that knowledge hard to turn into reliable learning experience — a problem the authors call the scientific experience bottleneck. ScienceIDE provides a shared foundation for supervised fine-tuning, reinforcement learning, and evaluation, potentially accelerating AI-for-science research and improving code agents that work with specialized scientific software. The environments support task generation, execution, and scientific verification, and the resulting trajectories enable supervised fine-tuning, reinforcement learning, and evaluation. The reported gains span both held-out scientific-code repair and general benchmarks, which the authors interpret as evidence of positive transfer from scientific experience to broader capabilities; the code is released at github.com/aitofound/ScienceIDE.
+ChromeDevTools/chrome-devtools-mcp is an official TypeScript-based Model Context Protocol (MCP) server that allows coding agents to interact with Chrome DevTools for debugging and browser automation. The repository has gained 39 stars today, reaching over 52,000 total stars and 4,277 forks. This bridges two major trends—AI coding agents and web development—by giving agents a standardized way to inspect and control a live browser, which could significantly improve AI-driven debugging and automation workflows. Its official backing from the Chrome DevTools team and strong community validation (high stars and forks) suggest it may become a key integration point for AI-powered developer tools. The server is written in TypeScript and leverages the Chrome DevTools Protocol (CDP), which exposes REST endpoints and WebSocket connections when Chrome is launched with --remote-debugging-port. It is part of the broader MCP ecosystem, an open standard for connecting AI applications to external tools and data sources.
 
-huggingface_papers · Hugging Face Papers · Sep 17, 00:00
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: Scientific software is notoriously hard to reuse automatically because it relies on heterogeneous toolchains, specialized configurations, and correctness criteria that differ from ordinary software engineering. AI code agents, typically large language models trained to write and repair code, need large amounts of executable feedback to improve, and such feedback is scarce in scientific domains. ScienceIDE addresses this by packaging scientific repositories into programmable environments where agents can act, be verified, and generate training data.
+**Background**: The Model Context Protocol (MCP) is an open-source standard introduced by Anthropic that allows AI applications like Claude or ChatGPT to connect to external data sources, tools, and workflows through a unified protocol. Chrome DevTools Protocol (CDP) is a remote debugging protocol that lets developers communicate with a running Chrome browser to inspect its state, control behavior, and collect debugging information. This project combines both by providing an MCP server that exposes Chrome DevTools capabilities to coding agents, enabling them to debug and automate web pages programmatically.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/AItonomy/PhAI-IDE-72B">AItonomy/ PhAI - IDE -72B · Hugging Face</a></li>
-<li><a href="https://hyper.ai/en/papers/2609.19134">ScienceIDE: Turning World’s Scientific Codebase into Agent... | HyperAI</a></li>
-<li><a href="https://arxiv.org/html/2609.19134">ScienceIDE:Turning World’s Scientific Codebase into Agent Learnable...</a></li>
+<li><a href="https://modelcontextprotocol.io/">What is the Model Context Protocol ( MCP )? - Model Context Protocol</a></li>
+<li><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol \ Anthropic</a></li>
+<li><a href="https://chromedevtools.github.io/devtools-protocol/">Chrome DevTools Protocol</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI for Science`, `#Code Agents`, `#Scientific Computing`, `#Reinforcement Learning`, `#Benchmarking`
+**Tags**: `#AI Agents`, `#Chrome DevTools`, `#MCP`, `#Browser Automation`, `#Developer Tools`
 
 ---
 
 <a id="item-10"></a>
-## [JEPA-Anything Extends Predictive World Models Across Seven Domains](https://huggingface.co/papers/2609.20800) ⭐️ 8.0/10
+## [AirLLM Runs 70B LLMs on a Single 4GB GPU](https://github.com/lyogavin/airllm) ⭐️ 8.0/10
 
-Researchers introduce JEPA-Anything, a domain-agnostic framework built on orthogonal predictive factorization (OPF) that extends joint-embedding predictive architectures by decomposing latent targets into complementary factors learned through dedicated pathways. Evaluated across seven domains—vision, biology, clinical trajectories, control, molecular dynamics, physical fields, and weather—it improves all 10 matched dynamics tasks and cuts single-intervention prediction error on Interventional Pong by 34.8%. Most world models are built for a single domain, so a common predictive principle that transfers across radically different systems could unify representation learning, intervention prediction, and long-horizon forecasting. The results, including experimental validation in cell co-cultures, organoids, tumor fragments, and mice, suggest the approach can connect world modeling to experimentally grounded scientific discovery. The evaluation spans 10 matched dynamics tasks, forecasting of over 1,000 clinical events, and 100-step molecular rollouts across four systems, where it achieves the lowest one-step and 100-step errors among compared methods. A factor-nominated biological intervention received experimental support, and latent orbital modes recovered the Keplerian scaling exponent with a fitted slope of -1.4991; code is available at https://github.com/Gen-Verse/JEPA-Anything.
+The open-source project lyogavin/airllm is trending on GitHub with 35 stars today, bringing its total to over 34,500 stars and 3,600 forks. AirLLM enables inference of 70B-parameter large language models on a single 4GB GPU through memory optimization techniques rather than quantization or pruning. This significantly lowers the hardware barrier for running very large language models, democratizing access for researchers and developers who lack high-end GPUs. It addresses a critical bottleneck in LLM deployment, where model size has far outpaced consumer GPU memory capacity. AirLLM uses layer-wise sharding so that only one layer of the model needs to reside in GPU memory at a time, requiring roughly 1.6GB of VRAM per layer for a 70B model. It works without standard quantization or distillation, and can be used with just a few lines of code, though the layer-by-layer loading may trade off inference speed.
 
-huggingface_papers · Hugging Face Papers · Sep 18, 00:00
+github_trending · GitHub Trending · Sep 20, 03:59
 
-**Background**: JEPA, or Joint Embedding Predictive Architecture, is a self-supervised approach championed by Yann LeCun that learns by predicting abstract representations of inputs in latent space rather than reconstructing raw pixels or generating tokens. JEPA-Anything builds on this idea with orthogonal predictive factorization, which partitions a latent target into learned subspaces with dedicated predictors, aiming to make predictive states more factorized and interpretable across heterogeneous domains.
+**Background**: Large language models with tens of billions of parameters normally require many high-end GPUs because the model weights must fit into GPU memory. Common workarounds include quantization (reducing numerical precision) and pruning (removing parameters), which can degrade output quality. AirLLM instead optimizes memory usage during inference by loading the model layer by layer, so the full model never needs to be resident in VRAM at once.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.turingpost.com/p/jepa">JEPA : Joint Embedding Predictive Architecture Explained</a></li>
-<li><a href="https://www.emergentmind.com/topics/orthogonal-predictive-factorization-opf">Orthogonal Predictive Factorization (OPF)</a></li>
-<li><a href="https://arxiv.org/html/2609.20800">JEPA-Anything: Learning Predictive Models across Different Worlds</a></li>
+<li><a href="https://huggingface.co/blog/lyogavin/airllm">Unbelievable! Run 70B LLM Inference on a Single 4GB GPU with This NEW Technique</a></li>
+<li><a href="https://deepwiki.com/lyogavin/airllm/6-examples-and-use-cases">Examples & Use Cases | lyogavin/airllm | DeepWiki</a></li>
+<li><a href="https://medium.com/@dharmalingamrandd/run-a-70b-llm-on-a-4gb-gpu-heres-the-secret-they-don-t-tell-you-416b5f26927c">Run a 70B LLM on a 4GB GPU?! Here’s the Secret They Don’t Tell You | by Sharvithaa | Medium</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#world models`, `#JEPA`, `#predictive learning`, `#representation learning`, `#domain-agnostic`
+**Tags**: `#LLM inference`, `#GPU optimization`, `#memory efficiency`, `#open-source`, `#deep learning`
 
 ---
 
 <a id="item-11"></a>
-## [ProgramDistill benchmarks coding agents on reconstructing features from reference web apps](https://huggingface.co/papers/2609.18805) ⭐️ 8.0/10
+## [DeepSeek-V4.1-Flash: 552B MoE with 1M Context and Extreme KV Cache Compression](https://huggingface.co/papers/2609.19969) ⭐️ 8.0/10
 
-Researchers introduced ProgramDistill, a benchmark that evaluates coding agents on features they must discover by interacting with fully functional reference web applications rather than from written issues or instructions. Using an automated pipeline called mine-craft-patch, they mined 1,975 replay-verified behaviors across 26 applications and built 4,063 tasks without human intervention, then evaluated nine frontier coding agents. Most coding-agent benchmarks specify desired behavior through issues or instructions, but real web development often requires inferring behavior from working software, so ProgramDistill targets a realistic and under-explored evaluation setting. Its controlled difficulty levels and scalable construction make it useful both for diagnosing agent failures and for future curriculum-based training of coding agents. On cumulative workflows for full-application reconstruction, GPT-6 Astra and Claude Opus 5 reached only 49.2% and 28.8% success respectively, and in partial-application reconstruction success dropped from 100% to 64.0% and from 96% to 32% as restoration depth increased from 1 to 8. Each mined behavior is associated with replayable behaviors executable via its gold patch, which makes the benchmark verifiable rather than purely subjective.
+DeepSeek-AI released DeepSeek-V4.1-Flash, a 552B-parameter multimodal Mixture-of-Experts model supporting up to one million tokens of context, pretrained on a 45T-token multimodal corpus. It introduces a Causal Encoder-Decoder (CED) architecture that activates 16B parameters per token during decode but only 8B during prefill, and combines Compressed Sparse Attention 2 (CSA2) cross-layer KV reuse with FP4 KV caching to cut the global KV cache footprint to 890 bytes per token, roughly one quarter of DeepSeek-V4-Flash's. Long-horizon agentic workloads are increasingly input-heavy, and prefill compute plus KV cache pressure on HBM and SSD bandwidth has become the main bottleneck to lowering deployment costs. By shrinking the persistent KV cache to roughly one eighth of DeepSeek-V4-Flash's while improving performance, this model could substantially reduce the cost of serving million-token agents and multimodal applications. The model uses SWA Bounded Replay, a deployment optimization that reduces the persistent KV cache footprint (kept on SSD or host memory) to about one eighth of DeepSeek-V4-Flash's, while the always-in-HBM global cache sits at 890 bytes per token. Checkpoints are available at https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash, and the paper reports strong performance across text and multimodal agentic scenarios despite the much smaller cache.
 
-huggingface_papers · Hugging Face Papers · Sep 17, 00:00
+huggingface_papers · Hugging Face Papers · Sep 18, 00:00
 
-**Background**: Coding agents are AI systems that can read code, run commands, and edit repositories to complete software tasks, and they are usually tested with benchmarks where the target behavior is spelled out in natural language. ProgramDistill instead factorizes applications into features of different granularities, each tied to replayable behaviors, so an agent must interact with a working reference app and reproduce the observed behavior inside an incomplete application. This mirrors a common real-world scenario where developers learn requirements by using existing software rather than reading a specification.
+**Background**: KV cache stores the key and value tensors from previous tokens so a model does not recompute them at every step; as context grows to hundreds of thousands or millions of tokens, this cache can exhaust GPU memory and dominate storage and bandwidth costs. Compression techniques exploit the fact that attention is sparse, keeping only the most relevant past tokens. DeepSeek's Compressed Sparse Attention uses a learned indexer to score compressed keys and select top-k tokens per query, and CSA2 extends this by sharing KV and indexer data across layers. A Causal Encoder-Decoder architecture is a variant of decoder-based LLM designs that separates encoding and decoding phases, here allowing fewer parameters to be activated during the input-heavy prefill stage.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://huggingface.co/papers/2609.18805">Paper page - ProgramDistill : From Interactive Web Apps to Verifiable...</a></li>
+<li><a href="https://miraflow.ai/blog/deepseek-v4-1-flash-causal-encoder-decoder-2026">DeepSeek-V4.1-Flash Explained: The Causal Encoder - Decoder ...</a></li>
+<li><a href="https://kgptalkie.com/tutorials/llm-benchmarking/deepseek-sparse-attention-explained">DeepSeek V4.1 Sparse Attention Explained with Pictures - KGP Talkie</a></li>
+<li><a href="https://research.nvidia.com/labs/eai/blogs/kv-cache-compression-and-its-infra-problems/">KV Cache Compression and Its Infra Problems | Efficient AI</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#coding-agents`, `#benchmark`, `#software-engineering`, `#program-synthesis`, `#web-development`
+**Tags**: `#large language models`, `#mixture-of-experts`, `#KV cache compression`, `#long context`, `#multimodal`
 
 ---
 
 <a id="item-12"></a>
-## [Agora Uses Git as Shared Memory for Collective AutoResearch Agents](https://huggingface.co/papers/2609.18094) ⭐️ 8.0/10
+## [ScienceIDE Turns Scientific Code Repos into Agent Training Environments](https://huggingface.co/papers/2609.19134) ⭐️ 8.0/10
 
-Agora proposes Git as an append-only directed acyclic graph (DAG) shared memory for autonomous research agents, where every result, insight, hypothesis, verification, and report is an immutable commit whose parent edges record what it builds on. In its first sustained run, 13 language-model workers with no assigned tasks and no central planner worked for nearly 12 days on a weight-transfer problem, publishing 1,703 contributions and improving the evaluator from 3.39 to 1.899 bits per byte, closing 62% of the gap to a trained GPT-2 124M. The work addresses a core inefficiency in AutoResearch-style loops, where running several agents independently tends to duplicate search rather than increase discovery, by giving agents a shared, verifiable research state. If validated, this could shift multi-agent AI research toward decentralized, diversity-aware collaboration and influence how agentic AI systems coordinate on long-horizon scientific problems. A derived index exposes the frontier, neglected branches, and verification status of each claim, while a diversity-aware selection rule keeps the community from collapsing onto one leader; the winning recipe compresses donor next-token statistics into the target's embedding and output head and adds a short-range context signal via sparse edits to attention, feed-forward, and state-space blocks. Its 145-commit ancestry spans 15 accounts and 165 independent reproductions were posted, none of which failed, though the authors note a single mid-run human intervention was needed to break a monoculture and that a controlled comparison is still required to settle whether shared research state improves discovery per unit of compute.
+Researchers released ScienceIDE, an infrastructure that converts scientific code repositories into executable, agent-learnable environments guided by expert-defined scientific cases and acceptance criteria. Using verified interaction trajectories from these environments, they trained the PhAI-IDE model family (72B, 9B, and 4B), which shows gains in held-out scientific-code repair and on selected general-purpose code, reasoning, and knowledge benchmarks. Scientific repositories encode decades of executable knowledge, but fragmented toolchains and implicit domain conventions make that knowledge hard to turn into reliable learning experience — a problem the authors call the scientific experience bottleneck. ScienceIDE offers a shared substrate for supervised fine-tuning, reinforcement learning, and evaluation, potentially accelerating AI-for-science research and improving agents' ability to repair real scientific code. The environments support task generation, execution, and scientific verification, and the resulting trajectories were used for supervised fine-tuning and reinforcement learning rather than only evaluation. The work is a preprint with a public code release at github.com/aitofound/ScienceIDE, and the reported gains are on held-out scientific-code repair plus selected general benchmarks, so broader generalization remains to be independently verified.
 
 huggingface_papers · Hugging Face Papers · Sep 17, 00:00
 
-**Background**: AutoResearch refers to autonomous research loops in which a coding agent iteratively improves a measurable system through a train-evaluate-mutate-revert cycle, but each session typically starts from scratch. Git is a distributed version control system whose commit history forms a directed acyclic graph, making it a natural fit for recording immutable, branching research artifacts. The weight-transfer problem involves initializing a target neural network without training data or gradient updates by transferring knowledge from pretrained donor models, a setting where the target's dimensions match no donor.
+**Background**: Scientific software is often written in specialized languages and toolchains (e.g., numerical, simulation, and domain-specific libraries) with correctness criteria that differ from ordinary software, making it hard for general code agents to learn from. ScienceIDE addresses this by having agents, guided by expert-defined cases and acceptance criteria, transform repositories into executable environments that generate verifiable tasks and trajectories. These trajectories then serve as training data for supervised fine-tuning and reinforcement learning, allowing models such as PhAI-IDE to acquire scientific coding experience.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://aiweekly.co/alerts/agora-turns-git-into-shared-memory-for-13-autoresearch-agents">Agora Turns Git Into Shared Memory for 13 AutoResearch... | AI Weekly</a></li>
-<li><a href="https://docs.bswen.com/blog/2026-03-29-what-is-autoresearch/">What is AutoResearch ? The Autonomous AI Research Loop That...</a></li>
-<li><a href="https://weightagnostic.github.io/">Weight Agnostic Neural Networks</a></li>
+<li><a href="https://huggingface.co/papers/2609.19134">Paper page - ScienceIDE: Turning World's Scientific Codebase into...</a></li>
+<li><a href="https://hyper.ai/en/papers/2609.19134">ScienceIDE: Turning World’s Scientific Codebase into Agent... | HyperAI</a></li>
+<li><a href="https://huggingface.co/AItonomy/PhAI-IDE-72B">AItonomy/ PhAI - IDE -72B · Hugging Face</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#multi-agent systems`, `#autonomous research`, `#Git`, `#LLM agents`, `#collective intelligence`
+**Tags**: `#scientific-code`, `#AI-agents`, `#code-repair`, `#reinforcement-learning`, `#benchmark`
 
 ---
 
 <a id="item-13"></a>
-## [OONI invites users to contribute to the largest open internet censorship dataset](https://ooni.org/install) ⭐️ 7.0/10
+## [JEPA-Anything brings domain-agnostic world modeling via orthogonal predictive factorization](https://huggingface.co/papers/2609.20800) ⭐️ 8.0/10
 
-OONI has launched a call for users to install its Probe app, which measures internet censorship by testing whether specific websites are blocked on their networks. The project aims to expand its open dataset, which has already analyzed over 1.4 billion network connections across 241 countries since 2012. This initiative helps document and expose internet censorship globally, providing crucial evidence for researchers, journalists, and policymakers. The open dataset supports transparency and accountability, especially as censorship techniques become more sophisticated and widespread. OONI Probe measures IP-level reachability (OSI layer 3) rather than platform-level censorship, and its test list may be biased toward domains blocked in authoritarian regimes, potentially missing blocks in democracies. The tool also includes a network performance test (NDT) developed with M-Lab.
+Researchers introduce JEPA-Anything, a domain-agnostic framework built on orthogonal predictive factorization (OPF) that extends joint-embedding predictive architectures by decomposing latent targets into complementary factors learned through dedicated pathways. Evaluated across seven domains—vision, biology, clinical trajectories, control, molecular dynamics, physical fields, and weather—it improves metrics on all 10 matched dynamics tasks, cuts single-intervention prediction error on Interventional Pong by 34.8%, and achieves the lowest one-step and 100-step molecular errors in all four tested systems. Most predictive world models are tightly coupled to a single domain, so a common learning principle that transfers across radically different systems could unify world modeling research and accelerate progress in scientific discovery and control. The work also connects prediction to real interventions, with a factor-nominated biological intervention validated in cell co-cultures, patient-derived organoids, tumor fragments, and mice. OPF partitions a latent target into learned subspaces with dedicated predictors, providing configurable predictive capacity and a complete state for reuse, and the framework was tested on over 1,000 clinical event forecasts and 100-step molecular rollouts across four systems. Notably, latent orbital modes recover the Keplerian scaling exponent with a fitted slope of -1.4991, and code is available at https://github.com/Gen-Verse/JEPA-Anything.
 
-hackernews · Bluestein · Sep 19, 20:00 · [Discussion](https://news.ycombinator.com/item?id=49769676)
+huggingface_papers · Hugging Face Papers · Sep 18, 00:00
 
-**Background**: OONI (Open Observatory of Network Interference) is a project that monitors internet censorship globally by relying on volunteers to run software that detects blocking and reports findings. It maintains the world's largest open dataset on internet censorship, with millions of measurements collected from more than 200 countries since 2012. OONI Probe tests whether websites are blocked and measures network speed and performance.
+**Background**: Joint-embedding predictive architectures (JEPA), introduced by Yann LeCun and colleagues with I-JEPA in 2023, learn by predicting representations of masked or future content in latent space rather than reconstructing raw pixels, making them a leading non-generative approach to self-supervised learning. World models in AI are systems that build internal representations of an environment and predict how it changes in response to actions, and they are typically trained per domain. JEPA-Anything asks whether a single factorized predictive principle can serve as a general world model across heterogeneous systems.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://ooni.org/install/">Install OONI Probe | OONI</a></li>
-<li><a href="https://en.wikipedia.org/wiki/OONI">OONI - Wikipedia</a></li>
-<li><a href="https://ooni.github.io/">OONI : Open Observatory of Network Interference | OONI</a></li>
+<li><a href="https://arxiv.org/abs/2301.08243">[2301.08243] Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture</a></li>
+<li><a href="https://www.emergentmind.com/topics/orthogonal-predictive-factorization-opf">Orthogonal Predictive Factorization (OPF)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)">World model (artificial intelligence) - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters on Hacker News raised concerns about sampling bias, noting that OONI's probe list focuses on domains blocked in dictatorships and may miss censorship in democracies, such as blocks on Anna's Archive. Others clarified that the tool measures layer-3 reachability rather than platform-level censorship, and suggested extending it to net neutrality metrics like latency and throughput. Some questioned whether anyone actually installs the app and noted unfamiliarity with OONI's partners.
-
-**Tags**: `#internet-censorship`, `#privacy`, `#open-data`, `#network-measurement`, `#net-neutrality`
+**Tags**: `#world models`, `#JEPA`, `#predictive learning`, `#domain-agnostic`, `#machine learning`
 
 ---
 
 <a id="item-14"></a>
-## [Brood War Bench: A New StarCraft AI Benchmark Sparks Discussion](https://bw.swerdlow.dev/report) ⭐️ 7.0/10
+## [Agora Uses Git DAG as Shared Memory for Autonomous Research Agents](https://huggingface.co/papers/2609.18094) ⭐️ 8.0/10
 
-A new Brood War AI benchmark report was published at bw.swerdlow.dev/report and shared on Hacker News, where it reached 189 points and 78 comments. The report evaluates AI agents in StarCraft: Brood War, prompting discussion about the history of StarCraft AI research and creative machine learning applications for the game. This benchmark provides a standardized way to measure progress in real-time strategy game AI, a domain that has historically been a major challenge for reinforcement learning due to partial observability, large action spaces, and long time horizons. It matters to the game AI and ML research community because Brood War remains a popular testbed, and benchmarks help compare approaches across different research groups. The benchmark focuses on StarCraft: Brood War, which is accessible through the BWAPI programming interface and has been used in annual AI competitions since around 2010. The report is hosted at bw.swerdlow.dev/report and is niche outside the game AI community, but it sparked substantive discussion on Hacker News.
+Agora proposes storing autonomous research as an append-only directed acyclic graph (DAG) in Git, where every claim is an immutable commit that anyone can check out and rerun. In its first sustained run, 13 language-model workers with no assigned tasks or central planner spent nearly 12 days on a weight-transfer problem, publishing 1,703 contributions and improving the evaluator from 3.39 to 1.899 bits per byte, closing 62% of the gap to a trained GPT-2 124M. The work targets a core inefficiency of autonomous research loops: running several agents in parallel usually duplicates search rather than increasing discovery, because each session starts from scratch. By giving agents a shared, verifiable research state, Agora points toward collective discovery that scales with the number of workers, which matters for anyone building multi-agent AI research or engineering systems. The system derives an index exposing the frontier, neglected branches, and verification status of each claim, and uses a diversity-aware selection rule to prevent the community from collapsing onto one leader. The winning 145-commit recipe spans 15 accounts and compresses donor next-token statistics into the target's embedding and output head, plus sparse edits to attention, feed-forward, and state-space blocks; 165 independent reproductions were posted and none failed, though the authors note a single mid-run human intervention was needed to break a monoculture.
 
-hackernews · benswerd · Sep 19, 14:44 · [Discussion](https://news.ycombinator.com/item?id=49766966)
+huggingface_papers · Hugging Face Papers · Sep 17, 00:00
 
-**Background**: StarCraft: Brood War is a classic real-time strategy game released by Blizzard in 1998, and it has been a popular environment for AI research because it requires players to manage economy, production, and combat simultaneously under fog of war. BWAPI is a third-party API that allows programs to interact with the game, enabling bots to play against humans or each other. Since 2010, researchers have held annual StarCraft AI competitions, and DeepMind later developed StarCraft II as a reinforcement learning platform, continuing the tradition.
+**Background**: AutoResearch-style loops let a single coding agent improve a training setup unattended through a train-evaluate-mutate-revert cycle, but each session is isolated, so parallel agents tend to repeat the same experiments. A directed acyclic graph (DAG) is a graph whose edges all point one way with no cycles, making it a natural structure for recording dependencies between research steps. Git, the version-control system, provides content-addressed, immutable commits, which Agora repurposes as the shared memory substrate so that every research claim is reproducible and traceable.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.starcraftai.com/">StarCraft AI , the resource for custom StarCraft Brood War AIs</a></li>
-<li><a href="https://www.youtube.com/watch?v=J6Q0TIPDB-Y">A History of AI Research in StarCraft | AI and Games #26 - YouTube</a></li>
-<li><a href="https://www.researchgate.net/publication/318501772_StarCraft_AI_Competition_Report">(PDF) StarCraft AI Competition Report</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph">Directed acyclic graph - Wikipedia</a></li>
+<li><a href="https://docs.bswen.com/blog/2026-03-29-what-is-autoresearch/">What is AutoResearch ? The Autonomous AI Research Loop That...</a></li>
+<li><a href="https://arxiv.org/html/2603.20640v1">Hear Both Sides: Efficient Multi - Agent Debate via Diversity - Aware ...</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters shared nostalgia for early StarCraft culture and internet cafes, and noted the historical contrast between early BWAPI tournaments and modern deep learning approaches. One commenter proposed using machine learning to upscale old 240p Brood War match footage to Remastered quality, while another humorously mapped StarCraft factions to AI agent strategies.
-
-**Tags**: `#game-ai`, `#starcraft`, `#benchmark`, `#machine-learning`, `#reinforcement-learning`
+**Tags**: `#multi-agent systems`, `#autonomous research`, `#Git`, `#AI agents`, `#collective intelligence`
 
 ---
 
 <a id="item-15"></a>
-## [AI-Generated Posters: A Practical Guide and Heated Debate](https://john.hartnup.uk/2026/06/07/ai-event-posters.html) ⭐️ 7.0/10
+## [OONI Probe Install Page Sparks Debate on Censorship Measurement Bias](https://ooni.org/install) ⭐️ 7.0/10
 
-A blog post by John Hartnup titled 'AI-generated posters don't have to be horrible' offers a practical guide to improving AI-generated event posters, sparking a 794-comment debate on Hacker News about the aesthetic and creative limits of AI design. As generative AI tools like Leonardo.Ai and Piktochart become mainstream for creating event posters, this debate highlights the tension between accessibility and quality, affecting designers, event organizers, and the broader creative economy. The discussion reveals that even advanced AI models struggle with strong visual hierarchy and tend to rely on stereotypical associations (e.g., sakura for Japan), while some commenters argue that AI output already surpasses average budget freelance designers on platforms like Fiverr.
+OONI's probe installation page, which lets users run network tests to detect internet censorship, was featured on Hacker News and drew a substantive discussion about the tool's measurement biases, its focus on layer-3 network reachability, and whether platform-level censorship is adequately captured. OONI is a widely used open-source project that produces the world's largest open dataset on internet censorship, so debates about its measurement scope and potential biases directly affect how researchers, journalists, and policymakers interpret global censorship trends. OONI Probe tests for DNS manipulation, IP blocking, and TCP endpoint blocking, and it also includes an NDT speed test developed with M-Lab; however, it does not measure censorship at OSI layers 4–7, such as platform moderation or application-layer filtering.
 
-hackernews · ereiamjh · Sep 19, 09:20 · [Discussion](https://news.ycombinator.com/item?id=49764791)
+hackernews · Bluestein · Sep 19, 20:00 · [Discussion](https://news.ycombinator.com/item?id=49769676)
 
-**Background**: Generative AI tools can now create posters from text prompts, but the results often look generic or contain visual errors. Hacker News discussions frequently critique AI-generated art for lacking human creativity and effort, while also acknowledging its growing role in professional workflows.
+**Background**: OONI (Open Observatory of Network Interference) is a free software project that runs probes on volunteers' devices to detect network-level blocking of websites and services. Its measurements are published in near real-time on OONI Explorer, and the project collaborates with partners to document censorship events. The tool focuses on network-layer interference, not on content moderation decisions made by platforms.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://reelmind.ai/blog/ai-generated-posters-how-to-design-them-fast">AI - Generated Posters : How to Design Them Fast | ReelMind</a></li>
-<li><a href="https://www.toolify.ai/top-ai-tools/9-tips-for-making-eye-catching-ai-generated-posters">9 Tips for Making Eye-Catching AI - Generated Posters - Toolify AI</a></li>
-<li><a href="https://piktochart.com/ai-poster/">Free AI Poster Generator | Piktochart</a></li>
+<li><a href="https://ooni.org/install/">Install OONI Probe | OONI</a></li>
+<li><a href="https://openobservatory.github.io/install/desktop/">Download OONI Probe Desktop | OONI</a></li>
+<li><a href="https://explorer.ooni.org/chart/mat">OONI Measurement Aggregation Toolkit (MAT) | OONI Explorer</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters were divided: some argued AI posters still look 'horrible' due to poor visual hierarchy and stereotypical imagery, while others noted that AI already outperforms many low-cost human designers. A recurring critique was that AI-generated posters signal low effort while pretending to be high effort.
+**Discussion**: Commenters raised concerns about bias: the probe scans domains frequently blocked in dictatorships but not those often blocked in democracies, such as Anna's Archive, potentially skewing results. Others defended the tool's layer-3 focus, noting it doesn't claim to measure platform-level censorship, while some suggested adding latency and throughput tests to detect net neutrality violations.
 
-**Tags**: `#AI`, `#design`, `#generative-art`, `#Hacker News`, `#creative-tools`
+**Tags**: `#internet-censorship`, `#network-measurement`, `#privacy`, `#open-source`, `#net-neutrality`
 
 ---
